@@ -1,8 +1,8 @@
 ---
-name: Model edit or deletion request
+name: Model edit or removal request
 about: Use this template to request removal of models from this repository
-title: Model edit or deletion
-labels: model deletion, model edit
+title: Model edit or removal
+labels: model removal, model edit
 assignees: ''
 
 ---
