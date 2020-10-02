@@ -21,7 +21,7 @@ jobs:
         with:
           inlineScript: |
             for changed_file in ${{ steps.files.outputs.added_modified }}; do
-              if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9]+){2,}-([1-9][0-9]*).json$ ]]; then
+              if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then
                 echo "Submitting ${changed_file} to Azure Storage"
                 az storage blob upload --connection-string "${{ secrets.STORAGE_CONNECTION_STRING }}" --container-name '$web' --name "${changed_file}" --file "${changed_file}" --no-progress
               else
