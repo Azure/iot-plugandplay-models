@@ -14,9 +14,9 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Creating good pull requests
-We look at pull requests to `main` carefully as the models that go to this branch are released to our public [DTDL](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) repository via our deployment processes. We will have additional automated gates that must be cleared before manual review will occur. The following list contains major items that **must** be true to have your pull request accepted.
+We look at pull requests to `main` carefully as the models that go to this branch are released to our public [DTDL v2](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) repository via our deployment processes. We will have additional automated gates that must be cleared before manual review will occur. The following list contains major items that **must** be true to have your pull request accepted.
 ### File types
-- Files must conform to [JSON-LD](https://json-ld.org/) and [DTDL](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) specifications.
+- Files must conform to [DTDL v2](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) specification.
 ### File names
 - File names **must** be in lower case.
 - Files **must** end in `.json`.
