@@ -1,0 +1,47 @@
+name: push_expanded_to_azure_storage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dtmi/**/*.json'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+
+      - name: Configure ADO feed
+        run: dotnet nuget add source https://pkgs.dev.azure.com/azure-iot-pnp/_packaging/azure.iot.pnp.libraries/nuget/v3/index.json -n PnPFeed -u dmr_pkgs -p ${{ secrets.ADO_PKGS_PAT_TOKEN }} --store-password-in-clear-text
+
+      - name: Install resolver client
+        run:  dotnet tool install -g dmr-client  --add-source https://pkgs.dev.azure.com/azure-iot-pnp/_packaging/azure.iot.pnp.libraries/nuget/v3/index.json
+
+      - name: Expand models
+        run: |
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then
+              dmr-client resolve --model-file ${changed_file} --repository $PWD -o ${changed_file//.json/.expanded.json} --silent
+            fi
+          done
+        shell: bash
+
+      - name: CLI push files
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            for changed_file in ${{ steps.files.outputs.added_modified }}; do
+              if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then
+                expanded_file=${changed_file//.json/.expanded.json}
+
+                echo "Submitting ${expanded_file} to Azure Storage"
+                az storage blob upload --connection-string "${{ secrets.STORAGE_CONNECTION_STRING }}" --container-name '$web' --name "${expanded_file}" --file "${expanded_file}" --no-progress
+              else
+                echo "Skipping ${changed_file}. It doesn't appear to be a DTDL document."
+              fi
+            done

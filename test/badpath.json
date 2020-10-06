@@ -1,0 +1,14 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:test:onedep;1",
+  "@type": "Interface",
+  "displayName": "onedep",
+  "extends": ["dtmi:test:uniqueids;1"],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "temperature",
+      "schema": "dtmi:test:onedep:comp1;1"
+    }
+  ]
+}
