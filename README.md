@@ -10,7 +10,7 @@ To keep this repository as clean as possible -reducing the changes to just DTDL 
 1. Fork the public GitHub repo: [https://github.com/Azure/device-models](https://github.com/Azure/device-models).
 1. Clone the forked repo. Optionally create a new branch to keep your changes isolated from the `main` branch.
 1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#add-models) tool below.
-1. Validate the models locally using the [scripts to validate changes](#scripts-to-validate-changes) section.
+1. Validate the models locally using the [scripts to validate changes](#validate-files) section.
 1. Commit the changes locally and push to your fork.
 1. From your fork, create a PR that targets the `main` branch.
 1. Review the [PR requirements](pr-reqs.md)
