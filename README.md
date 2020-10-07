@@ -3,7 +3,7 @@
 
 This repository includes [DTDL](https://aka.ms/dtdl) models that are made publicly available on [https://devicemodels.azure.com](https://devicemodels.azure.com). These models can be used to create Azure [IoT Plug and Play](https://aka.ms/iotpnp) solutions.
 
-To keep this repository as clean as possible -reducing the changes to just DTDL models- the related artifacts are being developed in the [Azure/device-models-tools](https://github.com/Azure/device-models-tools) companion repository.
+Related tools, samples, and specs can be found in the [Azure/device-models-tools](https://github.com/Azure/device-models-tools) repo. The current repo only stores DTDL models.
 
 ## Submit a model
 
