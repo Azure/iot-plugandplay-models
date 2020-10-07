@@ -9,10 +9,6 @@ on:
 jobs:
   validate-models:
     runs-on: ubuntu-latest
-
-    env:
-      ado_pat_token: ${{ secrets.ADO_PKGS_PAT_TOKEN }} 
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -21,6 +17,9 @@ jobs:
         uses: jitterbit/get-changed-files@v1
 
       - name: Configure ADO feed
+        env:
+          ado_pat_token: ${{ secrets.ADO_PKGS_PAT_TOKEN }} 
+
         run: dotnet nuget add source https://pkgs.dev.azure.com/azure-iot-pnp/_packaging/azure.iot.pnp.libraries/nuget/v3/index.json -n PnPFeed -u dmr_pkgs -p "$ado_pat_token" --store-password-in-clear-text
 
       - name: Install resolver client
