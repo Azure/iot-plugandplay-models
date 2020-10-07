@@ -1,0 +1,35 @@
+{
+  "name": "azure-dtdl-repository",
+  "version": "1.0.0",
+  "description": "This project welcomes contributions and suggestions.  Most contributions require you to agree to a\r Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us\r the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.",
+  "main": "repo-convention.js",
+  "dependencies": {
+    "jsonata": "^1.8.3",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "validate-files": "node .github/workflows/validate-files.js",
+    "validate-ids": "node .github/workflows/validate-ids.js",
+    "validate-deps": "node .github/workflows/validate-deps.js",
+    "validate-model": "resolverclient validate --repository . --model-file",
+    "add-model": "node tools/add-model.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azure/device-models.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azure/device-models/issues"
+  },
+  "homepage": "https://github.com/azure/device-models#readme",
+  "standard": {
+    "globals": [
+      "test",
+      "expect"
+    ]
+  }
+}
