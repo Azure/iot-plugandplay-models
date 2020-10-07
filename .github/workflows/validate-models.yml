@@ -16,11 +16,11 @@ jobs:
       - id: files
         uses: jitterbit/get-changed-files@v1
 
-      - name: Configure ADO feed
-        run: dotnet nuget add source https://pkgs.dev.azure.com/azure-iot-pnp/_packaging/azure.iot.pnp.libraries/nuget/v3/index.json -n PnPFeed -u dmr_pkgs -p ${{ secrets.ADO_PKGS_PAT_TOKEN }} --store-password-in-clear-text
+      - name: Configure GitHub feed
+        run: dotnet nuget add source https://nuget.pkg.github.com/Azure/index.json -n github -u Azure -p ${{secrets.GITHUB_TOKEN}} --store-password-in-clear-text
 
       - name: Install resolver client
-        run:  dotnet tool install -g dmr-client  --add-source https://pkgs.dev.azure.com/azure-iot-pnp/_packaging/azure.iot.pnp.libraries/nuget/v3/index.json
+        run:  dotnet tool install -g dmr-client --add-source https://nuget.pkg.github.com/Azure/index.json
 
       - name: Parse Models
         run: |
@@ -42,4 +42,3 @@ jobs:
               fi
           done
         shell: bash
-      
