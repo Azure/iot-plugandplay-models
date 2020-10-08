@@ -1,0 +1,396 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:txs:per;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Peripherals"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Connected On"
+      },
+      "name": "ConnectedOn",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Firmware Version"
+      },
+      "name": "FirmwareVersion",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Azure IoT SDK"
+      },
+      "name": "SDK",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "request": {
+        "name": "DPSParams",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "scopeId",
+              "schema": "string"
+            },
+            {
+              "name": "deviceId",
+              "schema": "string"
+            },
+            {
+              "name": "deviceKey",
+              "schema": "string"
+            }
+          ]
+        }
+      },
+      "displayName": {
+        "en": "DPS"
+      },
+      "name": "DPS"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Self Test"
+      },
+      "name": "SelfTest"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Reboot"
+      },
+      "name": "Reboot",
+      "request": {
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "reason",
+              "schema": "string"
+            },
+            {
+              "name": "delayMs",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Heartbeat On"
+      },
+      "name": "HeartbeatOn",
+      "schema": "dateTime"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Heartbeat Interval"
+      },
+      "name": "HbInval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "description": {
+        "en": "Runtime since reboot"
+      },
+      "displayName": {
+        "en": "Runtime"
+      },
+      "name": "rt",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": {
+        "en": "Input Voltage"
+      },
+      "name": "iv",
+      "unit": "volt",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "tc",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "rh",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "displayName": {
+        "en": "Heap"
+      },
+      "name": "hp",
+      "unit": "byte",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Impact Count"
+      },
+      "name": "ic",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": {
+        "en": "Deviation Angle"
+      },
+      "name": "dv",
+      "unit": "degreeOfArc",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Pos-X"
+      },
+      "name": "x",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Pos-Y"
+      },
+      "name": "y",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Pos-Z"
+      },
+      "name": "z",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": {
+        "en": "Battery"
+      },
+      "name": "bt",
+      "unit": "volt",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "Report interval for the internal sensors"
+      },
+      "displayName": {
+        "en": "Peripheral Interval"
+      },
+      "name": "PerInval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Angle Exceeded"
+      },
+      "name": "ev_sv0_2",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Angle Normal"
+      },
+      "name": "ev_sv0_3",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Power Lost"
+      },
+      "name": "ev_sv0_0",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Power Restored"
+      },
+      "name": "ev_sv0_1",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Impact"
+      },
+      "name": "ev_sv0_4",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Impact Threshold"
+      },
+      "name": "ImpactThreshold",
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "The impact duration (debounce)"
+      },
+      "displayName": {
+        "en": "Impact Duration"
+      },
+      "name": "ImpactDuration",
+      "writable": true,
+      "unit": "second",
+      "schema": "float"
+    },
+    {
+      "@type": [
+        "Property",
+        "Angle"
+      ],
+      "description": {
+        "en": "The amount of angular deflection to trigger an event"
+      },
+      "displayName": {
+        "en": "Angle Threshold"
+      },
+      "name": "AngleThreshold",
+      "writable": true,
+      "unit": "degreeOfArc",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The motion detection threshold"
+      },
+      "displayName": {
+        "en": "Motion Threshold"
+      },
+      "name": "MotionThreshold",
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "request": {
+        "displayName": {
+          "en": "params"
+        },
+        "name": "params",
+        "schema": {
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "Blob SAS URL"
+              },
+              "name": "url",
+              "schema": "string"
+            }
+          ]
+        }
+      },
+      "displayName": {
+        "en": "OTA"
+      },
+      "name": "mFwOTA"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "The motion duration (debounce)"
+      },
+      "displayName": {
+        "en": "Motion Duration"
+      },
+      "name": "MotionDuration",
+      "writable": true,
+      "unit": "second",
+      "schema": "float"
+    }
+  ]
+}

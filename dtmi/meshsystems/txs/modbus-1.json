@@ -1,0 +1,191 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:txs:modbus;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Modbus"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BaudRate"
+      },
+      "name": "BaudRate",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Operation"
+      },
+      "name": "Operation",
+      "writable": true,
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "Key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "Value",
+          "schema": "dtmi:MeshSystems:txs:modbusOperation;1"
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:MeshSystems:txs:modbusOperation;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "UnitId",
+          "schema": "integer"
+        },
+        {
+          "name": "RegisterType",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              {
+                "@type": "EnumValue",
+                "enumValue": 1,
+                "name": "READ_COILS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 2,
+                "name": "READ_DISCRETE_INPUTS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 3,
+                "name": "READ_HOLDING_REGISTERS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 4,
+                "name": "READ_INPUT_REGISTERS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 5,
+                "name": "WRITE_SINGLE_COIL"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 6,
+                "name": "WRITE_SINGLE_REGISTER"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 7,
+                "name": "READ_EXCEPTION_STATUS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 15,
+                "name": "WRITE_MULTIPLE_COILS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 16,
+                "name": "WRITE_MULTIPLE_REGISTERS"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 17,
+                "name": "REPORT_SLAVE_ID"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 22,
+                "name": "MASK_WRITE_REGISTER"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 23,
+                "name": "WRITE_AND_READ_REGISTERS"
+              }
+            ]
+          }
+        },
+        {
+          "name": "PollingIntervalMs",
+          "schema": "integer"
+        },
+        {
+          "name": "StartAddress",
+          "schema": "integer"
+        },
+        {
+          "name": "DataType",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              {
+                "@type": "EnumValue",
+                "enumValue": 1,
+                "name": "MB_int16"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 2,
+                "name": "MB_bcd32"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 3,
+                "name": "MB_logBase2"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 4,
+                "name": "MB_float32"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 5,
+                "name": "MB_float32swap"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 7,
+                "name": "MB_int32"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 11,
+                "name": "MB_uint16"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 12,
+                "name": "MB_bcd16"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 13,
+                "name": "MB_int64"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 15,
+                "name": "MB_uint64"
+              },
+              {
+                "@type": "EnumValue",
+                "enumValue": 16,
+                "name": "MB_double64"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
