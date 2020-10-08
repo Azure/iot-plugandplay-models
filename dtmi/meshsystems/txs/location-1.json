@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:txs:location;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Location"
+  },
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "coordinates",
+      "schema": "point"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Horizontal Dilution of Precision"
+      },
+      "name": "hdop",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": {
+        "en": "GNSS signal acquisition"
+      },
+      "displayName": {
+        "en": "Fix"
+      },
+      "name": "fix",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Course Over Ground"
+      },
+      "name": "cog",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Distance"
+      ],
+      "displayName": {
+        "en": "Speed"
+      },
+      "name": "spkm",
+      "unit": "kilometre",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Num Satellites"
+      },
+      "name": "nsat",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Location Interval"
+      },
+      "name": "LocationInterval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    }
+  ]
+}
