@@ -1,0 +1,210 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:txs:blereader;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "BLE Reader"
+  },
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "description": "Ingress event with Reader, Tag Id, and Proximity",
+      "displayName": {
+        "en": "Ingress"
+      },
+      "name": "Ingress",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "description": "Egress event with Reader, Tag Id, and Proximity",
+      "displayName": {
+        "en": "Egress"
+      },
+      "name": "Egress",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "Tag ID",
+      "displayName": {
+        "en": "Tag ID"
+      },
+      "name": "Tag",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "Proximity figure of merit derived from signal strength",
+      "displayName": {
+        "en": "Proximity"
+      },
+      "name": "Prox",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": {
+        "en": "Battery"
+      },
+      "unit": "volt",
+      "name": "Bt",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "description": {
+        "en": "Reader Index"
+      },
+      "displayName": {
+        "en": "Reader"
+      },
+      "name": "Rdr",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Time to live"
+      },
+      "name": "Ttl",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Proximity count"
+      },
+      "name": "Pxc",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Timestamp"
+      },
+      "name": "Ts",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Wink"
+      },
+      "name": "mWink"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Proximity 'Filter' Mask"
+      },
+      "name": "BleMask",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Proximity 'Compare' Filter"
+      },
+      "name": "BleFlags",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Sensor 'Filter' Mask"
+      },
+      "name": "BsnMask",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Sensor 'Compare' Filter"
+      },
+      "name": "BsnFlags",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Counts required to trigger the in-range proximity event"
+      },
+      "displayName": {
+        "en": "Ingress Debounce"
+      },
+      "name": "IngressDebounce",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Filter RSSI"
+      },
+      "name": "FilterRSSI",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "Report Interval for the beacon advertisers"
+      },
+      "displayName": {
+        "en": "BLE Interval"
+      },
+      "name": "BleReportInterval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Version"
+      },
+      "name": "BleVersion",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "Seconds to wait for out-of-range proximity event"
+      },
+      "displayName": {
+        "en": "Egress Debounce"
+      },
+      "name": "EgressDebounce",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Address"
+      },
+      "name": "BleAddress",
+      "schema": "string"
+    }
+  ]
+}
