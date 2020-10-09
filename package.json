@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azure/device-models.git"
+    "url": "git+https://github.com/azure/iot-plugandplay-models.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azure/device-models/issues"
+    "url": "https://github.com/azure/iot-plugandplay-models/issues"
   },
-  "homepage": "https://github.com/azure/device-models#readme",
+  "homepage": "https://github.com/azure/iot-plugandplay-models#readme",
   "standard": {
     "globals": [
       "test",

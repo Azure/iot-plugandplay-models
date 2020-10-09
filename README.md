@@ -1,13 +1,13 @@
 
-# Azure/device-models repository
+# Azure/iot-plugandplay-models repository
 
 This repository includes [DTDL](https://aka.ms/dtdl) models that are made publicly available on [https://devicemodels.azure.com](https://devicemodels.azure.com). These models can be used to create Azure [IoT Plug and Play](https://aka.ms/iotpnp) solutions.
 
-Related tools, samples, and specs can be found in the [Azure/device-models-tools](https://github.com/Azure/device-models-tools) repo. The current repo only stores DTDL models.
+Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-models-tools](https://github.com/Azure/iot-plugandplay-models-tools) repo. The current repo only stores DTDL models.
 
 ## Submit a model
 
-1. Fork the public GitHub repo: [https://github.com/Azure/device-models](https://github.com/Azure/device-models).
+1. Fork the public GitHub repo: [https://github.com/Azure/iot-plugandplay-models](https://github.com/Azure/iot-plugandplay-models).
 1. Clone the forked repo. Optionally create a new branch to keep your changes isolated from the `main` branch.
 1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#add-models) tool below.
 1. Validate the models locally using the [scripts to validate changes](#validate-files) section.
@@ -71,7 +71,7 @@ You can run the [DTDL Validation Sample](https://github.com/Azure-Samples/DTDL-V
 
 ## Consuming
 
-Any HTTP client can consume the models by just applying the [convention](https://github.com/Azure/device-models-tools/wiki/Resolution-Convention) to translate *DTMI ids* to relative paths:
+Any HTTP client can consume the models by just applying the [convention](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Resolution-Convention) to translate *DTMI ids* to relative paths:
 
 Eg, the interface:
 
@@ -85,7 +85,7 @@ can be retrieved from [here](https://devicemodeltest.azureedge.net/dtmi/azure/de
 https://devicemodeltest.azureedge.net/dtmi/azure/devicemanagement/deviceinformation-1.json
 ```
 
-There are samples for .NET and Node in the [device-models-tools repo](https://github.com/Azure/device-models-tools) with code you can use to acquire models from your custom IoT solution.
+There are samples for .NET and Node in the [device-models-tools repo](https://github.com/Azure/iot-plugandplay-models-tools) with code you can use to acquire models from your custom IoT solution.
 
 ## Contributing
 
