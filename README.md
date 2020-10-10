@@ -85,7 +85,7 @@ can be retrieved from [here](https://devicemodels.azure.com/dtmi/azure/deviceman
 https://devicemodels.azure.com/dtmi/azure/devicemanagement/deviceinformation-1.json
 ```
 
-There are samples for .NET and Node in the [device-models-tools repo](https://github.com/Azure/iot-plugandplay-models-tools) with code you can use to acquire models from your custom IoT solution.
+There are samples for .NET and Node in the [Azure/iot-plugandplay-models-tools](https://github.com/Azure/iot-plugandplay-models-tools) with code you can use to acquire models from your custom IoT solution.
 
 ## Contributing
 
