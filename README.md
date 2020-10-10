@@ -79,10 +79,10 @@ Eg, the interface:
 dtmi:azure:DeviceManagement:DeviceInformation;1
 ```
 
-can be retrieved from [here](https://devicemodeltest.azureedge.net/dtmi/azure/devicemanagement/deviceinformation-1.json):
+can be retrieved from [here](https://devicemodels.azure.com/dtmi/azure/devicemanagement/deviceinformation-1.json):
 
 ```cmd
-https://devicemodeltest.azureedge.net/dtmi/azure/devicemanagement/deviceinformation-1.json
+https://devicemodels.azure.com/dtmi/azure/devicemanagement/deviceinformation-1.json
 ```
 
 There are samples for .NET and Node in the [device-models-tools repo](https://github.com/Azure/iot-plugandplay-models-tools) with code you can use to acquire models from your custom IoT solution.
