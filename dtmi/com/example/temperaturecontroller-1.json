@@ -10,6 +10,7 @@
         "Telemetry",
         "DataSize"
       ],
+      "@id": "dtmi:com:bad;1",
       "name": "workingSet",
       "displayName": "Working Set",
       "description": "Current working set of the device memory in KiB.",
@@ -51,7 +52,7 @@
     },
     {
       "@type": "Component",
-      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;11",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
       "name": "deviceInformation",
       "displayName": "Device Information interface",
       "description": "Optional interface with basic device hardware information."
