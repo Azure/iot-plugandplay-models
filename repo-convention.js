@@ -6,22 +6,14 @@ const jsonata = require('jsonata')
  * @description Validates DTMI with RegEx from https://github.com/Azure/digital-twin-model-identifier#validation-regular-expressions
  * @param {string} dtmi
  */
-const isDtmi = dtmi => {
-  return RegExp('^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9][0-9]{0,8}$').test(dtmi)
-}
+const isDtmi = dtmi => RegExp('^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9][0-9]{0,8}$').test(dtmi)
 
 /**
  * @description Converts DTMI to /dtmi/com/example/device-1.json path.
  * @param {string} dtmi
  * @returns {string}
  */
-const dtmiToPath = dtmi => {
-  if (!isDtmi(dtmi)) {
-    return null
-  }
-  // dtmi:com:example:Thermostat;1 -> dtmi/com/example/thermostat-1.json
-  return `/${dtmi.toLowerCase().replace(/:/g, '/').replace(';', '-')}.json`
-}
+const dtmiToPath = dtmi => isDtmi(dtmi) ? `/${dtmi.toLowerCase().replace(/:/g, '/').replace(';', '-')}.json` : null
 
 /**
  * @description Returns external IDs in `extend` and `component` elements
@@ -95,15 +87,19 @@ const checkIds = dtdlJson => {
     for (let i = 0; i < ids.length; i++) {
       const id = ids[i]
       console.log('found: ' + id)
+      if (!isDtmi(id)) {
+        console.log(`ERROR: Document id ${id} is not a valid DTMI.`)
+        return false
+      }
       if (!id.split(';')[0].startsWith(rootId.split(';')[0])) {
-        console.log(`ERROR: Document id ${id} does not satisfy the root id ${rootId}`)
+        console.log(`ERROR: Document id ${id} does not satisfy the root id ${rootId}.`)
         return false
       }
     }
-    console.log(`checkIds: validated ${ids.length} ids`)
+    console.log(`checkIds: Validated: ${ids.length} ids are under the root DTMI.`)
     return true
   } else {
-    console.log('checkIds: ids not found')
+    console.log('checkIds: Validated: Global ids not found.')
     return true
   }
 }
@@ -117,8 +113,8 @@ const checkDtmiPathFromFile = file => {
   const model = JSON.parse(fs.readFileSync(file, 'utf-8'))
   const id = model['@id']
   if (id) {
-    const expectedPath = path.normalize(dtmiToPath(model['@id']))
-    if (path.normalize('/' + file) !== expectedPath) {
+    const expectedPath = path.join(process.cwd(), dtmiToPath(model['@id']))
+    if (path.resolve(file) !== expectedPath) {
       console.log(`ERROR: in current path ${path.normalize(file)}, expecting ${expectedPath}.`)
       return false
     } else {

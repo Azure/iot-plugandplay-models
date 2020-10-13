@@ -12,7 +12,7 @@ Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-mod
 1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#add-models) tool below.
 1. Validate the models locally using the [scripts to validate changes](#validate-files) section.
 1. Commit the changes locally and push to your fork.
-1. From your fork, create a PR that targets the `main` branch.
+1. From your fork, create a PR that targets the `main` branch. See [Creating an issue or pull request](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request) docs.
 1. Review the [PR requirements](pr-reqs.md)
 
 The PR triggers a series of GitHub actions that will validate the new submitted interfaces, and make sure your PR satisfies all the checks.
@@ -34,7 +34,7 @@ npm install
 If you have your model already stored in json files, you can use the add-model script to add those to the `dtmi/` folder with the right file name.
 
 ```cmd
-npm run add-model <full-path-to-dtd.json>
+npm run add-model <path-to-dtdl.json>
 ```
 
 Watch the console output for any error messages.
@@ -47,6 +47,8 @@ Checks the folder and file names are expected from the root `@id`
 npm run validate-files <list of files to validate>
 ```
 
+> Note you can validate more that one file by providing a list of files separated by a white space
+
 ### validate-ids
 
 Checks if all `@id` are nested under the root id.
@@ -55,6 +57,8 @@ Checks if all `@id` are nested under the root id.
 npm run validate-ids <list of files to validate>
 ```
 
+> Note you can validate more that one file by providing a list of files separated by a white space
+
 ### validate-deps
 
 Checks if all the external dependencies in `extends` and `@Component` exists in the `dtmi/` folder.
@@ -62,6 +66,8 @@ Checks if all the external dependencies in `extends` and `@Component` exists in 
 ```cmd
 npm run validate-deps <list of files to validate>
 ```
+
+> Note you can validate more that one file by providing a list of files separated by a white space
 
 ### validate-models
 
