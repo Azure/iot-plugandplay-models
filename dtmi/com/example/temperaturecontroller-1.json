@@ -51,7 +51,7 @@
     },
     {
       "@type": "Component",
-      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;11",
       "name": "deviceInformation",
       "displayName": "Device Information interface",
       "description": "Optional interface with basic device hardware information."
