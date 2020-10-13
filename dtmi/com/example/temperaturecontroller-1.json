@@ -10,7 +10,6 @@
         "Telemetry",
         "DataSize"
       ],
-      "@id": "dtmi:com:bad;1",
       "name": "workingSet",
       "displayName": "Working Set",
       "description": "Current working set of the device memory in KiB.",
