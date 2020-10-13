@@ -1,6 +1,10 @@
 const rc = require('../repo-convention.js')
 const td = require('./test-models')
 
+test('is valid dtmi', () => {
+  expect(rc.isDtmi('dtmi:with::twosemicolons;1')).toBe(false)
+})
+
 test('invalid dtmi', () => {
   expect(rc.dtmiToPath('')).toBe(null)
   expect(rc.dtmiToPath('notadtmi')).toBe(null)
@@ -26,6 +30,6 @@ test('check ids', () => {
 })
 
 test('checkDtmiPathFromFile', () => {
-  expect(rc.checkDtmiPathFromFile('../dtmi/test/val/invalidids-1.json')).toBe(true)
-  expect(rc.checkDtmiPathFromFile('badpath.json')).toBe(false)
+  expect(rc.checkDtmiPathFromFile('dtmi/azure/devicemanagement/deviceinformation-1.json')).toBe(true)
+  expect(rc.checkDtmiPathFromFile('test/badpath.json')).toBe(false)
 })
