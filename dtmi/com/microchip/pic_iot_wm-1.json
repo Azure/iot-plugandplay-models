@@ -1,0 +1,342 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:Microchip:PIC_IoT_WM;1",
+  "@type": "Interface",
+  "displayName": "PIC-IoT WM",
+  "description": "Reports temperature, light intensity, and states of the 2 buttons & 4 LEDs.  Provides ability to turn on/off any of the 4 LEDs.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "description": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor",
+      "schema": "integer",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Illuminance"
+      ],
+      "name": "light",
+      "displayName": {
+        "en": "Brightness from light sensor"
+      },
+      "description": "Brightness in illuminance from Vishay TEMT6000X01 ambient light sensor",
+      "schema": "integer",
+      "unit": "lux"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "button_event",
+      "displayName": {
+        "en": "SW0/SW1 button push event"
+      },
+      "description": "Event triggered when button is pressed",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "button_name",
+            "schema": "string"
+          },
+          {
+            "name": "press_count",
+            "schema": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "name": "led_blue",
+      "displayName": {
+        "en": "Blue LED state"
+      },
+      "description": "Returns current state of Blue LED. If True, Blue LED is on and WiFi AP is connected.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "On",
+            "displayName": {
+              "en": "Turn On"
+            },
+            "enumValue": 1,
+            "description": "Blue LED is turned on.",
+            "comment": "Blue LED is On state."
+          },
+          {
+            "name": "Off",
+            "displayName": {
+              "en": "Turn Off"
+            },
+            "enumValue": 2,
+            "description": "Blue LED is turned Off.",
+            "comment": "Blue LED is Off state."
+          },
+          {
+            "name": "Blink",
+            "displayName": {
+              "en": "Blink Blue LED"
+            },
+            "enumValue": 3,
+            "description": "Blue LED is blinking.",
+            "comment": "Blue LED is blinking."
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "name": "led_green",
+      "displayName": {
+        "en": "Green LED state"
+      },
+      "description": "Returns current state of Green LED. If True, Green LED is on and connected to cloud.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "On",
+            "displayName": {
+              "en": "Turn On"
+            },
+            "enumValue": 1,
+            "description": "Green LED is turned on.",
+            "comment": "Green LED is On state."
+          },
+          {
+            "name": "Off",
+            "displayName": {
+              "en": "Turn Off"
+            },
+            "enumValue": 2,
+            "description": "Green LED is turned Off.",
+            "comment": "Green LED is Off state."
+          },
+          {
+            "name": "Blink",
+            "displayName": {
+              "en": "Blink Green LED"
+            },
+            "enumValue": 3,
+            "description": "Green LED is blinking.",
+            "comment": "Green LED is blinking."
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "name": "led_yellow",
+      "displayName": {
+        "en": "Yellow LED state"
+      },
+      "description": "Turn On/Off Yellow LED",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "On",
+            "displayName": {
+              "en": "Turn On"
+            },
+            "enumValue": 1,
+            "description": "Yellow LED is turned on.",
+            "comment": "Yellow LED is On state."
+          },
+          {
+            "name": "Off",
+            "displayName": {
+              "en": "Turn Off"
+            },
+            "enumValue": 2,
+            "description": "Yellow LED is turned Off.",
+            "comment": "Yellow LED is Off state."
+          },
+          {
+            "name": "Blink",
+            "displayName": {
+              "en": "Blink Yellow LED"
+            },
+            "enumValue": 3,
+            "description": "Yellow LED is blinking.",
+            "comment": "Yellow LED is blinking."
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "name": "led_red",
+      "displayName": {
+        "en": "Red LED state"
+      },
+      "description": "Current state of Red LED, with string enum data type",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "displayName": {
+              "en": "On"
+            },
+            "enumValue": "On",
+            "description": "Red LED is turned on.",
+            "comment": "Red LED is On state."
+          },
+          {
+            "name": "Off",
+            "displayName": {
+              "en": "Off"
+            },
+            "enumValue": "Off",
+            "description": "Red LED is turned Off.",
+            "comment": "Red LED is Off state."
+          },
+          {
+            "name": "Blink",
+            "displayName": {
+              "en": "Blink"
+            },
+            "enumValue": "Blink",
+            "description": "Red LED is blinking.",
+            "comment": "Red LED is blinking."
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "name": "telemetryInterval",
+      "schema": "integer",
+      "unit": "second",
+      "displayName": {
+        "en": "Set Telemetry Interval"
+      },
+      "description": "Sets interval to send telemetry in second",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxTempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": {
+        "en": "Max temperature since last reboot"
+      },
+      "description": "Returns the max temperature since last device reboot"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": {
+        "en": "Reboot"
+      },
+      "description": "Reboot PiC IoT with specified delay.  e.g. PT5S for 5 seconds.",
+      "request": {
+        "name": "delay",
+        "schema": "duration",
+        "displayName": "Reboot Delay",
+        "description": "Number of seconds to delay reboot. e.g. PT5S for 5 seconds."
+      },
+      "response": {
+        "name": "response",
+        "displayName": "Response for command",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "status",
+              "displayName": "Message from reboot handler.",
+              "schema": "string"
+            },
+            {
+              "name": "delay",
+              "displayName": "Number of seconds to delay the reboot.",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "getMaxMinReport",
+      "displayName": {
+        "en": "Get Max-Min report"
+      },
+      "description": "This command returns the max, min and average temperature from the specified time to the current time",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "tempReport",
+        "displayName": "Temperature Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxTemp",
+              "displayName": "Max temperature",
+              "schema": "double"
+            },
+            {
+              "name": "minTemp",
+              "displayName": "Min temperature",
+              "schema": "double"
+            },
+            {
+              "name": "avgTemp",
+              "displayName": "Average Temperature",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
