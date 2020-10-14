@@ -1,0 +1,71 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Allegion:LockConfig;1",
+  "@type": "Interface",
+  "displayName": "LockConfig",
+  "contents": [
+    {
+      "@id": "dtmi:Allegion:LockConfig:Name;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Name"
+      },
+      "name": "Name",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:LockSerialNumber;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "LockSerialNumber"
+      },
+      "name": "LockSerialNumber",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:MainSerialNumber;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "MainSerialNumber"
+      },
+      "name": "MainSerialNumber",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:HardwareVersion;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "HardwareVersion"
+      },
+      "name": "HardwareVersion",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:RelockDelay;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "RelockDelay"
+      },
+      "name": "RelockDelay",
+      "schema": "time"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:DoorPropDelay;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "DoorPropDelay"
+      },
+      "name": "DoorPropDelay",
+      "schema": "time"
+    },
+    {
+      "@id": "dtmi:Allegion:LockConfig:AdaDelay;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "AdaDelay"
+      },
+      "name": "AdaDelay",
+      "schema": "time"
+    }
+  ]
+}

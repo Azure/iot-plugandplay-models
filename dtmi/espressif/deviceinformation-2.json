@@ -1,0 +1,64 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:DeviceInformation;2",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "schema": "string",
+      "description": "Company name of the device manufacturer is Espressif."
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "displayName": "Device model",
+      "schema": "string",
+      "description": "Device model name on the device is Espressif."
+    },
+    {
+      "@type": "Property",
+      "name": "swVersion",
+      "displayName": "Software version",
+      "schema": "string",
+      "description": "Version of the software on the device is 1.0.0."
+    },
+    {
+      "@type": "Property",
+      "name": "osName",
+      "displayName": "Operating system name",
+      "schema": "string",
+      "description": "Name of the operating system on the device is FreeRTOS."
+    },
+    {
+      "@type": "Property",
+      "name": "processorArchitecture",
+      "displayName": "Processor architecture",
+      "schema": "string",
+      "description": "Architecture of the processor on the device is Xtensa."
+    },
+    {
+      "@type": "Property",
+      "name": "processorManufacturer",
+      "displayName": "Processor manufacturer",
+      "schema": "string",
+      "description": "Name of the manufacturer of the processor on the device is Xtensa."
+    },
+    {
+      "@type": "Property",
+      "name": "totalStorage",
+      "displayName": "Total storage",
+      "schema": "double",
+      "description": "Total available storage on the device."
+    },
+    {
+      "@type": "Property",
+      "name": "totalMemory",
+      "displayName": "Total memory",
+      "schema": "double",
+      "description": "Total available memory on the device."
+    }
+  ]
+}

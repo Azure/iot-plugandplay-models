@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:Advantech:UTC_520;1",
+  "@type": "Interface",
+  "displayName": "UTC-520",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Device_Detailed_Information",
+      "schema": "dtmi:Advantech:DeviceDetailedInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Sensors_Information",
+      "schema": "dtmi:Advantech:SensorsInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInfo",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

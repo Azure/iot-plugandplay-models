@@ -1,0 +1,208 @@
+{
+  "@id": "dtmi:Advantech:SensorsInformation;2",
+  "@type": "Interface",
+  "displayName": "Sensor Information",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage Vcore",
+      "name": "vvcore",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage Vcore2",
+      "name": "vvcore2",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 2.5V",
+      "name": "v25v",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 3.3V",
+      "name": "v33v",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 5V",
+      "name": "v5v",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 12V",
+      "name": "v12v",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 5V Standby",
+      "name": "v5vstandby",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 3V Standby",
+      "name": "v3vstandby",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage CMOS Battery",
+      "name": "vcmosbattery",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage -5v",
+      "name": "v5nv",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage -12v",
+      "name": "v12nv",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "DIMM voltage",
+      "name": "vvtt",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": "Voltage 24v",
+      "name": "v24v",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature CPU",
+      "name": "tcpu",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature Chipset",
+      "name": "tchipset",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature System",
+      "name": "tsystem",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature CPU2",
+      "name": "tcpu2",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "displayName": "Fan CPU",
+      "name": "fcpu",
+      "schema": "double",
+      "unit": "revolutionPerMinute"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "displayName": "Fan System",
+      "name": "fsystem",
+      "schema": "double",
+      "unit": "revolutionPerMinute"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "displayName": "Fan CPU2",
+      "name": "fcpu2",
+      "schema": "double",
+      "unit": "revolutionPerMinute"
+    }
+  ]
+}

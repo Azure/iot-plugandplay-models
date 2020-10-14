@@ -1,0 +1,105 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:via:Driverecorder;2",
+  "@type": "Interface",
+  "displayName": "Driverecorder",
+  "description": "Reports current GPS location and system state.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "schema": "string",
+      "displayName": "Manufacturer",
+      "description": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "displayName": "Device model",
+      "schema": "string",
+      "description": "Device model name or ID. Ex. Surface Book 2."
+    },
+    {
+      "@type": "Property",
+      "name": "swVersion",
+      "displayName": "Software version",
+      "schema": "string",
+      "description": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
+    },
+    {
+      "@type": "Property",
+      "name": "osName",
+      "displayName": "Operating system name",
+      "schema": "string",
+      "description": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
+    },
+    {
+      "@type": "Property",
+      "name": "processorArchitecture",
+      "displayName": "Processor architecture",
+      "schema": "string",
+      "description": "Architecture of the processor on the device. Ex. x64 or ARM."
+    },
+    {
+      "@type": "Property",
+      "name": "processorManufacturer",
+      "displayName": "Processor manufacturer",
+      "schema": "string",
+      "description": "Name of the manufacturer of the processor on the device. Ex. Intel."
+    },
+    {
+      "@type": "Property",
+      "name": "totalStorage",
+      "displayName": "Total storage",
+      "schema": "long",
+      "description": "Total available storage on the device in Magebytes. Ex. 1024 Magebytes."
+    },
+    {
+      "@type": "Property",
+      "name": "totalMemory",
+      "displayName": "Total memory",
+      "schema": "long",
+      "description": "Total available memory on the device in Magebytes. Ex. 256 Magebytes."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CPUUsage",
+      "displayName": "D700 CPUUsage, unit : Percentage(%)",
+      "description": "CPU current usage, unit : Percentage(%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MemoryRemaining",
+      "displayName": "D700 MemoryRemaining,unit : Kilobytes(KB)",
+      "description": "Memory current remaining,unit : Kilobytes(KB)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SysAvailSpace",
+      "displayName": "D700 SysAvailSpace,unit : Kilobytes(KB)",
+      "description": "Device current free space,unit : Kilobytes(KB)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GPSLocation",
+      "displayName": "D700 GPSLocation,unit : degrees",
+      "description": "Current GPS location,unit : degrees",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "targetReboot",
+      "displayName": "Target Reboot",
+      "description": "his command can reboot target device after input countdown number of seconds",
+      "request": {
+        "name": "countdown",
+        "displayName": "Countdown",
+        "description": "countdown number of seconds to reboot device",
+        "schema": "string"
+      }
+    }
+  ]
+}

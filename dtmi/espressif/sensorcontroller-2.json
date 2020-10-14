@@ -1,0 +1,116 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorController;2",
+  "@type": "Interface",
+  "displayName": "Sensor Controller",
+  "description": "Device with multiple sensors and remote reboot.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "name": "workingSet",
+      "displayName": "Working Set",
+      "description": "Current working set of the device memory in KiB.",
+      "schema": "double",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device.",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "SensorAltitude",
+      "displayName": "SensorAltitude",
+      "description": "Current Altitude on the device.",
+      "schema": "dtmi:Espressif:SensorAltitude;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorHumid",
+      "displayName": "SensorHumid",
+      "description": "Current Humidity on the device.",
+      "schema": "dtmi:Espressif:SensorHumid;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorLight",
+      "displayName": "SensorLight",
+      "description": "Current AmbientLight on the device.",
+      "schema": "dtmi:Espressif:SensorLight;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorMagnetX",
+      "displayName": "SensorMagnetX",
+      "description": "Current MagnetometerX on the device.",
+      "schema": "dtmi:Espressif:SensorMagnetX;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorMagnetY",
+      "displayName": "SensorMagnetY",
+      "description": " Current MagnetometerY on the device.",
+      "schema": "dtmi:Espressif:SensorMagnetY;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorMagnetZ",
+      "displayName": "SensorMagnetZ",
+      "description": "Current MagnetometerZ on the device.",
+      "schema": "dtmi:Espressif:SensorMagnetZ;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorPitch",
+      "displayName": "SensorPitch",
+      "description": "Current Pitch on the device.",
+      "schema": "dtmi:Espressif:SensorPitch;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorPressure",
+      "displayName": "SensorPressure",
+      "description": "Current Pressure on the device.",
+      "schema": "dtmi:Espressif:SensorPressure;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorRoll",
+      "displayName": "SensorRoll",
+      "description": "Current Roll on the device.",
+      "schema": "dtmi:Espressif:SensorRoll;2"
+    },
+    {
+      "@type": "Component",
+      "name": "SensorTemp",
+      "displayName": "SensorTemp",
+      "description": "Current Temperature on the device.",
+      "schema": "dtmi:Espressif:SensorTemp;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:Espressif:DeviceInformation;2"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Gyroscope;2",
+  "@type": "Interface",
+  "displayName": "Gyroscope",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeAxisX",
+      "displayName": "Gyroscope X Axis",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeAxisY",
+      "displayName": "Gyroscope Y Axis",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeAxisZ",
+      "displayName": "Gyroscope Z Axis",
+      "schema": "double"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorPressure;2",
+  "@type": "Interface",
+  "displayName": "SensorPressure",
+  "description": "Current pressure on the device is FBM320",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "SensorPressure",
+      "displayName": "SensorPressure",
+      "schema": "double",
+      "unit": "kilopascal"
+    }
+  ]
+}

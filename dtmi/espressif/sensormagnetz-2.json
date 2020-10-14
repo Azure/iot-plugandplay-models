@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorMagnetZ;2",
+  "@type": "Interface",
+  "displayName": "SensorMagnetZ",
+  "description": "Current MagnetZ on the device is MPU6050",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "MagneticInduction"
+      ],
+      "name": "SensorMagnetZ",
+      "displayName": "SensorMagnetZ",
+      "schema": "double",
+      "unit": "tesla"
+    }
+  ]
+}

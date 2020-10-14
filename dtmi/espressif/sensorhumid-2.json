@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorHumid;2",
+  "@type": "Interface",
+  "displayName": "SensorHumid",
+  "description": "Current SensorHumid on the device is HTS221.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "SensorHumid",
+      "displayName": "SensorHumid",
+      "schema": "double",
+      "unit": "percent"
+    }
+  ]
+}

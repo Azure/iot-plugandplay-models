@@ -1,0 +1,133 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Brainium:SmartEdgeAgile;1",
+  "@type": "Interface",
+  "displayName": "SmartEdgeAgile",
+  "description": "Multi sensor IoT device",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "normalAcceleration",
+      "displayName": "Normal Acceleration",
+      "description": "Normal acceleration module in m/c^2.",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "worldAcceleration",
+      "displayName": "World Acceleration",
+      "description": "World acceleration module in m/c^2.",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": "Atmosphere pressure",
+      "description": "Atmosphere pressure in Pa.",
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "angularVelocity",
+      "displayName": "Angular velocity",
+      "description": "Angular velocity in deg/s.",
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Illuminance"
+      ],
+      "name": "infraredIlluminance",
+      "displayName": "Infrared Illuminance",
+      "description": "Infrared Illuminance in lx.",
+      "schema": "double",
+      "unit": "lux"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Illuminance"
+      ],
+      "name": "visibleIlluminance",
+      "displayName": "Visible Illuminance",
+      "description": "Visible Illuminance in lx.",
+      "schema": "double",
+      "unit": "lux"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "MagneticInduction"
+      ],
+      "name": "magneticInduction",
+      "displayName": "Magnetic induction",
+      "description": "Magnetic induction in T.",
+      "schema": "double",
+      "unit": "tesla"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": "Humidity",
+      "description": "Humidity in %.",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Distance"
+      ],
+      "name": "distance",
+      "displayName": "Distance",
+      "description": "Distance in centimetre.",
+      "schema": "double",
+      "unit": "centimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": "Temperature",
+      "description": "Temperature in Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Command",
+      "name": "tracking",
+      "request": {
+        "name": "Tracking",
+        "displayName": "Tracking",
+        "description": "Start or stop tracking.",
+        "schema": "boolean"
+      },
+      "response": {
+        "name": "result",
+        "schema": "integer"
+      }
+    }
+  ]
+}
