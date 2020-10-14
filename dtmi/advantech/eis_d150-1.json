@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:Advantech:EIS_D150;1",
+  "@type": "Interface",
+  "displayName": "EIS-D150",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Device_Detailed_Information",
+      "schema": "dtmi:Advantech:DeviceDetailedInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Sensors_Information",
+      "schema": "dtmi:Advantech:SensorsInformation;2"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInfo",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "GPIO",
+      "schema": "dtmi:Advantech:GPIO;1"
+    },
+    {
+      "@type": "Component",
+      "name": "VGA",
+      "schema": "dtmi:Advantech:VGA;1"
+    },
+    {
+      "@type": "Component",
+      "name": "SDRAM",
+      "schema": "dtmi:Advantech:SDRAM;1"
+    }
+  ]
+}

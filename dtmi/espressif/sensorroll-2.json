@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorRoll;2",
+  "@type": "Interface",
+  "displayName": "SensorRoll",
+  "description": "Current Roll on the device",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "SensorRoll",
+      "displayName": "SensorRoll",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    }
+  ]
+}

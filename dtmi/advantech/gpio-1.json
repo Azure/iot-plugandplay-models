@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:Advantech:GPIO;1",
+  "@type": "Interface",
+  "displayName": "GPIO",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "SET_PIN",
+      "request": {
+        "name": "PIN",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "PIN",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_PIN",
+      "response": {
+        "name": "PIN",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_VALUE",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_VALUE",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_DIRECTION",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_DIRECTION",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    }
+  ]
+}

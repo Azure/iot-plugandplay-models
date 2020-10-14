@@ -1,0 +1,18 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:deviceosconfiguration;1",
+  "@type": "Interface",
+  "displayName": "Device OS Configuration",
+  "contents": [
+    {
+      "schema": "dtmi:osconfig:settings;1",
+      "@type": "Component",
+      "name": "Settings"
+    },
+    {
+      "schema": "dtmi:osconfig:commandrunner;1",
+      "@type": "Component",
+      "name": "CommandRunner"
+    }
+  ]
+}

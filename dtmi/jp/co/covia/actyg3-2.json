@@ -1,0 +1,39 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:ActyG3;2",
+  "@type": "Interface",
+  "displayName": "Acty-G3",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Accelerometer",
+      "displayName": "Accelerometer",
+      "schema": "dtmi:jp:co:covia:Accelerometer;2"
+    },
+    {
+      "@type": "Component",
+      "name": "Gyroscope",
+      "displayName": "Gyroscope",
+      "schema": "dtmi:jp:co:covia:Gyroscope;2"
+    },
+    {
+      "@type": "Component",
+      "name": "Location",
+      "displayName": "Location",
+      "schema": "dtmi:jp:co:covia:Location;2"
+    },
+    {
+      "@type": "Component",
+      "name": "RemoteControl",
+      "displayName": "RemoteControl",
+      "schema": "dtmi:jp:co:covia:RemoteControl;2"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

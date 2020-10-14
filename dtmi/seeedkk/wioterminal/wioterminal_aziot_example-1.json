@@ -1,0 +1,36 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Seeed Wio Terminal",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "accelX",
+      "displayName": "Acceleration X",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "accelY",
+      "displayName": "Acceleration Y",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "accelZ",
+      "displayName": "Acceleration Z",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "ringBuzzer",
+      "displayName": "Ring buzzer",
+      "request": {
+        "name": "duration",
+        "displayName": "Duration",
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "@id": "dtmi:Advantech:VGA;1",
+  "@type": "Interface",
+  "displayName": "VGA",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "SET_ID",
+      "request": {
+        "name": "ID",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "ID",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_ID",
+      "response": {
+        "name": "ID",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_ENABLE",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_ENABLE",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_BRIGHTNESS",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_BRIGHTNESS",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_LEVEL",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_LEVEL",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_POLARITY",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_POLARITY",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_FREQUENCY",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_FREQUENCY",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    }
+  ]
+}

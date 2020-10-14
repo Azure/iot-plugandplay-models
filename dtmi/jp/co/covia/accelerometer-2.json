@@ -1,0 +1,26 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Accelerometer;2",
+  "@type": "Interface",
+  "displayName": "Accelerometer",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AccAxisX",
+      "displayName": "ACC X Axis",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AccAxisY",
+      "displayName": "ACC Y Axis",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AccAxisZ",
+      "displayName": "ACC Z Axis",
+      "schema": "double"
+    }
+  ]
+}

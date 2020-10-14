@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorLight;2",
+  "@type": "Interface",
+  "displayName": "SensorLight",
+  "description": "Current pressure on the device is BH1750FVI",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Illuminance"
+      ],
+      "name": "SensorLight",
+      "displayName": "SensorLight",
+      "schema": "double",
+      "unit": "lux"
+    }
+  ]
+}

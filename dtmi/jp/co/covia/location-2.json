@@ -1,0 +1,20 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Location;2",
+  "@type": "Interface",
+  "displayName": "Location",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Latitude",
+      "displayName": "Latitude",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Longitude",
+      "displayName": "Longitude",
+      "schema": "double"
+    }
+  ]
+}

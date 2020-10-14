@@ -1,0 +1,128 @@
+{
+  "@id": "dtmi:Advantech:SensorsInformation;1",
+  "@type": "Interface",
+  "displayName": "Sensor Information",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage Vcore",
+      "name": "vvcore",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage Vcore2",
+      "name": "vvcore2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 2.5V",
+      "name": "v25v",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 3.3V",
+      "name": "v33v",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 5V",
+      "name": "v5v",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 12V",
+      "name": "v12v",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 5V Standby",
+      "name": "v5vstandby",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 3V Standby",
+      "name": "v3vstandby",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage CMOS Battery",
+      "name": "vcmosbattery",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage -5v",
+      "name": "v5nv",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage -12v",
+      "name": "v12nv",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "DIMM voltage",
+      "name": "vvtt",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Voltage 24v",
+      "name": "v24v",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Temperature CPU",
+      "name": "tcpu",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Temperature Chipset",
+      "name": "tchipset",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Temperature System",
+      "name": "tsystem",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Temperature CPU2",
+      "name": "tcpu2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Fan CPU",
+      "name": "fcpu",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Fan System",
+      "name": "fsystem",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Fan CPU2",
+      "name": "fcpu2",
+      "schema": "double"
+    }
+  ]
+}

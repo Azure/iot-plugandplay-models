@@ -1,0 +1,14 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:RemoteControl;1",
+  "@type": "Interface",
+  "displayName": "RemoteControl",
+  "description": "",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot"
+    }
+  ]
+}

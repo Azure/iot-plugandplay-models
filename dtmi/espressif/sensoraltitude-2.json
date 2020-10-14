@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorAltitude;2",
+  "@type": "Interface",
+  "displayName": "SensorAltitude",
+  "description": "Current altitude on the device",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "SensorAltitude",
+      "displayName": "SensorAltitude",
+      "schema": "double",
+      "unit": "metre"
+    }
+  ]
+}

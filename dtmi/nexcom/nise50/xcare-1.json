@@ -1,0 +1,79 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Nexcom:Nise50:Xcare;1",
+  "@type": "Interface",
+  "displayName": "Xcare for Nise50",
+  "description": "Reports Nise50 about system information and provides desired system control.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "cpuTemperature",
+      "displayName": "CPU Temperature",
+      "description": "CPU Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "sysTemperature",
+      "displayName": "SYS Temperature",
+      "description": "SYS Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Property",
+      "name": "modelname",
+      "displayName": "Model Name",
+      "description": "The Model Name of Board",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "GPIO",
+      "displayName": "GPIO",
+      "description": "The Board GPIO",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Property",
+        "DataSize"
+      ],
+      "name": "workingSet",
+      "displayName": "Working Set",
+      "description": "Current working set of the device memory in KiB.",
+      "schema": "double",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": [
+        "Property",
+        "GPIO"
+      ],
+      "name": "targetGPIO",
+      "schema": "integer",
+      "displayName": "Target GPIO",
+      "description": "Allows to remotely specify the desired target GPIO.",
+      "writable": true
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    }
+  ]
+}

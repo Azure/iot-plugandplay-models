@@ -1,0 +1,132 @@
+{
+  "@id": "dtmi:Advantech:SDRAM;1",
+  "@type": "Interface",
+  "displayName": "SDRAM",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "GET_PARTNUMBER",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_MEMORYTYPE",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_MEMORYSPEED",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_MODULETYPE",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_MODULESIZE",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_WEEKYEAR",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_RANK",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_BANK",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_VOLTAGE",
+      "response": {
+        "name": "VALUE",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_TEMPRATURE",
+      "response": {
+        "name": "VALUE",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_MODULEMANUFACTURE",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_DRAMMANUFACTURE",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_WRITEPROTECTION",
+      "response": {
+        "name": "VALUE",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "SET_SOCKET",
+      "request": {
+        "name": "VALUE",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GET_SOCKET",
+      "response": {
+        "name": "VALUE",
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Espressif:SensorPitch;2",
+  "@type": "Interface",
+  "displayName": "SensorPitch",
+  "description": "Current pitch on the device",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "SensorPitch",
+      "displayName": "SensorPitch",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    }
+  ]
+}
