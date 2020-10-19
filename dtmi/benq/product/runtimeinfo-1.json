@@ -1,0 +1,55 @@
+{
+  "@id": "dtmi:benq:product:runtimeInfo;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "BenQ runtime information"
+  },
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "cpuUsage",
+      "displayName": {
+        "en": "CPU Usage"
+      },
+      "schema": "double",
+      "description": "Current CPU loading in %."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "currentStorage",
+      "displayName": {
+        "en": "Current storage"
+      },
+      "schema": "long",
+      "description": "Current available HDD storage size in megabytes."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "currentMemory",
+      "displayName": {
+        "en": "Current memory"
+      },
+      "schema": "long",
+      "description": "Current available memory storage size in megabytes."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "networkTX",
+      "displayName": {
+        "en": "Network (TX)"
+      },
+      "schema": "double",
+      "description": "Current network transferring rate in Kbps."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "networkRX",
+      "displayName": {
+        "en": "Network (RX)"
+      },
+      "schema": "double",
+      "description": "Current network recieving rate in Kbps."
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
