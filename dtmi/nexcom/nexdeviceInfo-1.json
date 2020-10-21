@@ -1,9 +1,8 @@
 {
-  "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:Nexcom:IPPC2150P:Xcare;1",
+  "@id": "dtmi:nexcom:nexDeviceInfo;1",
   "@type": "Interface",
-  "displayName": "Xcare for IPPC2150P",
-  "description": "Reports IPPC2150P about system information and provides desired system control.",
+  "displayName": "Nexcom Xcare Device Information",
+  "@context": "dtmi:dtdl:context;2",
   "contents": [
     {
       "@type": [
