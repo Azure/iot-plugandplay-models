@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi/com/Jetway/HBFBU691_3455_B-1.json",
+  "@id": "dtmi:com:Jetway:HBFBU691_3455_B;1",
   "@type": "Interface",
   "displayName": "HBFBU691-3455-B",
   "description": "Reports current temperature and provides desired temperature control.",
@@ -86,3 +86,4 @@
       }
     }
   ]
+}
