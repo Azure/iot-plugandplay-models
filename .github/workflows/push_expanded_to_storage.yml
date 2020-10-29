@@ -30,6 +30,9 @@ jobs:
         uses: digimaun/get-changed-files@v2
 
       - name: Expand models
+        env:
+          Logging__LogLevel__Default: None
+
         run: |
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then

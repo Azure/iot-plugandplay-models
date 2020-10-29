@@ -28,7 +28,10 @@ jobs:
       - id: files
         uses: digimaun/get-changed-files@v2
       
-      - name: Parse Models
+      - name: Validate Models
+        env:
+          Logging__LogLevel__Default: None
+          
         run: |
           for f in  ${{ steps.files.outputs.added_modified }};
           do
