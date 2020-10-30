@@ -1,0 +1,130 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:com:example:dnd:Thermostat;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "description": {
+          "en": "Temperature in degrees Celsius."
+        },
+        "displayName": {
+          "en": "Temperature"
+        },
+        "name": "temperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "description": {
+          "en": "Allows to remotely specify the desired target temperature."
+        },
+        "displayName": {
+          "en": "Target Temperature"
+        },
+        "name": "targetTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "description": {
+          "en": "Returns the max temperature since last device reboot."
+        },
+        "displayName": {
+          "en": "Max temperature since last reboot."
+        },
+        "name": "maxTempSinceLastReboot",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": false
+      },
+      {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "description": {
+          "en": "This command returns the max, min and average temperature from the specified time to the current time."
+        },
+        "displayName": {
+          "en": "Get Max-Min report."
+        },
+        "name": "getMaxMinReport",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "Period to return the max-min report."
+          },
+          "displayName": {
+            "en": "Since"
+          },
+          "name": "since",
+          "schema": "dateTime"
+        },
+        "response": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Temperature Report"
+          },
+          "name": "TemperatureReport",
+          "schema": {
+            "@id": "dtmi:com:example:dnd:Thermostat:getMaxMinReport:TemperatureReport:schema;1",
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Max temperature"
+                },
+                "name": "maxTemp",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Min temperature"
+                },
+                "name": "minTemp",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Average Temperature"
+                },
+                "name": "avgTemp",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Start Time"
+                },
+                "name": "startTime",
+                "schema": "dateTime"
+              },
+              {
+                "displayName": {
+                  "en": "End Time"
+                },
+                "name": "endTime",
+                "schema": "dateTime"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "displayName": {
+      "en": "thermostat1"
+    }
+  }
