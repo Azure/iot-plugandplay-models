@@ -13,10 +13,11 @@ const createInterfaceFromJson = async jsonDtdl => {
   const fileName = path.join(process.cwd(), dtmiToPath(dtmi))
   if (fs.existsSync(fileName)) {
     console.log(`WARNING: ID ${dtmi} already exists at ${fileName} . Skipping `)
+  } else {
+    await mkdirp(path.dirname(fileName))
+    fs.writeFileSync(fileName, JSON.stringify(jsonDtdl, null, 2))
+    console.log(`Model ${dtmi} added successfully to ${fileName}`)
   }
-  await mkdirp(path.dirname(fileName))
-  fs.writeFileSync(fileName, JSON.stringify(jsonDtdl, null, 2))
-  console.log(`Model ${dtmi} added successfully to ${fileName}`)
 }
 
 /**
