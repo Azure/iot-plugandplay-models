@@ -1,0 +1,373 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:uk:co:clearwatercontrols:deraggerPlus:telemetry;1",
+  "@type": "Interface",
+  "displayName": "Deragger+ Telemetry",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "telemetry1",
+      "displayName": "Deragger+ Telemetry Profile 1",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "running",
+              "schema": "boolean"
+            },
+            {
+              "name": "cleaning",
+              "schema": "boolean"
+            },
+            {
+              "name": "tripped",
+              "schema": "boolean"
+            },
+            {
+              "name": "alarm",
+              "schema": "boolean"
+            },
+            {
+              "name": "wetWellClean",
+              "schema": "boolean"
+            },
+            {
+              "name": "dryWellProtectionActivated",
+              "schema": "boolean"
+            },
+            {
+              "name": "odourControlActivated",
+              "schema": "boolean"
+            },
+            {
+              "name": "backupFloatSwitchTriggered",
+              "schema": "boolean"
+            },
+            {
+              "name": "sealLeakTripAlarm",
+              "schema": "boolean"
+            },
+            {
+              "name": "temperatureTripAlarm",
+              "schema": "boolean"
+            },
+            {
+              "name": "autoModeAvailable",
+              "schema": "boolean"
+            },
+            {
+              "name": "eStopTripAlarm",
+              "schema": "boolean"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry2",
+      "displayName": "Deragger+ Telemetry Profile 2",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "selectiveSetpointsTriggered",
+              "schema": "boolean"
+            },
+            {
+              "name": "digitalInputs",
+              "schema": {
+                "@type": "Array",
+                "elementSchema": "boolean"
+              }
+            },
+            {
+              "name": "digitalOutputs",
+              "schema": {
+                "@type": "Array",
+                "elementSchema": "boolean"
+              }
+            },
+            {
+              "name": "activeLowTorqueLevel",
+              "schema": "double"
+            },
+            {
+              "name": "activeHighTorqueLevel",
+              "schema": "double"
+            },
+            {
+              "name": "cleansInhibited",
+              "schema": "boolean"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry3",
+      "displayName": "Deragger+ Telemetry Profile 3",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "frequency",
+              "schema": "double"
+            },
+            {
+              "name": "powerFactor",
+              "schema": "double"
+            },
+            {
+              "name": "energy",
+              "schema": "integer"
+            },
+            {
+              "name": "runtime",
+              "schema": "integer"
+            },
+            {
+              "name": "starts",
+              "schema": "integer"
+            },
+            {
+              "name": "antiRaggingCleans",
+              "schema": "integer"
+            },
+            {
+              "name": "lastRuntimeIncludingCleans",
+              "schema": "integer"
+            },
+            {
+              "name": "lastRuntimeExcludingCleans",
+              "schema": "integer"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry4",
+      "displayName": "Deragger+ Telemetry Profile 4",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "rawAnalogInput1",
+              "schema": "integer"
+            },
+            {
+              "name": "rawAnalogInput2",
+              "schema": "integer"
+            },
+            {
+              "name": "current",
+              "schema": "integer"
+            },
+            {
+              "name": "averageCurrent",
+              "schema": "double"
+            },
+            {
+              "name": "averageVoltage",
+              "schema": "double"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry5",
+      "displayName": "Deragger+ Telemetry Profile 5",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "scaledTotalApparentPower",
+              "schema": "integer"
+            },
+            {
+              "name": "scaledTotalActivePower",
+              "schema": "integer"
+            },
+            {
+              "name": "l1Current",
+              "schema": "double"
+            },
+            {
+              "name": "l2Current",
+              "schema": "double"
+            },
+            {
+              "name": "l3Current",
+              "schema": "double"
+            },
+            {
+              "name": "l1Voltage",
+              "schema": "double"
+            },
+            {
+              "name": "l2Voltage",
+              "schema": "double"
+            },
+            {
+              "name": "l3Voltage",
+              "schema": "double"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry6",
+      "displayName": "Deragger+ Telemetry Profile 6",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "dailyRuntime",
+              "schema": "integer"
+            },
+            {
+              "name": "dailyEnergyConsumed",
+              "schema": "integer"
+            },
+            {
+              "name": "averageDailyCurrent",
+              "schema": "double"
+            },
+            {
+              "name": "currentImbalance",
+              "schema": "integer"
+            },
+            {
+              "name": "overloadAccumulator",
+              "schema": "integer"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "heartbeat",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "telemetry7",
+      "displayName": "Deragger+ Telemetry Profile 7",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "registers",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "register",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "value",
+                  "schema": "integer"
+                }
+              }
+            },
+            {
+              "name": "rssi",
+              "schema": "integer"
+            },
+            {
+              "name": "imei",
+              "schema": "long"
+            },
+            {
+              "name": "latitude",
+              "schema": "double"
+            },
+            {
+              "name": "longitude",
+              "schema": "double"
+            },
+            {
+              "name": "altitude",
+              "schema": "integer"
+            },
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "timestamp",
+      "displayName": "Deragger+ Telemetry Timestamp",
+      "schema": "dateTime"
+    }
+  ]
+}

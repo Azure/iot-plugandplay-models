@@ -1,0 +1,87 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:uk:co:clearwatercontrols:pumpCommands;1",
+  "@type": "Interface",
+  "displayName": "Pump Commands",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "listPumps",
+      "response": {
+        "name": "response",
+        "schema": {
+          "@type": "Array",
+          "elementSchema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "serialNumber",
+                "schema": "integer"
+              },
+              {
+                "name": "name",
+                "schema": "string"
+              },
+              {
+                "name": "tankId",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pumpAction",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "name",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pumpGetMode",
+      "request": {
+        "name": "serialNumber",
+        "schema": "integer"
+      },
+      "response": {
+        "name": "response",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pumpSetMode",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "mode",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
