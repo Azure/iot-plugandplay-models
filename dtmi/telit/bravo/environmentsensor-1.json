@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:telit:bravo:EnvironmentSensor;1",
+  "@type": "Interface",
+  "displayName": "BravoME910SensorInterfaces",
+  "description": "Provides functionality to report the bravo Device environment Sensor data",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": "Pressure",
+      "name": "pressure",
+      "schema": "double",
+      "unit": "pascal",
+      "description": "Received Environment-pressure value (in double)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Temperature",
+      "name": "temperature",
+      "description": "Received Environment temperature value (in double)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Raw Temperature",
+      "name": "rawtemperature",
+      "description": "Received device specific raw temperature value (in double)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "schema": "double",
+      "unit": "unity percent",
+      "displayName": "Relative Humidity",
+      "name": "humidity",
+      "description": "Received Environment Relative humidity value (in double)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Resistance"
+      ],
+      "schema": "double",
+      "unit": "ohm",
+      "displayName": "IAQ",
+      "name": "IAQ_signal",
+      "description": "Received Environment Index For Air Quality (IAQ) value(in double)"
+    }
+  ]
+}

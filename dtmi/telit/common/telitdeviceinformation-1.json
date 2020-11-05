@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:telit:common:TelitDeviceInformation;1",
+  "@type": "Interface",
+  "displayName": "BravoModuleInfo",
+  "description": "Provides functionality to report Bravo Module specific information",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": "IMEI",
+      "description": "Unique identification of the device.",
+      "name": "IMEI",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "SWPKGV",
+      "displayName": "Software Package Version",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "CGDCONT",
+      "displayName": "Default PDP Context configuration",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "M2MRUN",
+      "displayName": "File permission info",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "MSAZVER",
+      "displayName": "Version of the MsAzure on the device",
+      "schema": "string",
+      "writable": false
+    }
+  ]
+}
