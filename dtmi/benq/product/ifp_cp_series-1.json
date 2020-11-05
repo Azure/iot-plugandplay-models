@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:benq:product:ifp_cp_series;1",
+  "@type": "Interface",
+  "displayName": "BenQ IFP CP Series",
+  "description": "BenQ IFP CP Series capability model.",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceInfo",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "displayName": "Device Information interface",
+      "description": "Interface of basic device hardware information."
+    },
+    {
+      "@type": "Component",
+      "name": "runtimeInfo",
+      "schema": "dtmi:benq:product:runtimeInfo;1",
+      "displayName": "Runtime Information interface",
+      "description": "Interface of runtime information."
+    }
+  ]
+}

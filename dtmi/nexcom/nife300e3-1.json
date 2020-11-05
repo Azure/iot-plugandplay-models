@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:NIFE300e3;1",
+  "@type": "Interface",
+  "displayName": "NIFE300e3",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+    }
+  ]
+}

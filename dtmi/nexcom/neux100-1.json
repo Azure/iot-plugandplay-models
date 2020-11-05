@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:NEUX100;1",
+  "@type": "Interface",
+  "displayName": "NEU-X100",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+    }
+  ]
+}
