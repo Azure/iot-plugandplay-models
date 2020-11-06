@@ -1,0 +1,95 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:MinewE8;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Accelerometer"
+      },
+      "name": "accelerometer",
+      "schema": {
+        "@id": "dtmi:rigado:MinewE8:accelerometer:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "current X"
+            },
+            "name": "x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "current Y"
+            },
+            "name": "y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "current Z"
+            },
+            "name": "z",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Accelerometer Average"
+      },
+      "name": "accelerometerAverage",
+      "schema": {
+        "@id": "dtmi:rigado:MinewE8:accelerometerAverage:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "averageX"
+            },
+            "name": "avgX",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "averageY"
+            },
+            "name": "avgY",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "averageZ"
+            },
+            "name": "avgZ",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "IoT Device"
+      },
+      "name": "IoTDevice742",
+      "schema": "dtmi:rigado:interfaces:iotDevice;1"
+    }
+  ],
+  "displayName": {
+    "en": "Minew E8"
+  }
+}
