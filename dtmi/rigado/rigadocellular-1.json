@@ -1,0 +1,65 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:RigadoCellular;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Username"
+      },
+      "name": "username",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Password"
+      },
+      "name": "password",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Apn"
+      },
+      "name": "apn",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Imei"
+      },
+      "name": "imei",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Sim"
+      },
+      "name": "sim",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Cellular IP Address"
+      },
+      "name": "ipAddress",
+      "schema": "string"
+    }
+  ],
+  "displayName": {
+    "en": "Rigado Cellular"
+  }
+}
