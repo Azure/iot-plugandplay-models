@@ -9,7 +9,7 @@
     {
       "@type": [
         "Telemetry",
-        "Humidity"
+        "RelativeHumidity"
       ],
       "displayName": {
         "en": "Relative Humidity"
