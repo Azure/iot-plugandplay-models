@@ -10,23 +10,33 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Pull DMR tools snapshot
+        uses: actions/checkout@v2
+        with:
+          repository: Azure/iot-plugandplay-models-tools
+          ref: 0.2-preview
+          path: dmr-tool-cache
+
+      - name: Build and install dmr-client CLI
+        run: |
+          dotnet pack dmr-tool-cache/resolvers/dotnet
+          dotnet tool install -g dmr-client --add-source dmr-tool-cache/resolvers/dotnet/Azure.IoT.DeviceModelsRepository.CLI/bin/Debug
+          rm -rf dmr-tool-cache
+
       - name: Checkout code
         uses: actions/checkout@v2
 
       - id: files
         uses: digimaun/get-changed-files@v2
 
-      - name: Configure GitHub feed
-        run: dotnet nuget add source https://nuget.pkg.github.com/Azure/index.json -n github -u Azure -p ${{secrets.GITHUB_TOKEN}} --store-password-in-clear-text
-
-      - name: Install resolver client
-        run:  dotnet tool install -g dmr-client --add-source https://nuget.pkg.github.com/Azure/index.json
-
       - name: Expand models
+        env:
+          Logging__LogLevel__Default: None
+
         run: |
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then
-              dmr-client resolve --model-file ${changed_file} --repository $PWD -o ${changed_file//.json/.expanded.json} --silent
+              dmr-client export --model-file ${changed_file} --repo $PWD -o ${changed_file//.json/.expanded.json} --silent
             fi
           done
         shell: bash

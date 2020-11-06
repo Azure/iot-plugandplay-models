@@ -13,7 +13,7 @@
     "validate-files": "node .github/workflows/validate-files.js",
     "validate-ids": "node .github/workflows/validate-ids.js",
     "validate-deps": "node .github/workflows/validate-deps.js",
-    "validate-model": "dmr-client validate --repository . --model-file",
+    "validate-model": "dmr-client validate --repo . --model-file",
     "add-model": "node tools/add-model.js"
   },
   "repository": {
