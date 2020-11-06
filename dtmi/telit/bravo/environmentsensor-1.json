@@ -44,7 +44,7 @@
         "RelativeHumidity"
       ],
       "schema": "double",
-      "unit": "unity percent",
+      "unit": "percent",
       "displayName": "Relative Humidity",
       "name": "humidity",
       "description": "Received Environment Relative humidity value (in double)"
