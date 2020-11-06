@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:telit:common:TelitDeviceManagement;1",
+  "@type": "Interface",
+  "displayName": "TelitDeviceSensorInterfaces",
+  "description": "Reports the telit Device Signal strength information",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": "RSSI",
+      "name": "rssi",
+      "schema": "integer",
+      "description": "Received signal strength indication (in dBm)"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Bit Rate",
+      "name": "bitrate",
+      "schema": "integer",
+      "description": "net rate value (in integer)"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "BER",
+      "name": "bearer",
+      "schema": "integer",
+      "description": "bit error rate (in percent)"
+    }
+  ]
+}
