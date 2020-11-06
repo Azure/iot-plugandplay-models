@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:telit:bravo:DeviceCommand;1",
+  "@type": "Interface",
+  "displayName": "DeviceCommandInterfaces",
+  "description": "Provides functionality to send a command and receive a response",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "led_on",
+      "comment": "This Commands will turn on module GPIO Led"
+    },
+    {
+      "@type": "Command",
+      "name": "led_off",
+      "comment": "This Commands will turn off module GPIO Led"
+    },
+    {
+      "@type": "Command",
+      "description": "This command will ping to specific ip address.",
+      "name": "ping",
+      "comment": "This command initiates a ping request. This will take time and is implemented as an asynchronous command",
+      "request": {
+        "name": "pingRequest",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ipAddress",
+              "displayName": "IP Address",
+              "schema": "string",
+              "comment": "It specifies Name of Host or IP address of Host to ping"
+            },
+            {
+              "name": "retries",
+              "displayName": "Retries",
+              "schema": "integer",
+              "comment": "[Optional] the number of Ping Echo Request to send 1-64 (default 4)"
+            },
+            {
+              "name": "length",
+              "displayName": "Length",
+              "schema": "integer",
+              "comment": "[Optional] the length of Ping Echo Request message 32-1460 (default 32)"
+            },
+            {
+              "name": "timeout",
+              "displayName": "Timeout",
+              "schema": "integer",
+              "comment": "[Optional] the timeout, in 100 ms units, time to wait for Echo Reply 1-600 (default 50)"
+            },
+            {
+              "name": "ttl",
+              "displayName": "TTL",
+              "schema": "integer",
+              "comment": "[Optional] time to live 1-255 (default 128)"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "pingResponse",
+        "schema": "string",
+        "comment": "ping response is a string that is displayed as:#PING: <replyId>,<Ip Address>,<replyTime>,<ttl>"
+      }
+    }
+  ]
+}
