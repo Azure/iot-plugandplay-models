@@ -22,9 +22,9 @@
     {
       "@type": "Telemetry",
       "displayName": "BER",
-      "name": "bearer",
+      "name": "bitErrorRate",
       "schema": "integer",
-      "description": "bit error rate (in percent)"
+      "description": "Bit error rate (in percent)"
     }
   ]
 }
