@@ -14,10 +14,10 @@
     },
     {
       "@type": "Telemetry",
-      "displayName": "Bit Rate",
-      "name": "bitrate",
+      "displayName": "Bit rate",
+      "name": "bitRate",
       "schema": "integer",
-      "description": "net rate value (in integer)"
+      "description": "Net rate value (in integer)"
     },
     {
       "@type": "Telemetry",
