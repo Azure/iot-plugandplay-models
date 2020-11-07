@@ -17,13 +17,15 @@
       "@type": "Property",
       "name": "SWPKGV",
       "displayName": "Software Package Version",
+      "description": "Software package release version",
       "schema": "string",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "CGDCONT",
-      "displayName": "Default PDP Context configuration",
+      "displayName": "PDP context info",
+      "description": "Default pdp context configuration",
       "schema": "string",
       "writable": false
     },
@@ -31,13 +33,15 @@
       "@type": "Property",
       "name": "M2MRUN",
       "displayName": "File permission info",
+      "description": "Status of M2M application RUN permission",
       "schema": "string",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "MSAZVER",
-      "displayName": "Version of the MsAzure on the device",
+      "displayName": "MSAzure sdk version",
+      "description": "MSAzure IoThub sdk version",
       "schema": "string",
       "writable": false
     }

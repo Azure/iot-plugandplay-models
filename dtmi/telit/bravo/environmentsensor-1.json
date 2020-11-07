@@ -34,8 +34,8 @@
       ],
       "schema": "double",
       "unit": "degreeCelsius",
-      "displayName": "Raw Temperature",
-      "name": "rawtemperature",
+      "displayName": "Raw temperature",
+      "name": "rawTemperature",
       "description": "Received device specific raw temperature value (in double)"
     },
     {
@@ -45,8 +45,8 @@
       ],
       "schema": "double",
       "unit": "percent",
-      "displayName": "Relative Humidity",
-      "name": "humidity",
+      "displayName": "Relative humidity",
+      "name": "relativeHumidity",
       "description": "Received Environment Relative humidity value (in double)"
     },
     {
@@ -57,7 +57,7 @@
       "schema": "double",
       "unit": "ohm",
       "displayName": "IAQ",
-      "name": "IAQ_signal",
+      "name": "iaq",
       "description": "Received Environment Index For Air Quality (IAQ) value(in double)"
     }
   ]
