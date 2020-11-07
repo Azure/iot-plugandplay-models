@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:RS40OccupancySensor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Motion Count"
+      },
+      "name": "count",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Occupancy State"
+      },
+      "name": "occupied",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Led Control"
+      },
+      "name": "ledOff",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "req"
+        },
+        "name": "req",
+        "schema": {
+          "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:req:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "state"
+              },
+              "name": "state",
+              "schema": "boolean"
+            }
+          ]
+        }
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "resp"
+        },
+        "name": "resp",
+        "schema": {
+          "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:resp:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "state"
+              },
+              "name": "state",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "IoT Device"
+      },
+      "name": "IoTDevice74",
+      "schema": "dtmi:rigado:interfaces:iotDevice;1"
+    }
+  ],
+  "displayName": {
+    "en": "RS40 Occupancy Sensor"
+  }
+}

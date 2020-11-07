@@ -18,6 +18,7 @@
       "name": "SWPKGV",
       "displayName": "Software Package Version",
       "description": "Software package release version",
+
       "schema": "string",
       "writable": false
     },

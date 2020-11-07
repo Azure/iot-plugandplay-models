@@ -1,0 +1,155 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:EPaperDisplay;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "IoT Device"
+      },
+      "name": "IoTDevice3h4",
+      "schema": "dtmi:rigado:interfaces:iotDevice;1"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Displayed Picture Id"
+      },
+      "name": "displayedPictureId",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temp",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Version"
+      },
+      "name": "version",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "cap"
+      },
+      "name": "cap",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Size"
+      },
+      "name": "size",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "TX Power"
+      },
+      "name": "txPower",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Adv Interval"
+      },
+      "name": "advInterval",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Max Nodes"
+      },
+      "name": "maxNodes",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Update Screen"
+      },
+      "name": "updateScreen",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Screen Parameters"
+        },
+        "name": "ScreenParameters",
+        "schema": {
+          "@id": "dtmi:rigado:EPaperDisplay:updateScreen:ScreenParameters:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "Screen Type"
+              },
+              "name": "screenType",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Parameter 1"
+              },
+              "name": "parameter1",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Parameter 2"
+              },
+              "name": "parameter2",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Parameter 3"
+              },
+              "name": "parameter3",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Parameter 4"
+              },
+              "name": "parameter4",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Parameter 5"
+              },
+              "name": "parameter5",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "displayName": {
+    "en": "EPaperDisplay"
+  }
+}

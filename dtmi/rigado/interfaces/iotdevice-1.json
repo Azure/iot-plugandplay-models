@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:interfaces:iotDevice;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device Alias"
+      },
+      "name": "deviceAlias",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "RSSI"
+      },
+      "name": "rssi",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Battery Level"
+      },
+      "name": "batteryLevel",
+      "schema": "double"
+    }
+  ],
+  "displayName": {
+    "en": "IoT Device"
+  }
+}
