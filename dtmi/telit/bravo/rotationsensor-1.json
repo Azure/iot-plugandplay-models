@@ -11,7 +11,7 @@
         "Angle"
       ],
       "displayName": "Rotation X-Axis",
-      "name": "rotationX",
+      "name": "rotation_x",
       "schema": "double",
       "unit": "radian",
       "description": "Received Rotation sensor angle in X-Axis (in radian)"
@@ -22,7 +22,7 @@
         "Angle"
       ],
       "displayName": "Rotation Y-Axis",
-      "name": "rotationY",
+      "name": "rotation_y",
       "schema": "double",
       "unit": "radian",
       "description": "Received Rotation sensor angle in Y-Axis (in radian)"
@@ -33,7 +33,7 @@
         "Angle"
       ],
       "displayName": "Rotation Z-Axis",
-      "name": "rotationZ",
+      "name": "rotation_z",
       "schema": "double",
       "unit": "radian",
       "description": "Received Rotation sensor angle in Z-Axis (in radian)"
@@ -44,7 +44,7 @@
         "Angle"
       ],
       "displayName": "Rotation W-Axis",
-      "name": "rotationW",
+      "name": "rotation_w",
       "schema": "double",
       "unit": "radian",
       "description": "Received Rotation quaternions (in radian)"
@@ -55,7 +55,7 @@
         "Angle"
       ],
       "displayName": "Rotation estimated accuracy",
-      "name": "estimatedAccuracy",
+      "name": "estimated_accuracy",
       "schema": "double",
       "unit": "radian",
       "description": "Received Rotation estimated accuracy (in radian)"

@@ -14,17 +14,17 @@
     },
     {
       "@type": "Telemetry",
-      "displayName": "Bit rate",
-      "name": "bitRate",
+      "displayName": "Bit Rate",
+      "name": "bitrate",
       "schema": "integer",
-      "description": "Net rate value (in integer)"
+      "description": "net rate value (in integer)"
     },
     {
       "@type": "Telemetry",
       "displayName": "BER",
-      "name": "bitErrorRate",
+      "name": "bearer",
       "schema": "integer",
-      "description": "Bit error rate (in percent)"
+      "description": "bit error rate (in percent)"
     }
   ]
 }
