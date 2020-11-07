@@ -16,28 +16,32 @@
     {
       "@type": "Property",
       "name": "SWPKGV",
-      "displayName": "Software Package Version",
+      "displayName": "Software version",
+      "description": "Software package release version",
       "schema": "string",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "CGDCONT",
-      "displayName": "Default PDP Context configuration",
+      "displayName": "Pdp context info",
+      "description": "Default pdp context configuration",
       "schema": "string",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "M2MRUN",
-      "displayName": "File permission info",
+      "displayName": "Application status",
+      "description": "Read the status of configured applications",
       "schema": "string",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "MSAZVER",
-      "displayName": "Version of the MsAzure on the device",
+      "displayName": "MSAzure version",
+      "description": "Msazure sdk package release version",
       "schema": "string",
       "writable": false
     }
