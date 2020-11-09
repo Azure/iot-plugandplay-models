@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:C500W;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Available Memory"
+      },
+      "name": "AvailableMemory",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Available Disk"
+      },
+      "name": "AvailableDisk",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "CPU Utilization"
+      },
+      "name": "cpuUtilization",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "comment": "IP address of Ethernet Interface",
+      "displayName": {
+        "en": "Ethernet IP Address"
+      },
+      "name": "ethIPaddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "comment": "IP address of WiFi Interface",
+      "displayName": {
+        "en": "WiFi IP Address"
+      },
+      "name": "WiFiIPAddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "comment": "Time when device last booted",
+      "displayName": {
+        "en": "Booted Time"
+      },
+      "name": "BootedTime",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Reboot"
+      },
+      "name": "Reboot"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Rigado_Cascade_500_cellular"
+      },
+      "name": "RigadoCascade500Cellular",
+      "schema": "dtmi:rigado:RigadoCellular;1"
+    }
+  ],
+  "displayName": {
+    "en": "C500W"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:Cascade500;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Available Memory"
+      },
+      "name": "AvailableMemory",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Available Disk"
+      },
+      "name": "AvailableDisk",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "CPU Utilization"
+      },
+      "name": "cpuUtilization",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Ethernet IP Address"
+      },
+      "name": "ethIPaddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "WiFi IP Address"
+      },
+      "name": "WiFiIPAddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Booted Time"
+      },
+      "name": "BootedTime",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Reboot"
+      },
+      "name": "Reboot"
+    }
+  ],
+  "displayName": {
+    "en": "Cascade 500"
+  }
+}
