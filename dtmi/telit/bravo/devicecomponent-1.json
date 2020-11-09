@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:telit:bravo:DeviceComponent;1",
+  "@type": "Interface",
+  "displayName": "TelitBravoDeviceModel",
+  "description": "Provides functionality to report sensors and signal strenght information, commands and device properties",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "DeviceCommonInformation",
+      "displayName": "DeviceCommonInformation"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:telit:common:TelitDeviceInformation;1",
+      "name": "ModuleSpecificInformation",
+      "displayName": "ModuleSpecificInformation"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:telit:common:TelitDeviceManagement;1",
+      "name": "DeviceSignalSensorInterfaces",
+      "displayName": "DeviceSignalSensorInterfaces"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:telit:bravo:DeviceCommand;1",
+      "name": "DeviceCommandInterfaces",
+      "displayName": "DeviceCommandInterfaces"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:telit:bravo:EnvironmentSensor;1",
+      "name": "DeviceEnvironmentSensorInterfaces",
+      "displayName": "DeviceEnvironmentSensorInterfaces"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:telit:bravo:RotationSensor;1",
+      "name": "DeviceRotationSensorInterfaces",
+      "displayName": "DeviceRotationSensorInterfaces"
+    }
+  ]
+}
