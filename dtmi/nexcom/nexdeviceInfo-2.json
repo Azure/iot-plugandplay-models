@@ -1,9 +1,8 @@
 {
-  "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:Nexcom:Nise51:Xcare;1",
+  "@id": "dtmi:nexcom:nexDeviceInfo;2",
   "@type": "Interface",
-  "displayName": "Xcare for Nise51",
-  "description": "Reports Nise51 about system information and provides desired system control.",
+  "displayName": "Nexcom Xcare Device Information",
+  "@context": "dtmi:dtdl:context;2",
   "contents": [
     {
       "@type": [
@@ -53,10 +52,7 @@
       "unit": "kibibyte"
     },
     {
-      "@type": [
-        "Property",
-        "GPIO"
-      ],
+      "@type": "Property",
       "name": "targetGPIO",
       "schema": "integer",
       "displayName": "Target GPIO",

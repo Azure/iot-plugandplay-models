@@ -1,13 +1,13 @@
 {
-  "@id": "dtmi:nexcom:NEUX100;1",
+  "@id": "dtmi:nexcom:xcare_nise4200;1",
   "@type": "Interface",
-  "displayName": "NEU-X100",
+  "displayName": "Xcare for NISE4200",
   "@context": "dtmi:dtdl:context;2",
   "contents": [
     {
       "@type": "Component",
       "name": "NexDeviceInfo1",
-      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+      "schema": "dtmi:nexcom:nexDeviceInfo;2"
     }
   ]
 }
