@@ -1,4 +1,4 @@
-{
+{ 
   "@id": "dtmi:nexcom:nexDeviceInfo;2",
   "@type": "Interface",
   "displayName": "Nexcom Xcare Device Information",
