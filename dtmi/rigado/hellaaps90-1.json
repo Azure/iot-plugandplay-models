@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:HellaAPS90;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Line 1"
+      },
+      "name": "line1",
+      "schema": {
+        "@id": "dtmi:rigado:HellaAPS90:line1:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Child In Count"
+            },
+            "name": "ChildIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Child Out Count"
+            },
+            "name": "ChildOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult In Count"
+            },
+            "name": "AdultIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult Out Count"
+            },
+            "name": "AdultOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Line Name"
+            },
+            "name": "name",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Line 2"
+      },
+      "name": "line2",
+      "schema": {
+        "@id": "dtmi:rigado:HellaAPS90:line2:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Child In Count"
+            },
+            "name": "ChildIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Child Out Count"
+            },
+            "name": "ChildOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult In Count"
+            },
+            "name": "AdultIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult Out Count"
+            },
+            "name": "AdultOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Line Name"
+            },
+            "name": "name",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Line 3"
+      },
+      "name": "line3",
+      "schema": {
+        "@id": "dtmi:rigado:HellaAPS90:line3:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Child In Count"
+            },
+            "name": "ChildIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Child Out Count"
+            },
+            "name": "ChildOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult In Count"
+            },
+            "name": "AdultIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult Out Count"
+            },
+            "name": "AdultOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Line Name"
+            },
+            "name": "name",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Line 4"
+      },
+      "name": "line4",
+      "schema": {
+        "@id": "dtmi:rigado:HellaAPS90:line4:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Child In Count"
+            },
+            "name": "ChildIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Child Out Count"
+            },
+            "name": "ChildOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult In Count"
+            },
+            "name": "AdultIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult Out Count"
+            },
+            "name": "AdultOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Line Name"
+            },
+            "name": "name",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Line 5"
+      },
+      "name": "line5",
+      "schema": {
+        "@id": "dtmi:rigado:HellaAPS90:line5:schema;1",
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Child In Count"
+            },
+            "name": "ChildIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Child Out Count"
+            },
+            "name": "ChildOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult In Count"
+            },
+            "name": "AdultIn",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Adult Out Count"
+            },
+            "name": "AdultOut",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Line Name"
+            },
+            "name": "name",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Reset"
+      },
+      "name": "APS90reset"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "IP Address"
+      },
+      "name": "ip_address",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "IoT Device"
+      },
+      "name": "IoTDevice4qt",
+      "schema": "dtmi:rigado:interfaces:iotDevice;1"
+    }
+  ],
+  "displayName": {
+    "en": "Hella APS90"
+  }
+}
