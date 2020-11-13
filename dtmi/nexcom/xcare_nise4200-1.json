@@ -7,7 +7,7 @@
     {
       "@type": "Component",
       "name": "NexDeviceInfo1",
-      "schema": "dtmi:nexcom:nexDeviceInfo;2"
+      "schema": "dtmi:nexcom:nexdeviceinfo;2"
     }
   ]
 }
