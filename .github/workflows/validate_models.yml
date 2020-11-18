@@ -1,4 +1,4 @@
-name: validate-models
+name: validate_models
 
 on:
   pull_request:
@@ -6,20 +6,20 @@ on:
     paths:
       - '**/*'
 jobs:
-  validate-models:
+  validate-dtdl-models:
     runs-on: ubuntu-latest
     steps:
       - name: Pull DMR tools snapshot
         uses: actions/checkout@v2
         with:
           repository: Azure/iot-plugandplay-models-tools
-          ref: 0.2-preview
+          ref: 1.0.0-beta.1
           path: dmr-tool-cache
 
       - name: Build and install dmr-client CLI
         run: |
-          dotnet pack dmr-tool-cache/resolvers/dotnet
-          dotnet tool install -g dmr-client --add-source dmr-tool-cache/resolvers/dotnet/Azure.IoT.DeviceModelsRepository.CLI/bin/Debug
+          dotnet pack dmr-tool-cache/clients/dotnet -v q -c Release
+          dotnet tool install -g dmr-client --add-source dmr-tool-cache/clients/dotnet/Azure.Iot.ModelsRepository.CLI/bin/Release --version 1.0.0-beta.1
           rm -rf dmr-tool-cache
 
       - name: Checkout code
@@ -27,31 +27,25 @@ jobs:
 
       - id: files
         uses: digimaun/get-changed-files@v2
-      
+
       - name: Validate Models
-        env:
-          Logging__LogLevel__Default: None
-          
         run: |
           for f in  ${{ steps.files.outputs.added_modified }};
           do
               if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
               then
-                  echo "validating $f"
-                  dmr-client validate --model-file $f --repo $PWD --strict True
+                  echo "Validating: $f"
+                  dmr-client validate --model-file $f --repo $PWD --strict
                   if [ $? -eq 0 ]
                   then
-                      echo "validation ok: $f"
-                  else
-                      echo "error validating model: $f"
-                      exit $?
+                      echo "Validation OK: $f"
                   fi
               else
-                echo "skipping $f"
+                echo "Skipping validation: $f"
               fi
           done
         shell: bash
-  reject-edits:
+  reject-model-edits:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -67,13 +61,13 @@ jobs:
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
-              echo "edits aren't allowed to existing DTDL files: $f"
+              echo "Edits aren't allowed to existing DTDL files: $f"
               exit_code=1
             fi
           done
           exit $exit_code
         shell: bash
-  reject-renames:
+  reject-model-renames:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -89,13 +83,13 @@ jobs:
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
-              echo "renames aren't allowed to existing DTDL files: $f"
+              echo "Renames aren't allowed to existing DTDL files: $f"
               exit_code=1
             fi
           done
           exit $exit_code
         shell: bash
-  reject-deletions:
+  reject-model-deletions:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -111,13 +105,13 @@ jobs:
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
-              echo "deletions aren't allowed to existing DTDL files: $f"
+              echo "Deletions aren't allowed to existing DTDL files: $f"
               exit_code=1
             fi
           done
           exit $exit_code
         shell: bash
-  reject-non-models:
+  warn-non-model-changes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -126,7 +120,7 @@ jobs:
       - id: files
         uses: digimaun/get-changed-files@v2
 
-      - name: Reject deletions to Models
+      - name: Warn on non-model changes
         run: |
           exit_code=0
           for f in  ${{ steps.files.outputs.added_modified }};
@@ -135,8 +129,7 @@ jobs:
               then
                   echo "skipping DTDL file $f"
               else
-                echo "edits made to non-DTDL files is not allowed: $f"
-                exit_code=1
+                echo "::warning file=$f::Please review non-DTDL file changes."
               fi
           done
           exit $exit_code
