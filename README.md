@@ -9,8 +9,8 @@ Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-mod
 
 1. Fork the public GitHub repo: [https://github.com/Azure/iot-plugandplay-models](https://github.com/Azure/iot-plugandplay-models).
 1. Clone the forked repo. Optionally create a new branch to keep your changes isolated from the `main` branch.
-1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#add-models) tool below.
-1. Validate the models locally using the [scripts to validate changes](#validate-files) section.
+1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#import-a-model-to-the-dtmi-folder) tool below.
+1. Validate the models locally using the `dmr-client` tool to [validate](#validate-models).
 1. Commit the changes locally and push to your fork.
 1. From your fork, create a PR that targets the `main` branch. See [Creating an issue or pull request](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request) docs.
 1. Review the [PR requirements](pr-reqs.md)
@@ -19,61 +19,69 @@ The PR triggers a series of GitHub actions that will validate the new submitted 
 
 Microsoft will respond to a PR with all checks in 3 business days.
 
-## Tools
+## `dmr-client` Tool
 
-The repo contains scripts to help managing the repo, with tools to add and valdidate files locally.
+The tools used to validate the models during the PR checks can also be used to add and validate the DTDL interfaces locally.
 
-> Note: These scripts require NodeJs. Don't forget to initialize the dependencies with:
+> Note: These tools require the [.NET SDK](https://dotnet.microsoft.com/download) (3.1 or greater)
 
-```cmd
-npm install
+### Install `dmr-client`
+
+#### Linux/Bash
+
+```bash
+curl -L https://aka.ms/install-dmr-client-linux | bash
 ```
 
-### add-models
+#### Windows/Powershell
 
-If you have your model already stored in json files, you can use the add-model script to add those to the `dtmi/` folder with the right file name.
-
-```cmd
-npm run add-model <path-to-dtdl.json>
+```powershell
+iwr https://aka.ms/install-dmr-client-windows -UseBasicParsing | iex
 ```
 
-Watch the console output for any error messages.
+### Import a Model to the `dtmi/` folder
 
-### validate-files
+If you have your model already stored in json files, you can use the `dmr-client import` command to add those to the `dtmi/` folder with the right file name.
 
-Checks the folder and file names are expected from the root `@id`
-
-```cmd
-npm run validate-files <list of files to validate>
+```bash
+# from the local repo root folder
+dmr-client import --model-file "MyThermostat.json"
 ```
 
-> Note you can validate more that one file by providing a list of files separated by a white space
+>Note: You can use the `--local-repo` argument to specify the local repo root folder
 
-### validate-ids
+### Validate Models
 
-Checks if all `@id` are nested under the root id.
+You can validate your models with the `dmr-client validate` command.
 
-```cmd
-npm run validate-ids <list of files to validate>
+```bash
+dmr-client validate --model-file ./my/model/file.json
 ```
 
-> Note you can validate more that one file by providing a list of files separated by a white space
+>Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
 
-### validate-deps
+To validate external dependencies, those must exist in the local repo. To validate those you can specify a `local` or `remote` folder to validate against.
 
-Checks if all the external dependencies in `extends` and `@Component` exists in the `dtmi/` folder.
-
-```cmd
-npm run validate-deps <list of files to validate>
+```bash
+# from the repo root folder
+dmr-client validate --model-file ./my/model/file.json --repo .
 ```
 
-> Note you can validate more that one file by providing a list of files separated by a white space
+#### Strict validation
 
-### validate-models
+The Device Model Repo includes additional [requirements](pr-reqs.md), these can be validated with the `strict` flag.
 
-Checks if the models can be successfully validated by the .NET DTDL parser.
+```bash
+dmr-client validate --model-file ./my/model/file.json --repo . --strict true
+```
 
-You can run the [DTDL Validation Sample](https://github.com/Azure-Samples/DTDL-Validator) to validate your models locally
+#### Export models
+
+Models can be exported from a given repo (local or remote) to a single file using a JSON Array. 
+
+```bash
+dmr-client export --dtmi "dtmi:com:example:TemperatureController;1" -o TemperatureController.expanded.json
+```
 
 ## Consuming
 
