@@ -1,0 +1,128 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:azuresphere:labmonitor;1",
+  "@type": "Interface",
+  "displayName": "Learning Path Lab Monitor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "Temperature",
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": {
+        "en": "Pressure"
+      },
+      "name": "Pressure",
+      "schema": "float",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "Humidity",
+      "schema": "float",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Desired Temperature"
+      },
+      "name": "DesiredTemperature",
+      "schema": "float",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Desired Sample Rate in Seconds [1..60]"
+      },
+      "name": "DesiredSampleRateInSeconds",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Last reported temperature"
+      },
+      "name": "ReportedTemperature",
+      "schema": "float",
+      "unit": "degreeCelsius",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Last reported device restart time"
+      },
+      "name": "ReportedRestartUTC",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Last reported HVAC operating mode"
+      },
+      "name": "ReportedHvacState",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Last reported device start time (UTC)"
+      },
+      "name": "ReportedDeviceStartTime",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "RestartDevice"
+      },
+      "name": "RestartDevice",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Restart Delay in seconds [3..9]"
+        },
+        "name": "RestartDelay",
+        "schema": "integer"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Restart Device Result"
+        },
+        "name": "RestartDeviceResult",
+        "schema": "string"
+      }
+    }
+  ]
+}
