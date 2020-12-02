@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:uk:co:clearwatercontrols:akp;1",
+  "@type": "Interface",
+  "displayName": "Advanced Keypad",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deraggerPlusTelemetry",
+      "schema": "dtmi:uk:co:clearwatercontrols:deraggerPlus:telemetry;1"
+    },
+    {
+      "@type": "Component",
+      "name": "akpProperties",
+      "schema": "dtmi:uk:co:clearwatercontrols:akp:properties;1"
+    },
+    {
+      "@type": "Component",
+      "name": "configurationCommands",
+      "schema": "dtmi:uk:co:clearwatercontrols:configurationCommands;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deraggerPlusCommands",
+      "schema": "dtmi:uk:co:clearwatercontrols:deraggerPlus:commands;1"
+    },
+    {
+      "@type": "Component",
+      "name": "pumpCommands",
+      "schema": "dtmi:uk:co:clearwatercontrols:pumpCommands;1"
+    }
+  ]
+}

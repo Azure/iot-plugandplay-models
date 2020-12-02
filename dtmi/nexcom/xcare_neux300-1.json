@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:xcare_neux300;1",
+  "@type": "Interface",
+  "displayName": "Xcare for NEU-X300",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexdeviceinfo;2"
+    }
+  ]
+}
