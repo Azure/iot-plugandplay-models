@@ -1,0 +1,17 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:siskon:BarcodeReader;1",
+  "@type": "Interface",
+  "displayName": "BarcodeReader",
+  "description": "Reports current barcode and provides desired barcode control.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Barcode",
+      "displayName": "Barcode",
+      "description": "Current Barcode",
+      "schema": "string"
+    }
+    
+  ]
+}
