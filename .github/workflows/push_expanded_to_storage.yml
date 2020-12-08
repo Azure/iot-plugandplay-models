@@ -31,6 +31,7 @@ jobs:
 
       - name: Expand models
         run: |
+          set -ex
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]; then
               dmr-client export --model-file ${changed_file} --repo $PWD -o ${changed_file//.json/.expanded.json} --silent

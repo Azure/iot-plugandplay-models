@@ -30,18 +30,21 @@ jobs:
 
       - name: Validate Models
         run: |
-          for f in  ${{ steps.files.outputs.added_modified }};
+          for f in ${{ steps.files.outputs.added_modified }};
           do
-              if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
+              if [[ $f =~ ^dtmi([\/\\]) ]]
               then
-                  echo "Validating: $f"
+                if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
+                then
                   dmr-client validate --model-file $f --repo $PWD --strict
-                  if [ $? -eq 0 ]
-                  then
-                      echo "Validation OK: $f"
-                  fi
+                else
+                  echo "::error file=$f::Invalid model placement. 
+                  Use the dmr-client import command or review the resolution convention spec: 
+                  https://github.com/Azure/iot-plugandplay-models-tools/wiki/Resolution-Convention#folder-and-file-structure"
+                  exit 1
+                fi
               else
-                echo "Skipping validation: $f"
+                echo "Skipping non-model file: $f"
               fi
           done
         shell: bash
@@ -57,7 +60,7 @@ jobs:
       - name: Reject edits to Models
         run: |
           exit_code=0
-          for f in  ${{ steps.files.outputs.modified }};
+          for f in ${{ steps.files.outputs.modified }};
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
@@ -79,7 +82,7 @@ jobs:
       - name: Reject renames to Models
         run: |
           exit_code=0
-          for f in  ${{ steps.files.outputs.renamed }};
+          for f in ${{ steps.files.outputs.renamed }};
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
@@ -101,7 +104,7 @@ jobs:
       - name: Reject deletions to Models
         run: |
           exit_code=0
-          for f in  ${{ steps.files.outputs.removed }};
+          for f in ${{ steps.files.outputs.removed }};
           do
             if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
             then
@@ -125,12 +128,12 @@ jobs:
           exit_code=0
           for f in  ${{ steps.files.outputs.added_modified }};
           do
-              if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
-              then
-                  echo "skipping DTDL file $f"
-              else
-                echo "::warning file=$f::Please review non-DTDL file changes."
-              fi
+            if [[ $f =~ ^dtmi([\/\\][a-z0-9_]+){2,}-([1-9][0-9]{0,8}).json$ ]]
+            then
+              echo "skipping DTDL file $f"
+            else
+              echo "::warning file=$f::Please review non-DTDL file changes."
+            fi
           done
           exit $exit_code
         shell: bash
