@@ -7,6 +7,7 @@
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:rigado:MinewS4:doorStatus;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Door Status"
@@ -15,23 +16,19 @@
       "schema": "integer"
     },
     {
+      "@id": "dtmi:rigado:MinewS4:tamperAlarm;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Tamper Alarm"
       },
       "name": "tamperAlarm",
       "schema": "integer"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "IotDevice"
-      },
-      "name": "iotDevice",
-      "schema": "dtmi:rigado:interfaces:iotDevice;1"
     }
   ],
   "displayName": {
     "en": "Minew S4"
-  }
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]    
 }

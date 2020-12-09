@@ -7,23 +7,19 @@
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:rigado:FlicButton:buttonPressed;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Button Pressed"
       },
       "name": "buttonPressed",
       "schema": "boolean"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "IoT Device"
-      },
-      "name": "IoTDevice6ye",
-      "schema": "dtmi:rigado:interfaces:iotDevice;1"
     }
   ],
   "displayName": {
     "en": "Flic Button"
-  }
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]  
 }

@@ -7,6 +7,7 @@
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:rigado:HoboMX1102A:relativeHumidity;1",
       "@type": [
         "Telemetry",
         "RelativeHumidity"
@@ -19,6 +20,7 @@
       "unit": "percent"
     },
     {
+      "@id": "dtmi:rigado:HoboMX1102A:co2;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "CO2"
@@ -27,6 +29,7 @@
       "schema": "integer"
     },
     {
+      "@id": "dtmi:rigado:HoboMX1102A:temperature;1",
       "@type": [
         "Telemetry",
         "Temperature"
@@ -37,17 +40,12 @@
       "name": "temperature",
       "schema": "double",
       "unit": "degreeFahrenheit"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "IoT Device"
-      },
-      "name": "IoTDevice18s",
-      "schema": "dtmi:rigado:interfaces:iotDevice;1"
     }
   ],
   "displayName": {
     "en": "Hobo MX-1102A"
-  }
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]    
 }

@@ -7,6 +7,7 @@
   "@type": "Interface",
   "contents": [
     {
+      "@id": "dtmi:rigado:RuuviTag:temperature;1",
       "@type": [
         "Telemetry",
         "Temperature"
@@ -19,18 +20,20 @@
       "unit": "degreeFahrenheit"
     },
     {
+      "@id": "dtmi:rigado:RuuviTag:humidity;1",
       "@type": [
         "Telemetry",
         "RelativeHumidity"
       ],
       "displayName": {
-        "en": "Humidity"
+        "en": "RelativeHumidity"
       },
       "name": "humidity",
       "schema": "double",
       "unit": "percent"
     },
     {
+      "@id": "dtmi:rigado:RuuviTag:Pressure;1",
       "@type": [
         "Telemetry",
         "Pressure"
@@ -43,6 +46,7 @@
       "unit": "kilopascal"
     },
     {
+      "@id": "dtmi:rigado:RuuviTag:accel;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "accel"
@@ -56,6 +60,7 @@
         },
         "fields": [
           {
+            "@id": "dtmi:rigado:RuuviTag:accel:schema:x;1",
             "displayName": {
               "en": "x"
             },
@@ -63,6 +68,7 @@
             "schema": "double"
           },
           {
+            "@id": "dtmi:rigado:RuuviTag:accel:schema:y;1",
             "displayName": {
               "en": "y"
             },
@@ -70,6 +76,7 @@
             "schema": "double"
           },
           {
+            "@id": "dtmi:rigado:RuuviTag:accel:schema:z;1",
             "displayName": {
               "en": "z"
             },
@@ -78,17 +85,12 @@
           }
         ]
       }
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "IoT Device"
-      },
-      "name": "IoTDevice3vm",
-      "schema": "dtmi:rigado:interfaces:iotDevice;1"
     }
   ],
   "displayName": {
     "en": "RuuviTag"
-  }
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]    
 }

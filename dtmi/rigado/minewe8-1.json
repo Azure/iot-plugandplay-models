@@ -79,17 +79,12 @@
           }
         ]
       }
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "IoT Device"
-      },
-      "name": "IoTDevice742",
-      "schema": "dtmi:rigado:interfaces:iotDevice;1"
     }
   ],
   "displayName": {
     "en": "Minew E8"
-  }
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]   
 }
