@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:uk:co:clearwatercontrols:akp:properties;1",
+  "@type": "Interface",
+  "displayName": "Advanced Keypad Properties",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "buildDate",
+      "displayName": "Application's build date",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "numberOfDevices",
+      "displayName": "Number of connected Deragger+ devices",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "numberOfTanks",
+      "displayName": "Number of configured tanks",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "position",
+      "displayName": "Position of the device",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": "Latitude of the device",
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": "Longitude of the device",
+            "schema": "double"
+          },
+          {
+            "name": "altitude",
+            "displayName": "Altitude of the device",
+            "schema": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber0",
+      "displayName": "Serial number of first connected Deragger+",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "version",
+      "displayName": "Application's version",
+      "schema": "string"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:com:example:azuresphere:sampledevice;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Manufacturer"
+            },
+            "name": "Manufacturer",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Model"
+            },
+            "name": "Model",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Status LED"
+            },
+            "name": "StatusLED",
+            "schema": "double",
+            "writable": true
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Button Press"
+            },
+            "name": "ButtonPress",
+            "schema": "boolean"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "Temperature",
+            "schema": "double"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Command"
+            },
+            "name": "Command",
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "AlarmResult"
+                },
+                "name": "AlarmResult",
+                "schema": "string"
+            }
+        }
+    ],
+    "displayName": {
+        "en": "Azure Sphere Sample Device"
+    }
+}
