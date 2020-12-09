@@ -1,0 +1,104 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:uk:co:clearwatercontrols:deraggerPlus:commands;1",
+  "@type": "Interface",
+  "displayName": "Deragger+ Commands",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "deraggerGetBoolean",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "name",
+              "schema": "string"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "response",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "deraggerGetFloat",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "name",
+              "schema": "string"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "response",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "deraggerSetBoolean",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "name",
+              "schema": "string"
+            },
+            {
+              "name": "value",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "deraggerSetFloat",
+      "request": {
+        "name": "request",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "serialNumber",
+              "schema": "integer"
+            },
+            {
+              "name": "name",
+              "schema": "string"
+            },
+            {
+              "name": "value",
+              "schema": "float"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

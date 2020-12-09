@@ -1,0 +1,270 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Bosch:XDK110;1",
+  "@type": "Interface",
+  "displayName": "XDK110",
+  "description": "Reports temperature, humidity, pressure, illuminance, noise level, acceleration, angular velocity, magnetic field and heart beat message. Supports reboot command as well.",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "BuiltInSensors",
+      "displayName": "BuiltInSensors",
+      "description": "Interface with support for all built-in sensors of XDK110",
+      "schema": {
+        "@id": "dtmi:Bosch:XDK110:BuiltInSensors;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:Bosch:XDK110:Temperature;1",
+            "@type": [
+              "Telemetry",
+              "Temperature"
+            ],
+            "name": "temperature",
+            "displayName": "Temperature",
+            "description": "Temperature measurement from BME280 sensor averaged between telemetry post intervals, in °C.",
+            "schema": "float",
+            "unit": "degreeCelsius"
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:RelativeHumidity;1",
+            "@type": [
+              "Telemetry",
+              "RelativeHumidity"
+            ],
+            "name": "humidity",
+            "displayName": "Relative humidity",
+            "description": "Relative humidity measurement from BME280 sensor averaged between telemetry post intervals, in %.",
+            "schema": "integer",
+            "unit": "percent"
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:Pressure;1",
+            "@type": [
+              "Telemetry",
+              "Pressure"
+            ],
+            "name": "pressure",
+            "displayName": "Pressure",
+            "description": "Pressure measurement from BME280 sensor averaged between telemetry post intervals, in Pa.",
+            "schema": "integer",
+            "unit": "pascal"
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:Light;1",
+            "@type": [
+              "Telemetry",
+              "Illuminance"
+            ],
+            "name": "light",
+            "displayName": "Illuminance",
+            "description": "Illuminance measurement from MAX44009 sensor averaged between telemetry post intervals, in lux.",
+            "schema": "integer",
+            "unit": "lux"
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:Noise;1",
+            "@type": "Telemetry",
+            "name": "noise",
+            "displayName": "Acoustic level",
+            "description": "Acoustic level measurement from AKU340 sensor averaged between telemetry post intervals.",
+            "schema": "float"
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:MagneticField;1",
+            "@type": "Telemetry",
+            "name": "magneticField",
+            "displayName": "Magnetic field strength",
+            "description": "Magnetic field strength measurement from BMM150 sensor averaged between telemetry post intervals, in μT.",
+            "schema": {
+              "@id": "dtmi:Bosch:XDK110:Axial_MagneticField;1",
+              "@type": "Object",
+              "fields": [
+                {
+                  "@id": "dtmi:Bosch:XDK110:MagneticField_XAxis;1",
+                  "name": "x",
+                  "displayName": "x axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:MagneticField_YAxis;1",
+                  "name": "y",
+                  "displayName": "y axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:MagneticField_ZAxis;1",
+                  "name": "z",
+                  "displayName": "z axis",
+                  "schema": "integer"
+                }
+              ]
+            }
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:AngularVelocity;1",
+            "@type": "Telemetry",
+            "name": "angularVelocity",
+            "displayName": "Angular velocity",
+            "description": "Angular velocity measurement from BMG160 sensor averaged between telemetry post intervals, in °/s.",
+            "schema": {
+              "@id": "dtmi:Bosch:XDK110:Axial_AngularVelocity;1",
+              "@type": "Object",
+              "fields": [
+                {
+                  "@id": "dtmi:Bosch:XDK110:AngularVelocity_XAxis;1",
+                  "name": "x",
+                  "displayName": "x axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:AngularVelocity_YAxis;1",
+                  "name": "y",
+                  "displayName": "y axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:AngularVelocity_ZAxis;1",
+                  "name": "z",
+                  "displayName": "z axis",
+                  "schema": "integer"
+                }
+              ]
+            }
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:Acceleration;1",
+            "@type": "Telemetry",
+            "name": "acceleration",
+            "displayName": "Acceleration",
+            "description": "Acceleration measurement from BMA280 sensor averaged between telemetry post intervals, in mg.",
+            "schema": {
+              "@id": "dtmi:Bosch:XDK110:Axial_Acceleration;1",
+              "@type": "Object",
+              "fields": [
+                {
+                  "@id": "dtmi:Bosch:XDK110:Acceleration_XAxis;1",
+                  "name": "x",
+                  "displayName": "x axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:Acceleration_YAxis;1",
+                  "name": "y",
+                  "displayName": "y axis",
+                  "schema": "integer"
+                },
+                {
+                  "@id": "dtmi:Bosch:XDK110:Acceleration_ZAxis;1",
+                  "name": "z",
+                  "displayName": "z axis",
+                  "schema": "integer"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "Settings",
+      "displayName": "Settings",
+      "description": "Interface with all settings supported by XDK110",
+      "schema": {
+        "@id": "dtmi:Bosch:XDK110:Settings;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:Bosch:XDK110:TelemetryPostInterval;1",
+            "@type": [
+              "Property",
+              "TimeSpan"
+            ],
+            "name": "telemetryPostInterval",
+            "displayName": "Telemetry post interval",
+            "description": "Interval at which telemetric data should be posted, in range from 0 to 4294967 seconds. The value of 0 will stop telemetry post operation.",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:SensorSamplingInterval;1",
+            "@type": [
+              "Property",
+              "TimeSpan"
+            ],
+            "name": "sensorSamplingInterval",
+            "displayName": "Sensor sampling interval",
+            "description": "Interval at which sensors should be sampled, in range from 0 to 4294967 seconds. The value of 0 will stop the sensor sampling.",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+          },
+          {
+            "@id": "dtmi:Bosch:XDK110:HeartBeatInterval;1",
+            "@type": [
+              "Property",
+              "TimeSpan"
+            ],
+            "name": "heartBeatInterval",
+            "displayName": "Heart beat interval",
+            "description": "Interval at which heart beat message should be posted, in range from 0 to 4294967 seconds. The value of 0 will stop heart beat post operation.",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "Commands",
+      "displayName": "Commands",
+      "description": "Component with all commands supported by XDK110",
+      "schema": {
+        "@id": "dtmi:Bosch:XDK110:Commands;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:Bosch:XDK110:Reboot;1",
+            "@type": "Command",
+            "name": "reboot",
+            "displayName": "Reboot",
+            "description": "Request the device to perform reboot.",
+            "response": {
+              "@id": "dtmi:Bosch:XDK110:RebootResponse;1",
+              "name": "response",
+              "displayName": "response",
+              "description": "Response from device for received reboot request.",
+              "schema": "string"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dtmi:Bosch:XDK110:HeartBeat;1",
+      "@type": "Property",
+      "name": "heartBeat",
+      "displayName": "Heart beat",
+      "description": "Heart beat message in date time string format",
+      "schema": "dateTime"
+    },
+    {
+      "@id": "dtmi:Bosch:XDK110:WlanMac;1",
+      "@type": "Property",
+      "name": "wlanMac",
+      "displayName": "WLAN MAC Address",
+      "description": "WLAN MAC address of the device",
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "DeviceInformation",
+      "displayName": "Device information",
+      "description": "Standard interface with device information of XDK110 device",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}
