@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:nuvoton:numaker_iot_m487_dev;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NuMaker IoT M487 Dev",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "led",
+      "displayName": "LED",
+      "description": "LED of the device.",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "button1",
+      "displayName": "Button1",
+      "description": "Button-01 of the device.",
+      "schema": "integer"
+    },    
+    {
+      "@type": "Property",
+      "name": "button2",
+      "displayName": "Button2",
+      "description": "Button-02 of the device.",
+      "schema": "integer"
+    },    
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:nuvoton:sensor_bmx055;1",
+      "name": "motionSensorBMX055",
+      "displayName": "Motion Sensor BMX055",
+      "description": "Report current temperature and acceleration."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information."
+    }    
+  ]
+}
