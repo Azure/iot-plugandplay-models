@@ -1,0 +1,64 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:raspberrypi:rpi4;1",
+  "@type": "Interface",
+  "displayName": "Raspberry Pi 4 Metadata",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "schema": "string",
+      "description": "Raspberry Pi"
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "displayName": "Device model",
+      "schema": "string",
+      "description": "Raspberry Pi 4 Model B"
+    },
+    {
+      "@type": "Property",
+      "name": "swVersion",
+      "displayName": "Software version",
+      "schema": "string",
+      "description": "20.04"
+    },
+    {
+      "@type": "Property",
+      "name": "osName",
+      "displayName": "Operating system name",
+      "schema": "string",
+      "description": "Ubuntu"
+    },
+    {
+      "@type": "Property",
+      "name": "processorArchitecture",
+      "displayName": "Processor architecture",
+      "schema": "string",
+      "description": "ARM64"
+    },
+    {
+      "@type": "Property",
+      "name": "processorManufacturer",
+      "displayName": "Processor manufacturer",
+      "schema": "string",
+      "description": "ARM"
+    },
+    {
+      "@type": "Property",
+      "name": "totalStorage",
+      "displayName": "Total storage",
+      "schema": "double",
+      "description": "128000000 kilobytes"
+    },
+    {
+      "@type": "Property",
+      "name": "totalMemory",
+      "displayName": "Total memory",
+      "schema": "double",
+      "description": "4000000 kilobytes"
+    }
+  ]
+}
