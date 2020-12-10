@@ -1,0 +1,143 @@
+{
+    "@id": "dtmi:compal:pixsee:smartDetection_area;1",
+    "@type": "Interface",
+    "displayName": "smartDetection_area",
+    "description": "Area detection",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "detection",
+            "description": "detection is ON or OFF",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "displayName": "ON",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "OFF",
+                    "displayName": "OFF",
+                    "enumValue": 1
+                  }
+                ]
+             }
+        },
+        {
+            "@type": "Property",
+            "name": "sensitivity",
+            "description": "sensitivity is L or M or H",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "L",
+                    "displayName": "L",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "M",
+                    "displayName": "M",
+                    "enumValue": 1
+                  },
+                  {
+                    "name": "H",
+                    "displayName": "H",
+                    "enumValue": 2
+                  }
+                ]
+             } 
+        },            
+        {
+            "@type": "Property",
+            "name": "direction",
+            "description": "direction is In or Out",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "in",
+                    "displayName": "in",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "out",
+                    "displayName": "out",
+                    "enumValue": 1
+                  }
+                ]
+             }
+        },
+        {
+            "@type": "Property",
+            "name": "left_top_x",
+            "description": "left_top_x is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "left_top_y",
+            "description": "left_top_y is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "right_top_x",
+            "description": "right_top_x is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "right_top_y",
+            "description": "right_top_y is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "left_bottom_x",
+            "description": "left_bottom_x is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "left_bottom_y",
+            "description": "left_bottom_y is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "right_bottom_x",
+            "description": "right_bottom_x is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "right_bottom_y",
+            "description": "right_bottom_y is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "resolution",
+            "description": "right_bottom_y is integer",
+            "schema": "integer",
+            "writable":true 
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}

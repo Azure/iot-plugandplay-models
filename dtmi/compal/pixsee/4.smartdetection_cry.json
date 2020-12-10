@@ -1,0 +1,87 @@
+{
+    "@id": "dtmi:compal:pixsee:smartDetection_cry;1",
+    "@type": "Interface",
+    "displayName": "smartDetection_cry",
+    "description": "Cry detection",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "detection",
+            "description": "detection is ON or OFF",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "displayName": "ON",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "OFF",
+                    "displayName": "OFF",
+                    "enumValue": 1
+                  }
+                ]
+             }
+        },
+        {
+            "@type": "Property",
+            "name": "sensitivity",
+            "description": "sensitivity is L or M or H",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "L",
+                    "displayName": "L",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "M",
+                    "displayName": "M",
+                    "enumValue": 1
+                  },
+                  {
+                    "name": "H",
+                    "displayName": "H",
+                    "enumValue": 2
+                  }
+                ]
+             }
+        },            
+        {
+            "@type": "Property",
+            "name": "soothing_mode",
+            "description": "soothing_mode is ON or OFF",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "displayName": "ON",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "OFF",
+                    "displayName": "OFF",
+                    "enumValue": 1
+                  }
+                ]
+             }
+        },
+        {
+            "@type": "Property",
+            "name": "soothing_file",
+            "description": "soothing_mode file name",
+            "schema": "string",
+            "writable":true 
+        }
+    ] ,
+    "@context": "dtmi:dtdl:context;2"
+}	
