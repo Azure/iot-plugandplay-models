@@ -10,21 +10,21 @@
       "displayName": "LED",
       "description": "LED of the device.",
       "writable": true,
-      "schema": "integer"
+      "schema": "boolean"
     },
     {
-      "@type": "Property",
+      "@type": "Telemetry",
       "name": "button1",
       "displayName": "Button1",
       "description": "Button-01 of the device.",
-      "schema": "integer"
+      "schema": "boolean"
     },    
     {
-      "@type": "Property",
+      "@type": "Telemetry",
       "name": "button2",
       "displayName": "Button2",
       "description": "Button-02 of the device.",
-      "schema": "integer"
+      "schema": "boolean"
     },    
     {
       "@type": "Command",

@@ -9,8 +9,7 @@
       "@type":  ["Telemetry", "Acceleration"],
       "name": "accelX",
       "displayName": {
-        "en": "Acceleration X",
-        "zh": "加速度 X"
+        "en": "Acceleration X"
       },
       "schema": "float",
       "unit": "gForce"
@@ -19,8 +18,7 @@
       "@type":  ["Telemetry", "Acceleration"],
       "name": "accelY",
       "displayName": {
-        "en": "Acceleration Y",
-        "zh": "加速度 Y"
+        "en": "Acceleration Y"
       },
       "schema": "float",
       "unit": "gForce"
@@ -29,8 +27,7 @@
       "@type":  ["Telemetry", "Acceleration"],
       "name": "accelZ",
       "displayName": {
-        "en": "Acceleration Z",
-        "zh": "加速度 Z"
+        "en": "Acceleration Z"
       },
       "schema": "float",
       "unit": "gForce"
@@ -39,8 +36,7 @@
       "@type":  ["Telemetry", "Temperature"],
       "name": "temperature",
       "displayName": {
-        "en": "Temperature",
-        "zh": "溫度"
+        "en": "Temperature"
       },
       "schema": "float",
       "unit": "degreeCelsius"
