@@ -19,6 +19,7 @@ jobs:
 
 - job: 'evaluate_and_sync_models'
   displayName: 'Evaluate and synchronize models'
+
   steps:
   - task: Bash@3
     inputs:
@@ -41,6 +42,8 @@ jobs:
             dmr-client export -m $file -o ${file//.json/.expanded.json} --repo $PWD --silent
           done
         fi
+    env:
+      DMR_SYNC_STORAGE: $(DMR_SYNC_STORAGE)
 
   - task: AzureCLI@2
     displayName: 'Synchronizing models with storage'
@@ -49,3 +52,5 @@ jobs:
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: az storage blob upload-batch -d '$web/dtmi' --account-name $DMR_SYNC_STORAGE -s dtmi --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern *.json
+    env:
+      DMR_SYNC_STORAGE: $(DMR_SYNC_STORAGE)
