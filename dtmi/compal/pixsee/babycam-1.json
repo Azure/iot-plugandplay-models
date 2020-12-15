@@ -14,7 +14,7 @@
       },
       {
         "@type" : "Component",
-        "schema": "dtmi:compal:pixsee:environmentsettings;1",
+        "schema": "dtmi:compal:pixsee:environmentSettings;1",
         "name": "envrionmentSettings",
         "displayName": "xxxx",
         "description": "xxxx"
