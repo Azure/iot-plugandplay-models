@@ -1,7 +1,7 @@
 {
-    "@id": "dtmi:compal:pixsee:envrionmentSettings;1",
+    "@id": "dtmi:compal:pixsee:environmentSettings;1",
     "@type": "Interface",
-    "displayName": "envrionmentSettings",
+    "displayName": "environmentSettings",
     "description": "environment",
     "contents": [
         {
