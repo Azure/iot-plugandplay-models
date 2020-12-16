@@ -1,0 +1,93 @@
+{
+    "@id": "dtmi:compal:pixsee:environmentSettings;1",
+    "@type": "Interface",
+    "displayName": "environmentSettings",
+    "description": "environment",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "detection",
+            "description": "detection is ON or OFF",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "displayName": "ON",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "OFF",
+                    "displayName": "OFF",
+                    "enumValue": 1
+                  }
+                ]
+             }
+        },
+        {
+            "@type": "Property",
+            "name": "sensitivity",
+            "description": "sensitivity is L or M or H",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "L",
+                    "displayName": "L",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "M",
+                    "displayName": "M",
+                    "enumValue": 1
+                  },
+                  {
+                    "name": "H",
+                    "displayName": "H",
+                    "enumValue": 2
+                  }
+                ]
+             }
+        },            
+        {
+            "@type": "Property",
+            "name": "temperature_low",
+            "description": "temperature_low is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "temperature_high",
+            "description": "temperature_high is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "humidity_low",
+            "description": "humidity_low is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "humidity_high",
+            "description": "humidity_high is integer",
+            "schema": "integer",
+            "writable":true 
+        },
+        {
+            "@type": "Property",
+            "name": "is_celsius",
+            "description": "is_celsius is 0 or 1 ",
+            "writable":true,
+            "schema":"integer"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}
