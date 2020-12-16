@@ -26,7 +26,7 @@ Examples:
 
 -->
 
-### PnP Device Info
+### IoT Plug and Play Device Info
 
 <!--
 > Info identifying your PnP device.
