@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_bluetooth;1",
+  "@type": "Interface",
+  "displayName": "Bluetooth",
+  "description": "Bluetooth feature on ameba device.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "bluetooth_support",
+      "displayName": "Bluetooth Support",
+      "description": "Bluetooth support for device.",
+      "schema": "boolean"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_device_info;1",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "description": "Ameba device information.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "description": "Company name of the device manufacturer.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "displayName": "Device Model",
+      "description": "Device model name.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "fw_version",
+      "displayName": "Firmware Version",
+      "description": "Version of the firmware on your device.",
+      "schema": "string"
+    }
+  ]
+}
