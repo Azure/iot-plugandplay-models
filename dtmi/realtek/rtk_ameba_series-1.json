@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_ameba_series;1",
+  "@type": "Interface",
+  "displayName": "Realtek Ameba",
+  "description": "Realtek Ameba iot device.",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "device_information",
+      "displayName": "Device information",
+      "description": "Ameba Device information.",
+      "schema": "dtmi:realtek:rtk_device_info;1"
+    },
+    {
+      "@type": "Component",
+      "name": "system",
+      "displayName": "System",
+      "description": "System information of Ameba device.",
+      "schema": "dtmi:realtek:rtk_system;1"
+    },
+    {
+      "@type": "Component",
+      "name": "memory",
+      "displayName": "Memory",
+      "description": "Memory configuration.",
+      "schema": "dtmi:realtek:rtk_memory;1"
+    },
+    {
+      "@type": "Component",
+      "name": "audio",
+      "displayName": "Audio",
+      "description": "Audio feature.",
+      "schema": "dtmi:realtek:rtk_audio;1"
+    },
+    {
+      "@type": "Component",
+      "name": "video",
+      "displayName": "Video",
+      "description": "Video feature.",
+      "schema": "dtmi:realtek:rtk_video;1"
+    },
+    {
+      "@type": "Component",
+      "name": "lcd",
+      "displayName": "LCD",
+      "description": "LCD feature.",
+      "schema": "dtmi:realtek:rtk_lcd;1"
+    },
+    {
+      "@type": "Component",
+      "name": "gpio",
+      "displayName": "GPIO",
+      "description": "GPIO feature.",
+      "schema": "dtmi:realtek:rtk_gpio;1"
+    },
+    {
+      "@type": "Component",
+      "name": "wireless",
+      "displayName": "Wireless",
+      "description": "wireless information and configuration.",
+      "schema": "dtmi:realtek:rtk_wireless;1"
+    },
+    {
+      "@type": "Component",
+      "name": "bluetooth",
+      "displayName": "Bluetooth",
+      "description": "bluetooth information and configuration.",
+      "schema": "dtmi:realtek:rtk_bluetooth;1"
+    }
+  ]
+}
