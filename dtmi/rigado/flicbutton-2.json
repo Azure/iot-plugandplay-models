@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:FlicButton;2",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:rigado:FlicButton:buttonPressed;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Button Pressed"
+      },
+      "name": "buttonPressed",
+      "schema": "boolean"
+    }
+  ],
+  "displayName": {
+    "en": "Flic Button"
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]  
+}

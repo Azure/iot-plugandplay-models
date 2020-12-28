@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:RS40OccupancySensor;2",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:rigado:RS40OccupancySensor:count;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Motion Count"
+      },
+      "name": "count",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:rigado:RS40OccupancySensor:occupied;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Occupancy State"
+      },
+      "name": "occupied",
+      "schema": "boolean"
+    },
+    {
+      "@id": "dtmi:rigado:RS40OccupancySensor:ledOff;1",
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Led Control"
+      },
+      "name": "ledOff",
+      "request": {
+        "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:req;1",
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "req"
+        },
+        "name": "req",
+        "schema": {
+          "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:req:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:req:schema:state;1",
+              "displayName": {
+                "en": "Led State"
+              },
+              "name": "state",
+              "schema": "boolean"
+            }
+          ]
+        }
+      },
+      "response": {
+        "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:resp;1",
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "resp"
+        },
+        "name": "resp",
+        "schema": {
+          "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:resp:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:rigado:RS40OccupancySensor:ledOff:resp:schema:state;1",
+              "displayName": {
+                "en": "state"
+              },
+              "name": "state",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "displayName": {
+    "en": "RS40 Occupancy Sensor"
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]    
+}

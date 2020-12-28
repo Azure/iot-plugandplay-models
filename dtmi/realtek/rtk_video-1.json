@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_video;1",
+  "@type": "Interface",
+  "displayName": "Video",
+  "description": "Video feature on ameba device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "video_support",
+      "displayName": "Video Support",
+      "description": "Video support for device.",
+      "schema": "boolean"
+    }
+  ]
+}
