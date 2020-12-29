@@ -389,7 +389,7 @@
             "en": "rebootDevice Response"
           },
          "name": "message",
-          "schema": "json"
+          "schema": "string"
       }
     }
   ]
