@@ -1,6 +1,6 @@
 {
 "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:avnet:Starterkit;1",
+    "@id": "dtmi:com:avnet:Starterkit;1",
     "@type": "Interface",
     "displayName": "StarterKitOutOfBoxExample",
     "contents": [
@@ -367,13 +367,6 @@
               }
             ]
           }
-        },
-        "response": {
-          "displayName": {
-            "en": "setSensorPollTime Response"
-          },
-          "name": "message",
-          "schema": "string"
         }
       },
       {
@@ -381,15 +374,7 @@
         "commandType": "synchronous",
         "name": "rebootDevice",
         "displayName": "Force Reboot",
-        "description": "Reboots the device",
-        "response": {
-          "@type": "CommandPayload",
-          "displayName": {
-            "en": "rebootDevice Response"
-          },
-         "name": "message",
-          "schema": "string"
-      }
+        "description": "Reboots the device"
     }
   ]
 }
