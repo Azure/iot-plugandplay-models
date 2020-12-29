@@ -384,7 +384,6 @@
         "description": "Reboots the device",
         "response": {
           "@type": "CommandPayload",
-          "commandType": "synchronous",
           "displayName": {
             "en": "rebootDevice Response"
           },
