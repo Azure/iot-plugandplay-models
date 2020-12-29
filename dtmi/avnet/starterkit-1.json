@@ -376,19 +376,19 @@
           "schema": "string"
         }
       },
-      {
-          "@type": "Command",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "name": "rebootDevice",
+        "displayName": "Force Reboot",
+        "description": "Reboots the device",
+        "response": {
+          "@type": "CommandPayload",
           "commandType": "synchronous",
-          "name": "haltApplication",
-          "displayName": "Halt Application",
-          "description": "Stops the execution of the Azure Sphere Application",
-          "response": {
-            "displayName": {
-              "en": "haltAppication Response"
-            },
-           "name": "message",
-            "schema": "string"
-        }
+          "displayName": {
+            "en": "rebootDevice Response"
+          },
+         "name": "message",
+          "schema": "json"
       }
     ]
   }
