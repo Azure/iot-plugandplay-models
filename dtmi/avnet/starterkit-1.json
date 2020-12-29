@@ -376,6 +376,7 @@
           "schema": "string"
         }
       },
+      {
         "@type": "Command",
         "commandType": "synchronous",
         "name": "rebootDevice",
@@ -390,5 +391,6 @@
          "name": "message",
           "schema": "json"
       }
-    ]
-  }
+    }
+  ]
+}
