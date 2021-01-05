@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:avnet:Starterkit;1",
+  "@id": "dtmi:avnet:Starterkit;2",
   "@type": "Interface",
   "displayName": "StarterKitOutOfBoxExample",
   "@context": "dtmi:dtdl:context;2",
