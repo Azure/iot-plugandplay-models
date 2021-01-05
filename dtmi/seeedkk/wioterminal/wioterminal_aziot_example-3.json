@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;3",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Seeed Wio Terminal",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelX",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration X",
+        "ja": "加速度 X"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelY",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration Y",
+        "ja": "加速度 Y"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelZ",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration Z",
+        "ja": "加速度 Z"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "light",
+      "displayName": {
+        "en": "Light intensity",
+        "ja": "光量"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "ringBuzzer",
+      "displayName": {
+        "en": "Ring buzzer",
+        "ja": "ブザーを鳴らす"
+      },
+      "request": {
+        "name": "duration",
+        "displayName": {
+          "en": "Duration",
+          "ja": "期間"
+        },
+        "description": {
+          "en": "Buzzer duration (milliseconds)",
+          "ja": "ブザーを鳴らす期間（単位はミリ秒）"
+        },
+        "schema": "integer"
+      }
+    }
+  ]
+}
