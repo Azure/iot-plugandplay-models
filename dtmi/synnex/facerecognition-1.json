@@ -17,14 +17,14 @@
       "name": "cpuClock",
       "displayName": "CPU Clock(MHz)",
       "description": "Processor frequency specifies the operating frequency of the CPU's core(s) in MHz.",
-      "schema": "double"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "cpuLoading",
       "displayName": "CPU Loading(%)",
       "description": "To measure the percentage of the CPU's capacity.",
-      "schema": "double"
+      "schema": "integer"
     },
     {
       "@type": "Property",
@@ -72,37 +72,37 @@
       "@type": "Property",
       "name": "logicalDISKtotal",
       "displayName": "Logical DISK (Total)(in byte)",
-      "schema": "long"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "logicalDISKfree",
       "displayName": "Logical DISK (Free)(in byte)",
-      "schema": "long"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "logicalDISKusage",
       "displayName": "Logical DISK (Usage)(%)",
-      "schema": "double"
+      "schema": "integer"
     },
     {
       "@type": "Property",
       "name": "memTotal",
       "displayName": "Memory (Total)(in byte)",
-      "schema": "long"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "memFree",
       "displayName": "Memory (Free)(in byte)",
-      "schema": "long"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "memUsage",
       "displayName": "Memory (Usage)(%)",
-      "schema": "double"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
@@ -123,7 +123,7 @@
       "name": "employeeID",
       "displayName": "Employee ID",
       "description": "The employee ID of the employee which is detected by the system.",
-      "schema": "string"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
