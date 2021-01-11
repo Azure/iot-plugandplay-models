@@ -1,0 +1,148 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Synnex:faceRecognition;2",
+  "@type": "Interface",
+  "displayName": "FaceRecognition",
+  "description": "Report the result of the face recognition and access control information.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "cpuInfo",
+      "displayName": "CPU Information",
+      "description": "Manufacturer/Processor Number/Base Frequency of the processor.",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "cpuClock",
+      "displayName": "CPU Clock(MHz)",
+      "description": "Processor frequency specifies the operating frequency of the CPU's core(s) in MHz.",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "cpuLoading",
+      "displayName": "CPU Loading(%)",
+      "description": "To measure the percentage of the CPU's capacity.",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "biosVersion",
+      "displayName": "BIOS Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "biosManufacturer",
+      "displayName": "BIOS Manufacturer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "osVersion",
+      "displayName": "OS Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "osBuildNumber",
+      "displayName": "OS BuildNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardManufacturer",
+      "displayName": "Baseboard Manufacturer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardSerialNumber",
+      "displayName": "Baseboard SerialNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardProduct",
+      "displayName": "Baseboard Product",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "logicalDISKtotal",
+      "displayName": "Logical DISK (Total)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "logicalDISKfree",
+      "displayName": "Logical DISK (Free)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "logicalDISKusage",
+      "displayName": "Logical DISK (Usage)(%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "memTotal",
+      "displayName": "Memory (Total)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "memFree",
+      "displayName": "Memory (Free)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "memUsage",
+      "displayName": "Memory (Usage)(%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "frameRate",
+      "displayName": "Frame Rate (FPS)",
+      "description": "The amount of individual video frames that the camera captures, per second.",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "deviceID",
+      "displayName": "Device ID",
+      "description": "The device ID of the system which detects the employee entering and exiting.",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "employeeID",
+      "displayName": "Employee ID",
+      "description": "The employee ID of the employee which is detected by the system.",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "accuracy",
+      "displayName": "Accuracy (%)",
+      "description": "The probability to recognize the correct employee.",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "time",
+        "displayName": "Reboot Delay Time",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    }
+  ]
+}
