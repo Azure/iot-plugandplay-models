@@ -1,8 +1,8 @@
 {
 	"@context": "dtmi:dtdl:context;2",
-	"@id": "dtmi:com:example:TagU310;1",
+	"@id": "dtmi:com:example:tagu310;1",
 	"@type": "Interface",
-	"displayName": "TagU310",
+	"displayName": "tagu310",
 	"description": "Device information packet.",
 	"contents": [{
 			"@type": [
