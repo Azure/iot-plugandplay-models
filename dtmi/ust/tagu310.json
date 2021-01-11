@@ -1,0 +1,276 @@
+{
+	"@context": "dtmi:dtdl:context;2",
+	"@id": "dtmi:com:example:tagu310;1",
+	"@type": "Interface",
+	"displayName": "TagU310",
+	"description": "Device information packet.",
+	"contents": [{
+			"@type": [
+				"Telemetry", "did"
+			],
+			"name": "did",
+			"displayName": "did",
+			"description": "Device ID tagging.",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry", "tmp"
+			],
+			"name": "tmp",
+			"displayName": "tmp",
+			"description": "Tamper",
+			"schema": "integer"
+		},
+		{
+			"@type": [
+				"Telemetry", "plv"
+			],
+			"name": "plv",
+			"displayName": "plv",
+			"description": "Payload Version",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry", "cid"
+			],
+			"name": "cid",
+			"displayName": "cid",
+			"description": "Client ID tagging",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry", "tmstp"
+			],
+			"name": "tmstp",
+			"displayName": "tmstp",
+			"description": "Timestamp",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry", "batr"
+			],
+			"name": "batr",
+			"displayName": "batr",
+			"description": "Battery Percentage",
+			"schema": "float"
+		},
+		{
+			"@type": [
+				"Telemetry", "chr"
+			],
+			"name": "chr",
+			"displayName": "chr",
+			"description": "Charging Status",
+			"schema": "integer"
+		},
+		{
+			"@type": [
+				"Telemetry", "mtyp"
+			],
+			"name": "mtyp",
+			"displayName": "mtyp",
+			"description": "Message Type",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry", "alt"
+			],
+			"name": "alt",
+			"displayName": "alt",
+			"description": "Alert Type",
+			"schema": "string"
+		}, {
+			"@type": [
+				"Telemetry", "gps"
+			],
+			"name": "gps",
+			"schema": "dtmi:com:example:gps;1"
+		},
+		{
+			"@type": [
+				"Telemetry", "stp"
+			],
+			"name": "stp",
+			"schema": "dtmi:com:example:steps;1"
+		}, {
+			"@type": [
+				"Telemetry", "bcn"
+			],
+			"name": "bcn",
+			"schema": "dtmi:com:example:beacons;1"
+		}, {
+			"@type": [
+				"Telemetry", "ps"
+			],
+			"name": "ps",
+			"schema": "dtmi:com:example:pressure;1"
+		}, {
+			"@type": [
+				"Telemetry", "dta"
+			],
+			"name": "dta",
+			"schema": "dtmi:com:example:accelerometer;1"
+		},
+		{
+			"@type": "Property",
+			"name": "ahub",
+			"displayName": "ahub",
+			"description": "Azure host name.",
+			"schema": "string",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "sid",
+			"displayName": "sid",
+			"description": "Site Identification.",
+			"schema": "string",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "uid",
+			"displayName": "uid",
+			"description": "User Identification.",
+			"schema": "string",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "enam",
+			"displayName": "enam",
+			"description": "Employee Name.",
+			"schema": "string",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "smpacc",
+			"displayName": "smpacc",
+			"description": "Accelerometer Sampling Interval.",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "smpprs",
+			"displayName": "smpprs",
+			"description": "Pressure Sampling Interval.",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "rpt",
+			"displayName": "rpt",
+			"description": "Reporting Interval.",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "batthr",
+			"displayName": "batthr",
+			"description": "Battery Threshold.",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"name": "FWVer",
+			"displayName": "FWVer",
+			"description": "Firmware Version.",
+			"schema": "string",
+			"writable": true
+		}
+	],
+	"schemas": [{
+			"@id": "dtmi:com:example:steps;1",
+			"@type": "Object",
+			"fields": [{
+					"name": "dta",
+					"schema": "integer"
+				},
+				{
+					"name": "si",
+					"schema": "integer"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:example:gps;1",
+			"@type": "Object",
+			"fields": [{
+				"name": "dta",
+				"schema": "string"
+			}]
+		},
+		{
+			"@id": "dtmi:com:example:beacons;1",
+			"@type": "Object",
+			"fields": [{
+				"name": "dta",
+				"schema": "dtmi:com:example:beaconsDt;1"
+			}]
+		}, {
+			"@id": "dtmi:com:example:beaconsDt;1",
+			"@type": "Object",
+			"fields": [{
+					"name": "bid",
+					"schema": "string"
+				},
+				{
+					"name": "rsi",
+					"schema": "string"
+				}
+			]
+		}, {
+			"@id": "dtmi:com:example:pressure;1",
+			"@type": "Object",
+			"fields": [{
+				"name": "dta",
+				"schema": "dtmi:com:example:pressureDt;1"
+			}, {
+				"name": "si",
+				"schema": "integer"
+			}]
+		}, {
+			"@id": "dtmi:com:example:pressureDt;1",
+			"@type": "Object",
+			"fields": [{
+					"name": "abs",
+					"schema": "float"
+				},
+				{
+					"name": "temp",
+					"schema": "float"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:example:accelerometer;1",
+			"@type": "Object",
+			"fields": [{
+				"name": "acc",
+				"schema": "dtmi:com:example:accelerometerDt;1"
+			}]
+		}, {
+			"@id": "dtmi:com:example:accelerometerDt;1",
+			"@type": "Object",
+			"fields": [{
+					"name": "dta",
+					"schema": "float"
+				},
+				{
+					"name": "si",
+					"schema": "integer"
+				}
+			]
+		}
+	]
+}
