@@ -23,7 +23,7 @@
         "@type": "Property",
         "name": "maxpeoplecount",
         "writable": true,
-        "schema": "intger",
+        "schema": "integer",
         "displayName": "Crowd Size Limitation",
         "description": "Exceeding this number will trigger an alarm."
       },
