@@ -6,7 +6,7 @@
       {
         "@type": "Telemetry",
         "displayName": {
-          "en": "human_present"
+          "en": "human_presence"
         },
 	"description":"Current detected human number.",
         "name": "human",
