@@ -5,114 +5,90 @@
 	"displayName": "tagu310",
 	"description": "Device information packet.",
 	"contents": [{
-			"@type": [
-				"Telemetry", "did"
-			],
+			"@type": "Telemetry",
 			"name": "did",
 			"displayName": "did",
 			"description": "Device ID tagging.",
 			"schema": "string"
 		},
 		{
-			"@type": [
-				"Telemetry", "tmp"
-			],
+			"@type": "Telemetry",
 			"name": "tmp",
 			"displayName": "tmp",
 			"description": "Tamper",
 			"schema": "integer"
 		},
 		{
-			"@type": [
-				"Telemetry", "plv"
-			],
+			"@type": "Telemetry",
 			"name": "plv",
 			"displayName": "plv",
 			"description": "Payload Version",
 			"schema": "string"
 		},
 		{
-			"@type": [
-				"Telemetry", "cid"
-			],
+			"@type": "Telemetry", 
 			"name": "cid",
 			"displayName": "cid",
 			"description": "Client ID tagging",
 			"schema": "string"
 		},
 		{
-			"@type": [
-				"Telemetry", "tmstp"
-			],
+			"@type": "Telemetry", 
 			"name": "tmstp",
 			"displayName": "tmstp",
 			"description": "Timestamp",
 			"schema": "string"
 		},
 		{
-			"@type": [
-				"Telemetry", "batr"
-			],
+			"@type": "Telemetry",
 			"name": "batr",
 			"displayName": "batr",
 			"description": "Battery Percentage",
 			"schema": "float"
 		},
 		{
-			"@type": [
-				"Telemetry", "chr"
-			],
+			"@type": "Telemetry",
 			"name": "chr",
 			"displayName": "chr",
 			"description": "Charging Status",
 			"schema": "integer"
 		},
 		{
-			"@type": [
-				"Telemetry", "mtyp"
-			],
+			"@type": "Telemetry",
 			"name": "mtyp",
 			"displayName": "mtyp",
 			"description": "Message Type",
 			"schema": "string"
 		},
 		{
-			"@type": [
-				"Telemetry", "alt"
-			],
+			"@type": "Telemetry",
 			"name": "alt",
 			"displayName": "alt",
 			"description": "Alert Type",
 			"schema": "string"
-		}, {
-			"@type": [
-				"Telemetry", "gps"
-			],
+		},
+		{
+			"@type": "Telemetry",
 			"name": "gps",
 			"schema": "dtmi:ust:tagu310:gps;1"
 		},
 		{
-			"@type": [
-				"Telemetry", "stp"
-			],
+			"@type": "Telemetry",
 			"name": "stp",
 			"schema": "dtmi:ust:tagu310:steps;1"
-		}, {
-			"@type": [
-				"Telemetry", "bcn"
-			],
+		},
+		{
+			"@type": "Telemetry",
 			"name": "bcn",
 			"schema": "dtmi:ust:tagu310:beacons;1"
-		}, {
-			"@type": [
-				"Telemetry", "ps"
-			],
+		},
+		{
+			"@type": "Telemetry",
 			"name": "ps",
 			"schema": "dtmi:ust:tagu310:pressure;1"
-		}, {
-			"@type": [
-				"Telemetry", "dta"
-			],
+		},
+		{
+			"@type": "Telemetry", 
 			"name": "dta",
 			"schema": "dtmi:ust:tagu310:accelerometer;1"
 		},
