@@ -5,74 +5,72 @@
   "displayName": "streetlamp",
   "description": "ip3.co.ltd",
   "contents": [
-
     {
       "@type": "Property",
       "name": "sn",
       "displayName": "Device SN",
-      "schema": "string",
-      "description": "Device Serials Number.ex S202101150006"
+      "description": "Device Serials Number.ex S202101150006",
+      "schema": "string"
     },
     {
       "@type": "Property",
       "name": "sw",
       "displayName": "Software Version",
-      "schema": "string",
-      "description": "the device software version,ex.sw:NB.1.0.2"
+      "description": "the device software version,ex.sw:NB.1.0.2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TeleFrq",
+      "schema": "double",
+      "description": "thr frq of telemetry.",
+      "writable": true
     },
     {
       "@type": "Telemetry",
       "name": "brs",
       "displayName": "brightness",
-      "schema": "integer",
-      "description": "the duty ratio of the lamp brightness,ex.0~100"
+      "description": "the duty ratio of the lamp brightness,ex.0~100",
+      "schema": "integer"
     },
     {
       "@type": [ "Telemetry", "temp" ],
       "name": "temp",
-      "schema": "double",
       "unit": "degreeCelsius",
-      "description": "the enviroment temperature,ex.24°C"
+      "description": "the enviroment temperature,ex.24°C",
+      "schema": "double"
     },
     {
       "@type": [ "Telemetry", "power" ],
       "name": "power",
       "displayName": "TotalWattage",
-      "schema": "double",
       "unit": "kilowatt",
-      "description": "the electricity comsumption,ex.1000kwh"
+      "description": "the electricity comsumption,ex.1000kwh",
+      "schema": "double"
     },
     {
       "@type": [ "Telemetry", "lux" ],
       "name": "lux",
       "displayName": "Enviroment lux",
-      "schema": "double",
       "unit": "lux",
-      "description": "the enviroment lux ,ex.10000lux"
+      "description": "the enviroment lux ,ex.10000lux",
+      "schema": "double"
     },
     {
       "@type": [ "Telemetry", "lon" ],
       "name": "lon",
       "displayName": "device position",
-      "schema": "string",
       "unit": "radian",
-      "description": "the device position ,ex.longtitude:121.354"
+      "description": "the device position ,ex.longtitude:121.354",
+      "schema": "string"
     },
     {
       "@type": [ "Telemetry", "lat" ],
       "name": "lat",
       "displayName": "device position",
-      "schema": "string",
       "unit": "radian",
-      "description": "the device position ,ex.latitude:31.221783"
-    },
-    {
-      "@type": [ "Telemetry", "TeleFrq" ],
-      "name": "TeleFrq",
-      "schema": "double",
-      "unit": "hertz",
-      "description": "thr frq of telemetry.",
-      "writable": true
+      "description": "the device position ,ex.latitude:31.221783",
+      "schema": "string"
     },
     {
       "@type": "Command",
@@ -81,7 +79,6 @@
       "displayName": "Reboot",
       "name": "reboot",
       "request": {
-        "@type": "CommandPayload",
         "description": "Number of seconds to wait before rebooting the device.",
         "displayName": "Delay",
         "name": "delay",
