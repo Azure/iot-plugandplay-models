@@ -6,6 +6,27 @@
   "description": "ip3.co.ltd",
   "contents": [
     {
+      "@type": "Telemetry",
+      "name": "brs",
+      "displayName": "brightness",
+      "schema": "integer",
+      "description": "the duty ratio of the lamp brightness,ex.0~100"
+    },
+    {
+      "@type": "Property",
+      "name": "sn",
+      "displayName": "Device SN",
+      "schema": "string",
+      "description": "Device Serials Number.ex S202101150006"
+    },
+    {
+      "@type": "Property",
+      "name": "sw",
+      "displayName": "Software Version",
+      "schema": "string",
+      "description": "the device software version,ex.sw:NB.1.0.2"
+    },
+    {
       "@type": [ "Telemetry", "temp" ],
       "name": "temp",
       "schema": "double",
@@ -19,27 +40,6 @@
       "schema": "double",
       "unit": "kilowatt",
       "description": "the electricity comsumption,ex.1000kwh"
-    },
-    {
-      "@type": [ "Telemetry", "brs" ],
-      "name": "brs",
-      "displayName": "brightness",
-      "schema": "integer",
-      "description": "the duty ratio of the lamp brightness,ex.0~100"
-    },
-    {
-      "@type": [ "Property", "sn" ],
-      "name": "sn",
-      "displayName": "Device SN",
-      "schema": "string",
-      "description": "Device Serials Number.ex S202101150006"
-    },
-    {
-      "@type": ["Property", "sw"],
-      "name": "sw",
-      "displayName": "Software Version",
-      "schema": "string",
-      "description": "the device software version,ex.sw:NB.1.0.2"
     },
     {
       "@type": [ "Property", "lux" ],
