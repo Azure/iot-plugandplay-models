@@ -5,13 +5,7 @@
   "displayName": "streetlamp",
   "description": "ip3.co.ltd",
   "contents": [
-    {
-      "@type": "Telemetry",
-      "name": "brs",
-      "displayName": "brightness",
-      "schema": "integer",
-      "description": "the duty ratio of the lamp brightness,ex.0~100"
-    },
+
     {
       "@type": "Property",
       "name": "sn",
@@ -25,6 +19,13 @@
       "displayName": "Software Version",
       "schema": "string",
       "description": "the device software version,ex.sw:NB.1.0.2"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brs",
+      "displayName": "brightness",
+      "schema": "integer",
+      "description": "the duty ratio of the lamp brightness,ex.0~100"
     },
     {
       "@type": [ "Telemetry", "temp" ],
@@ -42,7 +43,7 @@
       "description": "the electricity comsumption,ex.1000kwh"
     },
     {
-      "@type": [ "Property", "lux" ],
+      "@type": [ "Telemetry", "lux" ],
       "name": "lux",
       "displayName": "Enviroment lux",
       "schema": "double",
@@ -50,7 +51,7 @@
       "description": "the enviroment lux ,ex.10000lux"
     },
     {
-      "@type": [ "Property", "lon" ],
+      "@type": [ "Telemetry", "lon" ],
       "name": "lon",
       "displayName": "device position",
       "schema": "string",
@@ -58,7 +59,7 @@
       "description": "the device position ,ex.longtitude:121.354"
     },
     {
-      "@type": [ "Property", "lat" ],
+      "@type": [ "Telemetry", "lat" ],
       "name": "lat",
       "displayName": "device position",
       "schema": "string",
@@ -66,7 +67,7 @@
       "description": "the device position ,ex.latitude:31.221783"
     },
     {
-      "@type": [ "Property", "TeleFrq" ],
+      "@type": [ "Telemetry", "TeleFrq" ],
       "name": "TeleFrq",
       "schema": "double",
       "unit": "hertz",
