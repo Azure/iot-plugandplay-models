@@ -6,38 +6,43 @@
   "description": "ip3.co.ltd",
   "contents": [
     {
-      "@type": "Telemetry",
+      "@type": [ "Telemetry", "temp" ],
       "name": "temp",
       "schema": "double",
       "unit": "degreeCelsius",
       "description": "the enviroment temperature,ex.24°C"
     },
     {
-      "@type": "Property",
-      "name": "sn",
-      "displayName": "Device SN",
-      "schema": "string",
-      "unit": "sn",
-      "description": "Device Serials Number.ex S202101150006"
-    },
-    {
-      "@type": "Property",
-      "name": "sw",
-      "displayName": "Software Version",
-      "schema": "string",
-      "unit": "ver",
-      "description": "the device software version,ex.sw:NB.1.0.2"
-    },
-    {
-      "@type": "Property",
+      "@type": [ "Telemetry", "power" ],
       "name": "power",
       "displayName": "TotalWattage",
       "schema": "double",
-      "unit": "kw",
+      "unit": "kilowatt",
       "description": "the electricity comsumption,ex.1000kwh"
     },
     {
-      "@type": "Property",
+      "@type": [ "Telemetry", "brs" ],
+      "name": "brs",
+      "displayName": "brightness",
+      "schema": "integer",
+      "description": "the duty ratio of the lamp brightness,ex.0~100"
+    },
+    {
+      "@type": [ "Property", "sn" ],
+      "name": "sn",
+      "displayName": "Device SN",
+      "schema": "string",
+      "description": "Device Serials Number.ex S202101150006"
+    },
+    {
+      "@type": ["Property", "sw"],
+      "name": "sw",
+      "displayName": "Software Version",
+      "schema": "string",
+      "description": "the device software version,ex.sw:NB.1.0.2"
+    },
+    {
+      "@type": [ "Property", "lux" ],
       "name": "lux",
       "displayName": "Enviroment lux",
       "schema": "double",
@@ -45,18 +50,26 @@
       "description": "the enviroment lux ,ex.10000lux"
     },
     {
-      "@type": "Property",
-      "name": "gps",
+      "@type": [ "Property", "lon" ],
+      "name": "lon",
       "displayName": "device position",
       "schema": "string",
-      "unit": "lat/long",
-      "description": "the device position ,ex.latitude:31.221783,longtitude:121.354"
+      "unit": "radian",
+      "description": "the device position ,ex.longtitude:121.354"
     },
     {
-      "@type": "Property",
+      "@type": [ "Property", "lat" ],
+      "name": "lat",
+      "displayName": "device position",
+      "schema": "string",
+      "unit": "radian",
+      "description": "the device position ,ex.latitude:31.221783"
+    },
+    {
+      "@type": [ "Property", "TeleFrq" ],
       "name": "TeleFrq",
       "schema": "double",
-      "unit": "hz",
+      "unit": "hertz",
       "description": "thr frq of telemetry.",
       "writable": true
     },
