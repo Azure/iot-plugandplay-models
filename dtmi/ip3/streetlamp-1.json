@@ -2,22 +2,22 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:ip3:streetlamp;1",
   "@type": "Interface",
-  "displayName":"streetlamp",
-  "description":"ip3.co.ltd",
-  "contents":[
-      {
+  "displayName": "streetlamp",
+  "description": "ip3.co.ltd",
+  "contents": [
+    {
       "@type": "Telemetry",
       "name": "temp",
       "schema": "double",
       "unit": "degreeCelsius",
-	  "description": "the enviroment temperature,ex.24°C"
+      "description": "the enviroment temperature,ex.24°C"
     },
-	{
+    {
       "@type": "Property",
       "name": "sn",
       "displayName": "Device SN",
       "schema": "string",
-	  "unit"  :"sn",
+      "unit": "sn",
       "description": "Device Serials Number.ex S202101150006"
     },
     {
@@ -25,23 +25,23 @@
       "name": "sw",
       "displayName": "Software Version",
       "schema": "string",
-	  "unit"  :"ver",
+      "unit": "ver",
       "description": "the device software version,ex.sw:NB.1.0.2"
     },
-	{
+    {
       "@type": "Property",
       "name": "power",
       "displayName": "TotalWattage",
       "schema": "double",
-	  "unit"  :"kw",
+      "unit": "kw",
       "description": "the electricity comsumption,ex.1000kwh"
     },
-	{
+    {
       "@type": "Property",
       "name": "lux",
       "displayName": "Enviroment lux",
       "schema": "double",
-	  "unit"  :"lux",
+      "unit": "lux",
       "description": "the enviroment lux ,ex.10000lux"
     },
     {
@@ -49,30 +49,30 @@
       "name": "gps",
       "displayName": "device position",
       "schema": "string",
-	  "unit"  :"lat/long",
+      "unit": "lat/long",
       "description": "the device position ,ex.latitude:31.221783,longtitude:121.354"
     },
     {
       "@type": "Property",
       "name": "TeleFrq",
       "schema": "double",
-	  "unit":"hz",
+      "unit": "hz",
       "description": "thr frq of telemetry.",
       "writable": true
     },
-	{
-        "@type": "Command",
-        "commandType":"synchronous",
-        "description":"Reboots the device after waiting the number of seconds specified.",
-        "displayName":"Reboot",
-        "name": "reboot",
-        "request": {
-          "@type": "CommandPayload",
-          "description": "Number of seconds to wait before rebooting the device.",
-          "displayName": "Delay",
-          "name": "delay",
-          "schema": "integer"
-        }
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "displayName": "Reboot",
+      "name": "reboot",
+      "request": {
+        "@type": "CommandPayload",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "displayName": "Delay",
+        "name": "delay",
+        "schema": "integer"
+      }
     }
   ]
 }
