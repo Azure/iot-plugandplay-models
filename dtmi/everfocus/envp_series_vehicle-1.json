@@ -1,0 +1,83 @@
+{
+    "@id": "dtmi:everfocus:envp_series_vehicle;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "eNVP-Series-Vehicle",
+    "description": "NVIDIA Jetson AI Network Video Recorder",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "peopleobject",
+            "displayName": "Object Count",
+            "description": "Object detection.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "l_site_alert",
+            "displayName": "Left alert",
+            "description": "Object approaching warning on the left.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "r_site_alert",
+            "displayName": "Right alert",
+            "description": "Object approaching warning on the right.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "f_site_alert",
+            "displayName": "Front alert",
+            "description": "Object approaching warning on the front.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "alertenabled",
+            "writable": true,
+            "schema": "integer",
+            "displayName": "Alert enabled",
+            "description": "Turn on the alert."
+        },
+        {
+            "@type": "Property",
+            "name": "manufacturer",
+            "displayName": "Manufacturer",
+            "schema": "string",
+            "description": "Company name of the device manufacturer."
+        },
+        {
+            "@type": "Property",
+            "name": "model",
+            "displayName": "Device model",
+            "schema": "string",
+            "description": "Device model name or ID."
+        },
+        {
+            "@type": "Property",
+            "name": "soc",
+            "writable": false,
+            "schema": "string",
+            "displayName": "SOC Family",
+            "description": "soc family name."
+        },
+        {
+            "@type": "Property",
+            "name": "serial",
+            "writable": false,
+            "schema": "string",
+            "displayName": "SOC Serial Number",
+            "description": "SOC serial number."
+        },
+        {
+            "@type": "Property",
+            "name": "camera",
+            "writable": false,
+            "schema": "string",
+            "displayName": "Camera information",
+            "description": "Video source information."
+        }
+    ]
+}
