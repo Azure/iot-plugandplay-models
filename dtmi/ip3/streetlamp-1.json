@@ -34,14 +34,14 @@
       "schema": "integer"
     },
     {
-      "@type": [ "Telemetry", "temp" ],
+      "@type": [ "Telemetry", "Temperature" ],
       "name": "temp",
       "unit": "degreeCelsius",
       "description": "the enviroment temperature,ex.24°C",
       "schema": "double"
     },
     {
-      "@type": [ "Telemetry", "power" ],
+      "@type": [ "Telemetry", "Power" ],
       "name": "power",
       "displayName": "TotalWattage",
       "unit": "kilowatt",
@@ -49,7 +49,7 @@
       "schema": "double"
     },
     {
-      "@type": [ "Telemetry", "lux" ],
+      "@type": [ "Telemetry", "Illuminance" ],
       "name": "lux",
       "displayName": "Enviroment lux",
       "unit": "lux",
@@ -57,7 +57,7 @@
       "schema": "double"
     },
     {
-      "@type": [ "Telemetry", "lon" ],
+      "@type": [ "Telemetry", "Longitude" ],
       "name": "lon",
       "displayName": "device position",
       "unit": "radian",
@@ -65,7 +65,7 @@
       "schema": "string"
     },
     {
-      "@type": [ "Telemetry", "lat" ],
+      "@type": [ "Telemetry", "Latitude" ],
       "name": "lat",
       "displayName": "device position",
       "unit": "radian",
