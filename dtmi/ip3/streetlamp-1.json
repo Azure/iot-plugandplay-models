@@ -62,7 +62,7 @@
       "displayName": "device position",
       "unit": "radian",
       "description": "the device position ,ex.longtitude:121.354",
-      "schema": "string"
+      "schema": "double"
     },
     {
       "@type": [ "Telemetry", "Latitude" ],
@@ -70,7 +70,7 @@
       "displayName": "device position",
       "unit": "radian",
       "description": "the device position ,ex.latitude:31.221783",
-      "schema": "string"
+      "schema": "double"
     },
     {
       "@type": "Command",
