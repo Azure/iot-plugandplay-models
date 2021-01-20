@@ -42,7 +42,7 @@ Microsoft will respond to a PR with all checks in 3 business days.
 
 **GitHub Operation Workflow**
 
-```shell
+```text
 +-------------------------------------------------+
 | iot-plugandplaymodel repo (Microsoft)           |
 +-------------------------------------------------+
