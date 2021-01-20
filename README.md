@@ -7,15 +7,15 @@ Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-mod
 
 ## Submit a model
 
-1. Create a GitHub account if you do not have one yet : [https://github.com/join](https://github.com/join).
+1. Create a GitHub account if you do not have one yet: [Join GitHub](https://github.com/join).
 
-    Learn more about GitHub, please visit [Introduction to Git](https://docs.microsoft.com/en-us/learn/modules/intro-to-git/)
+    [Learn more about GitHub](https://docs.microsoft.com/learn/modules/intro-to-git/)
 
-1. Please sign [Contributor License Agreement](https://cla.opensource.microsoft.com/Azure/iot-plugandplay-models?pullRequest=93)
+1. Sign [Contributor License Agreement](https://cla.opensource.microsoft.com/Azure/iot-plugandplay-models?pullRequest=93)
 
 1. Fork the public GitHub repo: [https://github.com/Azure/iot-plugandplay-models](https://github.com/Azure/iot-plugandplay-models).
 
-    Learn more about forking a repo : [https://docs.github.com/en/github/getting-started-with-github/fork-a-repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+    [Learn more about forking a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
 1. Clone the forked repo. Optionally create a new branch to keep your changes isolated from the `main` branch.
 
@@ -25,16 +25,21 @@ Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-mod
 
     Review the [PR requirements](pr-reqs.md) for naming conventions.
 
+    > [!TIP]  
+    > [DTDL Editor for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl) could help you with the language syntax (including auto-completion) and also validate the syntax with DTDL v2.
+
 1. Save the device model JSON file to a local folder.  
 
     E.g.
-    C:\iot-plugandplay-models\MyThermostat.json
+    `C:\iot-plugandplay-models\MyThermostat.json`
 
 1. Validate the models locally using the `dmr-client` tool to [validate](#validate-models).
 1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#import-a-model-to-the-dtmi-folder) tool below.
 1. Review and cross check with the [PR requirements](pr-reqs.md) and ensure all elements are conform to [DTDL v2](https://aka.ms/dtdl) specification.
 1. Commit the changes locally and push to your fork.
-1. From your fork, create a PR that targets the `main` branch. See [Creating an issue or pull request](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request#creating-a-pull-request) docs.
+1. From your fork, create a PR that targets the `main` branch.  
+
+    [Learn more about pull request](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request#creating-a-pull-request)
 
 The PR triggers a series of GitHub actions that will validate the new submitted interfaces, and make sure your PR satisfies all the checks.
 
@@ -44,13 +49,13 @@ Microsoft will respond to a PR with all checks in 3 business days.
 
 ```text
 +-------------------------------------------------+
-| iot-plugandplaymodel repo (Microsoft)           |
+| iot-plugandplay-models repo (Microsoft)           |
 +-------------------------------------------------+
   |          ⭡
   | Fork     | Pull Request (PR)
   🡓          |
 +-------------------------------------------------+
-| iot-plugandplaymodel repo (your Github account) |
+| iot-plugandplay-models repo (your Github account) |
 +-------------------------------------------------+
   |          ⭡ 
   | Clone    | Commit/Push
