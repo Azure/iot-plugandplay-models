@@ -27,10 +27,7 @@
         "schema": "double"
       },
       {
-        "@type": [
-          "Telemetry",
-          "Humidity"
-        ],
+        "@type": "Telemetry",
         "name": "humi",
         "displayName": {
           "en": "Humidity",
