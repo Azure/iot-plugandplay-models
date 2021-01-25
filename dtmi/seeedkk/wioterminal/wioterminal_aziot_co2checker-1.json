@@ -32,7 +32,6 @@
           "Humidity"
         ],
         "name": "humi",
-        "unit": "percent",
         "displayName": {
           "en": "Humidity",
           "ja": "湿度"
