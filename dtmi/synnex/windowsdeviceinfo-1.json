@@ -7,7 +7,7 @@
     {
       "@type": "Property",
       "name": "hostname",
-      "displayName": "Host Name",
+      "displayName": "Hostname",
       "schema": "string"
     },
     {
@@ -20,14 +20,14 @@
     {
       "@type": "Property",
       "name": "cpuCores",
-      "displayName": "CPU Cores",
+      "displayName": "CPU Core Count",
       "schema": "long"
     },
     {
       "@type": "Property",
       "name": "cpuMaxfreq",
       "displayName": "CPU Max Frequency",
-      "schema": "long"
+      "schema": "double"
     },
     {
       "@type": "Property",
@@ -86,13 +86,13 @@
     {
       "@type": "Property",
       "name": "ipLocal",
-      "displayName": "Local IP Addresses",
+      "displayName": "Local IP Address",
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "ipPublic",
-      "displayName": "Public IP Addresses",
+      "displayName": "Public IP Address",
       "schema": "string"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "@type": "Command",
-      "name": "setPeriod",
+      "name": "setperiod",
       "displayName": "Set Sending Period",
       "description": "Set the period of sending messages to IoT Hub.",
       "request": {
