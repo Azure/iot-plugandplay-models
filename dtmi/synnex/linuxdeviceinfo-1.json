@@ -27,7 +27,7 @@
       "@type": "Property",
       "name": "cpuMaxfreq",
       "displayName": "CPU Max Frequency",
-      "schema": "long"
+      "schema": "double"
     },
     {
       "@type": "Property",
@@ -96,16 +96,23 @@
       "schema": "string"
     },
     {
-      "@type": "Property",
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "highTemp",
-      "displayName": "CPU High Temp",
-      "schema": "double"
+      "displayName": "CPU High Temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
     },
     {
-      "@type": "Property",
-      "name": "criticalTemp",
-      "displayName": "CPU Critical Temp",
-      "schema": "double"
+      "@type": [
+        "Property",
+        "Temperature"
+      ],      "name": "criticalTemp",
+      "displayName": "CPU Critical Temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
     },
     {
       "@type": "Telemetry",
@@ -146,10 +153,13 @@
       "schema": "double"
     },
     {
-      "@type": "Telemetry",
-      "name": "currentTemp",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],      "name": "currentTemp",
       "displayName": "Current Temperature",
-      "schema": "double"
+      "schema": "double",
+      "unit": "degreeCelsius"
     },
     {
       "@type": "Command",
