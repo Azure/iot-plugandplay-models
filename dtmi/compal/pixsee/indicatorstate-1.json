@@ -16,12 +16,12 @@
                   {
                     "name": "ON",
                     "displayName": "ON",
-                    "enumValue": 0
+                    "enumValue": 1
                   },
                   {
                     "name": "OFF",
                     "displayName": "OFF",
-                    "enumValue": 1
+                    "enumValue": 2
                   }
                 ]
              }
@@ -38,12 +38,12 @@
                   {
                     "name": "ON",
                     "displayName": "ON",
-                    "enumValue": 0
+                    "enumValue": 1
                   },
                   {
                     "name": "OFF",
                     "displayName": "OFF",
-                    "enumValue": 1
+                    "enumValue": 2
                   }
                 ]
               } 

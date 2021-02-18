@@ -4,7 +4,7 @@
     "@type": "Interface",
     "displayName": "pixsee",
     "description": "pixsee",
-    "contents": [    
+    "contents": [
       {
         "@type" : "Component",
         "schema": "dtmi:compal:pixsee:indicatorState;1",
@@ -177,6 +177,39 @@
             ]
           }
         }
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "event_info"
+        ],
+        "name": "event_info",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "temperature",
+              "schema": "double"
+            },
+            {
+              "name": "humidity",
+              "schema": "double"
+            },
+            {
+              "name": "tempStatus",
+              "schema": "double"
+            },
+            {
+              "name": "humStatus",
+              "schema": "double"
+            },
+            {
+              "name": "temperatureUnit",
+              "schema": "double"
+            }
+          ]
+        }
       }
-    ] 
+    ]
   }
+
