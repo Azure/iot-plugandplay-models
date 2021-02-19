@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:lansitec:solar_bluetooth_gateway;1",
+  "@type": "Interface",
+  "displayName": "Lansitec Solar LoRaWAN BLE Gateway",
+  "description": "Badge Bluetooth Gateway",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "SNR",
+      "description": "SNR",
+      "name": "channel_4",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "RSSI",
+      "description": "RSSI",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Status",
+      "description": "Status",
+      "name": "channel_99",
+      "schema": "double"
+    }
+  ]
+}
