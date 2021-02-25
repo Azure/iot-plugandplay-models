@@ -1,0 +1,55 @@
+{
+    "@id": "dtmi:everfocus:envp_series_desktop;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "eNVP-Series-Desktop",
+    "description": "NVIDIA Jetson AI Network Video Recorder",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "peoplecount",
+        "displayName": "People Count",
+        "description": "People detection.",
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "alarm",
+        "displayName": "Alarm",
+        "description": "Exceeding the number limit alarm.",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "maxpeoplecount",
+        "writable": true,
+        "schema": "integer",
+        "displayName": "Crowd Size Limitation",
+        "description": "Exceeding this number will trigger an alarm."
+      },
+      {
+        "@type": "Property",
+        "name": "soc",
+        "writable": false,
+        "schema": "string",
+        "displayName": "SOC Family",
+        "description": "soc family name."
+      },
+      {
+        "@type": "Property",
+        "name": "serial",
+        "writable": false,
+        "schema": "string",
+        "displayName": "SOC Serial Number",
+        "description": "SOC serial number."
+      },
+      {
+        "@type": "Property",
+        "name": "camera",
+        "writable": false,
+        "schema": "string",
+        "displayName": "Camera information",
+        "description": "Video source information."
+      }
+    ]
+  }
