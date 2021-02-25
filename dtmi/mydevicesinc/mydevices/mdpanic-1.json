@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:mydevices:mdpanic;1",
+  "@type": "Interface",
+  "displayName": "MD Panic",
+  "description": "MD Panic",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "gps",
+      "description": "gps",
+      "name": "channel_104",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "dismiss alarm",
+      "description": "dismiss alarm",
+      "name": "channel_57",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "sos alarm",
+      "description": "sos alarm",
+      "name": "channel_103",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "beacon",
+      "description": "beacon",
+      "name": "channel_102",
+      "schema": "double"
+    }
+  ]
+}
