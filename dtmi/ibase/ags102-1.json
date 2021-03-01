@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:iBase:AGS102;1",
+    "@type": "Interface",
+    "displayName": "iBase-AGS102",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}
