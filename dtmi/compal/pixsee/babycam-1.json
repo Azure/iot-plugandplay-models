@@ -192,27 +192,27 @@
                   "valueSchema": "string",
                   "enumValues": [
                     {
-                      "name": "01_New_Day_Begins",
+                      "name": "New_Day_Begins",
                       "enumValue": "PIX-MU-01A_New_Day_Begins.wav"
                     },
                     {
-                      "name": "02_Sparkling_Waves",
+                      "name": "Sparkling_Waves",
                       "enumValue": "PIX-MU-02Sparkling_Waves.wav"
                     },
                     {
-                      "name": "03_The_Soothing_Forest",
+                      "name": "The_Soothing_Forest",
                       "enumValue": "PIX-MU-03The_Soothing_Forest.wav"
                     },
                     {
-                      "name": "04_My_Island_Up_North",
+                      "name": "My_Island_Up_North",
                       "enumValue": "PIX-MU-04My_Island_Up_North.wav"
                     },
                     {
-                      "name": "05_Sweet_Memories",
+                      "name": "Sweet_Memories",
                       "enumValue": "PIX-MU-05Sweet_Memories.wav"
                     },
                     {
-                      "name": "06_Starry_Night",
+                      "name": "Starry_Night",
                       "enumValue": "PIX-MU-06Starry_Night.wav"
                     }
                   ]
@@ -250,8 +250,7 @@
       },
       {
         "@type": [
-          "Telemetry",
-          "event_info"
+          "Telemetry"
         ],
         "name": "event_info",
         "schema": {
@@ -282,4 +281,3 @@
       }
     ]
   }
-
