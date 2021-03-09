@@ -1,53 +1,53 @@
 {
-    "@id": "dtmi:compal:pixsee:indicatorState;1",
-    "@type": "Interface",
-    "displayName": "indicatorState",
-    "description": "Indicator state",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "led_indicator",
-            "description": "LED indicator is ON or OFF",
-            "writable":true ,
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                  {
-                    "name": "ON",
-                    "displayName": "ON",
-                    "enumValue": 1
-                  },
-                  {
-                    "name": "OFF",
-                    "displayName": "OFF",
-                    "enumValue": 2
-                  }
-                ]
-             }
-        },
-        {
-            "@type": "Property",
-            "name": "night_vision",
-            "description": "night_vision is ON or OFF ",
-            "writable":true,
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                  {
-                    "name": "ON",
-                    "displayName": "ON",
-                    "enumValue": 1
-                  },
-                  {
-                    "name": "OFF",
-                    "displayName": "OFF",
-                    "enumValue": 2
-                  }
-                ]
-              } 
-        }
-    ] , 
-    "@context": "dtmi:dtdl:context;2"
+  "@id": "dtmi:compal:pixsee:indicatorState;1",
+  "@type": "Interface",
+  "displayName": "indicatorState",
+  "description": "Indicator state",
+  "contents": [
+      {
+          "@type": "Property",
+          "name": "led_indicator",
+          "description": "LED indicator is ON or OFF",
+          "writable":true ,
+          "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "ON",
+                  "displayName": "ON",
+                  "enumValue": 1
+                },
+                {
+                  "name": "OFF",
+                  "displayName": "OFF",
+                  "enumValue": 2
+                }
+              ]
+           }
+      },
+      {
+          "@type": "Property",
+          "name": "night_vision",
+          "description": "night_vision is ON or OFF ",
+          "writable":true,
+          "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "ON",
+                  "displayName": "ON",
+                  "enumValue": 1
+                },
+                {
+                  "name": "OFF",
+                  "displayName": "OFF",
+                  "enumValue": 2
+                }
+              ]
+            } 
+      }
+  ] , 
+  "@context": "dtmi:dtdl:context;2"
 }
