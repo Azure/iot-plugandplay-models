@@ -140,7 +140,7 @@
       "request": {
         "name": "time",
         "displayName": "Reboot Delay Time",
-        "description": "Number of seconds to wait before rebooting the device.",
+        "description": "Number of seconds to wait before rebooting the device. Test",
         "schema": "integer"
       }
     }
