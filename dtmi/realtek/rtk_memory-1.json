@@ -1,0 +1,57 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_memory;1",
+  "@type": "Interface",
+  "displayName": "Memory",
+  "description": "Ameba device memory configuration.",
+  "contents": [
+    {
+      "@type": [ "Property", "DataSize" ],
+      "name": "total_flash",
+      "displayName": "Total Flash",
+      "description": "Size of flash on device.",
+      "schema": "integer",
+      "unit": "mebibyte"
+    },
+    {
+      "@type": [ "Property", "DataSize" ],
+      "name": "total_sram",
+      "displayName": "Total Sram",
+      "description": "size of sram on device.",
+      "schema": "integer",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": [ "Property", "DataSize" ],
+      "name": "total_external_ram",
+      "displayName": "Total External Ram",
+      "description": "size of external ram on device.",
+      "schema": "integer",
+      "unit": "mebibyte"
+    },
+    {
+      "@type": [ "Telemetry", "DataSize" ],
+      "name": "remain_heap",
+      "displayName": "Remain Heap Size",
+      "description": "Current available heap size.",
+      "schema": "integer",
+      "unit": "byte"
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_enable_remain_heap",
+      "displayName": "Telemetry Enable Remain Heap",
+      "description": "Enable remain_heap option in telemetry.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_interval",
+      "displayName": "Telemetry Interval.",
+      "description": "Interval for telemetry of Memory component.",
+      "schema": "integer",
+      "writable": true
+    }
+  ]
+}
