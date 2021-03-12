@@ -1,0 +1,22 @@
+{
+    "@id": "dtmi:everfocus:camera;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Camera",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "manufacturer",
+        "displayName": "Manufacturer",
+        "schema": "string",
+        "description": "Company name of the device manufacturer."
+      },
+      {
+        "@type": "Property",
+        "name": "model",
+        "displayName": "Device model",
+        "schema": "string",
+        "description": "Device model name or ID."
+      }
+    ]
+  }

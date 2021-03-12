@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_lcd;1",
+  "@type": "Interface",
+  "displayName": "LCD",
+  "description": "LCD feature on ameba device.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lcd_support",
+      "displayName": "LCD Support",
+      "description": "LCD support for device.",
+      "schema": "boolean"
+    }
+  ]
+}

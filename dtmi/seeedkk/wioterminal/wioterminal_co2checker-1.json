@@ -1,0 +1,48 @@
+{
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_co2checker;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "CO2 Checker - Seeed Wio Terminal",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "co2",
+        "displayName": {
+          "en": "CO2 concentration",
+          "ja": "二酸化炭素濃度"
+        },
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "name": "temp",
+        "unit": "degreeCelsius",
+        "displayName": {
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "humi",
+        "displayName": {
+          "en": "Humidity",
+          "ja": "湿度"
+        },
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "wbgt",
+        "displayName": {
+          "en": "WBGT",
+          "ja": "暑さ指数"
+        },
+        "schema": "double"
+      }
+    ]
+  }

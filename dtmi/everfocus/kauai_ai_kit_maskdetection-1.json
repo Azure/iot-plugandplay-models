@@ -1,0 +1,47 @@
+{
+    "@id": "dtmi:everfocus:kauai_ai_kit_maskdetection;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "EverFocus KAUAI AI Kit-Face Mask Detection",
+    "description": "AI Edge Computing Module with Kneron KL520 NPU",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "masked",
+        "displayName": "Masked",
+        "description": "masked faces count",
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "nomask",
+        "displayName": "No mask",
+        "description": "no-mask faces count",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "modelid",
+        "writable": false,
+        "schema": "integer",
+        "displayName": "Model ID",
+        "description": "NPU firmware model id."
+      },
+      {
+        "@type": "Property",
+        "name": "npusn",
+        "writable": false,
+        "schema": "integer",
+        "displayName": "Serial Number",
+        "description": "NPU serial number."
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "USB Camera"
+        },
+        "name": "camera",
+        "schema": "dtmi:everfocus:camera;1"
+      }
+    ]
+  }
