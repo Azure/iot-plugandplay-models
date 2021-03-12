@@ -142,9 +142,54 @@
             "schema": "long"
           },
           {
-            "name": "temperature",
-            "displayName": "Temperature",
+            "name": "temperature_temperature_internal",
+            "displayName": "Internal Gateway Temperature (milliC)",
+            "schema": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "GPS Information",
+      "name": "position",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": "GPS Latitude",
             "schema": "float"
+          },
+          {
+            "name": "longitude",
+            "displayName": "GPS Longitude",
+            "schema": "float"
+          },
+          {
+            "name": "altitude",
+            "displayName": "GPS Altitude",
+            "schema": "float"
+          },
+          {
+            "name": "heading",
+            "displayName": "GPS Heading",
+            "schema": "float"
+          },
+          {
+            "name": "precision",
+            "displayName": "GPS Precision",
+            "schema": "float"
+          },
+          {
+            "name": "speed",
+            "displayName": "GPS Speed",
+            "schema": "float"
+          },
+          {
+            "name": "satellites",
+            "displayName": "GPS Satellites",
+            "schema": "integer"
           }
         ]
       }
