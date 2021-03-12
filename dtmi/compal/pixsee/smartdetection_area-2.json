@@ -1,0 +1,118 @@
+{
+    "@id": "dtmi:compal:pixsee:smartDetection_area;1",
+    "@type": "Interface",
+    "displayName": "smartDetection_area",
+    "description": "Area detection",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "sensitivity",
+            "description": "sensitivity is L or M or H",
+            "writable":true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "L",
+                    "displayName": "L",
+                    "enumValue": 1
+                  },
+                  {
+                    "name": "M",
+                    "displayName": "M",
+                    "enumValue": 2
+                  },
+                  {
+                    "name": "H",
+                    "displayName": "H",
+                    "enumValue": 3
+                  }
+                ]
+             } 
+        },
+        {
+            "@type": "Property",
+            "name": "setdangerzoom",
+            "displayName": "set danger zoom",
+            "description": "set danger zoom : direction, resolution, area",
+            "writable":true,
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "detection",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "integer",
+                            "enumValues": [
+                                {
+                                    "name": "DETECTION_ON",
+                                    "enumValue": 1
+                                },
+                                {
+                                    "name": "DETECTION_OFF",
+                                    "enumValue": 2
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "direction",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "integer",
+                            "enumValues": [
+                                {
+                                    "name": "DIRECTION_IN",
+                                    "enumValue": 1
+                                },
+                                {
+                                    "name": "DIRECTION_OUT",
+                                    "enumValue": 2
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "resolution",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "left_top_x",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "left_top_y",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "right_top_x",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "right_top_y",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "left_bottom_x",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "left_bottom_y",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "right_bottom_x",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "right_bottom_y",
+                        "schema": "integer"
+                    }
+                ]
+            }
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}
