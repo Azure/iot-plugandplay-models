@@ -1,0 +1,103 @@
+  
+{
+  "@id": "dtmi:compal:pixsee:environmentSettings;2",
+  "@type": "Interface",
+  "displayName": "environmentSettings",
+  "description": "environment",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "sensitivity",
+      "description": "sensitivity is L or M or H",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "SENSITIVITY_L",
+            "displayName": "SENSITIVITY_L",
+            "enumValue": 1
+          },
+          {
+            "name": "SENSITIVITY_M",
+            "displayName": "SENSITIVITY_M",
+            "enumValue": 2
+          },
+          {
+            "name": "SENSITIVITY_H",
+            "displayName": "SENSITIVITY_H",
+            "enumValue": 3
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "envEnableRange",
+      "displayName": "temperature_edge control",
+      "description": "Get Temperature / Humidity : enable & edge (Max,Min) report",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "temperature_enable",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "Enable",
+                  "displayName": "Enable",
+                  "enumValue": 1
+                },
+                {
+                  "name": "Disable",
+                  "displayName": "Disable",
+                  "enumValue": 0
+                }
+              ]
+            }
+          },
+          {
+            "name": "humidity_enable",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "Enable",
+                  "displayName": "Enable",
+                  "enumValue": 1
+                },
+                {
+                  "name": "Disable",
+                  "displayName": "Disable",
+                  "enumValue": 0
+                }
+              ]
+            }
+          },
+          {
+            "name": "temperature_low",
+            "schema": "integer"
+          },
+          {
+            "name": "temperature_high",
+            "schema": "integer"
+          },
+          {
+            "name": "humidity_low",
+            "schema": "integer"
+          },
+          {
+            "name": "humidity_high",
+            "schema": "integer"
+          }
+        ]
+      },
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
