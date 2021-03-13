@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:Eurotech:RG_10_12_6x;2",
+  "@type": "Interface",
+  "displayName": "Reliagate 10-12-6x",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+     {
+      "@type": "Component",
+      "name": "deviceInformationProperties",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "diagnosticService",
+      "schema": "dtmi:Eurotech:Diagnostic_Service;2"
+    },
+    {
+      "@type": "Component",
+      "name": "assetService",
+      "schema": "dtmi:Eurotech:Asset_Service;1"
+    }
+  ]
+}
