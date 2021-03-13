@@ -13,6 +13,11 @@
       "schema": "dtmi:osconfig:commandrunner;1",
       "@type": "Component",
       "name": "CommandRunner"
+    },
+    {
+      "schema": "dtmi:osconfig:networking;1",
+      "@type": "Component",
+      "name": "Networking"
     }
   ]
 }
