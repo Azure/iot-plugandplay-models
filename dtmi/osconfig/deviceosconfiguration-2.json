@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:osconfig:deviceosconfiguration;1",
+  "@id": "dtmi:osconfig:deviceosconfiguration;2",
   "@type": "Interface",
   "displayName": "Device OS Configuration",
   "contents": [
@@ -13,6 +13,11 @@
       "schema": "dtmi:osconfig:commandrunner;1",
       "@type": "Component",
       "name": "CommandRunner"
+    },
+    {
+      "schema": "dtmi:osconfig:networking;1",
+      "@type": "Component",
+      "name": "Networking"
     }
   ]
 }
