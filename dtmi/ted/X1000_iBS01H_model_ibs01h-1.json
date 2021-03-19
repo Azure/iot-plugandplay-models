@@ -3,7 +3,7 @@
   "@id": "dtmi:TED:iBS01H;1",
   "@type": "Interface",
   "displayName": "iBS01H",
-  "contents": {
+  "contents": [
     {
       "@type": "Property",
       "name": "telemetryInterval",
@@ -52,5 +52,5 @@
         }
       }
     }
-  }  
+  ]  
 }
