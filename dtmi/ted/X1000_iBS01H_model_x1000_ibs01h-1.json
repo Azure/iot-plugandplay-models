@@ -1,9 +1,9 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:TED:E1000_iBS01H;1",
+  "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:TED:X1000_iBS01H;1",
     "@type": "Interface",
-    "displayName": "E1000_iBS01H",
-    "contents": [
+    "displayName": "X1000_iBS01H",
+    "contents": {
       {
         "@type": "Component",
         "name": "iBS01H",
@@ -17,5 +17,5 @@
         "description": "Optional interface with basic device hardware information.",
         "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
       }
-    ]
-  }
+    }
+}  
