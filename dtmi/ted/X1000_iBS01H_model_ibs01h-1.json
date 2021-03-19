@@ -18,7 +18,7 @@
       "displayName": "iBS01H",
       "schema": {
         "@type": "Object",
-        "fields": {
+        "fields": [
           {
             "displayName": "Local Timestamp",
             "name": "localtimestamp",
@@ -49,7 +49,7 @@
             "name": "battery",
             "schema": "double"
           }
-        }
+        ]
       }
     }
   ]  
