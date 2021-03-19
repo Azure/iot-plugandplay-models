@@ -1,0 +1,52 @@
+{
+  "@id": "dtmi:Advantech:esrp_uno_hardwaremonitor;1",
+  "@type": "Interface",
+  "displayName": "Hardware Monitor",
+  "description": "Provides functionality to report data from hardware monitor IC",
+  "comment": "Requires hardware monitor IC and driver.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "description": "Battery voltage on the device",
+      "displayName": "VBAT",
+      "name": "vbat",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "5V stand by voltage on the device",
+      "displayName": "5VSB",
+      "name": "fivevsb",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "Input voltage on the device",
+      "displayName": "VIN",
+      "name": "vin",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "CPU core voltage on the device",
+      "displayName": "VCORE",
+      "name": "vcore",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "CPU temperature on the device",
+      "displayName": "Temperature",
+      "name": "TempCPU",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "description": "Power IC curent on the device",
+      "displayName": "Current",
+      "name": "Current",
+      "schema": "double"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
