@@ -1,0 +1,29 @@
+{
+	"@context": "dtmi:dtdl:context;2",
+	"@id": "dtmi:com:hms_networks:Ewon_Flexy_Azure_Connector_Blank;1",
+	"@type": "Interface",
+	"displayName": "Ewon_Flexy_Azure_Connector_Blank",
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "DeviceMode",
+			"writable": true,
+			"schema": {
+				"@type": "Enum",
+				"valueSchema": "string",
+				"enumValues": [
+					{
+						"name": "disable_azure_telemetry",
+						"displayName": "Disable Azure Telemetry",
+						"enumValue": "0"
+					},
+					{
+						"name": "enable_azure_telemetry",
+						"displayName": "Enable Azure Telemetry",
+						"enumValue": "1"
+					}
+				]
+			}
+		}
+	]
+}
