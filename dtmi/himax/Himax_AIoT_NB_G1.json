@@ -1,6 +1,6 @@
 {
-  "@id": "dtmi:himax:weiplus;2",
   "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:himax:weiplus;2",
   "@type": "Interface",
   "contents": [
     {
