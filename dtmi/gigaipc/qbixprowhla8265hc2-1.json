@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:GIGAIPC:QBiXProWHLA8265HC2;1",
+    "@type": "Interface",
+    "displayName": "GIGAIPC-QBiXProWHLA8265HC2",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}

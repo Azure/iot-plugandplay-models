@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:Advantech:esrp_uno_gpio;1",
+  "@type": "Interface",
+  "displayName": "GPIO",
+  "description": "Provides functionality to set/get GPIO value",
+  "comment": "Requires Advantech EAPI library.",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "GPIOGetLevel",
+      "displayName": "Get GPIO Level",
+      "commandType": "synchronous",
+      "request": {
+          "name": "GPIOGetLevel",
+          "displayName": "GPIOGetLevel",
+          "description": "Get GPIO level.",
+          "schema": "integer"
+      },
+      "response": {
+          "name": "GPIOLevel",
+	  "displayName": "GPIOLevel",
+          "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GPIOSetLevel",
+      "displayName": "Set GPIO Level",
+      "commandType": "synchronous",
+      "request": {
+          "name": "GPIOSetLevel",
+          "displayName": "GPIOSetLevel",
+          "description": "Set GPIO level.",
+          "schema": "integer"
+      },
+      "response": {
+          "name": "GPIOLevel",
+	  "displayName": "GPIOLevel",
+          "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GPIOGetDirection",
+      "displayName": "Get GPIO Direction",
+      "commandType": "synchronous",
+      "request": {
+          "name": "GPIOGetDirection",
+          "displayName": "GPIOGetDirection",
+          "description": "Get GPIO direction.",
+          "schema": "integer"
+      },
+      "response": {
+          "name": "GPIODirection",
+	  "displayName": "GPIODirection",
+          "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "GPIOSetDirection",
+      "displayName": "Set GPIO Direction",
+      "commandType": "synchronous",
+      "request": {
+          "name": "GPIOSetDirection",
+          "displayName": "GPIOSetDirection",
+          "description": "Set GPIO direction.",
+          "schema": "integer"
+      },
+      "response": {
+          "name": "GPIODirection",
+	  "displayName": "GPIODirection",
+          "schema": "integer"
+      }
+    }
+],
+  "@context": "dtmi:dtdl:context;2"
+}

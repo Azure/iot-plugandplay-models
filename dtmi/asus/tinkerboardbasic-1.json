@@ -1,0 +1,23 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ASUS:TinkerBoardBasic;1",
+    "@type": "Interface",
+    "displayName": "ASUS-TinkerBoardBasic",
+    "contents": [
+        {
+            "@type": [
+              "Telemetry",
+              "Temperature"
+            ],
+            "name": "currentTempGPU",
+            "displayName": "Current Temperature (GPU)",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}

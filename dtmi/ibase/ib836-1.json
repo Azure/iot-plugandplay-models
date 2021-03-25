@@ -1,0 +1,18 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:iBase:IB836;1",
+    "@type": "Interface",
+    "displayName": "iBase-IB836",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "BaseInfo1",
+            "schema": "dtmi:iBase:BaseInfo;1"
+        },
+        {
+            "@type": "Component",
+            "name": "LinuxInfo1",
+            "schema": "dtmi:iBase:LinuxInfo;1"
+        }
+    ]
+}
