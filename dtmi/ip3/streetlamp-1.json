@@ -1,0 +1,89 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:ip3:streetlamp;1",
+  "@type": "Interface",
+  "displayName": "streetlamp",
+  "description": "ip3.co.ltd",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "sn",
+      "displayName": "Device SN",
+      "description": "Device Serials Number.ex S202101150006",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "sw",
+      "displayName": "Software Version",
+      "description": "the device software version,ex.sw:NB.1.0.2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TeleFrq",
+      "schema": "double",
+      "description": "thr frq of telemetry.",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brs",
+      "displayName": "brightness",
+      "description": "the duty ratio of the lamp brightness,ex.0~100",
+      "schema": "integer"
+    },
+    {
+      "@type": [ "Telemetry", "Temperature" ],
+      "name": "temp",
+      "unit": "degreeCelsius",
+      "description": "the enviroment temperature,ex.24°C",
+      "schema": "double"
+    },
+    {
+      "@type": [ "Telemetry", "Power" ],
+      "name": "power",
+      "displayName": "TotalWattage",
+      "unit": "kilowatt",
+      "description": "the electricity comsumption,ex.1000kwh",
+      "schema": "double"
+    },
+    {
+      "@type": [ "Telemetry", "Illuminance" ],
+      "name": "lux",
+      "displayName": "Enviroment lux",
+      "unit": "lux",
+      "description": "the enviroment lux ,ex.10000lux",
+      "schema": "double"
+    },
+    {
+      "@type": [ "Telemetry", "Longitude" ],
+      "name": "lon",
+      "displayName": "device position",
+      "unit": "radian",
+      "description": "the device position ,ex.longtitude:121.354",
+      "schema": "double"
+    },
+    {
+      "@type": [ "Telemetry", "Latitude" ],
+      "name": "lat",
+      "displayName": "device position",
+      "unit": "radian",
+      "description": "the device position ,ex.latitude:31.221783",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "displayName": "Reboot",
+      "name": "reboot",
+      "request": {
+        "description": "Number of seconds to wait before rebooting the device.",
+        "displayName": "Delay",
+        "name": "delay",
+        "schema": "integer"
+      }
+    }
+  ]
+}

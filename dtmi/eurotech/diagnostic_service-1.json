@@ -1,0 +1,159 @@
+{
+  "@id": "dtmi:Eurotech:Diagnostic_Service;1",
+  "@type": "Interface",
+  "displayName": "Diagnostic Service",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": "Diagnostic Information",
+      "name": "metrics",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "diag_cpu_util",
+            "displayName": "CPU Utilization",
+            "schema": "float"
+          },
+          {
+            "name": "diag_cpu_util_kura",
+            "displayName": "ESF CPU Utilization",
+            "schema": "float"
+          },
+          {
+            "name": "diag_mem_usg",
+            "displayName": "Memory Usage",
+            "schema": "float"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_tmp",
+            "displayName": "/tmp Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_run_user_0",
+            "displayName": "/run/user/0 Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_dev_shm",
+            "displayName": "/dev/shm Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_ext4",
+            "displayName": "ext4 Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_sys_fs_cgroup",
+            "displayName": "/sys/fs/cgroup Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_devtmpfs_dev",
+            "displayName": "/dev Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_run",
+            "displayName": "/run Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_fs_usg_tmpfs_var_volatile",
+            "displayName": "/var/volatile Filesystem Usage",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_sys_uptime",
+            "displayName": "System Uptime",
+            "schema": "long"
+          },
+          {
+            "name": "diag_disk_rd_cnt",
+            "displayName": "Disk Reads (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_disk_rd_ops",
+            "displayName": "Disk Read Operations",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_disk_wt_cnt",
+            "displayName": "Disk Write (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_disk_wt_ops",
+            "displayName": "Disk Write Operations",
+            "schema": "long"
+          },
+          {
+            "name": "diag_files_opened_kura",
+            "displayName": "Files Opened (ESF process)",
+            "schema": "integer"
+          },
+          {
+            "name": "diag_net_rx_eth0",
+            "displayName": "ETH0 Rx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_net_tx_eth0",
+            "displayName": "ETH0 Tx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_net_rx_eth1",
+            "displayName": "ETH1 Rx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_net_tx_eth1",
+            "displayName": "ETH1 Tx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_net_rx_lo",
+            "displayName": "Loopback Rx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "diag_net_tx_lo",
+            "displayName": "Loopback Tx (bytes)",
+            "schema": "long"
+          },
+          {
+            "name": "wifi_sig_level",
+            "displayName": "WiFi Signal Strength (dBm)",
+            "schema": "integer"
+          },
+          {
+            "name": "cell_sig_level",
+            "displayName": "Cellular Signal Strength (dBm)",
+            "schema": "integer"
+          },
+          {
+            "name": "mqtt_round_trip_time",
+            "displayName": "MQTT Round Trip Time (ms)",
+            "schema": "long"
+          },
+          {
+            "name": "temperature",
+            "displayName": "Temperature",
+            "schema": "float"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": "Sent On",
+      "name": "sentOn",
+      "schema": "long"
+    }
+  ]
+}
