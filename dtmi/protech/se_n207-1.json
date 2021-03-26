@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:iBase:AGS102;1",
+    "@id": "dtmi:Protech:SE_N207;1",
     "@type": "Interface",
-    "displayName": "iBase-AGS102",
+    "displayName": "Protech-SE_N207",
     "contents": [
         {
             "@type": "Component",
