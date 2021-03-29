@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:Eurotech:Asset_Service;1",
+  "@type": "Interface",
+  "displayName": "Asset Service",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "ASSETV1",
+      "displayName": "Asset",
+      "description": "Command to interact with ESF Assets on device. The response is returned as a base64 encoded JSON string.",
+      "request": {
+        "name": "assetV1",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "metrics",
+              "schema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "name": "appTopic",
+                    "schema": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "body",
+              "schema": "string"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "ASSETV1_RESPONSE",
+        "description": "Base64 encoded response.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "body",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
