@@ -1,0 +1,14 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Synnex:PIRmotion_sensor;1",
+  "@type": "Interface",
+  "displayName": "PIR Motion Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pirDetect",
+      "displayName": "PIR detect result",
+      "schema": "boolean"
+    }
+  ]
+}

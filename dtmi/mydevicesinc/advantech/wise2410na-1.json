@@ -1,0 +1,117 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:advantech:wise2410na;1",
+  "@type": "Interface",
+  "displayName": "Advantech WISE Vibration",
+  "description": "Vibration & Temperature Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_3",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "RSSI",
+      "description": "RSSI",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Velocity RMS X-axis",
+      "description": "Velocity RMS X-axis",
+      "name": "channel_500",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Velocity RMS Y-axis",
+      "description": "Velocity RMS Y-axis",
+      "name": "channel_501",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Velocity RMS Z-axis",
+      "description": "Velocity RMS Z-axis",
+      "name": "channel_502",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Peak Acceleration X-axis",
+      "description": "Peak Acceleration X-axis",
+      "name": "channel_503",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Peak Acceleration Y-axis",
+      "description": "Peak Acceleration Y-axis",
+      "name": "channel_504",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Peak Acceleration Z-axis",
+      "description": "Peak Acceleration Z-axis",
+      "name": "channel_505",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Acceleration RMS X-axis",
+      "description": "Acceleration RMS X-axis",
+      "name": "channel_506",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Acceleration RMS Y-axis",
+      "description": "Acceleration RMS Y-axis",
+      "name": "channel_507",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Acceleration RMS Z-axis",
+      "description": "Acceleration RMS Z-axis",
+      "name": "channel_508",
+      "schema": "double"
+    }
+  ]
+}

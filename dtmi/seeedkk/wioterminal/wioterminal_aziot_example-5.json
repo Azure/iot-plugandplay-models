@@ -1,0 +1,178 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;5",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Seeed Wio Terminal",
+  "description": {
+    "en": "X,Y,Z-axis, brightness and button click polling result. Buzzer can be beeped by settings on cloud.",
+    "ja": "加速度X,Y,Zと光量を定期的に通知します。また、右、中央、左ボタンのクリックも通知します。クラウドからの指示でブザーが鳴ります。"
+  },
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelX",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration X",
+        "ja": "加速度 X"
+      },
+      "description": {
+        "en": "X-axis value of accelerometer.",
+        "ja": "加速度センサーのX値です。"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelY",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration Y",
+        "ja": "加速度 Y"
+      },
+      "description": {
+        "en": "Y-axis value of accelerometer.",
+        "ja": "加速度センサーのY値です。"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelZ",
+      "unit": "gForce",
+      "displayName": {
+        "en": "Acceleration Z",
+        "ja": "加速度 Z"
+      },
+      "description": {
+        "en": "Z-axis value of accelerometer.",
+        "ja": "加速度センサーのZ値です。"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "light",
+      "displayName": {
+        "en": "Light intensity",
+        "ja": "光量"
+      },
+      "description": {
+        "en": "Light sensor value (%) on backside.",
+        "ja": "背面にある光センサーの光量です。単位は%。"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "rightButton",
+      "displayName": {
+        "en": "Right button",
+        "ja": "右ボタン"
+      },
+      "description": {
+        "en": "Right button pushed down.",
+        "ja": "右ボタンの押下通知です。"
+      },
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "click",
+            "enumValue": "click",
+            "displayName": {
+              "en": "Click",
+              "ja": "クリック"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "centerButton",
+      "displayName": {
+        "en": "Middle button",
+        "ja": "中央ボタン"
+      },
+      "description": {
+        "en": "Middle button pushed down.",
+        "ja": "中央ボタンの押下通知です。"
+      },
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "click",
+            "enumValue": "click",
+            "displayName": {
+              "en": "Click",
+              "ja": "クリック"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "leftButton",
+      "displayName": {
+        "en": "Left button",
+        "ja": "左ボタン"
+      },
+      "description": {
+        "en": "Left button pushed down.",
+        "ja": "左ボタンの押下通知です。"
+      },
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "click",
+            "enumValue": "click",
+            "displayName": {
+              "en": "Click",
+              "ja": "クリック"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "ringBuzzer",
+      "displayName": {
+        "en": "Ring buzzer",
+        "ja": "ブザーを鳴らす"
+      },
+      "description": {
+        "en": "Beep the buzzer for specified duration.",
+        "ja": "指定された期間、ブザー音を鳴らします。"
+      },
+      "request": {
+        "name": "duration",
+        "displayName": {
+          "en": "Duration",
+          "ja": "期間"
+        },
+        "description": {
+          "en": "Buzzer duration (milliseconds)",
+          "ja": "ブザーを鳴らす期間（単位はミリ秒）"
+        },
+        "schema": "integer"
+      }
+    }
+  ]
+}

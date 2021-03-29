@@ -1,0 +1,16 @@
+{
+    "@id": "dtmi:himax:weiplus;1",
+    "@context":"dtmi:dtdl:context;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "human_presence"
+        },
+	"description":"Current detected human number.",
+        "name": "human",
+        "schema": "integer"
+      }
+    ]
+  }

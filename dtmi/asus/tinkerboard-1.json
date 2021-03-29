@@ -1,0 +1,38 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ASUS:TinkerBoard;1",
+    "@type": "Interface",
+    "displayName": "ASUS-TinkerBoard",
+    "contents": [
+        {
+            "@type": [
+              "Telemetry",
+              "Temperature"
+            ],
+            "name": "currentTempGPU",
+            "displayName": "Current Temperature (GPU)",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        },
+        {
+            "@type": "Component",
+            "name": "PIRsensor0",
+            "schema": "dtmi:Synnex:PIRmotion_sensor;1"
+        },
+        {
+            "@type": "Component",
+            "name": "PIRsensor1",
+            "schema": "dtmi:Synnex:PIRmotion_sensor;1"
+        },
+        {
+            "@type": "Component",
+            "name": "PIRsensor2",
+            "schema": "dtmi:Synnex:PIRmotion_sensor;1"
+        }
+    ]
+}
