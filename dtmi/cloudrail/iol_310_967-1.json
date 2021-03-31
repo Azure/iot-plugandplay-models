@@ -1,0 +1,281 @@
+{
+  "@id": "dtmi:CloudRail:IOL_310_967;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DTIxxx",
+  "description": "RFID Read/Write Head, IO-Link, cULus, flash mount, M12, Connector 1xM12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "CommandValue",
+      "displayName": "CommandValue",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "READ_UID",
+            "enumValue": "READ_UID"
+          },
+          {
+            "name": "AUTO_READ_DATA",
+            "enumValue": "AUTO_READ_DATA"
+          },
+          {
+            "name": "AUTO_WRITE_DATA",
+            "enumValue": "AUTO_WRITE_DATA"
+          },
+          {
+            "name": "READ_DATA",
+            "enumValue": "READ_DATA"
+          },
+          {
+            "name": "WRITE_DATA",
+            "enumValue": "WRITE_DATA"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AntennaDeactivated",
+      "displayName": "AntennaDeactivated",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TagPresent",
+      "displayName": "TagPresent",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CmdEnd",
+      "displayName": "CmdEnd",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CmdStartAcknowledge",
+      "displayName": "CmdStartAcknowledge",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputData",
+      "displayName": "InputData",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DataBlockCounter",
+      "displayName": "DataBlockCounter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorValue",
+      "displayName": "ErrorValue",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "RFID_NOERROR",
+            "enumValue": "RFID_NOERROR"
+          },
+          {
+            "name": "RFID_UNKNOWN_COMMAND",
+            "enumValue": "RFID_UNKNOWN_COMMAND"
+          },
+          {
+            "name": "COMMAND_NO_RESPONSE",
+            "enumValue": "COMMAND_NO_RESPONSE"
+          },
+          {
+            "name": "COMMAND_RX_ERROR",
+            "enumValue": "COMMAND_RX_ERROR"
+          },
+          {
+            "name": "TAG_COMMAND_NOT_SPECIFIED",
+            "enumValue": "TAG_COMMAND_NOT_SPECIFIED"
+          },
+          {
+            "name": "TAG_COMMAND_SYNTAX",
+            "enumValue": "TAG_COMMAND_SYNTAX"
+          },
+          {
+            "name": "TAG_OPTION_NOT_SUPPORTED",
+            "enumValue": "TAG_OPTION_NOT_SUPPORTED"
+          },
+          {
+            "name": "TAG_OTHER",
+            "enumValue": "TAG_OTHER"
+          },
+          {
+            "name": "TAG_BLOCK_NOT_USABLE",
+            "enumValue": "TAG_BLOCK_NOT_USABLE"
+          },
+          {
+            "name": "TAG_BLOCK_ALREADY_BLOCKED",
+            "enumValue": "TAG_BLOCK_ALREADY_BLOCKED"
+          },
+          {
+            "name": "TAG_BLOCK_NOT_UPDATEABLE",
+            "enumValue": "TAG_BLOCK_NOT_UPDATEABLE"
+          },
+          {
+            "name": "TAG_BLOCK_WRITE_VERIFY",
+            "enumValue": "TAG_BLOCK_WRITE_VERIFY"
+          },
+          {
+            "name": "TAG_BLOCK_LOCK_VERIFY",
+            "enumValue": "TAG_BLOCK_LOCK_VERIFY"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CommandValue",
+              "displayName": "CommandValue",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "READ_UID",
+                    "enumValue": "READ_UID"
+                  },
+                  {
+                    "name": "AUTO_READ_DATA",
+                    "enumValue": "AUTO_READ_DATA"
+                  },
+                  {
+                    "name": "AUTO_WRITE_DATA",
+                    "enumValue": "AUTO_WRITE_DATA"
+                  },
+                  {
+                    "name": "READ_DATA",
+                    "enumValue": "READ_DATA"
+                  },
+                  {
+                    "name": "WRITE_DATA",
+                    "enumValue": "WRITE_DATA"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CmdDeactivateAntenna",
+              "displayName": "CmdDeactivateAntenna",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CmdStart",
+              "displayName": "CmdStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "OutputData",
+              "displayName": "OutputData",
+              "schema": "string"
+            },
+            {
+              "name": "DataBlockCounter",
+              "displayName": "DataBlockCounter",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
