@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:Partner:AudreyFamily;1",
+    "@id": "dtmi:Partnertech:AudreyFamily;1",
     "@type": "Interface",
-    "displayName": "Partner-AudreyFamily",
+    "displayName": "Partnertech-AudreyFamily",
     "contents": [
         {
             "@type": "Component",

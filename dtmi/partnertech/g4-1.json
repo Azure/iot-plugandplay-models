@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:Partner:sp6515;1",
+    "@id": "dtmi:Partnertech:g4;1",
     "@type": "Interface",
-    "displayName": "Partner-SP6515",
+    "displayName": "Partnertech-G4",
     "contents": [
         {
             "@type": "Component",

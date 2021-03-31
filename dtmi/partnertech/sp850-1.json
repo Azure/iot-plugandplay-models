@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:Partner:sp850;1",
+    "@id": "dtmi:Partnertech:sp850;1",
     "@type": "Interface",
-    "displayName": "Partner-SP850",
+    "displayName": "Partnertech-SP850",
     "contents": [
         {
             "@type": "Component",

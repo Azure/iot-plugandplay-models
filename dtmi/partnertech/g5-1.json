@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:Partner:m3w2;1",
+    "@id": "dtmi:Partnertech:g5;1",
     "@type": "Interface",
-    "displayName": "Partner-M3W-2",
+    "displayName": "Partnertech-G5",
     "contents": [
         {
             "@type": "Component",
