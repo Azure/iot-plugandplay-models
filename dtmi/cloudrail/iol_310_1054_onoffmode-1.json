@@ -1,0 +1,248 @@
+{
+  "@id": "dtmi:CloudRail:IOL_310_1054_OnOffmode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DV212x",
+  "description": "1-Segment-LED-Signal light, 3 digital inputs, IO-Link, without buzzer, without feedback-button",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FeedbackButton",
+      "displayName": "FeedbackButton",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status8",
+      "displayName": "Status8",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status7",
+      "displayName": "Status7",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status6",
+      "displayName": "Status6",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status5",
+      "displayName": "Status5",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status4",
+      "displayName": "Status4",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status3",
+      "displayName": "Status3",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status2",
+      "displayName": "Status2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status1",
+      "displayName": "Status1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LEDc",
+              "displayName": "LEDc",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDb",
+              "displayName": "LEDb",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDa",
+              "displayName": "LEDa",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
