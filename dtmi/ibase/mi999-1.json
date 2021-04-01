@@ -6,13 +6,8 @@
     "contents": [
         {
             "@type": "Component",
-            "name": "BaseInfo1",
-            "schema": "dtmi:iBase:BaseInfo;1"
-        },
-        {
-            "@type": "Component",
-            "name": "LinuxInfo1",
-            "schema": "dtmi:iBase:LinuxInfo;1"
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:synnex:LinuxDeviceInfo;1"
         }
     ]
 }
