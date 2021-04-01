@@ -1,8 +1,8 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:iBase:BaseInfo;1",
+  "@id": "dtmi:ibase:WindowsDeviceInfo;1",
   "@type": "Interface",
-  "displayName": "General Device Information (base)",
+  "displayName": "General Device Information (Windows)",
   "contents": [
     {
       "@type": "Property",
