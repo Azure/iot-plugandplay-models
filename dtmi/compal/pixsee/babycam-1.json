@@ -1,0 +1,182 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:compal:pixsee:babycam;1",
+    "@type": "Interface",
+    "displayName": "pixsee",
+    "description": "pixsee",
+    "contents": [    
+      {
+        "@type" : "Component",
+        "schema": "dtmi:compal:pixsee:indicatorState;1",
+        "name": "indicatorState",
+        "displayName": "xxxx",
+        "description": "xxxx"
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:compal:pixsee:environmentSettings;1",
+        "name": "envrionmentSettings",
+        "displayName": "xxxx",
+        "description": "xxxx"
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:compal:pixsee:smartDetection_area;1",
+        "name": "smartDetection_area",
+        "displayName": "xxxx",
+        "description": "xxxx"
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:compal:pixsee:smartDetection_cry;1",
+        "name": "smartDetection_cry",
+        "displayName": "xxxx",
+        "description": "xxxx"
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:compal:pixsee:wifiSettings;1",
+        "name": "wifiSettings",
+        "displayName": "xxxx",
+        "description": "xxxx"
+      },
+      {
+        "@type": "Command",
+        "name": "execStreaming",
+        "displayName": "streaming (video + audio)",
+        "description": "{\"toBe\": \"on\" / \"off\"}",
+        "request": {
+          "name":"execStreaming",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "toBe",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "execCapture",
+        "displayName": "Capture"
+      },
+      {
+        "@type": "Command",
+        "name": "execAudio",
+        "displayName": "audio (streaming)",
+        "description": "{\"toBe\": \"on\" / \"off\"}",
+        "request": {
+          "name":"execAudio",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "toBe",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "execVolume",
+        "displayName": "volume",
+        "description": "{\"toBe\":5}",
+        "request": {
+          "name": "execVolume",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "toBe",
+                "schema": "double"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "execReboot",
+        "displayName": "reboot"
+      },
+      {
+        "@type": "Command",
+        "name": "execSleeping",
+        "displayName": "sleep",
+        "description": "{\"toBe\": \"on\" / \"off\"}",
+        "request": {
+          "name": "execSleeping",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "toBe",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "execMusicPlayer",
+        "displayName": "Music player state",
+        "description" : "{\"state\":0,\"type\":6,\"file_name\":\"xxx.mp3\",\"url\":\"https://xxx.services.com/contents?fid=cxxxxddcdcsdcsd\"}",
+        "request": {
+          "name": "execMusicPlayer",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "state",
+                "schema": "double"
+              },
+              {
+                "name": "type",
+                "schema": "double"
+              },
+              {
+                "name": "file_name",
+                "schema": "string"
+              },
+              {
+                "name": "url",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "execDownload",
+        "displayName": "Download content",
+        "description" : "{\"type\": 6,\"file_name\": \"xxx.mp3\",\"url\": \"https://xxxx.service.com/o?fid=sarrsdfsdc\"}",
+        "request": {
+          "name": "execDownload",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "type",
+                "schema": "double"
+              },
+              {
+                "name": "file_name",
+                "schema": "string"
+              },
+              {
+                "name": "url",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    ] 
+  }

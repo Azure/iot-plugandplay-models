@@ -1,0 +1,49 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mydevicesinc:netvox:ra0716;1",
+    "@type": "Interface",
+    "displayName": "Netvox PM2.5",
+    "description": "Netvox RA0716 PM2.5 Sensor",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Signal",
+        "description": "Signal",
+        "name": "channel_100",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Particulate Matter",
+        "description": "Particulate Matter",
+        "name": "channel_16",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": "Temperature",
+        "description": "Temperature",
+        "name": "channel_3",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "RelativeHumidity"
+        ],
+        "displayName": "Humidity",
+        "description": "Humidity",
+        "name": "channel_4",
+        "schema": "double",
+        "unit": "percent"
+      }
+    ]
+  }

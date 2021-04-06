@@ -1,0 +1,126 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_system;1",
+  "@type": "Interface",
+  "displayName": "System",
+  "description": "Ameba device system information.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "build_info",
+      "displayName": "Build Information",
+      "description": "Build information of the firmware.",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "fw_compile_time",
+            "schema": "string"
+          },
+          {
+            "name": "fw_compile_by",
+            "schema": "string"
+          },
+          {
+            "name": "fw_compile_host",
+            "schema": "string"
+          },
+          {
+            "name": "fw_compiler",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "os_info",
+      "displayName": "OS Information",
+      "description": "OS information of the firmware.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "processor_architecture",
+      "displayName": "Processor Architecture",
+      "description": "processor architecture on device.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "trustzone_support",
+      "displayName": "Trustzone Support",
+      "description": "Trustzone security support",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_enable_device_runtime",
+      "displayName": "Telemetry Enable Device Runtime",
+      "description": "Enable device_runtime option in telemetry.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_enable_cpu_usage",
+      "displayName": "Telemetry Enable CPU Usage",
+      "description": "Enable cpu_usage option in telemetry.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_interval",
+      "displayName": "Telemetry Interval",
+      "description": "Interval for telemetry of System component.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [ "Telemetry", "TimeSpan" ],
+      "name": "device_runtime",
+      "displayName": "Device Runtime",
+      "description": "Shows how long device has been running.",
+      "schema": "integer",
+      "unit": "second"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "cpu_usage",
+      "displayName": "CPU usage",
+      "description": "Shows cpu utilization of each running task",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "System reboot after given time.",
+      "request": {
+        "name": "reboot_time",
+        "displayName": "Reboot Time",
+        "description": "Requested time to reboot the device.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "scheduled_time",
+        "displayName": "Scheduled Time",
+        "description": "Reboot schedule time.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "switch_to_upgraded_image",
+      "displayName": "Switch To Upgraded Firmware",
+      "description": "Switch to OTA upgraded firmware and reboot. OTA process should be done before switch firmware."
+    },
+    {
+      "@type": "Command",
+      "name": "switch_to_default_image",
+      "displayName": "Switch To Default Firmware",
+      "description": "Switch back to default firmware and reboot."
+    }
+  ]
+}
