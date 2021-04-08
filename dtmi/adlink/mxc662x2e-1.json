@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ADLINK:MXC662X2E;1",
+    "@type": "Interface",
+    "displayName": "ADLINK-MXC662X2E",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}

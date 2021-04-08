@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_audio;1",
+  "@type": "Interface",
+  "displayName": "Audio",
+  "description": "Audio feature on ameba device.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "audio_support",
+      "displayName": "Audio Support",
+      "description": "Audio support for device.",
+      "schema": "boolean"
+    }
+  ]
+}

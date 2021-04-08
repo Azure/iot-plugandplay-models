@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ADLINK:IPiSMARCPx30;1",
+    "@type": "Interface",
+    "displayName": "ADLINK-IPiSMARCPx30",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}

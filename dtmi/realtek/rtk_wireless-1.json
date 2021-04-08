@@ -1,0 +1,307 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_wireless;1",
+  "@type": "Interface",
+  "displayName": "Wireless",
+  "description": "Wireless feature on ameba device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "wireless_support",
+      "displayName": "Wireless Support",
+      "description": "Wireless support for device.",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "specification",
+      "displayName": "Wireless Specification",
+      "description": "Wireless specification.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_enable_wifi_info",
+      "displayName": "Telemetry Enable Wifi Info",
+      "description": "Enable wifi_info option in telemetry.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "telemetry_interval",
+      "displayName": "Telemetry Interval",
+      "description": "Interval for telemetry of Wireless component.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "wifi_info",
+      "displayName": "WiFi Information",
+      "description": "Show WiFi information.",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "sta_mode_setting",
+            "displayName": "Station Mode Setting",
+            "description": "Station mode connection information.",
+            "schema": {
+              "@type": "Object",
+              "fields": [
+                {
+                  "name": "ssid",
+                  "displayName": "SSID",
+                  "description": "SSID of connecting AP.",
+                  "schema": "string"
+                },
+                {
+                  "name": "channel",
+                  "displayName": "Channel",
+                  "description": "Connected channel to AP.",
+                  "schema": "integer"
+                },
+                {
+                  "name": "security",
+                  "displayName": "Security",
+                  "description": "Security type of connecting AP.",
+                  "schema": "string"
+                },
+                {
+                  "name": "password",
+                  "displayName": "Password",
+                  "description": "Password of connecting AP.",
+                  "schema": "string"
+                }
+              ]
+            }
+          },
+          {
+            "name": "sta_interface",
+            "displayName": "Station Interface",
+            "description": "Station mode interface configuration.",
+            "schema": {
+              "@type": "Object",
+              "fields": [
+                {
+                  "name": "mac",
+                  "displayName": "MAC",
+                  "description": "MAC address.",
+                  "schema": "string"
+                },
+                {
+                  "name": "ip",
+                  "displayName": "IP",
+                  "description": "IP address.",
+                  "schema": "string"
+                },
+                {
+                  "name": "gw",
+                  "displayName": "Gateway",
+                  "description": "Gateway.",
+                  "schema": "string"
+                },
+                {
+                  "name": "msk",
+                  "displayName": "Mask",
+                  "description": "Network mask.",
+                  "schema": "string"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "wifi_connect",
+      "displayName": "Wifi Connect",
+      "description": "Connect to specified AP.",
+      "request": {
+        "name": "wifi_connect_params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ssid",
+              "displayName": "SSID",
+              "description": "SSID of connecting AP ",
+              "schema": "string"
+            },
+            {
+              "name": "passphrase",
+              "displayName": "Passphrase",
+              "description": "Passphrase of connecting AP. Leave blank for open mode.",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "wifi_scan",
+      "displayName": "Wifi Scan",
+      "description": "Scan for netowrk access point around the device.",
+      "request": {
+        "name": "channel",
+        "displayName": "Scan Channels",
+        "description": "Channels to scan. Fill each channel as an array element.ex: [1,6,11]. Leave blank to scan all channels.",
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "integer"
+        }
+      },
+      "response": {
+        "name": "scan_result",
+        "displayName": "Scan Result",
+        "description": "Result of Wifi Scan.",
+        "schema": {
+          "@type": "Array",
+          "elementSchema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "idx",
+                "displayName": "Index",
+                "description": "Index of AP.",
+                "schema": "integer"
+              },
+              {
+                "name": "bss_type",
+                "displayName": "BSS Type",
+                "description": "AP BSS type. Ad-hoc or Infrastructure.",
+                "schema": "string"
+              },
+              {
+                "name": "mac",
+                "displayName": "MAC",
+                "description": "AP MAC address.",
+                "schema": "string"
+              },
+              {
+                "name": "signal_strength",
+                "displayName": "Signal Strength",
+                "description": "Signal strength from AP.",
+                "schema": "integer"
+              },
+              {
+                "name": "channel",
+                "displayName": "Channel",
+                "description": "Channel of cruuent AP.",
+                "schema": "integer"
+              },
+              {
+                "name": "wps_type",
+                "displayName": "WPS Type",
+                "description": "AP WPS type.",
+                "schema": "string"
+              },
+              {
+                "name": "security",
+                "displayName": "Security",
+                "description": "AP Security",
+                "schema": "string"
+              },
+              {
+                "name": "ssid",
+                "displayName": "SSID",
+                "description": "AP SSID.",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "ota",
+      "displayName": "OTA",
+      "description": "Over-the-Air firmware update via wifi.",
+      "request": {
+        "name": "ota_params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ip_address",
+              "displayName": "IP Address",
+              "description": "The IP address of the space where the firmware can be retrived. ex: 192.168.1.100 .",
+              "schema": "string"
+            },
+            {
+              "name": "port",
+              "displayName": "Port",
+              "description": "The port of the space where the firmware can be retrived. ex: 8082",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "ping",
+      "displayName": "Ping",
+      "description": "Ping for specified host.",
+      "request": {
+        "name": "ping_params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "host_address",
+              "displayName": "Host Address",
+              "description": "The IP address of ping host. ex: 192.168.1.100",
+              "schema": "string"
+            },
+            {
+              "name": "number",
+              "displayName": "Number",
+              "description": "Number of echo requests to send. Leave blank will set to 4 times by default.",
+              "schema": "integer"
+            },
+            {
+              "name": "buffer_size",
+              "displayName": "Buffer Size",
+              "description": "Send buffer size. Leave blank will set to 32 bytes by default.",
+              "schema": "integer"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "ping_result",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "info",
+              "displayName": "Information",
+              "description": "Information of ping test.",
+              "schema": "string"
+            },
+            {
+              "name": "content",
+              "displayName": "Content",
+              "description": "Detail of each ping test.",
+              "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+              }
+            },
+            {
+              "name": "result",
+              "displayName": "Result",
+              "description": "Overall result of ping test.",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

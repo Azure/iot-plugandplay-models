@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:S1Sensor;2",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:rigado:S1Sensor:temperature;1",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:rigado:S1Sensor:humidity;1",
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "RelativeHumidity"
+      },
+      "name": "humidity",
+      "schema": "double",
+      "unit": "percent"
+    }
+  ],
+  "displayName": {
+    "en": "S1 Sensor"
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]  
+}

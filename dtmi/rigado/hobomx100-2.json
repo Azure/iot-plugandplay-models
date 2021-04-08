@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:rigado:HoboMX100;2",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:rigado:HoboMX100:temperature;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@id": "dtmi:rigado:HoboMX100:alarms;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Alarms"
+      },
+      "name": "alarms",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:rigado:HoboMX100:minTemp;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Low Average Temperature"
+      },
+      "name": "minTemp",
+      "schema": "float"
+    },
+    {
+      "@id": "dtmi:rigado:HoboMX100:maxTemp;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "High Average Temperature"
+      },
+      "name": "maxTemp",
+      "schema": "float"
+    }
+  ],
+  "displayName": {
+    "en": "Hobo MX-100"
+  },
+  "extends": [
+    "dtmi:rigado:IotDevice;1"
+  ]
+}
