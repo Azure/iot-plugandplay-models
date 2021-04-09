@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_1054_RGBmode;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D1054_RGBmode;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "DV212x",
@@ -28,153 +28,49 @@
       "@type": "Telemetry",
       "name": "Status8",
       "displayName": "Status8",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status7",
       "displayName": "Status7",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status6",
       "displayName": "Status6",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status5",
       "displayName": "Status5",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status4",
       "displayName": "Status4",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status3",
       "displayName": "Status3",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status2",
       "displayName": "Status2",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Telemetry",
       "name": "Status1",
       "displayName": "Status1",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "One",
-            "enumValue": "1"
-          },
-          {
-            "name": "Null",
-            "enumValue": "0"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1"
     },
     {
       "@type": "Command",
@@ -273,6 +169,23 @@
           ]
         }
       }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1054_RGBmode:Status;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "One",
+          "enumValue": "1"
+        },
+        {
+          "name": "Null",
+          "enumValue": "0"
+        }
+      ]
     }
   ]
 }

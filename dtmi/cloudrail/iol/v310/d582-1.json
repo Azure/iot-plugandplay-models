@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_583;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D582;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
-  "displayName": "TN7511",
+  "displayName": "TN2511",
   "description": "Electronic temperature sensor, -50...150 °C, IO-Link, ",
   "contents": [
     {
@@ -24,25 +24,6 @@
       "displayName": "Temperature_F",
       "schema": "double",
       "unit": "degreeFahrenheit"
-    },
-    {
-      "@type": "Telemetry",
-      "name": "OUT2",
-      "displayName": "OUT2",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
     },
     {
       "@type": "Telemetry",

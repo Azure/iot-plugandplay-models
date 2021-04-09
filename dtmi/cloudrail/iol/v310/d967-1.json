@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_967;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D967;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "DTIxxx",

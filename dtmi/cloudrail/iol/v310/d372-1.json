@@ -1,24 +1,24 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_610_Unknown;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D372;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
-  "displayName": "DP2200",
-  "description": "Analog Threshold Displ./4-20mA",
+  "displayName": "O5D1xx",
+  "description": "Optical distance sensor. Visible laser light, protection class 2 laser. Connection: 2 switching outputs normally open / closed complementary DC PNP",
   "contents": [
     {
       "@type": [
         "Telemetry",
-        "Current"
+        "Length"
       ],
-      "name": "Current_mA",
-      "displayName": "Current_mA",
+      "name": "Distance_cm",
+      "displayName": "Distance_cm",
       "schema": "double",
-      "unit": "milliampere"
+      "unit": "centimetre"
     },
     {
       "@type": "Telemetry",
-      "name": "OUT1",
-      "displayName": "OUT1",
+      "name": "SwitchStateOUT1",
+      "displayName": "SwitchStateOUT1",
       "schema": {
         "@type": "Enum",
         "valueSchema": "string",

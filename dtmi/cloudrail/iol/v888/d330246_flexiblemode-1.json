@@ -1,9 +1,9 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_850_OnOffmode;1",
+  "@id": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
-  "displayName": "DV15x0",
-  "description": "5 Segment-LED-Tower, Standard, with bracket, without buzzer",
+  "displayName": "BNI IOL-800-000-Z037",
+  "description": "Smart light 1 segment with buzzer",
   "contents": [
     {
       "@type": "Command",
@@ -16,8 +16,28 @@
           "@type": "Object",
           "fields": [
             {
-              "name": "Buzzer",
-              "displayName": "Buzzer",
+              "name": "LED1State",
+              "displayName": "LED1State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED2State",
+              "displayName": "LED2State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED3State",
+              "displayName": "LED3State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED4State",
+              "displayName": "LED4State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
               "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
@@ -34,8 +54,8 @@
               }
             },
             {
-              "name": "Seg1",
-              "displayName": "Seg1",
+              "name": "SyncStart",
+              "displayName": "SyncStart",
               "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
@@ -52,62 +72,8 @@
               }
             },
             {
-              "name": "Seg2",
-              "displayName": "Seg2",
-              "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                  {
-                    "name": "Off",
-                    "enumValue": "Off"
-                  },
-                  {
-                    "name": "On",
-                    "enumValue": "On"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "Seg3",
-              "displayName": "Seg3",
-              "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                  {
-                    "name": "Off",
-                    "enumValue": "Off"
-                  },
-                  {
-                    "name": "On",
-                    "enumValue": "On"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "Seg4",
-              "displayName": "Seg4",
-              "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                  {
-                    "name": "Off",
-                    "enumValue": "Off"
-                  },
-                  {
-                    "name": "On",
-                    "enumValue": "On"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "Seg5",
-              "displayName": "Seg5",
+              "name": "BuzzerState",
+              "displayName": "BuzzerState",
               "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
@@ -126,6 +92,23 @@
           ]
         }
       }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330246_FlexibleMode:LEDState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
     }
   ]
 }

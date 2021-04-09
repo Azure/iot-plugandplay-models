@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_850_Analogmode;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D850_Analogmode;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "DV15x0",

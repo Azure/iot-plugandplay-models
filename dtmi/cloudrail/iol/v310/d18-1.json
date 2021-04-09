@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_18;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D18;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "LT8022",
@@ -80,77 +80,42 @@
       "@type": "Telemetry",
       "name": "OUT4",
       "displayName": "OUT4",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D18:OUT;1"
     },
     {
       "@type": "Telemetry",
       "name": "OUT3",
       "displayName": "OUT3",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D18:OUT;1"
     },
     {
       "@type": "Telemetry",
       "name": "OUT2",
       "displayName": "OUT2",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D18:OUT;1"
     },
     {
       "@type": "Telemetry",
       "name": "OUT1",
       "displayName": "OUT1",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D18:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D18:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
     }
   ]
 }

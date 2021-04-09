@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_496;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D496;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "RxP5xx",
@@ -35,39 +35,30 @@
       "@type": "Telemetry",
       "name": "FunctionalEncoderOutput2",
       "displayName": "FunctionalEncoderOutput2",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D496:FunctionalEncoderOutput;1"
     },
     {
       "@type": "Telemetry",
       "name": "FunctionalEncoderOutput1",
       "displayName": "FunctionalEncoderOutput1",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Inactive",
-            "enumValue": "Inactive"
-          },
-          {
-            "name": "Active",
-            "enumValue": "Active"
-          }
-        ]
-      }
+      "schema": "dtmi:CloudRail:IOL:V310:D496:FunctionalEncoderOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D496:FunctionalEncoderOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
     }
   ]
 }

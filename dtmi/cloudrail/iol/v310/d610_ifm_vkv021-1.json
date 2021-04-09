@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:CloudRail:IOL_310_610_ifm_PT5404;1",
+  "@id": "dtmi:CloudRail:IOL:V310:D610_ifm_VKV021;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "DP2200",
@@ -7,8 +7,8 @@
   "contents": [
     {
       "@type": "Telemetry",
-      "name": "Pressure_bar",
-      "displayName": "Pressure_bar",
+      "name": "Speed_mmps",
+      "displayName": "Speed_mmps",
       "schema": "double"
     },
     {
