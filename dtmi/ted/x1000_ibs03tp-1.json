@@ -1,0 +1,21 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:X1000_iBS03TP;1",
+  "@type": "Interface",
+  "displayName": "X1000_iBS03TP",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "iBS03TP",
+      "displayName": "iBS03TP",
+      "schema": "dtmi:TED:iBS03TP;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}
