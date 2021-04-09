@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:ip3:hrm3;1",
+  "@id": "dtmi:ip3:hrm;1",
   "@type": "Interface",
   "displayName": "Smart Electric Meter",
   "description": "ip3.co.ltd",
