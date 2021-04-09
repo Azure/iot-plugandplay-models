@@ -1,0 +1,39 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:firewall;1",
+  "@type": "Interface",
+  "displayName": "Firewall",
+  "description": "Provides functionality to remotely query firewall rules on device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "FirewallRules",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+           {
+            "name": "Directions",
+            "schema": "string"
+          },
+          {
+            "name": "Targets",
+            "schema": "string"
+          },
+          {
+            "name": "Protocols",
+            "schema": "string"
+          },
+          {
+            "name": "IpAddresses",
+            "schema": "string"
+          },
+          {
+            "name": "Ports",
+            "schema": "string"
+          }
+        ]
+      },
+      "writable": false
+    }
+  ]
+}

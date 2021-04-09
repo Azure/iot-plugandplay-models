@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ibase:IB897;1",
+    "@type": "Interface",
+    "displayName": "iBase-IB897",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:ibase:LinuxDeviceInfo;1"
+        }
+    ]
+}

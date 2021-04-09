@@ -48,7 +48,7 @@ jobs:
   - task: AzureCLI@2
     displayName: 'Synchronizing models with storage'
     inputs:
-      azureSubscription: dmrworker
+      azureSubscription: $(DMR_SERVICE_CONNECTION)
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: az storage blob upload-batch -d '$web/dtmi' --account-name $DMR_SYNC_STORAGE -s dtmi --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern *.json

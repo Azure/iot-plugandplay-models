@@ -1,0 +1,90 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:ursalink:am102;1",
+  "@type": "Interface",
+  "displayName": "Ursalink AM102 Ambiance Monitoring Sensor",
+  "description": "Ambiance Monitoring",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_3",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Relative Humidity",
+      "description": "Relative Humidity",
+      "name": "channel_4",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Illumination",
+      "description": "Illumination",
+      "name": "channel_8",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Activity",
+      "description": "Activity",
+      "name": "channel_9",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "CO2",
+      "description": "CO2",
+      "name": "channel_14",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "TVOC",
+      "description": "TVOC",
+      "name": "channel_36",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Pressure",
+      "description": "Pressure",
+      "name": "channel_13",
+      "schema": "double"
+    }
+  ]
+}
