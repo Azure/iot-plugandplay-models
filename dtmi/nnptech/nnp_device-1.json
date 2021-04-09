@@ -1,0 +1,13 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:nnptech:nnp_device;1",
+  "@type": "Interface",
+  "displayName": "nnp_device",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "WindowsDeviceInfo1",
+      "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+    }
+  ]
+}
