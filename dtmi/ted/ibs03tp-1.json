@@ -1,0 +1,61 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:iBS03TP;1",
+  "@type": "Interface",
+  "displayName": "iBS03TP",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "telemetryInterval",
+      "displayName": "Telemetry Interval",
+      "description": "Control the frequency of the telemetry loop.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "iBS03TPObject",
+      "displayName": "iBS03TP",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Local Timestamp",
+            "name": "localtimestamp",
+            "schema": "string"
+          },
+          {
+            "displayName": "DatetimeISO",
+            "name": "datetimeISO",
+            "schema": "string"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "schema": "integer"
+          },
+          {
+            "displayName": "Mac",
+            "name": "mac",
+            "schema": "string"
+          },
+          {
+            "displayName": "Temperature",
+            "name": "temperature",
+            "schema": "double"
+          },
+          {
+            "displayName": "Temperature2",
+            "name": "temperature2",
+            "schema": "double"
+          },
+          {
+            "displayName": "Battery",
+            "name": "battery",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}
