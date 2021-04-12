@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:Advantech:esrp_uno2372;1",
+  "@id": "dtmi:Advantech:esrp_uno2484;2",
   "@type": "Interface",
   "displayName": "ADVANTECH device Model",
   "contents": [
@@ -12,11 +12,6 @@
       "@type" : "Component",
       "schema": "dtmi:Advantech:esrp_uno_hardwaremonitor;1",
       "name": "hardwaremonitor"
-    },
-    {
-      "@type" : "Component",
-      "schema": "dtmi:Advantech:esrp_uno_gpio;1",
-      "name": "gpio"
     }
   ],
   "@context": "dtmi:dtdl:context;2"
