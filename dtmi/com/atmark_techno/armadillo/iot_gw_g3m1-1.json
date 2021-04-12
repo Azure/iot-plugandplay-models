@@ -1,0 +1,35 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:atmark_techno:Armadillo:IoT_GW_G3M1;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW G3M1 basic",
+  "description": "Minimal device characteristics",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "schema": "string",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device."
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "schema": "integer",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device."
+      }
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:atmark_techno:Armadillo:ThermalSensor;1",
+      "name": "thermalSensor",
+      "displayName": "Thermal Sensor",
+      "description": "Thermal sensor of CPU."
+    }
+  ]
+}
