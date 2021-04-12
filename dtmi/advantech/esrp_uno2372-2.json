@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:Advantech:esrp_uno2372;1",
+  "@type": "Interface",
+  "displayName": "ADVANTECH device Model",
+  "contents": [
+    {
+      "@type" : "Component",
+      "schema": "dtmi:Advantech:esrp_uno_deviceInformation;1",
+      "name": "deviceinfo"
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:Advantech:esrp_uno_hardwaremonitor;1",
+      "name": "hardwaremonitor"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
