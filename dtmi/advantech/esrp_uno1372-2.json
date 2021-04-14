@@ -1,7 +1,7 @@
 {
   "@id": "dtmi:Advantech:esrp_uno1372;2",
   "@type": "Interface",
-  "displayName": "ADVANTECH device Model",
+  "displayName": "ESRP_UNO1372",
   "contents": [
     {
       "@type" : "Component",
