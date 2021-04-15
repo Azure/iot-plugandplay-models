@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:M5Stack:DeviceInformation;1",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "schema": "string",
+      "description": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM)."
+    },
+    {
+      "@type": "Property",
+      "name": "processorArchitecture",
+      "displayName": "Processor architecture",
+      "schema": "string",
+      "description": "Architecture of the processor on the device."
+    },
+    {
+      "@type": "Property",
+      "name": "totalStorage",
+      "displayName": "Total storage",
+      "schema": "double",
+      "description": "Total available storage on the device in kilobytes."
+    },
+    {
+      "@type": "Property",
+      "name": "totalMemory",
+      "displayName": "Total memory",
+      "schema": "double",
+      "description": "Total available memory on the device in kilobytes."
+    }
+  ]
+}
