@@ -1,0 +1,17 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:atmark_techno:Armadillo:ThermalSensor;1",
+  "@type": "Interface",
+  "displayName": "Thermal Sensor",
+  "description": "Reports current CPU temperature.",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "Temperature" ],
+      "name": "CPU_temp",
+      "schema": "double",
+      "displayName": "CPU temperature",
+      "description": "Temperature of the CPU",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
