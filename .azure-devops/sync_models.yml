@@ -1,0 +1,107 @@
+# Copyright (c) Microsoft Corporation MIT license
+
+variables:
+ - name: dmrClientVer
+   value: 1.0.0-beta.2
+ - name: indexStagingPath
+   value: ./index_pages/
+ - name: pageLimit
+   value: 1000
+
+# Required for schedule trigger
+trigger: none
+pr: none
+
+name: 
+schedules:
+- cron: '*/10 * * * *'
+  displayName: 'Scheduled model sync event'
+  branches:
+    include: 
+    - 'main'
+  always: false
+
+pool:
+  vmImage: 'ubuntu-20.04'
+
+jobs:
+
+- job: 'evaluate_and_sync_models'
+  displayName: 'Evaluate and synchronize models'
+  steps:
+  - task: Bash@3
+    displayName: Expand and index repository
+    inputs:
+      targetType: 'inline'
+      script: |
+        set -ex
+        if [[ -z "$DMR_SYNC_STORAGE" ]]; then
+          echo "DMR_SYNC_STORAGE environment variable required for execution. "
+          exit 1
+        fi
+
+        git clone -b $(dmrClientVer) https://github.com/Azure/iot-plugandplay-models-tools ../dmrtools
+        PATH=../dmrtools:$PATH
+        dotnet pack ../dmrtools/clients/dotnet -v m -c Release
+        dotnet tool install Microsoft.IoT.ModelsRepository.CommandLine --tool-path ../dmrtools --add-source ../dmrtools/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release/ --version $(dmrClientVer)
+        echo "Expanding repository..."
+        dmr-client expand --local-repo $PWD
+        echo "Generating Index..."
+        dmr-client index --local-repo $PWD -o $(indexStagingPath)/index.json --page-limit $(pageLimit)
+    env:
+      DMR_SYNC_STORAGE: $(DMR_SYNC_STORAGE)
+
+  - task: PythonScript@0
+    displayName: Generate snapshot metadata
+    inputs:
+      scriptSource: 'inline'
+      script: |
+        import os
+        import json
+        from datetime import datetime, timezone
+
+        def scantree(path):
+          for entry in os.scandir(path):
+            if entry.is_dir(follow_symlinks=False):
+              yield from scantree(entry.path)
+            else:
+              yield entry
+        
+        model_count = 0
+        index_path = os.environ["INDEX_PATH"]
+        for index_page in scantree(index_path):
+          with open(index_page, 'r') as f:
+            index_page_dict = json.loads(f.read())
+            model_count = model_count + len(index_page_dict.get("models", {}))
+
+        metadata = {
+          "totalModelCount": model_count,
+          "publishDateUtc": datetime.now(timezone.utc).isoformat(),
+          "commitId": os.environ.get("COMMIT_ID"),
+          "sourceRepo": os.environ.get("REPO_NAME"),
+          "features": {
+            "index": True,
+            "expanded": True
+          }
+        }
+        with open(os.path.join(index_path, "metadata.json"), 'x') as f:
+          f.write(json.dumps(metadata, indent=2, sort_keys=True))
+    env:
+      INDEX_PATH: $(indexStagingPath)
+      COMMIT_ID: $(Build.SourceVersion)
+      REPO_NAME: $(Build.Repository.Name)
+      
+
+  - task: AzureCLI@2
+    displayName: 'Synchronizing with storage'
+    inputs:
+      azureSubscription: $(DMR_SERVICE_CONNECTION)
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        echo "Synchronizing index and metadata..."
+        az storage blob upload-batch -s ./index_pages -d '$web' --account-name $DMR_SYNC_STORAGE --auth-mode login
+        echo "Synchronizing models..."
+        az storage blob upload-batch -s ./dtmi -d '$web/dtmi' --account-name $DMR_SYNC_STORAGE --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
+    env:
+      DMR_SYNC_STORAGE: $(DMR_SYNC_STORAGE)
