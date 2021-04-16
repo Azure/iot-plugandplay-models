@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D613;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DP1222",
+  "description": "IO-Link AI module, 0.000...10.000 V, 2 x Input",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "Voltage1_V",
+      "displayName": "Voltage1_V",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "Voltage2_V",
+      "displayName": "Voltage2_V",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    }
+  ]
+}
