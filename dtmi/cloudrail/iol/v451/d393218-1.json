@@ -1,0 +1,275 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393218;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "K50L2",
+  "description": "K50L2 Indicator with IO-Link",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Color1",
+              "displayName": "Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393218:Color;1"
+            },
+            {
+              "name": "ColorFlashRateHz",
+              "displayName": "ColorFlashRateHz",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OneFive",
+                    "enumValue": "15"
+                  },
+                  {
+                    "name": "ZeroFive",
+                    "enumValue": "05"
+                  },
+                  {
+                    "name": "ThreeZero",
+                    "enumValue": "30"
+                  },
+                  {
+                    "name": "SixZero",
+                    "enumValue": "60"
+                  },
+                  {
+                    "name": "NineZero",
+                    "enumValue": "90"
+                  },
+                  {
+                    "name": "OneTwoZero",
+                    "enumValue": "120"
+                  },
+                  {
+                    "name": "Custom",
+                    "enumValue": "Custom"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Color2",
+              "displayName": "Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393218:Color;1"
+            },
+            {
+              "name": "AudibleMode",
+              "displayName": "AudibleMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Pulse",
+                    "enumValue": "Pulse"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "RotationDirection",
+              "displayName": "RotationDirection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "CounterClockwise",
+                    "enumValue": "CounterClockwise"
+                  },
+                  {
+                    "name": "Clockwise",
+                    "enumValue": "Clockwise"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AnimationType",
+              "displayName": "AnimationType",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Steady",
+                    "enumValue": "Steady"
+                  },
+                  {
+                    "name": "Flash",
+                    "enumValue": "Flash"
+                  },
+                  {
+                    "name": "TwoColorFlash",
+                    "enumValue": "TwoColorFlash"
+                  },
+                  {
+                    "name": "Strobe",
+                    "enumValue": "Strobe"
+                  },
+                  {
+                    "name": "HalfHalf",
+                    "enumValue": "HalfHalf"
+                  },
+                  {
+                    "name": "HalfHalfRotate",
+                    "enumValue": "HalfHalfRotate"
+                  },
+                  {
+                    "name": "Chase",
+                    "enumValue": "Chase"
+                  },
+                  {
+                    "name": "DemoMode",
+                    "enumValue": "DemoMode"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Color1Intensity",
+              "displayName": "Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393218:ColorIntensity;1"
+            },
+            {
+              "name": "Color2Intensity",
+              "displayName": "Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393218:ColorIntensity;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393218:Color;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "LimeGreen",
+          "enumValue": "LimeGreen"
+        },
+        {
+          "name": "SpringGreen",
+          "enumValue": "SpringGreen"
+        },
+        {
+          "name": "Cyan",
+          "enumValue": "Cyan"
+        },
+        {
+          "name": "SkyBlue",
+          "enumValue": "SkyBlue"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Violet",
+          "enumValue": "Violet"
+        },
+        {
+          "name": "Magenta",
+          "enumValue": "Magenta"
+        },
+        {
+          "name": "Rose",
+          "enumValue": "Rose"
+        },
+        {
+          "name": "White",
+          "enumValue": "White"
+        },
+        {
+          "name": "Custom1",
+          "enumValue": "Custom1"
+        },
+        {
+          "name": "Custom2",
+          "enumValue": "Custom2"
+        },
+        {
+          "name": "Custom3",
+          "enumValue": "Custom3"
+        },
+        {
+          "name": "Custom4",
+          "enumValue": "Custom4"
+        },
+        {
+          "name": "Custom5",
+          "enumValue": "Custom5"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393218:ColorIntensity;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        },
+        {
+          "name": "Medium",
+          "enumValue": "Medium"
+        },
+        {
+          "name": "Custom",
+          "enumValue": "Custom"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}
