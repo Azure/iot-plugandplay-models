@@ -1,0 +1,74 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:bluebird:RT101;1",
+  "@type": "Interface",
+  "displayName": "RT101",
+  "description": "Reports current battery percent.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Battery"
+      ],
+      "name": "battery",
+      "displayName" : "Battery",
+      "description" : "Battery in percentage.",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Property",
+        "Battery"
+      ],
+      "name": "targetBattery",
+      "schema": "double",
+      "displayName": "Target Battery",
+      "description": "Allows to remotely specify the desired target battery.",
+      "unit" : "percent",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Battery"
+      ],
+      "name": "curBatterySinceLastReboot",
+      "schema": "double",
+      "unit" : "percent",
+      "displayName": "battery since last reboot.",
+      "description": "Returns the max battery since last device reboot."
+    },
+    {
+      "@type": "Command",
+      "name": "getBatteryReport",
+      "displayName": "Get battery report.",
+      "description": "This command returns the current battery percent.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the current battery report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name" : "batteryReport",
+        "displayName": "Battery Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "curBattery",
+              "displayName": "Current Battery",
+              "schema": "double"
+            },                      
+            {
+              "name" : "curTime",
+              "displayName": "Current Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
