@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:TR42;1",
+  "@type": "Interface",
+  "displayName": "TR42",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "telemetryInterval",
+      "displayName": "Telemetry Interval",
+      "description": "Control the frequency of the telemetry loop.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TR42Object",
+      "displayName": "TR42",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Local Timestamp",
+            "name": "localtimestamp",
+            "schema": "string"
+          },
+          {
+            "displayName": "DatetimeISO",
+            "name": "datetimeISO",
+            "schema": "string"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "schema": "integer"
+          },
+          {
+            "displayName": "Mac",
+            "name": "mac",
+            "schema": "string"
+          },
+          {
+            "displayName": "Temperature",
+            "name": "temperature",
+            "schema": "double"
+          },
+          {
+            "displayName": "Battery",
+            "name": "battery",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}
