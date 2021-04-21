@@ -1,0 +1,15 @@
+[
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Incon:Trium_i;1",
+    "@type": "Interface",
+    "displayName": "Incon-Trium-i",
+    "contents": [
+      {
+        "@type": "Component",
+        "name": "WindowsDeviceInfo",
+        "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+      }
+    ]
+  }
+]
