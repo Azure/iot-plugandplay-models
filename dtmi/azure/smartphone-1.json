@@ -286,14 +286,14 @@
     },
     "schemas": [
       {
-        "@id": "dtmi:azure:sensors:schema;1",
+        "@id": "dtmi:azure:smartphone:sensors:schema;1",
         "@type": "Enum",
         "displayName": {
           "en": "Enum"
         },
         "enumValues": [
           {
-            "@id": "dtmi:azure:sensors:schema:Acceleration;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:Acceleration;1",
             "displayName": {
               "en": "Acceleration"
             },
@@ -301,7 +301,7 @@
             "name": "Acceleration"
           },
           {
-            "@id": "dtmi:azure:sensors:schema:Pressure;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:Pressure;1",
             "displayName": {
               "en": "Pressure"
             },
@@ -309,7 +309,7 @@
             "name": "Pressure"
           },
           {
-            "@id": "dtmi:azure:sensors:schema:Rotation;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:Rotation;1",
             "displayName": {
               "en": "Rotation"
             },
@@ -317,7 +317,7 @@
             "name": "Rotation"
           },
           {
-            "@id": "dtmi:azure:sensors:schema:MagneticInduction;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:MagneticInduction;1",
             "displayName": {
               "en": "Magnetic Induction"
             },
@@ -325,7 +325,7 @@
             "name": "MagneticInduction"
           },
           {
-            "@id": "dtmi:azure:sensors:schema:Location;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:Location;1",
             "displayName": {
               "en": "Location"
             },
@@ -333,7 +333,7 @@
             "name": "Location"
           },
           {
-            "@id": "dtmi:azure:sensors:schema:Battery;1",
+            "@id": "dtmi:azure:smartphone:sensors:schema:Battery;1",
             "displayName": {
               "en": "Battery Level"
             },
