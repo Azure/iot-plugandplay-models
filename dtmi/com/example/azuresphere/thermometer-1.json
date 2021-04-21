@@ -21,18 +21,18 @@
         {
             "@type": "Property",
             "displayName": {
-                "en": "Telemetry Upload Enabled"
+                "en": "Thermometer Telemetry Upload Enabled"
             },
-            "name": "telemetryUploadEnabled",
+            "name": "thermometerTelemetryUploadEnabled",
             "schema": "boolean",
             "writable": true
         },
         {
             "@type": "Telemetry",
             "displayName": {
-                "en": "Device Moved"
+                "en": "Thermometer Moved"
             },
-            "name": "deviceMoved",
+            "name": "thermometerMoved",
             "schema": "boolean"
         },
         {
