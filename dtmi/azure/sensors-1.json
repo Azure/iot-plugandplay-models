@@ -1,0 +1,78 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:azure:sensors;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:azure:sensors:battery;1",
+        "@type": "Telemetry",
+        "comment": "Level percentage",
+        "displayName": {
+          "en": "Battery Level"
+        },
+        "name": "battery",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:azure:sensors:accelerometer;1",
+        "@type": [
+          "Telemetry",
+          "AccelerationVector"
+        ],
+        "displayName": {
+          "en": "Acceleration"
+        },
+        "name": "accelerometer",
+        "schema": "vector"
+      },
+      {
+        "@id": "dtmi:azure:sensors:gyroscope;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Rotation"
+        },
+        "name": "gyroscope",
+        "schema": "vector"
+      },
+      {
+        "@id": "dtmi:azure:sensors:magnetometer;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Magnetic induction"
+        },
+        "name": "magnetometer",
+        "schema": "vector"
+      },
+      {
+        "@id": "dtmi:azure:sensors:barometer;1",
+        "@type": [
+          "Telemetry",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Pressure"
+        },
+        "name": "barometer",
+        "schema": "double",
+        "unit": "kilopascal"
+      },
+      {
+        "@id": "dtmi:azure:sensors:geolocation;1",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Location"
+        },
+        "name": "geolocation",
+        "schema": "point"
+      }
+    ],
+    "displayName": {
+      "en": "Sensors"
+    }
+  }
