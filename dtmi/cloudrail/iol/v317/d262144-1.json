@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D262144;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RUxxxU-MxxE-LIU2PN8X2T-H1151/S724",
+  "description": "RU... series",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    }
+  ]
+}
