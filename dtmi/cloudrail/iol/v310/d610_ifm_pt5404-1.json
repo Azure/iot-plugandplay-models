@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D610_ifm_PT5404;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DP2200",
+  "description": "Analog Threshold Displ./4-20mA",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}
