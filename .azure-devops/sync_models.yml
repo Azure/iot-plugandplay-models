@@ -2,7 +2,7 @@
 
 variables:
  - name: dmrClientVer
-   value: 1.0.0-beta.2
+   value: 1.0.0-beta.3
  - name: indexStagingPath
    value: ./index_pages/
  - name: pageLimit
