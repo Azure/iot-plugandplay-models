@@ -1,0 +1,46 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_G3L;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW G3L basic",
+  "description": "Minimal device characteristics",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "schema": "string",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device."
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "schema": "integer",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device."
+      }
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "thermalsense_interval",
+      "schema": "integer",
+      "displayName": "CPU_temp sense interval",
+      "description": "sensing interval for the thermal sensor.",
+      "comment": "It must be greater than 0.",
+      "unit": "second",
+      "writable": true
+    },
+    {
+      "@type": ["Telemetry", "Temperature"],
+      "name": "CPU_temp",
+      "schema": "double",
+      "displayName": "CPU temperature",
+      "description": "Temperature of the CPU",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
