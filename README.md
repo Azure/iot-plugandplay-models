@@ -88,6 +88,13 @@ curl -L https://aka.ms/install-dmr-client-linux | bash
 iwr https://aka.ms/install-dmr-client-windows -UseBasicParsing | iex
 ```
 
+### Update `dmr-client`
+If an older version is already installed in the system, remove it before re-issue the install command by running the following:
+
+```bash
+dotnet uninstall -g dmr-client
+```
+
 ### Import a Model to the `dtmi/` folder
 
 If you have your model already stored in json files, you can use the `dmr-client import` command to add those to the `dtmi/` folder with the right file name.
