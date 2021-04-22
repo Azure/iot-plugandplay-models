@@ -96,6 +96,8 @@ To update the client you must uninstall the current version first:
 dotnet tool uninstall -g microsoft.iot.modelsrepository.commandline
 ```
 
+> [Note] Previous versions must be uninstalled with `dotnet tool uninstall -g dmr-client`. Use the `dotnet tool list -g` command to check the id of the tool you want to uninstall
+
 ### Import a Model to the `dtmi/` folder
 
 If you have your model already stored in json files, you can use the `dmr-client import` command to add those to the `dtmi/` folder with the right file name.
@@ -135,7 +137,7 @@ The Device Model Repo includes additional [requirements](pr-reqs.md), these can 
 ```bash
 # Validate a model file using the DTDL parser checking dependencies with the current folder as a local repo in strict mode
 
-> dmr-client validate --model-file ./my/model/file.json --repo . --strict true
+> dmr-client validate --model-file ./my/model/file.json --repo . --strict
 ```
 
 #### Export models
@@ -181,11 +183,11 @@ The model repo can host a `index.json` file with all the `ids` avaialble in the 
 
 ## Consuming
 
-The *Models Repository Client* libraries are available in the Azure SDK for the next platforms:
+There are Azure SDKs available for the models repository in the following languages:
 
 |Platform|Package|Source|Samples|
 |--------|-------|------|-------|
-|.NET | [Azure.Iot.ModelsRepository](https://www.nuget.org/packages/Azure.Iot.ModelsRepository)|[Source](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository)|[Samples](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository/samples)|
+|.NET | [Azure.Iot.ModelsRepository](https://www.nuget.org/packages/Azure.IoT.ModelsRepository)|[Source](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository)|[Samples](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository/samples)|
 |Java |[com.azure/azure-iot-modelsrepository](https://search.maven.org/artifact/com.azure/azure-iot-modelsrepository)|[Source](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository/src/samples)|
 |Node|*coming soon*|||
 |Python|*coming soon*|||
