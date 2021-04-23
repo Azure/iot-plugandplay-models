@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Rex:testDevice;1",
+  "@type": "Interface",
+  "displayName": "Rex-testDevice",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "request": {
+        "name": "delay",
+        "schema": "integer"
+      }
+    }
+  ]
+}
