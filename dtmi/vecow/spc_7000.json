@@ -1,4 +1,5 @@
 {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:VECOW:SPC_7000;1",
     "@type": "Interface",
     "displayName": "VECOW-SPC-7000",
