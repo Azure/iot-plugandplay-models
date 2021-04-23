@@ -13,13 +13,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: Azure/iot-plugandplay-models-tools
-          ref: 1.0.0-beta.2
+          ref: 1.0.0-beta.3
           path: dmr-tool-cache
 
       - name: Build and install Microsoft.IoT.ModelsRepository.CommandLine tool (dmr-client)
         run: |
           dotnet pack dmr-tool-cache/clients/dotnet -v q -c Release
-          dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --add-source dmr-tool-cache/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release --version 1.0.0-beta.2
+          dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --add-source dmr-tool-cache/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release --version 1.0.0-beta.3
           rm -rf dmr-tool-cache
 
       - name: Checkout code
