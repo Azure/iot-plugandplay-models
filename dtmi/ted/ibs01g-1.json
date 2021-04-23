@@ -1,0 +1,61 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:iBS01G;1",
+  "@type": "Interface",
+  "displayName": "iBS01G",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "telemetryInterval",
+      "displayName": "Telemetry Interval",
+      "description": "Control the frequency of the telemetry loop.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "iBS01GObject",
+      "displayName": "iBS01G",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Local Timestamp",
+            "name": "localtimestamp",
+            "schema": "string"
+          },
+          {
+            "displayName": "DatetimeISO",
+            "name": "datetimeISO",
+            "schema": "string"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "schema": "integer"
+          },
+          {
+            "displayName": "Mac",
+            "name": "mac",
+            "schema": "string"
+          },
+          {
+            "displayName": "Moved",
+            "name": "moved",
+            "schema": "boolean"
+          },
+          {
+            "displayName": "Falled",
+            "name": "falled",
+            "schema": "boolean"
+          },
+          {
+            "displayName": "Battery",
+            "name": "battery",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}
