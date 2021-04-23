@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:Winmate:M101P;1",
+    "@id": "dtmi:Winmate:IL20;1",
     "@type": "Interface",
-    "displayName": "Winmate-M101P",
+    "displayName": "Winmate-IL20",
     "contents": [
         {
             "@type": "Component",
