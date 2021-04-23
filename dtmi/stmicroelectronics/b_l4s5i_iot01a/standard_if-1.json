@@ -88,8 +88,8 @@
       {
         "@type": "Property",
         "name": "acc_fullscale",
-        "displayName": "Acc FS",
-        "description": "Accelerometer Full Scale",
+        "displayName": "LSM6DSL Acc FS",
+        "description": "LSM6DSL Accelerometer Full Scale",
         "writable": true,
         "schema": {
           "@type": "Enum",
@@ -97,22 +97,22 @@
           "enumValues": [
             {
               "name": "G2",
-              "displayName": "2G",
+              "displayName": "+/- 2G",
               "enumValue": 0
             },
             {
               "name": "G4",
-              "displayName": "4G",
+              "displayName": "+/- 4G",
               "enumValue": 1
             },
             {
               "name": "G8",
-              "displayName": "8G",
+              "displayName": "+/- 8G",
               "enumValue": 2
             },
             {
               "name": "G16",
-              "displayName": "16G",
+              "displayName": "+/- 16G",
               "enumValue": 3
             }
           ]
@@ -121,8 +121,8 @@
       {
         "@type": "Property",
         "name": "gyro_fullscale",
-        "displayName": "Gyro FS",
-        "description": "Gyroscope Full Scale",
+        "displayName": "LSM6DSL Gyro FS",
+        "description": "LSM6DSL Gyroscope Full Scale",
         "writable": true,
         "schema": {
           "@type": "Enum",
@@ -130,27 +130,27 @@
           "enumValues": [
             {
               "name": "dps125",
-              "displayName": "125dps",
+              "displayName": "+/- 125dps",
               "enumValue": 0
             },
             {
               "name": "dps250",
-              "displayName": "250dps",
+              "displayName": "+/- 250dps",
               "enumValue": 1
             },
             {
               "name": "dps500",
-              "displayName": "500dps",
+              "displayName": "+/- 500dps",
               "enumValue": 2
             },
             {
               "name": "dps1000",
-              "displayName": "1000dps",
+              "displayName": "+/- 1000dps",
               "enumValue": 3
             },
             {
               "name": "dps2000",
-              "displayName": "2000dps",
+              "displayName": "+/- 2000dps",
               "enumValue": 4
             }
           ]
@@ -253,3 +253,4 @@
           }
     ]
   }
+
