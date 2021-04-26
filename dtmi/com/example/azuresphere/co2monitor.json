@@ -1,0 +1,120 @@
+[
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:com:example:azuresphere:co2monitor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "CO2 Monitor"
+    },
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Parts per million"
+        },
+        "displayName": {
+          "en": "CO2"
+        },
+        "name": "CO2",
+        "schema": "float"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Temperature"
+        },
+        "name": "Temperature",
+        "schema": "float",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Humidity"
+        ],
+        "displayName": {
+          "en": "Humidity"
+        },
+        "name": "Humidity",
+        "schema": "float",
+        "unit": "percent"
+      },
+      {
+        "@type": "Property",
+        "description": {
+          "en": "Parts per million"
+        },
+        "displayName": {
+          "en": "DesiredCO2AlertLevel"
+        },
+        "name": "DesiredCO2AlertLevel",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "DesiredTemperature"
+        },
+        "name": "DesiredTemperature",
+        "schema": "integer",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "description": {
+          "en": "Parts per million"
+        },
+        "displayName": {
+          "en": "ReportedCO2Level"
+        },
+        "name": "ReportedCO2Level",
+        "schema": "float"
+      },
+      {
+        "@type": "Property",
+        "description": {
+          "en": "HVAC state"
+        },
+        "displayName": {
+          "en": "ReportedHvacState"
+        },
+        "name": "ReportedHvacState",
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "ReportedTemperature"
+        },
+        "name": "ReportedTemperature",
+        "schema": "float",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Message ID"
+        },
+        "displayName": {
+          "en": "MsgId"
+        },
+        "name": "MsgId",
+        "schema": "integer"
+      }
+    ]
+  }
+]
