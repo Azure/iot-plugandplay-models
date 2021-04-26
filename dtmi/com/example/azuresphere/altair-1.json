@@ -61,7 +61,10 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": "Telemetry",
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
       "displayName": {
         "en": "Total memory usage"
       },
@@ -70,7 +73,10 @@
       "unit": "kibibyte"
     },
     {
-      "@type": "Telemetry",
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
       "displayName": {
         "en": "Peak user mode memory usage"
       },
