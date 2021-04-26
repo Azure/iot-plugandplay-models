@@ -1,0 +1,148 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:azuresphere:altair;1",
+  "@type": "Interface",
+  "displayName": "Altair on Azure Sphere",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "CPU State"
+      },
+      "name": "DesiredCpuState",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Local serial output"
+      },
+      "name": "DesiredLocalSerial",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "LED brightness"
+      },
+      "name": "DesiredLedBrightness",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Desired temperature"
+      },
+      "name": "DesiredTemperature",
+      "schema": "integer",
+      "writable": true
+    },   
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Reported temperature"
+      },
+      "name": "ReportedTemperature",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "Temperature",
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Total memory usage"
+      },
+      "name": "TotalMemoryUsage",
+      "schema": "integer",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Peak user mode memory usage"
+      },
+      "name": "PeakUserModeMemoryUsage",
+      "schema": "integer",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Virtual disk writes"
+      },
+      "name": "DiskTotalWrites",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Virtual disk cache hits"
+      },
+      "name": "DiskCacheHits",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Virtual disk cache misses"
+      },
+      "name": "DiskCacheMisses",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Virtual disk errors"
+      },
+      "name": "DiskTotalErrors",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device start time"
+      },
+      "name": "ReportedDeviceStartTime",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device ID"
+      },
+      "name": "DeviceId",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Channel ID"
+      },
+      "name": "DesiredChannelId",
+      "schema": "integer",
+      "writable": true
+    }, 
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName":  {
+        "en": "Restart the device"
+      },
+      "name": "RestartDevice"
+    }
+  ]
+}
