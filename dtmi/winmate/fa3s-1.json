@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:aplex:ViTAM_9XXA;1",
+    "@id": "dtmi:Winmate:FA3S;1",
     "@type": "Interface",
-    "displayName": "ViTAM_9XXA",
+    "displayName": "Winmate-FA3S",
     "contents": [
         {
             "@type": "Component",

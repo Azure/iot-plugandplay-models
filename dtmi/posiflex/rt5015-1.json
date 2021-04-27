@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:aplex:ViTAM_9XXA;1",
+    "@id": "dtmi:Posiflex:RT5015;1",
     "@type": "Interface",
-    "displayName": "ViTAM_9XXA",
+    "displayName": "Posiflex-RT5015",
     "contents": [
         {
             "@type": "Component",
