@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:Techware:SecurityMate:PowerMeter;1",
+  "@type": "Interface",
+  "displayName": "AC Power Meter (SecurityMate)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Voltage",
+      "displayName": "Voltage",
+      "description": "AC Voltage RMS Value(V)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Current",
+      "displayName": "Current",
+      "description": "AC Current RMS Value(A)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Frequency",
+      "displayName": "AC Frequency",
+      "description": "AC Frequency(Hz)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActivePower",
+      "displayName": "Active Power",
+      "description": "Active Power(W)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PowerFactor",
+      "displayName": "Power Factor",
+      "description": "Power Factor",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActiveEnergy",
+      "displayName": "Active Energy",
+      "description": "Active Energy",
+      "schema": "double"
+    }
+  ]
+}
