@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:HancomMDS:W10IoTEnt;1",
+    "@type": "Interface",
+    "displayName": "HancomMDS-W10IoTEnt",
+    "contents": [
+      {
+        "@type": "Component",
+        "name": "WindowsDeviceInfo",
+        "schema": "dtmi:HancomMDS:WindowsDeviceInfo;1"
+      }
+    ]
+}
