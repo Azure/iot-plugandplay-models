@@ -1,0 +1,31 @@
+{
+  "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:als;1",
+  "displayName": {
+    "en": "Ambient Light Sensor on RX65N Option Board"
+  },
+  "description": {
+    "en": "Description for Ambient Light Sensor"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:als:ambientlight;1",
+      "@type": [
+        "Telemetry",
+        "LuminousFlux"
+      ],
+      "name": "ambientLight",
+      "displayName": {
+        "en": "Ambient Light"
+      },
+      "description": {
+        "en": "Send Ambient Light (units:lumen) to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "lumen"
+    }
+  ]
+}
