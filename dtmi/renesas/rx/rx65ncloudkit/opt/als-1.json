@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:als;1",
+  "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1",
   "displayName": {
     "en": "Ambient Light Sensor on RX65N Option Board"
   },
@@ -12,7 +12,7 @@
   "@type": "Interface",
   "contents": [
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:als:ambientlight;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:als:ambientlight;1",
       "@type": [
         "Telemetry",
         "LuminousFlux"

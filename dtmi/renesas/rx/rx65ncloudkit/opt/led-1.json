@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:led;1",
+  "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1",
   "displayName": {
     "en": "LED on RX65N Cloud Option Board"
   },
@@ -12,7 +12,7 @@
   "@type": "Interface",
   "contents": [
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:led:led1;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led1;1",
       "@type": "Property",
       "name": "led1_opt",
       "writable": true,
@@ -23,10 +23,10 @@
       "description": {
         "en": "Property of LED1 on RX65N Cloud Option Board"
       },
-      "schema": "dtmi:renesas:RX:rx65ncloudkit:opt:led:state;1"
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
     },
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:led:led2;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led2;1",
       "@type": "Property",
       "name": "led2_opt",
       "writable": true,
@@ -37,12 +37,12 @@
       "description": {
         "en": "Property of LED2 on RX65N Cloud Option Board"
       },
-      "schema": "dtmi:renesas:RX:rx65ncloudkit:opt:led:state;1"
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
     }
   ],
   "schemas": [
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:opt:led:state;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1",
       "@type": "Enum",
       "valueSchema": "integer",
       "enumValues": [

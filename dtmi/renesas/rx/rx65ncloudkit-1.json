@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:renesas:RX:rx65ncloudkit;1",
+  "@id": "dtmi:renesas:RX:RX65NCloudKit;1",
   "displayName": {
     "en": "RX65N Cloud Kit"
   },
@@ -12,7 +12,7 @@
   "@type": "Interface",
   "contents": [
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:Manufacturer;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Manufacturer;1",
       "@type": "Property",
       "name": "manufacturer",
       "writable": false,
@@ -26,7 +26,7 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:Model;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Model;1",
       "@type": "Property",
       "name": "model",
       "writable": false,
@@ -40,7 +40,7 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:ProcessorName;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:ProcessorName;1",
       "@type": "Property",
       "name": "processorName",
       "writable": false,
@@ -54,7 +54,7 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:renesas:RX:rx65ncloudkit:Reboot;1",
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Reboot;1",
       "@type": "Command",
       "name": "reboot",
       "comment": "Reboot the board with the specified delay",
@@ -90,7 +90,7 @@
       "description": {
         "en": "LED on RX65N Cloud Option Board."
       },
-      "schema": "dtmi:renesas:RX:rx65ncloudkit:opt:led;1"
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1"
     },
     {
       "@type": "Component",
@@ -101,7 +101,7 @@
       "description": {
         "en": "Ambient Light Sensor on RX65N Cloud Option Board."
       },
-      "schema": "dtmi:renesas:RX:rx65ncloudkit:opt:als;1"
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1"
     }
   ]
 }
