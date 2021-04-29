@@ -1,0 +1,102 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:devcmd;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "IsDeviceLife"
+            },
+            "name": "IsDeviceLife"
+        },
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "RstartComputer"
+            },
+            "name": "ResetPower"
+        },
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "Getversion"
+            },
+            "name": "Getversion"
+        },
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "Information"
+            },
+            "name": "azsphereInfo"
+        },
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "Heartbeat"
+            },
+            "name": "osHeartbeat"
+        },
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "Power On and OFF computer"
+            },
+            "name": "powerSwitch",
+            "request": {
+                "name":"SSDControl",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "name": "mode",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "mode_High",
+                                        "enumValue": "1"
+                                    },
+                                    {
+                                        "name": "mode_Low",
+                                        "enumValue": "0"
+                                    }
+                                ]
+                            }
+                            
+                        },
+                        {
+                            "name": "time",
+                            "schema": "integer"
+                        },
+                        {
+                            "name": "timeUnit",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "Second",
+                                        "enumValue": "s"
+                                    },
+                                    {
+                                        "name": "millisecond",
+                                        "enumValue": "ms"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }        
+        }
+    ],
+    "displayName": {
+        "en": "InnoAGE - Controller"
+    }
+}
