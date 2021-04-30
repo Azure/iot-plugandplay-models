@@ -9,28 +9,28 @@
         {
             "@type": "Command",
             "displayName": {
-                "en": "IsDeviceLife"
+                "en": "IsDeviceAlife"
             },
             "name": "IsDeviceLife"
         },
         {
             "@type": "Command",
             "displayName": {
-                "en": "RstartComputer"
+                "en": "RestartComputer"
             },
             "name": "ResetPower"
         },
         {
             "@type": "Command",
             "displayName": {
-                "en": "Getversion"
+                "en": "GetVersion"
             },
             "name": "Getversion"
         },
         {
             "@type": "Command",
             "displayName": {
-                "en": "Information"
+                "en": "GetDeviceInfo"
             },
             "name": "azsphereInfo"
         },
@@ -44,7 +44,7 @@
         {
             "@type": "Command",
             "displayName": {
-                "en": "Power On and OFF computer"
+                "en": "PowerOnAndOffComputer"
             },
             "name": "powerSwitch",
             "request": {

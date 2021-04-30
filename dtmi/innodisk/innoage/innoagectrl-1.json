@@ -12,8 +12,7 @@
                 "en": "SN"
             },
             "name": "innoageSN",
-            "schema": "string",
-            "writable": false
+            "schema": "string"
         },
         {
             "@type": "Property",
@@ -21,8 +20,7 @@
                 "en": "APP Version"
             },
             "name": "innoageAPPVersion",
-            "schema": "string",
-            "writable": false
+            "schema": "string"
         },
         {
             "@type": "Component",
