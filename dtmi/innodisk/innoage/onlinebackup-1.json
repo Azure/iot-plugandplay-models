@@ -1,0 +1,94 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:onlinebackup;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "OnlineBackup"
+            },
+            "name": "SSDControlMethod",
+            "request": {
+                "name":"OnlineBackup",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "name": "Cmd",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "fwStatus",
+                                        "enumValue": "fwStatus"
+                                    },
+                                    {
+                                        "name": "partList",
+                                        "enumValue": "partList"
+                                    },
+                                    {
+                                        "name": "backupStatus",
+                                        "enumValue": "backupStatus"
+                                    },
+                                    {
+                                        "name": "backupClear",
+                                        "enumValue": "backupClear"
+                                    },
+                                    {
+                                        "name": "StartBackup",
+                                        "enumValue": "StartBackup"
+                                    }
+                                ]
+                            }
+
+                        },
+                        {
+                            "name": "partId",
+                            "schema": "integer"    
+                        },
+                        {
+                            "name": "sector",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema" :"integer",
+                                "enumValues": [
+                                    {
+                                        "name": "sector",
+                                        "enumValue": 4096
+                                    }
+                                ]
+
+                            }
+
+                        }
+                    ]
+                }
+            },
+            "response":{
+                "name": "OnlineBackupRev",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                            {
+                                "name": "Status",
+                                "schema":"string"
+                            },
+                            {
+                                "name": "Timestamp",
+                                "schema":"string"
+                            }
+
+                        ]
+                }
+            }
+        }
+    ],
+    "displayName": {
+        "en": "InnoAGE - Onlinebackup"
+    }
+}
