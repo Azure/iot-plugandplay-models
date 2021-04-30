@@ -1,0 +1,248 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:stmicroelectronics:b_l4s5i_iot01a:standard_if;1",
+    "@type": "Interface",
+    "displayName": "Standard interface for B_L4S5I_IOT01A",
+    "description": "Reports temperature, relative humidity, pressure, magnetometer, accelerometer, gyroscope and proximity",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "name": "temperature",
+        "displayName": {
+          "en": "Temperature"
+        },
+        "description": "Temperature in degrees Celsius from HTS221 temperature sensor",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "RelativeHumidity"
+        ],
+        "name": "humidity",
+        "displayName": {
+          "en": "Relative Humidity"
+        },
+        "description": "relative humidity from HTS221 sensor",
+        "schema": "double",
+        "unit": "percent"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Pressure"
+        ],
+        "name": "pressure",
+        "displayName": {
+          "en": "Pressure"
+        },
+        "description": "Pressure from LPS22HB sensor",
+        "schema": "double",
+        "unit": "millibar"  
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Distance"
+        ],
+        "name": "proximity",
+        "displayName": {
+          "en": "proximity"
+        },
+        "description": "Proximity from proximity sensor",
+        "schema": "double",
+        "unit": "centimetre"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "acceleration",
+        "displayName": "LSM6DSL Acc Value [mg]",
+        "comment": "LSM6DSL Acceleration X/Y/Z components [mg]",
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single acceleration sample.",
+          "description": "Single acceleration sample. I.e.: {a_x, a_y, a_z}.",
+          "fields": [
+              {
+                  "name": "a_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_z",
+                  "schema": "double"
+              }
+          ]
+        }
+      },
+      {
+        "@type": "Telemetry",
+        "name": "gyroscope",
+        "displayName": "LSM6DSL Gyro Value [mdps]",
+        "comment": "LSM6DSL Gyroscope X/Y/Z components [mdps]",
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single angular velocity sample.",
+          "description": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}.",
+          "fields": [
+              {
+                  "name": "g_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_z",
+                  "schema": "double"
+              }
+          ]
+        }
+      },
+      {
+        "@type": "Telemetry",
+        "name": "magnetometer",
+        "displayName": "LIS3MDL Mag Value [mgauss]",
+        "comment": "LIS3MDL Magnetometer X/Y/Z components [mgauss]",
+        "schema": {
+          "@type": "Object",
+            "displayName": "Single magnetic field sample.",
+            "description": "Single magnetic field sample. I.e.: {m_x, m_y, m_z}.",
+            "fields": [
+                {
+                    "name": "m_x",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_y",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_z",
+                    "schema": "double"
+                }
+            ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "telemetry_interval",
+        "displayName": "Transmission period for telemetry data [in seconds]",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "acc_fullscale",
+        "displayName": "LSM6DSL Acc FS",
+        "description": "LSM6DSL Accelerometer Full Scale",
+        "writable": true,
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "name": "G2",
+              "displayName": "+/- 2G",
+              "enumValue": 0
+            },
+            {
+              "name": "G4",
+              "displayName": "+/- 4G",
+              "enumValue": 1
+            },
+            {
+              "name": "G8",
+              "displayName": "+/- 8G",
+              "enumValue": 2
+            },
+            {
+              "name": "G16",
+              "displayName": "+/- 16G",
+              "enumValue": 3
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "gyro_fullscale",
+        "displayName": "LSM6DSL Gyro FS",
+        "description": "LSM6DSL Gyroscope Full Scale",
+        "writable": true,
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "name": "dps125",
+              "displayName": "+/- 125dps",
+              "enumValue": 0
+            },
+            {
+              "name": "dps250",
+              "displayName": "+/- 250dps",
+              "enumValue": 1
+            },
+            {
+              "name": "dps500",
+              "displayName": "+/- 500dps",
+              "enumValue": 2
+            },
+            {
+              "name": "dps1000",
+              "displayName": "+/- 1000dps",
+              "enumValue": 3
+            },
+            {
+              "name": "dps2000",
+              "displayName": "+/- 2000dps",
+              "enumValue": 4
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "magneto_fullscale",
+        "displayName": "LIS3MDL Mag FS",
+        "description": "LIS3MDL Magnetometer Full Scale",
+        "writable": true,
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "name": "G4",
+              "displayName": "+/- 4Gauss",
+              "enumValue": 0
+            },
+            {
+              "name": "G8",
+              "displayName": "+/- 8Gauss",
+              "enumValue": 1
+            },
+            {
+              "name": "G12",
+              "displayName": "+/- 12Gauss",
+              "enumValue": 2
+            },
+            {
+              "name": "G16",
+              "displayName": "+/- 16Gauss",
+              "enumValue": 3
+            }
+          ]
+        }
+      }
+    ]
+  }
+
