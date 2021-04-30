@@ -1,0 +1,44 @@
+{
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_human_detection;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Human Presence Detection for Wio Terminal",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "detect",
+        "displayName": {
+          "en": "Detect",
+          "ja": "検知"
+        },
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "exist",
+              "enumValue": "exist",
+              "displayName": {
+                "en": "Exist",
+                "ja": "存在"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "TelemetryInterval",
+        "unit": "second",
+        "displayName": {
+          "en": "Telemetry interval",
+          "ja": "送信間隔"
+        },
+        "schema": "integer",
+        "writable": true
+      }
+    ]
+  }
