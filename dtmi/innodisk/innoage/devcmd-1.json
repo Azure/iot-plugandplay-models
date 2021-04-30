@@ -9,9 +9,9 @@
         {
             "@type": "Command",
             "displayName": {
-                "en": "IsDeviceAlife"
+                "en": "IsDeviceAlive"
             },
-            "name": "IsDeviceLife"
+            "name": "IsDeviceAlive"
         },
         {
             "@type": "Command",
