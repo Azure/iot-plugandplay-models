@@ -1,0 +1,85 @@
+{
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_watchdog;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Watchdog for Wio Terminal",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "countInPeriod",
+        "displayName": {
+          "en": "Count in period",
+          "ja": "期間内カウント数"
+        },
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "status",
+        "displayName": {
+          "en": "Status",
+          "ja": "状態"
+        },
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "run",
+              "enumValue": "run",
+              "displayName": {
+                "en": "Run",
+                "ja": "稼働"
+              }
+            },
+            {
+              "name": "stop",
+              "enumValue": "stop",
+              "displayName": {
+                "en": "Stop",
+                "ja": "停止"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "period",
+        "unit": "second",
+        "displayName": {
+          "en": "Period",
+          "ja": "期間"
+        },
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "distanceThreshold",
+        "unit": "millimetre",
+        "displayName": {
+          "en": "Distance threshold",
+          "ja": "距離しきい値"
+        },
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "countInPeriodThreshold",
+        "displayName": {
+          "en": "Threshold of count in period",
+          "ja": "期間内カウントしきい値"
+        },
+        "schema": "integer",
+        "writable": true
+      }
+    ]
+  }
