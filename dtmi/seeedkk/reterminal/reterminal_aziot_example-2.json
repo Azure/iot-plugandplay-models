@@ -1,0 +1,280 @@
+{
+  "@id": "dtmi:seeedkk:reterminal:reterminal_aziot_example;2",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": {
+    "en": "Seeed reTerminal"
+  },
+  "description": {
+    "en": "reTerminal is powered by a Raspberry Pi Compute Module 4 (CM4) and a 5-inch IPS multi-touch screen.",
+    "ja": "Raspberry Pi Compute Module 4 (CM4) ベースの工業用IoT端末ハードウェア"
+  },
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "displayName": {
+        "en": "Acceleration",
+        "ja": "加速度"
+      },
+      "description": {
+        "en": "Measured acceleration.",
+        "ja": "デバイスの加速度です。"
+      },
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "x",
+            "displayName": {
+              "en": "Acceleration X",
+              "ja": "加速度 X"
+            },
+            "description": {
+              "en": "X-axis acceleration. (g)",
+              "ja": "X軸の加速度です。（G）"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "y",
+            "displayName": {
+              "en": "Acceleration Y",
+              "ja": "加速度 Y"
+            },
+            "description": {
+              "en": "Y-axis acceleration. (g)",
+              "ja": "Y軸の加速度です。（G）"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "z",
+            "displayName": {
+              "en": "Acceleration Z",
+              "ja": "加速度 Z"
+            },
+            "description": {
+              "en": "Z-axis acceleration. (g)",
+              "ja": "Z軸の加速度です。（G）"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Illuminance"
+      ],
+      "name": "ambientLight",
+      "unit": "lux",
+      "displayName": {
+        "en": "Ambient light",
+        "ja": "環境光"
+      },
+      "description": {
+        "en": "The measured ambient light.",
+        "ja": "デバイスの環境光です。"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "f1Button",
+      "displayName": {
+        "en": "F1 button",
+        "ja": "F1ボタン"
+      },
+      "description": {
+        "en": "F1 button was pressed.",
+        "ja": "F1ボタンの押下通知です。"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:ButtonPress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "f2Button",
+      "displayName": {
+        "en": "F2 button",
+        "ja": "F2ボタン"
+      },
+      "description": {
+        "en": "F2 button was pressed.",
+        "ja": "F2ボタンの押下通知です。"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:ButtonPress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "f3Button",
+      "displayName": {
+        "en": "F3 button",
+        "ja": "F3ボタン"
+      },
+      "description": {
+        "en": "F3 button was pressed.",
+        "ja": "F3ボタンの押下通知です。"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:ButtonPress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "oButton",
+      "displayName": {
+        "en": "O button",
+        "ja": "O ボタン"
+      },
+      "description": {
+        "en": "O button was pressed.",
+        "ja": "O ボタンの押下通知です。"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:ButtonPress;1"
+    },
+    {
+      "@type": "Command",
+      "name": "ringBuzzer",
+      "displayName": {
+        "en": "Buzz the buzzer",
+        "ja": "ブザーを鳴らす"
+      },
+      "description": {
+        "en": "Buzz a buzzer for the specified duration.",
+        "ja": "指定された期間、ブザー音を鳴らします。"
+      },
+      "request": {
+        "@type": "CommandPayload",
+        "name": "duration",
+        "displayName": {
+          "en": "Duration",
+          "ja": "指定時間"
+        },
+        "description": {
+          "en": "Buzzing duration. (milliseconds)",
+          "ja": "ブザーを鳴らす期間です。（ミリ秒）"
+        },
+        "schema": "integer"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "name": "commandResponse",
+        "displayName": {
+          "en": "Command Response",
+          "ja": "コマンドレスポンス"
+        },
+        "description": {
+          "en": "Response status of buzzer command from the device.",
+          "ja": "ブザーコマンドのレスポンス"
+        },
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "ledStaGreen",
+      "displayName": {
+        "en": "State of Green Status LED",
+        "ja": "ステータスLED (緑）の状態"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:LedState;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ledStaRed",
+      "displayName": {
+        "en": "State of Red Status LED",
+        "ja": "ステータスLED (赤) の状態"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:LedState;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "usrLed",
+      "displayName": {
+        "en": "Status of User LED",
+        "ja": "ユーザーLEDの状態"
+      },
+      "schema": "dtmi:seeedkk:reterminal:reterminal_aziot_example:LedState;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "firmwareVer",
+      "displayName": {
+        "en": "Firmware Version",
+        "ja": "ファームウェアバージョン"
+      },
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "name": "telemetryInterval",
+      "unit": "second",
+      "displayName": {
+        "en": "Reporting interval",
+        "ja": "送信間隔"
+      },
+      "description": {
+        "en": "Telemetry reporting interval ",
+        "ja": "テレメトリを送信する間隔です。"
+      },
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:seeedkk:reterminal:reterminal_aziot_example:ButtonPress;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "click",
+          "enumValue": "click",
+          "displayName": {
+            "en": "Click",
+            "ja": "クリック"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:seeedkk:reterminal:reterminal_aziot_example:LedState;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "enumValues": [
+        {
+          "name": "off",
+          "enumValue": 1,
+          "displayName": {
+            "en": "LED Off",
+            "ja": "LED消灯"
+          },
+          "description": {
+            "en": "LED is Off",
+            "ja": "LED は消灯中です。"
+          }
+        },
+        {
+          "name": "on",
+          "enumValue": 2,
+          "displayName": {
+            "en": "LED On",
+            "ja": "LED点灯"
+          },
+          "description": {
+            "en": "LED is On",
+            "ja": "LED は点灯中です。"
+          }
+        }
+      ]
+    }
+  ]
+}

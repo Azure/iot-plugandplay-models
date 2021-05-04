@@ -1,0 +1,97 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:ssdcontroller;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "SSDControl"
+            },
+            "name": "SSDControlMethod",
+            "request": {
+                "name":"DirectMethodCall",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "name": "Cmd",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "DestroyOS",
+                                        "enumValue": "Destroy"
+                                    },
+                                    {
+                                        "name": "RecoveryOS",
+                                        "enumValue": "RecoveryProduct"
+                                    },
+                                    {
+                                        "name": "WriteProtectOn",
+                                        "enumValue": "Wp1"
+                                    },
+                                    {
+                                        "name": "WriteProtectOff",
+                                     
+                                        "enumValue": "Wp0"
+                                    },
+                                    {
+                                        "name": "QuickErase",
+                                        "enumValue": "Qe"
+                                    },
+                                    {
+                                        "name": "SanitizeCryptoScramble",
+                                        "enumValue": "Sacs"
+                                    },
+                                    {
+                                        "name": "SanitizeBlockErase",
+                                        "enumValue": "Sabe"
+                                    },
+                                    {
+                                        "name": "SanitizeFreezeLock",
+                                        "enumValue": "Safl"
+                                    },
+                                    {
+                                        "name": "SanitizeAntifreezeLock",
+                                        "enumValue": "Saal"
+                                    },
+                                    {
+                                        "name": "GetInnoAGETable",
+                                        "enumValue": "getSSDTable"
+                                    } 
+                                ]
+                            }
+
+                        }
+                    ]
+                }
+            },
+            "response":{
+                "name": "SSDCommandRev",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                            {
+                                "name": "Status",
+                                "schema":"string"
+                            },
+                            {
+                                "name": "Timestamp",
+                                "schema":"string"
+                            }
+
+                        ]
+                }
+            }
+            
+        }
+    ],
+    "displayName": {
+        "en": "InnoAGE - SSDControl"
+    }
+}
