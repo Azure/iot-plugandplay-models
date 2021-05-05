@@ -1,6 +1,7 @@
 [
+{
 "@context":"dtmi:dtdl:context;2",
-"@id": "dtmi:himax:aiot_nb_g2;1",
+"@id": "dtmi:himax:aiot-nb-g2;1",
 "@type": "Interface",
 "displayName": "Himax-AIoT-NB-G2",
 "contents": [
@@ -215,4 +216,5 @@
 "schema": "boolean"
 }
 ]
+}
 ]
