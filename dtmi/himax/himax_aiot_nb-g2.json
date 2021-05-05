@@ -1,5 +1,4 @@
 [
-{
 "@context":"dtmi:dtdl:context;2",
 "@id": "dtmi:himax:aiot_nb_g2;1",
 "@type": "Interface",
@@ -216,5 +215,4 @@
 "schema": "boolean"
 }
 ]
-}
 ]
