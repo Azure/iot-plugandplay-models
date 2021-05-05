@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:radio_bridge:rbs301wat;1",
+  "@type": "Interface",
+  "displayName": "Radio Bridge Indoor Water Leak Sensor",
+  "description": "Indoor Water Leak Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "low battery",
+      "description": "low battery",
+      "name": "channel_112",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "waterleak",
+      "description": "waterleak",
+      "name": "channel_74",
+      "schema": "double"
+    }
+  ]
+}
