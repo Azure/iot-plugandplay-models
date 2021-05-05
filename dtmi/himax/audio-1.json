@@ -1,0 +1,17 @@
+{
+"@context": "dtmi:dtdl:context;2",
+"@id": "dtmi:himax:audio;1",
+"@type": "Interface",
+"displayName": "Audio",
+"description": "Audio function in AIoT-NB-G2.",
+"contents": [
+{
+"@type":"Property",
+"name": "audio_enable",
+"displayName": "Audio function in AIoT-NB-G2",
+"description": "Enable audio for device.",
+"schema": "boolean",
+"writable": true
+}
+]
+}
