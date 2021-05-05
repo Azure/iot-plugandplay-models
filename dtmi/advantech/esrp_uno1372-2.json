@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:Advantech:esrp_uno1372;2",
+  "@type": "Interface",
+  "displayName": "ESRP_UNO1372",
+  "contents": [
+    {
+      "@type" : "Component",
+      "schema": "dtmi:Advantech:esrp_uno_deviceInformation;1",
+      "name": "deviceinfo"
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:Advantech:esrp_uno_hardwaremonitor;1",
+      "name": "hardwaremonitor"
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:Advantech:esrp_uno_gpio;2",
+      "name": "gpio"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

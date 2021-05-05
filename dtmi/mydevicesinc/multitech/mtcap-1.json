@@ -1,0 +1,87 @@
+{
+  "@id": "dtmi:mydevicesinc:multitech:mtcap;1",
+  "@type": "Interface",
+  "displayName": "MultiTech Conduit MTCAP Gateway",
+  "description": "LoRa Wide Area Network Gateway",
+  "comment": "Requires myDevices IoT in a Box",  
+  "contents": [
+    {
+        "@type": "Property",
+        "name": "make",
+        "description": "Make of the gateway.",
+        "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "description": "Model of the gateway.",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "description": "Reboot the gateway."
+    },
+    {
+      "@type": "Command",
+      "name": "update",
+      "description": "Update a file or package on the gateway.",
+      "request": {
+        "name": "arguments",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "environment",
+              "description": "Environment variables to set when running the command.",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "envVar",
+                  "description": "Environment variable.",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "envVarValue",
+                  "description": "Environment variable value.",
+                  "schema": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "remote_ctrl",
+      "description": "Connect to a gateway via SSH.",
+      "request": {
+        "name": "arguments",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "environment",
+              "description": "Environment variables to set when running the command.",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "envVar",
+                  "description": "Environment variable.",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "envVarValue",
+                  "description": "Environment variable value.",
+                  "schema": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+    ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1222:D18_Fahrenheit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CSS 01411.2-xx",
+  "description": "Smart Sensor for temperature and humidity",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAlarmHigh",
+      "displayName": "TemperatureAlarmHigh",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureRangeHigh",
+      "displayName": "TemperatureRangeHigh",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureRangeLow",
+      "displayName": "TemperatureRangeLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAlarmLow",
+      "displayName": "TemperatureAlarmLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Humidity_pct",
+      "displayName": "Humidity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HumidityAlarmHigh",
+      "displayName": "HumidityAlarmHigh",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HumidityRangeHigh",
+      "displayName": "HumidityRangeHigh",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HumidityRangeLow",
+      "displayName": "HumidityRangeLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HumidityAlarmLow",
+      "displayName": "HumidityAlarmLow",
+      "schema": "integer"
+    }
+  ]
+}
