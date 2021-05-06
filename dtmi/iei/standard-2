@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:iei:drpc230;1",
+    "@id": "dtmi:iei:standard;2",
     "@type": "Interface",
     "displayName": "drpc230",
     "contents": [
