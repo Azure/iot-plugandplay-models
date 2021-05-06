@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Hanasis:hit;1",
+    "@type": "Interface",
+    "displayName": "Hanasis-HiT",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo",
+            "schema": "dtmi:HancomMDS:WindowsDeviceInfo;1"
+        }
+    ]
+}
