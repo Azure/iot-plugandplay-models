@@ -80,12 +80,20 @@ The tools used to validate the models during the PR checks can also be used to a
 
 ```bash
 curl -L https://aka.ms/install-dmr-client-linux | bash
+
+# Expected SHA checksum
+curl -sL https://aka.ms/install-dmr-client-linux | shasum -b -a 256
+2d1c1ca24943527982ef30f5e8f9716bdbf2ca11407b2af73183453b98d251a0 *-
 ```
 
 #### Windows/Powershell
 
 ```powershell
 iwr https://aka.ms/install-dmr-client-windows -UseBasicParsing | iex
+
+# Expected SHA checksum
+curl -sL https://aka.ms/install-dmr-client-windows | shasum -b -a 256
+0245ae8318e7caf27dd63f3841646f2def3e2ced127ffcb741814be3b063fd7a *-
 ```
 
 #### Update / Uninstall
