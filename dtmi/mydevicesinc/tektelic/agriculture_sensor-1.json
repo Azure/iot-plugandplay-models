@@ -1,0 +1,152 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:tektelic:agriculture_sensor;1",
+  "@type": "Interface",
+  "displayName": "Tektelic Agriculture Sensor",
+  "description": "Soil and Environment Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Ambient Light Intensity",
+      "description": "Ambient Light Intensity",
+      "name": "channel_108",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Ambient Light Alarm",
+      "description": "Ambient Light Alarm",
+      "name": "channel_109",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Acceleration Data",
+      "description": "Acceleration Data",
+      "name": "channel_110",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Orientation Alarm",
+      "description": "Orientation Alarm",
+      "name": "channel_111",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Ambient Temperature",
+      "description": "Ambient Temperature",
+      "name": "channel_112",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": "Ambient RH",
+      "description": "Ambient RH",
+      "name": "channel_113",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "MCU Temperature",
+      "description": "MCU Temperature",
+      "name": "channel_114",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Soil Moisture",
+      "description": "Soil Moisture",
+      "name": "channel_102",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Soil Temperature",
+      "description": "Soil Temperature",
+      "name": "channel_103",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Input 3 Analog",
+      "description": "Input 3 Analog",
+      "name": "channel_104",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Input 4 Analog",
+      "description": "Input 4 Analog",
+      "name": "channel_105",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Soil Water Tension 1",
+      "description": "Soil Water Tension 1",
+      "name": "channel_106",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Soil Water Tension 2",
+      "description": "Soil Water Tension 2",
+      "name": "channel_107",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal Strength",
+      "description": "Signal Strength",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    }
+  ]
+}
