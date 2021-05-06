@@ -50,36 +50,29 @@
 "@type": "Component",
 "name": "audio",
 "displayName":"Audio",
-"description":"Stereo digital, PDM Microphone MEMS (Silicon) omnidirectional (-26dB ��1dB @ 94dB SPL) solder pads",
+"description":"Stereo digital, PDM Microphone MEMS (Silicon) omnidirectional (-26dB +-1dB @ 94dB SPL) solder pads",
 "schema": "dtmi:himax:audio;1"
 },
 {
 "@type": "Component",
 "name": "accelerometers",
 "displayName":"Accelerometers",
-"description":"3D digital linear acceleration sensor has a linear acceleration full scale of ��2g/��4g/��8/��16 g.",
+"description":"3D digital linear acceleration sensor has a linear acceleration full scale of +-2g,+-4g,+-8,+-16 g.",
 "schema": "dtmi:himax:accelerometers;1"
 },
 {
 "@type": "Component",
 "name": "gyro",
 "displayName":"Gyro",
-"description":"3D digital angular rate sensor has an angular rate of ��245/��500/��2000 dps.",
+"description":"3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
 "schema": "dtmi:himax:gyro;1"
 },
 {
 "@type": "Component",
 "name": "magnetometer",
 "displayName":"Magnetometer",
-"description":"3D digital magnetic sensor has a magnetic field full scale of ��4/��8/��12/��16 gauss.",
+"description":"3D digital magnetic sensor has a magnetic field full scale of +-4,+-8,+-12,+-16 gauss.",
 "schema": "dtmi:himax:magnetometer;1"
-},
-{
-"@type": "Component",
-"name": "ota",
-"displayName": "OTA upgrade",
-"description": "OTA upgrade via nb-iot.",
-"schema": "dtmi:himax:ota_upgrade;1"
 }
 ]
 }
