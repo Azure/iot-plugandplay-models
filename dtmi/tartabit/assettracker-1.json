@@ -66,6 +66,14 @@
         "name": "rssi",
         "schema": "double"
       },
+	  {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Battery"
+        },
+        "name": "battery",
+        "schema": "double"
+      },
       {
         "@type": "Telemetry",
         "displayName": {
