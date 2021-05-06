@@ -8,19 +8,19 @@
       "@type": "Telemetry",
       "name": "concentration1",
       "displayName": "PM1.0 concentration",
-      "schema": "dtmi:seeedkk:reterminal:wioterminal_dust:Concentration;1"
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
     },
     {
       "@type": "Telemetry",
       "name": "concentration2_5",
       "displayName": "PM2.5 concentration",
-      "schema": "dtmi:seeedkk:reterminal:wioterminal_dust:Concentration;1"
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
     },
     {
       "@type": "Telemetry",
       "name": "concentration10",
       "displayName": "PM10 concentration",
-      "schema": "dtmi:seeedkk:reterminal:wioterminal_dust:Concentration;1"
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
     },
     {
       "@type": "Telemetry",
@@ -78,7 +78,7 @@
   ],
   "schemas": [
     {
-      "@id": "dtmi:seeedkk:reterminal:wioterminal_dust:Concentration;1",
+      "@id": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1",
       "@type": "Object",
       "fields": [
         {
