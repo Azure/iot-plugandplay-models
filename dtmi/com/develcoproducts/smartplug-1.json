@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:smartplug;1",
+  "@type": "Interface",
+  "displayName": "Smart Plug",
+  "description": "Smart Plug",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "onoff",
+      "displayName" : "OnOff",
+      "description" : "On Status",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "voltage",
+      "displayName" : "Voltage",
+      "description" : "Outlet voltage (V)",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "current",
+      "displayName" : "Current",
+      "description" : "RMS Current (A)",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "description": {
+        "en": "Turn device on or off"
+      },
+      "displayName": {
+        "en": "OnOff"
+      },
+      "name": "OnOff",
+      "request": {
+        "@type": "CommandPayload",
+        "description": {
+          "en": "On status"
+        },
+        "displayName": {
+          "en": "OnOff"
+        },
+        "name": "onoff",
+        "schema": "boolean"
+      }
+    }
+  ]
+}
