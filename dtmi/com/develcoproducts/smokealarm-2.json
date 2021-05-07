@@ -14,13 +14,6 @@
     },
     {
       "@type": "Property",
-      "name": "tamper",
-      "displayName" : "Tamper",
-      "description" : "Tamper",
-      "schema": "boolean"
-    },
-    {
-      "@type": "Property",
       "name": "voltage",
       "displayName" : "Voltage",
       "description" : "Battery voltage",
