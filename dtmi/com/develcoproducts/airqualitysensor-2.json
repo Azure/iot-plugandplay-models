@@ -1,0 +1,52 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:airqualitysensor;2",
+  "@type": "Interface",
+  "displayName": "Air Quality Sensor",
+  "description": "Air Quality Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "humidity",
+      "displayName" : "Humidity",
+      "description" : "Humidity (%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "voc",
+      "displayName" : "VOC",
+      "description" : "Volatile Organic Compounds in ppb",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "level",
+      "displayName" : "Level",
+      "description" : "Air Quality Level",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "voltage",
+      "displayName" : "Voltage",
+      "description" : "Battery voltage",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "low",
+      "displayName" : "Battery low",
+      "description" : "Battery low",
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "temperature",
+      "displayName" : "Temperature",
+      "description" : "Temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

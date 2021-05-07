@@ -1,0 +1,38 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:humiditysensor;2",
+  "@type": "Interface",
+  "displayName": "Humidity Sensor",
+  "description": "Humidity Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "humidity",
+      "displayName" : "Humidity",
+      "description" : "Humidity (%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "voltage",
+      "displayName" : "Voltage",
+      "description" : "Battery voltage",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "low",
+      "displayName" : "Battery low",
+      "description" : "Battery low",
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "temperature",
+      "displayName" : "Temperature",
+      "description" : "Temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

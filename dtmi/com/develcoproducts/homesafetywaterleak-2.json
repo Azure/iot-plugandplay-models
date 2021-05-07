@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetywaterleak;2",
+  "@type": "Interface",
+  "displayName": "Home Safety Water Leak",
+  "description": "Home Safety Water Leak",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;2",
+      "name": "waterleak2",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    }
+  ]
+}
