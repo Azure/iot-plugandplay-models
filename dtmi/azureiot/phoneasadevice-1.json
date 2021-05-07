@@ -81,7 +81,7 @@
       }
     ],
     "displayName": {
-      "en": "Smartphone"
+      "en": "IoT Plug and Play mobile"
     },
     "@context": [
       "dtmi:iotcentral:context;2",
