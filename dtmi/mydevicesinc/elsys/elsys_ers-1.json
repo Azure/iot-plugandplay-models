@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:elsys:elsys_ers;1",
+  "@type": "Interface",
+  "displayName": "Elsys ERSeye Room Occupancy (UPDATED)",
+  "description": "Room Occupancy",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Occupancy",
+      "description": "Occupancy",
+      "name": "channel_137",
+      "schema": "double"
+    }
+  ]
+}

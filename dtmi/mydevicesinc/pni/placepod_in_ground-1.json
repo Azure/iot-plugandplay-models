@@ -1,0 +1,38 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:pni:placepod_in_ground;1",
+  "@type": "Interface",
+  "displayName": "PNI PlacePod In Ground Parking Sensor",
+  "description": "Parking Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Digital Sensor",
+      "description": "Digital Sensor",
+      "name": "channel_78",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_3",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
