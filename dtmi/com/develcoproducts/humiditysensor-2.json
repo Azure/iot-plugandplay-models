@@ -20,13 +20,6 @@
       "schema": "double"
     },
     {
-      "@type": "Property",
-      "name": "low",
-      "displayName" : "Battery low",
-      "description" : "Battery low",
-      "schema": "boolean"
-    },
-    {
       "@type": ["Property", "Temperature"],
       "name": "temperature",
       "displayName" : "Temperature",
