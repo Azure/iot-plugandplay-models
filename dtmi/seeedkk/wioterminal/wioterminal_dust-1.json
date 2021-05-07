@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_dust;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Dust Sensor for Wio Terminal",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "concentration1",
+      "displayName": "PM1.0 concentration",
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "concentration2_5",
+      "displayName": "PM2.5 concentration",
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "concentration10",
+      "displayName": "PM10 concentration",
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber0_3",
+      "displayName": "PM0.3 particle number",
+      "description": "PM0.3 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber0_5",
+      "displayName": "PM0.5 particle number",
+      "description": "PM0.5 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber1",
+      "displayName": "PM1.0 particle number",
+      "description": "PM1.0 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber2_5",
+      "displayName": "PM2.5 particle number",
+      "description": "PM2.5 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber5",
+      "displayName": "PM5 particle number",
+      "description": "PM5 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "particleNumber10",
+      "displayName": "PM10 particle number",
+      "description": "PM10 particle number. (#/l)",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "name": "telemetryInterval",
+      "unit": "second",
+      "displayName": "Telemetry interval",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:seeedkk:wioterminal:wioterminal_dust:Concentration;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "standard",
+          "displayName": "Standard",
+          "description": "CF=1, Standard particulate. (ug/m3)",
+          "schema": "integer"
+        },
+        {
+          "name": "atmospheric",
+          "displayName": "Atmospheric",
+          "description": "Atmospheric environment. (ug/m3)",
+          "schema": "integer"
+        }
+      ]
+    }
+  ]
+}
