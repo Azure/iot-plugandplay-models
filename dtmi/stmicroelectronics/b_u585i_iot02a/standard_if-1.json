@@ -3,7 +3,7 @@
     "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if;1",
     "@type": "Interface",
     "displayName": "Standard interface for B-U585I-IOT02A",
-    "description": "Reports temperature, relative humidity, pressure, magnetometer, accelerometer, gyroscope and proximity",
+    "description": "Reports temperature, relative humidity, pressure, magnetometer, accelerometer and gyroscope.",
     "contents": [
       {
         "@type": [
@@ -45,38 +45,79 @@
         "unit": "millibar"  
       },
       {
-        "@type": [
-          "Telemetry",
-          "Distance"
-        ],
-        "name": "proximity",
-        "displayName": {
-          "en": "proximity"
-        },
-        "description": "Proximity from proximity sensor",
-        "schema": "double",
-        "unit": "centimetre"
-      },
-      {
         "@type": "Telemetry",
         "name": "acceleration",
         "displayName": "LSM6DSL Acc Value [mg]",
         "comment": "LSM6DSL Acceleration X/Y/Z components [mg]",
-        "schema": "dtmi:STMicroelectronics:types:acceleration;1"
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single acceleration sample.",
+          "description": "Single acceleration sample. I.e.: {a_x, a_y, a_z}.",
+          "fields": [
+              {
+                  "name": "a_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_z",
+                  "schema": "double"
+              }
+          ]
+        }
       },
       {
         "@type": "Telemetry",
         "name": "gyroscope",
         "displayName": "LSM6DSL Gyro Value [mdps]",
         "comment": "LSM6DSL Gyroscope X/Y/Z components [mdps]",
-        "schema": "dtmi:STMicroelectronics:types:angular_velocity;1"
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single angular velocity sample.",
+          "description": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}.",
+          "fields": [
+              {
+                  "name": "g_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_z",
+                  "schema": "double"
+              }
+          ]
+        }
       },
       {
         "@type": "Telemetry",
         "name": "magnetometer",
         "displayName": "LIS3MDL Mag Value [mgauss]",
         "comment": "LIS3MDL Magnetometer X/Y/Z components [mgauss]",
-        "schema": "dtmi:STMicroelectronics:types:magnetic_field;1"
+        "schema": {
+          "@type": "Object",
+            "displayName": "Single magnetic field sample.",
+            "description": "Single magnetic field sample. I.e.: {m_x, m_y, m_z}.",
+            "fields": [
+                {
+                    "name": "m_x",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_y",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_z",
+                    "schema": "double"
+                }
+            ]
+        }
       },
       {
         "@type": "Property",
@@ -155,101 +196,6 @@
             }
           ]
         }
-      },
-      {
-        "@type": "Property",
-        "name": "magneto_fullscale",
-        "displayName": "LIS3MDL Mag FS",
-        "description": "LIS3MDL Magnetometer Full Scale",
-        "writable": true,
-        "schema": {
-          "@type": "Enum",
-          "valueSchema": "integer",
-          "enumValues": [
-            {
-              "name": "G4",
-              "displayName": "+/- 4Gauss",
-              "enumValue": 0
-            },
-            {
-              "name": "G8",
-              "displayName": "+/- 8Gauss",
-              "enumValue": 1
-            },
-            {
-              "name": "G12",
-              "displayName": "+/- 12Gauss",
-              "enumValue": 2
-            },
-            {
-              "name": "G16",
-              "displayName": "+/- 16Gauss",
-              "enumValue": 3
-            }
-          ]
-        }
       }
-    ],
-    "schemas": [
-        {
-          "@id": "dtmi:STMicroelectronics:types:acceleration;1",
-          "@type": "Object",
-          "displayName": "Single acceleration sample.",
-          "description": "Single acceleration sample. I.e.: {a_x, a_y, a_z}.",
-          "fields": [
-              {
-                  "name": "a_x",
-                  "schema": "double"
-              },
-              {
-                  "name": "a_y",
-                  "schema": "double"
-              },
-              {
-                  "name": "a_z",
-                  "schema": "double"
-              }
-          ]
-        },
-        {
-          "@id": "dtmi:STMicroelectronics:types:angular_velocity;1",
-          "@type": "Object",
-          "displayName": "Single angular velocity sample.",
-          "description": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}.",
-          "fields": [
-              {
-                  "name": "g_x",
-                  "schema": "double"
-              },
-              {
-                  "name": "g_y",
-                  "schema": "double"
-              },
-              {
-                  "name": "g_z",
-                  "schema": "double"
-              }
-          ]
-        },
-        {
-            "@id": "dtmi:STMicroelectronics:types:magnetic_field;1",
-            "@type": "Object",
-            "displayName": "Single magnetic field sample.",
-            "description": "Single magnetic field sample. I.e.: {m_x, m_y, m_z}.",
-            "fields": [
-                {
-                    "name": "m_x",
-                    "schema": "double"
-                },
-                {
-                    "name": "m_y",
-                    "schema": "double"
-                },
-                {
-                    "name": "m_z",
-                    "schema": "double"
-                }
-            ]
-          }
     ]
   }
