@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetyheatalarm;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Heat Alarm",
+  "description": "Home Safety Heat Alarm",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:heatalarm;1",
+      "name": "heatalarm1",
+      "displayName": "Heat Alarm",
+      "description": "Heat Alarm"
+    }
+  ]
+}
