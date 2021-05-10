@@ -1,45 +1,59 @@
 {
-  "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:com:develcoproducts:motionsensor;1",
-  "@type": "Interface",
-  "displayName": "Motion Sensor",
-  "description": "Motion Sensor",
-  "contents": [
-    {
-      "@type": "Property",
-      "name": "alarm",
-      "displayName" : "Alarm",
-      "description" : "Alarm",
-      "schema": "boolean"
-    },
-    {
-      "@type": "Property",
-      "name": "tamper",
-      "displayName" : "Tamper",
-      "description" : "Tamper",
-      "schema": "boolean"
-    },
-    {
-      "@type": "Property",
-      "name": "voltage",
-      "displayName" : "Voltage",
-      "description" : "Battery voltage",
-      "schema": "double"
-    },
-    {
-      "@type": "Property",
-      "name": "low",
-      "displayName" : "Battery low",
-      "description" : "Battery low",
-      "schema": "double"
-    },
-    {
-      "@type": ["Property", "Temperature"],
-      "name": "temperature",
-      "displayName" : "Temperature",
-      "description" : "Temperature",
-      "schema": "double",
-      "unit": "degreeCelsius"
-    }
-  ]
+	"@context": "dtmi:dtdl:context;2",
+	"@id": "dtmi:com:develcoproducts:motionsensor;1",
+	"@type": "Interface",
+	"displayName": "Motion Sensor",
+	"description": "Motion Sensor",
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "alarm",
+			"displayName": "Alarm",
+			"description": "Alarm",
+			"schema": "boolean"
+		},
+		{
+			"@type": "Property",
+			"name": "tamper",
+			"displayName": "Tamper",
+			"description": "Tamper",
+			"schema": "boolean"
+		},
+		{
+			"@type": "Property",
+			"name": "voltage",
+			"displayName": "Voltage",
+			"description": "Battery voltage",
+			"schema": "double"
+		},
+		{
+			"@type": "Property",
+			"name": "low",
+			"displayName": "Battery low",
+			"description": "Battery low",
+			"schema": "boolean"
+		},
+		{
+			"@type": ["Property", "Temperature"],
+			"name": "temperature",
+			"displayName": "Temperature",
+			"description": "Temperature",
+			"schema": "double",
+			"unit": "degreeCelsius"
+		},
+		{
+			"@type": "Property",
+			"name": "occupancy",
+			"displayName": "Occupancy",
+			"description": "Occupancy",
+			"schema": "boolean"
+		},
+		{
+			"@type": "Property",
+			"name": "illuminance",
+			"displayName": "Illuminance",
+			"description": "Illuminance",
+			"schema": "integer"
+		}
+	]
 }

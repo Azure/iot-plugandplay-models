@@ -38,7 +38,7 @@
       "name": "low",
       "displayName" : "Battery low",
       "description" : "Battery low",
-      "schema": "double"
+      "schema": "boolean"
     },
     {
       "@type": ["Property", "Temperature"],
