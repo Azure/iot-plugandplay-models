@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:dragino:lgt92;1",
+  "@type": "Interface",
+  "displayName": "Dragino LGT-92",
+  "description": "GPS and 9 Axis Motion",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Location",
+      "description": "Location",
+      "name": "channel_21",
+      "schema": "point"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal Strength",
+      "description": "Signal Strength",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Alarm",
+      "description": "Alarm",
+      "name": "channel_103",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Pitch",
+      "description": "Pitch",
+      "name": "channel_46",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Roll",
+      "description": "Roll",
+      "name": "channel_47",
+      "schema": "double"
+    }
+  ]
+}
