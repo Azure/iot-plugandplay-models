@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:axioma:qalcosonic_w1;1",
+  "@type": "Interface",
+  "displayName": "Axioma QALCOSONIC W1 Water Meter",
+  "description": "Water Meter",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Low Battery",
+      "description": "Low Battery",
+      "name": "channel_112",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Volume",
+      "description": "Volume",
+      "name": "channel_153",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Flow",
+      "description": "Flow",
+      "name": "channel_154",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Leak",
+      "description": "Leak",
+      "name": "channel_74",
+      "schema": "double"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:laird:rs1xx;1",
+  "@type": "Interface",
+  "displayName": "Laird Temp & Humidity RS1xx Sensor",
+  "description": "Temp Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_3",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": "Humidity",
+      "description": "Humidity",
+      "name": "channel_4",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    }
+  ]
+}
