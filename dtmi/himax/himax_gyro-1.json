@@ -1,0 +1,30 @@
+    {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:himax:himax_gyro;1",
+        "@type": "Interface",
+        "displayName": "Gyro",
+        "description": "Gyro function in Himax-AIoT-NB-G2.",
+        "contents": [
+            {
+                "@type": "Telemetry",
+                "name": "gyro_x",
+                "displayName": "gyro_x",
+                "description": "Current gyro x-axis.",
+                "schema": "float"
+            },
+            {
+                "@type": "Telemetry",
+                "name": "gyro_y",
+                "displayName": "gyro_y",
+                "description": "Current gyro y-axis.",
+                "schema": "float"
+            },
+            {
+                "@type": "Telemetry",
+                "name": "gyro_z",
+                "displayName": "gyro_z",
+                "description": "Current gyro z-axis.",
+                "schema": "float"
+            }
+        ]
+    }
