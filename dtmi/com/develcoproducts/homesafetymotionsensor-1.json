@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetymotionsensor;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Motion Sensor",
+  "description": "Home Safety Motion Sensor",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:motionsensor;1",
+      "name": "motionsensor1",
+      "displayName": "Motion Sensor",
+      "description": "Motion Sensor"
+    }
+  ]
+}
