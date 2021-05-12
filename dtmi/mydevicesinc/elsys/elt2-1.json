@@ -1,0 +1,210 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:elsys:elt2;1",
+  "@type": "Interface",
+  "displayName": "Elsys ELT-2",
+  "description": "Analog and Digital Signals",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_501",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": "Humidity",
+      "description": "Humidity",
+      "name": "channel_502",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Analog 1",
+      "description": "Analog 1",
+      "name": "channel_508",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Relative Pulse Count",
+      "description": "Relative Pulse Count",
+      "name": "channel_510",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Absolute Pulse Count",
+      "description": "Absolute Pulse Count",
+      "name": "channel_511",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "External Digital/Button",
+      "description": "External Digital/Button",
+      "name": "channel_513",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "External Temperature 1",
+      "description": "External Temperature 1",
+      "name": "channel_512",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "External Distance",
+      "description": "External Distance",
+      "name": "channel_514",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Motion (Acceleration)",
+      "description": "Motion (Acceleration)",
+      "name": "channel_515",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Internal Temperature",
+      "description": "Internal Temperature",
+      "name": "channel_600",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "External IR Temperature",
+      "description": "External IR Temperature",
+      "name": "channel_601",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "External Water Leak",
+      "description": "External Water Leak",
+      "name": "channel_518",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Pressure",
+      "description": "Pressure",
+      "name": "channel_520",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Relative Pulse Count 2",
+      "description": "Relative Pulse Count 2",
+      "name": "channel_522",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Absolute Pulse Count 2",
+      "description": "Absolute Pulse Count 2",
+      "name": "channel_523",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Analog 2",
+      "description": "Analog 2",
+      "name": "channel_524",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "External Temperature 2",
+      "description": "External Temperature 2",
+      "name": "channel_525",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "External Digital 2",
+      "description": "External Digital 2",
+      "name": "channel_526",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal Strength",
+      "description": "Signal Strength",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Internal Battery Voltage",
+      "description": "Internal Battery Voltage",
+      "name": "channel_507",
+      "schema": "double"
+    }
+  ]
+}
