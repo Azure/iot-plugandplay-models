@@ -1,0 +1,116 @@
+{
+  "@id": "dtmi:Advantech:WISE_SystemInformation;1",
+  "@type": "Interface",
+  "displayName": "SystemInformation",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [  
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Manufacturer"
+      },
+      "name": "Mf",
+      "schema": "string",
+      "writable": false
+    },  
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Model ID"
+      },
+      "name": "Id",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Firmware Version"
+      },
+      "name": "FwVer",
+      "schema": "string",
+      "writable": false
+    },  
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "I/O board Firmware Version"
+      },
+      "name": "ADVer",
+      "schema": "string",
+      "writable": false
+    },  
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "User Defined Module Name"
+      },
+      "name": "Nm",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Module Description"
+      },
+      "name": "Des",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "UUID"
+      },
+      "name": "UID",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Device Location Information"
+      },
+      "name": "Loc",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Local Date and Time"
+      },
+      "name": "Tm",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Latitude"
+      },
+      "name": "Lat",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Longitude"
+      },
+      "name": "Lng",
+      "schema": "string",
+      "writable": false
+    },      
+    {
+      "@type": "Property",
+      "displayName": {
+          "en": "Altitude"
+      },
+      "name": "Alt",
+      "schema": "string",
+      "writable": false
+    }        
+  ]
+}
