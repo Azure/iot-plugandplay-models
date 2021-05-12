@@ -1,0 +1,176 @@
+{
+  "@id": "dtmi:Advantech:WISE_Temperature;1",
+  "@type": "Interface",
+  "displayName": "Temperature",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [     
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Temperature Sensor Channel"
+      },
+      "description": {
+        "en": "0 - Disabled, 1 - Enabled"
+      },
+      "name": "En",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Temperature Sensor Range Code"
+      },
+      "description": {
+        "en": "4096 - degreeCelsius, 4097 - degreeFahrenheit, 4098 - kelvin"
+      },
+      "name": "Rng",
+      "schema": "integer",
+      "writable": true      
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Temperature Sensor Measurement Interval"
+      },
+      "description": {
+        "en": "range 100 ~ 8640000, unit: 10 ms"
+      },
+      "name": "PItv",
+      "schema": "integer",
+      "writable": true
+    },     
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Clear Temperature Sensor Maximum Value"
+      },
+      "name": "ClrH",
+      "response": {
+        "name": "ClrH_Result",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Clear Temperature Sensor Minimum Value"
+      },
+      "name": "ClrL",
+      "response": {
+        "name": "ClrL_Result",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "EgF_c",
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "EgF_f",
+      "schema": "float",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "EgF_k",
+      "schema": "float",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Maximum Temperature"
+      },
+      "name": "HEgF_c",
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Maximum Temperature"
+      },
+      "name": "HEgF_f",
+      "schema": "float",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Maximum Temperature"
+      },
+      "name": "HEgF_k",
+      "schema": "float",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Minimum Temperature"
+      },
+      "name": "LEgF_c",
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Minimum Temperature"
+      },
+      "name": "LEgF_f",
+      "schema": "float",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Minimum Temperature"
+      },
+      "name": "LEgF_k",
+      "schema": "float",
+      "unit": "kelvin"
+    }
+  ]
+}

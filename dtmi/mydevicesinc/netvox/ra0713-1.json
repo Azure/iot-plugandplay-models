@@ -1,0 +1,27 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:netvox:ra0713;1",
+  "@type": "Interface",
+  "displayName": "Netvox Soil Moisture",
+  "description": "Soil Moisture Probe",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Soil Moisture",
+      "description": "Soil Moisture",
+      "name": "channel_29",
+      "schema": "double"
+    }
+  ]
+}
