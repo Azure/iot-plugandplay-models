@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:ADLINK:MXE_210;1",
+    "@id": "dtmi:ADLINK:nanoX_EL;1",
     "@type": "Interface",
-    "displayName": "ADLINK-MXE-210",
+    "displayName": "ADLINK-nanoX-EL",
     "contents": [
         {
             "@type": "Component",
