@@ -1,0 +1,130 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage;2",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Digital Signage for Wio Terminal",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "message",
+      "displayName": {
+        "en": "Message to display",
+        "ja": "表示するメッセージ"
+      },
+      "writable": true,
+      "schema":  {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "contentType",
+            "displayName": {
+              "en": "Content type",
+              "ja": "コンテンツ種類"
+            },
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "string",
+              "enumValues": [
+                {
+                  "name": "text",
+                  "enumValue": "text",
+                  "displayName": {
+                    "en": "Text",
+                    "ja": "テキスト"
+                  }
+                },
+                {
+                  "name": "imageUrl",
+                  "enumValue": "imageUrl",
+                  "displayName": {
+                    "en": "Image URL",
+                    "ja": "画像URL"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "content",
+            "displayName": {
+              "en": "Content",
+              "ja": "コンテンツ"
+            },
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "rightButton",
+      "displayName": {
+        "en": "Right button",
+        "ja": "右ボタン"
+      },
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage:ButtonPress;1"
+    },    
+    {
+      "@type": "Telemetry",
+      "name": "centerButton",
+      "displayName": {
+        "en": "Middle button",
+        "ja": "中央ボタン"
+      },
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage:ButtonPress;1"
+    },    
+    {
+      "@type": "Telemetry",
+      "name": "leftButton",
+      "displayName": {
+        "en": "Left button",
+        "ja": "左ボタン"
+      },
+      "schema": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage:ButtonPress;1"
+    },    
+    {
+      "@type": "Property",
+      "name": "rightButtonClickCount",
+      "displayName": {
+        "en": "Click count of right button",
+        "ja": "右ボタンのクリック数"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "centerButtonClickCount",
+      "displayName": {
+        "en": "Click count of center button",
+        "ja": "中央ボタンのクリック数"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "leftButtonClickCount",
+      "displayName": {
+        "en": "Click count of left button",
+        "ja": "左ボタンのクリック数"
+      },
+      "schema": "integer"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage:ButtonPress;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "click",
+          "enumValue": "click",
+          "displayName": {
+            "en": "Click",
+            "ja": "クリック"
+          }
+        }
+      ]
+    }
+  ]
+}
