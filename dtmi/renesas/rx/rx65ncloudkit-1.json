@@ -1,0 +1,107 @@
+{
+  "@id": "dtmi:renesas:RX:RX65NCloudKit;1",
+  "displayName": {
+    "en": "RX65N Cloud Kit"
+  },
+  "description": {
+    "en": "RX65N Cloud Kit"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Manufacturer;1",
+      "@type": "Property",
+      "name": "manufacturer",
+      "writable": false,
+      "comment": "Manufacturer Name 'Renesas'",
+      "displayName": {
+        "en": "Manufacturer Name"
+      },
+      "description": {
+        "en": "The name of manufacturer of the board. 'Renesas Electronics Corporation'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Model;1",
+      "@type": "Property",
+      "name": "model",
+      "writable": false,
+      "comment": "Model Name 'RTK5RX65N0S0x000BE'",
+      "displayName": {
+        "en": "Model Name"
+      },
+      "description": {
+        "en": "The model name of the board. 'RTK5RX65N0S0x000BE'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:ProcessorName;1",
+      "@type": "Property",
+      "name": "processorName",
+      "writable": false,
+      "comment": "MCU Name 'RX65N'",
+      "displayName": {
+        "en": "MCU Name"
+      },
+      "description": {
+        "en": "The name of the MCU 'RX65N'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Reboot;1",
+      "@type": "Command",
+      "name": "reboot",
+      "comment": "Reboot the board with the specified delay",
+      "displayName": {
+        "en": "Reboot the board"
+      },
+      "description": {
+        "en": "Command to reboot the board with the specified delay."
+      },
+      "request": {
+        "@type": "CommandPayload",
+        "name": "commandParameter",
+        "displayName": {
+          "en": "Parameter Name"
+        },
+        "description": {
+          "en": "Parameter of the command"
+        },
+        "schema": "string"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "name": "commandResponse",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "LED",
+      "displayName": {
+        "en": "LED on RX65N Cloud Option Board"
+      },
+      "description": {
+        "en": "LED on RX65N Cloud Option Board."
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1"
+    },
+    {
+      "@type": "Component",
+      "name": "AmbientLight",
+      "displayName": {
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board"
+      },
+      "description": {
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board."
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:eolane:bob_predictive_maintenance;1",
+  "@type": "Interface",
+  "displayName": "Eolane BOB Predictive Maintenance",
+  "description": "Perdictive maintenance sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Hour Forecast 20%",
+      "description": "Hour Forecast 20%",
+      "name": "channel_300",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Hour Forecast 50%",
+      "description": "Hour Forecast 50%",
+      "name": "channel_301",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Hour Forecast 80%",
+      "description": "Hour Forecast 80%",
+      "name": "channel_302",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Day Forecast 20%",
+      "description": "Day Forecast 20%",
+      "name": "channel_303",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Day Forecast 50%",
+      "description": "Day Forecast 50%",
+      "name": "channel_304",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Day Forecast 80%",
+      "description": "Day Forecast 80%",
+      "name": "channel_305",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Month Forecast 20%",
+      "description": "Month Forecast 20%",
+      "name": "channel_306",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Month Forecast 50%",
+      "description": "Month Forecast 50%",
+      "name": "channel_307",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Month Forecast 80%",
+      "description": "Month Forecast 80%",
+      "name": "channel_308",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Anomaly Level",
+      "description": "Anomaly Level",
+      "name": "channel_309",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Operating Rate",
+      "description": "Operating Rate",
+      "name": "channel_310",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Good Vibration",
+      "description": "Good Vibration",
+      "name": "channel_311",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "10-20% Good",
+      "description": "10-20% Good",
+      "name": "channel_312",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "20-40% Average",
+      "description": "20-40% Average",
+      "name": "channel_313",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "40-60% Bad",
+      "description": "40-60% Bad",
+      "name": "channel_314",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "60-80% Very Bad",
+      "description": "60-80% Very Bad",
+      "name": "channel_315",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "80-100% Danger",
+      "description": "80-100% Danger",
+      "name": "channel_316",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Alarm Count",
+      "description": "Alarm Count",
+      "name": "channel_317",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Learning Percentage",
+      "description": "Learning Percentage",
+      "name": "channel_320",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Machine Status",
+      "description": "Machine Status",
+      "name": "channel_322",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Learning Timestamp",
+      "description": "Learning Timestamp",
+      "name": "channel_323",
+      "schema": "double"
+    }
+  ]
+}

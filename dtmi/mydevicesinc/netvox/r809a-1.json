@@ -1,0 +1,99 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:netvox:r809a;1",
+  "@type": "Interface",
+  "displayName": "Netvox Smart Plug - R809A",
+  "description": "Power Plug with Power Meter",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Voltage",
+      "description": "Voltage",
+      "name": "channel_33",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Power",
+      "description": "Power",
+      "name": "channel_168",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "RSSI",
+      "description": "RSSI",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Current",
+      "description": "Current",
+      "name": "channel_164",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Energy",
+      "description": "Energy",
+      "name": "channel_167",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Circuit Control",
+      "description": "Circuit Control",
+      "name": "channel_56",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Over Current Alarm",
+      "description": "Over Current Alarm",
+      "name": "channel_35",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Dash Current Alarm",
+      "description": "Dash Current Alarm",
+      "name": "channel_36",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Power Off Alarm",
+      "description": "Power Off Alarm",
+      "name": "channel_37",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "On/Off",
+      "description": "On/Off",
+      "name": "channel_247",
+      "schema": "double"
+    }
+  ]
+}
