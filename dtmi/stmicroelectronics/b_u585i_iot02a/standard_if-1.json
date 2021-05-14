@@ -40,15 +40,15 @@
         "displayName": {
           "en": "Pressure"
         },
-        "description": "Pressure from LPS22HB sensor",
+        "description": "Pressure from LPS22HH sensor",
         "schema": "double",
         "unit": "millibar"  
       },
       {
         "@type": "Telemetry",
         "name": "acceleration",
-        "displayName": "LSM6DSL Acc Value [mg]",
-        "comment": "LSM6DSL Acceleration X/Y/Z components [mg]",
+        "displayName": "ISM330DHCX Acc Value [mg]",
+        "comment": "ISM330DHCX Acceleration X/Y/Z components [mg]",
         "schema": {
           "@type": "Object",
           "displayName": "Single acceleration sample.",
@@ -72,8 +72,8 @@
       {
         "@type": "Telemetry",
         "name": "gyroscope",
-        "displayName": "LSM6DSL Gyro Value [mdps]",
-        "comment": "LSM6DSL Gyroscope X/Y/Z components [mdps]",
+        "displayName": "ISM330DHCX Gyro Value [mdps]",
+        "comment": "ISM330DHCX Gyroscope X/Y/Z components [mdps]",
         "schema": {
           "@type": "Object",
           "displayName": "Single angular velocity sample.",
@@ -97,8 +97,8 @@
       {
         "@type": "Telemetry",
         "name": "magnetometer",
-        "displayName": "LIS3MDL Mag Value [mgauss]",
-        "comment": "LIS3MDL Magnetometer X/Y/Z components [mgauss]",
+        "displayName": "IIS2MDC Mag Value [mgauss]",
+        "comment": "IIS2MDC Magnetometer X/Y/Z components [mgauss]",
         "schema": {
           "@type": "Object",
             "displayName": "Single magnetic field sample.",
