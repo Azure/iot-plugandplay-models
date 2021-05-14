@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetyvibrationsensor;2",
+  "@type": "Interface",
+  "displayName": "Home Safety Vibration Sensor",
+  "description": "Home Safety Vibration Sensor",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:vibrationsensor;2",
+      "name": "vibrationsensor2",
+      "displayName": "Vibration Sensor",
+      "description": "Vibration Sensor"
+    }
+  ]
+}
