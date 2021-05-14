@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:elsys:ers_desk;1",
+  "@type": "Interface",
+  "displayName": "Elsys ERS Desk Sensor",
+  "description": "Desk Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Presence",
+      "description": "Presence",
+      "name": "channel_137",
+      "schema": "integer"
+    }
+  ]
+}
