@@ -23,6 +23,6 @@
         "displayName": "Delay",
         "description": "Number of seconds to wait before rebooting the device."
       }
-    },
+    }
   ]
 }
