@@ -1,0 +1,94 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:EnvSensor;1",
+  "@type": "Interface",
+  "displayName": "Environment Sensor",
+  "description": "Reports environmental info",
+  "contents": [
+    {
+      "@type": ["Telemetry", "Temperature"],
+      "name": "temperature",
+      "schema": "double",
+      "displayName": "Temperature",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Telemetry", "RelativeHumidity"],
+      "name": "humidity",
+      "schema": "double",
+      "displayName": "Relative Humidity[%RH]",
+      "unit": "percent"
+    },
+    {
+      "@type": ["Telemetry", "Illuminance"],
+      "name": "illuminance",
+      "schema": "integer",
+      "displayName": "Ambient light",
+      "unit": "lux"
+    },
+    {
+      "@type": ["Telemetry", "Pressure"],
+      "name": "air_pressure",
+      "schema": "double",
+      "displayName": "Barometric pressure",
+      "unit": "millibar"
+    },
+    {
+      "@type": ["Telemetry", "SoundPressure"],
+      "name": "sound_noise",
+      "schema": "double",
+      "displayName": "Sound noise",
+      "unit": "decibel"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "e_tvoc",
+      "schema": "integer",
+      "displayName": "eTVOC[ppb]"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "discomfort_index",
+      "schema": "double",
+      "displayName": "Discomfort index"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "heat_stroke_alarmness",
+      "schema": "double",
+      "displayName": "Heat stroke[degC]"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "e_co2",
+      "schema": "integer",
+      "displayName": "eCO2[ppm]"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "vibr_info",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "none",
+            "displayName": "NONE",
+            "enumValue": 0
+          },
+          {
+            "name": "vibration",
+            "displayName": "during vibration",
+            "enumValue": 1
+          },
+          {
+            "name": "earthquake",
+            "displayName": "during earthquake",
+            "enumValue": 2
+          }
+        ]
+      },
+      "displayName": "Vibration information"
+    }
+  ]
+}
