@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:bnbkitpremium;1",
+  "@type": "Interface",
+  "displayName": "BnB Kit Premium",
+  "description": "BnB Kit Premium",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartplug;1",
+      "name": "smartplug1",
+      "displayName": "Smart Plug",
+      "description": "Smart Plug"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smokealarm;2",
+      "name": "smokealarm1",
+      "displayName": "Smoke Alarm",
+      "description": "Smoke Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:airqualitysensor;1",
+      "name": "airquality1",
+      "displayName": "Air Quality Sensor",
+      "description": "Air Quality Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;1",
+      "name": "waterleak1",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    }
+  ]
+}

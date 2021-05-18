@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homecomfortpremium;1",
+  "@type": "Interface",
+  "displayName": "Home Comfort Premium",
+  "description": "Home Comfort Premium",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartplug;1",
+      "name": "smartplug1",
+      "displayName": "Smart Plug",
+      "description": "Smart Plug"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartcable;1",
+      "name": "smartcable1",
+      "displayName": "Smart Cable",
+      "description": "Smart Cable"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:humiditysensor;1",
+      "name": "humiditysensor1",
+      "displayName": "Humidity Sensor",
+      "description": "Humidity Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:airqualitysensor;1",
+      "name": "airquality1",
+      "displayName": "Air Quality Sensor",
+      "description": "Air Quality Sensor"
+    }
+  ]
+}
