@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:energymonitoringbasic;1",
+  "@type": "Interface",
+  "displayName": "Energy Monitoring Basic",
+  "description": "Energy Monitoring Basic",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartplug;1",
+      "name": "smartplug1",
+      "displayName": "Smart Plug",
+      "description": "Smart Plug"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartcable;1",
+      "name": "smartcable1",
+      "displayName": "Smart Cable",
+      "description": "Smart Cable"
+    }
+  ]
+}
