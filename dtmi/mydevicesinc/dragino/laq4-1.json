@@ -1,0 +1,67 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:dragino:laq4;1",
+  "@type": "Interface",
+  "displayName": "Dragino Air Quality Sensor LAQ4",
+  "description": "Air Quality Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Temperature",
+      "description": "Temperature",
+      "name": "channel_501",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": "Humidity",
+      "description": "Humidity",
+      "name": "channel_502",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "TVOC",
+      "description": "TVOC",
+      "name": "channel_503",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "eC02",
+      "description": "eC02",
+      "name": "channel_504",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    }
+  ]
+}

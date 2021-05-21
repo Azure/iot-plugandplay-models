@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:waterleakbasic;1",
+  "@type": "Interface",
+  "displayName": "Water Leak Basic",
+  "description": "Water Leak Basic",
+  "contents": [    
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:humiditysensor;1",
+      "name": "humiditysensor1",
+      "displayName": "Humidity Sensor",
+      "description": "Humidity Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;1",
+      "name": "waterleak1",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    }
+  ]
+}
