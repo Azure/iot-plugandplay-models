@@ -6,8 +6,8 @@
     "contents": [
         {
             "@type": "Component",
-            "name": "WindowsDeviceInfo1",
-            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
         }
     ]
 }
