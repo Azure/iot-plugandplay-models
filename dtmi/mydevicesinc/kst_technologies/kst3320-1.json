@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:kst_technologies:kst3320;1",
+  "@type": "Interface",
+  "displayName": "KST Trash Bin KST3320",
+  "description": "Waste bin detector",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Level",
+      "description": "Level",
+      "name": "channel_24",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Percentage",
+      "description": "Percentage",
+      "name": "channel_25",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Volume",
+      "description": "Volume",
+      "name": "channel_26",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Distance",
+      "description": "Distance",
+      "name": "channel_23",
+      "schema": "double"
+    }
+  ]
+}
