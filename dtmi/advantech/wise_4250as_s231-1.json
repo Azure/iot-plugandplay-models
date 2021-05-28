@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:Advantech:WISE_4250AS_S231;1",
+  "@type": "Interface",
+  "displayName": "WISE-4250AS-S231",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Temperature",
+      "schema": "dtmi:Advantech:WISE_Temperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Humidity",
+      "schema": "dtmi:Advantech:WISE_Humidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "SystemInformation",
+      "schema": "dtmi:Advantech:WISE_SystemInformation;1"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ADLINK:I_Pi_SMARC_IMX8MP_Plus;1",
+    "@type": "Interface",
+    "displayName": "ADLINK-I-Pi-SMARC-IMX8MP-Plus",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+} 

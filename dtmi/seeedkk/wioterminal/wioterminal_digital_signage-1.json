@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_digital_signage;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Digital Signage for Wio Terminal",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "message",
+      "displayName": {
+        "en": "Message to display",
+        "ja": "表示するメッセージ"
+      },
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "rightButtonClickCount",
+      "displayName": {
+        "en": "Click count of right button",
+        "ja": "右ボタンのクリック数"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "centerButtonClickCount",
+      "displayName": {
+        "en": "Click count of center button",
+        "ja": "中央ボタンのクリック数"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "leftButtonClickCount",
+      "displayName": {
+        "en": "Click count of left button",
+        "ja": "左ボタンのクリック数"
+      },
+      "schema": "integer"
+    }
+  ]
+}

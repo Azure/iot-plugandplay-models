@@ -1,0 +1,128 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_G3L_PowerMonitor;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW G3L power monitor",
+  "description": "Power monitoring device characteristics",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "schema": "string",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device."
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "schema": "integer",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device."
+      }
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "thermalsense_interval",
+      "schema": "integer",
+      "displayName": "CPU_temp sense interval",
+      "description": "sensing interval for the thermal sensor.",
+      "comment": "It must be greater than 0.",
+      "unit": "second",
+      "writable": true
+    },
+    {
+      "@type": ["Telemetry", "Temperature"],
+      "name": "CPU_temp",
+      "schema": "double",
+      "displayName": "CPU temperature",
+      "description": "Temperature of the CPU",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Property",
+      "name": "powermonitor_alert",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "current_status",
+            "schema": "boolean",
+            "displayName": "Current Status",
+            "description": "True if the Power consumption exceeds the threshold."
+          },
+          {
+            "name": "num_occurrence",
+            "schema": "integer",
+            "displayName": "Number of occurence",
+            "description": "Alert occurrence count",
+            "comment": "Reset by 'Clear PowerMonitor alert' command."
+          },
+          {
+            "name": "last_occur_time",
+            "schema": "dateTime",
+            "displayName": "Last occurrence time",
+            "description": "The latest alert occurence date time.",
+            "comment": "If num_occurrence is 0, this value has no meaning."
+          }
+        ]
+      },
+      "displayName": "PowerMonitor alert",
+      "description": "Status of PowerMonitor.",
+      "comment": "num_occurence inreases at current_status changes to true, and that time is set to last_occur_time."
+    },
+    {
+      "@type": "Command",
+      "name": "clear_alert",
+      "displayName": "Clear PowerMonitor alert",
+      "description": "Clear the PowerMonitor alert.",
+      "comment": "This command clear the current alert status, but it becomes true again when next monitoring if the condition is met."
+    },
+    {
+      "@type": "Property",
+      "name": "powermonitor_alert_conf",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "threshold",
+            "schema": "double",
+            "displayName": "Threshold Wattage",
+            "description": "Alert threshold value of the power consumption."
+          },
+          {
+            "name": "enabled",
+            "schema": "boolean",
+            "displayName": "Enabled",
+            "description": "Whether alert is enabled."
+          }
+        ]
+      },
+      "displayName": "PowerMonitor alert configuration",
+      "description": "Configuraton of PowerMonitor alert.",
+      "comment": "If enabled is false, the value of threshold has no mean.",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "powermonitor_interval",
+      "schema": "integer",
+      "displayName": "wattage monitor interval",
+      "description": "Monitoring interval for the electric energy monitor.",
+      "comment": "It must be greater than 0.",
+      "unit": "second",
+      "writable": true
+    },
+    {
+      "@type": ["Telemetry", "Power"],
+      "name": "wattage",
+      "schema": "double",
+      "displayName": "Power consumption",
+      "description": "Measured value of electric energy monitor.",
+      "unit": "watt"
+    }
+  ]
+}
