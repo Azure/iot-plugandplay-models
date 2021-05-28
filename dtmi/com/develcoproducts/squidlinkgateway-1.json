@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:squidlinkgateway;1",
+  "@type": "Interface",
+  "displayName": "Squid.link 2X Gateway",
+  "description": "Squid.link 2X Gateway",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "eui",
+      "displayName": "Serial number",
+      "schema": "string",
+      "description": "Serial number of the device."
+    },
+    {
+      "@type": "Property",
+      "name": "apiversion",
+      "displayName": "API version",
+      "schema": "string",
+      "description": "Version of the API on the device."
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "displayName": "Device model",
+      "schema": "string",
+      "description": "Device model ID."
+    },
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "schema": "string",
+      "description": "Company name of the device manufacturer."
+    }
+  ]
+}

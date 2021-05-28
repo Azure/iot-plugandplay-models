@@ -1,0 +1,90 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:agoraopinion:three_button;1",
+  "@type": "Interface",
+  "displayName": "AgoraOpinion 3-Button Survey",
+  "description": "3-Button Survey",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Counter1",
+      "description": "Counter1",
+      "name": "channel_50",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Counter2",
+      "description": "Counter2",
+      "name": "channel_51",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Counter3",
+      "description": "Counter3",
+      "name": "channel_52",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Percentage1",
+      "description": "Percentage1",
+      "name": "channel_60",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Percentage2",
+      "description": "Percentage2",
+      "name": "channel_61",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Percentage3",
+      "description": "Percentage3",
+      "name": "channel_62",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Timestamp",
+      "description": "Timestamp",
+      "name": "channel_999",
+      "schema": "double"
+    }
+  ]
+}

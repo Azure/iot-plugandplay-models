@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Shuttle:D230;1",
+    "@type": "Interface",
+    "displayName": "Shuttle-D230",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "AndroidDeviceInfo1",
+            "schema": "dtmi:Synnex:AndroidDeviceInfo;1"
+        }
+    ]
+}
