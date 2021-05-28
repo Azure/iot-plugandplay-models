@@ -1,0 +1,105 @@
+{
+    "@id": "dtmi:tartabit:SIMCard;1",
+    "@type": "Interface",
+	"displayName": {
+      "en": "SIM Card"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "DataSize"
+        ],
+        "displayName": {
+          "en": "Data Usage"
+        },
+        "name": "dataUsage",
+        "schema": "double",
+        "unit": "kibibyte"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SMS Usage"
+        },
+        "name": "smsUsage",
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Voice Usage"
+        },
+        "name": "voiceUsage",
+        "schema": "double"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Rate Plan"
+        },
+        "name": "ratePlan",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Status"
+        },
+        "name": "status",
+        "schema": "string",
+        "writable": true
+      },
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom 1"
+        },
+        "name": "custom1",
+        "schema": "string",
+        "writable": true
+      },
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom 2"
+        },
+        "name": "custom2",
+        "schema": "string",
+        "writable": true
+      }
+	  ,
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom 3"
+        },
+        "name": "custom3",
+        "schema": "string",
+        "writable": true
+      },
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom 4"
+        },
+        "name": "custom4",
+        "schema": "string",
+        "writable": true
+      },
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom 5"
+        },
+        "name": "custom5",
+        "schema": "string",
+        "writable": true
+      }
+    ]
+  }

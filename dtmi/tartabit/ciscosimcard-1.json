@@ -1,0 +1,157 @@
+{
+    "@id": "dtmi:tartabit:CiscoSIMCard;1",
+    "@type": "Interface",
+	"displayName": {
+      "en": "Cisco SIM Card"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "DataSize"
+        ],
+        "displayName": {
+          "en": "Data Usage"
+        },
+        "name": "dataUsage",
+        "schema": "double",
+        "unit": "kibibyte"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SMS Usage"
+        },
+        "name": "smsUsage",
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Voice Usage"
+        },
+        "name": "voiceUsage",
+        "schema": "double"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Rate Plan"
+        },
+        "name": "ratePlan",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Status"
+        },
+        "name": "status",
+        "schema": {
+			"@type":"Enum",
+			"valueSchema":"string",
+			"enumValues" : [
+			{
+				"name": "Activated",
+				"displayName": "Activated",
+				"enumValue": "ACTIVATED"
+			},
+			{
+				"name": "Activation_Ready",
+				"displayName": "Activation Ready",
+				"enumValue": "ACTIVATION_READY"
+			},
+			{
+				"name": "Deactivated",
+				"displayName": "Deactivated",
+				"enumValue": "DEACTIVATED"
+			},
+			{
+				"name": "Inventory",
+				"displayName": "Inventory",
+				"enumValue": "INVENTORY"
+			},
+			{
+				"name": "Purged",
+				"displayName": "Purged",
+				"enumValue": "PURGED"
+			},
+			{
+				"name": "Replaced",
+				"displayName": "Replaced",
+				"enumValue": "REPLACED"
+			},
+			{
+				"name": "Retired",
+				"displayName": "Retired",
+				"enumValue": "RETIRED"
+			},
+			{
+				"name": "Test_Ready",
+				"displayName": "Test Ready",
+				"enumValue": "TEST_READY"
+			}
+			]
+		},
+        "writable": true
+      },
+	  {
+        "@type": "Property",
+        "displayName": {
+          "en": "Custom"
+        },
+        "name": "custom",
+        "schema": {
+			"@type":"Object",
+			"fields" : [
+			{
+				"name": "account1",
+				"schema": "string"
+			},
+			{
+				"name": "account2",
+				"schema": "string"
+			},
+			{
+				"name": "account3",
+				"schema": "string"
+			},
+			{
+				"name": "account4",
+				"schema": "string"
+			},
+			{
+				"name": "account5",
+				"schema": "string"
+			},
+			{
+				"name": "account6",
+				"schema": "string"
+			},
+			{
+				"name": "account7",
+				"schema": "string"
+			},
+			{
+				"name": "account8",
+				"schema": "string"
+			},
+			{
+				"name": "account9",
+				"schema": "string"
+			},
+			{
+				"name": "account10",
+				"schema": "string"
+			}
+			]
+		},
+        "writable": true
+      }
+    ]
+  }
