@@ -1,0 +1,172 @@
+{
+	"@id": "dtmi:tartabit:AssetTracker;2",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Tartabit Asset Tracker"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"contents": [{
+			"@type": [
+				"Telemetry",
+				"Location"
+			],
+			"displayName": {
+				"en": "Location"
+			},
+			"name": "location",
+			"schema": "geopoint"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Velocity"
+			],
+			"displayName": {
+				"en": "Speed"
+			},
+			"name": "speed",
+			"schema": "double",
+			"unit": "milePerHour"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Angle"
+			],
+			"displayName": {
+				"en": "Heading"
+			},
+			"name": "heading",
+			"schema": "double",
+			"unit": "degreeOfArc"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Moving"
+			},
+			"name": "moving",
+			"schema": "boolean"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Temperature"
+			],
+			"displayName": {
+				"en": "Temperature"
+			},
+			"name": "temperature",
+			"schema": "double",
+			"unit": "degreeCelsius"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "RSSI"
+			},
+			"name": "rssi",
+			"schema": "double"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Battery"
+			},
+			"name": "battery",
+			"schema": "double"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Reason"
+			},
+			"name": "reason",
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Address"
+			},
+			"name": "address",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Firmware Version"
+			},
+			"name": "firmwareVersion",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "IMEI"
+			},
+			"name": "imei",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "ICCID"
+			},
+			"name": "iccid",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Network"
+			},
+			"name": "network",
+			"schema": {
+				"@type": "Object",
+				"fields": [{
+						"displayName": {
+							"en": "Bearer"
+						},
+						"name": "bearer",
+						"schema": "string"
+					},
+					{
+						"displayName": {
+							"en": "Provider"
+						},
+						"name": "provider",
+						"schema": "string"
+					},
+					{
+						"displayName": {
+							"en": "RSSI"
+						},
+						"name": "rssi",
+						"schema": "double"
+					}
+
+				]
+			},
+			"writable": false
+		},
+		{
+			"@type": [
+				"Property",
+				"Location"
+			],
+			"displayName": {
+				"en": "Last Known Location"
+			},
+			"name": "lastKnownLocation",
+			"schema": "geopoint"
+		}
+	]
+}
