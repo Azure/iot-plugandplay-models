@@ -1,0 +1,85 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388753_Q1AndQualityOfRunAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WFS3-40P01CS01",
+  "description": "Fork sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1Q1",
+      "displayName": "BDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SwitchClosed",
+            "enumValue": "SwitchClosed"
+          },
+          {
+            "name": "SwitchOpen",
+            "enumValue": "SwitchOpen"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityOfRunAlam",
+      "displayName": "QualityOfRunAlam",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "QualityOfRunAlam",
+            "enumValue": "QualityOfRunAlam"
+          },
+          {
+            "name": "NoQualityOfRunAlam",
+            "enumValue": "NoQualityOfRunAlam"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "",
+            "enumValue": ""
+          },
+          {
+            "name": "",
+            "enumValue": ""
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachBusy",
+      "displayName": "TeachBusy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TeachBusy",
+            "enumValue": "TeachBusy"
+          },
+          {
+            "name": "TeachNotBusy",
+            "enumValue": "TeachNotBusy"
+          }
+        ]
+      }
+    }
+  ]
+}

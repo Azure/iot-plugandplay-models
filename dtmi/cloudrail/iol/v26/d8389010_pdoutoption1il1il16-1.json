@@ -1,0 +1,252 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SIG100-0A01111x0",
+  "description": "IO-Link Sensor Hub without BluetoothLE",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL3",
+      "displayName": "QL3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL4",
+      "displayName": "QL4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL5",
+      "displayName": "QL5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL6",
+      "displayName": "QL6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL7",
+      "displayName": "QL7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL8",
+      "displayName": "QL8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint1",
+      "displayName": "Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint2",
+      "displayName": "Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint5",
+      "displayName": "Qint5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint6",
+      "displayName": "Qint6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint7",
+      "displayName": "Qint7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint8",
+      "displayName": "Qint8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint9",
+      "displayName": "Qint9",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint10",
+      "displayName": "Qint10",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint11",
+      "displayName": "Qint11",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint12",
+      "displayName": "Qint12",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue1",
+      "displayName": "AnalogValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue2",
+      "displayName": "AnalogValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "IL1",
+              "displayName": "IL1",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL2",
+              "displayName": "IL2",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL3",
+              "displayName": "IL3",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL4",
+              "displayName": "IL4",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL5",
+              "displayName": "IL5",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL6",
+              "displayName": "IL6",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL7",
+              "displayName": "IL7",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL8",
+              "displayName": "IL8",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL9",
+              "displayName": "IL9",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL10",
+              "displayName": "IL10",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL11",
+              "displayName": "IL11",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL12",
+              "displayName": "IL12",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL13",
+              "displayName": "IL13",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL14",
+              "displayName": "IL14",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL15",
+              "displayName": "IL15",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            },
+            {
+              "name": "IL16",
+              "displayName": "IL16",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption1IL1IL16:IL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

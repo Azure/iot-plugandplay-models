@@ -1,0 +1,235 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D262145;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "F39-SGIT-IL3",
+  "description": "Intelligent Tap",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PowerSupply",
+      "displayName": "PowerSupply",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstantaneousStopInformationCh3",
+      "displayName": "InstantaneousStopInformationCh3",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:InstantaneousStopInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstantaneousStopInformationCh2",
+      "displayName": "InstantaneousStopInformationCh2",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:InstantaneousStopInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstantaneousStopInformationCh1",
+      "displayName": "InstantaneousStopInformationCh1",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:InstantaneousStopInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightLevelDiagnosisInformationCh3",
+      "displayName": "LightLevelDiagnosisInformationCh3",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:LightLevelDiagnosisInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightLevelDiagnosisInformationCh2",
+      "displayName": "LightLevelDiagnosisInformationCh2",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:LightLevelDiagnosisInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightLevelDiagnosisInformationCh1",
+      "displayName": "LightLevelDiagnosisInformationCh1",
+      "schema": "dtmi:CloudRail:IOL:V612:D262145:LightLevelDiagnosisInformationCh;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SequenceErrorInformation",
+      "displayName": "SequenceErrorInformation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UnderMutinginterlockSequenceErrorState",
+            "enumValue": "UnderMutinginterlockSequenceErrorState"
+          },
+          {
+            "name": "TheOthers",
+            "enumValue": "TheOthers"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemSensorOrIntelligentTapLockoutInformation",
+      "displayName": "SystemSensorOrIntelligentTapLockoutInformation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "InLockoutState",
+            "enumValue": "InLockoutState"
+          },
+          {
+            "name": "TheOthers",
+            "enumValue": "TheOthers"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IntelligentTapLockoutInformation",
+      "displayName": "IntelligentTapLockoutInformation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "InLockoutState",
+            "enumValue": "InLockoutState"
+          },
+          {
+            "name": "TheOthers",
+            "enumValue": "TheOthers"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ResetEDMOverrideInputStatus",
+      "displayName": "ResetEDMOverrideInputStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MuteBInputStatus",
+      "displayName": "MuteBInputStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MuteAInputStatus",
+      "displayName": "MuteAInputStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AuxiliaryOutputStatus",
+      "displayName": "AuxiliaryOutputStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SafetyOutput",
+      "displayName": "SafetyOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D262145:InstantaneousStopInformationCh;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "InstantaneousStopOccurs",
+          "enumValue": "InstantaneousStopOccurs"
+        },
+        {
+          "name": "TheOthers",
+          "enumValue": "TheOthers"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D262145:LightLevelDiagnosisInformationCh;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "IncidentLightIsUnstable",
+          "enumValue": "IncidentLightIsUnstable"
+        },
+        {
+          "name": "TheOthers",
+          "enumValue": "TheOthers"
+        }
+      ]
+    }
+  ]
+}

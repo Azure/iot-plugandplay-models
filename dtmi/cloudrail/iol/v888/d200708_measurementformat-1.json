@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D200708_MeasurementFormat;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOD 23K-LI03-S4",
+  "description": "BOD - Optical Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Measurement",
+      "displayName": "Measurement",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Laser",
+              "displayName": "Laser",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LaserOff",
+                    "enumValue": "LaserOff"
+                  },
+                  {
+                    "name": "LaserOn",
+                    "enumValue": "LaserOn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

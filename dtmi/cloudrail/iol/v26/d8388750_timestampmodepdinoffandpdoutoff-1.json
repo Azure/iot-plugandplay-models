@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388750_TimestampModePDinOffAndPDoutOff;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WE12C-3P2430A91",
+  "description": "Photoelectric sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Bit0",
+      "displayName": "Bit0",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388750_TimestampModePDinOffAndPDoutOff:Bit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bit1",
+      "displayName": "Bit1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388750_TimestampModePDinOffAndPDoutOff:Bit;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388750_TimestampModePDinOffAndPDoutOff:Bit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "",
+          "enumValue": ""
+        },
+        {
+          "name": "",
+          "enumValue": ""
+        }
+      ]
+    }
+  ]
+}

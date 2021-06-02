@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D277521;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RU600U-M30E-2AP8X2-H1151/S1336",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 600 cm\r\nM30 housing\r\n2 switching output\r\nmuteable",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessValue_mm",
+      "displayName": "ProcessValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1",
+      "displayName": "SwitchStateOutput1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Closed",
+            "enumValue": "Closed"
+          },
+          {
+            "name": "Open",
+            "enumValue": "Open"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Muted",
+                    "enumValue": "Muted"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

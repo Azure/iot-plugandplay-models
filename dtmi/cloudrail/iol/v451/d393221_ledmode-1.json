@@ -1,0 +1,416 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393221_LEDMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WLS2xPXRGBWxxxxxxxxxQ",
+  "description": "Work light strip, 27 mm dia., Pro, non-cascadable, illumination and indication, 145 mm length, diffuse, sealed, IO-Link, Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LED1Color",
+              "displayName": "LED1Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED2Color",
+              "displayName": "LED2Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED3Color",
+              "displayName": "LED3Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED4Color",
+              "displayName": "LED4Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED5Color",
+              "displayName": "LED5Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED6Color",
+              "displayName": "LED6Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED7Color",
+              "displayName": "LED7Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED8Color",
+              "displayName": "LED8Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED9Color",
+              "displayName": "LED9Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED10Color",
+              "displayName": "LED10Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED11Color",
+              "displayName": "LED11Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED12Color",
+              "displayName": "LED12Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED13Color",
+              "displayName": "LED13Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED14Color",
+              "displayName": "LED14Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED15Color",
+              "displayName": "LED15Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED16Color",
+              "displayName": "LED16Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED17Color",
+              "displayName": "LED17Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED18Color",
+              "displayName": "LED18Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED19Color",
+              "displayName": "LED19Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED20Color",
+              "displayName": "LED20Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED21Color",
+              "displayName": "LED21Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED22Color",
+              "displayName": "LED22Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED23Color",
+              "displayName": "LED23Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED24Color",
+              "displayName": "LED24Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED25Color",
+              "displayName": "LED25Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED26Color",
+              "displayName": "LED26Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED27Color",
+              "displayName": "LED27Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED28Color",
+              "displayName": "LED28Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED29Color",
+              "displayName": "LED29Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED30Color",
+              "displayName": "LED30Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED31Color",
+              "displayName": "LED31Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED32Color",
+              "displayName": "LED32Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED33Color",
+              "displayName": "LED33Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED34Color",
+              "displayName": "LED34Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED35Color",
+              "displayName": "LED35Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED36Color",
+              "displayName": "LED36Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED37Color",
+              "displayName": "LED37Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED38Color",
+              "displayName": "LED38Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED39Color",
+              "displayName": "LED39Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED40Color",
+              "displayName": "LED40Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED41Color",
+              "displayName": "LED41Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED42Color",
+              "displayName": "LED42Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED43Color",
+              "displayName": "LED43Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED44Color",
+              "displayName": "LED44Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED45Color",
+              "displayName": "LED45Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED46Color",
+              "displayName": "LED46Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED47Color",
+              "displayName": "LED47Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED48Color",
+              "displayName": "LED48Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED49Color",
+              "displayName": "LED49Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED50Color",
+              "displayName": "LED50Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED51Color",
+              "displayName": "LED51Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED52Color",
+              "displayName": "LED52Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED53Color",
+              "displayName": "LED53Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED54Color",
+              "displayName": "LED54Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED55Color",
+              "displayName": "LED55Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED56Color",
+              "displayName": "LED56Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED57Color",
+              "displayName": "LED57Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED58Color",
+              "displayName": "LED58Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED59Color",
+              "displayName": "LED59Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED60Color",
+              "displayName": "LED60Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED61Color",
+              "displayName": "LED61Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED62Color",
+              "displayName": "LED62Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED63Color",
+              "displayName": "LED63Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            },
+            {
+              "name": "LED64Color",
+              "displayName": "LED64Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393221_LEDMode:LEDColor;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "Amber",
+          "enumValue": "Amber"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "LimeGreen",
+          "enumValue": "LimeGreen"
+        },
+        {
+          "name": "SpringGreen",
+          "enumValue": "SpringGreen"
+        },
+        {
+          "name": "Cyan",
+          "enumValue": "Cyan"
+        },
+        {
+          "name": "SkyBlue",
+          "enumValue": "SkyBlue"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Violet",
+          "enumValue": "Violet"
+        },
+        {
+          "name": "Magenta",
+          "enumValue": "Magenta"
+        },
+        {
+          "name": "Rose",
+          "enumValue": "Rose"
+        },
+        {
+          "name": "DaylightWhite5000K",
+          "enumValue": "DaylightWhite5000K"
+        },
+        {
+          "name": "Custom1",
+          "enumValue": "Custom1"
+        }
+      ]
+    }
+  ]
+}

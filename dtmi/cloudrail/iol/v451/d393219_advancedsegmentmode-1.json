@@ -1,0 +1,626 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TL50 Pro with IO-Link QP",
+  "description": "TL50 Pro tower light with IO-Link and integral quick disconnect",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1Color1",
+              "displayName": "Segment1Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment1Color1Intensity",
+              "displayName": "Segment1Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment1AnimationType",
+              "displayName": "Segment1AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment1Speed",
+              "displayName": "Segment1Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment1PulsePattern",
+              "displayName": "Segment1PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment1Color2",
+              "displayName": "Segment1Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment1Color2Intensity",
+              "displayName": "Segment1Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment1RotationalDirection",
+              "displayName": "Segment1RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment2Color1",
+              "displayName": "Segment2Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment2Color1Intensity",
+              "displayName": "Segment2Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment2AnimationType",
+              "displayName": "Segment2AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment2Speed",
+              "displayName": "Segment2Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment2PulsePattern",
+              "displayName": "Segment2PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment2Color2",
+              "displayName": "Segment2Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment2Color2Intensity",
+              "displayName": "Segment2Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment2RotationalDirection",
+              "displayName": "Segment2RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment3Color1",
+              "displayName": "Segment3Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment3Color1Intensity",
+              "displayName": "Segment3Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment3AnimationType",
+              "displayName": "Segment3AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment3Speed",
+              "displayName": "Segment3Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment3PulsePattern",
+              "displayName": "Segment3PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment3Color2",
+              "displayName": "Segment3Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment3Color2Intensity",
+              "displayName": "Segment3Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment3RotationalDirection",
+              "displayName": "Segment3RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment4Color1",
+              "displayName": "Segment4Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment4Color1Intensity",
+              "displayName": "Segment4Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment4AnimationType",
+              "displayName": "Segment4AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment4Speed",
+              "displayName": "Segment4Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment4PulsePattern",
+              "displayName": "Segment4PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment4Color2",
+              "displayName": "Segment4Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment4Color2Intensity",
+              "displayName": "Segment4Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment4RotationalDirection",
+              "displayName": "Segment4RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment5Color1",
+              "displayName": "Segment5Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment5Color1Intensity",
+              "displayName": "Segment5Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment5AnimationType",
+              "displayName": "Segment5AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment5Speed",
+              "displayName": "Segment5Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment5PulsePattern",
+              "displayName": "Segment5PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment5Color2",
+              "displayName": "Segment5Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment5Color2Intensity",
+              "displayName": "Segment5Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment5RotationalDirection",
+              "displayName": "Segment5RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment6Color1",
+              "displayName": "Segment6Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment6Color1Intensity",
+              "displayName": "Segment6Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment6AnimationType",
+              "displayName": "Segment6AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment6Speed",
+              "displayName": "Segment6Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment6PulsePattern",
+              "displayName": "Segment6PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment6Color2",
+              "displayName": "Segment6Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment6Color2Intensity",
+              "displayName": "Segment6Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment6RotationalDirection",
+              "displayName": "Segment6RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment7Color1",
+              "displayName": "Segment7Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment7Color1Intensity",
+              "displayName": "Segment7Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment7AnimationType",
+              "displayName": "Segment7AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment7Speed",
+              "displayName": "Segment7Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment7PulsePattern",
+              "displayName": "Segment7PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment7Color2",
+              "displayName": "Segment7Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment7Color2Intensity",
+              "displayName": "Segment7Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment7RotationalDirection",
+              "displayName": "Segment7RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment8Color1",
+              "displayName": "Segment8Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment8Color1Intensity",
+              "displayName": "Segment8Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment8AnimationType",
+              "displayName": "Segment8AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment8Speed",
+              "displayName": "Segment8Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment8PulsePattern",
+              "displayName": "Segment8PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment8Color2",
+              "displayName": "Segment8Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment8Color2Intensity",
+              "displayName": "Segment8Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment8RotationalDirection",
+              "displayName": "Segment8RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment9Color1",
+              "displayName": "Segment9Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment9Color1Intensity",
+              "displayName": "Segment9Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment9AnimationType",
+              "displayName": "Segment9AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment9Speed",
+              "displayName": "Segment9Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment9PulsePattern",
+              "displayName": "Segment9PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment9Color2",
+              "displayName": "Segment9Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment9Color2Intensity",
+              "displayName": "Segment9Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment9RotationalDirection",
+              "displayName": "Segment9RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "Segment10Color1",
+              "displayName": "Segment10Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment10Color1Intensity",
+              "displayName": "Segment10Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment10AnimationType",
+              "displayName": "Segment10AnimationType",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1"
+            },
+            {
+              "name": "Segment10Speed",
+              "displayName": "Segment10Speed",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1"
+            },
+            {
+              "name": "Segment10PulsePattern",
+              "displayName": "Segment10PulsePattern",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1"
+            },
+            {
+              "name": "Segment10Color2",
+              "displayName": "Segment10Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment10Color2Intensity",
+              "displayName": "Segment10Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1"
+            },
+            {
+              "name": "Segment10RotationalDirection",
+              "displayName": "Segment10RotationalDirection",
+              "schema": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1"
+            },
+            {
+              "name": "AudibleState",
+              "displayName": "AudibleState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Pulsed",
+                    "enumValue": "Pulsed"
+                  },
+                  {
+                    "name": "SOSPulse",
+                    "enumValue": "SOSPulse"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentColor;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "Amber",
+          "enumValue": "Amber"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "LimeGreen",
+          "enumValue": "LimeGreen"
+        },
+        {
+          "name": "SpringGreen",
+          "enumValue": "SpringGreen"
+        },
+        {
+          "name": "Cyan",
+          "enumValue": "Cyan"
+        },
+        {
+          "name": "SkyBlue",
+          "enumValue": "SkyBlue"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Violet",
+          "enumValue": "Violet"
+        },
+        {
+          "name": "Magenta",
+          "enumValue": "Magenta"
+        },
+        {
+          "name": "Rose",
+          "enumValue": "Rose"
+        },
+        {
+          "name": "White",
+          "enumValue": "White"
+        },
+        {
+          "name": "Custom1",
+          "enumValue": "Custom1"
+        },
+        {
+          "name": "Custom2",
+          "enumValue": "Custom2"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentAnimationType;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Steady",
+          "enumValue": "Steady"
+        },
+        {
+          "name": "Flash",
+          "enumValue": "Flash"
+        },
+        {
+          "name": "TwoColorFlash",
+          "enumValue": "TwoColorFlash"
+        },
+        {
+          "name": "5050",
+          "enumValue": "5050"
+        },
+        {
+          "name": "5050Rotate",
+          "enumValue": "5050Rotate"
+        },
+        {
+          "name": "Chase",
+          "enumValue": "Chase"
+        },
+        {
+          "name": "IntensitySweep",
+          "enumValue": "IntensitySweep"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentSpeed;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Medium",
+          "enumValue": "Medium"
+        },
+        {
+          "name": "Fast",
+          "enumValue": "Fast"
+        },
+        {
+          "name": "Slow",
+          "enumValue": "Slow"
+        },
+        {
+          "name": "Custom",
+          "enumValue": "Custom"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentPulsePattern;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Normal",
+          "enumValue": "Normal"
+        },
+        {
+          "name": "Strobe",
+          "enumValue": "Strobe"
+        },
+        {
+          "name": "ThreePulse",
+          "enumValue": "ThreePulse"
+        },
+        {
+          "name": "SOS",
+          "enumValue": "SOS"
+        },
+        {
+          "name": "Random",
+          "enumValue": "Random"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393219_AdvancedSegmentMode:SegmentRotationalDirection;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "CounterClockwise",
+          "enumValue": "CounterClockwise"
+        },
+        {
+          "name": "Clockwise",
+          "enumValue": "Clockwise"
+        }
+      ]
+    }
+  ]
+}

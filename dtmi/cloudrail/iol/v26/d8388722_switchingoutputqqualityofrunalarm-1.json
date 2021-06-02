@@ -1,0 +1,85 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388722_SwitchingOutputQQualityOfRunAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LUTM-UP817A2P",
+  "description": "Luminescence sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ",
+      "displayName": "SwitchingOutputQ",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityOfRunAlarm",
+      "displayName": "QualityOfRunAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachSuccessful",
+      "displayName": "TeachSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachBusy",
+      "displayName": "TeachBusy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    }
+  ]
+}

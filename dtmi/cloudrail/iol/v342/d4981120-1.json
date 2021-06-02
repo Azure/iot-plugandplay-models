@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D4981120;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DW-Ax-603-M8-ECO",
+  "description": "Inductive proximity switches DW-Ax-603-M8-ECO",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

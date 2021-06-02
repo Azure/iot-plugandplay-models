@@ -1,0 +1,216 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329986;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-310-000-K025-C09",
+  "description": "BNI - IP20 IO-Link Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin1Bit00",
+      "displayName": "SwitchstatePin1Bit00",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin2Bit01",
+      "displayName": "SwitchstatePin2Bit01",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin3Bit02",
+      "displayName": "SwitchstatePin3Bit02",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin4Bit03",
+      "displayName": "SwitchstatePin4Bit03",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin5Bit04",
+      "displayName": "SwitchstatePin5Bit04",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin6Bit05",
+      "displayName": "SwitchstatePin6Bit05",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin7Bit06",
+      "displayName": "SwitchstatePin7Bit06",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin8Bit07",
+      "displayName": "SwitchstatePin8Bit07",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin9Bit10",
+      "displayName": "SwitchstatePin9Bit10",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin10Bit11",
+      "displayName": "SwitchstatePin10Bit11",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin11Bit12",
+      "displayName": "SwitchstatePin11Bit12",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin12Bit13",
+      "displayName": "SwitchstatePin12Bit13",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin13Bit14",
+      "displayName": "SwitchstatePin13Bit14",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin14Bit15",
+      "displayName": "SwitchstatePin14Bit15",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin15Bit16",
+      "displayName": "SwitchstatePin15Bit16",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin16Bit17",
+      "displayName": "SwitchstatePin16Bit17",
+      "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SwitchstatePin1Bit00",
+              "displayName": "SwitchstatePin1Bit00",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin2Bit01",
+              "displayName": "SwitchstatePin2Bit01",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin3Bit02",
+              "displayName": "SwitchstatePin3Bit02",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin4Bit03",
+              "displayName": "SwitchstatePin4Bit03",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin5Bit04",
+              "displayName": "SwitchstatePin5Bit04",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin6Bit05",
+              "displayName": "SwitchstatePin6Bit05",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin7Bit06",
+              "displayName": "SwitchstatePin7Bit06",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin8Bit07",
+              "displayName": "SwitchstatePin8Bit07",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin9Bit10",
+              "displayName": "SwitchstatePin9Bit10",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin10Bit11",
+              "displayName": "SwitchstatePin10Bit11",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin11Bit12",
+              "displayName": "SwitchstatePin11Bit12",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin12Bit13",
+              "displayName": "SwitchstatePin12Bit13",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin13Bit14",
+              "displayName": "SwitchstatePin13Bit14",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin14Bit15",
+              "displayName": "SwitchstatePin14Bit15",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin15Bit16",
+              "displayName": "SwitchstatePin15Bit16",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin16Bit17",
+              "displayName": "SwitchstatePin16Bit17",
+              "schema": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D329986:SwitchstatePinBit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

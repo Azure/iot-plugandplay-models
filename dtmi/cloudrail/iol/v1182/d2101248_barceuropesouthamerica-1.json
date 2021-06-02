@@ -1,0 +1,150 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1182:D2101248_BarCEuropeSouthAmerica;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MIUT-IO",
+  "description": "Pressure Sensor with Limit Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "long",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_C",
+      "displayName": "HeadTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_F",
+      "displayName": "HeadTemperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessPressureSwitchoff",
+      "displayName": "ExcessPressureSwitchoff",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure05Bar",
+      "displayName": "Pressure05Bar",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorStressed100",
+      "displayName": "SensorStressed100",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeadTemperature85C",
+      "displayName": "HeadTemperature85C",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ServiceRecommended",
+      "displayName": "ServiceRecommended",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    }
+  ]
+}

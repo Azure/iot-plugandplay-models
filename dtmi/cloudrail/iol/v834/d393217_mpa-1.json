@@ -1,0 +1,96 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V834:D393217_MPa;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DP-102ZL3-M-P-C",
+  "description": "Pressure sensor for hi pressure DP-102ZL3-M-P",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutputDO",
+      "displayName": "ControlOutputDO",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InformationNotification",
+      "displayName": "InformationNotification",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorLevel",
+      "displayName": "ErrorLevel",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Caution",
+            "enumValue": "Caution"
+          },
+          {
+            "name": "Fault",
+            "enumValue": "Fault"
+          },
+          {
+            "name": "Fault",
+            "enumValue": "Fault"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "long",
+      "unit": "kilopascal"
+    }
+  ]
+}

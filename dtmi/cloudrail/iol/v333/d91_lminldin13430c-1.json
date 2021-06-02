@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D91_LminLDIN13430C;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SFAH-5B-xx",
+  "description": "Flow rate measuring range: -5.00 ... +5.00 l/min",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDVFlowMeasuredValueInA",
+      "displayName": "PDVFlowMeasuredValueInA",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC3VolumeImpulsePuls",
+      "displayName": "BDC3VolumeImpulsePuls",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "0Off",
+            "enumValue": "0Off"
+          },
+          {
+            "name": "1On",
+            "enumValue": "1On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2FlowMonitoringOutB",
+      "displayName": "BDC2FlowMonitoringOutB",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "0Off",
+            "enumValue": "0Off"
+          },
+          {
+            "name": "1On",
+            "enumValue": "1On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1FlowMonitoringOutA",
+      "displayName": "BDC1FlowMonitoringOutA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "0Off",
+            "enumValue": "0Off"
+          },
+          {
+            "name": "1On",
+            "enumValue": "1On"
+          }
+        ]
+      }
+    }
+  ]
+}

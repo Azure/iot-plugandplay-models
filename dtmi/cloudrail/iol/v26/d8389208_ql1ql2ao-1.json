@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389208_QL1QL2AO;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HTE18_A00",
+  "description": "Photoelectric proximity sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389208_QL1QL2AO:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389208_QL1QL2AO:QL;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389208_QL1QL2AO:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "",
+          "enumValue": ""
+        },
+        {
+          "name": "",
+          "enumValue": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D134;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AC95x",
+  "description": "Capacitive switch, stainless steel, symbol: blanko",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TouchedFlag",
+      "displayName": "TouchedFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "IDLE",
+            "enumValue": "IDLE"
+          },
+          {
+            "name": "TOUCH",
+            "enumValue": "TOUCH"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TouchCounter",
+      "displayName": "TouchCounter",
+      "schema": "long"
+    }
+  ]
+}

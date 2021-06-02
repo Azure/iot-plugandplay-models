@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V287:D29731_DegreeFahrenheit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WGM-R-1X/1D1S-0-0",
+  "description": "Remote display with IO-Link output for humidity sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Humidity_pct",
+      "displayName": "Humidity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterTemperaturErrorOverRange",
+      "displayName": "TransmitterTemperaturErrorOverRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterTemperaturErrorUnderRange",
+      "displayName": "TransmitterTemperaturErrorUnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterHumidityErrorOverRange",
+      "displayName": "TransmitterHumidityErrorOverRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterHumidityErrorUnderRange",
+      "displayName": "TransmitterHumidityErrorUnderRange",
+      "schema": "integer"
+    }
+  ]
+}

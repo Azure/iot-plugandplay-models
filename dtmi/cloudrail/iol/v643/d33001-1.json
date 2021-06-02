@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V643:D33001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AirBLOWER",
+  "description": "Device for regulating the temperature in your cabinet",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "CurrentTemperatureValueSensor1_C",
+      "displayName": "CurrentTemperatureValueSensor1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "CurrentTemperatureValueSensor2_C",
+      "displayName": "CurrentTemperatureValueSensor2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "CurrentTemperatureValueSensor3_C",
+      "displayName": "CurrentTemperatureValueSensor3_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "AverageTemperatureSensor1_C",
+      "displayName": "AverageTemperatureSensor1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "AverageTemperatureSensor2_C",
+      "displayName": "AverageTemperatureSensor2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "AverageTemperatureSensor3_C",
+      "displayName": "AverageTemperatureSensor3_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2151;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HT3C.xxxxx6-M8",
+  "description": "Scanner with Background Suppression",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V338:D2151:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V338:D2151:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measure",
+      "displayName": "Measure",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MeasureOff",
+            "enumValue": "MeasureOff"
+          },
+          {
+            "name": "MeasureOn",
+            "enumValue": "MeasureOn"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Signal",
+      "displayName": "Signal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SignalNone",
+            "enumValue": "SignalNone"
+          },
+          {
+            "name": "SignalPresent",
+            "enumValue": "SignalPresent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "WarningOff",
+            "enumValue": "WarningOff"
+          },
+          {
+            "name": "WarningOn",
+            "enumValue": "WarningOn"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Quality",
+      "displayName": "Quality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TooLow",
+            "enumValue": "TooLow"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          },
+          {
+            "name": "Medium",
+            "enumValue": "Medium"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableRequestInactive",
+                    "enumValue": "DisableRequestInactive"
+                  },
+                  {
+                    "name": "DisableRequestActive",
+                    "enumValue": "DisableRequestActive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V338:D2151:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SSC1Off",
+          "enumValue": "SSC1Off"
+        },
+        {
+          "name": "SSC1On",
+          "enumValue": "SSC1On"
+        }
+      ]
+    }
+  ]
+}

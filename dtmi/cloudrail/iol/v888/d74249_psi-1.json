@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D74249_PSI;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BSP00UY",
+  "description": "Pressure Sensor, 0..0,75bar SIO 1xPNP + 4..20mA",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1State",
+      "displayName": "Switch1State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D459265;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BCS S04K501-PICFNG-S04G-T5x",
+  "description": "Capacitive Level Switch Basic Type",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInputs",
+      "displayName": "ProcessDataInputs",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    }
+  ]
+}

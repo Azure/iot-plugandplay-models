@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388782_Q1AndQ2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WFxxx0-xxB41Cx0x",
+  "description": "Fork sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1Q1",
+      "displayName": "BDC1Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388782_Q1AndQ2:BDCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2Q2",
+      "displayName": "BDC2Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388782_Q1AndQ2:BDCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "",
+            "enumValue": ""
+          },
+          {
+            "name": "",
+            "enumValue": ""
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachBusy",
+      "displayName": "TeachBusy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TeachBusy",
+            "enumValue": "TeachBusy"
+          },
+          {
+            "name": "TeachNotBusy",
+            "enumValue": "TeachNotBusy"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388782_Q1AndQ2:BDCQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SwitchClosed",
+          "enumValue": "SwitchClosed"
+        },
+        {
+          "name": "SwitchOpen",
+          "enumValue": "SwitchOpen"
+        }
+      ]
+    }
+  ]
+}

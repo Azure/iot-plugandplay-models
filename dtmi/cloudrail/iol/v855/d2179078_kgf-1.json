@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D2179078_Kgf;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PPX-R10PC-6N-KA",
+  "description": "Digital pressure sensor for high pressure, -100 to 1000 kPa",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutputDO",
+      "displayName": "ControlOutputDO",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InformationNotification",
+      "displayName": "InformationNotification",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoNotification",
+            "enumValue": "NoNotification"
+          },
+          {
+            "name": "Notified",
+            "enumValue": "Notified"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorLevel",
+      "displayName": "ErrorLevel",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Caution",
+            "enumValue": "Caution"
+          },
+          {
+            "name": "Fault",
+            "enumValue": "Fault"
+          },
+          {
+            "name": "Fault",
+            "enumValue": "Fault"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "long",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_kgpcm2",
+      "displayName": "Pressure_kgpcm2",
+      "schema": "double"
+    }
+  ]
+}

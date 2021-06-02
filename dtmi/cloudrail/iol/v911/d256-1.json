@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V911:D256;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Test Application",
+  "description": "Test Application",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Input",
+      "displayName": "Input",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Output",
+              "displayName": "Output",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

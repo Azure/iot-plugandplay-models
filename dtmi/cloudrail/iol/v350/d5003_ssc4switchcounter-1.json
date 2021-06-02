@@ -1,0 +1,141 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D5003_SSC4SwitchCounter;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RR30.DAxx-GGPI.9VF/E029",
+  "description": "Radar Distance measuring, Two Digital Out, IO-Link, Short Range",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Peak4Amplitude",
+      "displayName": "Peak4Amplitude",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak4Distance",
+      "displayName": "Peak4Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak3Amplitude",
+      "displayName": "Peak3Amplitude",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak3Distance",
+      "displayName": "Peak3Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak2Amplitude",
+      "displayName": "Peak2Amplitude",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak2Distance",
+      "displayName": "Peak2Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak1Amplitude",
+      "displayName": "Peak1Amplitude",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak1Distance",
+      "displayName": "Peak1Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak0Amplitude",
+      "displayName": "Peak0Amplitude",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Peak0Distance",
+      "displayName": "Peak0Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValueSSC4SwitchCounter",
+      "displayName": "MeasurementValueSSC4SwitchCounter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Distance",
+      "displayName": "SSC1Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2Distance",
+      "displayName": "SSC2Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmOutput",
+      "displayName": "AlarmOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4Counter",
+      "displayName": "SSC4Counter",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "DisableTransducer",
+              "displayName": "DisableTransducer",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

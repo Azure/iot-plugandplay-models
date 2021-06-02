@@ -1,0 +1,145 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329218;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIC 1I0-IAA50-M30MI3-SM4A4A",
+  "description": "BIC - Inductive coupler",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusRemoteIOLinkConnection",
+      "displayName": "StatusRemoteIOLinkConnection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "NoIOLinkConnection",
+            "enumValue": "NoIOLinkConnection"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusRemoteConnection",
+      "displayName": "StatusRemoteConnection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "RemoteLost",
+            "enumValue": "RemoteLost"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusRemoteIOLinkShortCircuit",
+      "displayName": "StatusRemoteIOLinkShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ShortCircuitOnRemoteCQ",
+            "enumValue": "ShortCircuitOnRemoteCQ"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusRemoteSupply",
+      "displayName": "StatusRemoteSupply",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "LowSupplyVoltageOnRemoteCQ",
+            "enumValue": "LowSupplyVoltageOnRemoteCQ"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte9",
+      "displayName": "DeviceProcessDataByte9",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte8",
+      "displayName": "DeviceProcessDataByte8",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte7",
+      "displayName": "DeviceProcessDataByte7",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte6",
+      "displayName": "DeviceProcessDataByte6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte5",
+      "displayName": "DeviceProcessDataByte5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte4",
+      "displayName": "DeviceProcessDataByte4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte3",
+      "displayName": "DeviceProcessDataByte3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte2",
+      "displayName": "DeviceProcessDataByte2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte1",
+      "displayName": "DeviceProcessDataByte1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceProcessDataByte0",
+      "displayName": "DeviceProcessDataByte0",
+      "schema": "long"
+    }
+  ]
+}

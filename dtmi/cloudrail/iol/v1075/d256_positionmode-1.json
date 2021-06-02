@@ -1,0 +1,300 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1075:D256_PositionMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AG03-24-IOL2",
+  "description": "AG03-24 IO-Link Port Class B",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActualPosition",
+      "displayName": "ActualPosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GenericMappingChannel1",
+      "displayName": "GenericMappingChannel1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GenericMappingChannel2",
+      "displayName": "GenericMappingChannel2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs00_Supply",
+      "displayName": "Bs00_Supply",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs01_ReadyToTravel",
+      "displayName": "Bs01_ReadyToTravel",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs02_UpperLimit",
+      "displayName": "Bs02_UpperLimit",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs03_LowerLimit",
+      "displayName": "Bs03_LowerLimit",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs04_ActuatorTravels",
+      "displayName": "Bs04_ActuatorTravels",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs05_TarWinReached",
+      "displayName": "Bs05_TarWinReached",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs06_ActiveTravelJob",
+      "displayName": "Bs06_ActiveTravelJob",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs07_GeneralError",
+      "displayName": "Bs07_GeneralError",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs08_OperationEnabled",
+      "displayName": "Bs08_OperationEnabled",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs09_SwitchLock",
+      "displayName": "Bs09_SwitchLock",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs10_TravelJobAck",
+      "displayName": "Bs10_TravelJobAck",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs11_BatteryState",
+      "displayName": "Bs11_BatteryState",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs12_TorqueDeactState",
+      "displayName": "Bs12_TorqueDeactState",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs13_Reserved",
+      "displayName": "Bs13_Reserved",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs14_GuardingBit",
+      "displayName": "Bs14_GuardingBit",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs15_CalibrationExecuted",
+      "displayName": "Bs15_CalibrationExecuted",
+      "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bs;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TargetPosition",
+              "displayName": "TargetPosition",
+              "schema": "long"
+            },
+            {
+              "name": "GenericMappingParameter1",
+              "displayName": "GenericMappingParameter1",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:GenericMappingParameter;1"
+            },
+            {
+              "name": "GenericMappingParameter2",
+              "displayName": "GenericMappingParameter2",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:GenericMappingParameter;1"
+            },
+            {
+              "name": "Bc00_CoastStop",
+              "displayName": "Bc00_CoastStop",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc01_QuickStop",
+              "displayName": "Bc01_QuickStop",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc02_NormalStop",
+              "displayName": "Bc02_NormalStop",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc03_IntermediateStop",
+              "displayName": "Bc03_IntermediateStop",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc04_StartTravelJob",
+              "displayName": "Bc04_StartTravelJob",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc05_ErrorAck",
+              "displayName": "Bc05_ErrorAck",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc06_InchingMode1",
+              "displayName": "Bc06_InchingMode1",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc07_InchingMode2Pos",
+              "displayName": "Bc07_InchingMode2Pos",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc08_InchingMode2Neg",
+              "displayName": "Bc08_InchingMode2Neg",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc09_Reserved",
+              "displayName": "Bc09_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc10_MoveRelative",
+              "displayName": "Bc10_MoveRelative",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc11_Reserved",
+              "displayName": "Bc11_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc12_Reserved",
+              "displayName": "Bc12_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc13_Reserved",
+              "displayName": "Bc13_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc14_GuardingBit",
+              "displayName": "Bc14_GuardingBit",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            },
+            {
+              "name": "Bc15_CalibrationExecute",
+              "displayName": "Bc15_CalibrationExecute",
+              "schema": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:GenericMappingParameter;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ErrorStatus",
+          "enumValue": "ErrorStatus"
+        },
+        {
+          "name": "OutputStageTemperature",
+          "enumValue": "OutputStageTemperature"
+        },
+        {
+          "name": "ControlVoltage",
+          "enumValue": "ControlVoltage"
+        },
+        {
+          "name": "OutputStageVoltage",
+          "enumValue": "OutputStageVoltage"
+        },
+        {
+          "name": "BatteryVoltage",
+          "enumValue": "BatteryVoltage"
+        },
+        {
+          "name": "MotorCurrent",
+          "enumValue": "MotorCurrent"
+        },
+        {
+          "name": "ActualVelocity",
+          "enumValue": "ActualVelocity"
+        },
+        {
+          "name": "MotorThermalLoad",
+          "enumValue": "MotorThermalLoad"
+        },
+        {
+          "name": "I2tOverload",
+          "enumValue": "I2tOverload"
+        },
+        {
+          "name": "DiagnosticParameter1",
+          "enumValue": "DiagnosticParameter1"
+        },
+        {
+          "name": "DiagnosticParameter2",
+          "enumValue": "DiagnosticParameter2"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V1075:D256_PositionMode:Bc;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

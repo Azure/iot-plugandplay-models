@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D1792;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PTx3xB",
+  "description": "pressure measuring device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutputOU1",
+      "displayName": "SwitchStateOutputOU1",
+      "schema": "dtmi:CloudRail:IOL:V17:D1792:SwitchStateOutputOU;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutputOU2",
+      "displayName": "SwitchStateOutputOU2",
+      "schema": "dtmi:CloudRail:IOL:V17:D1792:SwitchStateOutputOU;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V17:D1792:SwitchStateOutputOU;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

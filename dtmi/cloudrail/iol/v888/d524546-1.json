@@ -1,0 +1,112 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D524546;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BMF 235K-H-PI-C-A8-xxx-xxxx-zz",
+  "description": "Magnetic field sensor, teachable, T-slot",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC3",
+      "displayName": "BDC3",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC4",
+      "displayName": "BDC4",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC5",
+      "displayName": "BDC5",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC6",
+      "displayName": "BDC6",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC7",
+      "displayName": "BDC7",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC8",
+      "displayName": "BDC8",
+      "schema": "dtmi:CloudRail:IOL:V888:D524546:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D524546:BDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1PY101",
+  "description": "Laser Distance Sensor Long-Range",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValueDistance",
+      "displayName": "MeasurementValueDistance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IndicationWarningError4",
+      "displayName": "IndicationWarningError4",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:IndicationWarningError;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IndicationWarningError3",
+      "displayName": "IndicationWarningError3",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:IndicationWarningError;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IndicationWarningError2",
+      "displayName": "IndicationWarningError2",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:IndicationWarningError;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IndicationWarningError1",
+      "displayName": "IndicationWarningError1",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:IndicationWarningError;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2SwitchingSignal2",
+      "displayName": "SSC2SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1SwitchingSignal1",
+      "displayName": "SSC1SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "EmittedLight",
+              "displayName": "EmittedLight",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Enabled",
+                    "enumValue": "Enabled"
+                  },
+                  {
+                    "name": "Disabled",
+                    "enumValue": "Disabled"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Blinking",
+                    "enumValue": "Blinking"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SSC1TeachIn",
+              "displayName": "SSC1TeachIn",
+              "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:SSCTeachIn;1"
+            },
+            {
+              "name": "SSC2TeachIn",
+              "displayName": "SSC2TeachIn",
+              "schema": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:SSCTeachIn;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V87:D3608421_Millimeter:SSCTeachIn;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "NoTeach",
+          "enumValue": "NoTeach"
+        },
+        {
+          "name": "TeachIn",
+          "enumValue": "TeachIn"
+        }
+      ]
+    }
+  ]
+}

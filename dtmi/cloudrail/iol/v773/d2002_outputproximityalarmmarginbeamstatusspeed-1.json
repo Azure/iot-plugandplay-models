@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V773:D2002_OutputProximityAlarmMarginBeamStatusSpeed;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CR1/0I-1V",
+  "description": "Retroreflective Area Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BeamStatus",
+      "displayName": "BeamStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Speed",
+      "displayName": "Speed",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Pin2Output",
+              "displayName": "Pin2Output",
+              "schema": "integer"
+            },
+            {
+              "name": "GreenLED",
+              "displayName": "GreenLED",
+              "schema": "integer"
+            },
+            {
+              "name": "RedLED",
+              "displayName": "RedLED",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

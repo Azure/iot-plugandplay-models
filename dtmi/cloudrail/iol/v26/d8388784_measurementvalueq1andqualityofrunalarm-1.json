@@ -1,0 +1,91 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388784_MeasurementValueQ1AndQualityOfRunAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WFxx0-x0B41CA71",
+  "description": "Fork sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1Q1",
+      "displayName": "BDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SwitchOpen",
+            "enumValue": "SwitchOpen"
+          },
+          {
+            "name": "SwitchClosed",
+            "enumValue": "SwitchClosed"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityOfRunAlarm",
+      "displayName": "QualityOfRunAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "QualityOfRunAlarm",
+            "enumValue": "QualityOfRunAlarm"
+          },
+          {
+            "name": "NoQualityOfRunAlarm",
+            "enumValue": "NoQualityOfRunAlarm"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "",
+            "enumValue": ""
+          },
+          {
+            "name": "",
+            "enumValue": ""
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachBusy",
+      "displayName": "TeachBusy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TeachBusy",
+            "enumValue": "TeachBusy"
+          },
+          {
+            "name": "TeachNotBusy",
+            "enumValue": "TeachNotBusy"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    }
+  ]
+}

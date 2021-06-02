@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388721_MeasurementValueEmissionColorSwitchingOutputQ;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CSM-WP117A2P",
+  "description": "Color sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388721_MeasurementValueEmissionColorSwitchingOutputQ:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388721_MeasurementValueEmissionColorSwitchingOutputQ:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityOfRunAlarm",
+      "displayName": "QualityOfRunAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EmissionColor",
+      "displayName": "EmissionColor",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValuesRGB",
+      "displayName": "MeasurementValuesRGB",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388721_MeasurementValueEmissionColorSwitchingOutputQ:BDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "NoDescription",
+          "enumValue": "NoDescription"
+        },
+        {
+          "name": "NoDescription",
+          "enumValue": "NoDescription"
+        }
+      ]
+    }
+  ]
+}

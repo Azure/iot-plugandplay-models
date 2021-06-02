@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D262660;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 23K-XI-RS11-S4",
+  "description": "Thru-Beam sensor emitter red light",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterStatus",
+      "displayName": "TransmitterStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TransmitterInactive",
+            "enumValue": "TransmitterInactive"
+          },
+          {
+            "name": "TransmitterActive",
+            "enumValue": "TransmitterActive"
+          }
+        ]
+      }
+    }
+  ]
+}

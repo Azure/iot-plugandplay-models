@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V505:D1200001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WxL_POSITION",
+  "description": "GEFRAN Magnetostrictive Position Transducer",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Position_mcm",
+      "displayName": "Position_mcm",
+      "schema": "double",
+      "unit": "micrometre"
+    }
+  ]
+}

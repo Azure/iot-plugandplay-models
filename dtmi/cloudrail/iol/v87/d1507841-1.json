@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1507841;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ODX402P0007",
+  "description": "Fiber Optic Cable Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReceiverSignal",
+      "displayName": "ReceiverSignal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output",
+      "displayName": "Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": "integer"
+    }
+  ]
+}

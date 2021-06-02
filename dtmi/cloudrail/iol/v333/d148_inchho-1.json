@@ -1,0 +1,119 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D148_InchHO;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SPAN-P12R-xxxx",
+  "description": "Pressure measuring range: 0.000 ... +1.200 MPa\r\nDisplay: LCD, backlit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDVInA_MPa",
+      "displayName": "PDVInA_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_kPa",
+      "displayName": "PDVInA_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_bar",
+      "displayName": "PDVInA_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_psi",
+      "displayName": "PDVInA_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_inH2O",
+      "displayName": "PDVInA_inH2O",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_inHg",
+      "displayName": "PDVInA_inHg",
+      "schema": "double",
+      "unit": "inchesOfMercury"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDVInA_mmHg",
+      "displayName": "PDVInA_mmHg",
+      "schema": "double",
+      "unit": "millimetresOfMercury"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDVInA_kgfpcm2a",
+      "displayName": "PDVInA_kgfpcm2a",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2OutB",
+      "displayName": "BDC2OutB",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "0Off",
+            "enumValue": "0Off"
+          },
+          {
+            "name": "1On",
+            "enumValue": "1On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1OutA",
+      "displayName": "BDC1OutA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "0Off",
+            "enumValue": "0Off"
+          },
+          {
+            "name": "1On",
+            "enumValue": "1On"
+          }
+        ]
+      }
+    }
+  ]
+}

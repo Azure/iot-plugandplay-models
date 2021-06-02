@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388720_MeasurementValueEmissionColorSwitchingOutputQ;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTM-Wx1x7Axx",
+  "description": "Contrast Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ",
+      "displayName": "SwitchingOutputQ",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          },
+          {
+            "name": "NoDescription",
+            "enumValue": "NoDescription"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValueEmissionColor",
+      "displayName": "MeasurementValueEmissionColor",
+      "schema": "long"
+    }
+  ]
+}

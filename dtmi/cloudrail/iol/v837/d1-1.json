@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AL002",
+  "description": "Optical distance sensor. Visible laser light, protection class 2 laser. Connection: 2 switching outputs normally open / closed complementary DC PNP",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_cm",
+      "displayName": "Distance_cm",
+      "schema": "double",
+      "unit": "centimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT1",
+      "displayName": "SwitchStateOUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

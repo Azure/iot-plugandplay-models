@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1291:D12289_ProcessdataInPDI48INT32_INT8FormatSeeIOLinkSmartSensorProfile;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KellerAG Z-Line",
+  "description": "Pressure Transmitter, IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "4ByteMeasurementValue",
+      "displayName": "4ByteMeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "1ByteScaleValueRangeShifting10Scale",
+      "displayName": "1ByteScaleValueRangeShifting10Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOfSwitchingSignalChannel1",
+      "displayName": "StateOfSwitchingSignalChannel1",
+      "schema": "integer"
+    }
+  ]
+}

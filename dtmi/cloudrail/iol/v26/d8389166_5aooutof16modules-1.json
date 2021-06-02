@@ -1,0 +1,275 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WI180C-IOA00",
+  "description": "Sensor integration gateway",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module1Qint1",
+      "displayName": "Module1Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module1Qint2",
+      "displayName": "Module1Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module2Qint1",
+      "displayName": "Module2Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module2Qint2",
+      "displayName": "Module2Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module3Qint1",
+      "displayName": "Module3Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module3Qint2",
+      "displayName": "Module3Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module4Qint1",
+      "displayName": "Module4Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module4Qint2",
+      "displayName": "Module4Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module5Qint1",
+      "displayName": "Module5Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module5Qint2",
+      "displayName": "Module5Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module6Qint1",
+      "displayName": "Module6Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module6Qint2",
+      "displayName": "Module6Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module7Qint1",
+      "displayName": "Module7Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module7Qint2",
+      "displayName": "Module7Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module8Qint1",
+      "displayName": "Module8Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module8Qint2",
+      "displayName": "Module8Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module9Qint1",
+      "displayName": "Module9Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module9Qint2",
+      "displayName": "Module9Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module10Qint1",
+      "displayName": "Module10Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module10Qint2",
+      "displayName": "Module10Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module11Qint1",
+      "displayName": "Module11Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module11Qint2",
+      "displayName": "Module11Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module12Qint1",
+      "displayName": "Module12Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module12Qint2",
+      "displayName": "Module12Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module13Qint1",
+      "displayName": "Module13Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module13Qint2",
+      "displayName": "Module13Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module14Qint1",
+      "displayName": "Module14Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module14Qint2",
+      "displayName": "Module14Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module15Qint1",
+      "displayName": "Module15Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module15Qint2",
+      "displayName": "Module15Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module16Qint1",
+      "displayName": "Module16Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Module16Qint2",
+      "displayName": "Module16Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO5AnalogValue5",
+      "displayName": "AO5AnalogValue5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO4AnalogValue4",
+      "displayName": "AO4AnalogValue4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO3AnalogValue3",
+      "displayName": "AO3AnalogValue3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO2AnalogValue2",
+      "displayName": "AO2AnalogValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO1AnalogValue1",
+      "displayName": "AO1AnalogValue1",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "",
+          "enumValue": ""
+        },
+        {
+          "name": "",
+          "enumValue": ""
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389166_5AOOutOf16Modules:ModuleQint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "",
+          "enumValue": ""
+        },
+        {
+          "name": "",
+          "enumValue": ""
+        }
+      ]
+    }
+  ]
+}

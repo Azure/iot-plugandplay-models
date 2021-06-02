@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D131132;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E2EW-xxxxxxxxxxxx-M1TJ 0.3M",
+  "description": "Proximity Sensor (M30)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput1",
+      "displayName": "ControlOutput1",
+      "schema": "dtmi:CloudRail:IOL:V612:D131132:ControlOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput2",
+      "displayName": "ControlOutput2",
+      "schema": "dtmi:CloudRail:IOL:V612:D131132:ControlOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstabilityDetectionAlarm",
+      "displayName": "InstabilityDetectionAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetTooCloseAlarm",
+      "displayName": "TargetTooCloseAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MonitorOutput",
+      "displayName": "MonitorOutput",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D131132:ControlOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1075:D1_Absolute;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": " AP10 ",
+  "description": "Absolute position indicator rotative",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionValue",
+      "displayName": "PositionValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs00_IndicatorCW",
+      "displayName": "Bs00_IndicatorCW",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs01_IndicatorCCW",
+      "displayName": "Bs01_IndicatorCCW",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs02_CalibrationExecuted",
+      "displayName": "Bs02_CalibrationExecuted",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs03_Reserved",
+      "displayName": "Bs03_Reserved",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs04_GuardingBit",
+      "displayName": "Bs04_GuardingBit",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs05_TargetWindowReached",
+      "displayName": "Bs05_TargetWindowReached",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs06_Deviation",
+      "displayName": "Bs06_Deviation",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs07_GeneralError",
+      "displayName": "Bs07_GeneralError",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs08_Reserved",
+      "displayName": "Bs08_Reserved",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs09_IncrementalMeasurement",
+      "displayName": "Bs09_IncrementalMeasurement",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs10_TargetValueState",
+      "displayName": "Bs10_TargetValueState",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs11_BatteryState",
+      "displayName": "Bs11_BatteryState",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs12_SpeedError",
+      "displayName": "Bs12_SpeedError",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs13_KeyConfiguration",
+      "displayName": "Bs13_KeyConfiguration",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs14_KeyCalibration",
+      "displayName": "Bs14_KeyCalibration",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bs15_KeyIncremental",
+      "displayName": "Bs15_KeyIncremental",
+      "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bs;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TargetValue",
+              "displayName": "TargetValue",
+              "schema": "long"
+            },
+            {
+              "name": "Bc00_CalibrationExecute",
+              "displayName": "Bc00_CalibrationExecute",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc01_Reserved",
+              "displayName": "Bc01_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc02_Reserved",
+              "displayName": "Bc02_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc03_DisplayRange",
+              "displayName": "Bc03_DisplayRange",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc04_GuardingBit",
+              "displayName": "Bc04_GuardingBit",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc05_ErrorAck",
+              "displayName": "Bc05_ErrorAck",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc06_Reserved",
+              "displayName": "Bc06_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc07_Reserved",
+              "displayName": "Bc07_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc08_Reserved",
+              "displayName": "Bc08_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc09_TargetValueActivation",
+              "displayName": "Bc09_TargetValueActivation",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc10_Reserved",
+              "displayName": "Bc10_Reserved",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc11_LED1Green",
+              "displayName": "Bc11_LED1Green",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc12_LED1Red",
+              "displayName": "Bc12_LED1Red",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc13_LED2Green",
+              "displayName": "Bc13_LED2Green",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc14_LED2Red",
+              "displayName": "Bc14_LED2Red",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            },
+            {
+              "name": "Bc15_LEDBlinking",
+              "displayName": "Bc15_LEDBlinking",
+              "schema": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1075:D1_Absolute:Bc;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ExecuteCalibration",
+          "enumValue": "ExecuteCalibration"
+        },
+        {
+          "name": "DoNotExecute",
+          "enumValue": "DoNotExecute"
+        }
+      ]
+    }
+  ]
+}

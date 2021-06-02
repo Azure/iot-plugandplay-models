@@ -1,0 +1,175 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V839:D1064961_FloatingPoint;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "JUMO digiLine Ci ST10 - 0x104001",
+  "description": "Transmitter with separate inductive conductivity sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ConductivityUncompensated",
+      "displayName": "ConductivityUncompensated",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConductivityCompensated",
+      "displayName": "ConductivityCompensated",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuringRange",
+      "displayName": "MeasuringRange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "2",
+            "enumValue": "2"
+          },
+          {
+            "name": "3",
+            "enumValue": "3"
+          },
+          {
+            "name": "4",
+            "enumValue": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataConductivityUncertain",
+      "displayName": "ProcessDataConductivityUncertain",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataTemperatureUncertain",
+      "displayName": "ProcessDataTemperatureUncertain",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CompensationRangeExit",
+      "displayName": "CompensationRangeExit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CIPSIPPrealarmCyclesReached",
+      "displayName": "CIPSIPPrealarmCyclesReached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaximumCIPSIPCyclesReached",
+      "displayName": "MaximumCIPSIPCyclesReached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningSensorStress",
+      "displayName": "WarningSensorStress",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmSensorStress",
+      "displayName": "AlarmSensorStress",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CalibrationTimerExpired",
+      "displayName": "CalibrationTimerExpired",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConfigurationDataLost",
+      "displayName": "ConfigurationDataLost",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CalibrationDataLost",
+      "displayName": "CalibrationDataLost",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LimitMonitoring1",
+      "displayName": "LimitMonitoring1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LimitMonitoring2",
+      "displayName": "LimitMonitoring2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "MeasuringRange",
+              "displayName": "MeasuringRange",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "2",
+                    "enumValue": "2"
+                  },
+                  {
+                    "name": "3",
+                    "enumValue": "3"
+                  },
+                  {
+                    "name": "4",
+                    "enumValue": "4"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CompensationTemperatureInterface",
+              "displayName": "CompensationTemperatureInterface",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
