@@ -1,9 +1,9 @@
 {
-  "@id": "dtmi:avnet:AvnetMt3620G100;1",
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:avnet:mt3620_g100;1",
   "@type": "Interface",
   "displayName": "Avnet Guardian 100 Example",
   "description": "Implements interfaces to demonstrate G100 application cloud features.",
-  "@context": "dtmi:dtdl:context;2",
   "contents": [
     
     {
