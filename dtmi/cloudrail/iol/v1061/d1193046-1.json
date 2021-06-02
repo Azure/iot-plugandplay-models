@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D1193046;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "X-NUCLEO-IOD02A1(230.4kBaud)",
+  "description": "X-NUCLEO-IOD02A1 IO-Link Device board (230.4kBaud)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

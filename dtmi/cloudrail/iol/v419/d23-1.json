@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D23;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "bks+3/FIUxxxx       ",
+  "description": "Ultrasound web edge sensor with 1 push-pull switching output, 100 mA load capacity, analogue current or voltage output, 4..20 mA or 0..10 V, detection range 12 mm, IODD valid for: bks+3/FIU",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

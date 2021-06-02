@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V478:D174576;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MAXREFDES174",
+  "description": "IO-Link Distance Sensor reference design",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceProcessValue",
+      "displayName": "DistanceProcessValue",
+      "schema": "long"
+    }
+  ]
+}

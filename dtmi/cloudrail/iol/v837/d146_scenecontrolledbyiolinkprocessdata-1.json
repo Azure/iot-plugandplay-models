@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D146_SceneControlledByIOLinkProcessData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AC9xx",
+  "description": "Capacitive switch, plastic, symbol: blanko",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pin2",
+      "displayName": "Pin2",
+      "schema": "dtmi:CloudRail:IOL:V837:D146_SceneControlledByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pin4",
+      "displayName": "Pin4",
+      "schema": "dtmi:CloudRail:IOL:V837:D146_SceneControlledByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pin5",
+      "displayName": "Pin5",
+      "schema": "dtmi:CloudRail:IOL:V837:D146_SceneControlledByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationFlag",
+      "displayName": "ActuationFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Idle",
+            "enumValue": "Idle"
+          },
+          {
+            "name": "Actuated",
+            "enumValue": "Actuated"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationCount",
+      "displayName": "ActuationCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationStrength",
+      "displayName": "ActuationStrength",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SurroundingBrightness",
+      "displayName": "SurroundingBrightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Unused",
+      "displayName": "Unused",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LEDScene",
+              "displayName": "LEDScene",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D146_SceneControlledByIOLinkProcessData:Pin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OutputOFF",
+          "enumValue": "OutputOFF"
+        },
+        {
+          "name": "OutputON",
+          "enumValue": "OutputON"
+        },
+        {
+          "name": "OutputAnalog",
+          "enumValue": "OutputAnalog"
+        },
+        {
+          "name": "InputOFF",
+          "enumValue": "InputOFF"
+        },
+        {
+          "name": "InputON",
+          "enumValue": "InputON"
+        },
+        {
+          "name": "PinUnused",
+          "enumValue": "PinUnused"
+        }
+      ]
+    }
+  ]
+}

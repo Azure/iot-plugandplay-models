@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1443329_OutputsAndMeasuredValue;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "U1KT002",
+  "description": "Ultrasonic Reflex Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "A1Output",
+      "displayName": "A1Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D1443329_OutputsAndMeasuredValue:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "A2Output",
+      "displayName": "A2Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D1443329_OutputsAndMeasuredValue:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V87:D1443329_OutputsAndMeasuredValue:AOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D72;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "esf-1/xxxxxxxA",
+  "description": "Ultrasonic label and splice sensor, housing in fork format with fork depth 55 mm, 1 Push-Pull switching output, 1 pnp switching output, temperature compensation.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataValue",
+      "displayName": "ProcessDataValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WebBreak",
+      "displayName": "WebBreak",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel2State",
+      "displayName": "SwitchSignalChannel2State",
+      "schema": "dtmi:CloudRail:IOL:V419:D72:SwitchSignalChannelState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": "dtmi:CloudRail:IOL:V419:D72:SwitchSignalChannelState;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V419:D72:SwitchSignalChannelState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

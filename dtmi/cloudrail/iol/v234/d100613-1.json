@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100613;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VSi VP8 D",
+  "description": "Vacuum/Pressure Switch VSi VP8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue",
+      "displayName": "SensorValue",
+      "schema": "long"
+    }
+  ]
+}

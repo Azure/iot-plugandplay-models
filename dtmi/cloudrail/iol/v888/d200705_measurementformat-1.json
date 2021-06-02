@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D200705_MeasurementFormat;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOD 23K-LI01-S4",
+  "description": "BOD - Optical Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Measurement",
+      "displayName": "Measurement",
+      "schema": "long"
+    }
+  ]
+}

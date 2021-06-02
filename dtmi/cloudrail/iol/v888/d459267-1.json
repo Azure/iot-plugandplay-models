@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D459267;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BCS R08RRE-PIM80C-EP00,3-GS04",
+  "description": "Capacitive Proximity Switch, Microbox, Standard",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfBDC1",
+      "displayName": "SwitchingSignalOfBDC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataValue",
+      "displayName": "ProcessDataValue",
+      "schema": "long"
+    }
+  ]
+}

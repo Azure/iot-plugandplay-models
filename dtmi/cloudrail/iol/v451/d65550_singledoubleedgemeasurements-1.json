@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D65550_SingleDoubleEdgeMeasurements;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Exxxxxxxxxxx-Array IO-Link, 5 mm Channel Space Array",
+  "description": "EZ-Array IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FirstBeamBlocked",
+      "displayName": "FirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LastBeamBlocked",
+      "displayName": "LastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TotalBeamBlocked",
+      "displayName": "TotalBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousBeamBlocked",
+      "displayName": "ContiguousBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MiddleBeamBlocked",
+      "displayName": "MiddleBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OuterDiameter",
+      "displayName": "OuterDiameter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InnerDiameter",
+      "displayName": "InnerDiameter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousFirstBeamBlocked",
+      "displayName": "ContiguousFirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousLastBeamBlocked",
+      "displayName": "ContiguousLastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object1FirstBeamBlocked",
+      "displayName": "Object1FirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object1LastBeamBlocked",
+      "displayName": "Object1LastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object2FirstBeamBlocked",
+      "displayName": "Object2FirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object2LastBeamBlocked",
+      "displayName": "Object2LastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object3FirstBeamBlocked",
+      "displayName": "Object3FirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Object3LastBeamBlocked",
+      "displayName": "Object3LastBeamBlocked",
+      "schema": "long"
+    }
+  ]
+}

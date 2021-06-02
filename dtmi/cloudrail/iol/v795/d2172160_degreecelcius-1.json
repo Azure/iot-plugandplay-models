@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V795:D2172160_DegreeCelcius;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NT 67-XP-xx-1D1S",
+  "description": "Level and temperature sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Level",
+      "displayName": "Level",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PT100ErrorShortCircuit",
+      "displayName": "PT100ErrorShortCircuit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PT100ErrorBrokenWire",
+      "displayName": "PT100ErrorBrokenWire",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReedChainErrorShortCircuit",
+      "displayName": "ReedChainErrorShortCircuit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReedChainErrorBrokenWire",
+      "displayName": "ReedChainErrorBrokenWire",
+      "schema": "integer"
+    }
+  ]
+}

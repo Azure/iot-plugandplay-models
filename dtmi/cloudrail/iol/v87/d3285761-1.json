@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3285761;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SEFG673",
+  "description": "Safety Light Curtain",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANOBJBMutingState",
+      "displayName": "ANOBJBMutingState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANCBBBMutingTimeLowByte",
+      "displayName": "ANCBBBMutingTimeLowByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANBBBMutingTimeHighByte",
+      "displayName": "ANBBBMutingTimeHighByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AFBBBMutingSensorTimeS3S4",
+      "displayName": "AFBBBMutingSensorTimeS3S4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ALBBBMutingSensorTimeS1S2",
+      "displayName": "ALBBBMutingSensorTimeS1S2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputState",
+      "displayName": "InputState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": "long"
+    }
+  ]
+}

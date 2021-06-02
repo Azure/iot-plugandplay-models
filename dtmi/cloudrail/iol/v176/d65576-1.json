@@ -1,0 +1,40 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D65576;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AXL E IOL AO1 U M12 R",
+  "description": "AXL E IOL",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Voltage",
+      "displayName": "Voltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Voltage",
+              "displayName": "Voltage",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

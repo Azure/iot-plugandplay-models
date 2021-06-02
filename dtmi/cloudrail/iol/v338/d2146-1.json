@@ -1,0 +1,114 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2146;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HRT 25B/L6X.31-2500-S12",
+  "description": "Scanner with Background Suppression",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1OutputState",
+      "displayName": "Q1OutputState",
+      "schema": "dtmi:CloudRail:IOL:V338:D2146:QOutputState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2OutputState",
+      "displayName": "Q2OutputState",
+      "schema": "dtmi:CloudRail:IOL:V338:D2146:QOutputState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasureState",
+      "displayName": "MeasureState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoMeasureStartupTeachOrDeactivated",
+            "enumValue": "NoMeasureStartupTeachOrDeactivated"
+          },
+          {
+            "name": "MeasureIsRunning",
+            "enumValue": "MeasureIsRunning"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReceivedSignal",
+      "displayName": "ReceivedSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoSignalNoMeasureValueAvailable",
+            "enumValue": "NoSignalNoMeasureValueAvailable"
+          },
+          {
+            "name": "SignalAndMeasurementValueAvailable",
+            "enumValue": "SignalAndMeasurementValueAvailable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningReducedAccuracy",
+      "displayName": "WarningReducedAccuracy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoWarning",
+            "enumValue": "NoWarning"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningAmbientNoise",
+      "displayName": "WarningAmbientNoise",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoWarning",
+            "enumValue": "NoWarning"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V338:D2146:QOutputState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Q1Off",
+          "enumValue": "Q1Off"
+        },
+        {
+          "name": "Q1On",
+          "enumValue": "Q1On"
+        }
+      ]
+    }
+  ]
+}

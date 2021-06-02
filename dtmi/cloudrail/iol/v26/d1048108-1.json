@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1048108;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WTB4SC-3P3262H",
+  "description": "Photoelectric Proximity Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QSignal",
+      "displayName": "QSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetDetected",
+            "enumValue": "TargetDetected"
+          },
+          {
+            "name": "NoTargetDetected",
+            "enumValue": "NoTargetDetected"
+          }
+        ]
+      }
+    }
+  ]
+}

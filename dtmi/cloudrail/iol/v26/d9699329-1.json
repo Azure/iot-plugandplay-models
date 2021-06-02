@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D9699329;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LFV200",
+  "description": "Fluid sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QSignal",
+      "displayName": "QSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

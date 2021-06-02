@@ -1,0 +1,128 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328768;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-772-000-A027",
+  "description": "Universal IO-Link Interface 8IOs with current sense",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin1Bit00",
+      "displayName": "SwitchstatePin1Bit00",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin2Bit01",
+      "displayName": "SwitchstatePin2Bit01",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin3Bit02",
+      "displayName": "SwitchstatePin3Bit02",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin4Bit03",
+      "displayName": "SwitchstatePin4Bit03",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin5Bit04",
+      "displayName": "SwitchstatePin5Bit04",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin6Bit05",
+      "displayName": "SwitchstatePin6Bit05",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin7Bit06",
+      "displayName": "SwitchstatePin7Bit06",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePin8Bit07",
+      "displayName": "SwitchstatePin8Bit07",
+      "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SwitchstatePin1Bit00",
+              "displayName": "SwitchstatePin1Bit00",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin2Bit01",
+              "displayName": "SwitchstatePin2Bit01",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin3Bit02",
+              "displayName": "SwitchstatePin3Bit02",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin4Bit03",
+              "displayName": "SwitchstatePin4Bit03",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin5Bit04",
+              "displayName": "SwitchstatePin5Bit04",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin6Bit05",
+              "displayName": "SwitchstatePin6Bit05",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin7Bit06",
+              "displayName": "SwitchstatePin7Bit06",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            },
+            {
+              "name": "SwitchstatePin8Bit07",
+              "displayName": "SwitchstatePin8Bit07",
+              "schema": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328768:SwitchstatePinBit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

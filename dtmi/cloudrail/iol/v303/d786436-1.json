@@ -1,0 +1,166 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D786436;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MVP12 DI8 DO8 IOL",
+  "description": "MVP12 8xM12 DI8 DO8 IOL IO-Link Version 1.12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Port0Pin4CH00",
+      "displayName": "Port0Pin4CH00",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port0Pin2CH10",
+      "displayName": "Port0Pin2CH10",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port1Pin4CH01",
+      "displayName": "Port1Pin4CH01",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port1Pin2CH11",
+      "displayName": "Port1Pin2CH11",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port2Pin4CH02",
+      "displayName": "Port2Pin4CH02",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port2Pin2CH12",
+      "displayName": "Port2Pin2CH12",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port3Pin4CH03",
+      "displayName": "Port3Pin4CH03",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Port3Pin2CH13",
+      "displayName": "Port3Pin2CH13",
+      "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuitUSAllPorts",
+      "displayName": "ShortCircuitUSAllPorts",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuitAllOutputs",
+      "displayName": "ShortCircuitAllOutputs",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Port4Pin4CH04",
+              "displayName": "Port4Pin4CH04",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port4Pin2CH14",
+              "displayName": "Port4Pin2CH14",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port5Pin4CH05",
+              "displayName": "Port5Pin4CH05",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port5Pin2CH15",
+              "displayName": "Port5Pin2CH15",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port6Pin4CH06",
+              "displayName": "Port6Pin4CH06",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port6Pin2CH16",
+              "displayName": "Port6Pin2CH16",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port7Pin4CH07",
+              "displayName": "Port7Pin4CH07",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            },
+            {
+              "name": "Port7Pin2CH17",
+              "displayName": "Port7Pin2CH17",
+              "schema": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V303:D786436:PortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

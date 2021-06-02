@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1138:D417825_Feet;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NSL-F_I42",
+  "description": "Continuous Level Sensor with IO-Link and 1x 4...20mA analog output",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ContinuousLevel",
+      "displayName": "ContinuousLevel",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ImmersionDetection",
+      "displayName": "ImmersionDetection",
+      "schema": "double"
+    }
+  ]
+}

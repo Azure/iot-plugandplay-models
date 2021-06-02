@@ -1,0 +1,113 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V120:D2225921;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Control Head Type 8695 Class B",
+  "description": "Control Head Type 8695 Class B",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ValvePosition",
+      "displayName": "ValvePosition",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NamurState",
+      "displayName": "NamurState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "DiagnosticsActive",
+            "enumValue": "DiagnosticsActive"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveMode",
+      "displayName": "ValveMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Initialization",
+            "enumValue": "Initialization"
+          },
+          {
+            "name": "NormalOperation",
+            "enumValue": "NormalOperation"
+          },
+          {
+            "name": "TeachFunction",
+            "enumValue": "TeachFunction"
+          },
+          {
+            "name": "SafetyPosition",
+            "enumValue": "SafetyPosition"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveOpened",
+      "displayName": "ValveOpened",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveClosed",
+      "displayName": "ValveClosed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LocalizeDevice",
+              "displayName": "LocalizeDevice",
+              "schema": "integer"
+            },
+            {
+              "name": "CMDSetpointValue",
+              "displayName": "CMDSetpointValue",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

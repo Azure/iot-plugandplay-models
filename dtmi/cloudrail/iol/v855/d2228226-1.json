@@ -1,0 +1,94 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D2228226;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LSHM-10",
+  "description": "Linear slide hand with Length measuring function,bore10",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Voltage",
+      "displayName": "Voltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorStatus",
+      "displayName": "ErrorStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ErrorDetect",
+            "enumValue": "ErrorDetect"
+          },
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningStatus",
+      "displayName": "WarningStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "WarningDetect",
+            "enumValue": "WarningDetect"
+          },
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW4Status",
+      "displayName": "SW4Status",
+      "schema": "dtmi:CloudRail:IOL:V855:D2228226:SWStatus;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW3Status",
+      "displayName": "SW3Status",
+      "schema": "dtmi:CloudRail:IOL:V855:D2228226:SWStatus;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW2Status",
+      "displayName": "SW2Status",
+      "schema": "dtmi:CloudRail:IOL:V855:D2228226:SWStatus;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW1Status",
+      "displayName": "SW1Status",
+      "schema": "dtmi:CloudRail:IOL:V855:D2228226:SWStatus;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D2228226:SWStatus;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SW4ON",
+          "enumValue": "SW4ON"
+        },
+        {
+          "name": "SW4Off",
+          "enumValue": "SW4Off"
+        }
+      ]
+    }
+  ]
+}

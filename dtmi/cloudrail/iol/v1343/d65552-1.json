@@ -1,0 +1,157 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1343:D65552;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E-BOX IO-LINK 1.01MP001",
+  "description": "1x Pushbutton 1 NO tactile feedback & RGB LED",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Contact1Button2",
+      "displayName": "Contact1Button2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Validity",
+      "displayName": "Validity",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "IlluminationButton2",
+              "displayName": "IlluminationButton2",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ColourButton2",
+              "displayName": "ColourButton2",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Red",
+                    "enumValue": "Red"
+                  },
+                  {
+                    "name": "Green",
+                    "enumValue": "Green"
+                  },
+                  {
+                    "name": "Blue",
+                    "enumValue": "Blue"
+                  },
+                  {
+                    "name": "White",
+                    "enumValue": "White"
+                  },
+                  {
+                    "name": "Yellow",
+                    "enumValue": "Yellow"
+                  },
+                  {
+                    "name": "VariableColour1",
+                    "enumValue": "VariableColour1"
+                  },
+                  {
+                    "name": "VariableColour2",
+                    "enumValue": "VariableColour2"
+                  },
+                  {
+                    "name": "VariableColour3",
+                    "enumValue": "VariableColour3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BlinkModeButton2",
+              "displayName": "BlinkModeButton2",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "NightModeButton2",
+              "displayName": "NightModeButton2",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D327937;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-104-000-K006 (158187)",
+  "description": "BNI - Sensor hub M12 digital",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort01",
+      "displayName": "SwitchstatePort01",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort11",
+      "displayName": "SwitchstatePort11",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort21",
+      "displayName": "SwitchstatePort21",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort31",
+      "displayName": "SwitchstatePort31",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort41",
+      "displayName": "SwitchstatePort41",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort51",
+      "displayName": "SwitchstatePort51",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort61",
+      "displayName": "SwitchstatePort61",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort71",
+      "displayName": "SwitchstatePort71",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort00",
+      "displayName": "SwitchstatePort00",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort10",
+      "displayName": "SwitchstatePort10",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort20",
+      "displayName": "SwitchstatePort20",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort30",
+      "displayName": "SwitchstatePort30",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort40",
+      "displayName": "SwitchstatePort40",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort50",
+      "displayName": "SwitchstatePort50",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort60",
+      "displayName": "SwitchstatePort60",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort70",
+      "displayName": "SwitchstatePort70",
+      "schema": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D327937:SwitchstatePort;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

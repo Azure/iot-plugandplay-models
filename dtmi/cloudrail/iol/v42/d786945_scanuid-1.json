@@ -1,0 +1,89 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D786945_ScanUID;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SIMATIC RF210R IO-Link ",
+  "description": "Ident systems ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte0",
+      "displayName": "UIDByte0",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte1",
+      "displayName": "UIDByte1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte2",
+      "displayName": "UIDByte2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte3",
+      "displayName": "UIDByte3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte4",
+      "displayName": "UIDByte4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte5",
+      "displayName": "UIDByte5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte6",
+      "displayName": "UIDByte6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UIDByte7",
+      "displayName": "UIDByte7",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AntennaOnoff",
+              "displayName": "AntennaOnoff",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AntennaActive",
+                    "enumValue": "AntennaActive"
+                  },
+                  {
+                    "name": "AntennaInactive",
+                    "enumValue": "AntennaInactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

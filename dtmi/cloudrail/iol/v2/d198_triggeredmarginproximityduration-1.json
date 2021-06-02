@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D198_TriggeredMarginProximityDuration;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "871FM-M7BA20-xx02",
+  "description": "MetalFlat, Shld, 20x32x8, 7mm range, PVC Cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DurationTriggered",
+      "displayName": "DurationTriggered",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DurationNotTriggered",
+      "displayName": "DurationNotTriggered",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

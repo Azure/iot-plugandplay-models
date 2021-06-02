@@ -1,0 +1,152 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D4194561_EasyMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IQT1-xxxM-IO-V1",
+  "description": "RFID read/write station (HF, ISO 15693)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReadSuccessful",
+      "displayName": "ReadSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WriteSuccessful",
+      "displayName": "WriteSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TaskActive",
+      "displayName": "TaskActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DataLength",
+      "displayName": "DataLength",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadData",
+      "displayName": "ReadData",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Read",
+              "displayName": "Read",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Execute",
+                    "enumValue": "Execute"
+                  },
+                  {
+                    "name": "Stop",
+                    "enumValue": "Stop"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Write",
+              "displayName": "Write",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Execute",
+                    "enumValue": "Execute"
+                  },
+                  {
+                    "name": "Stop",
+                    "enumValue": "Stop"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "WriteData",
+              "displayName": "WriteData",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

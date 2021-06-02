@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V120:D2215170;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Field Module Type 8653",
+  "description": "Field Module Type 8653 with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "BM0_Valves",
+              "displayName": "BM0_Valves",
+              "schema": "long"
+            },
+            {
+              "name": "BM0_ExtFeedbackUp",
+              "displayName": "BM0_ExtFeedbackUp",
+              "schema": "long"
+            },
+            {
+              "name": "BM0_ExtFeedbackDown",
+              "displayName": "BM0_ExtFeedbackDown",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

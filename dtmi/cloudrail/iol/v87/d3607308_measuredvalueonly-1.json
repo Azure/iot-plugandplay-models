@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3607308_MeasuredValueOnly;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1KY012",
+  "description": "High-Performance Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

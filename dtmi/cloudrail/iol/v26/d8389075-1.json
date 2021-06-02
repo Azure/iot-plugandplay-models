@@ -1,0 +1,113 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389075;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WTT190LC-B2233A00",
+  "description": "Photoelectric proximity sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint1",
+      "displayName": "Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint2",
+      "displayName": "Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint5",
+      "displayName": "Qint5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint6",
+      "displayName": "Qint6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint7",
+      "displayName": "Qint7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint8",
+      "displayName": "Qint8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SpareValue",
+      "displayName": "SpareValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DistanceToObject",
+      "displayName": "DistanceToObject",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389075:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389075:Qint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

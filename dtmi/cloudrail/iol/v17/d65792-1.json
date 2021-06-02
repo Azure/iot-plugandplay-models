@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D65792;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Picomag",
+  "description": "Electromagnetic flowmeter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StateIO1",
+      "displayName": "StateIO1",
+      "schema": "dtmi:CloudRail:IOL:V17:D65792:StateIO;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateIO2",
+      "displayName": "StateIO2",
+      "schema": "dtmi:CloudRail:IOL:V17:D65792:StateIO;1"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "long",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "VolumeFlowRate"
+      ],
+      "name": "Volumeflow_Lps",
+      "displayName": "Volumeflow_Lps",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "Totalizer_L",
+      "displayName": "Totalizer_L",
+      "schema": "double",
+      "unit": "litre"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V17:D65792:StateIO;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

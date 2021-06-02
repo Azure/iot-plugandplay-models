@@ -1,0 +1,59 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V795:D5276800_DegreeCelcius;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BCM-WS-120-1D",
+  "description": "Oil Moisture Sensor G1/2",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Humidity_pct",
+      "displayName": "Humidity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput",
+      "displayName": "SwitchingOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PT100ErrorShortCircuit",
+      "displayName": "PT100ErrorShortCircuit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PT100ErrorBrokenWire",
+      "displayName": "PT100ErrorBrokenWire",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HumidityError",
+      "displayName": "HumidityError",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D463108;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QCM50-K1D40-Q8-4",
+  "description": "18...60 mm, 1xQ, Auto/PNP/NPN, M12, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQuality",
+      "displayName": "SwitchingQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "integer"
+    }
+  ]
+}

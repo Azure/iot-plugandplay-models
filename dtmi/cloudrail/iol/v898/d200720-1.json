@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V898:D200720;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BTS3000",
+  "description": "Electronic sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Pressure_C",
+      "displayName": "Pressure_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Pressure_F",
+      "displayName": "Pressure_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT2",
+      "displayName": "SwitchStatusOUT2",
+      "schema": "dtmi:CloudRail:IOL:V898:D200720:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": "dtmi:CloudRail:IOL:V898:D200720:SwitchStatusOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V898:D200720:SwitchStatusOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

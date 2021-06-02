@@ -1,0 +1,90 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V287:D2228226;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "4WRPEH6-3X",
+  "description": "Proportional Valve",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActualValue",
+      "displayName": "ActualValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveOkFlag",
+      "displayName": "ValveOkFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "ValveOk",
+            "enumValue": "ValveOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveStatus",
+      "displayName": "ValveStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ValveON",
+            "enumValue": "ValveON"
+          },
+          {
+            "name": "ValveOFF",
+            "enumValue": "ValveOFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Enable",
+              "displayName": "Enable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EnableHigh",
+                    "enumValue": "EnableHigh"
+                  },
+                  {
+                    "name": "EnableLow",
+                    "enumValue": "EnableLow"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ValveCommandValue",
+              "displayName": "ValveCommandValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
