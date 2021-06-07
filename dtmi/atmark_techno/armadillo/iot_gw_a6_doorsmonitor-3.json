@@ -1,0 +1,73 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_A6_DoorsMonitor;3",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW A6 doors monitor",
+  "description": "Doors open/cose monitoring device characteristics",
+  "contents": [
+   {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Armadillo:IoT_GW_Base;1",
+      "name": "iot_gw_base",
+      "displayName": "IoT GW Base",
+      "description": "Armadillo-IoT GW model base/common device characteristics"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Armadillo:DoorSensor;1",
+      "name": "door_sensor",
+      "displayName": "Door Sensor",
+      "description": "Reports door open/close state"
+    },
+    {
+      "@type": "Property",
+      "name": "sid_whitelist",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sid",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "null",
+          "schema": "integer",
+          "comment": "This value has no mean. use mapKey only."
+        }
+      },
+      "displayName": "Sensor white list",
+      "description": "white list of door open/close sensor",
+      "comment": "ignore notifications from sensors not on this list (actually, this properties schema is Array of string)",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "door_state",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "sid",
+            "schema": "string",
+            "displayName": "Sensor id"
+          },
+          {
+            "name": "is_on",
+            "schema": "boolean",
+            "displayName": "Door status"
+          },
+          {
+            "name": "change_time",
+            "schema": "dateTime",
+            "displayName": "State change time"
+          },
+          {
+            "name": "last_sense_time",
+            "schema": "dateTime",
+            "displayName": "Last notified time"
+          }
+        ],
+        "displayName": "door's last known state"
+      }
+    }
+  ]
+}
