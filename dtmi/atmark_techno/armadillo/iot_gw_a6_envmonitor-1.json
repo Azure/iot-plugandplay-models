@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_A6_EnvMonitor;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW A6 environment monitor",
+  "description": "Environment monitoring device characteristics",
+  "contents": [
+   {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Armadillo:IoT_GW_Base;1",
+      "name": "iot_gw_base",
+      "displayName": "IoT GW Base",
+      "description": "Armadillo-IoT GW model base/common device characteristics"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Armadillo:EnvSensor;1",
+      "name": "env_sensor",
+      "displayName": "Environment Sensor",
+      "description": "Reports environmental info"
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "envsense_interval",
+      "schema": "integer",
+      "displayName": "environment sense interval",
+      "description": "sensing interval for the environmental sensor.",
+      "comment": "It must be greater than 0.",
+      "unit": "second",
+      "writable": true
+    }
+  ]
+}

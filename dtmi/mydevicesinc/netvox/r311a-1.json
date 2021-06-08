@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:netvox:r311a;1",
+  "@type": "Interface",
+  "displayName": "Netvox Barricade",
+  "description": "Netvox Barricade sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "barricade",
+      "description": "barricade",
+      "name": "channel_11",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ASUS:TinkerEdgeR;1",
+    "@type": "Interface",
+    "displayName": "ASUS-TinkerEdgeR",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        },
+        {
+            "@type": [
+              "Telemetry",
+              "Temperature"
+            ],
+            "name": "currentTempGPU",
+            "displayName": "Current Temperature (GPU)",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "detectDaytime",
+            "displayName": "Recognition time",
+            "schema": "dateTime"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "lpString",
+            "displayName": "License Plate",
+            "description": "Detected license plate",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "score",
+            "displayName": "Confidence",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "lpLocation",
+            "displayName": "License plate coordinate",
+            "description": "License plate (coordinate and size)",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "double"
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "lpSize",
+            "displayName": "License Plate Size",
+            "schema": "double"
+        }
+    ]
+}
