@@ -1,0 +1,134 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1508:D2008212;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PIOL pressure sensor IO-Link, 1bar rel, max. media temp. 125°C",
+  "description": "Pressure and continuous level transmitter, 1bar rel, acc. 0,1%FS",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_C",
+      "displayName": "HeadTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessPressureSwitchoff",
+      "displayName": "ExcessPressureSwitchoff",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure05Mbar",
+      "displayName": "Pressure05Mbar",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorStressed100",
+      "displayName": "SensorStressed100",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeadTemperature85C",
+      "displayName": "HeadTemperature85C",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ServiceRecommended",
+      "displayName": "ServiceRecommended",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    }
+  ]
+}

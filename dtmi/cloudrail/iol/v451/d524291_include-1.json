@@ -1,0 +1,110 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D524291_Include;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LM150KU",
+  "description": "Laser Measurement Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Channel1OutputState",
+      "displayName": "Channel1OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogState",
+      "displayName": "AnalogState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTargetOrMarginal",
+            "enumValue": "NoTargetOrMarginal"
+          },
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement1Value",
+      "displayName": "Measurement1Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement2Value",
+      "displayName": "Measurement2Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

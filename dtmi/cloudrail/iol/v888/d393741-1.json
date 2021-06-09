@@ -1,0 +1,133 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D393741;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIS M-402-045-005-07-S4",
+  "description": "BIS - Industrial RFID system",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Bitheader1",
+      "displayName": "Bitheader1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte1",
+      "displayName": "Byte1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte2",
+      "displayName": "Byte2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte3",
+      "displayName": "Byte3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte4",
+      "displayName": "Byte4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte5",
+      "displayName": "Byte5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte6",
+      "displayName": "Byte6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte7",
+      "displayName": "Byte7",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Byte8",
+      "displayName": "Byte8",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Bitheader2",
+      "displayName": "Bitheader2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Bitheader1",
+              "displayName": "Bitheader1",
+              "schema": "long"
+            },
+            {
+              "name": "Byte1",
+              "displayName": "Byte1",
+              "schema": "long"
+            },
+            {
+              "name": "Byte2",
+              "displayName": "Byte2",
+              "schema": "long"
+            },
+            {
+              "name": "Byte3",
+              "displayName": "Byte3",
+              "schema": "long"
+            },
+            {
+              "name": "Byte4",
+              "displayName": "Byte4",
+              "schema": "long"
+            },
+            {
+              "name": "Byte5",
+              "displayName": "Byte5",
+              "schema": "long"
+            },
+            {
+              "name": "Byte6",
+              "displayName": "Byte6",
+              "schema": "long"
+            },
+            {
+              "name": "Byte7",
+              "displayName": "Byte7",
+              "schema": "long"
+            },
+            {
+              "name": "Byte8",
+              "displayName": "Byte8",
+              "schema": "long"
+            },
+            {
+              "name": "Bitheader2",
+              "displayName": "Bitheader2",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D120;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AD006",
+  "description": "IO-Link DI module, IO-Link, IP67, 6x2 DI M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX14DI1",
+      "displayName": "DigitalInputX14DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX12DI1",
+      "displayName": "DigitalInputX12DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX10DI1",
+      "displayName": "DigitalInputX10DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX15DI1",
+      "displayName": "DigitalInputX15DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX13DI1",
+      "displayName": "DigitalInputX13DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX11DI1",
+      "displayName": "DigitalInputX11DI1",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX14DI2",
+      "displayName": "DigitalInputX14DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX12DI2",
+      "displayName": "DigitalInputX12DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX10DI2",
+      "displayName": "DigitalInputX10DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX15DI2",
+      "displayName": "DigitalInputX15DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX13DI2",
+      "displayName": "DigitalInputX13DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInputX11DI2",
+      "displayName": "DigitalInputX11DI2",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX14",
+      "displayName": "SCX14",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX12",
+      "displayName": "SCX12",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX10",
+      "displayName": "SCX10",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX15",
+      "displayName": "SCX15",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX13",
+      "displayName": "SCX13",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX11",
+      "displayName": "SCX11",
+      "schema": "dtmi:CloudRail:IOL:V837:D120:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EquipmentSpecificId",
+      "displayName": "EquipmentSpecificId",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D120:DigitalInputXDI;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D120:SCX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OK",
+          "enumValue": "OK"
+        },
+        {
+          "name": "ShortCircuit",
+          "enumValue": "ShortCircuit"
+        }
+      ]
+    }
+  ]
+}

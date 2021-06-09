@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D422;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "O6P309",
+  "description": "Retro-reflective sensor, 0.05...5 m, light-on/dark-on mode selectable, DC PNP",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

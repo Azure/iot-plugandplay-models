@@ -1,0 +1,193 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1370;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VVB021 Status B",
+  "description": "IO-Link vibration sensor, -50...50 g",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "FatigueVRMS_mps",
+      "displayName": "FatigueVRMS_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FatigueVRMS_mmps",
+      "displayName": "FatigueVRMS_mmps",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FatigueVRMS_inps",
+      "displayName": "FatigueVRMS_inps",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "ImpactAPeak_mps2",
+      "displayName": "ImpactAPeak_mps2",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ImpactAPeak_g0",
+      "displayName": "ImpactAPeak_g0",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ImpactAPeak_mg0",
+      "displayName": "ImpactAPeak_mg0",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "FrictionARMS_mps2",
+      "displayName": "FrictionARMS_mps2",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FrictionARMS_g0",
+      "displayName": "FrictionARMS_g0",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FrictionARMS_mg0",
+      "displayName": "FrictionARMS_mg0",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Crest",
+      "displayName": "Crest",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D1370:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D1370:OUT;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "RawDataRecordPDout",
+              "displayName": "RawDataRecordPDout",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1370:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

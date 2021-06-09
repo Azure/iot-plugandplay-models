@@ -1,0 +1,561 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D4194306;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ECR-MNNN3B-LK[FULL MODE]",
+  "description": "https://www.ckd.co.jp/",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MonitorValue",
+      "displayName": "MonitorValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusDirectSelection",
+      "displayName": "StatusDirectSelection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Point",
+            "enumValue": "Point"
+          },
+          {
+            "name": "Direct",
+            "enumValue": "Direct"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointZone",
+      "displayName": "StatusPointZone",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusTraveling",
+      "displayName": "StatusTraveling",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusZone1",
+      "displayName": "StatusZone1",
+      "schema": "dtmi:CloudRail:IOL:V855:D4194306:StatusZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusZone2",
+      "displayName": "StatusZone2",
+      "schema": "dtmi:CloudRail:IOL:V855:D4194306:StatusZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PointNumberConfirmation",
+      "displayName": "PointNumberConfirmation",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointTravelComplete",
+      "displayName": "StatusPointTravelComplete",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusHomePositionReturnComplete",
+      "displayName": "StatusHomePositionReturnComplete",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusServoON",
+      "displayName": "StatusServoON",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusAlarm",
+      "displayName": "StatusAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusWarning",
+      "displayName": "StatusWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusReady",
+      "displayName": "StatusReady",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "StopMethod",
+              "displayName": "StopMethod",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "COMMON",
+                    "enumValue": "COMMON"
+                  },
+                  {
+                    "name": "Control",
+                    "enumValue": "Control"
+                  },
+                  {
+                    "name": "FixedExcitation",
+                    "enumValue": "FixedExcitation"
+                  },
+                  {
+                    "name": "AutoServoOff1",
+                    "enumValue": "AutoServoOff1"
+                  },
+                  {
+                    "name": "AutoServoOff2",
+                    "enumValue": "AutoServoOff2"
+                  },
+                  {
+                    "name": "AutoServoOff3",
+                    "enumValue": "AutoServoOff3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AccelerationDecelerationMethod",
+              "displayName": "AccelerationDecelerationMethod",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "COMMON",
+                    "enumValue": "COMMON"
+                  },
+                  {
+                    "name": "Trapezoid",
+                    "enumValue": "Trapezoid"
+                  },
+                  {
+                    "name": "SShape",
+                    "enumValue": "SShape"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "OperationMethod",
+              "displayName": "OperationMethod",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "POSI",
+                    "enumValue": "POSI"
+                  },
+                  {
+                    "name": "PPS1",
+                    "enumValue": "PPS1"
+                  },
+                  {
+                    "name": "PPS2",
+                    "enumValue": "PPS2"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "PositionSpecificationMethod",
+              "displayName": "PositionSpecificationMethod",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Absolute",
+                    "enumValue": "Absolute"
+                  },
+                  {
+                    "name": "Increment",
+                    "enumValue": "Increment"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "GainMagnification",
+              "displayName": "GainMagnification",
+              "schema": "long"
+            },
+            {
+              "name": "PressingDistance",
+              "displayName": "PressingDistance",
+              "schema": "long"
+            },
+            {
+              "name": "PressingSpeed",
+              "displayName": "PressingSpeed",
+              "schema": "long"
+            },
+            {
+              "name": "PressingCurrent",
+              "displayName": "PressingCurrent",
+              "schema": "long"
+            },
+            {
+              "name": "DecelerationG",
+              "displayName": "DecelerationG",
+              "schema": "long"
+            },
+            {
+              "name": "AccelerationG",
+              "displayName": "AccelerationG",
+              "schema": "long"
+            },
+            {
+              "name": "Speed",
+              "displayName": "Speed",
+              "schema": "long"
+            },
+            {
+              "name": "PositioningWidth",
+              "displayName": "PositioningWidth",
+              "schema": "long"
+            },
+            {
+              "name": "Position",
+              "displayName": "Position",
+              "schema": "long"
+            },
+            {
+              "name": "DirectSelection",
+              "displayName": "DirectSelection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Point",
+                    "enumValue": "Point"
+                  },
+                  {
+                    "name": "Direct",
+                    "enumValue": "Direct"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MonitorNumber",
+              "displayName": "MonitorNumber",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Speed",
+                    "enumValue": "Speed"
+                  },
+                  {
+                    "name": "Current",
+                    "enumValue": "Current"
+                  },
+                  {
+                    "name": "Alarm",
+                    "enumValue": "Alarm"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "RotationDirection",
+              "displayName": "RotationDirection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "COMMON",
+                    "enumValue": "COMMON"
+                  },
+                  {
+                    "name": "CloseRotation",
+                    "enumValue": "CloseRotation"
+                  },
+                  {
+                    "name": "CW",
+                    "enumValue": "CW"
+                  },
+                  {
+                    "name": "CCW",
+                    "enumValue": "CCW"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "PointNumber0511",
+              "displayName": "PointNumber0511",
+              "schema": "long"
+            },
+            {
+              "name": "PointTravelStart",
+              "displayName": "PointTravelStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "HomePositionReturnStart",
+              "displayName": "HomePositionReturnStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ServoON",
+              "displayName": "ServoON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AlarmReset",
+              "displayName": "AlarmReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Stop",
+              "displayName": "Stop",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Pause",
+              "displayName": "Pause",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D4194306:StatusZone;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

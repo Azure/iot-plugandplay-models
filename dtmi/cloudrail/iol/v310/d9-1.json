@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D9;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LR7300",
+  "description": "Electronic level sensor, 1.0...157.0 cm, Process connection 3/4'' NPT",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_cm",
+      "displayName": "Level_cm",
+      "schema": "double",
+      "unit": "centimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_in",
+      "displayName": "Level_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatusOUT4NotApplicable",
+      "displayName": "SwitchingStatusOUT4NotApplicable",
+      "schema": "dtmi:CloudRail:IOL:V310:D9:SwitchingStatusOUTNotApplicable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatusOUT3NotApplicable",
+      "displayName": "SwitchingStatusOUT3NotApplicable",
+      "schema": "dtmi:CloudRail:IOL:V310:D9:SwitchingStatusOUTNotApplicable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT2",
+      "displayName": "SwitchStatusOUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D9:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D9:SwitchStatusOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D9:SwitchingStatusOUTNotApplicable;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D9:SwitchStatusOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

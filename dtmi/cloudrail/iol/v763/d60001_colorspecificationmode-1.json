@@ -1,0 +1,254 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V763:D60001_ColorSpecificationMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NE-ILxx-M",
+  "description": "Multi Color Signal Beacons",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TouchSensor",
+      "displayName": "TouchSensor",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInput",
+      "displayName": "DigitalInput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status3",
+      "displayName": "Status3",
+      "schema": "dtmi:CloudRail:IOL:V763:D60001_ColorSpecificationMode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status2",
+      "displayName": "Status2",
+      "schema": "dtmi:CloudRail:IOL:V763:D60001_ColorSpecificationMode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status1",
+      "displayName": "Status1",
+      "schema": "dtmi:CloudRail:IOL:V763:D60001_ColorSpecificationMode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogInput",
+      "displayName": "AnalogInput",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "BuzzerPattern",
+              "displayName": "BuzzerPattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NoSound",
+                    "enumValue": "NoSound"
+                  },
+                  {
+                    "name": "ContinuousBeepSound",
+                    "enumValue": "ContinuousBeepSound"
+                  },
+                  {
+                    "name": "RapidIntermittentBeep",
+                    "enumValue": "RapidIntermittentBeep"
+                  },
+                  {
+                    "name": "RapidHiLo",
+                    "enumValue": "RapidHiLo"
+                  },
+                  {
+                    "name": "SweepUpSound",
+                    "enumValue": "SweepUpSound"
+                  },
+                  {
+                    "name": "ContinuousBeepWithCycleOnOff",
+                    "enumValue": "ContinuousBeepWithCycleOnOff"
+                  },
+                  {
+                    "name": "RapidIntermittentBeepWithCycleOnOff",
+                    "enumValue": "RapidIntermittentBeepWithCycleOnOff"
+                  },
+                  {
+                    "name": "RapidHiLoWithCycleOnOff",
+                    "enumValue": "RapidHiLoWithCycleOnOff"
+                  },
+                  {
+                    "name": "SweepUpWithCycleOnOff",
+                    "enumValue": "SweepUpWithCycleOnOff"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDPattern",
+              "displayName": "LEDPattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  },
+                  {
+                    "name": "SineSlow",
+                    "enumValue": "SineSlow"
+                  },
+                  {
+                    "name": "SineFast",
+                    "enumValue": "SineFast"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDColor",
+              "displayName": "LEDColor",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Red",
+                    "enumValue": "Red"
+                  },
+                  {
+                    "name": "Green",
+                    "enumValue": "Green"
+                  },
+                  {
+                    "name": "Amber",
+                    "enumValue": "Amber"
+                  },
+                  {
+                    "name": "Blue",
+                    "enumValue": "Blue"
+                  },
+                  {
+                    "name": "Purple",
+                    "enumValue": "Purple"
+                  },
+                  {
+                    "name": "Cyan",
+                    "enumValue": "Cyan"
+                  },
+                  {
+                    "name": "White",
+                    "enumValue": "White"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V763:D60001_ColorSpecificationMode:Status;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "One",
+          "enumValue": "1"
+        },
+        {
+          "name": "Null",
+          "enumValue": "0"
+        }
+      ]
+    }
+  ]
+}

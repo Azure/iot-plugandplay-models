@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D50001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PBMx-M1",
+  "description": "Pressure measurement for industrial applications",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureFactor",
+      "displayName": "PressureFactor",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    }
+  ]
+}

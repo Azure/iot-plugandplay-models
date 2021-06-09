@@ -1,0 +1,84 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D209_TriggeredMarginProximityGainContrastTemp;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "42AF-R1MAB1-x4",
+  "description": "Photo Sensor, Transmitted Beam Receiver,  Infrared LED,  Complementary Light or Dark Operate, Auto PNP or NPN Output with IO-Link, No Physical Adjustment, 80 m Sensing Range,  Integral 4-pin M12 QD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureInternal",
+      "displayName": "TemperatureInternal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contrast",
+      "displayName": "Contrast",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Gain",
+      "displayName": "Gain",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

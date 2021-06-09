@@ -1,0 +1,147 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V295:D2371584;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "16x Inputs Digital Hub",
+  "description": "16x Inputs Digital Hub, M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "I0Pin4",
+      "displayName": "I0Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I1Pin2",
+      "displayName": "I1Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I2Pin4",
+      "displayName": "I2Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I3Pin2",
+      "displayName": "I3Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I4Pin4",
+      "displayName": "I4Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I5Pin2",
+      "displayName": "I5Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I6Pin4",
+      "displayName": "I6Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I7Pin2",
+      "displayName": "I7Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I8Pin4",
+      "displayName": "I8Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I9Pin2",
+      "displayName": "I9Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I10Pin4",
+      "displayName": "I10Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I11Pin2",
+      "displayName": "I11Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I12Pin4",
+      "displayName": "I12Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I13Pin2",
+      "displayName": "I13Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I14Pin4",
+      "displayName": "I14Pin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "I15Pin2",
+      "displayName": "I15Pin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GlobalStatus",
+      "displayName": "GlobalStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ULOvercurrent",
+      "displayName": "ULOvercurrent",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ULOvervoltage",
+      "displayName": "ULOvervoltage",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ULUndervoltage",
+      "displayName": "ULUndervoltage",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UBLOvercurrent",
+      "displayName": "UBLOvercurrent",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UBLOvervoltage",
+      "displayName": "UBLOvervoltage",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UBLUndervoltage",
+      "displayName": "UBLUndervoltage",
+      "schema": "integer"
+    }
+  ]
+}

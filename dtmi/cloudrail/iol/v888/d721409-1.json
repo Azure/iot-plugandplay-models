@@ -1,0 +1,82 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D721409;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BLA 016C-002-00,25-S75",
+  "description": "Balluff Light Array 16mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue1",
+      "displayName": "AnalogValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue2",
+      "displayName": "AnalogValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalValue",
+      "displayName": "DigitalValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Counter1",
+      "displayName": "Counter1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Counter2",
+      "displayName": "Counter2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Counter1Flag",
+      "displayName": "Counter1Flag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Counter2Flag",
+      "displayName": "Counter2Flag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Autoblanking",
+      "displayName": "Autoblanking",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DataInvalid",
+      "displayName": "DataInvalid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CounterReset",
+              "displayName": "CounterReset",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

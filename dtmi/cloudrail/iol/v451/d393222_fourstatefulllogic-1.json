@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393222_FourStateFullLogic;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "K30PxKQP",
+  "description": "K30 Pro Indicator with Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "State",
+      "displayName": "State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "State1",
+            "enumValue": "State1"
+          },
+          {
+            "name": "State2",
+            "enumValue": "State2"
+          },
+          {
+            "name": "State3",
+            "enumValue": "State3"
+          },
+          {
+            "name": "State4",
+            "enumValue": "State4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "JobInput",
+              "displayName": "JobInput",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "UserInputIndicatorOnly",
+              "displayName": "UserInputIndicatorOnly",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

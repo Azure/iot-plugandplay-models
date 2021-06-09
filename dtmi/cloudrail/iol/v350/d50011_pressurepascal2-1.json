@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D50011_PressurePascal2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PP20H-D1",
+  "description": "Pressure measurement for hygienic applications",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureScaleExponent",
+      "displayName": "PressureScaleExponent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC6NotUsed",
+      "displayName": "SSC6NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmGeneral",
+      "displayName": "AlarmGeneral",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Pressure",
+      "displayName": "SSC1Pressure",
+      "schema": "integer"
+    }
+  ]
+}

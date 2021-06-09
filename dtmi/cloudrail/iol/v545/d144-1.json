@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D144;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OGU 101 G3-T3",
+  "description": "100 mm, red, push-pull, IO-Link, M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue_pct",
+      "displayName": "MeasurementValue_pct",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          },
+          {
+            "name": "NotOK",
+            "enumValue": "NotOK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Aktive",
+            "enumValue": "Aktive"
+          }
+        ]
+      }
+    }
+  ]
+}

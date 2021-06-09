@@ -1,0 +1,80 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329477;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-252-000-Z013",
+  "description": "BNI - Actor hub metal",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OutputSegment1Port0Pin4",
+              "displayName": "OutputSegment1Port0Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment1Port2Pin4",
+              "displayName": "OutputSegment1Port2Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment1Port4Pin4",
+              "displayName": "OutputSegment1Port4Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment1Port6Pin4",
+              "displayName": "OutputSegment1Port6Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment2Port1Pin4",
+              "displayName": "OutputSegment2Port1Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment2Port3Pin4",
+              "displayName": "OutputSegment2Port3Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment2Port5Pin4",
+              "displayName": "OutputSegment2Port5Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            },
+            {
+              "name": "OutputSegment2Port7Pin4",
+              "displayName": "OutputSegment2Port7Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D329477:OutputSegmentPort;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393221_DimAndBlendMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WLS2xPXRGBWxxxxxxxxxQ",
+  "description": "Work light strip, 27 mm dia., Pro, non-cascadable, illumination and indication, 145 mm length, diffuse, sealed, IO-Link, Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "DimAndBlendModeValue",
+              "displayName": "DimAndBlendModeValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V575:D5253120;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IOLink_5028A",
+  "description": "single  channel, industrial charge amplifier, which converts the charge signal from piezo-electric sensors into a proportional voltage signal",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Operate",
+      "displayName": "Operate",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overload",
+      "displayName": "Overload",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Trigger1",
+      "displayName": "Trigger1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ServiceCalibration",
+      "displayName": "ServiceCalibration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Reset",
+              "displayName": "Reset",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
