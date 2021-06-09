@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V773:D2001_OutputProximityAlarmMarginExessGainContrastLevelTemperature;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CR0/0I-1V",
+  "description": "Retroreflective Area Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessGain",
+      "displayName": "ExcessGain",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContrastLevel",
+      "displayName": "ContrastLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Pin2Output",
+              "displayName": "Pin2Output",
+              "schema": "integer"
+            },
+            {
+              "name": "GreenLED",
+              "displayName": "GreenLED",
+              "schema": "integer"
+            },
+            {
+              "name": "RedLED",
+              "displayName": "RedLED",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D4784982;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "STEVAL-IDP003V1V",
+  "description": "STEVAL-IDP003V1V",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AxisX_Freq",
+      "displayName": "AxisX_Freq",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AxisX_Amp",
+      "displayName": "AxisX_Amp",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AxisY_Freq",
+      "displayName": "AxisY_Freq",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AxisY_Amp",
+      "displayName": "AxisY_Amp",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AxisZ_Freq",
+      "displayName": "AxisZ_Freq",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AxisZ_Amp",
+      "displayName": "AxisZ_Amp",
+      "schema": "double"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388944;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DOSIC",
+  "description": "Ultrasonic Flow Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388944:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388944:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "FAILURE",
+            "enumValue": "FAILURE"
+          },
+          {
+            "name": "WARNING",
+            "enumValue": "WARNING"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flowrate",
+      "displayName": "Flowrate",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388944:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        }
+      ]
+    }
+  ]
+}

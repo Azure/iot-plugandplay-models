@@ -1,0 +1,86 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V271:D401152;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Pxxxxxxxoxxxxxxxxxxxxxx- IO Link",
+  "description": "IOL V1.1.2 | Connection = 1 x M12 (Class A&B), 2 x 7/8 (Class A only)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FailSafeStatus",
+      "displayName": "FailSafeStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AuxiliaryVoltageWarning",
+      "displayName": "AuxiliaryVoltageWarning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AuxiliaryVoltageFailure",
+      "displayName": "AuxiliaryVoltageFailure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ModuleFailure",
+      "displayName": "ModuleFailure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ModuleOverTemperature",
+      "displayName": "ModuleOverTemperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ModuleOverLoad",
+      "displayName": "ModuleOverLoad",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PilotSolenoidsShortCircuit",
+      "displayName": "PilotSolenoidsShortCircuit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStageNotAvailable",
+      "displayName": "OutputStageNotAvailable",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "EV8_to_EV1",
+              "displayName": "EV8_to_EV1",
+              "schema": "long"
+            },
+            {
+              "name": "EV16_to_EV9",
+              "displayName": "EV16_to_EV9",
+              "schema": "long"
+            },
+            {
+              "name": "EV24_to_EV17",
+              "displayName": "EV24_to_EV17",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D970;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TA1xx7",
+  "description": "Temperature transmitter, -50...200 °C, Length 17 mm, Process connection M12",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

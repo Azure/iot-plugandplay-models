@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D229380;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ET 200AL DI 16x24VDC 8xM12",
+  "description": "IO-Link Digital input module DI 16x24VDC, 8xM12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel0ConnectorX10Pin4",
+      "displayName": "InputDataChannel0ConnectorX10Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel1ConnectorX10Pin2",
+      "displayName": "InputDataChannel1ConnectorX10Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel2ConnectorX11Pin4",
+      "displayName": "InputDataChannel2ConnectorX11Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel3ConnectorX11Pin2",
+      "displayName": "InputDataChannel3ConnectorX11Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel4ConnectorX12Pin4",
+      "displayName": "InputDataChannel4ConnectorX12Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel5ConnectorX12Pin2",
+      "displayName": "InputDataChannel5ConnectorX12Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel6ConnectorX13Pin4",
+      "displayName": "InputDataChannel6ConnectorX13Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel7ConnectorX13Pin2",
+      "displayName": "InputDataChannel7ConnectorX13Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel8ConnectorX14Pin4",
+      "displayName": "InputDataChannel8ConnectorX14Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel9ConnectorX14Pin2",
+      "displayName": "InputDataChannel9ConnectorX14Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel10ConnectorX15Pin4",
+      "displayName": "InputDataChannel10ConnectorX15Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel11ConnectorX15Pin2",
+      "displayName": "InputDataChannel11ConnectorX15Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel12ConnectorX16Pin4",
+      "displayName": "InputDataChannel12ConnectorX16Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel13ConnectorX16Pin2",
+      "displayName": "InputDataChannel13ConnectorX16Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel14ConnectorX17Pin4",
+      "displayName": "InputDataChannel14ConnectorX17Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel15ConnectorX17Pin2",
+      "displayName": "InputDataChannel15ConnectorX17Pin2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V42:D229380:InputDataChannelConnectorX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Null",
+          "enumValue": "0"
+        },
+        {
+          "name": "One",
+          "enumValue": "1"
+        }
+      ]
+    }
+  ]
+}

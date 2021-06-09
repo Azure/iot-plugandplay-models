@@ -1,0 +1,40 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131842;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIP LD2-T014-01-EP02",
+  "description": "BIP - Balluff Inductive Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitOutOfRange",
+      "displayName": "StatusBitOutOfRange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetIsInMeasurementRange",
+            "enumValue": "TargetIsInMeasurementRange"
+          },
+          {
+            "name": "TargetIsOutOfMeasurementRange",
+            "enumValue": "TargetIsOutOfMeasurementRange"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionValue",
+      "displayName": "PositionValue",
+      "schema": "long"
+    }
+  ]
+}

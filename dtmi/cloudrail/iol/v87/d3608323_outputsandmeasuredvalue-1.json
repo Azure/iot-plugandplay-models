@@ -1,0 +1,82 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3608323_OutputsAndMeasuredValue;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1PY003",
+  "description": "High-Performance Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "A1Output",
+      "displayName": "A1Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608323_OutputsAndMeasuredValue:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "A2Output",
+      "displayName": "A2Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D3608323_OutputsAndMeasuredValue:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContaminationOutput",
+      "displayName": "ContaminationOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorOutput",
+      "displayName": "ErrorOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V87:D3608323_OutputsAndMeasuredValue:AOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

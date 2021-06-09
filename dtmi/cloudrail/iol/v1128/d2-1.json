@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1128:D2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Absolute Single-turn Encoder",
+  "description": "Modular absolute single-turn IO-Link encoder",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MagneticFieldIssue",
+      "displayName": "MagneticFieldIssue",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

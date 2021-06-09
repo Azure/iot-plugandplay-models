@@ -1,0 +1,80 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388773_TimestampModePDinOffAndPDoutOff;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTS/KTX TimeStamp",
+  "description": "Registration Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q",
+      "displayName": "Q",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QoRAlarm",
+      "displayName": "QoRAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "QoRAlarmActive",
+            "enumValue": "QoRAlarmActive"
+          },
+          {
+            "name": "QoRAlarmInactive",
+            "enumValue": "QoRAlarmInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EmissionColor",
+      "displayName": "EmissionColor",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Red",
+            "enumValue": "Red"
+          },
+          {
+            "name": "Green",
+            "enumValue": "Green"
+          },
+          {
+            "name": "Blue",
+            "enumValue": "Blue"
+          },
+          {
+            "name": "DefinedByTeach",
+            "enumValue": "DefinedByTeach"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValueOfEmissionColor",
+      "displayName": "MeasurementValueOfEmissionColor",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D604;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ELGE-xx-xx-xx0",
+  "description": "Toothed belt axis unit, size 35",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StateIn",
+      "displayName": "StateIn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOut",
+      "displayName": "StateOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateMove",
+      "displayName": "StateMove",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateDevice",
+      "displayName": "StateDevice",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "MoveIn",
+              "displayName": "MoveIn",
+              "schema": "integer"
+            },
+            {
+              "name": "MoveOut",
+              "displayName": "MoveOut",
+              "schema": "integer"
+            },
+            {
+              "name": "QuitError",
+              "displayName": "QuitError",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

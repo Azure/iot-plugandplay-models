@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D768;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FTI26",
+  "description": "capacitive measuring device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Coverage_pct",
+      "displayName": "Coverage_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1OU1",
+      "displayName": "SwitchStateOutput1OU1",
+      "schema": "dtmi:CloudRail:IOL:V17:D768:SwitchStateOutputOU;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput2OU2",
+      "displayName": "SwitchStateOutput2OU2",
+      "schema": "dtmi:CloudRail:IOL:V17:D768:SwitchStateOutputOU;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V17:D768:SwitchStateOutputOU;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

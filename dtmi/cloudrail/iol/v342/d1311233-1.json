@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D1311233;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTx-4155-407",
+  "description": "Contrast sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DetectionThresholdLevel",
+      "displayName": "DetectionThresholdLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarkIsBrighterThanBackground",
+      "displayName": "MarkIsBrighterThanBackground",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReceptionLevel",
+      "displayName": "ReceptionLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarkDetected",
+      "displayName": "MarkDetected",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1974295;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TBIL-S4-8DIP",
+  "description": "TBIL... series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Input7",
+      "displayName": "Input7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input6",
+      "displayName": "Input6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input5",
+      "displayName": "Input5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input4",
+      "displayName": "Input4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input3",
+      "displayName": "Input3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input2",
+      "displayName": "Input2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input1",
+      "displayName": "Input1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input0",
+      "displayName": "Input0",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SumDiagnosis",
+      "displayName": "SumDiagnosis",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UndervoltageSupply",
+      "displayName": "UndervoltageSupply",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvervoltageSupply",
+      "displayName": "OvervoltageSupply",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector3",
+      "displayName": "OvercurrentVauxConnector3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector2",
+      "displayName": "OvercurrentVauxConnector2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector1",
+      "displayName": "OvercurrentVauxConnector1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector0",
+      "displayName": "OvercurrentVauxConnector0",
+      "schema": "integer"
+    }
+  ]
+}

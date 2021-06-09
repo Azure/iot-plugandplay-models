@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V942:D16;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VP50xxBx511H00",
+  "description": "Proportional Pressure Control Valve, 2 bar, G 1/4",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputPressure",
+      "displayName": "OutputPressure",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "DeviceTemperature_C",
+      "displayName": "DeviceTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "DemandPressure",
+              "displayName": "DemandPressure",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

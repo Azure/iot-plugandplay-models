@@ -1,0 +1,108 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V942:D2060001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VS18 / VS26 IOL",
+  "description": "VS18 / VS26 valve island series with max. 20 valves",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OverloadValve01Valve04",
+      "displayName": "OverloadValve01Valve04",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadValve05Valve08",
+      "displayName": "OverloadValve05Valve08",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadValve09Valve12",
+      "displayName": "OverloadValve09Valve12",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadValve13Valve16",
+      "displayName": "OverloadValve13Valve16",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadValve17Valve20",
+      "displayName": "OverloadValve17Valve20",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenloadValve01Valve04",
+      "displayName": "OpenloadValve01Valve04",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenloadValve05Valve08",
+      "displayName": "OpenloadValve05Valve08",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenloadValve09Valve12",
+      "displayName": "OpenloadValve09Valve12",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenloadValve13Valve16",
+      "displayName": "OpenloadValve13Valve16",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenloadValve17Valve20",
+      "displayName": "OpenloadValve17Valve20",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "StatusValve01Valve04",
+              "displayName": "StatusValve01Valve04",
+              "schema": "long"
+            },
+            {
+              "name": "StatusValve05Valve08",
+              "displayName": "StatusValve05Valve08",
+              "schema": "long"
+            },
+            {
+              "name": "StatusValve09Valve12",
+              "displayName": "StatusValve09Valve12",
+              "schema": "long"
+            },
+            {
+              "name": "StatusValve13Valve16",
+              "displayName": "StatusValve13Valve16",
+              "schema": "long"
+            },
+            {
+              "name": "StatusValve17Valve20",
+              "displayName": "StatusValve17Valve20",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
