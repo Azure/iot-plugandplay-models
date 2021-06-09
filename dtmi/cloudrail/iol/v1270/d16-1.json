@@ -1,0 +1,297 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1270:D16;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SL-xx-TRIOxxxxxxxxxxx-xxxxxxxxxxxxx xx2",
+  "description": "Signal light with open wired cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DiagnosisLEDRed",
+      "displayName": "DiagnosisLEDRed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ErrorDetected",
+            "enumValue": "ErrorDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DiagnosisLEDGreen",
+      "displayName": "DiagnosisLEDGreen",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ErrorDetected",
+            "enumValue": "ErrorDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DiagnosisLEDBlue",
+      "displayName": "DiagnosisLEDBlue",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ErrorDetected",
+            "enumValue": "ErrorDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DiagnosisSound",
+      "displayName": "DiagnosisSound",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ErrorDetected",
+            "enumValue": "ErrorDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DiagnosisControllerTemperature",
+      "displayName": "DiagnosisControllerTemperature",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "ErrorDetected",
+            "enumValue": "ErrorDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Color",
+              "displayName": "Color",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Red",
+                    "enumValue": "Red"
+                  },
+                  {
+                    "name": "Green",
+                    "enumValue": "Green"
+                  },
+                  {
+                    "name": "Blue",
+                    "enumValue": "Blue"
+                  },
+                  {
+                    "name": "Yellow",
+                    "enumValue": "Yellow"
+                  },
+                  {
+                    "name": "Orange",
+                    "enumValue": "Orange"
+                  },
+                  {
+                    "name": "Pink",
+                    "enumValue": "Pink"
+                  },
+                  {
+                    "name": "White",
+                    "enumValue": "White"
+                  },
+                  {
+                    "name": "Custom1",
+                    "enumValue": "Custom1"
+                  },
+                  {
+                    "name": "Custom2",
+                    "enumValue": "Custom2"
+                  },
+                  {
+                    "name": "Custom3",
+                    "enumValue": "Custom3"
+                  },
+                  {
+                    "name": "Custom4",
+                    "enumValue": "Custom4"
+                  },
+                  {
+                    "name": "Custom5",
+                    "enumValue": "Custom5"
+                  },
+                  {
+                    "name": "Custom6",
+                    "enumValue": "Custom6"
+                  },
+                  {
+                    "name": "Custom7",
+                    "enumValue": "Custom7"
+                  },
+                  {
+                    "name": "Custom8",
+                    "enumValue": "Custom8"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Intensity",
+              "displayName": "Intensity",
+              "schema": "long"
+            },
+            {
+              "name": "Flashing",
+              "displayName": "Flashing",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "BlinkVerySlow",
+                    "enumValue": "BlinkVerySlow"
+                  },
+                  {
+                    "name": "BlinkSlow",
+                    "enumValue": "BlinkSlow"
+                  },
+                  {
+                    "name": "BlinkFast",
+                    "enumValue": "BlinkFast"
+                  },
+                  {
+                    "name": "BlinkVeryFast",
+                    "enumValue": "BlinkVeryFast"
+                  },
+                  {
+                    "name": "FlashVerySlow",
+                    "enumValue": "FlashVerySlow"
+                  },
+                  {
+                    "name": "FlashSlow",
+                    "enumValue": "FlashSlow"
+                  },
+                  {
+                    "name": "FlashFast",
+                    "enumValue": "FlashFast"
+                  },
+                  {
+                    "name": "FlashVeryFast",
+                    "enumValue": "FlashVeryFast"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Sound",
+              "displayName": "Sound",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "SoundOff",
+                    "enumValue": "SoundOff"
+                  },
+                  {
+                    "name": "Sound1",
+                    "enumValue": "Sound1"
+                  },
+                  {
+                    "name": "Sound2",
+                    "enumValue": "Sound2"
+                  },
+                  {
+                    "name": "Sound3",
+                    "enumValue": "Sound3"
+                  },
+                  {
+                    "name": "Sound4",
+                    "enumValue": "Sound4"
+                  },
+                  {
+                    "name": "Sound5",
+                    "enumValue": "Sound5"
+                  },
+                  {
+                    "name": "Sound6",
+                    "enumValue": "Sound6"
+                  },
+                  {
+                    "name": "Sound7",
+                    "enumValue": "Sound7"
+                  },
+                  {
+                    "name": "Sound8",
+                    "enumValue": "Sound8"
+                  },
+                  {
+                    "name": "Sound9",
+                    "enumValue": "Sound9"
+                  },
+                  {
+                    "name": "Sound10",
+                    "enumValue": "Sound10"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

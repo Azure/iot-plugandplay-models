@@ -1,0 +1,97 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388928;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TIM1x0-3010x00",
+  "description": "TIM100 (230400 kBd)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Reserved2",
+      "displayName": "Reserved2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UnknownState",
+            "enumValue": "UnknownState"
+          },
+          {
+            "name": "StartUp",
+            "enumValue": "StartUp"
+          },
+          {
+            "name": "ServiceMode",
+            "enumValue": "ServiceMode"
+          },
+          {
+            "name": "NormalOperation",
+            "enumValue": "NormalOperation"
+          },
+          {
+            "name": "SuspendedOperation",
+            "enumValue": "SuspendedOperation"
+          },
+          {
+            "name": "ServiceRecommended",
+            "enumValue": "ServiceRecommended"
+          },
+          {
+            "name": "ServiceRequired",
+            "enumValue": "ServiceRequired"
+          },
+          {
+            "name": "RecoverableError",
+            "enumValue": "RecoverableError"
+          },
+          {
+            "name": "FatalError",
+            "enumValue": "FatalError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Reserved1",
+      "displayName": "Reserved1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputQ2",
+      "displayName": "OutputQ2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388928:OutputQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputQ1",
+      "displayName": "OutputQ1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388928:OutputQ;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388928:OutputQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

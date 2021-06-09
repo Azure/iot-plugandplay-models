@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1061064;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WL4SC-3P2232B01",
+  "description": "Photoelectric Reflex Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingState",
+      "displayName": "SwitchingState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTargetDetected",
+            "enumValue": "NoTargetDetected"
+          },
+          {
+            "name": "TargetDetected",
+            "enumValue": "TargetDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterValue",
+      "displayName": "CounterValue",
+      "schema": "long"
+    }
+  ]
+}

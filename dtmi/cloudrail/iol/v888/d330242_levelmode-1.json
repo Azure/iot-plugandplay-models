@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330242_LevelMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-801-000-Z036",
+  "description": "Smart light 3 segment",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LevelValue",
+              "displayName": "LevelValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

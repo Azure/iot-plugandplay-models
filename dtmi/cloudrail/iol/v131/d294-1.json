@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D294;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "D-MP050x",
+  "description": "Actuator Position Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionIn50m",
+      "displayName": "PositionIn50m",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC4",
+      "displayName": "BDC4",
+      "schema": "dtmi:CloudRail:IOL:V131:D294:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC3",
+      "displayName": "BDC3",
+      "schema": "dtmi:CloudRail:IOL:V131:D294:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "dtmi:CloudRail:IOL:V131:D294:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "dtmi:CloudRail:IOL:V131:D294:BDC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D294:BDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

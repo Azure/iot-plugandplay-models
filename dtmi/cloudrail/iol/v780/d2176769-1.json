@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D2176769;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ON330570",
+  "description": "Photoelectric diffuse light barrier, Connector M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BinaryOut",
+      "displayName": "BinaryOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmBit",
+      "displayName": "AlarmBit",
+      "schema": "integer"
+    }
+  ]
+}

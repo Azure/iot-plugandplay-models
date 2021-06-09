@@ -1,0 +1,128 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389252;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MPS-G50CxHxxx31DZZ1ZZ1Z1ZZZZZZ",
+  "description": "Magnetic cylinder sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Qint1",
+      "displayName": "Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint2",
+      "displayName": "Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint5",
+      "displayName": "Qint5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint6",
+      "displayName": "Qint6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint7",
+      "displayName": "Qint7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint8",
+      "displayName": "Qint8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint9",
+      "displayName": "Qint9",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint10",
+      "displayName": "Qint10",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint11",
+      "displayName": "Qint11",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint12",
+      "displayName": "Qint12",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint13",
+      "displayName": "Qint13",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint14",
+      "displayName": "Qint14",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint15",
+      "displayName": "Qint15",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint16",
+      "displayName": "Qint16",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389252:Qint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Detected",
+          "enumValue": "Detected"
+        },
+        {
+          "name": "NotDetected",
+          "enumValue": "NotDetected"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328710;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-751-V02-K007",
+  "description": "BNI - Valve plug",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OutputStation112",
+              "displayName": "OutputStation112",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation212",
+              "displayName": "OutputStation212",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation312",
+              "displayName": "OutputStation312",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation412",
+              "displayName": "OutputStation412",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation512",
+              "displayName": "OutputStation512",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation612",
+              "displayName": "OutputStation612",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation712",
+              "displayName": "OutputStation712",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation812",
+              "displayName": "OutputStation812",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation114",
+              "displayName": "OutputStation114",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation214",
+              "displayName": "OutputStation214",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation314",
+              "displayName": "OutputStation314",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation414",
+              "displayName": "OutputStation414",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation514",
+              "displayName": "OutputStation514",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation614",
+              "displayName": "OutputStation614",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation714",
+              "displayName": "OutputStation714",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            },
+            {
+              "name": "OutputStation814",
+              "displayName": "OutputStation814",
+              "schema": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328710:OutputStation;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

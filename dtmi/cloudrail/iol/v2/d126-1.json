@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D126;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "871FM-M2NP5-E2",
+  "description": "Inductive Proximity Sensor - 871FM",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MarginStatus",
+      "displayName": "MarginStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MarginGood",
+            "enumValue": "MarginGood"
+          },
+          {
+            "name": "MarginLow",
+            "enumValue": "MarginLow"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D59407;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MVP12-M DI16 IOL",
+  "description": "MVP12-M IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "InputPort0Pin4CH00",
+      "displayName": "InputPort0Pin4CH00",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort1Pin4CH01",
+      "displayName": "InputPort1Pin4CH01",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort2Pin4CH02",
+      "displayName": "InputPort2Pin4CH02",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort3Pin4CH03",
+      "displayName": "InputPort3Pin4CH03",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort4Pin4CH04",
+      "displayName": "InputPort4Pin4CH04",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort5Pin4CH05",
+      "displayName": "InputPort5Pin4CH05",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort6Pin4CH06",
+      "displayName": "InputPort6Pin4CH06",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort7Pin4CH07",
+      "displayName": "InputPort7Pin4CH07",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort0Pin2CH10",
+      "displayName": "InputPort0Pin2CH10",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort1Pin2CH11",
+      "displayName": "InputPort1Pin2CH11",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort2Pin2CH12",
+      "displayName": "InputPort2Pin2CH12",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort3Pin2CH13",
+      "displayName": "InputPort3Pin2CH13",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort4Pin2CH14",
+      "displayName": "InputPort4Pin2CH14",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort5Pin2CH15",
+      "displayName": "InputPort5Pin2CH15",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort6Pin2CH16",
+      "displayName": "InputPort6Pin2CH16",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputPort7Pin2CH17",
+      "displayName": "InputPort7Pin2CH17",
+      "schema": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V303:D59407:InputPortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

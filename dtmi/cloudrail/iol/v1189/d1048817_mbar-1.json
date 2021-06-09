@@ -1,0 +1,96 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1189:D1048817_Mbar;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSD-4, -1...15 bar; 2xPNP/NPN + 4...20mA",
+  "description": "PSD-4 - Pressure Switch with Display, -1...15 bar; 2xPNP/NPN + 4...20mA",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_kgpcm2",
+      "displayName": "Pressure_kgpcm2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_pct",
+      "displayName": "Pressure_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OU1",
+      "displayName": "OU1",
+      "schema": "dtmi:CloudRail:IOL:V1189:D1048817_Mbar:OU;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OU2",
+      "displayName": "OU2",
+      "schema": "dtmi:CloudRail:IOL:V1189:D1048817_Mbar:OU;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1189:D1048817_Mbar:OU;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OUOn",
+          "enumValue": "OUOn"
+        },
+        {
+          "name": "OUOff",
+          "enumValue": "OUOff"
+        }
+      ]
+    }
+  ]
+}

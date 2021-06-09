@@ -1,0 +1,154 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-801-000-Z037",
+  "description": "Smart light 3 segment with buzzer",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LED1State",
+              "displayName": "LED1State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED2State",
+              "displayName": "LED2State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED3State",
+              "displayName": "LED3State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED4State",
+              "displayName": "LED4State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED5State",
+              "displayName": "LED5State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED6State",
+              "displayName": "LED6State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED7State",
+              "displayName": "LED7State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED8State",
+              "displayName": "LED8State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED9State",
+              "displayName": "LED9State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED10State",
+              "displayName": "LED10State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED11State",
+              "displayName": "LED11State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED12State",
+              "displayName": "LED12State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncStart",
+              "displayName": "SyncStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BuzzerState",
+              "displayName": "BuzzerState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330244_FlexibleMode:LEDState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

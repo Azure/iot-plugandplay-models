@@ -1,0 +1,230 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V850:D10077;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SK60 IO-Link",
+  "description": "SK60 Joystick with IO-Link Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "JoystickXAxis1Deflection",
+      "displayName": "JoystickXAxis1Deflection",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickYAxis1Deflection",
+      "displayName": "JoystickYAxis1Deflection",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickZAxis1Rotation",
+      "displayName": "JoystickZAxis1Rotation",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickXAxis2Deflection",
+      "displayName": "JoystickXAxis2Deflection",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickYAxis2Deflection",
+      "displayName": "JoystickYAxis2Deflection",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickZAxis2Rotation",
+      "displayName": "JoystickZAxis2Rotation",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyLeft",
+      "displayName": "DirectFunctionKeyLeft",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyRight",
+      "displayName": "DirectFunctionKeyRight",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyFront",
+      "displayName": "DirectFunctionKeyFront",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyLeftError",
+      "displayName": "DirectFunctionKeyLeftError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyRightError",
+      "displayName": "DirectFunctionKeyRightError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DirectFunctionKeyFrontError",
+      "displayName": "DirectFunctionKeyFrontError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickXAxisError",
+      "displayName": "JoystickXAxisError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickYAxisError",
+      "displayName": "JoystickYAxisError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickZAxis1Error",
+      "displayName": "JoystickZAxis1Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickXYAxis1Error",
+      "displayName": "JoystickXYAxis1Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickXYAxis2Error",
+      "displayName": "JoystickXYAxis2Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "JoystickZAxis2Error",
+      "displayName": "JoystickZAxis2Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LEDError",
+      "displayName": "LEDError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HapticEngineError",
+      "displayName": "HapticEngineError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NonVolatileMemoryError",
+      "displayName": "NonVolatileMemoryError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TestmodeWarningResetPending",
+      "displayName": "TestmodeWarningResetPending",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LEDStateRed",
+              "displayName": "LEDStateRed",
+              "schema": "long"
+            },
+            {
+              "name": "LEDStateGreen",
+              "displayName": "LEDStateGreen",
+              "schema": "long"
+            },
+            {
+              "name": "LEDStateBlue",
+              "displayName": "LEDStateBlue",
+              "schema": "long"
+            },
+            {
+              "name": "HapticLibTestModePrepareRestart",
+              "displayName": "HapticLibTestModePrepareRestart",
+              "schema": "integer"
+            },
+            {
+              "name": "LEDExecuteHoldoff",
+              "displayName": "LEDExecuteHoldoff",
+              "schema": "integer"
+            },
+            {
+              "name": "HapticPatternReplayToggle",
+              "displayName": "HapticPatternReplayToggle",
+              "schema": "integer"
+            },
+            {
+              "name": "AccessHapticFeedbackPatternHiBank58",
+              "displayName": "AccessHapticFeedbackPatternHiBank58",
+              "schema": "integer"
+            },
+            {
+              "name": "LEDSegmentMergeModeKeepAccessToHapticLib",
+              "displayName": "LEDSegmentMergeModeKeepAccessToHapticLib",
+              "schema": "integer"
+            },
+            {
+              "name": "LEDSegment3AccessHapticLibBit2",
+              "displayName": "LEDSegment3AccessHapticLibBit2",
+              "schema": "integer"
+            },
+            {
+              "name": "LEDSegment2AccessHapticLibBit1",
+              "displayName": "LEDSegment2AccessHapticLibBit1",
+              "schema": "integer"
+            },
+            {
+              "name": "LEDSegment1AccessHapticLibBit0",
+              "displayName": "LEDSegment1AccessHapticLibBit0",
+              "schema": "integer"
+            },
+            {
+              "name": "HapticFeedbackPattern15",
+              "displayName": "HapticFeedbackPattern15",
+              "schema": "long"
+            },
+            {
+              "name": "HapticFeedbackPattern26",
+              "displayName": "HapticFeedbackPattern26",
+              "schema": "long"
+            },
+            {
+              "name": "HapticFeedbackPattern37",
+              "displayName": "HapticFeedbackPattern37",
+              "schema": "long"
+            },
+            {
+              "name": "HapticFeedbackPattern48",
+              "displayName": "HapticFeedbackPattern48",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

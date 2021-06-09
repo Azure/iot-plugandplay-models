@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D65550_ChannelStatesReducedStatesUsingAND;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Exxxxxxxxxxx-Array IO-Link, 5 mm Channel Space Array",
+  "description": "EZ-Array IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BeamState",
+      "displayName": "BeamState",
+      "schema": "long"
+    }
+  ]
+}

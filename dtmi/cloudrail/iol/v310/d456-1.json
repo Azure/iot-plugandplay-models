@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D456;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PN7x97",
+  "description": "Electronic pressure sensor, 0...1 bar, NPT 1/4 A",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_inHg",
+      "displayName": "Pressure_inHg",
+      "schema": "double",
+      "unit": "inchesOfMercury"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT2",
+      "displayName": "SwitchStatusOUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D456:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D456:SwitchStatusOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D456:SwitchStatusOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

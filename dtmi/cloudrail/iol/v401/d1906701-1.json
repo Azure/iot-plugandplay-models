@@ -1,0 +1,123 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V401:D1906701;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "eSyStep On/Off",
+  "description": "Motorized Actuator",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ValvePosition",
+      "displayName": "ValvePosition",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UnknownPosition",
+            "enumValue": "UnknownPosition"
+          },
+          {
+            "name": "Open",
+            "enumValue": "Open"
+          },
+          {
+            "name": "Close",
+            "enumValue": "Close"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperationMode",
+      "displayName": "OperationMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NormalOperation",
+            "enumValue": "NormalOperation"
+          },
+          {
+            "name": "InitializationMode",
+            "enumValue": "InitializationMode"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Drive",
+              "displayName": "Drive",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "GoOpen",
+                    "enumValue": "GoOpen"
+                  },
+                  {
+                    "name": "GoClose",
+                    "enumValue": "GoClose"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "InitializationMode",
+              "displayName": "InitializationMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NormalOperation",
+                    "enumValue": "NormalOperation"
+                  },
+                  {
+                    "name": "InitializationMode",
+                    "enumValue": "InitializationMode"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Locate",
+              "displayName": "Locate",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
