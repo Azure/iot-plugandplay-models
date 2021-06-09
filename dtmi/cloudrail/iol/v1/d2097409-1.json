@@ -1,0 +1,50 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D2097409;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PMI14V-F112-xEPE2-IO-Vxx",
+  "description": "Inductive Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position10Bit",
+      "displayName": "Position10Bit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V1:D2097409:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2",
+      "displayName": "SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V1:D2097409:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal3",
+      "displayName": "SwitchingSignal3",
+      "schema": "dtmi:CloudRail:IOL:V1:D2097409:SwitchingSignal;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D2097409:SwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

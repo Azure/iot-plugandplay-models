@@ -1,0 +1,169 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1239:D257_AdvancedControlByIOLinkProcessData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CANEO series10 xxxxxxxxs Steel",
+  "description": "SENSORswitch hygienic with stainless steel housing and M12 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pin2",
+      "displayName": "Pin2",
+      "schema": "dtmi:CloudRail:IOL:V1239:D257_AdvancedControlByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pin4",
+      "displayName": "Pin4",
+      "schema": "dtmi:CloudRail:IOL:V1239:D257_AdvancedControlByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pin5",
+      "displayName": "Pin5",
+      "schema": "dtmi:CloudRail:IOL:V1239:D257_AdvancedControlByIOLinkProcessData:Pin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationFlag",
+      "displayName": "ActuationFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Idle",
+            "enumValue": "Idle"
+          },
+          {
+            "name": "Actuated",
+            "enumValue": "Actuated"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationCount",
+      "displayName": "ActuationCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActuationStrength",
+      "displayName": "ActuationStrength",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SurroundingBrightness",
+      "displayName": "SurroundingBrightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Unused",
+      "displayName": "Unused",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ActiveLEDs",
+              "displayName": "ActiveLEDs",
+              "schema": "long"
+            },
+            {
+              "name": "LEDBrightness",
+              "displayName": "LEDBrightness",
+              "schema": "long"
+            },
+            {
+              "name": "LEDColorR",
+              "displayName": "LEDColorR",
+              "schema": "long"
+            },
+            {
+              "name": "LEDColorG",
+              "displayName": "LEDColorG",
+              "schema": "long"
+            },
+            {
+              "name": "LEDColorB",
+              "displayName": "LEDColorB",
+              "schema": "long"
+            },
+            {
+              "name": "LEDEffect",
+              "displayName": "LEDEffect",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "StaticRing",
+                    "enumValue": "StaticRing"
+                  },
+                  {
+                    "name": "FlashRing",
+                    "enumValue": "FlashRing"
+                  },
+                  {
+                    "name": "PulseRing",
+                    "enumValue": "PulseRing"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "EffectFrequency",
+              "displayName": "EffectFrequency",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1239:D257_AdvancedControlByIOLinkProcessData:Pin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OutputOFF",
+          "enumValue": "OutputOFF"
+        },
+        {
+          "name": "OutputON",
+          "enumValue": "OutputON"
+        },
+        {
+          "name": "OutputAnalog",
+          "enumValue": "OutputAnalog"
+        },
+        {
+          "name": "InputOFF",
+          "enumValue": "InputOFF"
+        },
+        {
+          "name": "InputON",
+          "enumValue": "InputON"
+        },
+        {
+          "name": "PinUnused",
+          "enumValue": "PinUnused"
+        }
+      ]
+    }
+  ]
+}

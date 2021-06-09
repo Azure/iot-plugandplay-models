@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-800-000-Z036",
+  "description": "Smart light 1 segment",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LED1State",
+              "displayName": "LED1State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED2State",
+              "displayName": "LED2State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED3State",
+              "displayName": "LED3State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED4State",
+              "displayName": "LED4State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode:LEDState;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330245_FlexibleMode:LEDState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

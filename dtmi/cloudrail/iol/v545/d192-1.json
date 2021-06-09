@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D192;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LVHT52-500G3-B4",
+  "description": "Optical distance sensor 50...500mm, laser",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasurementValue_mm",
+      "displayName": "MeasurementValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DistanceScale",
+      "displayName": "DistanceScale",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Resolution01Mm",
+            "enumValue": "Resolution01Mm"
+          },
+          {
+            "name": "Resolution001Mm",
+            "enumValue": "Resolution001Mm"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NOK",
+            "enumValue": "NOK"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateSSC1Q1",
+      "displayName": "SwitchStateSSC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

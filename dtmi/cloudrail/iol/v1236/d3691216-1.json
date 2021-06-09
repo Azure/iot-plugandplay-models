@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1236:D3691216;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HAEHNE CA-IO-S",
+  "description": "Cable Amplifier with IO-Link interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

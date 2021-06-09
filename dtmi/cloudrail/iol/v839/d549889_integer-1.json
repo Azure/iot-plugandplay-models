@@ -1,0 +1,108 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V839:D549889_Integer;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "JUMO dTRANS p35 - 0x086401",
+  "description": "Pressure Sensor 0 to +30 bar abs.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureUnit",
+      "displayName": "PressureUnit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bar",
+            "enumValue": "Bar"
+          },
+          {
+            "name": "Mbar",
+            "enumValue": "Mbar"
+          },
+          {
+            "name": "FtH2O",
+            "enumValue": "FtH2O"
+          },
+          {
+            "name": "MmH2O",
+            "enumValue": "MmH2O"
+          },
+          {
+            "name": "MmHG",
+            "enumValue": "MmHG"
+          },
+          {
+            "name": "Psi",
+            "enumValue": "Psi"
+          },
+          {
+            "name": "InH2O",
+            "enumValue": "InH2O"
+          },
+          {
+            "name": "InHG",
+            "enumValue": "InHG"
+          },
+          {
+            "name": "Kgcm2",
+            "enumValue": "Kgcm2"
+          },
+          {
+            "name": "KPa",
+            "enumValue": "KPa"
+          },
+          {
+            "name": "Torr",
+            "enumValue": "Torr"
+          },
+          {
+            "name": "MPa",
+            "enumValue": "MPa"
+          },
+          {
+            "name": "MH2O",
+            "enumValue": "MH2O"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataUncertain",
+      "displayName": "ProcessDataUncertain",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ParameterError",
+      "displayName": "ParameterError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceHardwareFault",
+      "displayName": "DeviceHardwareFault",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "integer"
+    }
+  ]
+}

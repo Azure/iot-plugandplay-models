@@ -1,0 +1,174 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V796:D5260055;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Vaccuum Ejector",
+  "description": "Standard product",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "S1Good2Go",
+      "displayName": "S1Good2Go",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ready",
+            "enumValue": "Ready"
+          },
+          {
+            "name": "NotReady",
+            "enumValue": "NotReady"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S2ESTrigger",
+      "displayName": "S2ESTrigger",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LWLeakageWarning",
+      "displayName": "LWLeakageWarning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BlowOffComplete",
+      "displayName": "BlowOffComplete",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CurrentVacuumLevel",
+      "displayName": "CurrentVacuumLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "VACUUM_ON",
+              "displayName": "VACUUM_ON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "VacuumOn",
+                    "enumValue": "VacuumOn"
+                  },
+                  {
+                    "name": "VacuumOff",
+                    "enumValue": "VacuumOff"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BLOWOFF_ON",
+              "displayName": "BLOWOFF_ON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "BlowOffOn",
+                    "enumValue": "BlowOffOn"
+                  },
+                  {
+                    "name": "BlowOffOff",
+                    "enumValue": "BlowOffOff"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MODE",
+              "displayName": "MODE",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableES",
+                    "enumValue": "DisableES"
+                  },
+                  {
+                    "name": "ESActive",
+                    "enumValue": "ESActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TDBO",
+              "displayName": "TDBO",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DISABLEATBO",
+                    "enumValue": "DISABLEATBO"
+                  },
+                  {
+                    "name": "ATBOActive",
+                    "enumValue": "ATBOActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ACM",
+              "displayName": "ACM",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DISABLEACM",
+                    "enumValue": "DISABLEACM"
+                  },
+                  {
+                    "name": "ACMActive",
+                    "enumValue": "ACMActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "COMPLEMENTCTRL",
+              "displayName": "COMPLEMENTCTRL",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DISABLECOMP",
+                    "enumValue": "DISABLECOMP"
+                  },
+                  {
+                    "name": "COMPActive",
+                    "enumValue": "COMPActive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

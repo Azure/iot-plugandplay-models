@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V793:D7210101;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SRF Diagnosis Device",
+  "description": "SRF diagnosis device for one safety circuit with 8 PNP outputs",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

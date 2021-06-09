@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D211;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "873P-D30AIP2-3500-D5",
+  "description": "Ultrasonic Distance Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_mm",
+      "displayName": "Distance_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnosis",
+      "displayName": "Diagnosis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Trigger2",
+      "displayName": "Trigger2",
+      "schema": "dtmi:CloudRail:IOL:V2:D211:Trigger;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Trigger1",
+      "displayName": "Trigger1",
+      "schema": "dtmi:CloudRail:IOL:V2:D211:Trigger;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V2:D211:Trigger;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

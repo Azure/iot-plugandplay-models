@@ -1,0 +1,338 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393224_RunMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WLS15PXRGBxxx0DSKQP",
+  "description": "Work light strip, 15 mm tall, Pro, non-cascadable, indication, 220 mm length, diffuse, sealed, IO-Link, Euro 4-pin 150 mm (6 in) PVC Pigtail",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Animation",
+              "displayName": "Animation",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Steady",
+                    "enumValue": "Steady"
+                  },
+                  {
+                    "name": "Flash",
+                    "enumValue": "Flash"
+                  },
+                  {
+                    "name": "TwoColorFlash",
+                    "enumValue": "TwoColorFlash"
+                  },
+                  {
+                    "name": "TwoColorShift",
+                    "enumValue": "TwoColorShift"
+                  },
+                  {
+                    "name": "EndsSteady",
+                    "enumValue": "EndsSteady"
+                  },
+                  {
+                    "name": "EndsFlash",
+                    "enumValue": "EndsFlash"
+                  },
+                  {
+                    "name": "Scroll",
+                    "enumValue": "Scroll"
+                  },
+                  {
+                    "name": "CenterScroll",
+                    "enumValue": "CenterScroll"
+                  },
+                  {
+                    "name": "Bounce",
+                    "enumValue": "Bounce"
+                  },
+                  {
+                    "name": "CenterBounce",
+                    "enumValue": "CenterBounce"
+                  },
+                  {
+                    "name": "IntensitySweep",
+                    "enumValue": "IntensitySweep"
+                  },
+                  {
+                    "name": "TwoColorSweep",
+                    "enumValue": "TwoColorSweep"
+                  },
+                  {
+                    "name": "Spectrum",
+                    "enumValue": "Spectrum"
+                  },
+                  {
+                    "name": "SingleEndSteady",
+                    "enumValue": "SingleEndSteady"
+                  },
+                  {
+                    "name": "SingleEndFlash",
+                    "enumValue": "SingleEndFlash"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Color1",
+              "displayName": "Color1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393224_RunMode:Color;1"
+            },
+            {
+              "name": "Color1Intensity",
+              "displayName": "Color1Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393224_RunMode:ColorIntensity;1"
+            },
+            {
+              "name": "Speed",
+              "displayName": "Speed",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Medium",
+                    "enumValue": "Medium"
+                  },
+                  {
+                    "name": "Fast",
+                    "enumValue": "Fast"
+                  },
+                  {
+                    "name": "Slow",
+                    "enumValue": "Slow"
+                  },
+                  {
+                    "name": "CustomFlashRate",
+                    "enumValue": "CustomFlashRate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "PulsePattern",
+              "displayName": "PulsePattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Normal",
+                    "enumValue": "Normal"
+                  },
+                  {
+                    "name": "Strobe",
+                    "enumValue": "Strobe"
+                  },
+                  {
+                    "name": "ThreePulse",
+                    "enumValue": "ThreePulse"
+                  },
+                  {
+                    "name": "SOS",
+                    "enumValue": "SOS"
+                  },
+                  {
+                    "name": "Random",
+                    "enumValue": "Random"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Color2",
+              "displayName": "Color2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393224_RunMode:Color;1"
+            },
+            {
+              "name": "Color2Intensity",
+              "displayName": "Color2Intensity",
+              "schema": "dtmi:CloudRail:IOL:V451:D393224_RunMode:ColorIntensity;1"
+            },
+            {
+              "name": "ScrollBounceStyle",
+              "displayName": "ScrollBounceStyle",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Solid",
+                    "enumValue": "Solid"
+                  },
+                  {
+                    "name": "Tail",
+                    "enumValue": "Tail"
+                  },
+                  {
+                    "name": "Ripple",
+                    "enumValue": "Ripple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "PercentWidthOfColor1",
+              "displayName": "PercentWidthOfColor1",
+              "schema": "long"
+            },
+            {
+              "name": "Direction",
+              "displayName": "Direction",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Up",
+                    "enumValue": "Up"
+                  },
+                  {
+                    "name": "Down",
+                    "enumValue": "Down"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393224_RunMode:Color;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "Amber",
+          "enumValue": "Amber"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "LimeGreen",
+          "enumValue": "LimeGreen"
+        },
+        {
+          "name": "SpringGreen",
+          "enumValue": "SpringGreen"
+        },
+        {
+          "name": "Cyan",
+          "enumValue": "Cyan"
+        },
+        {
+          "name": "SkyBlue",
+          "enumValue": "SkyBlue"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Violet",
+          "enumValue": "Violet"
+        },
+        {
+          "name": "Magenta",
+          "enumValue": "Magenta"
+        },
+        {
+          "name": "Rose",
+          "enumValue": "Rose"
+        },
+        {
+          "name": "DaylightWhite5000K",
+          "enumValue": "DaylightWhite5000K"
+        },
+        {
+          "name": "Custom1",
+          "enumValue": "Custom1"
+        },
+        {
+          "name": "Custom2",
+          "enumValue": "Custom2"
+        },
+        {
+          "name": "IncandescentWhite2700K",
+          "enumValue": "IncandescentWhite2700K"
+        },
+        {
+          "name": "WarmWhite3000K",
+          "enumValue": "WarmWhite3000K"
+        },
+        {
+          "name": "FluorescentWhite4100K",
+          "enumValue": "FluorescentWhite4100K"
+        },
+        {
+          "name": "NeutralWhite5700K",
+          "enumValue": "NeutralWhite5700K"
+        },
+        {
+          "name": "CoolWhite6500K",
+          "enumValue": "CoolWhite6500K"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393224_RunMode:ColorIntensity;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        },
+        {
+          "name": "Medium",
+          "enumValue": "Medium"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Custom",
+          "enumValue": "Custom"
+        }
+      ]
+    }
+  ]
+}

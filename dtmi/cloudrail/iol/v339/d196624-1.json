@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V339:D196624;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TR-Laser_030010",
+  "description": "Laser Measuring Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Speed",
+      "displayName": "Speed",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorStatus",
+      "displayName": "ErrorStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PresetValue",
+              "displayName": "PresetValue",
+              "schema": "long"
+            },
+            {
+              "name": "ControlByte",
+              "displayName": "ControlByte",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

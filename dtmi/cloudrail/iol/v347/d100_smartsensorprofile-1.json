@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D100_SmartSensorProfile;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT55-RLAP2-PNSL-L4",
+  "description": "FT55-RLAP2-PNSL-L4",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ2",
+      "displayName": "SwitchingOutputQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue",
+      "displayName": "ProcessValue",
+      "schema": "long"
+    }
+  ]
+}

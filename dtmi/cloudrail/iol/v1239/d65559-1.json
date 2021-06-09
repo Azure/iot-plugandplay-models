@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1239:D65559;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CANEO series41 touch Sxxxdard",
+  "description": "SENSORswitch with black cover ring (RAL 9017), solid housing and M12 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TouchCount",
+      "displayName": "TouchCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "State",
+      "displayName": "State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "State0",
+            "enumValue": "State0"
+          },
+          {
+            "name": "State1",
+            "enumValue": "State1"
+          },
+          {
+            "name": "State2",
+            "enumValue": "State2"
+          },
+          {
+            "name": "State3",
+            "enumValue": "State3"
+          },
+          {
+            "name": "State4",
+            "enumValue": "State4"
+          },
+          {
+            "name": "State5",
+            "enumValue": "State5"
+          },
+          {
+            "name": "State6",
+            "enumValue": "State6"
+          },
+          {
+            "name": "State7",
+            "enumValue": "State7"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D264971;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS R254K-UUI-LH10-S4 (CNT)",
+  "description": "BOS R254K-UUI-LH10-S4 (CNT)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel1",
+      "displayName": "SwitchingSignalChannel1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel2",
+      "displayName": "SwitchingSignalChannel2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel3",
+      "displayName": "SwitchingSignalChannel3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel4",
+      "displayName": "SwitchingSignalChannel4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityBad",
+      "displayName": "SignalQualityBad",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemError",
+      "displayName": "SystemError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingCounterLimitNotReached",
+      "displayName": "SwitchingCounterLimitNotReached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingCounterLimitReached",
+      "displayName": "SwitchingCounterLimitReached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingCounterLimitExceeded",
+      "displayName": "SwitchingCounterLimitExceeded",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSpeedOk",
+      "displayName": "SwitchingSpeedOk",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSpeedTooLow",
+      "displayName": "SwitchingSpeedTooLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSpeedTooHigh",
+      "displayName": "SwitchingSpeedTooHigh",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingCounterValue",
+      "displayName": "SwitchingCounterValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSpeedValue",
+      "displayName": "SwitchingSpeedValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerEnable",
+              "displayName": "TransducerEnable",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchingCounterReset",
+              "displayName": "SwitchingCounterReset",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchingSpeedReset",
+              "displayName": "SwitchingSpeedReset",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

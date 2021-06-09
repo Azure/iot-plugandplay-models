@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V408:D2131984;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "8.M5858A.xx4x.4132",
+  "description": "Clamping flange ø 58 mm, IP65, Solid shaft ø 6 x 12,5 mm, with flat, Singleturn, 18 … 30 V DC, M12 axial connector, 4-pin, SSP - SMART Sensor Profile",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VendorSpecific",
+      "displayName": "VendorSpecific",
+      "schema": "long"
+    }
+  ]
+}

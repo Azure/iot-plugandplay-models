@@ -1,0 +1,107 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D62_Disable;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OVEM-H-CE",
+  "description": "OVEM-H-CE IO-Link version",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutA",
+      "displayName": "OutA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Disable",
+            "enumValue": "Disable"
+          },
+          {
+            "name": "Enable",
+            "enumValue": "Enable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutB",
+      "displayName": "OutB",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Disable",
+            "enumValue": "Disable"
+          },
+          {
+            "name": "Enable",
+            "enumValue": "Enable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PressureValue_mbar",
+      "displayName": "PressureValue_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "EvacuateSignal",
+              "displayName": "EvacuateSignal",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Disable",
+                    "enumValue": "Disable"
+                  },
+                  {
+                    "name": "Enable",
+                    "enumValue": "Enable"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DropSignal",
+              "displayName": "DropSignal",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Disable",
+                    "enumValue": "Disable"
+                  },
+                  {
+                    "name": "Enable",
+                    "enumValue": "Enable"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
