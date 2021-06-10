@@ -20,7 +20,7 @@ pr: none
 
 name: 
 schedules:
-- cron: '0 */2 * * *'
+- cron: '0 */1 * * *'
   displayName: 'Scheduled models sync event'
   branches:
     include: 
