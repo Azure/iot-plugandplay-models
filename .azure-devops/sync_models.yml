@@ -28,18 +28,24 @@ schedules:
   always: false
 
 jobs:
-- job: 'load_models'
-  displayName: 'Publish models container'
+- job: 'sync_models'
+  displayName: 'Sync models'
   pool:
     vmImage: 'ubuntu-20.04'
   steps:
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publishing models container'
+  - task: AzureCLI@2
+    displayName: 'Synchronizing'
     inputs:
-      pathToPublish: './dtmi'
-      publishLocation: 'Container' 
-      artifactName: 'models'
-      StoreAsTar: true
+      azureSubscription: $(DMR_SERVICE_CONNECTION)
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -e
+
+        echo "Synchronizing models..."
+        az storage blob upload-batch -s "./dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
+    env:
+      DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
 
 - job: 'evaluate_repo'
   displayName: 'Evaluate repository'
@@ -119,38 +125,6 @@ jobs:
       publishLocation: 'Container' 
       artifactName: 'metadata'
       StoreAsTar: true
-
-- job: 'sync_models'
-  displayName: 'Sync models'
-  dependsOn: 'load_models'
-  pool:
-    vmImage: 'ubuntu-20.04'
-  steps:
-  - checkout: none
-  - task: DownloadBuildArtifacts@0
-    displayName : 'Downloading models container'
-    inputs:
-      buildType: 'current'
-      downloadType: 'single'
-      artifactName: 'models'
-      downloadPath: '$(System.ArtifactsDirectory)'
-
-  - task: AzureCLI@2
-    displayName: 'Synchronizing'
-    inputs:
-      azureSubscription: $(DMR_SERVICE_CONNECTION)
-      scriptType: bash
-      scriptLocation: inlineScript
-      inlineScript: |
-        set -e
-        echo "Extracting models content..."
-        mkdir "$MODELS_PATH/dtmi" && tar -xf "$MODELS_PATH/models.tar" -C "$MODELS_PATH/dtmi"
-
-        echo "Synchronizing models..."
-        az storage blob upload-batch -s "$MODELS_PATH/dtmi" -d '$web/dtmi' --account-name $DMR_STORAGE_ACCOUNT --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
-    env:
-      DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
-      MODELS_PATH: '$(System.ArtifactsDirectory)/models/'
 
 - job: 'sync_expanded_models'
   displayName: 'Sync expanded models'
