@@ -1,0 +1,73 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Settings;1",
+  "@type": "Interface",
+  "displayName": "Settings",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "operationMode",
+      "displayName": "Operation Mode",
+      "description": "Select the operating mode of the device from Normal Mode and Eco Mode.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+          "name": "normal",
+          "displayName": "Normal Mode",
+          "description": "This mode is designed for 24-hour operation, and can be set to pause mode once a day.",
+          "enumValue": 1
+          },
+          {
+          "name": "eco",
+          "displayName": "Eco Mode",
+          "description": "It is activated periodically to receive data. Since it is activated only when receiving data, there will be times when it cannot receive remote commands.",
+          "enumValue": 2
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ecoCollectionInterval",
+      "displayName": "Eco Mode Collection Interval",
+      "description": "Sets the data collection interval in Eco mode.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ecoCollectionTimeout",
+      "displayName": "Eco Mode Collection Timeout",
+      "description": "Sets the maximum time for data collection in Eco mode. When data has been collected, the program terminates immediately.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepEnabled",
+      "displayName": "Normal Mode Sleep Enabled",
+      "description": "Sets whether to use the sleep mode in normal mode.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepInTime",
+      "displayName": "Normal Mode Sleep In Time",
+      "description": "Sets the sleep start time in normal mode.",
+      "schema": "time",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepOutTime",
+      "displayName": "Normal Mode Sleep Out Time",
+      "description": "Sets the sleep end time in normal mode.",
+      "schema": "time",
+      "writable": true
+    }
+  ]
+}
