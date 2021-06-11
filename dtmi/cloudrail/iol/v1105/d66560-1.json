@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1105:D66560;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MIM Remote 2 inch",
+  "description": "magnetic inductive flow meter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "Volume_L",
+      "displayName": "Volume_L",
+      "schema": "double",
+      "unit": "litre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusOut1",
+      "displayName": "StatusOut1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusOut2",
+      "displayName": "StatusOut2",
+      "schema": "integer"
+    }
+  ]
+}

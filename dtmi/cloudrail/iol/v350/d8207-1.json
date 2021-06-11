@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D8207;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "O200.TL-GZZY.72NV/FIN2_KGDI",
+  "description": "Throughbeam Transmitter, Cable/Connector M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "DisableTransmitLED",
+              "displayName": "DisableTransmitLED",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

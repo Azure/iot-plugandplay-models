@@ -1,0 +1,119 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131849;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIP LD2-T017-01-EP00,5-S4",
+  "description": "Inductive Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TargetPosition",
+      "displayName": "TargetPosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionScale",
+      "displayName": "PositionScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemError",
+      "displayName": "SystemError",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoSystemError",
+            "enumValue": "NoSystemError"
+          },
+          {
+            "name": "SystemErrorOccured",
+            "enumValue": "SystemErrorOccured"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetVisibility",
+      "displayName": "TargetVisibility",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetIsVisible",
+            "enumValue": "TargetIsVisible"
+          },
+          {
+            "name": "NoTargetInSight",
+            "enumValue": "NoTargetInSight"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetOutofrange",
+      "displayName": "TargetOutofrange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetIsInMeasurementRange",
+            "enumValue": "TargetIsInMeasurementRange"
+          },
+          {
+            "name": "TargetIsOutOfMeasurementRange",
+            "enumValue": "TargetIsOutOfMeasurementRange"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4",
+      "displayName": "SSC4",
+      "schema": "dtmi:CloudRail:IOL:V888:D131849:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC3",
+      "displayName": "SSC3",
+      "schema": "dtmi:CloudRail:IOL:V888:D131849:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V888:D131849:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V888:D131849:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D131849:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

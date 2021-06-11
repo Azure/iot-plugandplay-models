@@ -1,0 +1,118 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D116;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AW001",
+  "description": "Inclination sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "AngleYVibrationAccelerationPeak_max_deg",
+      "displayName": "AngleYVibrationAccelerationPeak_max_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Mass"
+      ],
+      "name": "AngleYVibrationAccelerationPeak_max_mg",
+      "displayName": "AngleYVibrationAccelerationPeak_max_mg",
+      "schema": "double",
+      "unit": "milligram"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "AngleXEffectiveValueOfTheVibrationVelocity_deg",
+      "displayName": "AngleXEffectiveValueOfTheVibrationVelocity_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AngleXEffectiveValueOfTheVibrationVelocity_mmps",
+      "displayName": "AngleXEffectiveValueOfTheVibrationVelocity_mmps",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnosis",
+      "displayName": "Diagnosis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SelftestRunning",
+      "displayName": "SelftestRunning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VibrationMeasurement",
+      "displayName": "VibrationMeasurement",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V837:D116:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V837:D116:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D116:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

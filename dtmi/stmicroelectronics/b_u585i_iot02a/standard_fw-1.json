@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_fw;1",
+  "@type": "Interface",
+  "displayName": "B-U585I-IOT02A IoT Node 2 discovery kit.",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceinfo",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "std_comp",
+      "schema": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if;1"
+    }
+  ]
+}
+

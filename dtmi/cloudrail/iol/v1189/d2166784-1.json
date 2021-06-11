@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1189:D2166784;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TSD-30 xQ",
+  "description": "Temperature Switch Display",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V1189:D2166784:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V1189:D2166784:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1189:D2166784:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Q1On",
+          "enumValue": "Q1On"
+        },
+        {
+          "name": "Q1Off",
+          "enumValue": "Q1Off"
+        }
+      ]
+    }
+  ]
+}

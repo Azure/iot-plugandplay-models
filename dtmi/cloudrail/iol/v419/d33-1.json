@@ -1,0 +1,54 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D33;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "lpc+15/xxxCFF",
+  "description": "Ultrasonic sensor in M18 brass sleeve, 2 push-pull switching outputs, 20 - 250 mm measuring range, 20 mm blindzone, 150 mm operating range, temperature compensation",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel2State",
+      "displayName": "SwitchSignalChannel2State",
+      "schema": "dtmi:CloudRail:IOL:V419:D33:SwitchSignalChannelState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": "dtmi:CloudRail:IOL:V419:D33:SwitchSignalChannelState;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V419:D33:SwitchSignalChannelState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

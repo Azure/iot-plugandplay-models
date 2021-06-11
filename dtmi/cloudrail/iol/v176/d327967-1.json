@@ -1,0 +1,147 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D327967;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ELR H5-IES-PT/500AC-9-IOL",
+  "description": "Hybrid motor starter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ErrorDetection",
+      "displayName": "ErrorDetection",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ForwardRotation",
+      "displayName": "ForwardRotation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReverseRotation",
+      "displayName": "ReverseRotation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EnableSignal",
+      "displayName": "EnableSignal",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnostics",
+      "displayName": "Diagnostics",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceOK",
+      "displayName": "DeviceOK",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadPrewarning",
+      "displayName": "OverloadPrewarning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SetNominalCurrent015",
+      "displayName": "SetNominalCurrent015",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DifferentiatedTripIndicator",
+      "displayName": "DifferentiatedTripIndicator",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadAcknowledgmentNecessary",
+      "displayName": "OverloadAcknowledgmentNecessary",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaximumCurrentOfTheThreePhases",
+      "displayName": "MaximumCurrentOfTheThreePhases",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ModelOfTheThermalLoadTripAt115",
+      "displayName": "ModelOfTheThermalLoadTripAt115",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EquipmentType",
+      "displayName": "EquipmentType",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaximumCurrentWhichOccursInTheThreePhases",
+      "displayName": "MaximumCurrentWhichOccursInTheThreePhases",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "MotorStartforwardRunningStart",
+              "displayName": "MotorStartforwardRunningStart",
+              "schema": "integer"
+            },
+            {
+              "name": "ReverseRunningStart",
+              "displayName": "ReverseRunningStart",
+              "schema": "integer"
+            },
+            {
+              "name": "ManualReset",
+              "displayName": "ManualReset",
+              "schema": "integer"
+            },
+            {
+              "name": "AutomaticReset",
+              "displayName": "AutomaticReset",
+              "schema": "integer"
+            },
+            {
+              "name": "Stop",
+              "displayName": "Stop",
+              "schema": "integer"
+            },
+            {
+              "name": "ForwardRunningStart",
+              "displayName": "ForwardRunningStart",
+              "schema": "integer"
+            },
+            {
+              "name": "NominalCurrentSetting015",
+              "displayName": "NominalCurrentSetting015",
+              "schema": "long"
+            },
+            {
+              "name": "NominalCurrentSettingEnable",
+              "displayName": "NominalCurrentSettingEnable",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

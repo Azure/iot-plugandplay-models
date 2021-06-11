@@ -1,0 +1,161 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D131;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AV103",
+  "description": "IO-Link vibration sensor, -50...50 g",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "VRms_mps",
+      "displayName": "VRms_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VRms_mmps",
+      "displayName": "VRms_mmps",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VRms_inps",
+      "displayName": "VRms_inps",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "APeak_mps2",
+      "displayName": "APeak_mps2",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "APeak_g0",
+      "displayName": "APeak_g0",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "APeak_mg0",
+      "displayName": "APeak_mg0",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "ARms_mps2",
+      "displayName": "ARms_mps2",
+      "schema": "double",
+      "unit": "metrePerSecondSquared"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ARms_g0",
+      "displayName": "ARms_g0",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ARms_mg0",
+      "displayName": "ARms_mg0",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Crest",
+      "displayName": "Crest",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V837:D131:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V837:D131:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D131:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

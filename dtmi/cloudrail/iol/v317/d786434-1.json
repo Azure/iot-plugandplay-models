@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D786434;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Ri360P0-QR24-INCRX2-H1181",
+  "description": "Ri Position Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

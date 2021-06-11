@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1058622;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IMC18 Inductive proximity sensor",
+  "description": "Proximity sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput",
+      "displayName": "SwitchingOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ImpulseOutput",
+      "displayName": "ImpulseOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogueValue",
+      "displayName": "AnalogueValue",
+      "schema": "long"
+    }
+  ]
+}

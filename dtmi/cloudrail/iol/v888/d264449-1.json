@@ -1,0 +1,66 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D264449;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 08E-PI-KH22-xxx2-S49",
+  "description": "Background Suppression Sensor red light with connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Uncertainty",
+      "displayName": "Uncertainty",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

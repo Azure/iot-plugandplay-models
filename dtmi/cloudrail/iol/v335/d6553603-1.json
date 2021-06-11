@@ -1,0 +1,116 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V335:D6553603;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TMG Color 01",
+  "description": "Sample with TMG Stack and Stack Extensions",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "RedIntensity_pct",
+      "displayName": "RedIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GreenIntensity_pct",
+      "displayName": "GreenIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BlueIntensity_pct",
+      "displayName": "BlueIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ClearIntensity_pct",
+      "displayName": "ClearIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IRIntensity_pct",
+      "displayName": "IRIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Color1Detected",
+      "displayName": "Color1Detected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Color2Detected",
+      "displayName": "Color2Detected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Color3Detected",
+      "displayName": "Color3Detected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Color4Detected",
+      "displayName": "Color4Detected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AmbientLightAboveLimit",
+      "displayName": "AmbientLightAboveLimit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IRAboveLimit",
+      "displayName": "IRAboveLimit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAboveLimit",
+      "displayName": "TemperatureAboveLimit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDoutBitPin2",
+      "displayName": "PDoutBitPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Pin2",
+              "displayName": "Pin2",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

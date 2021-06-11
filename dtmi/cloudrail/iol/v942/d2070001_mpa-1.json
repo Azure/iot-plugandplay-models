@@ -1,0 +1,142 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V942:D2070001_MPA;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "x84 1/2 inch IEPS",
+  "description": "Excelon Plus B84 1/2 inch Filter Regulator c/w IEPS.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessPressureStatus",
+      "displayName": "ProcessPressureStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UNKNOWN",
+            "enumValue": "UNKNOWN"
+          },
+          {
+            "name": "NORMAL",
+            "enumValue": "NORMAL"
+          },
+          {
+            "name": "RATEDPRESSUREWARNING",
+            "enumValue": "RATEDPRESSUREWARNING"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessPressure_MPa",
+      "displayName": "ProcessPressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessPressure_bar",
+      "displayName": "ProcessPressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessPressure_psi",
+      "displayName": "ProcessPressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperatingTemperatureStatus",
+      "displayName": "OperatingTemperatureStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UNKNOWN",
+            "enumValue": "UNKNOWN"
+          },
+          {
+            "name": "NORMAL",
+            "enumValue": "NORMAL"
+          },
+          {
+            "name": "UNDERTEMPERATURE",
+            "enumValue": "UNDERTEMPERATURE"
+          },
+          {
+            "name": "OVERTEMPERATURE",
+            "enumValue": "OVERTEMPERATURE"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "OperatingTemperature_C",
+      "displayName": "OperatingTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "OperatingTemperature_F",
+      "displayName": "OperatingTemperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SupplyVoltageStatus",
+      "displayName": "SupplyVoltageStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UNKNOWN",
+            "enumValue": "UNKNOWN"
+          },
+          {
+            "name": "NORMAL",
+            "enumValue": "NORMAL"
+          },
+          {
+            "name": "UNDERVOLTAGE",
+            "enumValue": "UNDERVOLTAGE"
+          },
+          {
+            "name": "OVERVOLTAGE",
+            "enumValue": "OVERVOLTAGE"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "SupplyVoltage_V",
+      "displayName": "SupplyVoltage_V",
+      "schema": "double",
+      "unit": "volt"
+    }
+  ]
+}

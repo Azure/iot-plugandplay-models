@@ -1,0 +1,42 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1049344_DistanceSignalQuality;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VDM28-8-L1-Ix/xxxxxxxxxxxx122",
+  "description": "Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance14Bit",
+      "displayName": "Distance14Bit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Insufficient",
+            "enumValue": "Insufficient"
+          },
+          {
+            "name": "Acceptable",
+            "enumValue": "Acceptable"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          },
+          {
+            "name": "Excellent",
+            "enumValue": "Excellent"
+          }
+        ]
+      }
+    }
+  ]
+}

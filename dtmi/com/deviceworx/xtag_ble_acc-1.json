@@ -1,0 +1,228 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:deviceworx:xtag_ble_acc;1",
+  "@type": "Interface",
+  "displayName": "DeviceWorx xTAG BLE Acceleration Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "AutoStart",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "BatteryLevel",
+      "schema": "string",
+      "displayName": "Battery Level"
+    },
+    {
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "BatteryVolts",
+      "schema": "double",
+      "displayName": "Battery Voltage",
+      "unit": "volt"
+    },
+    {
+      "@type": "Property",
+      "name": "HWVer",
+      "schema": "double",
+      "displayName": "Hardware Version"
+    },
+    {
+      "@type": "Property",
+      "name": "OffTime",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "OffTresh",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "OnTresh",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "SensorID",
+      "schema": "string",
+      "displayName": "Sensor Identifier",
+      "description": "Identifier for the sensor instance."
+    },
+    {
+      "@type": "Property",
+      "name": "SWVer",
+      "schema": "double",
+      "displayName": "Software Version"
+    },
+    {
+      "@type": "Property",
+      "name": "ValueFld",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Cavg",
+      "schema": "double",
+      "displayName": "Acceleration Combined Average",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Cdel",
+      "schema": "double",
+      "displayName": "Acceleration Combined Delta",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Cmax",
+      "schema": "double",
+      "displayName": "Acceleration Combined Maximum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Cmin",
+      "schema": "double",
+      "displayName": "Acceleration Combined Minimum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Xavg",
+      "schema": "double",
+      "displayName": "Acceleration X Average",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Xdel",
+      "schema": "double",
+      "displayName": "Acceleration X Delta",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Xmax",
+      "schema": "double",
+      "displayName": "Acceleration X Maximum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Xmin",
+      "schema": "double",
+      "displayName": "Acceleration X Minimum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Yavg",
+      "schema": "double",
+      "displayName": "Acceleration Y Average",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Ydel",
+      "schema": "double",
+      "displayName": "Acceleration Y Delta",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Ymax",
+      "schema": "double",
+      "displayName": "Acceleration Y Maximum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Ymin",
+      "schema": "double",
+      "displayName": "Acceleration Y Minimum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Zavg",
+      "schema": "double",
+      "displayName": "Acceleration Z Average",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Zdel",
+      "schema": "double",
+      "displayName": "Acceleration Z Delta",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Zmax",
+      "schema": "double",
+      "displayName": "Acceleration Z Maximum",
+      "unit": "gForce"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "Zmin",
+      "schema": "double",
+      "displayName": "Acceleration Z Minimum",
+      "unit": "gForce"
+    }
+  ]
+}

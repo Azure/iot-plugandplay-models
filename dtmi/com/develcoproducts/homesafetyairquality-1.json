@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetyairquality;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Air Quality",
+  "description": "Home Safety Air Quality",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:airqualitysensor;1",
+      "name": "airquality1",
+      "displayName": "Air Quality Sensor",
+      "description": "Air Quality Sensor"
+    }
+  ]
+}

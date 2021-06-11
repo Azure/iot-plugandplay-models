@@ -1,0 +1,356 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ICA-16DIO-G60AL-IO",
+  "description": "I/O Hub, 16 digital input/output, M12 plug, 5-pin, supply M12 plug, L-coded.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX1APin4",
+      "displayName": "ChannelX1APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX2APin4",
+      "displayName": "ChannelX2APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX3APin4",
+      "displayName": "ChannelX3APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX4APin4",
+      "displayName": "ChannelX4APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX5APin4",
+      "displayName": "ChannelX5APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX6APin4",
+      "displayName": "ChannelX6APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX7APin4",
+      "displayName": "ChannelX7APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX8APin4",
+      "displayName": "ChannelX8APin4",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX1BPin2",
+      "displayName": "ChannelX1BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX2BPin2",
+      "displayName": "ChannelX2BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX3BPin2",
+      "displayName": "ChannelX3BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX4BPin2",
+      "displayName": "ChannelX4BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX5BPin2",
+      "displayName": "ChannelX5BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX6BPin2",
+      "displayName": "ChannelX6BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX7BPin2",
+      "displayName": "ChannelX7BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelX8BPin2",
+      "displayName": "ChannelX8BPin2",
+      "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UVUs",
+      "displayName": "UVUs",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UVUaux",
+      "displayName": "UVUaux",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OVLUs",
+      "displayName": "OVLUs",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OVLUaux",
+      "displayName": "OVLUaux",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelNumber",
+      "displayName": "ChannelNumber",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ModuleID",
+      "displayName": "ModuleID",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ParameterizationMODE",
+      "displayName": "ParameterizationMODE",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "User",
+            "enumValue": "User"
+          },
+          {
+            "name": "Default",
+            "enumValue": "Default"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ChannelX1APin4",
+              "displayName": "ChannelX1APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX2APin4",
+              "displayName": "ChannelX2APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX3APin4",
+              "displayName": "ChannelX3APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX4APin4",
+              "displayName": "ChannelX4APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX5APin4",
+              "displayName": "ChannelX5APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX6APin4",
+              "displayName": "ChannelX6APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX7APin4",
+              "displayName": "ChannelX7APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX8APin4",
+              "displayName": "ChannelX8APin4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1"
+            },
+            {
+              "name": "ChannelX1BPin2",
+              "displayName": "ChannelX1BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX2BPin2",
+              "displayName": "ChannelX2BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX3BPin2",
+              "displayName": "ChannelX3BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX4BPin2",
+              "displayName": "ChannelX4BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX5BPin2",
+              "displayName": "ChannelX5BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX6BPin2",
+              "displayName": "ChannelX6BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX7BPin2",
+              "displayName": "ChannelX7BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "ChannelX8BPin2",
+              "displayName": "ChannelX8BPin2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1"
+            },
+            {
+              "name": "FactoryResetRST",
+              "displayName": "FactoryResetRST",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Execute",
+                    "enumValue": "Execute"
+                  },
+                  {
+                    "name": "NoAction",
+                    "enumValue": "NoAction"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXAPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D983555_AlternativeAABB:ChannelXBPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

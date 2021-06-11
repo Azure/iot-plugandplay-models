@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V898:D70272;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BPS3000",
+  "description": "Electronic sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT2",
+      "displayName": "SwitchStatusOUT2",
+      "schema": "dtmi:CloudRail:IOL:V898:D70272:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": "dtmi:CloudRail:IOL:V898:D70272:SwitchStatusOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V898:D70272:SwitchStatusOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

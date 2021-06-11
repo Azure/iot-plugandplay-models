@@ -1,0 +1,184 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D2162689_ScanUserData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TN-M18-IOL-H1141",
+  "description": "RFID read write module 13.56MHz",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReadyFlag",
+      "displayName": "ReadyFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoResult",
+            "enumValue": "NoResult"
+          },
+          {
+            "name": "Ready",
+            "enumValue": "Ready"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Tag",
+      "displayName": "Tag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTag",
+            "enumValue": "NoTag"
+          },
+          {
+            "name": "TagInTheField",
+            "enumValue": "TagInTheField"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AntennaState",
+      "displayName": "AntennaState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AntennaOn",
+            "enumValue": "AntennaOn"
+          },
+          {
+            "name": "AntennaOff",
+            "enumValue": "AntennaOff"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtData",
+      "displayName": "ExtData",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ExtendedData",
+            "enumValue": "ExtendedData"
+          },
+          {
+            "name": "NoExtendedData",
+            "enumValue": "NoExtendedData"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Data0OrErrorCode",
+      "displayName": "Data0OrErrorCode",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Data1",
+      "displayName": "Data1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Data2",
+      "displayName": "Data2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Data3",
+      "displayName": "Data3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtendedData4",
+      "displayName": "ExtendedData4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtendedData5",
+      "displayName": "ExtendedData5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtendedData6",
+      "displayName": "ExtendedData6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtendedData7",
+      "displayName": "ExtendedData7",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AntennaState",
+              "displayName": "AntennaState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AntennaOff",
+                    "enumValue": "AntennaOff"
+                  },
+                  {
+                    "name": "AntennaOn",
+                    "enumValue": "AntennaOn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

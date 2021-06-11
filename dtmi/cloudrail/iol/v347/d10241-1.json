@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D10241;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 10-B-RLFx-PNSL-KM3",
+  "description": "6...15 mm, IN, Q1 Auto / PNP / NPN, pigtail 200 mm, M8, 3-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityBit",
+      "displayName": "SignalQualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    }
+  ]
+}

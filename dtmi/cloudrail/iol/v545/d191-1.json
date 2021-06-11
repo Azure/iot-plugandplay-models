@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D191;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KNS xxxxxxxxxxx3-xx",
+  "description": "capacitive proximity switch,flush,housing D6.5, M8 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

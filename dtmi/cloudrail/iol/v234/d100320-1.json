@@ -1,0 +1,233 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100320;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ECBPMi",
+  "description": "Electric pumps",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalH2PartPresent",
+      "displayName": "SignalH2PartPresent",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalH1InControlRange",
+      "displayName": "SignalH1InControlRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlMode",
+      "displayName": "ControlMode",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CMAutosetAcknowledged",
+      "displayName": "CMAutosetAcknowledged",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCSelectAcknowledged",
+      "displayName": "EPCSelectAcknowledged",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "EPCSelect0",
+            "enumValue": "EPCSelect0"
+          },
+          {
+            "name": "EPCSelect1",
+            "enumValue": "EPCSelect1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalH3PartDetached",
+      "displayName": "SignalH3PartDetached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsWorkingOptimally",
+            "enumValue": "DeviceIsWorkingOptimally"
+          },
+          {
+            "name": "DeviceIsWorkingButThereAreWarnings",
+            "enumValue": "DeviceIsWorkingButThereAreWarnings"
+          },
+          {
+            "name": "DeviceIsWorkingButThereAreSevereWarnings",
+            "enumValue": "DeviceIsWorkingButThereAreSevereWarnings"
+          },
+          {
+            "name": "DeviceIsNotWorkingProperly",
+            "enumValue": "DeviceIsNotWorkingProperly"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue1",
+      "displayName": "EPCValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue2",
+      "displayName": "EPCValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FreedriveDesired",
+      "displayName": "FreedriveDesired",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FreedriveActivated",
+      "displayName": "FreedriveActivated",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Vacuum",
+              "displayName": "Vacuum",
+              "schema": "integer"
+            },
+            {
+              "name": "Dropoff",
+              "displayName": "Dropoff",
+              "schema": "integer"
+            },
+            {
+              "name": "ControlMode",
+              "displayName": "ControlMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "SetpointForControl",
+                    "enumValue": "SetpointForControl"
+                  },
+                  {
+                    "name": "SpeedDemand",
+                    "enumValue": "SpeedDemand"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CMAutoset",
+              "displayName": "CMAutoset",
+              "schema": "integer"
+            },
+            {
+              "name": "EPCSelect",
+              "displayName": "EPCSelect",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EPCSelect0",
+                    "enumValue": "EPCSelect0"
+                  },
+                  {
+                    "name": "EPCSelect1",
+                    "enumValue": "EPCSelect1"
+                  },
+                  {
+                    "name": "EPCSelect2",
+                    "enumValue": "EPCSelect2"
+                  },
+                  {
+                    "name": "EPCSelect3",
+                    "enumValue": "EPCSelect3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ProfileSet",
+              "displayName": "ProfileSet",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ProfileSetupP0",
+                    "enumValue": "ProfileSetupP0"
+                  },
+                  {
+                    "name": "ProfileSetupP1",
+                    "enumValue": "ProfileSetupP1"
+                  },
+                  {
+                    "name": "ProfileSetupP2",
+                    "enumValue": "ProfileSetupP2"
+                  },
+                  {
+                    "name": "ProfileSetupP3",
+                    "enumValue": "ProfileSetupP3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "VacuumDemandSetpointForControl",
+              "displayName": "VacuumDemandSetpointForControl",
+              "schema": "long"
+            },
+            {
+              "name": "SetpointH2Demand",
+              "displayName": "SetpointH2Demand",
+              "schema": "long"
+            },
+            {
+              "name": "EnableFreedrive",
+              "displayName": "EnableFreedrive",
+              "schema": "integer"
+            },
+            {
+              "name": "SetErrorRobot",
+              "displayName": "SetErrorRobot",
+              "schema": "integer"
+            },
+            {
+              "name": "SetWarningRobot",
+              "displayName": "SetWarningRobot",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

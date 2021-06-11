@@ -1,0 +1,82 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D131074_DistanceAndExcessGainWithBinaryData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "T30R-1515-KxQP",
+  "description": "Radar Measurement Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "DistanceMeasurementValue_m",
+      "displayName": "DistanceMeasurementValue_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessGainMeasurementValue",
+      "displayName": "ExcessGainMeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTargetOrMarginal",
+            "enumValue": "NoTargetOrMarginal"
+          },
+          {
+            "name": "Valid",
+            "enumValue": "Valid"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1State",
+      "displayName": "BDC1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AO1State",
+      "displayName": "AO1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}
