@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D999999;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RU10U-M8M...",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 10 cm\r\nM8 housing \r\n1 switching output",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

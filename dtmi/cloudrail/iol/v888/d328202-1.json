@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328202;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-730-002-E023",
+  "description": "Analog Converter with 1 x M12 port, input and output (configurable for voltage, current, Pt100 and Pt1000, TypJ and TypK), stainless steel housing",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue",
+      "displayName": "AnalogValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "dtmi:CloudRail:IOL:V888:D328202:SwitchPoint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328202:SwitchPoint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Wirebreak",
+      "displayName": "Wirebreak",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Underflow",
+      "displayName": "Underflow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overflow",
+      "displayName": "Overflow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AnalogValue",
+              "displayName": "AnalogValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328202:SwitchPoint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

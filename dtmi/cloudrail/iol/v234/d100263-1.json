@@ -1,0 +1,450 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100263;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SCTSi-IOL_12",
+  "description": "SCTSi IOL 12 Ejectors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "NumberOfDeviceWhichGeneratedAConditionMonitoringOrErrorEvent",
+      "displayName": "NumberOfDeviceWhichGeneratedAConditionMonitoringOrErrorEvent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCSelectAcknowledged",
+      "displayName": "EPCSelectAcknowledged",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "EPCSelect0",
+            "enumValue": "EPCSelect0"
+          },
+          {
+            "name": "EPCSelect1",
+            "enumValue": "EPCSelect1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsWorkingOptimally",
+            "enumValue": "DeviceIsWorkingOptimally"
+          },
+          {
+            "name": "DeviceIsWorkingMaintenanceNecessary",
+            "enumValue": "DeviceIsWorkingMaintenanceNecessary"
+          },
+          {
+            "name": "DeviceIsWorkingButThereAreWarningsInTheControlUnit",
+            "enumValue": "DeviceIsWorkingButThereAreWarningsInTheControlUnit"
+          },
+          {
+            "name": "DeviceIsNotWorkingProperlyThereAreErrorsInTheControlUnit",
+            "enumValue": "DeviceIsNotWorkingProperlyThereAreErrorsInTheControlUnit"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue1",
+      "displayName": "EPCValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue2High",
+      "displayName": "EPCValue2High",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue2Low",
+      "displayName": "EPCValue2Low",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector1",
+      "displayName": "AirSavingFunctionH1Ejector1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector1",
+      "displayName": "PartPresentH2Ejector1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector2",
+      "displayName": "AirSavingFunctionH1Ejector2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector2",
+      "displayName": "PartPresentH2Ejector2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector3",
+      "displayName": "AirSavingFunctionH1Ejector3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector3",
+      "displayName": "PartPresentH2Ejector3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector4",
+      "displayName": "AirSavingFunctionH1Ejector4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector4",
+      "displayName": "PartPresentH2Ejector4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector5",
+      "displayName": "AirSavingFunctionH1Ejector5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector5",
+      "displayName": "PartPresentH2Ejector5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector6",
+      "displayName": "AirSavingFunctionH1Ejector6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector6",
+      "displayName": "PartPresentH2Ejector6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector7",
+      "displayName": "AirSavingFunctionH1Ejector7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector7",
+      "displayName": "PartPresentH2Ejector7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector8",
+      "displayName": "AirSavingFunctionH1Ejector8",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector8",
+      "displayName": "PartPresentH2Ejector8",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector9",
+      "displayName": "AirSavingFunctionH1Ejector9",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector9",
+      "displayName": "PartPresentH2Ejector9",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector10",
+      "displayName": "AirSavingFunctionH1Ejector10",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector10",
+      "displayName": "PartPresentH2Ejector10",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector11",
+      "displayName": "AirSavingFunctionH1Ejector11",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector11",
+      "displayName": "PartPresentH2Ejector11",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AirSavingFunctionH1Ejector12",
+      "displayName": "AirSavingFunctionH1Ejector12",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2Ejector12",
+      "displayName": "PartPresentH2Ejector12",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "NumberOfDeviceWhichWillSendEPCData",
+              "displayName": "NumberOfDeviceWhichWillSendEPCData",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ControlUnit",
+                    "enumValue": "ControlUnit"
+                  },
+                  {
+                    "name": "Ejector1",
+                    "enumValue": "Ejector1"
+                  },
+                  {
+                    "name": "Ejector2",
+                    "enumValue": "Ejector2"
+                  },
+                  {
+                    "name": "Ejector3",
+                    "enumValue": "Ejector3"
+                  },
+                  {
+                    "name": "Ejector4",
+                    "enumValue": "Ejector4"
+                  },
+                  {
+                    "name": "Ejector5",
+                    "enumValue": "Ejector5"
+                  },
+                  {
+                    "name": "Ejector6",
+                    "enumValue": "Ejector6"
+                  },
+                  {
+                    "name": "Ejector7",
+                    "enumValue": "Ejector7"
+                  },
+                  {
+                    "name": "Ejector8",
+                    "enumValue": "Ejector8"
+                  },
+                  {
+                    "name": "Ejector9",
+                    "enumValue": "Ejector9"
+                  },
+                  {
+                    "name": "Ejector10",
+                    "enumValue": "Ejector10"
+                  },
+                  {
+                    "name": "Ejector11",
+                    "enumValue": "Ejector11"
+                  },
+                  {
+                    "name": "Ejector12",
+                    "enumValue": "Ejector12"
+                  },
+                  {
+                    "name": "Ejector13",
+                    "enumValue": "Ejector13"
+                  },
+                  {
+                    "name": "Ejector14",
+                    "enumValue": "Ejector14"
+                  },
+                  {
+                    "name": "Ejector15",
+                    "enumValue": "Ejector15"
+                  },
+                  {
+                    "name": "Ejector16",
+                    "enumValue": "Ejector16"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "EPCSelect0",
+              "displayName": "EPCSelect0",
+              "schema": "integer"
+            },
+            {
+              "name": "EPCSelect1",
+              "displayName": "EPCSelect1",
+              "schema": "integer"
+            },
+            {
+              "name": "InputPressure",
+              "displayName": "InputPressure",
+              "schema": "long"
+            },
+            {
+              "name": "VacuumEjector1",
+              "displayName": "VacuumEjector1",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector1",
+              "displayName": "BlowOffEjector1",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector2",
+              "displayName": "VacuumEjector2",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector2",
+              "displayName": "BlowOffEjector2",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector3",
+              "displayName": "VacuumEjector3",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector3",
+              "displayName": "BlowOffEjector3",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector4",
+              "displayName": "VacuumEjector4",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector4",
+              "displayName": "BlowOffEjector4",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector5",
+              "displayName": "VacuumEjector5",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector5",
+              "displayName": "BlowOffEjector5",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector6",
+              "displayName": "VacuumEjector6",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector6",
+              "displayName": "BlowOffEjector6",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector7",
+              "displayName": "VacuumEjector7",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector7",
+              "displayName": "BlowOffEjector7",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector8",
+              "displayName": "VacuumEjector8",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector8",
+              "displayName": "BlowOffEjector8",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector9",
+              "displayName": "VacuumEjector9",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector9",
+              "displayName": "BlowOffEjector9",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector10",
+              "displayName": "VacuumEjector10",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector10",
+              "displayName": "BlowOffEjector10",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector11",
+              "displayName": "VacuumEjector11",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector11",
+              "displayName": "BlowOffEjector11",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumEjector12",
+              "displayName": "VacuumEjector12",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOffEjector12",
+              "displayName": "BlowOffEjector12",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

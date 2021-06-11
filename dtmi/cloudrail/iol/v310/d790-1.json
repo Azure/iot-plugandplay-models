@@ -1,0 +1,107 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D790;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AL2411",
+  "description": "IO-Link module 8 DI IP67, IO-Link, ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "X17I1",
+      "displayName": "X17I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X16I1",
+      "displayName": "X16I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X15I1",
+      "displayName": "X15I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X14I1",
+      "displayName": "X14I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X13I1",
+      "displayName": "X13I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X12I1",
+      "displayName": "X12I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X11I1",
+      "displayName": "X11I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X10I1",
+      "displayName": "X10I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX14X17",
+      "displayName": "SCX14X17",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:SCXX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX10X13",
+      "displayName": "SCX10X13",
+      "schema": "dtmi:CloudRail:IOL:V310:D790:SCXX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EquipmentSpecificId",
+      "displayName": "EquipmentSpecificId",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D790:XI;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D790:SCXX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OK",
+          "enumValue": "OK"
+        },
+        {
+          "name": "ShortCircuit",
+          "enumValue": "ShortCircuit"
+        }
+      ]
+    }
+  ]
+}

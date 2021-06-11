@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D65807;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PS400R-xxxA4-LI2UPN8X-H1141/xxxx",
+  "description": "Measuring range: 0...400 bar/0...5801,5 psi Admissable rel. press.: 900 bar/13053,4 psi\r\nOutputs: 1 switching output (pnp/npn) and 1 additional switching output (pnp/npn) oder analog output (voltage/current)\r\nHousing/pressure connection: G1/4\"-female thread, stainless steel",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_MPa",
+      "displayName": "ProcessValue_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_bar",
+      "displayName": "ProcessValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_psi",
+      "displayName": "ProcessValue_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_kgpcm2",
+      "displayName": "ProcessValue_kgpcm2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "dtmi:CloudRail:IOL:V317:D65807:SwitchingOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "dtmi:CloudRail:IOL:V317:D65807:SwitchingOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V317:D65807:SwitchingOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Closed",
+          "enumValue": "Closed"
+        },
+        {
+          "name": "Open",
+          "enumValue": "Open"
+        }
+      ]
+    }
+  ]
+}

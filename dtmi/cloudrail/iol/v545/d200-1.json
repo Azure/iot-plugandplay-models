@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D200;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "US12 M150 FB G3-B4",
+  "description": "0mm - 150mm, Push-pull, IO-Link, M12",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

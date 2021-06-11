@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V793:D3210081;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MEx-ExxAIOL/H50-KLx,3S12",
+  "description": "IOLink sensor for magnetic fields, scaleable linear output, C notch, width 3.7mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

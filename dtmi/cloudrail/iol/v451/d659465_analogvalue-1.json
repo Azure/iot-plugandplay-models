@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D659465_AnalogValue;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "S15C-x",
+  "description": "Analog to IO-Link converter - Current",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "MeasurementValue_A",
+      "displayName": "MeasurementValue_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "MeasurementValue_V",
+      "displayName": "MeasurementValue_V",
+      "schema": "double",
+      "unit": "volt"
+    }
+  ]
+}

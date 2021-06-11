@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393224_LevelMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WLS15PXRGBxxx0DSKQP",
+  "description": "Work light strip, 15 mm tall, Pro, non-cascadable, indication, 220 mm length, diffuse, sealed, IO-Link, Euro 4-pin 150 mm (6 in) PVC Pigtail",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LevelModeValue",
+              "displayName": "LevelModeValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

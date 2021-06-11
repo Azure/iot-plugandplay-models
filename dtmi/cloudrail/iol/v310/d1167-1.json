@@ -1,0 +1,111 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1167;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DP2122_FREQ",
+  "description": "Speed Monitor, 0.0...2000.0 Hz, 1 x Input",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Frequency"
+      ],
+      "name": "Speed_Hz",
+      "displayName": "Speed_Hz",
+      "schema": "double",
+      "unit": "hertz"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2SSC2",
+      "displayName": "OUT2SSC2",
+      "schema": "dtmi:CloudRail:IOL:V310:D1167:OUTSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1SSC1",
+      "displayName": "OUT1SSC1",
+      "schema": "dtmi:CloudRail:IOL:V310:D1167:OUTSSC;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SpeedMonInactive",
+              "displayName": "SpeedMonInactive",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1167:OUTSSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

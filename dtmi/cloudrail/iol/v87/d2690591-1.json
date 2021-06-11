@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D2690591;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1NH308",
+  "description": "Reflex Sensor with Background Suppression",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "A1Output",
+      "displayName": "A1Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D2690591:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "A2Output",
+      "displayName": "A2Output",
+      "schema": "dtmi:CloudRail:IOL:V87:D2690591:AOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoSignal",
+      "displayName": "NoSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overtemperature",
+      "displayName": "Overtemperature",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Signal",
+      "displayName": "Signal",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V87:D2690591:AOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

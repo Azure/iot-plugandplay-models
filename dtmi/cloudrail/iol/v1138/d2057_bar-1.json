@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1138:D2057_Bar;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P42R1",
+  "description": "Pressure Transmitter 0..0,2bar Relativ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1State",
+      "displayName": "Switch1State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    }
+  ]
+}

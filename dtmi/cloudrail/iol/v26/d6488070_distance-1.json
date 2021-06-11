@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D6488070_Distance;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Dx35-B1xxxxS0x",
+  "description": "1057654 (DS35-B15521 DS35-DR35)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

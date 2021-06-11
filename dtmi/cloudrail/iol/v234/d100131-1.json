@@ -1,0 +1,169 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100131;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SNG-AE",
+  "description": "Needle gripper SNG-AE",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "NeedlesInPosition",
+      "displayName": "NeedlesInPosition",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NeedlesInHomePosition",
+      "displayName": "NeedlesInHomePosition",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NeedlesMoving",
+      "displayName": "NeedlesMoving",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Calibration",
+      "displayName": "Calibration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCSelectAcknowledged",
+      "displayName": "EPCSelectAcknowledged",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Unknown",
+            "enumValue": "Unknown"
+          },
+          {
+            "name": "GreenDeviceIsWorkingOptimally",
+            "enumValue": "GreenDeviceIsWorkingOptimally"
+          },
+          {
+            "name": "YellowDeviceIsWorkingButThereAreWarnings",
+            "enumValue": "YellowDeviceIsWorkingButThereAreWarnings"
+          },
+          {
+            "name": "RedDeviceIsNotWorkingProperlyThereAreErrors",
+            "enumValue": "RedDeviceIsNotWorkingProperlyThereAreErrors"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue1MultipurposeDataByte",
+      "displayName": "EPCValue1MultipurposeDataByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EPCValue2MultipurposeDataWord",
+      "displayName": "EPCValue2MultipurposeDataWord",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "GoToPosition",
+              "displayName": "GoToPosition",
+              "schema": "integer"
+            },
+            {
+              "name": "GoToHomePosition",
+              "displayName": "GoToHomePosition",
+              "schema": "integer"
+            },
+            {
+              "name": "MoveEnable",
+              "displayName": "MoveEnable",
+              "schema": "integer"
+            },
+            {
+              "name": "PerformCalibration",
+              "displayName": "PerformCalibration",
+              "schema": "integer"
+            },
+            {
+              "name": "EPCSelect",
+              "displayName": "EPCSelect",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EPCValues1Speed2Position",
+                    "enumValue": "EPCValues1Speed2Position"
+                  },
+                  {
+                    "name": "EPCValues1CMWarnings2Temperature",
+                    "enumValue": "EPCValues1CMWarnings2Temperature"
+                  },
+                  {
+                    "name": "EPCValues1Empty2TotalMovementTime",
+                    "enumValue": "EPCValues1Empty2TotalMovementTime"
+                  },
+                  {
+                    "name": "EPCValues1SupplyVoltageEnergyConsumption",
+                    "enumValue": "EPCValues1SupplyVoltageEnergyConsumption"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ProductionProfile",
+              "displayName": "ProductionProfile",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ProductionProfileP0",
+                    "enumValue": "ProductionProfileP0"
+                  },
+                  {
+                    "name": "ProductionProfileP1",
+                    "enumValue": "ProductionProfileP1"
+                  },
+                  {
+                    "name": "ProductionProfileP2",
+                    "enumValue": "ProductionProfileP2"
+                  },
+                  {
+                    "name": "ProductionProfileP3",
+                    "enumValue": "ProductionProfileP3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Position",
+              "displayName": "Position",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

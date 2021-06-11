@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1073:D2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "cynapse",
+  "description": "Product Insights",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PeakToPeakTangential",
+      "displayName": "PeakToPeakTangential",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PeakToPeakAxial",
+      "displayName": "PeakToPeakAxial",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PeakToPeakRadial",
+      "displayName": "PeakToPeakRadial",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSTangential",
+      "displayName": "RMSTangential",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSAxial",
+      "displayName": "RMSAxial",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSRadial",
+      "displayName": "RMSRadial",
+      "schema": "long"
+    }
+  ]
+}

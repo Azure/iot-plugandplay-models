@@ -1,0 +1,83 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D417;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "JN2201",
+  "description": "Inclination sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "AngleY_deg",
+      "displayName": "AngleY_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "AngleX_deg",
+      "displayName": "AngleX_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnosis",
+      "displayName": "Diagnosis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SelftestRunning",
+      "displayName": "SelftestRunning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D417:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D417:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D417:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

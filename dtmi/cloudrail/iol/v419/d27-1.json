@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D27;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "sks-15/CF",
+  "description": "Ultrasonic proximity switch with 1 push-pull switched output, loadable to 100 mA, 150 mm operating range.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProzessData",
+      "displayName": "ProzessData",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatus",
+      "displayName": "SwitchingStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotConnected",
+            "enumValue": "NotConnected"
+          },
+          {
+            "name": "Connected",
+            "enumValue": "Connected"
+          }
+        ]
+      }
+    }
+  ]
+}

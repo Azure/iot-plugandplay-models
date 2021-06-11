@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1049346_Distance;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VDM28-15-L1-IO/xxx/11xxxx22",
+  "description": "Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

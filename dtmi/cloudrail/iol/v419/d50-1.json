@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D50;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "mic+25/F/TC    ",
+  "description": "Ultrasonic sensor in M30 brass sleeve with digital display, 1 push-pull switching output, 30 - 350 mm measuring range, 30 mm blindzone, 250 mm operating range, temperature compensation.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

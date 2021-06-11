@@ -1,0 +1,233 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V796:D314;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Vaccuum Ejector",
+  "description": "Standard product",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PPPartPresentVacLevelAchieved",
+      "displayName": "PPPartPresentVacLevelAchieved",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ESEnergySavingVacLevelAchieved",
+      "displayName": "ESEnergySavingVacLevelAchieved",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LWLeakageWarning",
+      "displayName": "LWLeakageWarning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BOCBlowOffComplete",
+      "displayName": "BOCBlowOffComplete",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AFCAutomatedFunctionComplete",
+      "displayName": "AFCAutomatedFunctionComplete",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VacuumLevel",
+      "displayName": "VacuumLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemVoltage",
+      "displayName": "SystemVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemTemperature",
+      "displayName": "SystemTemperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "VacuumOn",
+              "displayName": "VacuumOn",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "VacuumOn",
+                    "enumValue": "VacuumOn"
+                  },
+                  {
+                    "name": "VacuumOff",
+                    "enumValue": "VacuumOff"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BlowOffOn",
+              "displayName": "BlowOffOn",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "BlowOffOn",
+                    "enumValue": "BlowOffOn"
+                  },
+                  {
+                    "name": "BlowOffOff",
+                    "enumValue": "BlowOffOff"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DisableES",
+              "displayName": "DisableES",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableES",
+                    "enumValue": "DisableES"
+                  },
+                  {
+                    "name": "ESActive",
+                    "enumValue": "ESActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DisableAutomaticBlowOffATBOIBO",
+              "displayName": "DisableAutomaticBlowOffATBOIBO",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableAutomaticBlowOff",
+                    "enumValue": "DisableAutomaticBlowOff"
+                  },
+                  {
+                    "name": "AutomaticBlowOffActive",
+                    "enumValue": "AutomaticBlowOffActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DisableACM",
+              "displayName": "DisableACM",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableACM",
+                    "enumValue": "DisableACM"
+                  },
+                  {
+                    "name": "ACMActive",
+                    "enumValue": "ACMActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "VacuumOnComplementBit",
+              "displayName": "VacuumOnComplementBit",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ComplementBitHigh",
+                    "enumValue": "ComplementBitHigh"
+                  },
+                  {
+                    "name": "ComplementBitLow",
+                    "enumValue": "ComplementBitLow"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ActivateSystemSelfcheck",
+              "displayName": "ActivateSystemSelfcheck",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "RunSystemSelfcheckOnce",
+                    "enumValue": "RunSystemSelfcheckOnce"
+                  },
+                  {
+                    "name": "Disable",
+                    "enumValue": "Disable"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ActivatePressureSensorCalibration",
+              "displayName": "ActivatePressureSensorCalibration",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "RunPressureSensorCalibrationOnce",
+                    "enumValue": "RunPressureSensorCalibrationOnce"
+                  },
+                  {
+                    "name": "Disable",
+                    "enumValue": "Disable"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ResetSelfcheckParameters",
+              "displayName": "ResetSelfcheckParameters",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ResetSelfcheckParametersAndCounters",
+                    "enumValue": "ResetSelfcheckParametersAndCounters"
+                  },
+                  {
+                    "name": "NoReset",
+                    "enumValue": "NoReset"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

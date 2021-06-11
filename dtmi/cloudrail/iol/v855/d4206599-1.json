@@ -1,0 +1,254 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D4206599;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ECG-BNNN30-LK[PIO MODE(VSGL)]",
+  "description": "https://www.ckd.co.jp/",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointNumber1TravelComplete",
+      "displayName": "StatusPointNumber1TravelComplete",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusPointNumberTravelComplete;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointNumber2TravelComplete",
+      "displayName": "StatusPointNumber2TravelComplete",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusPointNumberTravelComplete;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusSwitch1",
+      "displayName": "StatusSwitch1",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusSwitch2",
+      "displayName": "StatusSwitch2",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusSelectionOutput1PointZoneZone1Zone2TravelingWarning",
+      "displayName": "StatusSelectionOutput1PointZoneZone1Zone2TravelingWarning",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusSelectionOutputPointZoneZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusSelectionOutput2PointZoneZone1Zone2TravelingWarning",
+      "displayName": "StatusSelectionOutput2PointZoneZone1Zone2TravelingWarning",
+      "schema": "dtmi:CloudRail:IOL:V855:D4206599:StatusSelectionOutputPointZoneZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusHomePositionReturnComplete",
+      "displayName": "StatusHomePositionReturnComplete",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusServoON",
+      "displayName": "StatusServoON",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusAlarm",
+      "displayName": "StatusAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusReady",
+      "displayName": "StatusReady",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SolenoidValve2TravelCommand",
+              "displayName": "SolenoidValve2TravelCommand",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "HomePositionReturnStart",
+              "displayName": "HomePositionReturnStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ServoON",
+              "displayName": "ServoON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AlarmReset",
+              "displayName": "AlarmReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D4206599:StatusPointNumberTravelComplete;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D4206599:StatusSwitch;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D4206599:StatusSelectionOutputPointZoneZone;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

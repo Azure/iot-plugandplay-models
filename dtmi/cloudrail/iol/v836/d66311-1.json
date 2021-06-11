@@ -1,0 +1,96 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V836:D66311;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "GED6140IL-03-A",
+  "description": "gripper el.: 40mm-stroke per jaw",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Statusword",
+      "displayName": "Statusword",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnose",
+      "displayName": "Diagnose",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualPosition",
+      "displayName": "ActualPosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Controlword",
+              "displayName": "Controlword",
+              "schema": "long"
+            },
+            {
+              "name": "DeviceMode",
+              "displayName": "DeviceMode",
+              "schema": "long"
+            },
+            {
+              "name": "WorkpieceNo",
+              "displayName": "WorkpieceNo",
+              "schema": "long"
+            },
+            {
+              "name": "Reserve",
+              "displayName": "Reserve",
+              "schema": "long"
+            },
+            {
+              "name": "PositionTolerance",
+              "displayName": "PositionTolerance",
+              "schema": "long"
+            },
+            {
+              "name": "GripForce",
+              "displayName": "GripForce",
+              "schema": "long"
+            },
+            {
+              "name": "DriveVelocity",
+              "displayName": "DriveVelocity",
+              "schema": "long"
+            },
+            {
+              "name": "BasePosition",
+              "displayName": "BasePosition",
+              "schema": "long"
+            },
+            {
+              "name": "ShiftPosition",
+              "displayName": "ShiftPosition",
+              "schema": "long"
+            },
+            {
+              "name": "TeachPosition",
+              "displayName": "TeachPosition",
+              "schema": "long"
+            },
+            {
+              "name": "WorkPosition",
+              "displayName": "WorkPosition",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
