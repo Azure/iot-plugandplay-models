@@ -9,7 +9,7 @@
       "@type": "Property",
       "name": "sn",
       "displayName": "Device SN",
-      "description": "Device Serials Number.ex S202104150006.",
+      "description": "Device Serials Number.ex S202104150007.",
       "schema": "string"
     },
     {
