@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D376;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TD2xx3",
+  "description": "Measured signal converter for temperature sensors, 0...300 °F, Length 30 mm, Process connector 1.5'' Tri-Clamp",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

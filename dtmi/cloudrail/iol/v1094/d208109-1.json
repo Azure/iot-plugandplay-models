@@ -1,0 +1,50 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1094:D208109;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LPS 4.0 120 IO 4-20mA",
+  "description": "1x Analog (I/U), IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1OnlyIOLink",
+      "displayName": "SwitchingSignal1OnlyIOLink",
+      "schema": "dtmi:CloudRail:IOL:V1094:D208109:SwitchingSignalOnlyIOLink;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2OnlyIOLink",
+      "displayName": "SwitchingSignal2OnlyIOLink",
+      "schema": "dtmi:CloudRail:IOL:V1094:D208109:SwitchingSignalOnlyIOLink;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal3OnlyIOLink",
+      "displayName": "SwitchingSignal3OnlyIOLink",
+      "schema": "dtmi:CloudRail:IOL:V1094:D208109:SwitchingSignalOnlyIOLink;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1094:D208109:SwitchingSignalOnlyIOLink;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

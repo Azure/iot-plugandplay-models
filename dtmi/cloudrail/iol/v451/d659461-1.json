@@ -1,0 +1,149 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D659461;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "S15C-MGP-KQ",
+  "description": "S15C-MGP-KQ with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "RegisterSetToRead",
+      "displayName": "RegisterSetToRead",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RegisterReadSuccessful",
+      "displayName": "RegisterReadSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterValue",
+      "displayName": "CounterValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister01Value",
+      "displayName": "ReadSetRegister01Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister02Value",
+      "displayName": "ReadSetRegister02Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister03Value",
+      "displayName": "ReadSetRegister03Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister04Value",
+      "displayName": "ReadSetRegister04Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister05Value",
+      "displayName": "ReadSetRegister05Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister06Value",
+      "displayName": "ReadSetRegister06Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister07Value",
+      "displayName": "ReadSetRegister07Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister08Value",
+      "displayName": "ReadSetRegister08Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister09Value",
+      "displayName": "ReadSetRegister09Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister10Value",
+      "displayName": "ReadSetRegister10Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister11Value",
+      "displayName": "ReadSetRegister11Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister12Value",
+      "displayName": "ReadSetRegister12Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister13Value",
+      "displayName": "ReadSetRegister13Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister14Value",
+      "displayName": "ReadSetRegister14Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister15Value",
+      "displayName": "ReadSetRegister15Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "RegisterSetToRead",
+              "displayName": "RegisterSetToRead",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

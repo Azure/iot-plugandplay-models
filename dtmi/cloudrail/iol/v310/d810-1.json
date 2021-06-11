@@ -1,0 +1,89 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D810;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "O1D106",
+  "description": "Photoelectric sensor, 1...75 m",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_m",
+      "displayName": "Distance_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_ft",
+      "displayName": "Distance_ft",
+      "schema": "double",
+      "unit": "foot"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D810:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D810:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D810:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388784_AFCCounter;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WFxx0-x0B41CA71",
+  "description": "Fork sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QO1ATFQ1Output",
+      "displayName": "QO1ATFQ1Output",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388784_AFCCounter:QOATFQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QO2ATFQ2Output",
+      "displayName": "QO2ATFQ2Output",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388784_AFCCounter:QOATFQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterValue",
+      "displayName": "CounterValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388784_AFCCounter:QOATFQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SwitchClosed",
+          "enumValue": "SwitchClosed"
+        },
+        {
+          "name": "SwitchOpen",
+          "enumValue": "SwitchOpen"
+        }
+      ]
+    }
+  ]
+}

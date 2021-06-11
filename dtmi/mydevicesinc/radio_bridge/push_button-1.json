@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:radio_bridge:push_button;1",
+  "@type": "Interface",
+  "displayName": "Radio Bridge Button",
+  "description": "Push button - one single button",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Button1",
+      "description": "Button1",
+      "name": "channel_41",
+      "schema": "integer"
+    }
+  ]
+}

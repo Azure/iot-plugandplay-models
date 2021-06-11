@@ -1,0 +1,155 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2510;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IGSU14E/LWT.3-M12V",
+  "description": "Label Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SSC1Low",
+            "enumValue": "SSC1Low"
+          },
+          {
+            "name": "SSC1High",
+            "enumValue": "SSC1High"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementAndEvaluation",
+      "displayName": "MeasurementAndEvaluation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TeachDeactivationOrRunupInProgress",
+            "enumValue": "TeachDeactivationOrRunupInProgress"
+          },
+          {
+            "name": "MeasurementevaluationInProgress",
+            "enumValue": "MeasurementevaluationInProgress"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NOMeasuredValueAvailable",
+            "enumValue": "NOMeasuredValueAvailable"
+          },
+          {
+            "name": "ValidMeasuredValueAvailable",
+            "enumValue": "ValidMeasuredValueAvailable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NOWarning",
+            "enumValue": "NOWarning"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachTerminateFlag",
+      "displayName": "TeachTerminateFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TeachRunnigOrNotStarted",
+            "enumValue": "TeachRunnigOrNotStarted"
+          },
+          {
+            "name": "TeachTerminated",
+            "enumValue": "TeachTerminated"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AutoLevelControlState",
+      "displayName": "AutoLevelControlState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AutoLevelControlIsInactive",
+            "enumValue": "AutoLevelControlIsInactive"
+          },
+          {
+            "name": "AutoLevelControlIsActive",
+            "enumValue": "AutoLevelControlIsActive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableRequestInactive",
+                    "enumValue": "DisableRequestInactive"
+                  },
+                  {
+                    "name": "DisableRequestActive",
+                    "enumValue": "DisableRequestActive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

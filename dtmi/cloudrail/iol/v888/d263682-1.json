@@ -1,0 +1,85 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263682;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 18E-PI-PR30-S4",
+  "description": "Retroreflective sensor red light",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorDefect",
+      "displayName": "SensorDefect",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

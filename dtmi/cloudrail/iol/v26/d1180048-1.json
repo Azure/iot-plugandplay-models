@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1180048;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MPA-xxxxxxxx0",
+  "description": "Magnetic Cylinder Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionDecimalPlace",
+      "displayName": "PositionDecimalPlace",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionIntergerPlace",
+      "displayName": "PositionIntergerPlace",
+      "schema": "long"
+    }
+  ]
+}

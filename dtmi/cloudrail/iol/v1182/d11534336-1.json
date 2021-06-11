@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1182:D11534336;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MCUT-E 1-Ch. Universal Transmitter with Limit Switch",
+  "description": "Universal Input with Limit Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Input_1",
+      "displayName": "Input_1",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_C",
+      "displayName": "HeadTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverloadSwitchoff",
+      "displayName": "OverloadSwitchoff",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Signal05",
+      "displayName": "Signal05",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorStressed100",
+      "displayName": "SensorStressed100",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeadTemperature85C",
+      "displayName": "HeadTemperature85C",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ServiceRecommended",
+      "displayName": "ServiceRecommended",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    }
+  ]
+}

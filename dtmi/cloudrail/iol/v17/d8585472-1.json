@@ -1,0 +1,139 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D8585472;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OTM311",
+  "description": "Pt100 class A - IO-Link",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureValue_K",
+      "displayName": "TemperatureValue_K",
+      "schema": "double",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureValue_C",
+      "displayName": "TemperatureValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureValue_F",
+      "displayName": "TemperatureValue_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorStatus",
+      "displayName": "SensorStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "BadNotLimited",
+            "enumValue": "BadNotLimited"
+          },
+          {
+            "name": "BadLowLimited",
+            "enumValue": "BadLowLimited"
+          },
+          {
+            "name": "BadHighLimited",
+            "enumValue": "BadHighLimited"
+          },
+          {
+            "name": "BadConstant",
+            "enumValue": "BadConstant"
+          },
+          {
+            "name": "UncertainNotLimited",
+            "enumValue": "UncertainNotLimited"
+          },
+          {
+            "name": "UncertainLowLimited",
+            "enumValue": "UncertainLowLimited"
+          },
+          {
+            "name": "UncertainHighLimited",
+            "enumValue": "UncertainHighLimited"
+          },
+          {
+            "name": "UncertainConstant",
+            "enumValue": "UncertainConstant"
+          },
+          {
+            "name": "ManualFixedNotLimited",
+            "enumValue": "ManualFixedNotLimited"
+          },
+          {
+            "name": "ManualFixedLowLimited",
+            "enumValue": "ManualFixedLowLimited"
+          },
+          {
+            "name": "ManualFixedHighLimited",
+            "enumValue": "ManualFixedHighLimited"
+          },
+          {
+            "name": "ManualFixedConstant",
+            "enumValue": "ManualFixedConstant"
+          },
+          {
+            "name": "GoodNotLimited",
+            "enumValue": "GoodNotLimited"
+          },
+          {
+            "name": "GoodLowLimited",
+            "enumValue": "GoodLowLimited"
+          },
+          {
+            "name": "GoodHighLimited",
+            "enumValue": "GoodHighLimited"
+          },
+          {
+            "name": "GoodConstant",
+            "enumValue": "GoodConstant"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchOutput",
+      "displayName": "SwitchOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

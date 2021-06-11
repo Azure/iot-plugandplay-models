@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D40449;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLHP3-PNSL-L4",
+  "description": "0...5000mm, Q, In, Auto/PNP/NPN, plug, M12, 250 Hz, 4-Pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ2",
+      "displayName": "SwitchingOutputQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    }
+  ]
+}

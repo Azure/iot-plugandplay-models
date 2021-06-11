@@ -1,0 +1,88 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D297;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "856T-B24LC",
+  "description": "Towerlight IO-Link Class-B light and sound module controller",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AlarmStatus",
+      "displayName": "AlarmStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CircuitStatus",
+      "displayName": "CircuitStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceTemperature",
+      "displayName": "DeviceTemperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ClassAVoltage",
+      "displayName": "ClassAVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ClassBVoltage",
+      "displayName": "ClassBVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ControlModule1",
+              "displayName": "ControlModule1",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule2",
+              "displayName": "ControlModule2",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule3",
+              "displayName": "ControlModule3",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule4",
+              "displayName": "ControlModule4",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule5",
+              "displayName": "ControlModule5",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule6",
+              "displayName": "ControlModule6",
+              "schema": "long"
+            },
+            {
+              "name": "ControlModule7",
+              "displayName": "ControlModule7",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

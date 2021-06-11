@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D1003;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LBFx-21.0x0.x0x020.x.x00x.x",
+  "description": "Industrial LevelSwitch IOL, Connector M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1Output",
+      "displayName": "Switch1Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2Output",
+      "displayName": "Switch2Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    }
+  ]
+}

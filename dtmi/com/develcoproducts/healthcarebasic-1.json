@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:healthcarebasic;1",
+  "@type": "Interface",
+  "displayName": "Health Care Basic",
+  "description": "Health Care Basic",
+  "contents": [    
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:motionsensor;2",
+      "name": "motionsensor1",
+      "displayName": "Motion Sensor",
+      "description": "Motion Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:vibrationsensor;2",
+      "name": "vibrationsensor1",
+      "displayName": "Vibration Sensor",
+      "description": "Vibration Sensor"
+    }
+  ]
+}

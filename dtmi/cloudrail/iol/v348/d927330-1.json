@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D927330;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HNS 3126-F31-0520-000",
+  "description": "Electronic level and temperature switch with IO-Link and user interface, Revision 1",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC3",
+      "displayName": "BDC3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC4",
+      "displayName": "BDC4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDV2",
+      "displayName": "PDV2",
+      "schema": "long"
+    }
+  ]
+}

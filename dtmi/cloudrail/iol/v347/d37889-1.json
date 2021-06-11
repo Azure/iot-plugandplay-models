@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D37889;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLHM-600-2PNSDL",
+  "description": "120...600mm, Q1, Q2, In, Auto / PNP / NPN, M12, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorReady",
+      "displayName": "SensorReady",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityBit",
+      "displayName": "SignalQualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ2",
+      "displayName": "SwitchingOutputQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Laser",
+              "displayName": "Laser",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LaserOff",
+                    "enumValue": "LaserOff"
+                  },
+                  {
+                    "name": "LaserOn",
+                    "enumValue": "LaserOn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

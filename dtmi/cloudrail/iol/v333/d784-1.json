@@ -1,0 +1,103 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D784;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VAEM-L1-S-8-PTL",
+  "description": "8 valves, electrics direction top",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Valve1Solenoid14",
+              "displayName": "Valve1Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve1Solenoid12",
+              "displayName": "Valve1Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve2Solenoid14",
+              "displayName": "Valve2Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve2Solenoid12",
+              "displayName": "Valve2Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve3Solenoid14",
+              "displayName": "Valve3Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve3Solenoid12",
+              "displayName": "Valve3Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve4Solenoid14",
+              "displayName": "Valve4Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve4Solenoid12",
+              "displayName": "Valve4Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve5Solenoid14",
+              "displayName": "Valve5Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve5Solenoid12",
+              "displayName": "Valve5Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve6Solenoid14",
+              "displayName": "Valve6Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve6Solenoid12",
+              "displayName": "Valve6Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve7Solenoid14",
+              "displayName": "Valve7Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve7Solenoid12",
+              "displayName": "Valve7Solenoid12",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve8Solenoid14",
+              "displayName": "Valve8Solenoid14",
+              "schema": "integer"
+            },
+            {
+              "name": "Valve8Solenoid12",
+              "displayName": "Valve8Solenoid12",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

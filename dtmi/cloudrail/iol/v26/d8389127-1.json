@@ -1,0 +1,139 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389127;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AS30 Core",
+  "description": "Registration sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389127:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389127:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EdgeLossBottom",
+      "displayName": "EdgeLossBottom",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EdgeLossTop",
+      "displayName": "EdgeLossTop",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ImmediateEdgeLoss",
+      "displayName": "ImmediateEdgeLoss",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QoRAlarm",
+      "displayName": "QoRAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDInvalid",
+      "displayName": "PDInvalid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EdgePosition",
+      "displayName": "EdgePosition",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389127:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

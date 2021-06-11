@@ -1,0 +1,75 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D68240;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AXL E IOL DO8 M12 6P",
+  "description": "Axioline E digital output device via IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "UAUnderrange",
+      "displayName": "UAUnderrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UAFailure",
+      "displayName": "UAFailure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OUT01",
+              "displayName": "OUT01",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT02",
+              "displayName": "OUT02",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT03",
+              "displayName": "OUT03",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT04",
+              "displayName": "OUT04",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT05",
+              "displayName": "OUT05",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT06",
+              "displayName": "OUT06",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT07",
+              "displayName": "OUT07",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT08",
+              "displayName": "OUT08",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D67;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "pico+15/xxxF/A",
+  "description": "Ultrasonic sensor in M18 brass sleeve, 1 push-pull switching output, 20 - 250 mm measuring range, 20 mm blindzone, 150 mm operating range, temperature compensation",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

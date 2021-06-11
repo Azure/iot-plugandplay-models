@@ -1,0 +1,244 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393223_LEDControl;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OS80K3MXKQ-GM",
+  "description": "OS80 Operator Station: Key Switch with IO-Link Segmented Housing; 3-Position Key Switch Voltage: 12-30 V dc; Housing: Polycarbonate; IP40 Colors: Green, Yellow, Red; Laser Marked: Bypass Auto Release Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReleaseState",
+      "displayName": "ReleaseState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AutoState",
+      "displayName": "AutoState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BypassState",
+      "displayName": "BypassState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperationMode",
+      "displayName": "OperationMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Multicolor",
+            "enumValue": "Multicolor"
+          },
+          {
+            "name": "Reserved",
+            "enumValue": "Reserved"
+          },
+          {
+            "name": "Advanced",
+            "enumValue": "Advanced"
+          },
+          {
+            "name": "LEDControl",
+            "enumValue": "LEDControl"
+          },
+          {
+            "name": "Demo",
+            "enumValue": "Demo"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LED1Color",
+              "displayName": "LED1Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED1Intensity010",
+              "displayName": "LED1Intensity010",
+              "schema": "long"
+            },
+            {
+              "name": "LED2Color",
+              "displayName": "LED2Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED2Intensity010",
+              "displayName": "LED2Intensity010",
+              "schema": "long"
+            },
+            {
+              "name": "LED3Color",
+              "displayName": "LED3Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED3Intensity010",
+              "displayName": "LED3Intensity010",
+              "schema": "long"
+            },
+            {
+              "name": "LED4Color",
+              "displayName": "LED4Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED4Intensity010",
+              "displayName": "LED4Intensity010",
+              "schema": "long"
+            },
+            {
+              "name": "LED5Color",
+              "displayName": "LED5Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED5Intensity010",
+              "displayName": "LED5Intensity010",
+              "schema": "long"
+            },
+            {
+              "name": "LED6Color",
+              "displayName": "LED6Color",
+              "schema": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1"
+            },
+            {
+              "name": "LED6Intensity010",
+              "displayName": "LED6Intensity010",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393223_LEDControl:LEDColor;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "Amber",
+          "enumValue": "Amber"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "LimeGreen",
+          "enumValue": "LimeGreen"
+        },
+        {
+          "name": "SpringGreen",
+          "enumValue": "SpringGreen"
+        },
+        {
+          "name": "Cyan",
+          "enumValue": "Cyan"
+        },
+        {
+          "name": "SkyBlue",
+          "enumValue": "SkyBlue"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Violet",
+          "enumValue": "Violet"
+        },
+        {
+          "name": "Magenta",
+          "enumValue": "Magenta"
+        },
+        {
+          "name": "Rose",
+          "enumValue": "Rose"
+        },
+        {
+          "name": "White",
+          "enumValue": "White"
+        },
+        {
+          "name": "Custom1",
+          "enumValue": "Custom1"
+        },
+        {
+          "name": "Custom2",
+          "enumValue": "Custom2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D22529;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 25-RGBx-GSL-xxx",
+  "description": "12 +/- 3 mm, IN, Q Push-Pull, pigtail 150 mm, M12, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "EnergyLevel",
+      "displayName": "EnergyLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

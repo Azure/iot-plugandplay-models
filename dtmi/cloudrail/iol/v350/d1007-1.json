@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D1007;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AFIx-IOL",
+  "description": "AFIx CombiLyz-IOL",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActiveAlarms",
+      "displayName": "ActiveAlarms",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchOutput",
+      "displayName": "SwitchOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MAChannel1",
+      "displayName": "MAChannel1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MAChannel2",
+      "displayName": "MAChannel2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MediaTemperature",
+      "displayName": "MediaTemperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureUnit",
+      "displayName": "TemperatureUnit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Fahrenheit",
+            "enumValue": "Fahrenheit"
+          },
+          {
+            "name": "Celsius",
+            "enumValue": "Celsius"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Conductivity",
+      "displayName": "Conductivity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Concentration",
+      "displayName": "Concentration",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualRange",
+      "displayName": "ActualRange",
+      "schema": "long"
+    }
+  ]
+}

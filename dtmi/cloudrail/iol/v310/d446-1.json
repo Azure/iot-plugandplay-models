@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D446;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TA2xx2",
+  "description": "Temperature transmitter, -50...200 °C, Length 25 mm, Process connection 3/4'' Tri-Clamp",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

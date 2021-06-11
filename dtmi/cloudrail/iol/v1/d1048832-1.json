@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1048832;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DK12-11xxxxxxxxxx-IO/A/92/136",
+  "description": "Contrast Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalBit0",
+      "displayName": "SwitchingSignalBit0",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

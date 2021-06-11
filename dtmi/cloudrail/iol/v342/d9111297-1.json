@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D9111297;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DW-Lx-703-P12G",
+  "description": "Inductive proximity switches series 700",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection80Sn",
+      "displayName": "Detection80Sn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

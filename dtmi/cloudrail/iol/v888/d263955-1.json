@@ -1,0 +1,179 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263955;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 21M-UUI-RP30-S4",
+  "description": "Multifunction Sensor (Diffuse, T-Beam, Retro, BGS) and more",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Ok",
+      "displayName": "Ok",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TooLow",
+      "displayName": "TooLow",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TooHigh",
+      "displayName": "TooHigh",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CountValue",
+      "displayName": "CountValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CounterReset",
+              "displayName": "CounterReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDOff",
+              "displayName": "LEDOff",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LEDOff",
+                    "enumValue": "LEDOff"
+                  },
+                  {
+                    "name": "LEDOn",
+                    "enumValue": "LEDOn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
