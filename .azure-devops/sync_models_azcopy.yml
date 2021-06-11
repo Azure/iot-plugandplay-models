@@ -1,0 +1,115 @@
+# Copyright (c) Microsoft Corporation MIT license
+#
+# Azure IoT Models Repository synchronization pipeline definition
+# The following pipeline variables are required:
+# > Note: The values must be stored and handled as encrypted secrets
+#
+# AZCOPY_AUTO_LOGIN_TYPE
+# AZCOPY_SPA_APPLICATION_ID
+# AZCOPY_SPA_CLIENT_SECRET
+# AZCOPY_TENANT_ID
+# DMR_SYNC_STORAGE_ENDPOINT
+
+variables:
+ - name: dmrClientVer
+   value: 1.0.0-beta.3
+ - name: indexStagingPath
+   value: ./index_pages/
+ - name: pageLimit
+   value: 2048
+
+# Required for schedule trigger
+trigger: none
+pr: none
+
+name: 
+schedules:
+- cron: '*/10 * * * *'
+  displayName: 'Scheduled models sync event'
+  branches:
+    include: 
+    - 'main'
+  always: false
+
+jobs:
+- job: 'evaluate_models'
+  displayName: 'Evaluate and synchronize repository'
+  pool:
+    vmImage: 'ubuntu-20.04'
+  steps:
+
+  - task: Bash@3
+    displayName: 'Expand and index repository models'
+    inputs:
+      targetType: 'inline'
+      script: |
+        set -e
+        
+        git clone -b $(dmrClientVer) https://github.com/Azure/iot-plugandplay-models-tools ../dmrtools
+        PATH=../dmrtools:$PATH
+        dotnet pack ../dmrtools/clients/dotnet -v m -c Release
+        dotnet tool install Microsoft.IoT.ModelsRepository.CommandLine --tool-path ../dmrtools --add-source ../dmrtools/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release/ --version $(dmrClientVer)
+
+        echo "Expanding repository..."
+        dmr-client expand --local-repo $PWD
+
+        git ls-files -o -c "dtmi/*" | while read filename; do 
+          touch -d "1980-01-01" "${filename}"
+        done
+
+        echo "Generating index..."
+        dmr-client index --local-repo $PWD -o $(indexStagingPath)/index.json --page-limit $(pageLimit)
+
+  - task: PythonScript@0
+    displayName: 'Generate snapshot metadata'
+    inputs:
+      scriptSource: 'inline'
+      script: |
+        import os
+        import json
+        from datetime import datetime, timezone
+
+        def scantree(path):
+          for entry in os.scandir(path):
+            if entry.is_dir(follow_symlinks=False):
+              yield from scantree(entry.path)
+            else:
+              yield entry
+        
+        model_count = 0
+        index_path = os.environ["INDEX_PATH"]
+        for index_page in scantree(index_path):
+          with open(index_page, 'r') as f:
+            index_page_dict = json.loads(f.read())
+            model_count = model_count + len(index_page_dict.get("models", {}))
+
+        metadata = {
+          "totalModelCount": model_count,
+          "publishDateUtc": datetime.now(timezone.utc).isoformat(),
+          "commitId": os.environ.get("COMMIT_ID"),
+          "sourceRepo": os.environ.get("REPO_NAME"),
+          "features": {
+            "index": True,
+            "expanded": True
+          }
+        }
+        with open(os.path.join(index_path, "metadata.json"), 'x') as f:
+          f.write(json.dumps(metadata, indent=2, sort_keys=True))
+    env:
+      INDEX_PATH: $(indexStagingPath)
+      COMMIT_ID: $(Build.SourceVersion)
+      REPO_NAME: $(Build.Repository.Name)
+
+  - task: Bash@3
+    displayName: 'Synchronizing models and metadata'
+    inputs:
+      targetType: 'inline'
+      script: |
+        azcopy sync "./dtmi/" $DMR_SYNC_STORAGE_ENDPOINT/\$web/dtmi --include-pattern="*.json"
+        azcopy cp "./index_pages/*" $DMR_SYNC_STORAGE_ENDPOINT/\$web --include-pattern="*.json"
+    env:
+      DMR_SYNC_STORAGE_ENDPOINT: $(DMR_SYNC_STORAGE_ENDPOINT)
+      AZCOPY_AUTO_LOGIN_TYPE: $(AZCOPY_AUTO_LOGIN_TYPE)
+      AZCOPY_SPA_APPLICATION_ID: $(AZCOPY_SPA_APPLICATION_ID)
+      AZCOPY_SPA_CLIENT_SECRET: $(AZCOPY_SPA_CLIENT_SECRET)
+      AZCOPY_TENANT_ID: $(AZCOPY_TENANT_ID)

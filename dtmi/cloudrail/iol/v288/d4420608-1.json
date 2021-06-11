@@ -1,0 +1,141 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V288:D4420608;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EPI4374-0002",
+  "description": "4 Analog Input Output Module",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__UnderRange",
+      "displayName": "Channel1Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Overrange",
+      "displayName": "Channel1Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Limit1",
+      "displayName": "Channel1Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Limit2",
+      "displayName": "Channel1Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Error",
+      "displayName": "Channel1Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__SyncError",
+      "displayName": "Channel1Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__TxPDOState",
+      "displayName": "Channel1Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__TxPDOToggle",
+      "displayName": "Channel1Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1InValue",
+      "displayName": "Channel1InValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__UnderRange",
+      "displayName": "Channel2Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Overrange",
+      "displayName": "Channel2Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Limit1",
+      "displayName": "Channel2Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Limit2",
+      "displayName": "Channel2Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Error",
+      "displayName": "Channel2Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__SyncError",
+      "displayName": "Channel2Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__TxPDOState",
+      "displayName": "Channel2Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__TxPDOToggle",
+      "displayName": "Channel2Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2InValue",
+      "displayName": "Channel2InValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Channel3OutValue",
+              "displayName": "Channel3OutValue",
+              "schema": "long"
+            },
+            {
+              "name": "Channel4OutValue",
+              "displayName": "Channel4OutValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

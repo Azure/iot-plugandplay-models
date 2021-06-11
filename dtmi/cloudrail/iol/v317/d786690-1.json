@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D786690;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RES-19xxxxx-IOL14B-H1141",
+  "description": "Absolute encoder singleturn",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSingleturn",
+      "displayName": "PositionSingleturn",
+      "schema": "long"
+    }
+  ]
+}

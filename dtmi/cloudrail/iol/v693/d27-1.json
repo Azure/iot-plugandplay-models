@@ -1,0 +1,101 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V693:D27;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EV03-000-100-IOL-SxxP",
+  "description": "AV-EP Pressure Regulator IO-Link, LED, Fail safe nc",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActualValue",
+      "displayName": "ActualValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SetPointSpecification",
+      "displayName": "SetPointSpecification",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SetPointOverIOLink",
+            "enumValue": "SetPointOverIOLink"
+          },
+          {
+            "name": "ManualSetPoint",
+            "enumValue": "ManualSetPoint"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TestBit",
+      "displayName": "TestBit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SetPoint",
+              "displayName": "SetPoint",
+              "schema": "long"
+            },
+            {
+              "name": "ReservedBits",
+              "displayName": "ReservedBits",
+              "schema": "long"
+            },
+            {
+              "name": "TestBit",
+              "displayName": "TestBit",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "False",
+                    "enumValue": "False"
+                  },
+                  {
+                    "name": "True",
+                    "enumValue": "True"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

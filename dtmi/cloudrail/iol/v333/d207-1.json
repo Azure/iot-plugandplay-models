@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D207;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SOOF-M-FL-SM-C120-P",
+  "description": "120 mm, red, PNP/NPN/push-pull, IO-Link, M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalLevel_pct",
+      "displayName": "SignalLevel_pct",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          },
+          {
+            "name": "NotOK",
+            "enumValue": "NotOK"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelBDC1",
+      "displayName": "BinaryDataChannelBDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

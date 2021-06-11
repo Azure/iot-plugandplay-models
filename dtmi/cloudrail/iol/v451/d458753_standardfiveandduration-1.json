@@ -1,0 +1,129 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D458753_StandardFiveAndDuration;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QS18EK6xxx5",
+  "description": "Expert Photoelectric Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HealthState",
+      "displayName": "HealthState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginalLightState",
+      "displayName": "MarginalLightState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginalDarkState",
+      "displayName": "MarginalDarkState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NormalizedSignalStrengthValue",
+      "displayName": "NormalizedSignalStrengthValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Duration",
+      "displayName": "Duration",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "EmitterLED",
+              "displayName": "EmitterLED",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

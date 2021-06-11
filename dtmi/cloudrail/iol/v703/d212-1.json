@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V703:D212;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LDV 1040 GAPL",
+  "description": "LDV",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TotalConsumption_m3std",
+      "displayName": "TotalConsumption_m3std",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowRate_m3ph",
+      "displayName": "FlowRate_m3ph",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "AbsolutPressure_bar",
+      "displayName": "AbsolutPressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V703:D212:SwitchstateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V703:D212:SwitchstateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V703:D212:SwitchstateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

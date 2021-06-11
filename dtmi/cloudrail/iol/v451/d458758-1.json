@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D458758;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Q20K6AF200Qx",
+  "description": "Q20 Adjustable Background Suppression",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginalSignal",
+      "displayName": "MarginalSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Marginal",
+            "enumValue": "Marginal"
+          }
+        ]
+      }
+    }
+  ]
+}

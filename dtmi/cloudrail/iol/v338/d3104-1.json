@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D3104;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DMU4xxB-xx0xxxxxxxV-M12",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 40 cm\r\nM18 housing with teach buttons\r\nswitching and voltage output",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessValue_mm",
+      "displayName": "ProcessValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1",
+      "displayName": "SwitchStateOutput1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Closed",
+            "enumValue": "Closed"
+          },
+          {
+            "name": "Open",
+            "enumValue": "Open"
+          }
+        ]
+      }
+    }
+  ]
+}

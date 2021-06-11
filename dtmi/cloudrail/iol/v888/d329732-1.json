@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329732;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-722-000-K023",
+  "description": "BNI - Analogue converter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputCurrentEcho",
+      "displayName": "OutputCurrentEcho",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ReservedBits",
+              "displayName": "ReservedBits",
+              "schema": "long"
+            },
+            {
+              "name": "OutputCurrent",
+              "displayName": "OutputCurrent",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D68352;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OUM502C0002",
+  "description": "Fiber Optic Cable Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReceiverSignal",
+      "displayName": "ReceiverSignal",
+      "schema": "long"
+    }
+  ]
+}

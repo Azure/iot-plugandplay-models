@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ClearSIGN compact",
+  "description": "ClearSIGN compact Contin. tone",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1",
+              "displayName": "Segment1",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment:Segment;1"
+            },
+            {
+              "name": "Segment2",
+              "displayName": "Segment2",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment:Segment;1"
+            },
+            {
+              "name": "Segment3",
+              "displayName": "Segment3",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment:Segment;1"
+            },
+            {
+              "name": "Segment4",
+              "displayName": "Segment4",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment:Segment;1"
+            },
+            {
+              "name": "Acoustic",
+              "displayName": "Acoustic",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V690:D6643715_RGBSegment:Segment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

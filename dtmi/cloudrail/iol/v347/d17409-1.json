@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D17409;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FE 25-RL-PNSL-x4M",
+  "description": "0...18 m, IN, Q1 Auto / PNP / NPN, metal plug, M8, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

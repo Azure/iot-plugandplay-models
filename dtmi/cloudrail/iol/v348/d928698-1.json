@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D928698;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EDS 3446-F31-0250-046",
+  "description": "Electronic pressure switch with IO-Link and user interface, Revision 1",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    }
+  ]
+}

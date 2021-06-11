@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D983809;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VAZ-CLAMP-40MM-IO",
+  "description": "Signal lamp, diameter 40 mm, max. 5 segments, clamp",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CSC1Segment1",
+              "displayName": "CSC1Segment1",
+              "schema": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1"
+            },
+            {
+              "name": "CSC2Segment2",
+              "displayName": "CSC2Segment2",
+              "schema": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1"
+            },
+            {
+              "name": "CSC3Segment3",
+              "displayName": "CSC3Segment3",
+              "schema": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1"
+            },
+            {
+              "name": "CSC4Segment4",
+              "displayName": "CSC4Segment4",
+              "schema": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1"
+            },
+            {
+              "name": "CSC5Segment5",
+              "displayName": "CSC5Segment5",
+              "schema": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D983809:CSCSegment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

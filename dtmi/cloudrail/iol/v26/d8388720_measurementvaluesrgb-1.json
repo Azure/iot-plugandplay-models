@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388720_MeasurementValuesRGB;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTM-Wx1x7Axx",
+  "description": "Contrast Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "EmissionColor",
+      "displayName": "EmissionColor",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValuesRGB",
+      "displayName": "MeasurementValuesRGB",
+      "schema": "long"
+    }
+  ]
+}

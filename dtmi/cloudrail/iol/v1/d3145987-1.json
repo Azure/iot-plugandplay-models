@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D3145987;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UC4000-30GM-xxxP-IO-V15",
+  "description": "Ultrasonic Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance14Bit",
+      "displayName": "Distance14Bit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V1:D3145987:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2",
+      "displayName": "SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V1:D3145987:SwitchingSignal;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D3145987:SwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

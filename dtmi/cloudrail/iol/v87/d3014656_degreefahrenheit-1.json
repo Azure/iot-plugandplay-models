@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3014656_DegreeFahrenheit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FXTT00x",
+  "description": "Temperature Sensor; -50°C .. 150°C; Compression Ring; Probe Length 100mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputA1",
+      "displayName": "SwitchingOutputA1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputA2",
+      "displayName": "SwitchingOutputA2",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

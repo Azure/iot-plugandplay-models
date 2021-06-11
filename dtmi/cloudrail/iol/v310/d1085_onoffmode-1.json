@@ -1,0 +1,221 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DV2130",
+  "description": "1-Segment-LED-Signal light, 3 + 1 digital inputs, IO-Link, with buzzer, without feedback-button",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FeedbackButton",
+      "displayName": "FeedbackButton",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "enumValue": "1"
+          },
+          {
+            "name": "Null",
+            "enumValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status8",
+      "displayName": "Status8",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status7",
+      "displayName": "Status7",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status6",
+      "displayName": "Status6",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status5",
+      "displayName": "Status5",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status4",
+      "displayName": "Status4",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status3",
+      "displayName": "Status3",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status2",
+      "displayName": "Status2",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status1",
+      "displayName": "Status1",
+      "schema": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "BuzzerStyle",
+              "displayName": "BuzzerStyle",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NoSound",
+                    "enumValue": "NoSound"
+                  },
+                  {
+                    "name": "RapidIntermittentBeep",
+                    "enumValue": "RapidIntermittentBeep"
+                  },
+                  {
+                    "name": "RapidHiLo",
+                    "enumValue": "RapidHiLo"
+                  },
+                  {
+                    "name": "SweepSound",
+                    "enumValue": "SweepSound"
+                  },
+                  {
+                    "name": "ContinuousBeepWithCycleONOFF",
+                    "enumValue": "ContinuousBeepWithCycleONOFF"
+                  },
+                  {
+                    "name": "RapidIntermittentBeepWithCycleONOFF",
+                    "enumValue": "RapidIntermittentBeepWithCycleONOFF"
+                  },
+                  {
+                    "name": "RapidHiLoWithCycleONOFF",
+                    "enumValue": "RapidHiLoWithCycleONOFF"
+                  },
+                  {
+                    "name": "SweepSoundWithCycleONOFF",
+                    "enumValue": "SweepSoundWithCycleONOFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDc",
+              "displayName": "LEDc",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDb",
+              "displayName": "LEDb",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDa",
+              "displayName": "LEDa",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1085_OnOffmode:Status;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "One",
+          "enumValue": "1"
+        },
+        {
+          "name": "Null",
+          "enumValue": "0"
+        }
+      ]
+    }
+  ]
+}
