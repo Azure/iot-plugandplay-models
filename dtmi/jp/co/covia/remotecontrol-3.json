@@ -1,0 +1,155 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:RemoteControl;3",
+  "@type": "Interface",
+  "displayName": "RemoteControl",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "This command can be used to remotely reboot the device."
+    },
+    {
+      "@type": "Command",
+      "name": "sensorList",
+      "displayName": "Sensor List",
+      "description": "This command requests the list of paired sensors.",
+      "response": {
+        "name": "responseSensorList",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pairing",
+      "displayName": "Pairing",
+      "description": "This command requests pairing with the sensor.",
+      "request": {
+        "name": "sensor",
+        "description": "Specify the MAC address and sensor type of the sensor for which you want to request pairing.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "displayName": "Mac Address",
+              "name": "mac",
+              "description": "MAC address of the sensor requesting pairing.",
+              "schema": "string"
+            },
+            {
+              "displayName": "Sensor Type",
+              "name": "sensorType",
+              "description": "Type of the sensor requesting pairing.",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                      "name": "bc10",
+                      "displayName": "BC10",
+                      "description": "BC10(Temperature/Humidity) Sensor",
+                      "enumValue": 1
+                  },
+                  {
+                      "name": "bleBeaconReceiver",
+                      "displayName": "Ble Beacon Receiver",
+                      "description": "BLE receiver and acquires the BLE beacons",
+                      "enumValue": 2
+                  },                  
+                  {
+                      "name": "iBS01G",
+                      "displayName": "iBS01G",
+                      "description": "iBS01G(Accelerometer) Sensor",
+                      "enumValue": 3
+                  },                  
+                  {
+                      "name": "iBS01H",
+                      "displayName": "iBS01H",
+                      "description": "iBS01H(Magnet) Sensor",
+                      "enumValue": 4
+                  },                  
+                  {
+                      "name": "iBS01T",
+                      "displayName": "iBS01T",
+                      "description": "iBS01T(Temperature/Humidity) Sensor",
+                      "enumValue": 5
+                  },                  
+                  {
+                      "name": "iBS02IR2",
+                      "displayName": "iBS02IR2",
+                      "description": "iBS02IR2(Proximity Detection) Sensor",
+                      "enumValue": 6
+                  },                  
+                  {
+                      "name": "iBS02PIR2",
+                      "displayName": "iBS02PIR2",
+                      "description": "iBS02PIR2(Human Detection) Sensor",
+                      "enumValue": 7
+                  },                  
+                  {
+                      "name": "iBS03TP",
+                      "displayName": "iBS03TP",
+                      "description": "iBS03TP(Temperature) Sensor",
+                      "enumValue": 8
+                  },                  
+                  {
+                      "name": "tkr03FL",
+                      "displayName": "TKR03FL",
+                      "description": "TKR03FL(Water Temperature) Sensor",
+                      "enumValue": 9
+                  },                  
+                  {
+                      "name": "tkr04A",
+                      "displayName": "TKR04A",
+                      "description": "TKR04A(CO2) Sensor",
+                      "enumValue": 10
+                  },                  
+                  {
+                      "name": "tr41",
+                      "displayName": "TR41",
+                      "description": "TR41(Temperature) Sensor",
+                      "enumValue": 11
+                  },                  
+                  {
+                      "name": "tr42",
+                      "displayName": "TR42",
+                      "description": "TR42(Temperature) Sensor",
+                      "enumValue": 12
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "responsePairing",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "unpairing",
+      "displayName": "Unpairing",
+      "description": "This command requests unpairing with the sensor.",
+      "request": {
+        "name": "mac",
+        "description": "Specify the MAC address of the sensor for which you want to request unpairing.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseUnpairing",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    }
+  ]
+}
+
+
+
+
+    
