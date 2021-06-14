@@ -1,0 +1,79 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:smarthomebasicpack;2",
+  "@type": "Interface",
+  "displayName": "Smart Home Basic Pack",
+  "description": "Smart Home Basic Pack",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartplug;1",
+      "name": "smartplug1",
+      "displayName": "Smart Plug",
+      "description": "Smart Plug"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smokealarm;2",
+      "name": "smokealarm1",
+      "displayName": "Smoke Alarm",
+      "description": "Smoke Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartcable;1",
+      "name": "smartcable1",
+      "displayName": "Smart Cable",
+      "description": "Smart Cable"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:motionsensor;2",
+      "name": "motionsensor1",
+      "displayName": "Motion Sensor",
+      "description": "Motion Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:humiditysensor;1",
+      "name": "humiditysensor1",
+      "displayName": "Humidity Sensor",
+      "description": "Humidity Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:heatalarm;1",
+      "name": "heatalarm1",
+      "displayName": "Heat Alarm",
+      "description": "Heat Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:airqualitysensor;2",
+      "name": "airquality1",
+      "displayName": "Air Quality Sensor",
+      "description": "Air Quality Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:windowsensor;2",
+      "name": "windowsensor1",
+      "displayName": "Window Sensor",
+      "description": "Window Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;1",
+      "name": "waterleak1",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:vibrationsensor;2",
+      "name": "vibrationsensor1",
+      "displayName": "Vibration Sensor",
+      "description": "Vibration Sensor"
+    }
+  ]
+}
