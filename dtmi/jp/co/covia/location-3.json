@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Location;3",
+  "@type": "Interface",
+  "displayName": "Location",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "locationAccuracy",
+      "displayName": "Location Accuracy",
+      "description": "Sets the accuracy of the location information. This setting will affect the battery consumption.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "lowAccuracy",
+            "displayName": "Low accuracy",
+            "description": "The accuracy is low, but the battery consumption is low.",
+            "enumValue": 1
+          },
+          {
+            "name": "normalAccuracy",
+            "displayName": "Normal accuracy",
+            "description": "It has a good balance between location information and battery consumption.",
+            "enumValue": 2
+          },
+          {
+            "name": "highAccuracy",
+            "displayName": "High accuracy",
+            "description": "It is highly accurate, but consumes a lot of battery power.",
+            "enumValue": 3
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "location",
+      "displayName": "Device Location",
+      "description": "This telemetry sends the location information of the device.",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Longitude",
+            "name": "longitude",
+            "schema": "double"
+          },
+          {
+            "displayName": "Latitude",
+            "name": "latitude",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}
