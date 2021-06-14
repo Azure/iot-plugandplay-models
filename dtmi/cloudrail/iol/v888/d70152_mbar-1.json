@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D70152_Mbar;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BSP00P5",
+  "description": "Pressure Sensor, 0..10 bar SIO 2xPNP",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1State",
+      "displayName": "Switch1State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2State",
+      "displayName": "Switch2State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    }
+  ]
+}

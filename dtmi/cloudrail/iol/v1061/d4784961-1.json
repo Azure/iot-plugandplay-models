@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D4784961;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "STEVAL-IDP003V1A",
+  "description": "STEVAL-IDP003V1A",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Roll",
+      "displayName": "Roll",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pitch",
+      "displayName": "Pitch",
+      "schema": "double"
+    }
+  ]
+}

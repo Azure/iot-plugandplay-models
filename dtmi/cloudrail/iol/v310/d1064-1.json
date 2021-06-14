@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1064;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RMx3x0",
+  "description": "Encoder hollow shaft, Process connection Ø 12 mm, Electrical connection M12, Diameter 36,5 mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Counter",
+      "displayName": "Counter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AUX",
+      "displayName": "AUX",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC13",
+      "displayName": "SSC13",
+      "schema": "dtmi:CloudRail:IOL:V310:D1064:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC12",
+      "displayName": "SSC12",
+      "schema": "dtmi:CloudRail:IOL:V310:D1064:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC11",
+      "displayName": "SSC11",
+      "schema": "dtmi:CloudRail:IOL:V310:D1064:SSC;1"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "Revolution_RPM",
+      "displayName": "Revolution_RPM",
+      "schema": "double",
+      "unit": "revolutionPerMinute"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC22",
+      "displayName": "SSC22",
+      "schema": "dtmi:CloudRail:IOL:V310:D1064:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC21",
+      "displayName": "SSC21",
+      "schema": "dtmi:CloudRail:IOL:V310:D1064:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1064:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

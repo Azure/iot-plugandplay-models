@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D196865;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BTL6-U110-Mxxxx-PF-S4",
+  "description": "Balluff Position Transducer",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

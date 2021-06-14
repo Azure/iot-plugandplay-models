@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100244;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SCP_FS_RP",
+  "description": "Compact Ejector SCP_FS_RP",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue",
+      "displayName": "SensorValue",
+      "schema": "long"
+    }
+  ]
+}

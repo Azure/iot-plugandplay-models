@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1049088_Inverted;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MLV41-54-G-IO/25/92/136",
+  "description": "Retro Reflective Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalBit0",
+      "displayName": "SwitchingSignalBit0",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StabilityControlBit1",
+      "displayName": "StabilityControlBit1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "StableOperation",
+            "enumValue": "StableOperation"
+          },
+          {
+            "name": "StabilityAlarm",
+            "enumValue": "StabilityAlarm"
+          }
+        ]
+      }
+    }
+  ]
+}

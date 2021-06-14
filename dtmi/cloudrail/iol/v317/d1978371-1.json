@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1978371;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TBIL-M1-16DIP",
+  "description": "TBIL... series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Connector4BPin2",
+      "displayName": "Connector4BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector4APin4",
+      "displayName": "Connector4APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector3BPin2",
+      "displayName": "Connector3BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector3APin4",
+      "displayName": "Connector3APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector2BPin2",
+      "displayName": "Connector2BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector2APin4",
+      "displayName": "Connector2APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector1BPin2",
+      "displayName": "Connector1BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector1APin4",
+      "displayName": "Connector1APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector8BPin2",
+      "displayName": "Connector8BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector8APin4",
+      "displayName": "Connector8APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector7BPin2",
+      "displayName": "Connector7BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector7APin4",
+      "displayName": "Connector7APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector6BPin2",
+      "displayName": "Connector6BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector6APin4",
+      "displayName": "Connector6APin4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector5BPin2",
+      "displayName": "Connector5BPin2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Connector5APin4",
+      "displayName": "Connector5APin4",
+      "schema": "integer"
+    }
+  ]
+}

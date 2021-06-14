@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D659460;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "S15C-MUL-KQ",
+  "description": "S15C-MUL-KQ with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceMm",
+      "displayName": "DistanceMm",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DistanceIn",
+      "displayName": "DistanceIn",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureF",
+      "displayName": "TemperatureF",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureC",
+      "displayName": "TemperatureC",
+      "schema": "long"
+    }
+  ]
+}

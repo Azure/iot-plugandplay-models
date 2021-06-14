@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1206:D5101_Mms;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FU4",
+  "description": "Flow sensor FU4 0..3000 mm/s",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "Flow_mps",
+      "displayName": "Flow_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_mmps",
+      "displayName": "Flow_mmps",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Out2",
+      "displayName": "Out2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Out1",
+      "displayName": "Out1",
+      "schema": "integer"
+    }
+  ]
+}

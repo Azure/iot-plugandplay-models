@@ -1,0 +1,131 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1050626;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LGSxx-200-IO/xxxx1xxxxxxx146",
+  "description": "Switching Light Grid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalBit0",
+      "displayName": "SwitchingSignalBit0",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SynchronizationBit1",
+      "displayName": "SynchronizationBit1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StabilityControlBit2",
+      "displayName": "StabilityControlBit2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl1Bit8",
+      "displayName": "HeightControl1Bit8",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl2Bit9",
+      "displayName": "HeightControl2Bit9",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl3Bit10",
+      "displayName": "HeightControl3Bit10",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl4Bit11",
+      "displayName": "HeightControl4Bit11",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl5Bit12",
+      "displayName": "HeightControl5Bit12",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl6Bit13",
+      "displayName": "HeightControl6Bit13",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl7Bit14",
+      "displayName": "HeightControl7Bit14",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeightControl8Bit15",
+      "displayName": "HeightControl8Bit15",
+      "schema": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D1050626:HeightControlBit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

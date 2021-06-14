@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D65537;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E3Z-T8x-L-xxxxxx-IL3",
+  "description": "Through beam Photoelectric Sensor (L)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    }
+  ]
+}

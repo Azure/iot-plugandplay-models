@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V98:D1024;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VEGAPOINT 11",
+  "description": "Limit switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

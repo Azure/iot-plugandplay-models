@@ -1,0 +1,103 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V753:D580;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IO-Link Valve Manifold Driver",
+  "description": "32 channels / sinking driver / Common GNDs",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AuxStatus1",
+      "displayName": "AuxStatus1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AuxStatus0",
+      "displayName": "AuxStatus0",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenChannel_00_07",
+      "displayName": "OpenChannel_00_07",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenChannel_08_15",
+      "displayName": "OpenChannel_08_15",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenChannel_16_23",
+      "displayName": "OpenChannel_16_23",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OpenChannel_24_31",
+      "displayName": "OpenChannel_24_31",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortedChannel_00_07",
+      "displayName": "ShortedChannel_00_07",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortedChannel_08_15",
+      "displayName": "ShortedChannel_08_15",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortedChannel_16_23",
+      "displayName": "ShortedChannel_16_23",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortedChannel_24_31",
+      "displayName": "ShortedChannel_24_31",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CommandedChannelState_B0",
+              "displayName": "CommandedChannelState_B0",
+              "schema": "long"
+            },
+            {
+              "name": "CommandedChannelState_B1",
+              "displayName": "CommandedChannelState_B1",
+              "schema": "long"
+            },
+            {
+              "name": "CommandedChannelState_B2",
+              "displayName": "CommandedChannelState_B2",
+              "schema": "long"
+            },
+            {
+              "name": "CommandedChannelState_B3",
+              "displayName": "CommandedChannelState_B3",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

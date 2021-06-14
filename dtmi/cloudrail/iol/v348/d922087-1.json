@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D922087;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EDS 810-0060-L-000",
+  "description": "Electronic pressure switch with IO-Link interface, 60 bar, Revision 1",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SP1CQ",
+      "displayName": "SP1CQ",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP2AUX",
+      "displayName": "SP2AUX",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP3",
+      "displayName": "SP3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP4",
+      "displayName": "SP4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP5",
+      "displayName": "SP5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP6",
+      "displayName": "SP6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP7",
+      "displayName": "SP7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SP8",
+      "displayName": "SP8",
+      "schema": "integer"
+    }
+  ]
+}

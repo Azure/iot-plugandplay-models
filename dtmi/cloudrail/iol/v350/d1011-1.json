@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D1011;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PL20x-Adaptive",
+  "description": "Industrial LevelSwitch IOL, Connector M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuitWire2",
+      "displayName": "ShortCircuitWire2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch1Output",
+      "displayName": "Switch1Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2Output",
+      "displayName": "Switch2Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

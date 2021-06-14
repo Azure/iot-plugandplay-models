@@ -1,0 +1,221 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D955;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SM7x20",
+  "description": "Flow sensor, 0.006...4.500 m³/h / 0.1...75.0 L/min, EPDM, G 3/4",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "Totaliser1_m3",
+      "displayName": "Totaliser1_m3",
+      "schema": "double",
+      "unit": "cubicMetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "Totaliser1_L",
+      "displayName": "Totaliser1_L",
+      "schema": "double",
+      "unit": "litre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "Totaliser1_gallon",
+      "displayName": "Totaliser1_gallon",
+      "schema": "double",
+      "unit": "gallon"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Totaliser1_floz",
+      "displayName": "Totaliser1_floz",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "Flow_mps",
+      "displayName": "Flow_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_ftps",
+      "displayName": "Flow_ftps",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_m3ph",
+      "displayName": "Flow_m3ph",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_GPM",
+      "displayName": "Flow_GPM",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_galph",
+      "displayName": "Flow_galph",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_flozpmin",
+      "displayName": "Flow_flozpmin",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D955:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D955:OUT;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FlowOverride",
+              "displayName": "FlowOverride",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TotalizerResetAndInactive",
+              "displayName": "TotalizerResetAndInactive",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D955:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

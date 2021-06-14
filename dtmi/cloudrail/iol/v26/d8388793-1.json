@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388793;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IMCxx-xxxPPVC0SA71",
+  "description": "Inductive proximity sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388793:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388793:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388793:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388793:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterValue",
+      "displayName": "CounterValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388793:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ObjectDetected",
+          "enumValue": "ObjectDetected"
+        },
+        {
+          "name": "NoObjectDetected",
+          "enumValue": "NoObjectDetected"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388793:Qint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ObjectDetected",
+          "enumValue": "ObjectDetected"
+        },
+        {
+          "name": "NoObjectDetected",
+          "enumValue": "NoObjectDetected"
+        }
+      ]
+    }
+  ]
+}

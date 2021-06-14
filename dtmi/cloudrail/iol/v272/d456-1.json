@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V272:D456;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UCD-LK MT",
+  "description": "Absolute Multiturn IO-Link Encoder",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AUX",
+      "displayName": "AUX",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CAM13",
+      "displayName": "CAM13",
+      "schema": "dtmi:CloudRail:IOL:V272:D456:CAM;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CAM12",
+      "displayName": "CAM12",
+      "schema": "dtmi:CloudRail:IOL:V272:D456:CAM;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CAM11",
+      "displayName": "CAM11",
+      "schema": "dtmi:CloudRail:IOL:V272:D456:CAM;1"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "AngularVelocity_RPM",
+      "displayName": "AngularVelocity_RPM",
+      "schema": "double",
+      "unit": "revolutionPerMinute"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CAM22",
+      "displayName": "CAM22",
+      "schema": "dtmi:CloudRail:IOL:V272:D456:CAM;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CAM21",
+      "displayName": "CAM21",
+      "schema": "dtmi:CloudRail:IOL:V272:D456:CAM;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V272:D456:CAM;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

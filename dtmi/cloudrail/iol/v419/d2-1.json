@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "pico+35/xK/F",
+  "description": "pico+35",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Interval",
+      "displayName": "Interval",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatus",
+      "displayName": "SwitchingStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotConnected",
+            "enumValue": "NotConnected"
+          },
+          {
+            "name": "Connected",
+            "enumValue": "Connected"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1291:D270788;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PR -1...10 Bar -10 ...80C 1% Ext. ProcessData",
+  "description": "Pressure Transmitter, IO-Link. Pressure value and Switching Signal Channel in process Data",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureValueInFloatFormat",
+      "displayName": "PressureValueInFloatFormat",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureValueInFloatFormat",
+      "displayName": "TemperatureValueInFloatFormat",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOfSwitchingSignalChannel1",
+      "displayName": "StateOfSwitchingSignalChannel1",
+      "schema": "integer"
+    }
+  ]
+}

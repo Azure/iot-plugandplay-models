@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1090059;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MZT8-2V6PSAKQ0",
+  "description": "Magnetic cylinder sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchOutput",
+      "displayName": "SwitchOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SwitchON",
+            "enumValue": "SwitchON"
+          },
+          {
+            "name": "SwitchOFF",
+            "enumValue": "SwitchOFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstallationAid",
+      "displayName": "InstallationAid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OptimumOperatingPosition",
+            "enumValue": "OptimumOperatingPosition"
+          },
+          {
+            "name": "MarginalOperatingPosition",
+            "enumValue": "MarginalOperatingPosition"
+          }
+        ]
+      }
+    }
+  ]
+}

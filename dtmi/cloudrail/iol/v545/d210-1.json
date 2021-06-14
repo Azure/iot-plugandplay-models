@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D210;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OH21-xxPS-xx3T3",
+  "description": "Background suppression sensor, 10...80 mm, default 15 mm, Length 2.0m, Electrical connection 3-wire cable",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasurementValue_mm",
+      "displayName": "MeasurementValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateSSC1Q1",
+      "displayName": "SwitchStateSSC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

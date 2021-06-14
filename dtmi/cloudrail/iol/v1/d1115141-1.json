@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1115141;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OBE12M-R102-S-IO-V31",
+  "description": "R102, 12 m, test input, high active, cable 2 m, 4-pole",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CSC1EmitterControl",
+              "displayName": "CSC1EmitterControl",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

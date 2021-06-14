@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1379:D475409_Float;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EE741 Inline flow sensor DN15 to DN25",
+  "description": "thermal, compact in-line flow sensor for DN15/DN20/DN25",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Measurand1",
+      "displayName": "Measurand1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurand2",
+      "displayName": "Measurand2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurand3",
+      "displayName": "Measurand3",
+      "schema": "double"
+    }
+  ]
+}

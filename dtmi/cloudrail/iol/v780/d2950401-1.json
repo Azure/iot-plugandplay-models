@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D2950401;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IB450423",
+  "description": "Inductive proximity switches with increased switching distances",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

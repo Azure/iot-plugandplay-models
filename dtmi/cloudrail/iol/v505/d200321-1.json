@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V505:D200321;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ILK0-5-M-B01M-1-4-0-S-P T010X000X00",
+  "description": "NaK Melt Pressure Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "integer"
+    }
+  ]
+}

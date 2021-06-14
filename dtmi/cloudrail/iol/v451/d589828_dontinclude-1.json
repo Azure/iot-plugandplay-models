@@ -1,0 +1,67 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D589828_DontInclude;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Q5XKx",
+  "description": "Laser Measurement Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Measurement1Value_m",
+      "displayName": "Measurement1Value_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Measurement1Value_mm",
+      "displayName": "Measurement1Value_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement2Value_pct",
+      "displayName": "Measurement2Value_pct",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

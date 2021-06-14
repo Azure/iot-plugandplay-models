@@ -1,0 +1,195 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D917762_Environmental;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BCM R15E-002-DI00-01,5-S4",
+  "description": "Condition Monitoring Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "HumidityHumidity",
+      "displayName": "HumidityHumidity",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AmbientPressureAmbientPressure",
+      "displayName": "AmbientPressureAmbientPressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VibrationVelocityRMSVRMSMagnitude",
+      "displayName": "VibrationVelocityRMSVRMSMagnitude",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContactTemperatureContactTemperature",
+      "displayName": "ContactTemperatureContactTemperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmARMSXStatus",
+      "displayName": "StatusBitsPreAlarmARMSXStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmARMSXStatus",
+      "displayName": "StatusBitsMainAlarmARMSXStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmARMSYStatus",
+      "displayName": "StatusBitsPreAlarmARMSYStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmARMSYStatus",
+      "displayName": "StatusBitsMainAlarmARMSYStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmARMSZStatus",
+      "displayName": "StatusBitsPreAlarmARMSZStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmARMSZStatus",
+      "displayName": "StatusBitsMainAlarmARMSZStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmARMSMagnitudeStatus",
+      "displayName": "StatusBitsPreAlarmARMSMagnitudeStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmARMSMagnitudeStatus",
+      "displayName": "StatusBitsMainAlarmARMSMagnitudeStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmVRMSXStatus",
+      "displayName": "StatusBitsPreAlarmVRMSXStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmVRMSXStatus",
+      "displayName": "StatusBitsMainAlarmVRMSXStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmVRMSYStatus",
+      "displayName": "StatusBitsPreAlarmVRMSYStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmVRMSYStatus",
+      "displayName": "StatusBitsMainAlarmVRMSYStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmVRMSZStatus",
+      "displayName": "StatusBitsPreAlarmVRMSZStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmVRMSZStatus",
+      "displayName": "StatusBitsMainAlarmVRMSZStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsPreAlarmVRMSMagnitudeStatus",
+      "displayName": "StatusBitsPreAlarmVRMSMagnitudeStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsMainAlarmVRMSMagnitudeStatus",
+      "displayName": "StatusBitsMainAlarmVRMSMagnitudeStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsReserved",
+      "displayName": "StatusBitsReserved",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsVibrationSeverityZoneA",
+      "displayName": "StatusBitsVibrationSeverityZoneA",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsVibrationSeverityZoneB",
+      "displayName": "StatusBitsVibrationSeverityZoneB",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsVibrationSeverityZoneC",
+      "displayName": "StatusBitsVibrationSeverityZoneC",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsVibrationSeverityZoneD",
+      "displayName": "StatusBitsVibrationSeverityZoneD",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsContactTemperatureLowerAlarmStatus",
+      "displayName": "StatusBitsContactTemperatureLowerAlarmStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsContactTemperatureUpperAlarmStatus",
+      "displayName": "StatusBitsContactTemperatureUpperAlarmStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsAmbientPressureLowerAlarmStatus",
+      "displayName": "StatusBitsAmbientPressureLowerAlarmStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsAmbientPressureUpperAlarmStatus",
+      "displayName": "StatusBitsAmbientPressureUpperAlarmStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsHumidtyLowerAlarmStatus",
+      "displayName": "StatusBitsHumidtyLowerAlarmStatus",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBitsHumidityUpperAlarmStatus",
+      "displayName": "StatusBitsHumidityUpperAlarmStatus",
+      "schema": "integer"
+    }
+  ]
+}

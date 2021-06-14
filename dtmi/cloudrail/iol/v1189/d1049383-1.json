@@ -1,0 +1,8 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1189:D1049383;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "A-1200, 0...2.5 bar; 1xPNP",
+  "description": "A-1200 - Pressure Sensor, 0...2.5 bar; 1xPNP",
+  "contents": []
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D387;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KG50xx",
+  "description": "Capacitive sensor. Connection: 1x open collector with automatic load detection (DC PNP or DC NPN); with M12 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue",
+      "displayName": "ProcessValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT1",
+      "displayName": "SwitchStateOUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

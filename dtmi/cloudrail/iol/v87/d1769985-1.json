@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1769985;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OEEIxxxU0135",
+  "description": "Light Curtain",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beams",
+      "displayName": "Beams",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output2",
+      "displayName": "Output2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValueIn",
+      "displayName": "AnalogValueIn",
+      "schema": "long"
+    }
+  ]
+}

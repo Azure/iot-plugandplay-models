@@ -1,0 +1,169 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1403;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OY5113",
+  "description": "Photoelectric sensor, 0...210 none",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FBO",
+      "displayName": "FBO",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LBO",
+      "displayName": "LBO",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CBO",
+      "displayName": "CBO",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NBO",
+      "displayName": "NBO",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NCBO",
+      "displayName": "NCBO",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beams",
+      "displayName": "Beams",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Syncro",
+      "displayName": "Syncro",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V310:D1403:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V310:D1403:SSC;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Trigger",
+              "displayName": "Trigger",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1403:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:VECOW:vig_100;2",
+    "@type": "Interface",
+    "displayName": "VECOW-VIG-100",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}

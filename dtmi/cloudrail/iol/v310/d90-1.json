@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D90;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TR7432",
+  "description": "TR",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "integer"
+    }
+  ]
+}

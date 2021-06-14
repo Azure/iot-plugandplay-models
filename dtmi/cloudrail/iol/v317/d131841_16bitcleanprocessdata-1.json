@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D131841_16bitCleanProcessData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TS720-LI2UPN8-H1141",
+  "description": "Temperature Measurement",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_K",
+      "displayName": "TemperatureProcessValue_K",
+      "schema": "double",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_C",
+      "displayName": "TemperatureProcessValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_F",
+      "displayName": "TemperatureProcessValue_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

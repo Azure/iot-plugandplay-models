@@ -1,0 +1,101 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:iBS01G;1",
+  "@type": "Interface",
+  "displayName": "iBS01G",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportMode",
+      "displayName": "Report Send Mode",
+      "description": "Sets the mode for sending the report.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "event",
+            "displayName": "Only when an event occurs",
+            "description": "Send only when an event occurs.",
+            "enumValue": 1
+          },
+          {
+            "name": "periodic",
+            "displayName": "Periodic transmission only",
+            "description": "Send at the specified interval. It is not possible to detect multiple changes in value during the transmission interval.",
+            "enumValue": 2
+          },
+          {
+            "name": "eventAndPeriodic",
+            "displayName": "Event occurs and periodic transmission",
+            "description": "Sent when an event occurs.It is also sent periodically at a specified interval.",
+            "enumValue": 3
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ibs01g",
+      "displayName": "iBS01G",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Timestamp",
+            "name": "timestamp",
+            "description": "Sets the time information for data reception.",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "description": "Sets the RSSI value for data reception.",
+            "schema": "integer"
+          },
+          {
+            "displayName": "MAC Address",
+            "name": "mac",
+            "description": "Set the MAC address of the sensor.",
+            "schema": "string"
+          },
+          {
+            "displayName": "Moving Detection",
+            "name": "isMoving",
+            "description": "Set to True when motion is detected.",
+            "schema": "boolean"
+          },
+          {
+            "displayName": "Falling Detection",
+            "name": "isFalling",
+            "description": "Set to True when a fall is detected.",
+            "schema": "boolean"
+          },
+          {
+            "displayName": "Battery Voltage",
+            "name": "batteryVoltage",
+            "description": "Set the battery voltage of the sensor.",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}

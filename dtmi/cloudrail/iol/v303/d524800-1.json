@@ -1,0 +1,151 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D524800;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Emparro67 10-100-240/24 2x MICO 7/8\" IOL",
+  "description": "Emparro67 Hybrid Power Supply",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "OUT1USPresentCurrentLimit_A",
+      "displayName": "OUT1USPresentCurrentLimit_A",
+      "schema": "long",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "OUT2UAPresentCurrentLimit_A",
+      "displayName": "OUT2UAPresentCurrentLimit_A",
+      "schema": "long",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "OUT1USMeasuredCurrent_A",
+      "displayName": "OUT1USMeasuredCurrent_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "OUT2UAMeasuredCurrent_A",
+      "displayName": "OUT2UAMeasuredCurrent_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1USPoweredOn",
+      "displayName": "OUT1USPoweredOn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2UAPoweredOn",
+      "displayName": "OUT2UAPoweredOn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1USAlarm",
+      "displayName": "OUT1USAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2UAAlarm",
+      "displayName": "OUT2UAAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputVoltageOK",
+      "displayName": "InputVoltageOK",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overtemperature",
+      "displayName": "Overtemperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SetCurrentExceedsPowerSupplyLimit",
+      "displayName": "SetCurrentExceedsPowerSupplyLimit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InternalFault",
+      "displayName": "InternalFault",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OUT1USSetCurrentLimit",
+              "displayName": "OUT1USSetCurrentLimit",
+              "schema": "long"
+            },
+            {
+              "name": "OUT2UASetCurrentLimit",
+              "displayName": "OUT2UASetCurrentLimit",
+              "schema": "long"
+            },
+            {
+              "name": "OUT1USPowerOn",
+              "displayName": "OUT1USPowerOn",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT2UAPowerOn",
+              "displayName": "OUT2UAPowerOn",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT1USAlarmReset",
+              "displayName": "OUT1USAlarmReset",
+              "schema": "integer"
+            },
+            {
+              "name": "OUT2UAAlarmReset",
+              "displayName": "OUT2UAAlarmReset",
+              "schema": "integer"
+            },
+            {
+              "name": "OutputVoltage",
+              "displayName": "OutputVoltage",
+              "schema": "long"
+            },
+            {
+              "name": "EnableControlByProcessData",
+              "displayName": "EnableControlByProcessData",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

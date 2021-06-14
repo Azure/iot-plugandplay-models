@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D579;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OID2x4",
+  "description": "Optical distance sensor. Visible laser light, protection class 2 laser. Connection: 2 switching outputs normally open / closed complementary DC PNP, 1 switching input laser on / off, 5...200 cm",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_cm",
+      "displayName": "Distance_cm",
+      "schema": "double",
+      "unit": "centimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

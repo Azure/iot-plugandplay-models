@@ -1,0 +1,289 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V696:D10;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CPC10IO-S1",
+  "description": "ControlPlex(R) Controller with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel1",
+      "displayName": "DeviceStateChannel1",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel1_A",
+      "displayName": "CurrentChannel1_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel2",
+      "displayName": "DeviceStateChannel2",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel2_A",
+      "displayName": "CurrentChannel2_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel3",
+      "displayName": "DeviceStateChannel3",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel3_A",
+      "displayName": "CurrentChannel3_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel4",
+      "displayName": "DeviceStateChannel4",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel4_A",
+      "displayName": "CurrentChannel4_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel5",
+      "displayName": "DeviceStateChannel5",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel5_A",
+      "displayName": "CurrentChannel5_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel6",
+      "displayName": "DeviceStateChannel6",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel6_A",
+      "displayName": "CurrentChannel6_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel7",
+      "displayName": "DeviceStateChannel7",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel7_A",
+      "displayName": "CurrentChannel7_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel8",
+      "displayName": "DeviceStateChannel8",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel8_A",
+      "displayName": "CurrentChannel8_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel9",
+      "displayName": "DeviceStateChannel9",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel9_A",
+      "displayName": "CurrentChannel9_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel10",
+      "displayName": "DeviceStateChannel10",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel10_A",
+      "displayName": "CurrentChannel10_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel11",
+      "displayName": "DeviceStateChannel11",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel11_A",
+      "displayName": "CurrentChannel11_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel12",
+      "displayName": "DeviceStateChannel12",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel12_A",
+      "displayName": "CurrentChannel12_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel13",
+      "displayName": "DeviceStateChannel13",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel13_A",
+      "displayName": "CurrentChannel13_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel14",
+      "displayName": "DeviceStateChannel14",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel14_A",
+      "displayName": "CurrentChannel14_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel15",
+      "displayName": "DeviceStateChannel15",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel15_A",
+      "displayName": "CurrentChannel15_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStateChannel16",
+      "displayName": "DeviceStateChannel16",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "CurrentChannel16_A",
+      "displayName": "CurrentChannel16_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Channel1To16Reset",
+              "displayName": "Channel1To16Reset",
+              "schema": "long"
+            },
+            {
+              "name": "Channel1To16Onoff",
+              "displayName": "Channel1To16Onoff",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

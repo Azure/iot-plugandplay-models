@@ -1,0 +1,89 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D322_Kgfcm2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ISE77G-xxxT-L2-M",
+  "description": "Pressure Range,0...10MPa\r\nRc1/4",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureValue_MPa",
+      "displayName": "PressureValue_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PressureValue_bar",
+      "displayName": "PressureValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PressureValue_psi",
+      "displayName": "PressureValue_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureValue_kgpcm2",
+      "displayName": "PressureValue_kgpcm2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT2",
+      "displayName": "SwitchStateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V131:D322_Kgfcm2:SwitchStateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT1",
+      "displayName": "SwitchStateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V131:D322_Kgfcm2:SwitchStateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D322_Kgfcm2:SwitchStateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}
