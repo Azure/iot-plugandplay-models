@@ -23,7 +23,7 @@
       "@type": "Property",
       "name": "teleFrq",
       "schema": "double",
-      "description": "The frq of telemetry.",
+      "description": "The frequence of telemetry.",
       "writable": true
     },
     {
