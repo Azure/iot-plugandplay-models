@@ -1,0 +1,30 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Cactusphere:Cactusphere_Basic;1",
+  "@type": "Interface",
+  "displayName": "Cactusphere basic version",
+  "description": "Cactusphere basic version device characteristics",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Cactusphere:Cactusphere_DeviceInformation;1",
+      "name": "deviceinformation",
+      "displayName": "Device Information",
+      "description": "Cactusphere device information"
+    },
+    {
+      "@type": ["Telemetry", "Event"],
+      "name": "UserSWEvent",
+      "schema": "integer",
+      "displayName": "UserSW event",
+      "description": "UserSW event, send 1 when pressed."
+    },
+    {
+      "@type": ["Telemetry"],
+      "name": "HeartBeat",
+      "schema": "integer",
+      "displayName": "Heartbeat",
+      "description": "Device heartbeat, count up every 1 second."
+    }
+  ]
+}
