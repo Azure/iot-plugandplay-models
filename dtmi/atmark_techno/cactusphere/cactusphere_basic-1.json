@@ -74,8 +74,7 @@
       "name": "SphereWarning",
       "schema": "string",
       "displayName": "Error information",
-      "description": "Error information of the device.",
-      "writable": false
+      "description": "Error information of the device."
     },
     {
       "@type": ["Telemetry", "Event"],
