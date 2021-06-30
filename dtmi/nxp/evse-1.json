@@ -1,0 +1,244 @@
+[
+  {
+    "@id": "dtmi:nxp:evse;8",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Temperature"
+        },
+        "name": "temperature",
+        "schema": "integer",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Battery"
+        },
+        "name": "battery",
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Power"
+        ],
+        "displayName": {
+          "en": "Charge Rate"
+        },
+        "name": "ChargeRate",
+        "schema": "integer",
+        "unit": "watt"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Energy"
+        ],
+        "displayName": {
+          "en": "Battery Capacity"
+        },
+        "name": "batterycapacity",
+        "schema": "integer",
+        "unit": "kilowattHour"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Charge Status"
+        },
+        "name": "chargestatus",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Vehicle ID:"
+        },
+        "name": "vehicleid",
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Current"
+        ],
+        "displayName": {
+          "en": "EVSE Power Rating"
+        },
+        "name": "evsepowerrating",
+        "schema": "integer",
+        "unit": "ampere"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "EVSE ID"
+        },
+        "name": "evseid",
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Current"
+        ],
+        "displayName": {
+          "en": "EVSE Limit"
+        },
+        "name": "evselimit",
+        "schema": "integer",
+        "unit": "ampere"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "EVSE Location"
+        },
+        "name": "evselocation",
+        "schema": "geopoint"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Time Remaining"
+        },
+        "name": "TimeRemaining",
+        "schema": "string"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Charge Cost"
+        },
+        "name": "chargecost",
+        "schema": "float"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Current"
+        ],
+        "displayName": {
+          "en": "RMS Current "
+        },
+        "name": "irms",
+        "schema": "float",
+        "unit": "ampere"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Voltage"
+        ],
+        "displayName": {
+          "en": "RMS Voltage"
+        },
+        "name": "vrms",
+        "schema": "float",
+        "unit": "volt"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Energy"
+        ],
+        "displayName": {
+          "en": "Power"
+        },
+        "name": "kwh",
+        "schema": "float",
+        "unit": "kilowattHour"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Firmware Version"
+        },
+        "name": "firmwareV",
+        "schema": "float"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Authentication State"
+        },
+        "name": "vehicleauthentic2",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "displayName": {
+                "en": "Authenticated"
+              },
+              "enumValue": "Authenticated",
+              "name": "Authenticated"
+            },
+            {
+              "displayName": {
+                "en": "Rejected"
+              },
+              "enumValue": "Rejected",
+              "name": "Rejected"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      },
+      {
+        "@type": [
+          "Property",
+          "Current"
+        ],
+        "displayName": {
+          "en": "Grid Power Limit"
+        },
+        "name": "GridPowerLimit2",
+        "schema": "integer",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Tariff Rate"
+        },
+        "name": "Tariff",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Tariff Cost"
+        },
+        "name": "tariffcost",
+        "schema": "float",
+        "writable": true
+      },
+      {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Terminate Charge Cycle"
+        },
+        "name": "terminate"
+      }
+    ],
+    "displayName": {
+      "en": "evse_nxp"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]
