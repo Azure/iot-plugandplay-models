@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D262658;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 23K-GI-RH10-S4",
+  "description": "BOS - Optical Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Q1Off",
+            "enumValue": "Q1Off"
+          },
+          {
+            "name": "Q1On",
+            "enumValue": "Q1On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StabilityDisplay",
+      "displayName": "StabilityDisplay",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoStability",
+            "enumValue": "NoStability"
+          },
+          {
+            "name": "Stability",
+            "enumValue": "Stability"
+          }
+        ]
+      }
+    }
+  ]
+}

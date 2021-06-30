@@ -1,0 +1,200 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:azureiot:PhoneSensors;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "comment": "Level percentage",
+        "displayName": {
+          "en": "Battery Level"
+        },
+        "name": "battery",
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "AccelerationVector"
+        ],
+        "displayName": {
+          "en": "Acceleration"
+        },
+        "name": "accelerometer",
+        "schema": "vector"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Rotation"
+        },
+        "name": "gyroscope",
+        "schema": "vector"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Magnetic induction"
+        },
+        "name": "magnetometer",
+        "schema": "vector"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Pressure"
+        },
+        "name": "barometer",
+        "schema": "double",
+        "unit": "kilopascal"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Location"
+        },
+        "name": "geolocation",
+        "schema": "geopoint"
+      },
+      {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Enable Sensors"
+        },
+        "name": "enableSensors",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Sensor"
+          },
+          "name": "sensor",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Sensor"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Sensor"
+                },
+                "name": "sensor",
+                "schema": "dtmi:azureiot:PhoneSensors:SensorsEnum;1"
+              },
+              {
+                "displayName": {
+                  "en": "Enable"
+                },
+                "name": "enable",
+                "schema": "boolean"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Change Delivery Interval"
+        },
+        "name": "changeInterval",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Payload"
+          },
+          "name": "payload",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Sensor"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Sensor"
+                },
+                "name": "sensor",
+                "schema": "dtmi:azureiot:PhoneSensors:SensorsEnum;1"
+              },
+              {
+                "displayName": {
+                  "en": "Interval"
+                },
+                "name": "interval",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:azureiot:PhoneSensors:SensorsEnum;1",
+        "@type": "Enum",
+        "displayName": {
+          "en": "Enum"
+        },
+        "enumValues": [
+          {
+            "displayName": {
+              "en": "Acceleration"
+            },
+            "enumValue": "accelerometer",
+            "name": "Acceleration"
+          },
+          {
+            "displayName": {
+              "en": "Pressure"
+            },
+            "enumValue": "barometer",
+            "name": "Pressure"
+          },
+          {
+            "displayName": {
+              "en": "Rotation"
+            },
+            "enumValue": "gyroscope",
+            "name": "Rotation"
+          },
+          {
+            "displayName": {
+              "en": "Magnetic Induction"
+            },
+            "enumValue": "magnetometer",
+            "name": "MagneticInduction"
+          },
+          {
+            "displayName": {
+              "en": "Location"
+            },
+            "enumValue": "geolocation",
+            "name": "Location"
+          },
+          {
+            "displayName": {
+              "en": "Battery Level"
+            },
+            "enumValue": "battery",
+            "name": "Battery"
+          }
+        ],
+        "valueSchema": "string"
+      }
+    ],
+    "displayName": {
+      "en": "Sensors"
+    }
+  }

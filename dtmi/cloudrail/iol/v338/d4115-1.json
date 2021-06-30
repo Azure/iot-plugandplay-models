@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D4115;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CML730 [2 Bytes and COM2]",
+  "description": "Measuring light curtain CML730, DeviceID 0x1013",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PD01",
+      "displayName": "PD01",
+      "schema": "long"
+    }
+  ]
+}

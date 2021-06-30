@@ -1,0 +1,339 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D1048577;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Modlight70 Pro BASE M12-4x IOL ",
+  "description": "Modlight70 Pro connecting modul with IO-Link\r\nConnection M12 4-pole, outlet bottom\r\nModular signal tower with maximum flexibility in configuration: up to 5 LED modules plus 1 buzzer module",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "IntermittentBuzzerOperation",
+              "displayName": "IntermittentBuzzerOperation",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "WhitePattern",
+              "displayName": "WhitePattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "White",
+              "displayName": "White",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BluePattern",
+              "displayName": "BluePattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Blue",
+              "displayName": "Blue",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "GreenPattern",
+              "displayName": "GreenPattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Green",
+              "displayName": "Green",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "YellowPattern",
+              "displayName": "YellowPattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Yellow",
+              "displayName": "Yellow",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "RedPattern",
+              "displayName": "RedPattern",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ContinuousLightning",
+                    "enumValue": "ContinuousLightning"
+                  },
+                  {
+                    "name": "BlinkingSlow",
+                    "enumValue": "BlinkingSlow"
+                  },
+                  {
+                    "name": "BlinkingMiddle",
+                    "enumValue": "BlinkingMiddle"
+                  },
+                  {
+                    "name": "BlinkingFast",
+                    "enumValue": "BlinkingFast"
+                  },
+                  {
+                    "name": "FlashingSingle",
+                    "enumValue": "FlashingSingle"
+                  },
+                  {
+                    "name": "FlashingDouble",
+                    "enumValue": "FlashingDouble"
+                  },
+                  {
+                    "name": "FlashingTriple",
+                    "enumValue": "FlashingTriple"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Red",
+              "displayName": "Red",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

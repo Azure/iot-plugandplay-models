@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D312;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Pxxxxx",
+  "description": "Electronic pressure monitor, 0...2,5 bar, Process connection G 1/4 I",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D312:SwitchstateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D312:SwitchstateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D312:SwitchstateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

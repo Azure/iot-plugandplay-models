@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3080192_DegreeCelsius;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FXFF0xx",
+  "description": "Flow Sensor; Compression Ring; Probe Length 50mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputA1",
+      "displayName": "OutputA1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputA2",
+      "displayName": "OutputA2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowUnstable",
+      "displayName": "FlowUnstable",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "Flowspeed_mps",
+      "displayName": "Flowspeed_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D494;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SV7610",
+  "description": "Flow sensor, 1.3...26.4 gpm, IO-Link, cULus (Limited Voltage / Current), CRN, 3/4\" NPT",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_GPM",
+      "displayName": "Flow_GPM",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_galph",
+      "displayName": "Flow_galph",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D494:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D494:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D494:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D4194305;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ECR-MNNN3B-LK[SIMPLE MODE]",
+  "description": "https://www.ckd.co.jp/",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MonitorValue",
+      "displayName": "MonitorValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusDirectSelection",
+      "displayName": "StatusDirectSelection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Point",
+            "enumValue": "Point"
+          },
+          {
+            "name": "Direct",
+            "enumValue": "Direct"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointZone",
+      "displayName": "StatusPointZone",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusTraveling",
+      "displayName": "StatusTraveling",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusZone1",
+      "displayName": "StatusZone1",
+      "schema": "dtmi:CloudRail:IOL:V855:D4194305:StatusZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusZone2",
+      "displayName": "StatusZone2",
+      "schema": "dtmi:CloudRail:IOL:V855:D4194305:StatusZone;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PointNumberConfirmation",
+      "displayName": "PointNumberConfirmation",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusPointTravelComplete",
+      "displayName": "StatusPointTravelComplete",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusHomePositionReturnComplete",
+      "displayName": "StatusHomePositionReturnComplete",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusServoON",
+      "displayName": "StatusServoON",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusAlarm",
+      "displayName": "StatusAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusWarning",
+      "displayName": "StatusWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusReady",
+      "displayName": "StatusReady",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Position",
+              "displayName": "Position",
+              "schema": "long"
+            },
+            {
+              "name": "DirectSelection",
+              "displayName": "DirectSelection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Point",
+                    "enumValue": "Point"
+                  },
+                  {
+                    "name": "Direct",
+                    "enumValue": "Direct"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MonitorNumber",
+              "displayName": "MonitorNumber",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Speed",
+                    "enumValue": "Speed"
+                  },
+                  {
+                    "name": "Current",
+                    "enumValue": "Current"
+                  },
+                  {
+                    "name": "Alarm",
+                    "enumValue": "Alarm"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "PointNumber0511",
+              "displayName": "PointNumber0511",
+              "schema": "long"
+            },
+            {
+              "name": "PointTravelStart",
+              "displayName": "PointTravelStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "HomePositionReturnStart",
+              "displayName": "HomePositionReturnStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ServoON",
+              "displayName": "ServoON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AlarmReset",
+              "displayName": "AlarmReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Stop",
+              "displayName": "Stop",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Pause",
+              "displayName": "Pause",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D4194305:StatusZone;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

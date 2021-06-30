@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V779:D1220;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Tx1",
+  "description": "Linear Transducer",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDin1Position1",
+      "displayName": "PDin1Position1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDin1Position2",
+      "displayName": "PDin1Position2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDin2Speed1",
+      "displayName": "PDin2Speed1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDin2Speed2",
+      "displayName": "PDin2Speed2",
+      "schema": "long"
+    }
+  ]
+}

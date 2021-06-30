@@ -1,0 +1,251 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ECS:CSCG_Gateway;1",
+    "@type": "Interface",
+    "displayName": "ECS-CSCG_Gateway",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "gatewayId",
+            "displayName": "gatewayId",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isEncrypted",
+            "displayName": "isEncrypted",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location",
+            "displayName": "location",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "altitude",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "latitude",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "locationMethod",
+                        "schema": "string"
+                    },
+                    {
+                        "name": "longitude",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "positionUncertainty",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "timeOfPosition",
+                        "schema": "long"
+                    },
+                    {
+                        "name": "wifiAccessPoints",
+                        "schema": {
+                            "@type": "Array",
+                            "elementSchema":{
+                                "@type": "Object",
+                                "fields":[
+                                    {
+                                        "name": "macAddress",
+                                        "displayName": "macAddress",
+                                        "schema": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "cellTowers",
+                        "schema": {
+                            "@type": "Array",
+                            "elementSchema": {
+                                "@type": "Object",
+                                "fields": [
+                                  {
+                                    "name": "cellId",
+                                    "displayName": "Cell ID",
+                                    "schema": "integer"
+                                  },
+                                  {
+                                    "name": "locationAreaCode",
+                                    "displayName": "LAC",
+                                    "schema": "integer"
+                                  },
+                                  {
+                                    "name": "mobileCountryCode",
+                                    "displayName": "MCC",
+                                    "schema": "integer"
+                                  },
+                                  {
+                                    "name": "mobileNetworkCode",
+                                    "displayName": "MNC",
+                                    "schema": "integer"
+                                  },
+                                  {
+                                    "name": "signalStrength",
+                                    "displayName": "Signal Strength",
+                                    "schema": "integer"
+                                  }
+                                ]
+                              }
+                            }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "messageToken",
+            "displayName": "messageToken",
+            "schema": "long"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "payload",
+            "displayName": "payload",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Object",
+                    "fields": [
+                      {
+                        "name": "dataAuthenticated",
+                        "displayName": "dataAuthenticated",
+                        "schema": "boolean"
+                      },
+                      {
+                        "name": "tagHandle",
+                        "displayName": "tagHandle",
+                        "schema": "string"
+                      },
+                      {
+                        "name": "tagId",
+                        "displayName": "tagId",
+                        "schema": "string"
+                      },
+                      {
+                        "name": "time",
+                        "displayName": "time",
+                        "schema": "long"
+                      },
+                      {
+                        "name": "sensorData",
+                        "displayName": "sensorData",
+                        "schema": {
+                            "@type": "Array",
+                            "elementSchema": {
+                                "@type": "Object",
+                                "fields":[
+                                    {
+                                        "name": "anomalyValue",
+                                        "displayName": "anomalyValue",
+                                        "schema": "string"
+                                    },
+                                    {
+                                        "name": "currentValue",
+                                        "displayName": "currentValue",
+                                        "schema": "string"
+                                    },
+                                    {
+                                        "name": "isAnalysis",
+                                        "displayName": "isAnalysis",
+                                        "schema": "boolean"
+                                    },
+                                    {
+                                        "name": "isAnomaly",
+                                        "displayName": "isAnomaly",
+                                        "schema": "boolean"
+                                    },
+                                    {
+                                        "name": "type",
+                                        "displayName": "type",
+                                        "schema": "string"
+                                    }
+                                ]
+                            }
+                        }
+                      }
+                    ] 
+                }
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "displayName": "status",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "time",
+            "displayName": "time",
+            "schema": "long"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "messageType",
+            "displayName": "messageType",
+            "schema": "string"
+        },
+        {
+            "@type": "Command",
+            "name": "iclpGwCommand",
+            "displayName": "iclpGwCommand",
+            "description": "Cloud To Device Message in JSON",
+            "request": {
+              "name": "cloudToDeviceMessage",
+              "displayName": "cloudToDeviceMessage",
+              "schema": "string"
+            }
+        },
+        {
+            "@type": "Command",
+            "name": "RebootGateway",
+            "displayName": "RebootGateway",
+            "description": "Reboot Gateway Device"
+        },
+        {
+            "@type": "Command",
+            "name": "CalibrateGateway",
+            "displayName": "CalibrateGateway",
+            "description": "Calibrate Gateway Device"
+        },
+        {
+            "@type": "Command",
+            "name": "UpdateGateway",
+            "displayName": "UpdateGateway",
+            "description": "On-demand Gateway Over The Air Update"
+        },
+        {
+            "@type": "Command",
+            "name": "SetAirplaneMode",
+            "displayName": "SetAirplaneMode",
+            "description": "Move Gateway device into Airplane Mode for x duration in Minutes",
+            "request": {
+              "name": "DurationInMinutes",
+              "displayName": "Duration in Minutes",
+              "schema": "long"
+            }
+        },
+        {
+            "@type": "Command",
+            "name": "SetGatewayChannelId",
+            "displayName": "SetGatewayChannelId",
+            "description": "IEEE 802.15.4 Channel Id between 11 to 25",
+            "request": {
+              "name": "IEEE802154ChannelId",
+              "displayName": "IEEE 802.15.4 Channel Id",
+              "schema": "integer"
+            }
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D11;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LR8300",
+  "description": "Electronic level sensor, 1.0...157.0 cm, Process connection 3/4'' NPT",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_cm",
+      "displayName": "Level_cm",
+      "schema": "double",
+      "unit": "centimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_in",
+      "displayName": "Level_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT4",
+      "displayName": "SwitchStatusOUT4",
+      "schema": "dtmi:CloudRail:IOL:V310:D11:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT3",
+      "displayName": "SwitchStatusOUT3",
+      "schema": "dtmi:CloudRail:IOL:V310:D11:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT2",
+      "displayName": "SwitchStatusOUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D11:SwitchStatusOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D11:SwitchStatusOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D11:SwitchStatusOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

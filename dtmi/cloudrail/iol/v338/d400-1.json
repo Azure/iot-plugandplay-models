@@ -1,0 +1,79 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D400;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HRTR 46B/L.221-S12",
+  "description": "HRT46B",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SensorOperational",
+      "displayName": "SensorOperational",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal",
+      "displayName": "SwitchingSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransmitterDeactivation",
+              "displayName": "TransmitterDeactivation",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "TransmitterActive",
+                    "enumValue": "TransmitterActive"
+                  },
+                  {
+                    "name": "TransmitterInactive",
+                    "enumValue": "TransmitterInactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V419:D63;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "lcs+340/F/A    ",
+  "description": "Ultrasonic sensor in cubic plastic housing, 1 push-pull switching output, 350 - 5000 mm measuring range, 350 mm blindzone, 3400 mm operating range, temperature compensation.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

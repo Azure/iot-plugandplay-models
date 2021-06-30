@@ -1,0 +1,225 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V288:D3240960;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EPI3174-0002",
+  "description": "4 Analog Input Module",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__UnderRange",
+      "displayName": "Channel1Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Overrange",
+      "displayName": "Channel1Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Limit1",
+      "displayName": "Channel1Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Limit2",
+      "displayName": "Channel1Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__Error",
+      "displayName": "Channel1Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__SyncError",
+      "displayName": "Channel1Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__TxPDOState",
+      "displayName": "Channel1Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Status__TxPDOToggle",
+      "displayName": "Channel1Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1Value",
+      "displayName": "Channel1Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__UnderRange",
+      "displayName": "Channel2Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Overrange",
+      "displayName": "Channel2Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Limit1",
+      "displayName": "Channel2Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Limit2",
+      "displayName": "Channel2Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__Error",
+      "displayName": "Channel2Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__SyncError",
+      "displayName": "Channel2Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__TxPDOState",
+      "displayName": "Channel2Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Status__TxPDOToggle",
+      "displayName": "Channel2Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2Value",
+      "displayName": "Channel2Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__UnderRange",
+      "displayName": "Channel3Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__Overrange",
+      "displayName": "Channel3Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__Limit1",
+      "displayName": "Channel3Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__Limit2",
+      "displayName": "Channel3Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__Error",
+      "displayName": "Channel3Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__SyncError",
+      "displayName": "Channel3Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__TxPDOState",
+      "displayName": "Channel3Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Status__TxPDOToggle",
+      "displayName": "Channel3Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3Value",
+      "displayName": "Channel3Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__UnderRange",
+      "displayName": "Channel4Status__UnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__Overrange",
+      "displayName": "Channel4Status__Overrange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__Limit1",
+      "displayName": "Channel4Status__Limit1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__Limit2",
+      "displayName": "Channel4Status__Limit2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__Error",
+      "displayName": "Channel4Status__Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__SyncError",
+      "displayName": "Channel4Status__SyncError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__TxPDOState",
+      "displayName": "Channel4Status__TxPDOState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Status__TxPDOToggle",
+      "displayName": "Channel4Status__TxPDOToggle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4Value",
+      "displayName": "Channel4Value",
+      "schema": "long"
+    }
+  ]
+}

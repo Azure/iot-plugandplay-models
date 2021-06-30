@@ -1,0 +1,117 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2140;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DRT25C.3/L6-xxx-M12",
+  "description": "Dynamic reference scanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SSC10",
+            "enumValue": "SSC10"
+          },
+          {
+            "name": "SSC11",
+            "enumValue": "SSC11"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measure",
+      "displayName": "Measure",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MeasureFalse",
+            "enumValue": "MeasureFalse"
+          },
+          {
+            "name": "MeasureTrue",
+            "enumValue": "MeasureTrue"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Signal",
+      "displayName": "Signal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SignalFalse",
+            "enumValue": "SignalFalse"
+          },
+          {
+            "name": "SignalTrue",
+            "enumValue": "SignalTrue"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Warning0",
+            "enumValue": "Warning0"
+          },
+          {
+            "name": "Warning1",
+            "enumValue": "Warning1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableRequestInactive",
+                    "enumValue": "DisableRequestInactive"
+                  },
+                  {
+                    "name": "DisableRequestActive",
+                    "enumValue": "DisableRequestActive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

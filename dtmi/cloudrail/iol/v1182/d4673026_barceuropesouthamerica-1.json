@@ -1,0 +1,170 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1182:D4673026_BarCEuropeSouthAmerica;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MP with LS + MT",
+  "description": "Mass Pressure Sensor w. Limit Switch + Mass Temperature Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MassPressure_MPa",
+      "displayName": "MassPressure_MPa",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "MassPressure_bar",
+      "displayName": "MassPressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "MassPressure_psi",
+      "displayName": "MassPressure_psi",
+      "schema": "long",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "MassTemperature_C",
+      "displayName": "MassTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "MassTemperature_F",
+      "displayName": "MassTemperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_C",
+      "displayName": "HeadTemperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "HeadTemperature_F",
+      "displayName": "HeadTemperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessPressureSwitchoff",
+      "displayName": "ExcessPressureSwitchoff",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure05Bar",
+      "displayName": "Pressure05Bar",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureSensorLoad100",
+      "displayName": "PressureSensorLoad100",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HeadTemperature85C",
+      "displayName": "HeadTemperature85C",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ServiceRecommended",
+      "displayName": "ServiceRecommended",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NO",
+            "enumValue": "NO"
+          },
+          {
+            "name": "YES",
+            "enumValue": "YES"
+          }
+        ]
+      }
+    }
+  ]
+}

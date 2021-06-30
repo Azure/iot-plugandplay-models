@@ -1,0 +1,153 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1226;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DX20x5",
+  "description": "Multifunction display for monitoring analogue standard signals, IO-Link, 115 - 230 V AC",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "INPUT1",
+      "displayName": "INPUT1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitINPUT1",
+      "displayName": "ScalingUnitINPUT1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "INPUT2",
+      "displayName": "INPUT2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitINPUT2",
+      "displayName": "ScalingUnitINPUT2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LINKAGE12",
+      "displayName": "LINKAGE12",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitLINKAGE12",
+      "displayName": "ScalingUnitLINKAGE12",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "INPUT1TOTAL",
+      "displayName": "INPUT1TOTAL",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitINPUT1TOTAL",
+      "displayName": "ScalingUnitINPUT1TOTAL",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "INPUT2TOTAL",
+      "displayName": "INPUT2TOTAL",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitINPUT2TOTAL",
+      "displayName": "ScalingUnitINPUT2TOTAL",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LINKAGETOTAL",
+      "displayName": "LINKAGETOTAL",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingUnitLINKAGETOTAL",
+      "displayName": "ScalingUnitLINKAGETOTAL",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusReserve",
+      "displayName": "OutputStatusReserve",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusRel2",
+      "displayName": "OutputStatusRel2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusRel1",
+      "displayName": "OutputStatusRel1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusCtrlOut4",
+      "displayName": "OutputStatusCtrlOut4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusCtrlOut3",
+      "displayName": "OutputStatusCtrlOut3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusCtrlOut2",
+      "displayName": "OutputStatusCtrlOut2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputStatusCtrlOut1",
+      "displayName": "OutputStatusCtrlOut1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "IOLINKVALUE2",
+              "displayName": "IOLINKVALUE2",
+              "schema": "long"
+            },
+            {
+              "name": "IOLINKVALUE1",
+              "displayName": "IOLINKVALUE1",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

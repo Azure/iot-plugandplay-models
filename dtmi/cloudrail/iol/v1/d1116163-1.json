@@ -1,0 +1,88 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1116163;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OQT120-R103-xxP-IO-xxxM-Vx1",
+  "description": "R103, 120 mm, active high, configurable, Q2 output, cable 2 m, 4-pole",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V1:D1116163:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2",
+      "displayName": "SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V1:D1116163:SwitchingSignal;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CSC1TransducerDisable",
+              "displayName": "CSC1TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CSC2EvaluationHold",
+              "displayName": "CSC2EvaluationHold",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D1116163:SwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_Base;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW base",
+  "description": "Armadillo-IoT GW model base/common device characteristics",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "schema": "string",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device."
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "schema": "integer",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device."
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D65550_StraightScanMeasurements;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Exxxxxxxxxxx-Array IO-Link, 5 mm Channel Space Array",
+  "description": "EZ-Array IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FirstBeamBlocked",
+      "displayName": "FirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LastBeamBlocked",
+      "displayName": "LastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TotalBeamBlocked",
+      "displayName": "TotalBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Transitions",
+      "displayName": "Transitions",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousBeamBlocked",
+      "displayName": "ContiguousBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FirstBeamMade",
+      "displayName": "FirstBeamMade",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LastBeamMade",
+      "displayName": "LastBeamMade",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TotalBeamMade",
+      "displayName": "TotalBeamMade",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousBeamMade",
+      "displayName": "ContiguousBeamMade",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MiddleBeamBlocked",
+      "displayName": "MiddleBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousFirstBeamBlocked",
+      "displayName": "ContiguousFirstBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ContiguousLastBeamBlocked",
+      "displayName": "ContiguousLastBeamBlocked",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoMeasurement",
+      "displayName": "NoMeasurement",
+      "schema": "long"
+    }
+  ]
+}

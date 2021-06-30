@@ -1,0 +1,8 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1189:D1049870;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSD-4-ECO, 0...500 psi; 2xPNP + 0...10V",
+  "description": "PSD-4-ECO - OEM Pressure Switch with Display, 0...500 psi; 2xPNP + 0...10V",
+  "contents": []
+}

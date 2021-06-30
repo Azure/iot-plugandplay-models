@@ -1,0 +1,86 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D3027;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "U300.P50-GP2J.72xU",
+  "description": "Ultrasonic 2 point switch, IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4Counter",
+      "displayName": "SSC4Counter",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmOutput",
+      "displayName": "AlarmOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2Distance",
+      "displayName": "SSC2Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Distance",
+      "displayName": "SSC1Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Trigger",
+              "displayName": "Trigger",
+              "schema": "integer"
+            },
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "DisableTransducer",
+              "displayName": "DisableTransducer",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

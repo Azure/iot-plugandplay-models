@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D195;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "836P-D1xxGB30PA-D4",
+  "description": "Pressure Sensor, 836P, Display, 1/4 NPT Male, Gauge -14.5 to 300 PSI,1 x PNP IO-Link + 1 x 4-20 mA, Integral 4-pin M12 QD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered1",
+      "displayName": "Triggered1",
+      "schema": "dtmi:CloudRail:IOL:V2:D195:Triggered;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered2",
+      "displayName": "Triggered2",
+      "schema": "dtmi:CloudRail:IOL:V2:D195:Triggered;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V2:D195:Triggered;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Triggered",
+          "enumValue": "Triggered"
+        },
+        {
+          "name": "NotTriggered",
+          "enumValue": "NotTriggered"
+        }
+      ]
+    }
+  ]
+}

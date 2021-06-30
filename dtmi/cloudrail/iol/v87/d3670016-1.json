@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3670016;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FXPL/FXSL",
+  "description": "LevelTech, IO-Link, Connector M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1Output",
+      "displayName": "Switch1Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2Output",
+      "displayName": "Switch2Output",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    }
+  ]
+}

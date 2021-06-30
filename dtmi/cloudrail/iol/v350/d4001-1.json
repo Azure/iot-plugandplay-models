@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D4001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OXM200-RxxA.00x",
+  "description": "Smart Profil Sensor with integrated measurement tools - Measurement range 50mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue0",
+      "displayName": "MeasurementValue0",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue1",
+      "displayName": "MeasurementValue1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue2",
+      "displayName": "MeasurementValue2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue3",
+      "displayName": "MeasurementValue3",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue4",
+      "displayName": "MeasurementValue4",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TimeStampSec",
+      "displayName": "TimeStampSec",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TimeStampUSec",
+      "displayName": "TimeStampUSec",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EncoderValue",
+      "displayName": "EncoderValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Unused",
+      "displayName": "Unused",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValuesAreValid",
+      "displayName": "ValuesAreValid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConfigModeIsActive",
+      "displayName": "ConfigModeIsActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmBit",
+      "displayName": "AlarmBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryOut2",
+      "displayName": "BinaryOut2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryOut1",
+      "displayName": "BinaryOut1",
+      "schema": "integer"
+    }
+  ]
+}
