@@ -1,6 +1,6 @@
 [
   {
-    "@id": "dtmi:nxp:evse;8",
+    "@id": "dtmi:nxp:evse;1",
     "@type": "Interface",
     "contents": [
       {
