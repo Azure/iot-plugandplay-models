@@ -6,24 +6,25 @@ Any user can submit PRs to add new models to this repo. The PRs must follow the 
 
 We look at pull requests to `main` carefully as the models that go to this branch are released to our public [DTDL v2](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) repository via our deployment processes. We will have additional automated gates that must be cleared before manual review will occur. The following list contains major items that **must** be true to have your pull request accepted.
 
-### File types
+### Model file names
 
-- Files must conform to [DTDL v2](https://aka.ms/dtdl) specification.
-
-### File names
-
-- File names **must** be in lower case.
-- Files **must** end in `.json`.
-- File names **must** resemble the root `@id` value. All `:` **must** be substituted with `/` and all `;` must be substituted with `-`.
+- Model file names **must** be in lower case.
+- Model files **must** end in `.json`.
+- Model file names **must** resemble the root `@id` value. All `:` **must** be substituted with `/` and all `;` must be substituted with `-`.
 
 > Example: a file for `dtmi:com:Example:Thermostat;1` **must** be named `dtmi/com/example/thermostat-1.json`
 
-### Root `@id` element
+### Model file content structure
 
-- An `@id` property **must** exist on the root element.
-- The `@id` property **must** conform to [DTMI regular expression](https://github.com/Azure/digital-twin-model-identifier#validation-regular-expressions)
+- Model files **must** contain a single root object. No other types (such as array) are supported for the root element.
+- Model file content **must** conform to the [DTDL v2](https://aka.ms/dtdl) specification.
 
-### Scoping `@id` on non-root items
+### Root object `@id` property
+
+- An `@id` property **must** exist on the root object.
+- The `@id` property **must** conform to [DTMI regular expression](https://github.com/Azure/digital-twin-model-identifier#validation-regular-expressions).
+
+### Scoping `@id` on non-root elements
 
 DTDL contents (telemetry, properties, components, schemas) may contain `@id` properties that follow the DTMI specification. Within the context of this repository, we will refer to these values as sub-Ids.
 
