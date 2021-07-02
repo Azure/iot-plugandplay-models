@@ -5,6 +5,7 @@
     ],
     "@id": "dtmi:Advantech:JetsonDeviceInformation;1",
     "@type": "Interface",
+    "displayName": "Jetson Device Detailed Information",
     "contents": [
       {
         "@id": "dtmi:Advantech:JetsonDeviceInformation:CPUCore;1",

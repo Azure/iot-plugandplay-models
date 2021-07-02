@@ -1,6 +1,7 @@
 {
     "@id": "dtmi:Advantech:MIC_710AIX;2",
     "@type": "Interface",
+    "displayName": "MIC-710AIX",
     "contents": [
       {
         "@type": "Component",
@@ -13,9 +14,6 @@
         "schema": "dtmi:Advantech:Jetsonthermal_zones;1"
       }
     ],
-    "displayName": {
-      "en": "MIC-710AIX"
-    },
     "@context": [
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"

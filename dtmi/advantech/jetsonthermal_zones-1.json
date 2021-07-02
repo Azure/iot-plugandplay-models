@@ -5,6 +5,7 @@
     ],
     "@id": "dtmi:Advantech:Jetsonthermal_zones;1",
     "@type": "Interface",
+    "displayName": "Jetson Device Thermal Zones",
     "contents": [
       {
         "@id": "dtmi:Advantech:Jetsonthermal_zones:CPUThermal;1",
