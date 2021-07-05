@@ -1,0 +1,61 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Advantech:JetsonDeviceInformation;1",
+    "@type": "Interface",
+    "displayName": "Jetson Device Detailed Information",
+    "contents": [
+      {
+        "@id": "dtmi:Advantech:JetsonDeviceInformation:CPUCore;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "CPU Core"
+        },
+        "name": "CPUCore",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Advantech:JetsonDeviceInformation:CPUName;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "CPU Name"
+        },
+        "name": "CPUName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Advantech:JetsonDeviceInformation:GPUName;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "GPU Name"
+        },
+        "name": "GPUName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Advantech:JetsonDeviceInformation:GPUNumber;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "GPU Number"
+        },
+        "name": "GPUNumber",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Advantech:JetsonDeviceInformation:RAMTotalSize;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "RAM Total Size"
+        },
+        "name": "RAMTotalSize",
+        "schema": "string",
+        "writable": false
+      }
+    ]
+}
