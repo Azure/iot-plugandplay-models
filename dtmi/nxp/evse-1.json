@@ -1,4 +1,3 @@
-[
   {
     "@id": "dtmi:nxp:evse;1",
     "@type": "Interface",
@@ -241,4 +240,3 @@
       "dtmi:dtdl:context;2"
     ]
   }
-]
