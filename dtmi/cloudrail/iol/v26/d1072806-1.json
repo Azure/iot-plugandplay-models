@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D1072806;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IMB18-08BPSVC0S",
+  "description": "Inductive proximity sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SrReached",
+      "displayName": "SrReached",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SrReached",
+            "enumValue": "SrReached"
+          },
+          {
+            "name": "SrNotReached",
+            "enumValue": "SrNotReached"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SaReached",
+      "displayName": "SaReached",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SaReached",
+            "enumValue": "SaReached"
+          },
+          {
+            "name": "SaNotReached",
+            "enumValue": "SaNotReached"
+          }
+        ]
+      }
+    }
+  ]
+}

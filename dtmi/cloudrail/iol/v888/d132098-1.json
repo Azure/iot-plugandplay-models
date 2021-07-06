@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D132098;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BES Q08ZC-YPL20B-BP00,3-GSxx",
+  "description": "Inductive sensor size Q08 with IO-Link, teach-In function for switching point and additional high dynamic output of switching signal.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfSSC1",
+      "displayName": "SwitchingSignalOfSSC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetTooClose",
+      "displayName": "TargetTooClose",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetOutsideOfDetectionRange",
+      "displayName": "TargetOutsideOfDetectionRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachProcessActive",
+      "displayName": "TeachProcessActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachProcessEndedSuccessfully",
+      "displayName": "TeachProcessEndedSuccessfully",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachingUnsuccessful",
+      "displayName": "TeachingUnsuccessful",
+      "schema": "integer"
+    }
+  ]
+}

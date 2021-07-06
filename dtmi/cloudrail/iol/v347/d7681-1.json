@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D7681;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 10-RH-PNSL-KM3",
+  "description": "10...70 mm, Q1, Auto / PNP / NPN, pigtail 200 mm, M8, 3-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QQuality",
+      "displayName": "QQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ2",
+      "displayName": "SwitchingQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

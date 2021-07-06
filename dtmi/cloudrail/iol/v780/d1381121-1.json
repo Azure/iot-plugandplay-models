@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D1381121;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IC2101x6",
+  "description": "Inductive proximity switches, all-steel-housing, long switching distance",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection80Sn",
+      "displayName": "Detection80Sn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

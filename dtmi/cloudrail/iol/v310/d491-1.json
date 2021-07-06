@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D491;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SV5614",
+  "description": "Flow sensor, 0.55...10.55 gpm, IO-Link, cULus (Limited Voltage / Current), CRN, 1/2\" NPT",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_GPM",
+      "displayName": "Flow_GPM",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_galph",
+      "displayName": "Flow_galph",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NA",
+      "displayName": "NA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

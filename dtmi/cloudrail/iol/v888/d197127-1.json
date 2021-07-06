@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D197127;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BTL6-U1x7-Mxxxx-x-xx000-S4",
+  "description": "Position Transducer Rod",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable1",
+      "displayName": "ProcessDataVariable1",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable2",
+      "displayName": "ProcessDataVariable2",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable3",
+      "displayName": "ProcessDataVariable3",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable4",
+      "displayName": "ProcessDataVariable4",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable5",
+      "displayName": "ProcessDataVariable5",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable6",
+      "displayName": "ProcessDataVariable6",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable7",
+      "displayName": "ProcessDataVariable7",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable8",
+      "displayName": "ProcessDataVariable8",
+      "schema": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D197127:ProcessDataVariable;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "NoValidDataAvailable",
+          "enumValue": "NoValidDataAvailable"
+        }
+      ]
+    }
+  ]
+}

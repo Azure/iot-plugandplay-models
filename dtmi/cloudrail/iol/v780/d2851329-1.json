@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D2851329;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SL430020",
+  "description": "Airflow Meter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TotalConsumption_m3std",
+      "displayName": "TotalConsumption_m3std",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowRate_m3ph",
+      "displayName": "FlowRate_m3ph",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V780:D2851329:SwitchstateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V780:D2851329:SwitchstateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V780:D2851329:SwitchstateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

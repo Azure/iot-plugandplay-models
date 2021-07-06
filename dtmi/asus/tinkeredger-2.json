@@ -1,0 +1,28 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ASUS:TinkerEdgeR;2",
+    "@type": "Interface",
+    "displayName": "ASUS-TinkerEdgeR",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        },
+        {
+            "@type": "Component",
+            "name": "LprDetectCam1",
+            "schema": "dtmi:Synnex:LprDetectCam;1"
+        },
+        {
+            "@type": [
+              "Telemetry",
+              "Temperature"
+            ],
+            "name": "currentTempGPU",
+            "displayName": "Current Temperature (GPU)",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        }
+    ]
+}

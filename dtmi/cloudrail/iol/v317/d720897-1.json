@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D720897;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "B2N360-Q42-E2LIUPN8X2-H1181/S97/S1251",
+  "description": "2 Axis 360° Inclinometer",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "XAxis",
+      "displayName": "XAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "YAxis",
+      "displayName": "YAxis",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D800;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KG53xx",
+  "description": "Capacitive sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

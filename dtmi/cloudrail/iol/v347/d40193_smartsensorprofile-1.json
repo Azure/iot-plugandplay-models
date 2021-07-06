@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D40193_Smartsensorprofile;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RL2AM-800-PNSUIDL-L5M",
+  "description": "200...1000mm, QA, Q1, Q2/IN, Auto/PNP/NPN, metal plug M12, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ2",
+      "displayName": "SwitchingOutputQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    }
+  ]
+}

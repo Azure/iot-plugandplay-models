@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D459274;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BCS Q40BBAA-PSICFHC-EP00,3-GS04",
+  "description": "Capacitive Proximity Switch, Q40 SL50, IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfBDC1",
+      "displayName": "SwitchingSignalOfBDC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataValue",
+      "displayName": "ProcessDataValue",
+      "schema": "long"
+    }
+  ]
+}

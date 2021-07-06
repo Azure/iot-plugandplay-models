@@ -1,0 +1,304 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1335:D36246;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MOTUS®C14 Connect 2,6 A e-motor starter",
+  "description": "MOTUS®C14 Connect 2,6 A e-motor starter IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SoftstartActive",
+      "displayName": "SoftstartActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExternalEnableSignal",
+      "displayName": "ExternalEnableSignal",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterclockwiseRotation",
+      "displayName": "CounterclockwiseRotation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ClockwiseRotation",
+      "displayName": "ClockwiseRotation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningDetected",
+      "displayName": "WarningDetected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorDetected",
+      "displayName": "ErrorDetected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Reenable",
+      "displayName": "Reenable",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ErrorOverload",
+            "enumValue": "ErrorOverload"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorType",
+      "displayName": "ErrorType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceOK",
+            "enumValue": "DeviceOK"
+          },
+          {
+            "name": "ShortCircuit",
+            "enumValue": "ShortCircuit"
+          },
+          {
+            "name": "Overload",
+            "enumValue": "Overload"
+          },
+          {
+            "name": "PhaseAsymmetry",
+            "enumValue": "PhaseAsymmetry"
+          },
+          {
+            "name": "PhaseLoss",
+            "enumValue": "PhaseLoss"
+          },
+          {
+            "name": "Undercurrent",
+            "enumValue": "Undercurrent"
+          },
+          {
+            "name": "SupplyLoss",
+            "enumValue": "SupplyLoss"
+          },
+          {
+            "name": "UndervoltageSupply",
+            "enumValue": "UndervoltageSupply"
+          },
+          {
+            "name": "OvervoltageSupply",
+            "enumValue": "OvervoltageSupply"
+          },
+          {
+            "name": "Overtemperature",
+            "enumValue": "Overtemperature"
+          },
+          {
+            "name": "UndervoltageAux",
+            "enumValue": "UndervoltageAux"
+          },
+          {
+            "name": "OvervoltageAux",
+            "enumValue": "OvervoltageAux"
+          },
+          {
+            "name": "DeviceErrorMOSFETRelais",
+            "enumValue": "DeviceErrorMOSFETRelais"
+          },
+          {
+            "name": "CommunicationError",
+            "enumValue": "CommunicationError"
+          },
+          {
+            "name": "SecurityClearance",
+            "enumValue": "SecurityClearance"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NominalCurrent",
+      "displayName": "NominalCurrent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PhaseID",
+      "displayName": "PhaseID",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PhaseL1",
+            "enumValue": "PhaseL1"
+          },
+          {
+            "name": "PhaseL2",
+            "enumValue": "PhaseL2"
+          },
+          {
+            "name": "PhaseL3",
+            "enumValue": "PhaseL3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TripClass",
+      "displayName": "TripClass",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Class2E",
+            "enumValue": "Class2E"
+          },
+          {
+            "name": "Class3",
+            "enumValue": "Class3"
+          },
+          {
+            "name": "Class5",
+            "enumValue": "Class5"
+          },
+          {
+            "name": "Class10A",
+            "enumValue": "Class10A"
+          },
+          {
+            "name": "Class10",
+            "enumValue": "Class10"
+          },
+          {
+            "name": "Class20",
+            "enumValue": "Class20"
+          },
+          {
+            "name": "Class30",
+            "enumValue": "Class30"
+          },
+          {
+            "name": "Class40E",
+            "enumValue": "Class40E"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MotorCurrent",
+      "displayName": "MotorCurrent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputVoltage",
+      "displayName": "InputVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ThermalLoad",
+      "displayName": "ThermalLoad",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceType",
+      "displayName": "DeviceType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MotorstarterC14ConnectPlus26A",
+            "enumValue": "MotorstarterC14ConnectPlus26A"
+          },
+          {
+            "name": "MotorstarterC14ConnectPlus66A",
+            "enumValue": "MotorstarterC14ConnectPlus66A"
+          },
+          {
+            "name": "MotorstarterC14ConnectPlus85A",
+            "enumValue": "MotorstarterC14ConnectPlus85A"
+          },
+          {
+            "name": "MotorstarterC14Connect26A",
+            "enumValue": "MotorstarterC14Connect26A"
+          },
+          {
+            "name": "MotorstarterC14Connect66A",
+            "enumValue": "MotorstarterC14Connect66A"
+          },
+          {
+            "name": "MotorstarterC14Connect85A",
+            "enumValue": "MotorstarterC14Connect85A"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ExternalStopSignal",
+              "displayName": "ExternalStopSignal",
+              "schema": "integer"
+            },
+            {
+              "name": "SoftStartOnoff",
+              "displayName": "SoftStartOnoff",
+              "schema": "integer"
+            },
+            {
+              "name": "AutomaticReset",
+              "displayName": "AutomaticReset",
+              "schema": "integer"
+            },
+            {
+              "name": "ManualReset",
+              "displayName": "ManualReset",
+              "schema": "integer"
+            },
+            {
+              "name": "CounterclockwiseRotation",
+              "displayName": "CounterclockwiseRotation",
+              "schema": "integer"
+            },
+            {
+              "name": "ClockwiseRotation",
+              "displayName": "ClockwiseRotation",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

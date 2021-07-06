@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D11009_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 10-RLA-60-PNSL-Kx4",
+  "description": "10...70 mm, IN, Q1 Auto / PNP / NPN, pigtail 150 mm, M8, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388939_SystemstatusQStatusAndBeamStatus;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MLG-2 Pro COM3",
+  "description": "MLG-2 Pro Lightgrid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SystemstatusHighByteAndQStatusLowByte",
+      "displayName": "SystemstatusHighByteAndQStatusLowByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam116",
+      "displayName": "Beam116",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam1732",
+      "displayName": "Beam1732",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam3348",
+      "displayName": "Beam3348",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam4964",
+      "displayName": "Beam4964",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam6580",
+      "displayName": "Beam6580",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam8196",
+      "displayName": "Beam8196",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam97112",
+      "displayName": "Beam97112",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam113128",
+      "displayName": "Beam113128",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam129144",
+      "displayName": "Beam129144",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam145160",
+      "displayName": "Beam145160",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam167176",
+      "displayName": "Beam167176",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam193208",
+      "displayName": "Beam193208",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam209224",
+      "displayName": "Beam209224",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam225240",
+      "displayName": "Beam225240",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Reserved0",
+              "displayName": "Reserved0",
+              "schema": "long"
+            },
+            {
+              "name": "STANDBY",
+              "displayName": "STANDBY",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EnterStandBy",
+                    "enumValue": "EnterStandBy"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Reserved1",
+              "displayName": "Reserved1",
+              "schema": "long"
+            },
+            {
+              "name": "BBH",
+              "displayName": "BBH",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "BBHActive",
+                    "enumValue": "BBHActive"
+                  },
+                  {
+                    "name": "BBHInactive",
+                    "enumValue": "BBHInactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TEACH",
+              "displayName": "TEACH",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "StartTeach",
+                    "enumValue": "StartTeach"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TEST",
+              "displayName": "TEST",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EnterTestMode",
+                    "enumValue": "EnterTestMode"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

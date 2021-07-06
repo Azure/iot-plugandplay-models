@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388905_Distance;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OD1000-6001R15",
+  "description": "Distance sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

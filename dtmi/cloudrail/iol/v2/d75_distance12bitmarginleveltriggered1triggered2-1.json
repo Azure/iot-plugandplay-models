@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D75_Distance12bitMarginLevelTriggered1Triggered2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "45LMS-U8LGC3-D4",
+  "description": "Measurement Sensor - 45LMS",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLevel",
+      "displayName": "MarginLevel",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Insufficient",
+            "enumValue": "Insufficient"
+          },
+          {
+            "name": "Acceptable",
+            "enumValue": "Acceptable"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          },
+          {
+            "name": "Excellent",
+            "enumValue": "Excellent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered1",
+      "displayName": "Triggered1",
+      "schema": "dtmi:CloudRail:IOL:V2:D75_Distance12bitMarginLevelTriggered1Triggered2:Triggered;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered2",
+      "displayName": "Triggered2",
+      "schema": "dtmi:CloudRail:IOL:V2:D75_Distance12bitMarginLevelTriggered1Triggered2:Triggered;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V2:D75_Distance12bitMarginLevelTriggered1Triggered2:Triggered;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

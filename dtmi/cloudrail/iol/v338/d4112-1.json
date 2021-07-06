@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D4112;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CML730 [32 Bytes and COM3]",
+  "description": "Measuring light curtain CML730, DeviceID 0x1010",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PD01",
+      "displayName": "PD01",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD02",
+      "displayName": "PD02",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD03",
+      "displayName": "PD03",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD04",
+      "displayName": "PD04",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD05",
+      "displayName": "PD05",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD06",
+      "displayName": "PD06",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD07",
+      "displayName": "PD07",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD08",
+      "displayName": "PD08",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD09",
+      "displayName": "PD09",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD10",
+      "displayName": "PD10",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD11",
+      "displayName": "PD11",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD12",
+      "displayName": "PD12",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD13",
+      "displayName": "PD13",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD14",
+      "displayName": "PD14",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD15",
+      "displayName": "PD15",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PD16",
+      "displayName": "PD16",
+      "schema": "long"
+    }
+  ]
+}

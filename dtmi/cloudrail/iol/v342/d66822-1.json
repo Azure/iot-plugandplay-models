@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D66822;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LHR-C23PA-TMx-60C",
+  "description": "Photoelectric sensors C23",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StabilityAlarm",
+      "displayName": "StabilityAlarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DetectionState",
+      "displayName": "DetectionState",
+      "schema": "integer"
+    }
+  ]
+}

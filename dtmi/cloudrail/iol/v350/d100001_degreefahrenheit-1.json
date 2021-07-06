@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D100001_DegreeFahrenheit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PF20x-11xxxxxx",
+  "description": "Flow Sensor; Sealing Cone M18x1,5; Probe Length 50mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputA1",
+      "displayName": "OutputA1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputA2",
+      "displayName": "OutputA2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowUnstable",
+      "displayName": "FlowUnstable",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "Flowspeed_mps",
+      "displayName": "Flowspeed_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    }
+  ]
+}

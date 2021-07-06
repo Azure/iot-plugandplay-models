@@ -1,0 +1,313 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:covia:CAT_G3;1",
+  "@type": "Interface",
+  "displayName": "CAT-G3",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Location",
+      "displayName": "Location of measurement",
+      "description": "This is a component that sets the location measurement and acquires the location.",
+      "schema": "dtmi:covia:component:Location;1"
+    },
+    {
+      "@type": "Component",
+      "name": "BleBeaconReceiver",
+      "displayName": "BLE Beacon Receiver",
+      "description": "This is a component that sets the BLE receiver and acquires the BLE beacons.",
+      "schema": "dtmi:covia:component:Beacon;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01G",
+      "displayName": "iBS01G(Accelerometer) Sensor",
+      "description": "This is a component that sets and acquires the iBS01G sensor.",
+      "schema": "dtmi:covia:component:iBS01G;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01H",
+      "displayName": "iBS01H(Magnet) Sensor",
+      "description": "This is a component that sets and acquires the iBS01H sensor.",
+      "schema": "dtmi:covia:component:iBS01H;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01T",
+      "displayName": "iBS01T(Temperature/Humidity) Sensor",
+      "description": "This is a component that sets and acquires the iBS01T sensor.",
+      "schema": "dtmi:covia:component:iBS01T;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS02IR2",
+      "displayName": "iBS02IR2(Proximity Detection) Sensor",
+      "description": "This is a component that sets and acquires the iBS02IR2 sensor.",
+      "schema": "dtmi:covia:component:iBS02IR2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS02PIR2",
+      "displayName": "iBS02PIR2(Human Detection) Sensor",
+      "description": "This is a component that sets and acquires the iBS02PIR2 sensor.",
+      "schema": "dtmi:covia:component:iBS02PIR2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS03TP",
+      "displayName": "iBS03TP(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the iBS03TP sensor.",
+      "schema": "dtmi:covia:component:iBS03TP;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TKR03FL",
+      "displayName": "TKR03FL(Water Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TKR03FL sensor.",
+      "schema": "dtmi:covia:component:TKR03FL;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TKR04A",
+      "displayName": "TKR04A(CO2) Sensor",
+      "description": "This is a component that sets and acquires the TKR04A sensor.",
+      "schema": "dtmi:covia:component:TKR04A;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TR41",
+      "displayName": "TR41(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TR41 sensor.",
+      "schema": "dtmi:covia:component:TR41;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TR42",
+      "displayName": "TR42(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TR42 sensor.",
+      "schema": "dtmi:covia:component:TR42;1"
+    },
+    {
+      "@type": "Component",
+      "name": "BC10",
+      "displayName": "BC10(Temperature/Humidity) Sensor",
+      "description": "This is a component that sets and acquires the BC10 sensor.",
+      "schema": "dtmi:covia:component:BC10;1"
+    },
+    {
+      "@type": "Property",
+      "name": "operationMode",
+      "displayName": "Operation Mode",
+      "description": "Select the operating mode of the device from Normal Mode and Eco Mode.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "normal",
+            "displayName": "Normal Mode",
+            "description": "This mode is designed for 24-hour operation, and can be set to pause mode once a day.",
+            "enumValue": 1
+          },
+          {
+            "name": "eco",
+            "displayName": "Eco Mode",
+            "description": "It is activated periodically to receive data. Since it is activated only when receiving data, there will be times when it cannot receive remote commands.",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ecoCollectionInterval",
+      "displayName": "Eco Mode Collection Interval",
+      "description": "Sets the data collection interval in Eco mode.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ecoCollectionTimeout",
+      "displayName": "Eco Mode Collection Timeout",
+      "description": "Sets the maximum time for data collection in Eco mode. When data has been collected, the program terminates immediately.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepEnabled",
+      "displayName": "Normal Mode Sleep Enabled",
+      "description": "Sets whether to use the sleep mode in normal mode.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepInTime",
+      "displayName": "Normal Mode Sleep In Time",
+      "description": "Sets the sleep start time in normal mode.",
+      "schema": "time",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "normalSleepOutTime",
+      "displayName": "Normal Mode Sleep Out Time",
+      "description": "Sets the sleep end time in normal mode.",
+      "schema": "time",
+      "writable": true
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "This command can be used to remotely reboot the device."
+    },
+    {
+      "@type": "Command",
+      "name": "sensorList",
+      "displayName": "Sensor List",
+      "description": "This command requests the list of paired sensors.",
+      "response": {
+        "name": "responseSensorList",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pairing",
+      "displayName": "Pairing",
+      "description": "This command requests pairing with the sensor.",
+      "request": {
+        "name": "sensor",
+        "description": "Specify the MAC address and sensor type of the sensor for which you want to request pairing.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "displayName": "Mac Address",
+              "name": "mac",
+              "description": "MAC address of the sensor requesting pairing.",
+              "schema": "string"
+            },
+            {
+              "displayName": "Sensor Type",
+              "name": "sensorType",
+              "description": "Type of the sensor requesting pairing.",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                      "name": "bc10",
+                      "displayName": "BC10",
+                      "description": "BC10(Temperature/Humidity) Sensor",
+                      "enumValue": 1
+                  },
+                  {
+                      "name": "bleBeaconReceiver",
+                      "displayName": "Ble Beacon Receiver",
+                      "description": "BLE receiver and acquires the BLE beacons",
+                      "enumValue": 2
+                  },                  
+                  {
+                      "name": "iBS01G",
+                      "displayName": "iBS01G",
+                      "description": "iBS01G(Accelerometer) Sensor",
+                      "enumValue": 3
+                  },                  
+                  {
+                      "name": "iBS01H",
+                      "displayName": "iBS01H",
+                      "description": "iBS01H(Magnet) Sensor",
+                      "enumValue": 4
+                  },                  
+                  {
+                      "name": "iBS01T",
+                      "displayName": "iBS01T",
+                      "description": "iBS01T(Temperature/Humidity) Sensor",
+                      "enumValue": 5
+                  },                  
+                  {
+                      "name": "iBS02IR2",
+                      "displayName": "iBS02IR2",
+                      "description": "iBS02IR2(Proximity Detection) Sensor",
+                      "enumValue": 6
+                  },                  
+                  {
+                      "name": "iBS02PIR2",
+                      "displayName": "iBS02PIR2",
+                      "description": "iBS02PIR2(Human Detection) Sensor",
+                      "enumValue": 7
+                  },                  
+                  {
+                      "name": "iBS03TP",
+                      "displayName": "iBS03TP",
+                      "description": "iBS03TP(Temperature) Sensor",
+                      "enumValue": 8
+                  },                  
+                  {
+                      "name": "tkr03FL",
+                      "displayName": "TKR03FL",
+                      "description": "TKR03FL(Water Temperature) Sensor",
+                      "enumValue": 9
+                  },                  
+                  {
+                      "name": "tkr04A",
+                      "displayName": "TKR04A",
+                      "description": "TKR04A(CO2) Sensor",
+                      "enumValue": 10
+                  },                  
+                  {
+                      "name": "tr41",
+                      "displayName": "TR41",
+                      "description": "TR41(Temperature) Sensor",
+                      "enumValue": 11
+                  },                  
+                  {
+                      "name": "tr42",
+                      "displayName": "TR42",
+                      "description": "TR42(Temperature) Sensor",
+                      "enumValue": 12
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "responsePairing",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "unpairing",
+      "displayName": "Unpairing",
+      "description": "This command requests unpairing with the sensor.",
+      "request": {
+        "name": "mac",
+        "description": "Specify the MAC address of the sensor for which you want to request unpairing.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseUnpairing",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetywindowsensor;3",
+  "@type": "Interface",
+  "displayName": "Home Safety Window Sensor",
+  "description": "Home Safety Window Sensor",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:windowsensor;2",
+      "name": "windowsensor1",
+      "displayName": "Window Sensor",
+      "description": "Window Sensor"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D524290;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LRS510-10-xx-4UPN8-H1181",
+  "description": "Radar level sensor, 10m range, G1 process connection, 4 switching outputs (on pins 4, 2, 5, 6)",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_m",
+      "displayName": "ProcessData_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_mm",
+      "displayName": "ProcessData_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_ft",
+      "displayName": "ProcessData_ft",
+      "schema": "double",
+      "unit": "foot"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_in",
+      "displayName": "ProcessData_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_m3",
+      "displayName": "ProcessData_m3",
+      "schema": "double",
+      "unit": "cubicMetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_L",
+      "displayName": "ProcessData_L",
+      "schema": "double",
+      "unit": "litre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_in3",
+      "displayName": "ProcessData_in3",
+      "schema": "double",
+      "unit": "cubicInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_ft3",
+      "displayName": "ProcessData_ft3",
+      "schema": "double",
+      "unit": "cubicFoot"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_gallon",
+      "displayName": "ProcessData_gallon",
+      "schema": "double",
+      "unit": "gallon"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData_pct",
+      "displayName": "ProcessData_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData1",
+      "displayName": "ProcessData1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData2",
+      "displayName": "ProcessData2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData3",
+      "displayName": "ProcessData3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData4",
+      "displayName": "ProcessData4",
+      "schema": "integer"
+    }
+  ]
+}

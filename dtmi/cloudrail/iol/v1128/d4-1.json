@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1128:D4;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Axx5-ZIO",
+  "description": "Absolute IO-Link Encoder Singleturn, Solid, Blind or Hollow Shaft",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Speed",
+      "displayName": "Speed",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ]
+}

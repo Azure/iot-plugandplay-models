@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D11;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "42JT-F5LET1-xx",
+  "description": "Photo sensor, Color Mark, 12 mm, Integral pico M8 QD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    }
+  ]
+}

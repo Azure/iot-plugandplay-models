@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388712_SystemstatusQStatusAndBeamStatus;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MLG-2 Pro",
+  "description": "MLG Pro Lightgrid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SystemstatusHighByteAndQStatusLowByte",
+      "displayName": "SystemstatusHighByteAndQStatusLowByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam116",
+      "displayName": "Beam116",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam1732",
+      "displayName": "Beam1732",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam3348",
+      "displayName": "Beam3348",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam4964",
+      "displayName": "Beam4964",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam6580",
+      "displayName": "Beam6580",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam8196",
+      "displayName": "Beam8196",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam97112",
+      "displayName": "Beam97112",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam113128",
+      "displayName": "Beam113128",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam129144",
+      "displayName": "Beam129144",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam145160",
+      "displayName": "Beam145160",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam167176",
+      "displayName": "Beam167176",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam193208",
+      "displayName": "Beam193208",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam209224",
+      "displayName": "Beam209224",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Beam225240",
+      "displayName": "Beam225240",
+      "schema": "long"
+    }
+  ]
+}

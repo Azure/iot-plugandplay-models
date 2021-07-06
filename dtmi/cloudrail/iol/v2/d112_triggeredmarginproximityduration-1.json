@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D112_TriggeredMarginProximityDuration;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "42EF-P2MPB-xx",
+  "description": "Sensor,Photoelectric, 42EF, Polarized Retroreflective, Visible Red LED, Light and Dark Operate, PNP Output,No Adjustment, 3 m Sensing Range, 2 m Cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DurationTriggered",
+      "displayName": "DurationTriggered",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DurationNotTriggered",
+      "displayName": "DurationNotTriggered",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

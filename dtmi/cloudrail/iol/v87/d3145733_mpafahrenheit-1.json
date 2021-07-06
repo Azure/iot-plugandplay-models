@@ -1,0 +1,83 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3145733_MPaFahrenheit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FX5Q001",
+  "description": "Pressure Sensor; -1 .. 10 bar; G3/4 external thread",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputA1",
+      "displayName": "OutputA1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputA2",
+      "displayName": "OutputA2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overload",
+      "displayName": "Overload",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    }
+  ]
+}

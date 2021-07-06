@@ -1,0 +1,138 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D11207424_ScanUID;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RLS-1301-320",
+  "description": "RFID read write module 13.56MHz",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Tag",
+      "displayName": "Tag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTag",
+            "enumValue": "NoTag"
+          },
+          {
+            "name": "TagInTheField",
+            "enumValue": "TagInTheField"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AntennaState",
+      "displayName": "AntennaState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AntennaOn",
+            "enumValue": "AntennaOn"
+          },
+          {
+            "name": "AntennaOff",
+            "enumValue": "AntennaOff"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NBTAG",
+      "displayName": "NBTAG",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID0",
+      "displayName": "UID0",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID1",
+      "displayName": "UID1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID2",
+      "displayName": "UID2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID3",
+      "displayName": "UID3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID4",
+      "displayName": "UID4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID5",
+      "displayName": "UID5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID6",
+      "displayName": "UID6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UID7",
+      "displayName": "UID7",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AntennaState",
+              "displayName": "AntennaState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AntennaOff",
+                    "enumValue": "AntennaOff"
+                  },
+                  {
+                    "name": "AntennaOn",
+                    "enumValue": "AntennaOn"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TagNB",
+              "displayName": "TagNB",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

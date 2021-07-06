@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D181;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "US Q12 M400 IU-T4",
+  "description": "40mm - 400mm, (0)4ma - 20mA/ 0-10V, IO-Link, Q12",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

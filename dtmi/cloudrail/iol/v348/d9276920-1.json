@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D9276920;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HPT 506-F31-02.0-A-000",
+  "description": "Pressure sensor (0 .. 2 bar) with IO-Link interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V348:D9276920:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V348:D9276920:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V348:D9276920:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        },
+        {
+          "name": "High",
+          "enumValue": "High"
+        }
+      ]
+    }
+  ]
+}
