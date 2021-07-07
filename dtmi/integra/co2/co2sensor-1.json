@@ -1,0 +1,89 @@
+{
+    "@id": "dtmi:integra:co2:co2sensor;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:integra:co2:co2sensor:Temperatura;1",
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "comment": "Temperatura en los alrededores del dispositivo",
+            "description": {
+                "en": "Temperatura en los alrededores del dispositivo"
+            },
+            "displayName": {
+                "en": "Temperatura"
+            },
+            "name": "Temperatura",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:integra:co2:co2sensor:Humedad;1",
+            "@type": [
+                "Telemetry",
+                "RelativeHumidity"
+            ],
+            "comment": "Humedad en los alrededores del dispositivo",
+            "description": {
+                "en": "Humedad en los alrededores del dispositivo"
+            },
+            "displayName": {
+                "en": "Humedad"
+            },
+            "name": "Humedad",
+            "schema": "double",
+            "unit": "percent"
+        },
+        {
+            "@id": "dtmi:integra:co2:co2sensor:CO2;1",
+            "@type": "Telemetry",
+            "comment": "CO2 en los alrededores del dispositivo",
+            "description": {
+                "en": "CO2 en los alrededores del dispositivo"
+            },
+            "displayName": {
+                "en": "CO2"
+            },
+            "name": "CO2",
+            "schema": "double"
+        },
+        {
+            "@id": "dtmi:integraco2:co2sensor:Fabricante;1",
+            "@type": "Property",
+            "comment": "Fabricante del dispositvo",
+            "description": {
+                "en": "Fabricante del dispositivo"
+            },
+            "displayName": {
+                "en": "Fabricante"
+            },
+            "name": "Fabricante",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:integra:co2:co2sensor:Localizacion;1",
+            "@type": [
+                "Property",
+                "Location"
+            ],
+            "comment": "Geoposición del dispositivo",
+            "description": {
+                "en": "Geoposición del dispositivo"
+            },
+            "displayName": {
+                "en": "Localizacion"
+            },
+            "name": "Localizacion",
+            "schema": "geopoint"
+        }
+    ],
+    "displayName": {
+        "en": "Co2Sensor"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
