@@ -1,0 +1,85 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Redeye:redeye_1_plus;2",
+    "@type": "Interface",
+    "displayName": "Redeye-1-Plus-V2",
+    "description": "Reports visible spectrophotometer for clinical use specified to detect microscale blood pollution in water.",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "testResult",
+            "displayName": "Blood pollution test result",
+            "description": "1 is Positive, 2 is Negative, 3 is Unsure.",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "displayName": "Positive",
+                    "enumValue": 1,
+                    "name": "positive"
+                  },
+                  {
+                    "displayName": "Negative",
+                    "enumValue": 2,
+                    "name": "negative"
+                  },
+                  {
+                    "displayName": "Unsure",
+                    "enumValue": 3,
+                    "name": "unsure"
+                  }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "testResultSpectrum",
+            "displayName": "Blood pollution test result spectrum",
+            "description": "blank rate is water's spectrum ,sample rate is pollution water's spectrum, wavelength is spectrum's axis.",
+            "schema": {
+                "@type": "Array",
+                "displayName": "Spectrum",
+                "elementSchema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                          "displayName": "Blank rate",
+                          "name": "blank",
+                          "schema": "double"
+                        },
+                        {
+                          "displayName": "Sample rate",
+                          "name": "sample",
+                          "schema": "double"
+                        },
+                        {
+                          "displayName": "Wavelength",
+                          "name": "wavelength",
+                          "schema": "double"
+                        }
+                      ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "getCurrentConnectionStatus",
+            "displayName": "GetCurrentConnectionStatus",
+            "description": "Is the gateway connected to Redeye-1-Plus or not.",
+            "schema": "boolean"
+        },
+        {
+            "@type": "Command",
+            "name": "reboot",
+            "displayName": "Reboot",
+            "description": "Reboots the gateway."
+        },
+        {
+          "@type": "Command",
+          "name": "connectToRedeyeDevice",
+          "displayName": "ConnectToRedeyeDevice",
+          "description": "Scanning and try to connect Redeye-1-Plus near by."
+      }
+    ]
+}
