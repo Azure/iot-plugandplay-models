@@ -1,0 +1,14 @@
+  
+{
+    "@context": "dtmi:iei:standard;2",
+    "@id": "dtmi:iei:standard;1",
+    "@type": "Interface",
+    "displayName": "DRPC230",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}
