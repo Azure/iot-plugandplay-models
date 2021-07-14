@@ -1,0 +1,44 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:DeviceHealth;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Device-Health",
+        "de": "Gerätestatus"
+    },
+    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp: Device-health data",
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:totalMemoryUsed:1",
+            "@type": [ "Telemetry", "DataSize" ],
+            "comment": "Total memory usage of your high-level application in kibibytes. Ex. 230 kilobytes.",
+            "displayName": {
+              "en": "Total Memory Usage",
+              "de": "Speichernutzung gesamt"
+            },
+            "name": "totalMemoryUsed",
+            "displayUnit": {
+              "en": "(kB)",
+              "de": "(kB)"
+            },
+            "unit" : "kibibyte",
+            "schema": "long"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:userMemoryUsed:1",
+            "@type": [ "Telemetry", "DataSize" ],
+            "comment": "User-mode memory usage of your high-level application in kibibytes. Ex. 91 kilobytes.",
+            "displayName": {
+              "en": "User-mode Memory Usage",
+              "de": "Speichernutzung im Benutzermodus"
+            },
+            "name": "userMemoryUsed",
+            "displayUnit": {
+              "en": "(kB)",
+              "de": "(kB)"
+            },
+            "unit":"kibibyte",
+            "schema": "long"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:Buttons;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "MT3620RDB Buttons",
+        "de": "MT3620RDB Taster"
+    },
+    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp buttons",
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonA:1",
+            "@type": [
+              "Telemetry",
+              "SemanticType/Event"
+            ],
+            "description": {
+              "en": "Button A pressed event"
+            },
+            "displayName": {
+              "en": "Button A"
+            },
+            "name": "buttonA",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonB:1",
+            "@type": [
+              "Telemetry",
+              "SemanticType/Event"
+            ],
+            "description": {
+              "en": "Button B pressed event"
+            },
+            "displayName": {
+              "en": "Button B"
+            },
+            "name": "buttonB",
+            "schema": "string"
+        }    
+    ]
+}
