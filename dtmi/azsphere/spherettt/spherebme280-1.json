@@ -14,7 +14,7 @@
         },  
         {
             "@type": "Component",
-            "name": "RGBled",
+            "name": "rgbLed",
             "displayName": {
                 "en": "RGB led",
                 "de" : "RGB Led"
@@ -24,7 +24,7 @@
         },
         {
             "@type": "Component",
-            "name": "Buttons",
+            "name": "buttons",
             "displayName": {
                 "en": "MT3620RDB Buttons",
                 "de": "MT3620RDB Taster"
@@ -34,7 +34,7 @@
         },
         {
             "@type": "Component",
-            "name": "BME280",
+            "name": "bme280",
             "displayName": {
                 "en": "Bosch BME280 pressure, temperature and humidity sensor",
                 "de": "Bosch BME280 Luftdruck-, Temperatur & Luftfeuchtesensor"
@@ -47,7 +47,7 @@
         },
         {
             "@type": "Component",
-            "name": "DeviceHealth",
+            "name": "deviceHealth",
             "displayName": {
                 "en": "Device-Health",
                 "de": "Gerätestatus"
