@@ -39,6 +39,96 @@
             },
             "unit":"kibibyte",
             "schema": "long"
+        },
+        {
+          "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:connect;1",
+          "@type": [ "Telemetry", "Event" ],
+          "description": {
+            "en": "Device connected to IoTHub event"
+          },
+          "displayName": {
+            "en": "Connect"
+          },
+          "name": "connect",
+          "schema": "string"
+        },
+        {
+          "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod;1",
+          "@type": "Command",
+          "commandType": "synchronous",
+          "durable": false,
+          "description": {
+            "en": "Reset device after given amount of seconds"
+          },
+          "displayName": {
+            "en": "Reset Device"
+          },
+          "name": "resetMethod",
+          "request": {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:request;1",
+            "description": {
+              "en": "resetMethod request"
+            },
+            "displayName": {
+              "en": "ResetMethod request"
+            },
+            "name": "resetMethodRequest",
+            "schema" :{
+              "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:requestPayload;1",
+              "@type": "Object",
+              "displayName": {
+                "en": "ResetMethod request payload"
+              },
+              "fields": [
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:requestPayload:resetTimer;1",
+                  "description": {
+                    "en": "Reset device after given amount of seconds (1..10)."
+                  },
+                  "displayName": {
+                    "en": "Reset timer (s)"
+                  },
+                  "name": "resetTimer",
+                  "schema": "integer" 
+                }
+              ]
+            }
+          },
+          "response": {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:response;1",
+            "description": {
+              "en": "Device response to 'reset' command. "
+            },
+            "displayName": {
+              "en": "ResetMethod response"
+            },
+            "name": "resetMethodResponse",
+            "schema": {
+              "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload;1",
+              "@type": "Object",
+              "displayName": {
+                "en": "ResetMethod response payload"
+              },
+              "fields": [
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload:success;1",
+                  "displayName": {
+                    "en": "Success"
+                  },
+                  "name": "success",
+                  "schema": "boolean"
+                },
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload:message;1",
+                  "displayName": {
+                    "en": "Message"
+                  },
+                  "name": "message",
+                  "schema": "string"
+                }
+              ]
+            }
+          }
         }
     ]
 }

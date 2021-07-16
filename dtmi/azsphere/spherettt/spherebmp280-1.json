@@ -1,9 +1,9 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azsphere:SphereTTT:SphereBME280;1",
+    "@id": "dtmi:azsphere:SphereTTT:SphereBMP280;1",
     "@type": "Interface",
-    "displayName": "Azure Sphere TTT-SphereBME280",
-    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp SphereBME280 Sample",
+    "displayName": "Azure Sphere TTT-SphereBMP280",
+    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp SphereBMP280 Sample",
     "contents": [
         {
             "@type": "Component",
@@ -34,15 +34,15 @@
         },
         {
             "@type": "Component",
-            "name": "BME280",
+            "name": "BMP280",
+            "schema": "dtmi:azsphere:SphereTTT:BMP280;1",
             "displayName": {
-                "en": "Bosch BME280 pressure, temperature and humidity sensor",
-                "de": "Bosch BME280 Luftdruck-, Temperatur & Luftfeuchtesensor"
+                "en": "Bosch BMP280 pressure and temperature sensor",
+                "de": "Bosch BMP280 Luftdruck- und Temperatursensor"
             },
-            "schema": "dtmi:azsphere:SphereTTT:BME280;1",
             "description": {
-                "en": "Bosch BME280 envirnmental sensor",
-                "de": "Bosch BME280 Umgebungs-Sensor"
+                "en": "Bosch BMP280 envirnmental sensor",
+                "de": "Bosch BMP280 Umgebungs-Sensor"
             }
         },
         {
