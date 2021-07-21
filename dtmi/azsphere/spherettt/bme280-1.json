@@ -6,7 +6,10 @@
         "en": "Bosch BME280 pressure, temperature and humidity sensor",
         "de": "Bosch BME280 Luftdruck-, Temperatur & Luftfeuchtesensor"
     },
-    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp: Bosch BME280 I2C sensor data",
+    "description": { 
+        "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: Bosch BME280 I2C sensor data",
+        "de" : "IoT PnP Modell für das Azure Sphere Train-the-Trainer Bootcamp: Bosch BME280 I2C Sensordaten"
+    },
     "contents": [
         {
             "@id": "dtmi:azsphere:SphereTTT:BME280:temperature;1",

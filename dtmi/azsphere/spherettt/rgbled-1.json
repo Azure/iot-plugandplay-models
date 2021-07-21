@@ -6,7 +6,10 @@
         "en": "RGB led",
         "de" : "RGB Led"
     },
-    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp to control an RGB Led",
+    "description": {
+      "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: RGB Led",
+      "de" : "IoT PnP model für das Azure Sphere Train-the-Trainer Bootcamp: RGB Led"
+    },
     "contents": [
         {
             "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod;1",

@@ -6,10 +6,13 @@
         "en": "MT3620RDB Buttons",
         "de": "MT3620RDB Taster"
     },
-    "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp buttons",
+    "description": { 
+      "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: buttons",
+      "de" : "IoT PnP Modell für das Azure Sphere Train-the-Trainer Bootcamp: Taster"
+    },
     "contents": [
         {
-            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonA:1",
+            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonA;1",
             "@type": [
               "Telemetry",
               "SemanticType/Event"
@@ -24,7 +27,7 @@
             "schema": "string"
         },
         {
-            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonB:1",
+            "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonB;1",
             "@type": [
               "Telemetry",
               "SemanticType/Event"
