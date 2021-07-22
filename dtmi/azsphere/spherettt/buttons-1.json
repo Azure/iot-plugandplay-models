@@ -15,7 +15,7 @@
             "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonA;1",
             "@type": [
               "Telemetry",
-              "SemanticType/Event"
+              "Event"
             ],
             "description": {
               "en": "Button A pressed event"
@@ -30,7 +30,7 @@
             "@id": "dtmi:azsphere:SphereTTT:Buttons:buttonB;1",
             "@type": [
               "Telemetry",
-              "SemanticType/Event"
+              "Event"
             ],
             "description": {
               "en": "Button B pressed event"
