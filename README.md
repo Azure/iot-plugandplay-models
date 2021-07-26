@@ -68,7 +68,7 @@ Microsoft will respond to a PR with all checks in 3 business days.
 
 ```
 
-## Install the dmr-client command line tool
+## Install the `dmr-client` command line tool
 
 The tool used to validate the models during the PR checks can also be used to add and validate the DTDL interfaces locally.
 
@@ -84,7 +84,7 @@ You can use the `dotnet` command line via the `dotnet tool install` command to i
 
 To learn how to install `dmr-client` in a local context, please see [this guide](https://docs.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use).
 
-> [Note] Previous versions of the tool (prior to `1.0.0-beta.3`) must first be uninstalled with `dotnet tool uninstall -g dmr-client`. Use the `dotnet tool list -g` command to check the id of the tool you want to uninstall.
+> Note: Previous versions of the tool (prior to `1.0.0-beta.3`) must first be uninstalled with `dotnet tool uninstall -g dmr-client`. Use the `dotnet tool list -g` command to check the id of the tool you want to uninstall.
 
 ### Update
 
@@ -153,7 +153,7 @@ You can validate your models with the `dmr-client validate` command.
 > dmr-client validate --model-file ./my/model/file.json
 ```
 
->Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
+> Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
 
 To validate external dependencies, those must exist in the local repo. To validate those you can specify a `local` or `remote` folder to validate against.
 
