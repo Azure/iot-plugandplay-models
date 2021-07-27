@@ -97,16 +97,31 @@
     },
     {
       "@type": "Telemetry",
-      "description": "To measure the percentage of the CPU's capacity.",
+      "description": "To upload device data.",
       "name": "DataSet",
       "displayName": "DataSet",
       "schema": {
         "@type": "Object",
-          "fields": [
-          ]
+        "fields": [
+          {
+            "name": "devid",
+            "displayName": "devid",
+            "schema": "string"
+          },
+          {
+            "name": "devtype",
+            "displayName": "devtype",
+            "schema": "string"
+          },
+          {
+            "name": "vals",
+            "displayName": "vals",
+            "schema": "string"
+          }
+        ]
       }
-    },    
-	{
+    },
+    {
       "@type": "Telemetry",
       "name": "cpuLoading",
       "displayName": "CPU Loading(%)",
