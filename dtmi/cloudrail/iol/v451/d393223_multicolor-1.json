@@ -1,0 +1,137 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393223_Multicolor;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OS80K3MXKQ-GM",
+  "description": "OS80 Operator Station: Key Switch with IO-Link Segmented Housing; 3-Position Key Switch Voltage: 12-30 V dc; Housing: Polycarbonate; IP40 Colors: Green, Yellow, Red; Laser Marked: Bypass Auto Release Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReleaseState",
+      "displayName": "ReleaseState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AutoState",
+      "displayName": "AutoState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BypassState",
+      "displayName": "BypassState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperationMode",
+      "displayName": "OperationMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Multicolor",
+            "enumValue": "Multicolor"
+          },
+          {
+            "name": "Reserved",
+            "enumValue": "Reserved"
+          },
+          {
+            "name": "Advanced",
+            "enumValue": "Advanced"
+          },
+          {
+            "name": "LEDControl",
+            "enumValue": "LEDControl"
+          },
+          {
+            "name": "Demo",
+            "enumValue": "Demo"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "State",
+              "displayName": "State",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "State1",
+                    "enumValue": "State1"
+                  },
+                  {
+                    "name": "State2",
+                    "enumValue": "State2"
+                  },
+                  {
+                    "name": "State3",
+                    "enumValue": "State3"
+                  },
+                  {
+                    "name": "State4",
+                    "enumValue": "State4"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

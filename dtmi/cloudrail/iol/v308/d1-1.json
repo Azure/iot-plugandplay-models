@@ -1,0 +1,94 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V308:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PROtop IO-LINK",
+  "description": "Power Supply PROtop with IO-LINK",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PROtopOutputVoltage",
+      "displayName": "PROtopOutputVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopORingVoltage",
+      "displayName": "PROtopORingVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopOutputCurrent",
+      "displayName": "PROtopOutputCurrent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopDIState",
+      "displayName": "PROtopDIState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopRelayState",
+      "displayName": "PROtopRelayState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopShortTermPowerBoostActiveState",
+      "displayName": "PROtopShortTermPowerBoostActiveState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopOverload150ActiveState",
+      "displayName": "PROtopOverload150ActiveState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopOverload110ActiveState",
+      "displayName": "PROtopOverload110ActiveState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopShortCircuitSwitchOffState",
+      "displayName": "PROtopShortCircuitSwitchOffState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopLoadPrewarningState",
+      "displayName": "PROtopLoadPrewarningState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PROtopShortCircuitActiveState",
+      "displayName": "PROtopShortCircuitActiveState",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PROtopRelayStateSet",
+              "displayName": "PROtopRelayStateSet",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

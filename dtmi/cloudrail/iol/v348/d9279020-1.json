@@ -1,0 +1,76 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D9279020;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VD 2 VFL.0 /-V-I4M020",
+  "description": "Virtual Fluid Lab (VFL) for remaining life time calculation with IO-Link interface.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "RemainingLifeTime",
+      "displayName": "RemainingLifeTime",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperatingHours",
+      "displayName": "OperatingHours",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureNotAvailable",
+      "displayName": "TemperatureNotAvailable",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FilterFull",
+      "displayName": "FilterFull",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureOutOfRange",
+      "displayName": "TemperatureOutOfRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureLow",
+      "displayName": "PressureLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Initialization",
+      "displayName": "Initialization",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

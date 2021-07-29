@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D2001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IRxx.DxxL-Fxx.GP1I.7xx",
+  "description": "Inductive distance sensor , Connector M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4Counter",
+      "displayName": "SSC4Counter",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC3Frequency",
+      "displayName": "SSC3Frequency",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2Distance",
+      "displayName": "SSC2Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Distance",
+      "displayName": "SSC1Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "DisableOscillator",
+              "displayName": "DisableOscillator",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

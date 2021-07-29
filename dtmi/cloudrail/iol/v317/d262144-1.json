@@ -3,7 +3,7 @@
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "RUxxxU-MxxE-LIU2PN8X2T-H1151/S724",
-  "description": "RU... series",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 40 cm\r\nM18 housing with teach buttons\r\nswitching and analog output",
   "contents": [
     {
       "@type": [

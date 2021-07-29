@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389079_PositionVelocityLimitValues;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AHx36A-xxxx01xxxx",
+  "description": "Absolute Encoder Singleturn Advanced",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LimitValues",
+      "displayName": "LimitValues",
+      "schema": "long"
+    }
+  ]
+}

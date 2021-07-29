@@ -1,0 +1,54 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389026;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UM18-21212E21x",
+  "description": "Ultrasonic sensor in M18 brass sleeve, 2 push-pull switching outputs, 65 - 600 mm measuring range, 65 mm blindzone, 350 mm operating range, temperature compensation",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel2State",
+      "displayName": "SwitchSignalChannel2State",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389026:SwitchSignalChannelState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389026:SwitchSignalChannelState;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389026:SwitchSignalChannelState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactiv",
+          "enumValue": "Inactiv"
+        },
+        {
+          "name": "Activ",
+          "enumValue": "Activ"
+        }
+      ]
+    }
+  ]
+}

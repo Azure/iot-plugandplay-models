@@ -1,0 +1,160 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V693:D35;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ES05-IO LINK 24DO-B",
+  "description": "Valve ES05",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Coil17",
+              "displayName": "Coil17",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil18",
+              "displayName": "Coil18",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil19",
+              "displayName": "Coil19",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil20",
+              "displayName": "Coil20",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil21",
+              "displayName": "Coil21",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil22",
+              "displayName": "Coil22",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil23",
+              "displayName": "Coil23",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil24",
+              "displayName": "Coil24",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil9",
+              "displayName": "Coil9",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil10",
+              "displayName": "Coil10",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil11",
+              "displayName": "Coil11",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil12",
+              "displayName": "Coil12",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil13",
+              "displayName": "Coil13",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil14",
+              "displayName": "Coil14",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil15",
+              "displayName": "Coil15",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil16",
+              "displayName": "Coil16",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil1",
+              "displayName": "Coil1",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil2",
+              "displayName": "Coil2",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil3",
+              "displayName": "Coil3",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil4",
+              "displayName": "Coil4",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil5",
+              "displayName": "Coil5",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil6",
+              "displayName": "Coil6",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil7",
+              "displayName": "Coil7",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            },
+            {
+              "name": "Coil8",
+              "displayName": "Coil8",
+              "schema": "dtmi:CloudRail:IOL:V693:D35:Coil;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V693:D35:Coil;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

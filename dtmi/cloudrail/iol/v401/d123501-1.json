@@ -1,0 +1,101 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V401:D123501;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "1235/1236",
+  "description": "Position Indicator 30mm, 50mm, 75mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ValvePosition",
+      "displayName": "ValvePosition",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "UnknownPosition",
+            "enumValue": "UnknownPosition"
+          },
+          {
+            "name": "OPEN",
+            "enumValue": "OPEN"
+          },
+          {
+            "name": "CLOSED",
+            "enumValue": "CLOSED"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProgrammingMode",
+      "displayName": "ProgrammingMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NormalOperation",
+            "enumValue": "NormalOperation"
+          },
+          {
+            "name": "ProgrammingMode",
+            "enumValue": "ProgrammingMode"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ProgrammingMode",
+              "displayName": "ProgrammingMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NormalOperation",
+                    "enumValue": "NormalOperation"
+                  },
+                  {
+                    "name": "ProgrammingMode",
+                    "enumValue": "ProgrammingMode"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LocationFunction",
+              "displayName": "LocationFunction",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NotActive",
+                    "enumValue": "NotActive"
+                  },
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

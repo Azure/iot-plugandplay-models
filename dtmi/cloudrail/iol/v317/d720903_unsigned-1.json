@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D720903_Unsigned;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "B1NF360V-QR20-IOLX3-H1141",
+  "description": "This device is a single-axis 360° inclination sensor in QR20 housing with IO-Link interface, 3 LEDs and a M12 4-pin connector.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "InversProcessData",
+      "displayName": "InversProcessData",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "ProcessData_deg",
+      "displayName": "ProcessData_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale10x",
+      "displayName": "Scale10x",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VendorSpecific",
+      "displayName": "VendorSpecific",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

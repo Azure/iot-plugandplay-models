@@ -1,0 +1,144 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D262145;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOD 63M-LI06-S4",
+  "description": "BOD - Optical distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceAbsolute",
+      "displayName": "DistanceAbsolute",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Quality",
+      "displayName": "Quality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Valid",
+            "enumValue": "Valid"
+          },
+          {
+            "name": "NotValid",
+            "enumValue": "NotValid"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam1",
+      "displayName": "Cam1",
+      "schema": "dtmi:CloudRail:IOL:V888:D262145:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam2",
+      "displayName": "Cam2",
+      "schema": "dtmi:CloudRail:IOL:V888:D262145:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam3",
+      "displayName": "Cam3",
+      "schema": "dtmi:CloudRail:IOL:V888:D262145:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam4",
+      "displayName": "Cam4",
+      "schema": "dtmi:CloudRail:IOL:V888:D262145:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusDevice",
+      "displayName": "StatusDevice",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LaserOnOff",
+              "displayName": "LaserOnOff",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Keylock",
+              "displayName": "Keylock",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Disabled",
+                    "enumValue": "Disabled"
+                  },
+                  {
+                    "name": "Enabled",
+                    "enumValue": "Enabled"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D262145:Cam;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

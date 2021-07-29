@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D269840;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RU300U-M30E-LIU2PN8X2T-H1151",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 300 cm\r\nM30 housing with teach buttons\r\nswitching and analog output\r\nmuteable",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessValue_mm",
+      "displayName": "ProcessValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1",
+      "displayName": "SwitchStateOutput1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Closed",
+            "enumValue": "Closed"
+          },
+          {
+            "name": "Open",
+            "enumValue": "Open"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Muted",
+                    "enumValue": "Muted"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

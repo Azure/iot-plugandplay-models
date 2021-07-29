@@ -1,0 +1,88 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263169;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 50K-PI-RD11-S4",
+  "description": "Long Range Diffuse Sensor Red Light",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "dtmi:CloudRail:IOL:V888:D263169:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "dtmi:CloudRail:IOL:V888:D263169:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC3",
+      "displayName": "BDC3",
+      "schema": "dtmi:CloudRail:IOL:V888:D263169:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC4",
+      "displayName": "BDC4",
+      "schema": "dtmi:CloudRail:IOL:V888:D263169:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D263169:BDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

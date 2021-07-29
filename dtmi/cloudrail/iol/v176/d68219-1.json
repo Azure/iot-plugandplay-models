@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D68219;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AXL E IOL DI8 M12 6P",
+  "description": "Axioline E digital input device via IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "IN01",
+      "displayName": "IN01",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN02",
+      "displayName": "IN02",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN03",
+      "displayName": "IN03",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN04",
+      "displayName": "IN04",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN05",
+      "displayName": "IN05",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN06",
+      "displayName": "IN06",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN07",
+      "displayName": "IN07",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN08",
+      "displayName": "IN08",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "USShortCircuitoverload",
+      "displayName": "USShortCircuitoverload",
+      "schema": "integer"
+    }
+  ]
+}

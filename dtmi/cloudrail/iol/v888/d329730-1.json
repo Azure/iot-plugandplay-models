@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329730;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-712-000-K023",
+  "description": "BNI - Analogue converter",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Current",
+      "displayName": "Current",
+      "schema": "long"
+    }
+  ]
+}

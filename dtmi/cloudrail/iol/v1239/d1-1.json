@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1239:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CANEO series10 touch Hygiene prototype",
+  "description": "SENSORswitch Hygiene prototype with M12 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TouchedFlag",
+      "displayName": "TouchedFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "IDLE",
+            "enumValue": "IDLE"
+          },
+          {
+            "name": "TOUCH",
+            "enumValue": "TOUCH"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TouchCounter",
+      "displayName": "TouchCounter",
+      "schema": "long"
+    }
+  ]
+}

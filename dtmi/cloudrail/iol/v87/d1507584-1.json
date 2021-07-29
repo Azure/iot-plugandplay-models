@@ -1,0 +1,93 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1507584;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ODX402P0088",
+  "description": "Fiber Optic Cable Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output2",
+      "displayName": "Output2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output3",
+      "displayName": "Output3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output4",
+      "displayName": "Output4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output5",
+      "displayName": "Output5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output6",
+      "displayName": "Output6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output7",
+      "displayName": "Output7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output8",
+      "displayName": "Output8",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output9",
+      "displayName": "Output9",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output10",
+      "displayName": "Output10",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output11",
+      "displayName": "Output11",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output12",
+      "displayName": "Output12",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output13",
+      "displayName": "Output13",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": "integer"
+    }
+  ]
+}

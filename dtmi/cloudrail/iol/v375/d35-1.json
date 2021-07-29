@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V375:D35;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "G6L-G 400Hz ID 0x000023",
+  "description": "G6",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDIn01Sy51StatusWordLowSubindex0",
+      "displayName": "PDIn01Sy51StatusWordLowSubindex0",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDIn02Ru03ActualFrequencyDisplaySubindex0",
+      "displayName": "PDIn02Ru03ActualFrequencyDisplaySubindex0",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PDOut01Sy50ControlWordLowSubIndex0",
+              "displayName": "PDOut01Sy50ControlWordLowSubIndex0",
+              "schema": "long"
+            },
+            {
+              "name": "PDOut02OP03ReferenceSettingSubIndex1",
+              "displayName": "PDOut02OP03ReferenceSettingSubIndex1",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

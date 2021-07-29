@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:Beacon;1",
+  "@type": "Interface",
+  "displayName": "BLE Beacon Receiver",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "thresholdRSSI",
+      "displayName": "Receive RSSI threshold",
+      "description": "Gets or  sets the RSSI threshold for beacon reception.The unit is dBm.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "beacon",
+      "displayName": "BLE Beacon Receiver",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Timestamp",
+            "name": "timestamp",
+            "description": "Sets the time information for data reception.",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "description": "Sets the RSSI value for data reception.",
+            "schema": "integer"
+          },
+          {
+            "displayName": "MAC Address",
+            "name": "mac",
+            "description": "Set the MAC address of the sensor.",
+            "schema": "string"
+          },
+          {
+            "name": "locationLat",
+            "displayName": "Beacon Location Latitude",
+            "description": "Sets the location information of the device that received the beacon.",
+            "schema": "double"
+          },
+          {
+            "name": "locationLon",
+            "displayName": "Beacon Location Longitude",
+            "description": "Sets the location information of the device that received the beacon.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Data",
+            "name": "data",
+            "description": "Converts the data received from the beacon into a hexadecimal string and sets it.",
+            "schema": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

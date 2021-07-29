@@ -1,0 +1,341 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330247;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-802-102-Z036",
+  "description": "Smart Light 5 segment",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ErrorCode",
+      "displayName": "ErrorCode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "WrongMode",
+            "enumValue": "WrongMode"
+          },
+          {
+            "name": "LevelOurOfRange",
+            "enumValue": "LevelOurOfRange"
+          },
+          {
+            "name": "WrongColor",
+            "enumValue": "WrongColor"
+          },
+          {
+            "name": "WrongNumberOfSegments",
+            "enumValue": "WrongNumberOfSegments"
+          },
+          {
+            "name": "WrongFrequency",
+            "enumValue": "WrongFrequency"
+          },
+          {
+            "name": "WrongSpeed",
+            "enumValue": "WrongSpeed"
+          },
+          {
+            "name": "WrongBuzzerFunction",
+            "enumValue": "WrongBuzzerFunction"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1BlinkDominantLED4",
+              "displayName": "Segment1BlinkDominantLED4",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1"
+            },
+            {
+              "name": "Segment1ColorBackgroundColorLED31",
+              "displayName": "Segment1ColorBackgroundColorLED31",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OffOffOffOff",
+                    "enumValue": "OffOffOffOff"
+                  },
+                  {
+                    "name": "GreenOffOffOn",
+                    "enumValue": "GreenOffOffOn"
+                  },
+                  {
+                    "name": "RedOffOnOff",
+                    "enumValue": "RedOffOnOff"
+                  },
+                  {
+                    "name": "YellowOffOnOn",
+                    "enumValue": "YellowOffOnOn"
+                  },
+                  {
+                    "name": "BlueOnOffOff",
+                    "enumValue": "BlueOnOffOff"
+                  },
+                  {
+                    "name": "OrangeOnOffOn",
+                    "enumValue": "OrangeOnOffOn"
+                  },
+                  {
+                    "name": "UserDefinedOnOnOff",
+                    "enumValue": "UserDefinedOnOnOff"
+                  },
+                  {
+                    "name": "WhiteOnOnOn",
+                    "enumValue": "WhiteOnOnOn"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Segment2BlinkDominantLED8",
+              "displayName": "Segment2BlinkDominantLED8",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1"
+            },
+            {
+              "name": "Segment2ColorRunningColorLED75",
+              "displayName": "Segment2ColorRunningColorLED75",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OffOffOffOff",
+                    "enumValue": "OffOffOffOff"
+                  },
+                  {
+                    "name": "GreenOffOffOn",
+                    "enumValue": "GreenOffOffOn"
+                  },
+                  {
+                    "name": "RedOffOnOff",
+                    "enumValue": "RedOffOnOff"
+                  },
+                  {
+                    "name": "YellowOffOnOn",
+                    "enumValue": "YellowOffOnOn"
+                  },
+                  {
+                    "name": "BlueOnOffOff",
+                    "enumValue": "BlueOnOffOff"
+                  },
+                  {
+                    "name": "OrangeOnOffOn",
+                    "enumValue": "OrangeOnOffOn"
+                  },
+                  {
+                    "name": "UserDefinedOnOnOff",
+                    "enumValue": "UserDefinedOnOnOff"
+                  },
+                  {
+                    "name": "WhiteOnOnOn",
+                    "enumValue": "WhiteOnOnOn"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Segment3BlinkDominantLED12",
+              "displayName": "Segment3BlinkDominantLED12",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1"
+            },
+            {
+              "name": "Segment3ColorLED119",
+              "displayName": "Segment3ColorLED119",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentColorLED;1"
+            },
+            {
+              "name": "Segment4BlinkDominantLED16",
+              "displayName": "Segment4BlinkDominantLED16",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1"
+            },
+            {
+              "name": "Segment4ColorLED1513",
+              "displayName": "Segment4ColorLED1513",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentColorLED;1"
+            },
+            {
+              "name": "Segment5BlinkDominantLED20",
+              "displayName": "Segment5BlinkDominantLED20",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1"
+            },
+            {
+              "name": "Segment5ColorLED1917",
+              "displayName": "Segment5ColorLED1917",
+              "schema": "dtmi:CloudRail:IOL:V888:D330247:SegmentColorLED;1"
+            },
+            {
+              "name": "RunlightRunningDirection",
+              "displayName": "RunlightRunningDirection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Up",
+                    "enumValue": "Up"
+                  },
+                  {
+                    "name": "Down",
+                    "enumValue": "Down"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "OperatingMode",
+              "displayName": "OperatingMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "SegmentMode",
+                    "enumValue": "SegmentMode"
+                  },
+                  {
+                    "name": "LevelMode",
+                    "enumValue": "LevelMode"
+                  },
+                  {
+                    "name": "RunlightMode",
+                    "enumValue": "RunlightMode"
+                  },
+                  {
+                    "name": "FlexibleMode",
+                    "enumValue": "FlexibleMode"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "NumberOfSegmentsLevelType",
+              "displayName": "NumberOfSegmentsLevelType",
+              "schema": "long"
+            },
+            {
+              "name": "BlinkingModeLevelValueLowByte",
+              "displayName": "BlinkingModeLevelValueLowByte",
+              "schema": "long"
+            },
+            {
+              "name": "BlinkingFrequencyLevelValueHighByteRunningSpeed",
+              "displayName": "BlinkingFrequencyLevelValueHighByteRunningSpeed",
+              "schema": "long"
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncStart",
+              "displayName": "SyncStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330247:SegmentBlinkDominantLED;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SegmentDoesNotBlinkNotDominantOff",
+          "enumValue": "SegmentDoesNotBlinkNotDominantOff"
+        },
+        {
+          "name": "SegmentBlinksDominantOn",
+          "enumValue": "SegmentBlinksDominantOn"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330247:SegmentColorLED;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OffOffOffOff",
+          "enumValue": "OffOffOffOff"
+        },
+        {
+          "name": "GreenOffOffOn",
+          "enumValue": "GreenOffOffOn"
+        },
+        {
+          "name": "RedOffOnOff",
+          "enumValue": "RedOffOnOff"
+        },
+        {
+          "name": "YellowOffOnOn",
+          "enumValue": "YellowOffOnOn"
+        },
+        {
+          "name": "BlueOnOffOff",
+          "enumValue": "BlueOnOffOff"
+        },
+        {
+          "name": "OrangeOnOffOn",
+          "enumValue": "OrangeOnOffOn"
+        },
+        {
+          "name": "UserDefinedOnOnOff",
+          "enumValue": "UserDefinedOnOnOff"
+        },
+        {
+          "name": "WhiteOnOnOn",
+          "enumValue": "WhiteOnOnOn"
+        }
+      ]
+    }
+  ]
+}

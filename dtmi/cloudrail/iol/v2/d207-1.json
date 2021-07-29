@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D207;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "837T-D3x1xxxxPA-D4",
+  "description": "Temperature Sensor, 837T, Display, 1/4 NPT Male, - 20 C to 80 C, 25 mm Probe Length, 1 x PNP IO-Link and 1 x 4-20 mA, Integral 4-pin M12 QD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered1",
+      "displayName": "Triggered1",
+      "schema": "dtmi:CloudRail:IOL:V2:D207:Triggered;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered2",
+      "displayName": "Triggered2",
+      "schema": "dtmi:CloudRail:IOL:V2:D207:Triggered;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V2:D207:Triggered;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Triggered",
+          "enumValue": "Triggered"
+        },
+        {
+          "name": "NotTriggered",
+          "enumValue": "NotTriggered"
+        }
+      ]
+    }
+  ]
+}

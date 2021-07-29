@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D264199;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BUS004P",
+  "description": "Ultrasonic proximity switch with 1 push-pull switched output, loadable to 100 mA, 1000 mm operating range. \r\nIODD is applicable to: BUS004P",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Interval",
+      "displayName": "Interval",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatus",
+      "displayName": "SwitchingStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotConnected",
+            "enumValue": "NotConnected"
+          },
+          {
+            "name": "Connected",
+            "enumValue": "Connected"
+          }
+        ]
+      }
+    }
+  ]
+}

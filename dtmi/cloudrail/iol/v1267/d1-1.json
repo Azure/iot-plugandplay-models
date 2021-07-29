@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1267:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PFLOW4008SW",
+  "description": "Mems Mass Flow Sensor R/N/O8/O6",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow",
+      "displayName": "Flow",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LowFlowAlarm",
+      "displayName": "LowFlowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HighFlowAlarm",
+      "displayName": "HighFlowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

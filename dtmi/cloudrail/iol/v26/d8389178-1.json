@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389178;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MIS-025CLTP0",
+  "description": "Magnet Coded Identification Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TagID",
+      "displayName": "TagID",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TagID",
+              "displayName": "TagID",
+              "schema": "long"
+            },
+            {
+              "name": "LEDStateGreen",
+              "displayName": "LEDStateGreen",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "GreenLEDON",
+                    "enumValue": "GreenLEDON"
+                  },
+                  {
+                    "name": "GreenLEDOFF",
+                    "enumValue": "GreenLEDOFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LEDStateRed",
+              "displayName": "LEDStateRed",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "RedLEDON",
+                    "enumValue": "RedLEDON"
+                  },
+                  {
+                    "name": "RedLEDOFF",
+                    "enumValue": "RedLEDOFF"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

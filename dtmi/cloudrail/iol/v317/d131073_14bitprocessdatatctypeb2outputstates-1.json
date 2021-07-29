@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D131073_14bitProcessDataTCTypeB2OutputStates;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TS720-2UPN8-H1141",
+  "description": "Temperature Measurement",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_K",
+      "displayName": "TemperatureProcessValue_K",
+      "schema": "double",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_C",
+      "displayName": "TemperatureProcessValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_F",
+      "displayName": "TemperatureProcessValue_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOutput2Temperature",
+      "displayName": "StateOutput2Temperature",
+      "schema": "dtmi:CloudRail:IOL:V317:D131073_14bitProcessDataTCTypeB2OutputStates:StateOutputTemperature;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOutput1Temperature",
+      "displayName": "StateOutput1Temperature",
+      "schema": "dtmi:CloudRail:IOL:V317:D131073_14bitProcessDataTCTypeB2OutputStates:StateOutputTemperature;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V317:D131073_14bitProcessDataTCTypeB2OutputStates:StateOutputTemperature;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

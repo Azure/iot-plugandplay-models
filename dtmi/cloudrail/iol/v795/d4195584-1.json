@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V795:D4195584;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Multitronik 77-1D1S",
+  "description": "Display and control unit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Reading",
+      "displayName": "Reading",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorUnderRange",
+      "displayName": "ErrorUnderRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorOverRange",
+      "displayName": "ErrorOverRange",
+      "schema": "integer"
+    }
+  ]
+}

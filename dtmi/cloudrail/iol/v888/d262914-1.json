@@ -1,0 +1,94 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D262914;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BGL 50C-007-S4",
+  "description": "IO-Link Analog Slot Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Point1",
+      "displayName": "Point1",
+      "schema": "dtmi:CloudRail:IOL:V888:D262914:Point;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Point2",
+      "displayName": "Point2",
+      "schema": "dtmi:CloudRail:IOL:V888:D262914:Point;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Point3",
+      "displayName": "Point3",
+      "schema": "dtmi:CloudRail:IOL:V888:D262914:Point;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Point4",
+      "displayName": "Point4",
+      "schema": "dtmi:CloudRail:IOL:V888:D262914:Point;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D262914:Point;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}
