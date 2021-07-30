@@ -1,0 +1,21 @@
+{
+  "displayName": "MIC-730AI", 
+  "@id": "dtmi:Advantech:MIC_730AI;1", 
+  "@type": "Interface", 
+  "contents": [
+    {
+      "schema": "dtmi:Advantech:JetsonDeviceInformation;1", 
+      "@type": "Component", 
+      "name": "deviceinfo"
+    }, 
+    {
+      "schema": "dtmi:Advantech:Jetsonthermal_zones;1", 
+      "@type": "Component", 
+      "name": "thermalzones"
+    }
+  ], 
+  "@context": [
+    "dtmi:iotcentral:context;2", 
+    "dtmi:dtdl:context;2"
+  ]
+}
