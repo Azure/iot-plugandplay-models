@@ -20,10 +20,6 @@
               "de": "Speichernutzung gesamt"
             },
             "name": "totalMemoryUsed",
-            "displayUnit": {
-              "en": "(kB)",
-              "de": "(kB)"
-            },
             "unit" : "kibibyte",
             "schema": "long"
         },
@@ -36,16 +32,12 @@
               "de": "Speichernutzung im Benutzermodus"
             },
             "name": "userMemoryUsed",
-            "displayUnit": {
-              "en": "(kB)",
-              "de": "(kB)"
-            },
             "unit":"kibibyte",
             "schema": "long"
         },
         {
           "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:connect;1",
-          "@type": [ "Telemetry", "Event" ],
+          "@type": "Telemetry",
           "description": {
             "en": "Device connected to IoTHub event"
           },
@@ -59,7 +51,6 @@
           "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod;1",
           "@type": "Command",
           "commandType": "synchronous",
-          "durable": false,
           "description": {
             "en": "Reset device after given amount of seconds"
           },

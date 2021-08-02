@@ -25,7 +25,6 @@
               "de": "Led-Farbe setzen"
             },
             "name": "setColorMethod",
-            "durable": false,
             "request": {
               "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:request;1",
               "comment": "Request to set LED color",
@@ -45,7 +44,6 @@
                 "fields" : [ 
                   {
                     "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:requestPayload:color;1",
-                    "@type": "SchemaField",
                     "displayName": {
                       "en": "Color"
                     },
@@ -57,7 +55,6 @@
             },
             "response": {
               "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:response;1",
-              "@type": "SchemaField",
               "name": "setColorMethodResponse",
               "displayName": {
                 "en": "SetColorMethod response"
@@ -71,7 +68,6 @@
                 "fields": [
                   {
                     "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:responsePayload:success;1",
-                    "@type": "SchemaField",
                     "displayName": {
                       "en": "Success"
                     },
@@ -80,7 +76,6 @@
                   },
                   {
                     "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:responsePayload:message;1",
-                    "@type": "SchemaField",
                     "displayName": {
                       "en": "Message"
                     },

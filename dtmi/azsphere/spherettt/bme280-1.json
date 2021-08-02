@@ -13,30 +13,22 @@
     "contents": [
         {
             "@id": "dtmi:azsphere:SphereTTT:BME280:temperature;1",
-            "@type": [
-                "Telemetry", "Temperature"
-              ],
-              "description": {
-                "en": "Temperature in degree Celsius.",
-                "de": "Temperatur in °C."
-              },
-              "displayName": {
-                "en": "Temperature",
-                "de": "Temperatur"
-              },
-              "name": "temperature",
-              "displayUnit": {
-                "en": "(degC)",
-                "de": "(°C)"
-              },
-              "schema": "double",
-              "unit": "degreeCelsius"
+            "@type": [ "Telemetry", "Temperature" ],
+            "description": {
+            "en": "Temperature in degree Celsius.",
+            "de": "Temperatur in °C."
+            },
+            "displayName": {
+            "en": "Temperature",
+            "de": "Temperatur"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
         },
         {
             "@id": "dtmi:azsphere:SphereTTT:BME280:pressure;1",
-            "@type": [
-                "Telemetry", "Pressure"
-            ],
+            "@type": [ "Telemetry", "Pressure" ],
             "description": {
                 "en": "Air pressure in hPa.",
                 "de": "Luftdruck in hPa."
@@ -46,18 +38,12 @@
                 "de": "Luftdruck"
             },
             "name": "pressure",
-            "displayUnit": {
-                "en": "(hPa)",
-                "de": "(hPa)"
-            },
             "schema": "double",
             "unit": "millibar"
         },
         {
             "@id": "dtmi:azsphere:SphereTTT:BME280:humidity;1",
-            "@type": [
-                "Telemetry", "RelativeHumidity"
-            ],
+            "@type": [ "Telemetry", "RelativeHumidity" ],
             "description": {
                 "en": "Humidity in %.",
                 "de": "Luftfeuchte in %."
@@ -67,10 +53,6 @@
                 "de": "Luftfeuchte"
             },
             "name": "humidity",
-            "displayUnit": {
-                "en": "(%)",
-                "de": "(%)"
-            },
             "schema": "double",
             "unit": "percent"
         }

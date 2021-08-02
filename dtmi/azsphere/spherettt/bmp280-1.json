@@ -25,10 +25,6 @@
                 "de": "Temperatur"
               },
               "name": "temperature",
-              "displayUnit": {
-                "en": "(degC)",
-                "de": "(°C)"
-              },
               "schema": "double",
               "unit": "degreeCelsius"
         },
@@ -46,10 +42,6 @@
                 "de": "Luftdruck"
             },
             "name": "pressure",
-            "displayUnit": {
-                "en": "(hPa)",
-                "de": "(hPa)"
-            },
             "schema": "double",
             "unit": "millibar"
         }
