@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Redeye:redeye_1_plus;1",
+    "@type": "Interface",
+    "displayName": "Redeye-1-Plus-V1",
+    "description": "Reports visible spectrophotometer for clinical use specified to detect microscale blood pollution in water.",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "testResult",
+            "displayName": "Blood pollution test result",
+            "description": "1 is true, 2 is false, 3 is unsure.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "testResultSpectrum",
+            "displayName": "Blood pollution test result spectrum",
+            "description": "blank rate is water's spectrum ,sample rate is pollution water's spectrum, wavelength is spectrum's axis.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "getCurrentConnectionStatus",
+            "displayName": "GetCurrentConnectionStatus",
+            "description": "Is the gateway connected to Redeye-1-Plus or not.",
+            "schema": "boolean"
+        },
+        {
+            "@type": "Command",
+            "name": "reboot",
+            "displayName": "Reboot",
+            "description": "Reboots the gateway after waiting the number of seconds specified."
+        },
+        {
+            "@type": "Command",
+            "name": "connectToRedeyeDevice",
+            "displayName": "ConnectToRedeyeDevice",
+            "description": "Scanning and try to connect Redeye-1-Plus near by."
+        }
+    ]
+}
