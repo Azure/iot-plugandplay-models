@@ -169,7 +169,7 @@
             "en": "Minimum Value"
           },
           "description" : {
-            "en" : "Minimum sensor value in float to ?????"
+            "en" : "Configures NIOS II Firmware to monitor minimum threshold value in float as a real time alert.  When the sensor value is below this threshold, LED will turn on."
           },
           "name": "min",
           "schema": "float"
@@ -179,7 +179,7 @@
             "en": "Maximum Value"
           },
           "description" : {
-            "en" : "Maximum sensor value in float to ?????"
+            "en" : "Configures NIOS II Firmware to monitor maximum threshold value in float as a real time alert.  When the sensor value is above this threshold, LED will turn on."
           },
           "name": "max",
           "schema": "float"
@@ -195,7 +195,7 @@
             "en": "Minimum Value"
           },
           "description" : {
-            "en" : "Minimum sensor value in integer to ?????"
+            "en" : "Configures NIOS II Firmware to monitor minimum threshold value in integer as a real time alert.  When the sensor value is below this threshold, LED will turn on."
           },
           "name": "min",
           "schema": "integer"
@@ -205,7 +205,7 @@
             "en": "Maximum Value"
           },
           "description" : {
-            "en" : "Maximum sensor value in integer to ?????"
+            "en" : "Configures NIOS II Firmware to monitor maximum threshold value in integer as a real time alert.  When the sensor value is above this threshold, LED will turn on."
           },
           "name": "max",
           "schema": "integer"
