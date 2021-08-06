@@ -1,0 +1,38 @@
+{
+    "@id": "dtmi:fii:fii:badge_apt;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gsensor"
+            },
+            "name": "gsensor",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Battery Level"
+            },
+            "description": "unit is %",
+            "name": "battery",
+            "schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Location"
+            ],
+            "displayName": {
+                "en": "location"
+            },
+            "name": "location",
+            "schema": "geopoint"
+        }
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
