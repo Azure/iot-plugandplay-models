@@ -1,0 +1,107 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azureiot:devkit:freertos:gsgstml475;1",
+    "@type": "Interface",
+    "displayName": "STM L475 FreeRTOS Getting Started Guide",
+    "extends": "dtmi:azureiot:devkit:freertos:gsg;1",
+    "contents": [
+        {
+            "@type": [
+                "Telemetry",
+                "RelativeHumidity"
+            ],
+            "name": "humidity",
+            "displayName": "Humidity",
+            "unit": "percent",
+            "schema": "double"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Pressure"
+            ],
+            "name": "pressure",
+            "displayName": "Pressure",
+            "unit": "kilopascal",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "magnetometerX",
+            "displayName": "Magnetometer X / mgauss",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "magnetometerY",
+            "displayName": "Magnetometer Y / mgauss",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "magnetometerZ",
+            "displayName": "Magnetometer Z / mgauss",
+            "schema": "double"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "name": "accelerometerX",
+            "displayName": "Accelerometer X",
+            "schema": "double",
+            "unit": "gForce"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "name": "accelerometerY",
+            "displayName": "Accelerometer Y",
+            "schema": "double",
+            "unit": "gForce"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "name": "accelerometerZ",
+            "displayName": "Accelerometer Z",
+            "schema": "double",
+            "unit": "gForce"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "AngularVelocity"
+            ],
+            "name": "gyroscopeX",
+            "displayName": "Gyroscope X",
+            "schema": "double",
+            "unit": "degreePerSecond"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "AngularVelocity"
+            ],
+            "name": "gyroscopeY",
+            "displayName": "Gyroscope Y",
+            "schema": "double",
+            "unit": "degreePerSecond"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "AngularVelocity"
+            ],
+            "name": "gyroscopeZ",
+            "displayName": "Gyroscope Z",
+            "schema": "double",
+            "unit": "degreePerSecond"
+        }
+    ]
+}
