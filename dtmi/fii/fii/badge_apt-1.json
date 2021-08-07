@@ -5,9 +5,9 @@
         {
             "@type": "Telemetry",
             "displayName": {
-                "en": "Battery Level"
+                "en": "Battery level"
             },
-            "description": "unit is %",
+            "description": "Unit is %",
             "name": "battery",
             "schema": "integer"
         },
@@ -17,7 +17,7 @@
                 "Location"
             ],
             "displayName": {
-                "en": "location"
+                "en": "Location"
             },
             "name": "location",
             "schema": "geopoint"
