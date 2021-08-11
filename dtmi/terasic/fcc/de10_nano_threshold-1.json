@@ -185,32 +185,6 @@
           "schema": "float"
         }
       ]
-    },
-    {
-      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:int;1",
-      "@type": "Object",
-      "fields": [
-        {
-          "displayName": {
-            "en": "Minimum Value"
-          },
-          "description" : {
-            "en" : "Configures NIOS II Firmware to monitor minimum threshold value in integer as a real time alert.  When the sensor value is below this threshold, LED will turn on."
-          },
-          "name": "min",
-          "schema": "integer"
-        },
-        {
-          "displayName": {
-            "en": "Maximum Value"
-          },
-          "description" : {
-            "en" : "Configures NIOS II Firmware to monitor maximum threshold value in integer as a real time alert.  When the sensor value is above this threshold, LED will turn on."
-          },
-          "name": "max",
-          "schema": "integer"
-        }
-      ]
     }
   ],
   "@context": [
