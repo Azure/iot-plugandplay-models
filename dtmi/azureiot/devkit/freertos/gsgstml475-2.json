@@ -3,7 +3,6 @@
     "@id": "dtmi:azureiot:devkit:freertos:gsgstml475;2",
     "@type": "Interface",
     "displayName": "STM L475 FreeRTOS Getting Started Guide",
-    "extends": "dtmi:azureiot:devkit:freertos:gsg;1",
     "contents": [
         {
             "@type": [
