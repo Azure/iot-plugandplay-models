@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:Terasic:FCC:DE10_Nano_Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Terasic DE10-Nano Kit"
+  },
+  "description" : {
+    "en" : "Onboard sensors of DE10-Nano Kit"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "gSensor",
+      "displayName": {
+        "en": "G-Sensor"
+      },
+      "description" : {
+        "en" : "G-Sensor on DE10-Nano Kit"
+      },
+      "schema": {
+        "@type":"Object",
+        "fields": [
+          {
+            "name": "x",
+            "schema": "float",
+            "displayName": {
+              "en": "X Axis"
+            },
+            "description" : {
+              "en" : "X Axis of G-Sensor"
+            }
+          },
+          {
+            "name": "y",
+            "schema": "float",
+            "displayName": {
+              "en": "Y Axis"
+            },
+            "description" : {
+              "en" : "Y Axis of G-Sensor"
+            }
+          },
+          {
+            "name": "z",
+            "schema": "float",
+            "displayName": {
+              "en": "Z Axis"
+            },
+            "description" : {
+              "en" : "Z Axis of G-Sensor"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
