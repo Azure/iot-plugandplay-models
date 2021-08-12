@@ -1,0 +1,46 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:A5_09_04;1",
+  "@type": "Interface",
+  "displayName": "EnOcean CO2 Gas sensor EEP A5-09-04",
+  "description": "Reports CO2 concentration, temperature, and humidity.",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "RelativeHumidity" ],
+      "name": "hum",
+      "displayName": "Humidity",
+      "description": "RelativeHumidity in unity percent.",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": "Property",
+      "name": "conc",
+      "displayName": "Concentration",
+      "description": "Concentration in ppm.",
+      "schema": "integer"
+    },
+    {
+      "@type": [ "Telemetry", "Temperature" ],
+      "name": "tmp",
+      "displayName": "Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}

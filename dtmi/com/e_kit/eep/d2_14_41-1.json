@@ -1,0 +1,120 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:D2_14_41;1",
+  "@type": "Interface",
+  "displayName": "EnOcean Multisensor EEP D2-14-41",
+  "description": "Reports temperature, humidity, illuminance, acceleration, and contact status.",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "Temperature" ],
+      "name": "tp",
+      "displayName": "Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Telemetry", "RelativeHumidity" ],
+      "name": "hu",
+      "displayName": "Humidity",
+      "description": "RelativeHumidity in unity percent.",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [ "Telemetry", "Illuminance" ],
+      "name": "il",
+      "displayName": "Illuminance",
+      "description": "Illuminance in lux.",
+      "schema": "double",
+      "unit": "lux"
+    },
+    {
+      "@type": "Property",
+      "name": "as",
+      "displayName": "Accelerations",
+      "description": "Accelerations status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "off",
+            "displayName": "Periodic Update",
+            "enumValue": 0
+          },
+          {
+            "name": "ex1",
+            "displayName": "Threshold 1 exceeded",
+            "enumValue": 1
+          },
+          {
+            "name": "ex2",
+            "displayName": "Threshold 2 exceeded",
+            "enumValue": 2
+          }
+        ]
+      }
+    },
+    {
+      "@type": [ "Telemetry", "Acceleration" ],
+      "name": "ax",
+      "displayName": "AccelerationX",
+      "description": "Acceleration X in gForce.",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": [ "Telemetry", "Acceleration" ],
+      "name": "ay",
+      "displayName": "AccelerationY",
+      "description": "Acceleration Y in gForce.",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": [ "Telemetry", "Acceleration" ],
+      "name": "az",
+      "displayName": "AccelerationZ",
+      "description": "Acceleration Z in gForce.",
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@type": "Property",
+      "name": "co",
+      "displayName": "Contact",
+      "description": "Contact sensor status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "open",
+            "displayName": "Open",
+            "enumValue": 0
+          },
+          {
+            "name": "close",
+            "displayName": "Close",
+            "enumValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}

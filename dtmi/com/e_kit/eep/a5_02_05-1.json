@@ -1,0 +1,31 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:A5_02_05;1",
+  "@type": "Interface",
+  "displayName": "EnOcean Temperature Sensor EEP A5-02-05",
+  "description": "Temperature Sensor Range 0..40 degree.",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "Temperature" ],
+      "name": "tp",
+      "displayName": "Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}

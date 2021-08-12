@@ -1,0 +1,45 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:D2_14_41;1",
+  "@type": "Interface",
+  "displayName": "EnOcean Contact sensor EEP D5-00-01",
+  "description": "Reports contact status.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "co",
+      "displayName": "contact",
+      "description": "Contact sensor status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "open",
+            "displayName": "Open",
+            "enumValue": 0
+          },
+          {
+            "name": "close",
+            "displayName": "Close",
+            "enumValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}

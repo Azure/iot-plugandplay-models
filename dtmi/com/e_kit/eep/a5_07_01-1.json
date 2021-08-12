@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:A5_07_01;1",
+  "@type": "Interface",
+  "displayName": "EnOcean Occupancy Sensor EEP A5-07-01",
+  "description": "Reports Occupancy with supply voltage status.",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "Voltage" ],
+      "name": "svc",
+      "displayName": "Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": "Property",
+      "name": "pirs",
+      "displayName": "PIRSstatus",
+      "description": "PIRS status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "off",
+            "displayName": "Uncertain",
+            "enumValue": 0
+          },
+          {
+            "name": "on",
+            "displayName": "Detected",
+            "enumValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}

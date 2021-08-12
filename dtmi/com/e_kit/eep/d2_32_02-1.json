@@ -1,0 +1,91 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:e_kit:eep:D2_32_02;1",
+  "@type": "Interface",
+  "displayName": "EnOcean A.C. Current Clamp EEP D2-32-02",
+  "description": "Reports 3ch. current value every 30 seconds.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pf",
+      "displayName": "PowerFail",
+      "description": "Power fail status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "false",
+            "displayName": "False",
+            "enumValue": 0
+          },
+          {
+            "name": "true",
+            "displayName": "True",
+            "enumValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "div",
+      "displayName": "Divisor",
+      "description": "Divisor status.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+              "name": "x1",
+              "displayName": "x/1",
+              "enumValue": 0
+            },
+            {
+              "name": "x10",
+              "displayName": "x/10",
+              "enumValue": 1
+            }
+          ]
+        }
+      },
+      {
+      "@type": [ "Telemetry", "Current" ],
+      "name": "ch1",
+      "displayName": "Current1",
+      "description": "Current ch1 in ampere.",
+      "schema": "integer",
+      "unit": "ampere"
+    },
+    {
+        "@type": [ "Telemetry", "Current" ],
+        "name": "ch2",
+        "displayName": "Current2",
+        "description": "Current ch2 in ampere.",
+        "schema": "integer",
+        "unit": "ampere"
+      },
+      {
+        "@type": [ "Telemetry", "Current" ],
+        "name": "ch3",
+        "displayName": "Current3",
+        "description": "Current ch3 in ampere.",
+        "schema": "integer",
+        "unit": "ampere"
+      },
+        {
+      "@type": "Property",
+      "name": "dbm",
+      "displayName": "Radio",
+      "description": "Radio strength in dBm.",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "id",
+      "displayName": "EURID",
+      "description": "EnOcean Unique Radio Identifier.",
+      "schema": "string"
+    }
+  ]
+}
