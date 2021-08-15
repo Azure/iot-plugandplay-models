@@ -1,0 +1,416 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:myclair:CLAIR_MEASURE;1",
+  "@type": "Interface",
+  "displayName": "CLAIR_MEASURE",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Density"
+      ],
+      "displayName": {
+        "en": "PM10"
+      },
+      "name": "PM10",
+      "schema": "integer",
+      "unit": "gramPerCubicMetre"
+    },
+    {
+     
+      "@type": [
+        "Telemetry",
+        "Density"
+      ],
+      "displayName": {
+        "en": "PM2_5"
+      },
+      "name": "PM25",
+      "schema": "integer",
+      "unit": "gramPerCubicMetre"
+    },
+    {
+     
+      "@type": [
+        "Telemetry",
+        "Density"
+      ],
+      "displayName": {
+        "en": "CO2"
+      },
+      "name": "CO2",
+      "schema": "integer",
+      "unit": "gramPerCubicMetre"
+    },
+    {
+      
+      "@type": [
+        "Telemetry",
+        "Density"
+      ],
+      "displayName": {
+        "en": "TVOC"
+      },
+      "name": "TVOC",
+      "schema": "integer",
+      "unit": "gramPerCubicMetre"
+    },
+    {
+     
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Power"
+      },
+      "name": "Power",
+      "schema": "integer"
+    },
+    {
+      
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Automode"
+      },
+      "name": "Automode",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Nightmode"
+      },
+      "name": "Nightmode",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Day_Set"
+      },
+      "name": "DaySet",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Start_Set"
+      },
+      "name": "Start_Set",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "End_Set"
+      },
+      "name": "End_Set",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "ChildLock"
+      },
+      "name": "ChildLock",
+      "schema": "integer"
+    },
+    {
+      
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Fan"
+      },
+      "name": "Fan",
+      "schema": "integer"
+    },
+    {
+      
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Fan_1"
+      },
+      "name": "Fan_1",
+      "schema": "integer"
+    },
+    {
+      
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Fan_2"
+      },
+      "name": "Fan_2",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Fan_3"
+      },
+      "name": "Fan_3",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Fan_4"
+      },
+      "name": "Fan_4",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Intensity"
+      },
+      "name": "Intensity",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "UV"
+      },
+      "name": "UV",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "Temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius"
+    },
+    {
+     
+      "@type": [
+        "Telemetry",
+        "Density"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "Humidity",
+      "schema": "integer",
+      "unit": "gramPerCubicMetre"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Filtertime"
+      },
+      "name": "Filtertime",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Free_Filter"
+      },
+      "name": "FreeFilter",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Dust_Filter"
+      },
+      "name": "DustFilter",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Deo_Filter"
+      },
+      "name": "DeoFilter",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Free_Reset"
+      },
+      "name": "FreeReset",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Dust_Reset"
+      },
+      "name": "DustReset",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Deo_Reset"
+      },
+      "name": "DeoReset",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Updated"
+      },
+      "name": "Updated",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Latitude"
+      },
+      "name": "Latitude",
+      "schema": "double"
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Longitude"
+      },
+      "name": "Longitude",
+      "schema": "double"
+    },
+    {
+    
+      "@type": "Property",
+      "displayName": {
+        "en": "Street_Code"
+      },
+      "name": "Street_Code",
+      "schema": "string",
+      "writable": false
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+       
+      ],
+      "displayName": {
+        "en": "Temp_Humi_Status"
+      },
+      "name": "Temp_Humi_Status",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+        
+      ],
+      "displayName": {
+        "en": "TVOC_CO2_Status"
+      },
+      "name": "TVOC_CO2_Status",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+       
+      ],
+      "displayName": {
+        "en": "Dust_Status"
+      },
+      "name": "Dust_Status",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": [
+        "Telemetry"
+        
+      ],
+      "displayName": {
+        "en": "Fan_Status"
+      },
+      "name": "Fan_Status",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Link_Status"
+      },
+      "name": "Link_Status",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Message_01"
+      },
+      "name": "Message_01",
+      "schema": "integer"
+    },
+    {
+    
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Message_02"
+      },
+      "name": "Message_02",
+      "schema": "integer"
+    },
+    {
+     
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Message_03"
+      },
+      "name": "Message_03",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "deviceStatus",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "powerstatus",
+      "request": {
+        "name": "power",
+        "schema": "integer"
+      }
+    }
+  ]
+}
