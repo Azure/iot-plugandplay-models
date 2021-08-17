@@ -1,0 +1,158 @@
+{
+    "@id": "dtmi:azureiot:PhoneAsADevice;3",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Sensors"
+            },
+            "name": "sensors",
+            "schema": "dtmi:azureiot:PhoneSensors;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Device information"
+            },
+            "name": "device_info",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "LightOn"
+            },
+            "name": "lightOn",
+            "request": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Parameters"
+                },
+                "name": "parameters",
+                "schema": {
+                    "@type": "Object",
+                    "displayName": {
+                        "en": "Object"
+                    },
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Duration"
+                            },
+                            "name": "duration",
+                            "schema": "integer"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Pulses interval"
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Pulses"
+                            },
+                            "name": "pulses",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en":"Clear Connectivity"
+            },
+            "name": "clearConnectivity"
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "telemetry Interval (seconds)"
+            },
+            "name": "telemetryInterval",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "five",
+                        "displayName": {
+                            "en": "5 Seconds (Default)"
+                        },
+                        "enumValue": 5000
+                    },
+                    {
+                        "name": "ten",
+                        "displayName": {
+                            "en": "10 Seconds"
+                        },
+                        "enumValue": 10000
+                    },
+                    {
+                        "name": "twenty",
+                        "displayName": {
+                            "en": "20 Seconds"
+                        },
+                        "enumValue": 20000
+                    },
+                    {
+                        "name": "thirty",
+                        "displayName": {
+                            "en": "30 Seconds"
+                        },
+                        "enumValue": 30000
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Application Theme"
+            },
+            "name": "theme",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "light",
+                        "displayName": {
+                            "en": "Light"
+                        },
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "dark",
+                        "displayName": {
+                            "en": "Dark"
+                        },
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "system",
+                        "displayName": {
+                            "en": "System-default"
+                        },
+                        "enumValue": 0
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "displayName": {
+        "en": "IoT Plug and Play mobile"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
