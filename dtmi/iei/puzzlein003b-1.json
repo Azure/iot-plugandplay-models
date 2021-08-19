@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:iei:puzzlein003a;1",
+  "@id": "dtmi:iei:puzzlein003b;1",
   "@type": "Interface",
   "displayName": "IEI PUZZLE-IN003B",
   "contents": [
