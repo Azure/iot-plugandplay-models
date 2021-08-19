@@ -64,7 +64,7 @@
         },
         {
             "@type": "Command",
-            "commandType": "synchronous",
+            "commandType": "asynchronous",
             "displayName": {
                 "en":"Clear Connectivity"
             },
