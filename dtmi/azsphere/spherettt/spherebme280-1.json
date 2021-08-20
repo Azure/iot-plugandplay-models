@@ -1,0 +1,74 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:SphereBME280;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Interface with basic device hardware information."
+            },
+            "displayName": {
+                "en": "Device Information"
+            },
+            "name": "deviceInformation",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Controls an RGB Led using Azure IoT Hub direct method and property"
+            },
+            "displayName": {
+                "de": "RGB Led",
+                "en": "RGB led"
+            },
+            "name": "rgbLed",
+            "schema": "dtmi:azsphere:SphereTTT:RGBled;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Button event telemetry"
+            },
+            "displayName": {
+                "de": "MT3620RDB Taster",
+                "en": "MT3620RDB Buttons"
+            },
+            "name": "buttons",
+            "schema": "dtmi:azsphere:SphereTTT:Buttons;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "de": "Bosch BME280 Umgebungs-Sensor",
+                "en": "Bosch BME280 envirnmental sensor"
+            },
+            "displayName": {
+                "de": "Bosch BME280 Luftdruck-, Temperatur & Luftfeuchtesensor",
+                "en": "Bosch BME280 pressure, temperature and humidity sensor"
+            },
+            "name": "bme280",
+            "schema": "dtmi:azsphere:SphereTTT:BME280;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "de": "Gerätestatus Telemetriedaten",
+                "en": "Device-Health telemetry"
+            },
+            "displayName": {
+                "de": "Gerätestatus",
+                "en": "Device-Health"
+            },
+            "name": "deviceHealth",
+            "schema": "dtmi:azsphere:SphereTTT:DeviceHealth;1"
+        }
+    ],
+    "description": {
+        "en": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp: SphereBME280 Sample"
+    },
+    "displayName": {
+        "en": "Azure Sphere TTT-SphereBME280"
+    }
+}
