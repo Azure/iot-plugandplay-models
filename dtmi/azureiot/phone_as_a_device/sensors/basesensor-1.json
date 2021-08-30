@@ -7,48 +7,9 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "telemetry Interval (seconds)"
+        "en": "Enabled"
       },
-      "name": "period",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "integer",
-        "enumValues": [
-          {
-            "name": "five",
-            "displayName": {
-              "en": "5 Seconds (Default)"
-            },
-            "enumValue": 5000
-          },
-          {
-            "name": "ten",
-            "displayName": {
-              "en": "10 Seconds"
-            },
-            "enumValue": 10000
-          },
-          {
-            "name": "twenty",
-            "displayName": {
-              "en": "20 Seconds"
-            },
-            "enumValue": 20000
-          },
-          {
-            "name": "thirty",
-            "displayName": {
-              "en": "30 Seconds"
-            },
-            "enumValue": 30000
-          }
-        ]
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "Enabled",
+      "name": "enabled",
       "schema": "boolean",
       "writable": true
     }

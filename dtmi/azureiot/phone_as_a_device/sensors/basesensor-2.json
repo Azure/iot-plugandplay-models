@@ -1,0 +1,59 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;2",
+  "@type": "Interface",
+  "displayName": "Base Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "telemetry Interval (seconds)"
+      },
+      "name": "telemetryInterval",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "five",
+            "displayName": {
+              "en": "5 Seconds (Default)"
+            },
+            "enumValue": 5000
+          },
+          {
+            "name": "ten",
+            "displayName": {
+              "en": "10 Seconds"
+            },
+            "enumValue": 10000
+          },
+          {
+            "name": "twenty",
+            "displayName": {
+              "en": "20 Seconds"
+            },
+            "enumValue": 20000
+          },
+          {
+            "name": "thirty",
+            "displayName": {
+              "en": "30 Seconds"
+            },
+            "enumValue": 30000
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Enabled"
+      },
+      "name": "enabled",
+      "schema": "boolean",
+      "writable": true
+    }
+  ]
+}
