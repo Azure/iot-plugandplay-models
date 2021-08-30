@@ -4,11 +4,28 @@
     "contents": [
         {
             "@type": "Component",
-            "displayName": {
-                "en": "Sensors"
-            },
-            "name": "sensors",
-            "schema": "dtmi:azureiot:Phone_As_A_Device:PhoneSensors;1"
+            "name": "battery",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Battery;1"
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Location;1"
+        },
+        {
+            "@type": "Component",
+            "name": "magnet",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Magnet;1"
+        },
+        {
+            "@type": "Component",
+            "name": "accelerometer",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Accelerometer;1"
+        },
+        {
+            "@type": "Component",
+            "name": "pressure",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;1"
         },
         {
             "@type": "Component",
@@ -66,7 +83,7 @@
             "@type": "Command",
             "commandType": "asynchronous",
             "displayName": {
-                "en":"Clear Connectivity"
+                "en": "Clear Connectivity"
             },
             "name": "clearConnectivity"
         },
