@@ -1,0 +1,27 @@
+{
+    "@context": [
+      "dtmi:dtdl:context;2",
+      "dtmi:iotcentral:context;2"
+    ],
+    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Accelerometer;1",
+    "@type": "Interface",
+    "extends": ["dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;1"],
+    "displayName": "Movement",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "AccelerationVector"
+        ],
+        "displayName": "Acceleration",
+        "name": "accelerometer",
+        "schema": "vector"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": "Rotation",
+        "name": "gyroscope",
+        "schema": "vector"
+      }
+    ]
+  }

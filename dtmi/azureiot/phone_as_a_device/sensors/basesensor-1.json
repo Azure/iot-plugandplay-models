@@ -1,0 +1,26 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;1",
+    "@type": "Interface",
+    "displayName": "Base Sensor",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "period",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "Enabled",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Command",
+        "name": "reboot",
+        "request": {
+          "name": "delay",
+          "schema": "integer"
+        }
+      }
+    ]
+  }

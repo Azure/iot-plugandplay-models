@@ -1,0 +1,32 @@
+{
+    "@context": "dtmi:iotcentral:context;2",
+    "@id": "dtmi:azureiot:Phone_As_A_Device:PhoneSensors;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "battery",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Battery;1"
+          },
+          {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Location;1"
+          },
+          {
+            "@type": "Component",
+            "name": "magnet",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Magnet;1"
+          },
+          {
+            "@type": "Component",
+            "name": "accelerometer",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Accelerometer;1"
+          },
+          {
+            "@type": "Component",
+            "name": "pressure",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;1"
+          }
+    ]
+}

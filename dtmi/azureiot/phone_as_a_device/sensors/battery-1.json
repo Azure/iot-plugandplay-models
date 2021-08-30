@@ -1,0 +1,15 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Battery;1",
+    "@type": "Interface",
+    "extends": ["dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;1"],
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "comment": "Level percentage",
+        "displayName": "Battery Level",
+        "name": "battery",
+        "schema": "integer"
+      }
+    ]
+  }
