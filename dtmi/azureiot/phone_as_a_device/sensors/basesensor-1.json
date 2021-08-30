@@ -43,7 +43,8 @@
             "enumValue": 30000
           }
         ]
-      }
+      },
+      "writable": true
     },
     {
       "@type": "Property",
