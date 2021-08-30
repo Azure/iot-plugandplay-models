@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:azureiot:Phone_As_A_Device:PhoneDevice;1",
+    "@id": "dtmi:azureiot:Phone_As_A_Device:PhoneAsADevice;1",
     "@type": "Interface",
     "contents": [
         {
