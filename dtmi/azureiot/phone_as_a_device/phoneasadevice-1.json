@@ -8,7 +8,7 @@
                 "en": "Sensors"
             },
             "name": "sensors",
-            "schema": "dtmi:azureiot:PhoneSensors;2"
+            "schema": "dtmi:azureiot:Phone_As_A_Device:PhoneSensors;1"
         },
         {
             "@type": "Component",
