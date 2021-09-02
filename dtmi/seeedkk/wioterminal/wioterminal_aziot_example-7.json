@@ -1,0 +1,82 @@
+{
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;7",   
+    "@type": "Interface",
+    "displayName": "Seeed Wio Terminal",
+    "contents": [
+      {
+        "@type": "Property",
+        "description": {
+          "en": "Right button pushed down."
+        },
+        "displayName": {
+          "en": "latestInferenceResult"
+        },
+        "name": "latestInferenceResult",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "X-axis value of accelerometer.",
+          "ja": "加速度センサーのX値です。"
+        },
+        "displayName": {
+          "en": "CO2",
+          "ja": "加速度 X"
+        },
+        "name": "CO2",
+        "schema": "double",
+        "unit": "gForce"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Y-axis value of accelerometer.",
+          "ja": "加速度センサーのY値です。"
+        },
+        "displayName": {
+          "en": "N02",
+          "ja": "加速度 Y"
+        },
+        "name": "NO2",
+        "schema": "double",
+        "unit": "gForce"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Z-axis value of accelerometer.",
+          "ja": "加速度センサーのZ値です。"
+        },
+        "displayName": {
+          "en": "C2H2OH",
+          "ja": "加速度 Z"
+        },
+        "name": "C2H2OH",
+        "schema": "double",
+        "unit": "gForce"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Light sensor value (%) on backside.",
+          "ja": "背面にある光センサーの光量です。単位は%。"
+        },
+        "displayName": {
+          "en": "VO2",
+          "ja": "光量"
+        },
+        "name": "VO2",
+        "schema": "integer"
+      }
+    ],
+    "description": {
+      "en": "X,Y,Z-axis, brightness and button click polling result. Buzzer can be beeped by settings on cloud.",
+      "ja": "加速度X,Y,Zと光量を定期的に通知します。また、右、中央、左ボタンのクリックも通知します。クラウドからの指示でブザーが鳴ります。"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
