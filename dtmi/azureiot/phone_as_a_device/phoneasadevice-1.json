@@ -4,6 +4,11 @@
     "contents": [
         {
             "@type": "Component",
+            "name": "accelerometer",
+            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Accelerometer;1"
+        },
+        {
+            "@type": "Component",
             "name": "battery",
             "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Battery;1"
         },
@@ -16,11 +21,6 @@
             "@type": "Component",
             "name": "magnet",
             "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Magnet;1"
-        },
-        {
-            "@type": "Component",
-            "name": "accelerometer",
-            "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Accelerometer;1"
         },
         {
             "@type": "Component",

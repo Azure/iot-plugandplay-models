@@ -1,18 +1,10 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;1",
+    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;2",
     "@type": "Interface",
+    "extends": ["dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;1"],
     "displayName": "Pressure",
     "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Enabled"
-        },
-        "name": "enabled",
-        "schema": "boolean",
-        "writable": true
-      },
       {
         "@type": [
           "Telemetry",
