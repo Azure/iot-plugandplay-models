@@ -1,12 +1,12 @@
 {
-    "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;7",   
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_smellsensor;1",   
     "@type": "Interface",
     "displayName": "Seeed Wio Terminal",
     "contents": [
       {
         "@type": "Property",
         "description": {
-          "en": "Right button pushed down."
+          "en": "latestInferenceResult"
         },
         "displayName": {
           "en": "latestInferenceResult"
