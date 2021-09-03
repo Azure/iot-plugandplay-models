@@ -5,15 +5,11 @@
     "contents": [
       {
         "@type": "Property",
-        "description": {
-          "en": "latestInferenceResult"
-        },
-        "displayName": {
-          "en": "latestInferenceResult"
-        },
         "name": "latestInferenceResult",
         "schema": "string",
-        "writable": false
+        "displayName": {
+          "en": "Latest inference result"
+        }
       },
       {
         "@type": "Telemetry",
