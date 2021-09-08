@@ -1,7 +1,8 @@
 {
-    "@id": "dtmi:tinkerGen:wioterminal:wioterminal_smellsensor;1",   
+    "@id": "dtmi:tinkerGen:wioterminal_smellsensor;1",
     "@type": "Interface",
-    "displayName": "Seeed Wio Terminal",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "wioterminal_smellsensor",
     "contents": [
       {
         "@type": "Property",
@@ -41,14 +42,7 @@
           "en": "VO2"
         },
         "name": "VO2",
-        "schema": "integer"
+        "schema": "double"
       }
-    ],
-    "description": {
-      "en": "Smell nose"
-    },
-    "@context": [
-      "dtmi:iotcentral:context;2",
-      "dtmi:dtdl:context;2"
     ]
   }
