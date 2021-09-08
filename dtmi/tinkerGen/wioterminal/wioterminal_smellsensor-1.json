@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:seeedkk:wioterminal:wioterminal_smellsensor;1",   
+    "@id": "dtmi:tinkerGen:wioterminal:wioterminal_smellsensor;1",   
     "@type": "Interface",
     "displayName": "Seeed Wio Terminal",
     "contents": [
