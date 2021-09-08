@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Battery;1",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Battery;1",
     "@type": "Interface",
     "contents": [
       {

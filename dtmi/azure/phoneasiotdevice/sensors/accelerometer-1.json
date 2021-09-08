@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Movement"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Enabled"
+      },
+      "name": "enabled",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Acceleration"
+      },
+      "name": "accelerometer",
+      "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer:acceleration;1"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Rotation"
+      },
+      "name": "gyroscope",
+      "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer:gyroscope;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer:acceleration;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "x",
+          "schema": "double"
+        },
+        {
+          "name": "y",
+          "schema": "double"
+        },
+        {
+          "name": "z",
+          "schema": "double"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer:gyroscope;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "X",
+          "schema": "double"
+        },
+        {
+          "name": "Y",
+          "schema": "double"
+        },
+        {
+          "name": "Z",
+          "schema": "double"
+        },
+        {
+          "name": "W",
+          "schema": "double"
+        },
+        {
+          "name": "IsIdentity",
+          "schema": "boolean"
+        }
+      ]
+    }
+  ]
+}

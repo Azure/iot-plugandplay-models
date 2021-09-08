@@ -1,9 +1,9 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;1",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Magnet;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Pressure"
+      "en": "Movement"
     },
     "contents": [
       {
@@ -16,16 +16,13 @@
         "writable": true
       },
       {
-        "@type": [
-          "Telemetry",
-          "Pressure"
-        ],
+        "@type": ["Telemetry", "Angle"],
+        "unit": "degreeOfArc",
         "displayName": {
-          "en": "Pressure"
+          "en": "Magnetic heading"
         },
-        "name": "barometer",
-        "schema": "double",
-        "unit": "kilopascal"
+        "name": "magnetometer",
+        "schema": "double"
       }
     ]
   }
