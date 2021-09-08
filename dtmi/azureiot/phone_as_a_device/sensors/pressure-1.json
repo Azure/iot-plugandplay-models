@@ -2,7 +2,9 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Pressure;1",
     "@type": "Interface",
-    "displayName": "Pressure",
+    "displayName": {
+      "en": "Pressure"
+    },
     "contents": [
       {
         "@type": "Property",

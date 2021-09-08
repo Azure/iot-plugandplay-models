@@ -1,4 +1,5 @@
 {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:azureiot:Phone_As_A_Device:PhoneAsADevice;1",
     "@type": "Interface",
     "contents": [
@@ -167,9 +168,5 @@
     ],
     "displayName": {
         "en": "IoT Plug and Play mobile"
-    },
-    "@context": [
-        "dtmi:iotcentral:context;2",
-        "dtmi:dtdl:context;2"
-    ]
+    }
 }

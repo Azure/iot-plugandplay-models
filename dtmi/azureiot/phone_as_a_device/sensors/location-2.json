@@ -1,21 +1,19 @@
 {
-    "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
-    ],
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Location;2",
     "@type": "Interface",
     "extends": ["dtmi:azureiot:Phone_As_A_Device:Sensors:baseSensor;1"],
-    "displayName": "Location",
+    "displayName": {
+      "en": "Location"
+    },
     "contents": [
       {
-        "@type": [
-          "Telemetry",
-          "Location"
-        ],
-        "displayName": "Location",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Location"
+        },
         "name": "geolocation",
-        "schema": "geopoint"
+        "schema": "dtmi:azureiot:Phone_As_A_Device:Sensors:Location:position;1"
       }
     ]
   }

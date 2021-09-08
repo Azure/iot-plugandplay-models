@@ -1,11 +1,10 @@
 {
-    "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
-    ],
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:azureiot:Phone_As_A_Device:Sensors:Magnet;1",
     "@type": "Interface",
-    "displayName": "Movement",
+    "displayName": {
+      "en": "Movement"
+    },
     "contents": [
       {
         "@type": "Property",
@@ -17,12 +16,13 @@
         "writable": true
       },
       {
-        "@type": "Telemetry",
+        "@type": ["Telemetry", "Angle"],
+        "unit": "degreeOfArc",
         "displayName": {
-          "en": "Magnetic induction"
+          "en": "Magnetic heading"
         },
         "name": "magnetometer",
-        "schema": "vector"
+        "schema": "double"
       }
     ]
   }

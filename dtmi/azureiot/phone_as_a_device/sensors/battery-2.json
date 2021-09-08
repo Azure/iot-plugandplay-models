@@ -7,7 +7,9 @@
       {
         "@type": "Telemetry",
         "comment": "Level percentage",
-        "displayName": "Battery Level",
+        "displayName": {
+          "en": "Battery Level"
+        },
         "name": "battery",
         "schema": "integer"
       }
