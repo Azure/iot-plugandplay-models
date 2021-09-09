@@ -1,47 +1,33 @@
 {
-  "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Location"
-    },
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Enabled"
-        },
-        "name": "enabled",
-        "schema": "boolean",
-        "writable": true
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
+  ],
+  "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Location"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Enabled"
       },
-      {
-        "@type": "Telemetry",
-        "displayName": {
-          "en": "Location"
-        },
-        "name": "geolocation",
-        "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location:position;1"
-      }
-    ],
-    "schemas": [
-      {
-          "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location:position;1",
-          "@type": "Object",
-          "fields": [
-              {
-                  "name": "lat",
-                  "schema": "double"
-              },
-              {
-                  "name": "lon",
-                  "schema": "double"
-              },
-              {
-                  "name": "alt",
-                  "schema": "double"
-              }
-          ]
-      }
+      "name": "enabled",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Location"
+      ],
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "geolocation",
+      "schema": "geopoint"
+    }
   ]
-  }
+}
