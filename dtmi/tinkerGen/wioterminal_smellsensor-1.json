@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:tinkerGen:wioterminal_smellsensor;1",
+    "@id": "dtmi:tinkergen:wioterminal_smellsensor;1",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "displayName": "wioterminal_smellsensor",
