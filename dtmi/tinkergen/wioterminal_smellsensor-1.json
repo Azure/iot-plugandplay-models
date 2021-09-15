@@ -2,7 +2,7 @@
     "@id": "dtmi:tinkergen:wioterminal_smellsensor;1",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "displayName": "wioterminal_smellsensor",
+    "displayName": "Wioterminal Smellsensor",
     "contents": [
       {
         "@type": "Property",
