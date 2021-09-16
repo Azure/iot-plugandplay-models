@@ -5,7 +5,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 The repository pipeline will ensure minimum validation of incoming DTDL models.  
 
 - PR validation steps are described in the tools [Wiki](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Validation-Pipeline#pr-validation-checks).
-- The same validation can be run locally via the [dmr-client](https://github.com/Azure/iot-plugandplay-models-tools/tree/dev/clients/dotnet#device-model-repository-client) CLI.
+- The same validation can be run locally via the [dmr-client](https://github.com/Azure/iot-plugandplay-models-tools/tree/dev/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine) command line tool.
 
 ## Requested info template for model(s) submission
 

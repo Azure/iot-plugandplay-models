@@ -58,11 +58,8 @@ jobs:
       targetType: 'inline'
       script: |
         set -e
-        
-        git clone -b $(dmrClientVer) https://github.com/Azure/iot-plugandplay-models-tools ../dmrtools
-        PATH=../dmrtools:$PATH
-        dotnet pack ../dmrtools/clients/dotnet -v m -c Release
-        dotnet tool install Microsoft.IoT.ModelsRepository.CommandLine --tool-path ../dmrtools --add-source ../dmrtools/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release/ --version $(dmrClientVer)
+
+        dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.5
 
         echo "Expanding repository..."
         dmr-client expand --local-repo $PWD
