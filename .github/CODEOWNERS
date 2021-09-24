@@ -1,4 +1,6 @@
-/dtmi/azure/devicemanagment/deviceinformation- @montgomp
+# Global Model Reviewers(s)
+/dtmi/  @Azure/device-models-reviewers
+
 /dtmi/meshsystems/* @uriel-kluk
 /dtmi/com/microchip/* @randywu763
 /dtmi/azurertos/devkit/* @ryanwinter

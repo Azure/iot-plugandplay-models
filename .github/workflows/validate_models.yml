@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Install Microsoft.IoT.ModelsRepository.CommandLine (dmr-client) from NuGet
         run: |
-          dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.4
+          dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.5
 
       - name: Checkout repository models
         uses: actions/checkout@v2
