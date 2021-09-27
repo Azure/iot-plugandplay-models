@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D504;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Ox00xxxxxT-111573xx",
+  "description": "RetroReflective, Transp., M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BinaryOut",
+      "displayName": "BinaryOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmBit",
+      "displayName": "AlarmBit",
+      "schema": "integer"
+    }
+  ]
+}

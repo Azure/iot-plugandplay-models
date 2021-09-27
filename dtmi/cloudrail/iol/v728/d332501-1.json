@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V728:D332501;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSE3325-14-IO with Timestamp",
+  "description": "Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusWord",
+      "displayName": "StatusWord",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualRPM",
+      "displayName": "ActualRPM",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualPosition",
+      "displayName": "ActualPosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Tstamp",
+              "displayName": "Tstamp",
+              "schema": "long"
+            },
+            {
+              "name": "Bit1",
+              "displayName": "Bit1",
+              "schema": "dtmi:CloudRail:IOL:V728:D332501:Bit;1"
+            },
+            {
+              "name": "Bit0",
+              "displayName": "Bit0",
+              "schema": "dtmi:CloudRail:IOL:V728:D332501:Bit;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V728:D332501:Bit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Bit1Active",
+          "enumValue": "Bit1Active"
+        },
+        {
+          "name": "Bit1Inactive",
+          "enumValue": "Bit1Inactive"
+        }
+      ]
+    }
+  ]
+}

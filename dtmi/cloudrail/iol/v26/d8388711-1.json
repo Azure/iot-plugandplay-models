@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388711;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MLG-2 Prime",
+  "description": "MLG Prime Lightgrid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SystemstatusHighByteAndQStatusLowByte",
+      "displayName": "SystemstatusHighByteAndQStatusLowByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction1QA1",
+      "displayName": "OutputFunction1QA1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction2QA2",
+      "displayName": "OutputFunction2QA2",
+      "schema": "long"
+    }
+  ]
+}

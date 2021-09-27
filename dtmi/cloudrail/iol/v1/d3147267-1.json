@@ -1,0 +1,50 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D3147267;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UC1000-18GS-2EP-IO-V15",
+  "description": "Sensing range: 70 ... 1000 mm, switching output, push-pull, configurable, Q2 output, M12 plug, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1SwitchingSignal",
+      "displayName": "SSC1SwitchingSignal",
+      "schema": "dtmi:CloudRail:IOL:V1:D3147267:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2SwitchingSignal",
+      "displayName": "SSC2SwitchingSignal",
+      "schema": "dtmi:CloudRail:IOL:V1:D3147267:SSCSwitchingSignal;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D3147267:SSCSwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D131075;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E2E-X10B4-xxxxxx-IL3 0.3M",
+  "description": "Standard Proximity Sensor (M30)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DetectionLevel",
+      "displayName": "DetectionLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetTooCloseAlarm",
+      "displayName": "TargetTooCloseAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TooClose",
+            "enumValue": "TooClose"
+          },
+          {
+            "name": "NotClose",
+            "enumValue": "NotClose"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstabilityDetectionAlarm",
+      "displayName": "InstabilityDetectionAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Unstable",
+            "enumValue": "Unstable"
+          },
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorOutput",
+      "displayName": "SensorOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    }
+  ]
+}

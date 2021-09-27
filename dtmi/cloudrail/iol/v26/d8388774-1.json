@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388774;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSS",
+  "description": "Registration Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1Valid",
+      "displayName": "Q1Valid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Q1SignalDisplaysValidState",
+            "enumValue": "Q1SignalDisplaysValidState"
+          },
+          {
+            "name": "Q1SignalStateIsNotValid",
+            "enumValue": "Q1SignalStateIsNotValid"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1QualityOfPrint",
+      "displayName": "Q1QualityOfPrint",
+      "schema": "long"
+    }
+  ]
+}

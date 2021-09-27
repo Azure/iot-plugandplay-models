@@ -1,0 +1,135 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V120:D2225665;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Basic Positioner 8694 with IO-Link",
+  "description": "Type 8694 with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ValvePosition",
+      "displayName": "ValvePosition",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CMDDigital",
+      "displayName": "CMDDigital",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NamurState",
+      "displayName": "NamurState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "DiagnosticsActive",
+            "enumValue": "DiagnosticsActive"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveMode",
+      "displayName": "ValveMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "XCO",
+            "enumValue": "XCO"
+          },
+          {
+            "name": "CutoffUp",
+            "enumValue": "CutoffUp"
+          },
+          {
+            "name": "CutoffDown",
+            "enumValue": "CutoffDown"
+          },
+          {
+            "name": "SafeposUp",
+            "enumValue": "SafeposUp"
+          },
+          {
+            "name": "SafeposDown",
+            "enumValue": "SafeposDown"
+          },
+          {
+            "name": "SafeposXCO",
+            "enumValue": "SafeposXCO"
+          },
+          {
+            "name": "Manual",
+            "enumValue": "Manual"
+          },
+          {
+            "name": "XTUNE",
+            "enumValue": "XTUNE"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveOpen",
+      "displayName": "ValveOpen",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveClosed",
+      "displayName": "ValveClosed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CMDValue",
+              "displayName": "CMDValue",
+              "schema": "double"
+            },
+            {
+              "name": "LocalizeDevice",
+              "displayName": "LocalizeDevice",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

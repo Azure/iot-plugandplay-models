@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V98:D768;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VEGASWING 50",
+  "description": "VEGASWING 50 series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QSignal",
+      "displayName": "QSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Covered",
+            "enumValue": "Covered"
+          },
+          {
+            "name": "Uncovered",
+            "enumValue": "Uncovered"
+          }
+        ]
+      }
+    }
+  ]
+}

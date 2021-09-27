@@ -1,0 +1,198 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SIG100-0A01111x0",
+  "description": "IO-Link Sensor Hub without BluetoothLE",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL3",
+      "displayName": "QL3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL4",
+      "displayName": "QL4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL5",
+      "displayName": "QL5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL6",
+      "displayName": "QL6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL7",
+      "displayName": "QL7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL8",
+      "displayName": "QL8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint1",
+      "displayName": "Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint2",
+      "displayName": "Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint5",
+      "displayName": "Qint5",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint6",
+      "displayName": "Qint6",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint7",
+      "displayName": "Qint7",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint8",
+      "displayName": "Qint8",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint9",
+      "displayName": "Qint9",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint10",
+      "displayName": "Qint10",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint11",
+      "displayName": "Qint11",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint12",
+      "displayName": "Qint12",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint13",
+      "displayName": "Qint13",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue1",
+      "displayName": "AnalogValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue2",
+      "displayName": "AnalogValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AnalogValue",
+              "displayName": "AnalogValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389010_PDOutOption2AnalogValue:Qint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V703:D218;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SNS 552 GAPL",
+  "description": "SNS 552",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "name": "FlowRate_mps",
+      "displayName": "FlowRate_mps",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V703:D218:SwitchstateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V703:D218:SwitchstateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V703:D218:SwitchstateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

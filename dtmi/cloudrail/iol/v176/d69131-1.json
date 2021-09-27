@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D69131;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AXL E IOL TC4/K M12",
+  "description": "Axioline E IO-Link/analog converter with 4 analog TC inputs (type K/type J)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "IN01",
+      "displayName": "IN01",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN02",
+      "displayName": "IN02",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN03",
+      "displayName": "IN03",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN04",
+      "displayName": "IN04",
+      "schema": "long"
+    }
+  ]
+}

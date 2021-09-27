@@ -1,0 +1,70 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:BC10;1",
+  "@type": "Interface",
+  "displayName": "BC10",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "bc10",
+      "displayName": "BC10",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Timestamp",
+            "name": "timestamp",
+            "description": "Sets the time information for data reception.",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "description": "Sets the RSSI value for data reception.",
+            "schema": "integer"
+          },
+          {
+            "displayName": "MAC Address",
+            "name": "mac",
+            "description": "Set the MAC address of the sensor.",
+            "schema": "string"
+          },
+          {
+            "displayName": "Temperature",
+            "name": "temperature",
+            "description": "Set the temperature received from the sensor.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Humidity",
+            "name": "humidity",
+            "description": "Sets the humidity received from the sensor.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Remain  Battery Power",
+            "name": "remainBattery",
+            "description": "Set the remaining battery power from 0 to 100.",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}

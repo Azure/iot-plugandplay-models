@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V127:D131328_FloatingPoint;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PA2530 -50...260°C",
+  "description": "Temperature Transmitter for Pt100 (DIN60751) -50...260°C",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureValue",
+      "displayName": "TemperatureValue",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureUnit",
+      "displayName": "TemperatureUnit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "C",
+            "enumValue": "C"
+          },
+          {
+            "name": "F",
+            "enumValue": "F"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1Closed",
+      "displayName": "SwitchingOutput1Closed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2Closed",
+      "displayName": "SwitchingOutput2Closed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInvalid",
+      "displayName": "ProcessDataInvalid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ParameterMemoryDefective",
+      "displayName": "ParameterMemoryDefective",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceFailure",
+      "displayName": "DeviceFailure",
+      "schema": "integer"
+    }
+  ]
+}

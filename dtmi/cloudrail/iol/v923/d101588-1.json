@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V923:D101588;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Vert-X 12E5 836 1C1 S14",
+  "description": "Vert-X 12E \r\n* 360deg single-turn (st)\r\n* 2^n multiturn (mt)\r\n* speed [rpm]\r\n* teachable: CW/CCW; filter; st & mt preset; mt overflow; error handling",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SensorErrorFlag",
+      "displayName": "SensorErrorFlag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoMagnetDetectedFlag",
+      "displayName": "NoMagnetDetectedFlag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChipTemperatureTooHighFlag",
+      "displayName": "ChipTemperatureTooHighFlag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SupplyVoltageBelowThresholdFlag",
+      "displayName": "SupplyVoltageBelowThresholdFlag",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannelSSC",
+      "displayName": "SwitchingSignalChannelSSC",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RotationSpeedValue",
+      "displayName": "RotationSpeedValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SingleTurnValue",
+      "displayName": "SingleTurnValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MultiturnCounterValue",
+      "displayName": "MultiturnCounterValue",
+      "schema": "long"
+    }
+  ]
+}

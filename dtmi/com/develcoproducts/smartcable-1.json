@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:smartcable;1",
+  "@type": "Interface",
+  "displayName": "Smart Cable",
+  "description": "Smart Cable",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "onoff",
+      "displayName" : "OnOff",
+      "description" : "On Status",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "voltage",
+      "displayName" : "Voltage",
+      "description" : "Outlet voltage",
+      "schema": "double"
+   },
+    {
+      "@type": "Property",
+      "name": "current",
+      "displayName" : "Current",
+      "description" : "RMS Current (A)",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "description": {
+        "en": "Turn device on or off"
+      },
+      "displayName": {
+        "en": "OnOff"
+      },
+      "name": "OnOff",
+      "request": {
+        "@type": "CommandPayload",
+        "description": {
+          "en": "On status"
+        },
+        "displayName": {
+          "en": "OnOff"
+        },
+        "name": "onoff",
+        "schema": "boolean"
+      }
+    }
+  ]
+}

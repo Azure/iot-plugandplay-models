@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D264961;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BUS006C",
+  "description": "BUS Q62K1-GPXI-35/340-S92K",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Interval",
+      "displayName": "Interval",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatus",
+      "displayName": "SwitchingStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotConnected",
+            "enumValue": "NotConnected"
+          },
+          {
+            "name": "Connected",
+            "enumValue": "Connected"
+          }
+        ]
+      }
+    }
+  ]
+}

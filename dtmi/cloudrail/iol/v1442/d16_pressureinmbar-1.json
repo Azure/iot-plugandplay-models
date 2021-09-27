@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1442:D16_PressureInMBar;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RPD200/0-10/IO/A/1/N",
+  "description": "Proportional pressure regulators, pressure range: 0-10 bar, fail safe: pressure maintenance",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ActualvalueRelativ_kPa",
+      "displayName": "ActualvalueRelativ_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ActualvalueRelativ_mbar",
+      "displayName": "ActualvalueRelativ_mbar",
+      "schema": "long",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ActualvalueRelativ_psi",
+      "displayName": "ActualvalueRelativ_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SetvalueIOLink",
+              "displayName": "SetvalueIOLink",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:im_buildings:people_counter;1",
+  "@type": "Interface",
+  "displayName": "IM Buildings People Counter",
+  "description": "People Counter",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Total People In",
+      "description": "Total People In",
+      "name": "channel_400",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Total People Out",
+      "description": "Total People Out",
+      "name": "channel_401",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Occupancy",
+      "description": "Occupancy",
+      "name": "channel_402",
+      "schema": "double"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D133;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "US30 M3000 IU-B4",
+  "description": "3 m, Ultrasonic, analog, IO-Link, M30",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": "dtmi:CloudRail:IOL:V545:D133:SwitchStateBDCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC2Q2",
+      "displayName": "SwitchStateBDC2Q2",
+      "schema": "dtmi:CloudRail:IOL:V545:D133:SwitchStateBDCQ;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V545:D133:SwitchStateBDCQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

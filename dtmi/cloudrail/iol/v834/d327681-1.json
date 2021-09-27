@@ -1,0 +1,255 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V834:D327681;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SFD-WL3",
+  "description": "IO-Link converter for SF4D series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OSSDMonitor",
+      "displayName": "OSSDMonitor",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightCurtainControlExecution",
+      "displayName": "LightCurtainControlExecution",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightCurtainCommunicationResult",
+      "displayName": "LightCurtainCommunicationResult",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EmitterLinkEstablishment",
+      "displayName": "EmitterLinkEstablishment",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReceiverLinkEstablishment",
+      "displayName": "ReceiverLinkEstablishment",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightCurtainSeriesCount",
+      "displayName": "LightCurtainSeriesCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1IncomingLightInformation",
+      "displayName": "CH1IncomingLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1StableLightInformation",
+      "displayName": "CH1StableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1UnstableLightInformation",
+      "displayName": "CH1UnstableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1AmbientLightInformation",
+      "displayName": "CH1AmbientLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1EmitterLockout",
+      "displayName": "CH1EmitterLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH1ReceiverLockout",
+      "displayName": "CH1ReceiverLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH17SEGLED",
+      "displayName": "CH17SEGLED",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2IncomingLightInformation",
+      "displayName": "CH2IncomingLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2StableLightInformation",
+      "displayName": "CH2StableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2UnstableLightInformation",
+      "displayName": "CH2UnstableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2AmbientLightInformation",
+      "displayName": "CH2AmbientLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2EmitterLockout",
+      "displayName": "CH2EmitterLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH2ReceiverLockout",
+      "displayName": "CH2ReceiverLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH27SEGLED",
+      "displayName": "CH27SEGLED",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3IncomingLightInformation",
+      "displayName": "CH3IncomingLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3StableLightInformation",
+      "displayName": "CH3StableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3UnstableLightInformation",
+      "displayName": "CH3UnstableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3AmbientLightInformation",
+      "displayName": "CH3AmbientLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3EmitterLockout",
+      "displayName": "CH3EmitterLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH3ReceiverLockout",
+      "displayName": "CH3ReceiverLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH37SEGLED",
+      "displayName": "CH37SEGLED",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4IncomingLightInformation",
+      "displayName": "CH4IncomingLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4StableLightInformation",
+      "displayName": "CH4StableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4UnstableLightInformation",
+      "displayName": "CH4UnstableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4AmbientLightInformation",
+      "displayName": "CH4AmbientLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4EmitterLockout",
+      "displayName": "CH4EmitterLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH4ReceiverLockout",
+      "displayName": "CH4ReceiverLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH47SEGLED",
+      "displayName": "CH47SEGLED",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5IncomingLightInformation",
+      "displayName": "CH5IncomingLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5StableLightInformation",
+      "displayName": "CH5StableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5UnstableLightInformation",
+      "displayName": "CH5UnstableLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5AmbientLightInformation",
+      "displayName": "CH5AmbientLightInformation",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5EmitterLockout",
+      "displayName": "CH5EmitterLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH5ReceiverLockout",
+      "displayName": "CH5ReceiverLockout",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CH57SEGLED",
+      "displayName": "CH57SEGLED",
+      "schema": "long"
+    }
+  ]
+}

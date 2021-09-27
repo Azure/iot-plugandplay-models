@@ -1,0 +1,107 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D518;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PF2M705x-xx-L2x-xxx-X731",
+  "description": "Flow rate:0.05-5L/min\r\nX731",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_CFM",
+      "displayName": "Flow_CFM",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FixedOutput",
+      "displayName": "FixedOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Fixed",
+            "enumValue": "Fixed"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HHHLLL",
+      "displayName": "HHHLLL",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "HHHLLL",
+            "enumValue": "HHHLLL"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V131:D518:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V131:D518:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D518:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SW2_OFF",
+          "enumValue": "SW2_OFF"
+        },
+        {
+          "name": "SW2_ON",
+          "enumValue": "SW2_ON"
+        }
+      ]
+    }
+  ]
+}

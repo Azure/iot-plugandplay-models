@@ -1,0 +1,62 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D65798;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNS 819-xxx2-xxx-xxx-xx-xx-xxx-x4R-I",
+  "description": "BNS - Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate0",
+      "displayName": "Switchstate0",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate1",
+      "displayName": "Switchstate1",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate2",
+      "displayName": "Switchstate2",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate3",
+      "displayName": "Switchstate3",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate4",
+      "displayName": "Switchstate4",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate5",
+      "displayName": "Switchstate5",
+      "schema": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D65798:Switchstate;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "True",
+          "enumValue": "True"
+        },
+        {
+          "name": "False",
+          "enumValue": "False"
+        }
+      ]
+    }
+  ]
+}

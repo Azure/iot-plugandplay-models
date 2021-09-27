@@ -1,0 +1,291 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1222:D100;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SHC 071",
+  "description": "Sensor Hub SHC 071",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel1SensorValue1_C",
+      "displayName": "Channel1SensorValue1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel1SensorValue1_F",
+      "displayName": "Channel1SensorValue1_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1SensorValue1_hPa",
+      "displayName": "Channel1SensorValue1_hPa",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1SensorValue1_lx",
+      "displayName": "Channel1SensorValue1_lx",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue1AlarmHighStatusBit",
+      "displayName": "SensorValue1AlarmHighStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue1RangeHighStatusBit",
+      "displayName": "SensorValue1RangeHighStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue1RangeLowStatusBit",
+      "displayName": "SensorValue1RangeLowStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue1AlarmLowStatusBit",
+      "displayName": "SensorValue1AlarmLowStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue1ErrStatusBit",
+      "displayName": "SensorValue1ErrStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NOSensorSelectedStatusBit",
+      "displayName": "NOSensorSelectedStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel1SensorValue2_C",
+      "displayName": "Channel1SensorValue2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1SensorValue2_lx",
+      "displayName": "Channel1SensorValue2_lx",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel1SensorValue2_pct",
+      "displayName": "Channel1SensorValue2_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue2AlarmHighStatusBit",
+      "displayName": "SensorValue2AlarmHighStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue2RangeHighStatusBit",
+      "displayName": "SensorValue2RangeHighStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue2RangeLowStatusBit",
+      "displayName": "SensorValue2RangeLowStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue2AlarmLowStatusBit",
+      "displayName": "SensorValue2AlarmLowStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorValue2ErrStatusBit",
+      "displayName": "SensorValue2ErrStatusBit",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel2SensorValue1_C",
+      "displayName": "Channel2SensorValue1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel2SensorValue1_F",
+      "displayName": "Channel2SensorValue1_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2SensorValue1_hPa",
+      "displayName": "Channel2SensorValue1_hPa",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2SensorValue1_lx",
+      "displayName": "Channel2SensorValue1_lx",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel2SensorValue2_C",
+      "displayName": "Channel2SensorValue2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2SensorValue2_lx",
+      "displayName": "Channel2SensorValue2_lx",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2SensorValue2_pct",
+      "displayName": "Channel2SensorValue2_pct",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel3SensorValue1_C",
+      "displayName": "Channel3SensorValue1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel3SensorValue1_F",
+      "displayName": "Channel3SensorValue1_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3SensorValue1_hPa",
+      "displayName": "Channel3SensorValue1_hPa",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3SensorValue1_lx",
+      "displayName": "Channel3SensorValue1_lx",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel3SensorValue2_C",
+      "displayName": "Channel3SensorValue2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3SensorValue2_lx",
+      "displayName": "Channel3SensorValue2_lx",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3SensorValue2_pct",
+      "displayName": "Channel3SensorValue2_pct",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel4SensorValue1_C",
+      "displayName": "Channel4SensorValue1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel4SensorValue1_F",
+      "displayName": "Channel4SensorValue1_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4SensorValue1_hPa",
+      "displayName": "Channel4SensorValue1_hPa",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4SensorValue1_lx",
+      "displayName": "Channel4SensorValue1_lx",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Channel4SensorValue2_C",
+      "displayName": "Channel4SensorValue2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4SensorValue2_lx",
+      "displayName": "Channel4SensorValue2_lx",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4SensorValue2_pct",
+      "displayName": "Channel4SensorValue2_pct",
+      "schema": "double"
+    }
+  ]
+}

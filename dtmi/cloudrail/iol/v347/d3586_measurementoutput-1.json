@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D3586_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLAP2-2PNSL-L5",
+  "description": "60...5000mm, Q1, Q2, In, Auto PNP/NPN, plug, M12, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Qualtity",
+      "displayName": "Qualtity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

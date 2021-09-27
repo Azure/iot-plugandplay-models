@@ -1,0 +1,84 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D110_TriggeredMarginProximityGainContrastTemp;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "42EF-P2KBB-xx",
+  "description": "Sensor,Photoelectric, 42EF, Polarized Retroreflective, Visible Red LED, Dark Operate, PNP and NPN Output,No Adjustment, 3 m Sensing Range, 2 m Cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureInternal",
+      "displayName": "TemperatureInternal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contrast",
+      "displayName": "Contrast",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Gain",
+      "displayName": "Gain",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

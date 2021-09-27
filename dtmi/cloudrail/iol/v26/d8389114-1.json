@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389114;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UC30-21416B",
+  "description": "Ultrasonic sensor in cubic plastic housing, 1 push-pull switching output, 350 - 5000 mm measuring range, 350 mm blindzone, 3400 mm operating range, temperature compensation.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessDataValue_mm",
+      "displayName": "ProcessDataValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataScale",
+      "displayName": "ProcessDataScale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchSignalChannel1State",
+      "displayName": "SwitchSignalChannel1State",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactiv",
+            "enumValue": "Inactiv"
+          },
+          {
+            "name": "Activ",
+            "enumValue": "Activ"
+          }
+        ]
+      }
+    }
+  ]
+}

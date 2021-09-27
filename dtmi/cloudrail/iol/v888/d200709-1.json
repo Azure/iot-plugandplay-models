@@ -1,0 +1,195 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D200709;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOD 21M-LBI05-S4",
+  "description": "Laser distance sensor with IO-Link and additional functions",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V888:D200709:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V888:D200709:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachIn",
+      "displayName": "TeachIn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Ok",
+      "displayName": "Ok",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TooLow",
+      "displayName": "TooLow",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TooHigh",
+      "displayName": "TooHigh",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CountValue",
+      "displayName": "CountValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LaserOff",
+              "displayName": "LaserOff",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LaserOff",
+                    "enumValue": "LaserOff"
+                  },
+                  {
+                    "name": "LaserOn",
+                    "enumValue": "LaserOn"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CounterReset",
+              "displayName": "CounterReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D200709:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

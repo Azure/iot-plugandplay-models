@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D786437;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RI360P0-xxxxxxx-IOLX2-H1141/3GD",
+  "description": "Multiturn Position Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AmplitudeWeak",
+      "displayName": "AmplitudeWeak",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AmplitudeTooLow",
+      "displayName": "AmplitudeTooLow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MultiturnError",
+      "displayName": "MultiturnError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MultiturnCounter",
+      "displayName": "MultiturnCounter",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ]
+}

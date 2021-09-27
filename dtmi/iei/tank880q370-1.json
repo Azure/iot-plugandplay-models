@@ -1,0 +1,161 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:iei:tank880q370;1",
+  "@type": "Interface",
+  "displayName": "IEI TANK-880-Q370",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "hostname",
+      "displayName": "Hostname",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "cpuInfo",
+      "displayName": "CPU Information",
+      "description": "Manufacturer/Processor Number/Base Frequency of the processor.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "cpuCores",
+      "displayName": "CPU Core Count",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "cpuMaxfreq",
+      "displayName": "CPU Max Frequency",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "biosManufacturer",
+      "displayName": "BIOS Manufacturer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "biosVersion",
+      "displayName": "BIOS Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardManufacturer",
+      "displayName": "Baseboard Manufacturer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardSerialNumber",
+      "displayName": "Baseboard SerialNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardProduct",
+      "displayName": "Baseboard Product",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "osVersion",
+      "displayName": "OS Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "osBuildNumber",
+      "displayName": "OS BuildNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "memTotal",
+      "displayName": "Memory (Total)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "logicalDISKtotal",
+      "displayName": "Logical DISK (Total)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "ipLocal",
+      "displayName": "Local IP Address",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ipPublic",
+      "displayName": "Public IP Address",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "cpuLoading",
+      "displayName": "CPU Loading(%)",
+      "description": "To measure the percentage of the CPU's capacity.",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "cpuClock",
+      "displayName": "CPU Clock(MHz)",
+      "description": "Processor frequency specifies the operating frequency of the CPU's core(s) in MHz.",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "memFree",
+      "displayName": "Memory (Free)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "memUsage",
+      "displayName": "Memory (Usage)(%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "logicalDISKfree",
+      "displayName": "Logical DISK (Free)(in byte)",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "logicalDISKusage",
+      "displayName": "Logical DISK (Usage)(%)",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "time",
+        "displayName": "Reboot Delay Time",
+        "description": "The number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setperiod",
+      "displayName": "Set Sending Period",
+      "description": "Set the period of sending messages to IoT Hub.",
+      "request": {
+        "name": "time",
+        "displayName": "Message Sending Period Time",
+        "description": "The number of seconds between sending messages to IoT Hub.",
+        "schema": "integer"
+      }
+    }
+  ]
+}
