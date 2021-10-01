@@ -1,0 +1,123 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:commandrunner;2",
+  "@type": "Interface",
+  "displayName": "Command Runner",
+  "description": "Provides functionality to remotely run commands on the device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "CommandStatus",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "CommandId",
+            "schema": "string"
+          },
+          {
+            "name": "ResultCode",
+            "schema": "integer"
+          },
+          {
+            "name": "TextResult",
+            "schema": "string"
+          },
+          {
+            "name": "CurrentState",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "Unknown",
+                  "enumValue": 0
+                },
+                {
+                  "name": "Running",
+                  "enumValue": 1
+                },
+                {
+                  "name": "Succeeded",
+                  "enumValue": 2
+                },
+                {
+                  "name": "Failed",
+                  "enumValue": 3
+                },
+                {
+                  "name": "TimedOut",
+                  "enumValue": 4
+                },
+                {
+                  "name": "Canceled",
+                  "enumValue": 5
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "CommandArguments",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "CommandId",
+            "schema": "string"
+          },
+          {
+            "name": "Arguments",
+            "schema": "string"
+          },
+          {
+            "name": "Timeout",
+            "schema": "integer"
+          },
+          {
+            "name": "SingleLineTextResult",
+            "schema": "boolean"
+          },
+          {
+            "name": "Action",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "None",
+                  "enumValue": 0
+                },
+                {
+                  "name": "Reboot",
+                  "enumValue": 1
+                },
+                {
+                  "name": "Shutdown",
+                  "enumValue": 2
+                },
+                {
+                  "name": "RunCommand",
+                  "enumValue": 3
+                },
+                {
+                  "name": "RefreshCommandStatus",
+                  "enumValue": 4
+                },
+                {
+                  "name": "CancelCommand",
+                  "enumValue": 5
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "writable": true
+    }
+  ]
+}
