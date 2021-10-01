@@ -1,7 +1,7 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:brickcom_m487_dev;1",
+    "@id": "dtmi:brickcom:brickcom_m487_dev;1",
     "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
     "displayName": "Brickcom IoT M487 Dev",
     "contents": [
         {
