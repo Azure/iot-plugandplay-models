@@ -2,7 +2,7 @@
   "@id": "dtmi:impinj:FixedReader;13",
   "@type": "Interface",
   "displayName": {
-    "en": "Pnp Bridge Root Interface Model for Impinj R700"
+    "en": "Impinj Reader"
   },
   "description": {
     "en": "R700 IoT Plug and Play Bridge"
