@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:brickcom_m487_dev;1",
+    "@type": "Interface",
+    "displayName": "Brickcom IoT M487 Dev",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "NuMaker IoT M487 Dev",
+            "schema": "dtmi:nuvoton:numaker_iot_m487_dev;1"
+        }
+    ]
+}
