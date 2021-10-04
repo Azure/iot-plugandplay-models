@@ -1,0 +1,217 @@
+{
+    "@id": "dtmi:seeedkk:rebutton;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Seeed ReButton",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "actionNum",
+        "displayName": {
+          "en": "Action Number",
+          "ja": "アクション番号"
+        },
+        "description": {
+          "en": "Type of button event.",
+          "ja": "ボタンイベントの種類を通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "message",
+        "displayName": {
+          "en": "Message",
+          "ja": "メッセージ"
+        },
+        "description": {
+          "en": "Button Event message.",
+          "ja": "ボタンイベントのメッセージを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "singleClick",
+        "displayName": {
+          "en": "Single Click",
+          "ja": "シングルクリック"
+        },
+        "description": {
+          "en": "Single Click event.",
+          "ja": "シングルクリックを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "doubleClick",
+        "displayName": {
+          "en": "Double Click",
+          "ja": "ダブルクリック"
+        },
+        "description": {
+          "en": "Double Click event.",
+          "ja": "ダブルクリックを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "tripleClick",
+        "displayName": {
+          "en": "Triple Click",
+          "ja": "トリプルクリック"
+        },
+        "description": {
+          "en": "Triple Click event.",
+          "ja": "トリプルクリックを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "longPress",
+        "displayName": {
+          "en": "Long Press",
+          "ja": "ロングクリック"
+        },
+        "description": {
+          "en": "Long Press event.",
+          "ja": "ロングクリックを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "name": "superLongPress",
+        "displayName": {
+          "en": "Super Long Press",
+          "ja": "スーパーロングクリック"
+        },
+        "description": {
+          "en": "Super Long Press event",
+          "ja": "スーパーロングクリックを通知"
+        },
+        "schema": "string"
+      },
+      {
+        "@type": "Telemetry",
+        "name": "actionCount",
+        "displayName": {
+          "en": "Action Count",
+          "ja": "アクションカウント"
+        },
+        "description": {
+          "en": "Number of button events.",
+          "ja": "ボタンイベントの通知回数"
+        },
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "name": "temperature",
+        "displayName": {
+          "en": "Temperature",
+          "ja": "温度"
+        },
+        "description": {
+          "en": "Temperature value notified if environment sensors (SHT31, SHT35, BME280) are connected",
+          "ja": "環境センサ(SHT31,SHT35,BME280)が接続されている場合に通知される温度データ"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "RelativeHumidity"
+        ],
+        "name": "humidity",
+        "displayName": {
+          "en": "Humidity",
+          "ja": "湿度"
+        },
+        "description": {
+          "en": "Humidity value notified if environment sensors (SHT31, SHT35, BME280) are connected",
+          "ja": "環境センサ(SHT31,SHT35,BME280)が接続されている場合に通知される湿度データ"
+        },
+        "schema": "double",
+        "unit": "percent"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Pressure"
+        ],
+        "name": "pressure",
+        "displayName": {
+          "en": "Barometric pressure",
+          "ja": "気圧"
+        },
+        "description": {
+          "en": "Barometric pressure value notified if environment sensor (BME280) is connected",
+          "ja": "環境センサ(BME280)が接続されている場合に通知される気圧データ"
+        },
+        "schema": "double",
+        "unit": "pascal"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Voltage"
+        ],
+        "name": "batteryVoltage",
+        "displayName": {
+          "en": "Battery Voltage",
+          "ja": "バッテリー電圧"
+        },
+        "description": {
+          "en": "Battery Voltage value.",
+          "ja": "バッテリーの電圧値を通知。"
+        },
+        "schema": "double",
+        "unit": "volt"
+      },
+      {
+        "@type": "Property",
+        "name": "lastActionCount",
+        "displayName": {
+          "en": "Action Count",
+          "ja": "アクションカウント"
+        },
+        "description": {
+          "en": "Number of button events.",
+          "ja": "ボタンイベントの通知回数"
+        },
+        "schema": "integer"
+      }
+    ]
+  }

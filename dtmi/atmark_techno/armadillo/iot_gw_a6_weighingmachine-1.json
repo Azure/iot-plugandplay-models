@@ -1,0 +1,82 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Armadillo:IoT_GW_A6_WeighingMachine;1",
+  "@type": "Interface",
+  "displayName": "Armadillo-IoT GW A6 weighing machine",
+  "description": "Smart weighing machine device characteristics",
+  "contents": [
+   {
+      "@type": "Component",
+      "schema": "dtmi:atmark_techno:Armadillo:IoT_GW_Base;1",
+      "name": "iot_gw_base",
+      "displayName": "IoT GW Base",
+      "description": "Armadillo-IoT GW model base/common device characteristics"
+    },    
+    {
+      "@type": "Property",
+      "name": "weighing_status",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "start_time",
+            "schema": "dateTime",
+            "displayName": "Weighing start time",
+            "description": "First weighed time ater boot",
+            "comment": "If count is 0, this value has no mean."
+          },
+          {
+            "name": "last_time",
+            "schema": "dateTime",
+            "displayName": "Last weighing time",
+            "description": "The latest weighed time",
+            "comment": "If count is 0, this value has no mean."
+          },
+          {
+            "name": "count",
+            "schema": "integer",
+            "displayName": "Weighing count",
+            "description": "Weighing count since device boot"
+          },
+          {
+            "name": "error_count",
+            "schema": "integer",
+            "displayName": "Count of error occurred",
+            "description": "Error count since device boot"
+          }
+        ]
+      },
+      "displayName": "Weighing status",
+      "description": "current weighing status"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "item_weight",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "item",
+            "schema": "string",
+            "displayName": "Item code",
+            "description": "decoded QR/Bar code string"
+          },
+          {
+            "name": "weight",
+            "schema": "double",
+            "displayName": "Weight[g]",
+            "description": "weight of the item"
+          },
+          {
+            "name": "weighed_time",
+            "schema": "dateTime",
+            "displayName": "Weighed time",
+            "description": "The weighed date time"
+          }
+        ]
+      },
+      "displayName": "Item and weight",
+      "description": "Weight of the item and QR/Bar code info"
+    }
+  ]
+}

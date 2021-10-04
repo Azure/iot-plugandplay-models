@@ -1,0 +1,86 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1019;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PM1503",
+  "description": "Electronic pressure sensor, -1.00...25.00 bar, TA: G 1/2; Weitere technische Dokumentation: G1/2\" Dichtkonus",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    }
+  ]
+}

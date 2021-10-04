@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D478;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LR2750",
+  "description": "Electronic level sensor, 10...1970 mm, IO-Link, cULus, EHEDG, FDA, KTW, Aseptoflex-Vario G1 A",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_mm",
+      "displayName": "Level_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_in",
+      "displayName": "Level_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D478:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D478:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D478:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

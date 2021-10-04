@@ -1,0 +1,162 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D2166787;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "GPS3-EL",
+  "description": "Digital Gap Switch,0.02mm to 0.15mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "IOLinkOutput1",
+      "displayName": "IOLinkOutput1",
+      "schema": "dtmi:CloudRail:IOL:V855:D2166787:IOLinkOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IOLinkOutput2",
+      "displayName": "IOLinkOutput2",
+      "schema": "dtmi:CloudRail:IOL:V855:D2166787:IOLinkOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DisplayFFOverDisplayRangeUpperLimit",
+      "displayName": "DisplayFFOverDisplayRangeUpperLimit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DisplayFFUnderDisplayRangeLowerLimit",
+      "displayName": "DisplayFFUnderDisplayRangeLowerLimit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DisplayBlinksSlowlyNozzleMayBeBlocked",
+      "displayName": "DisplayBlinksSlowlyNozzleMayBeBlocked",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DisplayBlinksRapidlyInternalOrificeMayBeBlocked",
+      "displayName": "DisplayBlinksRapidlyInternalOrificeMayBeBlocked",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "RefValue_mcm",
+      "displayName": "RefValue_mcm",
+      "schema": "long",
+      "unit": "micrometre"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D2166787:IOLinkOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}

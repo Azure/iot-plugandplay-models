@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D65540;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EZ-Array IO-Link, 750 mm Array Length",
+  "description": "A-GAGE Measuring Array Sensors Family",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInMeasurement1",
+      "displayName": "ProcessDataInMeasurement1",
+      "schema": "long"
+    }
+  ]
+}

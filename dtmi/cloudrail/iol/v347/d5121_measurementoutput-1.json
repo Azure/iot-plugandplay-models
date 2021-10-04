@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D5121_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 25-RA-170-PNSUL-M4M",
+  "description": "30...200 mm, QA, Q, Auto / PNP / NPN, metal plug, M8, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

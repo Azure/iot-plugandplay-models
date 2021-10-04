@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D1_Magnetometer;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Demo device",
+  "description": "Demo Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MagnetometerZAxis",
+      "displayName": "MagnetometerZAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MagnetometerYAxis",
+      "displayName": "MagnetometerYAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MagnetometerXAxis",
+      "displayName": "MagnetometerXAxis",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D23;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AP009",
+  "description": "Electronic pressure sensor, 0.0...250.0 bar, Rohrgewinde        ISO 228 - G 1/4        (Innengewinde)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V837:D23:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V837:D23:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V837:D23:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

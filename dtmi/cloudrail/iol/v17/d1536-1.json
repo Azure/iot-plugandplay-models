@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D1536;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QMW43",
+  "description": "Capacitive conductive measurement",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Conductivity_mcSpcm",
+      "displayName": "Conductivity_mcSpcm",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Buildup_mm",
+      "displayName": "Buildup_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    }
+  ]
+}

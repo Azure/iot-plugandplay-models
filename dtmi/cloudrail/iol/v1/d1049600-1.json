@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1049600;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RL31-8-H-800-RT-IO/59/xxx/136",
+  "description": "Background Suppression Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1Bit0",
+      "displayName": "SwitchingSignal1Bit0",
+      "schema": "dtmi:CloudRail:IOL:V1:D1049600:SwitchingSignalBit;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2Bit1",
+      "displayName": "SwitchingSignal2Bit1",
+      "schema": "dtmi:CloudRail:IOL:V1:D1049600:SwitchingSignalBit;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D1049600:SwitchingSignalBit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

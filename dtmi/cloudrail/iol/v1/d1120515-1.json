@@ -1,0 +1,127 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1120515;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OMT550-R200-UEP-IO-xxxM-Vx1",
+  "description": "R200, 100 .. 550 mm, active high, configurable, voltage output 0-10 V, M8 plug, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MVDistance",
+      "displayName": "MVDistance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1SwitchingSignal1",
+      "displayName": "SSC1SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V1:D1120515:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2SwitchingSignal2",
+      "displayName": "SSC2SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V1:D1120515:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityIndicator",
+      "displayName": "SignalQualityIndicator",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Insufficient",
+            "enumValue": "Insufficient"
+          },
+          {
+            "name": "Acceptable",
+            "enumValue": "Acceptable"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          },
+          {
+            "name": "Excellent",
+            "enumValue": "Excellent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CSC1TransducerDisable",
+              "displayName": "CSC1TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CSC2EvaluationHold",
+              "displayName": "CSC2EvaluationHold",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D1120515:SSCSwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

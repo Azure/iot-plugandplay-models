@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3211264;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SEFB512",
+  "description": "Safety Light Array",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoUse",
+      "displayName": "NoUse",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V779:D2100;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TF1",
+  "description": "Linear Transducer",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

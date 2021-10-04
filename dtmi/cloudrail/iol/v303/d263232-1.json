@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D263232;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IOL AO-U-STR-10V-BIP VA",
+  "description": "IOL Analog Conv. straight M12 AO -10V..10V 16Bit IOL V1.12",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "VoltageCurrent",
+              "displayName": "VoltageCurrent",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

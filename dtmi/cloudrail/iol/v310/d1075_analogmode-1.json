@@ -1,0 +1,93 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1075_Analogmode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DV25x0 Status B",
+  "description": "5 Segment-LED-Tower, IO-Link, with bracket, without buzzer",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "BuzzerStyle",
+              "displayName": "BuzzerStyle",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NoSound",
+                    "enumValue": "NoSound"
+                  },
+                  {
+                    "name": "RapidIntermittentBeep",
+                    "enumValue": "RapidIntermittentBeep"
+                  },
+                  {
+                    "name": "RapidHiLo",
+                    "enumValue": "RapidHiLo"
+                  },
+                  {
+                    "name": "SweepSound",
+                    "enumValue": "SweepSound"
+                  },
+                  {
+                    "name": "ContinuousBeepSoundWithCycleONOFF",
+                    "enumValue": "ContinuousBeepSoundWithCycleONOFF"
+                  },
+                  {
+                    "name": "RapidIntermittentBeepWithCycleONOFF",
+                    "enumValue": "RapidIntermittentBeepWithCycleONOFF"
+                  },
+                  {
+                    "name": "RapidHiLoWithCycleONOFF",
+                    "enumValue": "RapidHiLoWithCycleONOFF"
+                  },
+                  {
+                    "name": "SweepSoundWithCycleONOFF",
+                    "enumValue": "SweepSoundWithCycleONOFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Style",
+              "displayName": "Style",
+              "schema": "long"
+            },
+            {
+              "name": "AnalogValue",
+              "displayName": "AnalogValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

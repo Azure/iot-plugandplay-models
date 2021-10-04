@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Elink:i350;1",
+    "@type": "Interface",
+    "displayName": "Elink-i350",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "AndroidDeviceInfo1",
+            "schema": "dtmi:Synnex:AndroidDeviceInfo;1"
+        }
+    ]
+}

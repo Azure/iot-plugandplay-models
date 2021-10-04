@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D2176513;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OT33057x",
+  "description": "Photoelectric b/g suppression, Connector M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BinaryOut",
+      "displayName": "BinaryOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmBit",
+      "displayName": "AlarmBit",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:TKR04A;1",
+  "@type": "Interface",
+  "displayName": "TKR04A",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportMode",
+      "displayName": "Report Send Mode",
+      "description": "Sets the mode for sending the report.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "event",
+            "displayName": "Only when an event occurs",
+            "description": "Send only when an event occurs.",
+            "enumValue": 1
+          },
+          {
+            "name": "periodic",
+            "displayName": "Periodic transmission only",
+            "description": "Send at the specified interval. It is not possible to detect multiple changes in value during the transmission interval.",
+            "enumValue": 2
+          },
+          {
+            "name": "eventAndPeriodic",
+            "displayName": "Event occurs and periodic transmission",
+            "description": "Sent when an event occurs.It is also sent periodically at a specified interval.",
+            "enumValue": 3
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tkr04a",
+      "displayName": "TKR04A",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Timestamp",
+            "name": "timestamp",
+            "description": "Sets the time information for data reception.",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "description": "Sets the RSSI value for data reception.",
+            "schema": "integer"
+          },
+          {
+            "displayName": "MAC Address",
+            "name": "mac",
+            "description": "Set the MAC address of the sensor.",
+            "schema": "string"
+          },
+          {
+            "displayName": "Over Threshold",
+            "name": "overThreshold",
+            "description": "Set True when the measured value exceeds the threshold value set for the sensor.",
+            "schema": "boolean"
+          },
+          {
+            "displayName": "CO2",
+            "name": "co2",
+            "description": "Set the concentration of CO2 received from the sensor. The unit is ppm.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Remain  Battery Power",
+            "name": "remainBattery",
+            "description": "Set the remaining battery power from 0 to 100.",
+            "schema": "double"
+          },
+          {
+            "displayName": "USB Power Supply",
+            "name": "isUsbPower",
+            "description": "Set to True when operating on USB power.",
+            "schema": "boolean"
+          }
+        ]
+      }
+    }
+  ]
+}

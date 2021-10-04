@@ -1,0 +1,117 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D359_G;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PF3W740x-xx-LxT-xxx",
+  "description": "Flow rate measuring range: 5.0..40.0L/min, With temperature sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_GPM",
+      "displayName": "Flow_GPM",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temp_C",
+      "displayName": "Temp_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "THHHOrTLLL",
+      "displayName": "THHHOrTLLL",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HHH",
+      "displayName": "HHH",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT2",
+      "displayName": "SwitchStateOUT2",
+      "schema": "dtmi:CloudRail:IOL:V131:D359_G:SwitchStateOUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOUT1",
+      "displayName": "SwitchStateOUT1",
+      "schema": "dtmi:CloudRail:IOL:V131:D359_G:SwitchStateOUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D359_G:SwitchStateOUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}

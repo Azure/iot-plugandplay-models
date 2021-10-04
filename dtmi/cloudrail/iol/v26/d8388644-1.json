@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388644;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WTD20EC-Vx4x9S0x",
+  "description": "Photoelectric sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388644:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388644:Q;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388644:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Object",
+          "enumValue": "Object"
+        },
+        {
+          "name": "Background",
+          "enumValue": "Background"
+        }
+      ]
+    }
+  ]
+}

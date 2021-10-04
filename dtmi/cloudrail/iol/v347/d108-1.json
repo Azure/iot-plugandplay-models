@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D108;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLHP2-2PNSL-L5",
+  "description": "0...5000mm, Q1, Q2, In, Auto/PNP/NPN, M12 5Pol",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityScore",
+      "displayName": "SignalQualityScore",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ2",
+      "displayName": "SwitchingQ2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

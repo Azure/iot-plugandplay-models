@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D9101;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FADx 14x4470/xxxxxxxO",
+  "description": "FADK 14",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoAlarm",
+            "enumValue": "NoAlarm"
+          },
+          {
+            "name": "NoValidSignal",
+            "enumValue": "NoValidSignal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingArea",
+      "displayName": "SwitchingArea",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OutsideSwitchingArea",
+            "enumValue": "OutsideSwitchingArea"
+          },
+          {
+            "name": "InsideSwitchingArea",
+            "enumValue": "InsideSwitchingArea"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Quality",
+      "displayName": "Quality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SufficientExcessGain",
+            "enumValue": "SufficientExcessGain"
+          },
+          {
+            "name": "CriticalExcessGain",
+            "enumValue": "CriticalExcessGain"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

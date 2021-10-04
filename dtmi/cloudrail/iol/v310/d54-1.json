@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D54;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SI5010",
+  "description": "SI5",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_pct",
+      "displayName": "Flow_pct",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingStatusOUT2NotApplicable",
+      "displayName": "SwitchingStatusOUT2NotApplicable",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStatusOUT1",
+      "displayName": "SwitchStatusOUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

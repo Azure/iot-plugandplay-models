@@ -1,0 +1,102 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V287:D2228230;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "(Z)3DREA",
+  "description": "(Z)3DREA",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActiveParameterSet",
+      "displayName": "ActiveParameterSet",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureReached",
+      "displayName": "PressureReached",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlModeActive",
+      "displayName": "ControlModeActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LocalControlActive",
+      "displayName": "LocalControlActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningActive",
+      "displayName": "WarningActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorActive",
+      "displayName": "ErrorActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceActive",
+      "displayName": "DeviceActive",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceReady",
+      "displayName": "DeviceReady",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActivePressure",
+      "displayName": "ActivePressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ParameterSet",
+              "displayName": "ParameterSet",
+              "schema": "long"
+            },
+            {
+              "name": "ClearError",
+              "displayName": "ClearError",
+              "schema": "integer"
+            },
+            {
+              "name": "ControlMode",
+              "displayName": "ControlMode",
+              "schema": "integer"
+            },
+            {
+              "name": "ActivateDevice",
+              "displayName": "ActivateDevice",
+              "schema": "integer"
+            },
+            {
+              "name": "PressureCommand",
+              "displayName": "PressureCommand",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

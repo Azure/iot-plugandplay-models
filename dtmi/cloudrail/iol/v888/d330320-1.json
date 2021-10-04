@@ -1,0 +1,309 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330320;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-803-103-R036-012",
+  "description": "SmartLight Indicator with sensor, extension mode disabled",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ErrorCode",
+      "displayName": "ErrorCode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "WrongMode",
+            "enumValue": "WrongMode"
+          },
+          {
+            "name": "WrongNumberOfSegments",
+            "enumValue": "WrongNumberOfSegments"
+          },
+          {
+            "name": "WrongFrequency",
+            "enumValue": "WrongFrequency"
+          },
+          {
+            "name": "WrongSpeed",
+            "enumValue": "WrongSpeed"
+          },
+          {
+            "name": "WrongNumberOfTrailingEdges",
+            "enumValue": "WrongNumberOfTrailingEdges"
+          },
+          {
+            "name": "WrongColor",
+            "enumValue": "WrongColor"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TouchInput",
+      "displayName": "TouchInput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TouchInputOFF",
+            "enumValue": "TouchInputOFF"
+          },
+          {
+            "name": "TouchInputON",
+            "enumValue": "TouchInputON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ColorSegment1Segment1Background",
+              "displayName": "ColorSegment1Segment1Background",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegmentSegment;1"
+            },
+            {
+              "name": "Segment1Blinks",
+              "displayName": "Segment1Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorSegment2Segment2Running",
+              "displayName": "ColorSegment2Segment2Running",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegmentSegment;1"
+            },
+            {
+              "name": "Segment2Blinks",
+              "displayName": "Segment2Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorSegment3Segment3",
+              "displayName": "ColorSegment3Segment3",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegmentSegment;1"
+            },
+            {
+              "name": "Segment3Blinks",
+              "displayName": "Segment3Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorSegment4",
+              "displayName": "ColorSegment4",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegment;1"
+            },
+            {
+              "name": "Segment4Blinks",
+              "displayName": "Segment4Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorSegment5",
+              "displayName": "ColorSegment5",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegment;1"
+            },
+            {
+              "name": "Segment5Blinks",
+              "displayName": "Segment5Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorSegment6",
+              "displayName": "ColorSegment6",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:ColorSegment;1"
+            },
+            {
+              "name": "Segment6Blinks",
+              "displayName": "Segment6Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1"
+            },
+            {
+              "name": "OperatingMode",
+              "displayName": "OperatingMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NoModeSelected",
+                    "enumValue": "NoModeSelected"
+                  },
+                  {
+                    "name": "SegmentMode",
+                    "enumValue": "SegmentMode"
+                  },
+                  {
+                    "name": "LevelMode",
+                    "enumValue": "LevelMode"
+                  },
+                  {
+                    "name": "RunlightMode",
+                    "enumValue": "RunlightMode"
+                  },
+                  {
+                    "name": "ColorWheelMode",
+                    "enumValue": "ColorWheelMode"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "NumberOfSegmentsLevelTypeNumberOfRunningSegments",
+              "displayName": "NumberOfSegmentsLevelTypeNumberOfRunningSegments",
+              "schema": "long"
+            },
+            {
+              "name": "RunDirectionRunDirection",
+              "displayName": "RunDirectionRunDirection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Left",
+                    "enumValue": "Left"
+                  },
+                  {
+                    "name": "Right",
+                    "enumValue": "Right"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LevelFadeLoadingMode",
+              "displayName": "LevelFadeLoadingMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LevelFadeOFFLoadingModeOFF",
+                    "enumValue": "LevelFadeOFFLoadingModeOFF"
+                  },
+                  {
+                    "name": "LevelFadeONLoadingModeON",
+                    "enumValue": "LevelFadeONLoadingModeON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BlinkModeLevelValueLowByteTrailingEdge",
+              "displayName": "BlinkModeLevelValueLowByteTrailingEdge",
+              "schema": "long"
+            },
+            {
+              "name": "BlinkFrequencyLevelValueHighByteRunningSpeedRunningSpeed",
+              "displayName": "BlinkFrequencyLevelValueHighByteRunningSpeedRunningSpeed",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330320:ColorSegmentSegment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "UserDefined",
+          "enumValue": "UserDefined"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330320:SegmentBlinks;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SegmentDoesNotBlink",
+          "enumValue": "SegmentDoesNotBlink"
+        },
+        {
+          "name": "SegmentBlinks",
+          "enumValue": "SegmentBlinks"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330320:ColorSegment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "UserDefined",
+          "enumValue": "UserDefined"
+        }
+      ]
+    }
+  ]
+}

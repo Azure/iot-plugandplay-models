@@ -1,0 +1,245 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D196624;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E8PC-100D-E",
+  "description": "Pressure Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureValue_MPa",
+      "displayName": "PressureValue_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PressureValue_bar",
+      "displayName": "PressureValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PressureValue_psi",
+      "displayName": "PressureValue_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureValue_C",
+      "displayName": "TemperatureValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusIndicatorRed",
+      "displayName": "StatusIndicatorRed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusIndicatorOrange",
+      "displayName": "StatusIndicatorOrange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusIndicatorGreen",
+      "displayName": "StatusIndicatorGreen",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UnitIndicatorC",
+      "displayName": "UnitIndicatorC",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UnitIndicatorPsi",
+      "displayName": "UnitIndicatorPsi",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UnitIndicatorBar",
+      "displayName": "UnitIndicatorBar",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UnitIndicatorMPa",
+      "displayName": "UnitIndicatorMPa",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoErrorOccured",
+            "enumValue": "NoErrorOccured"
+          },
+          {
+            "name": "ErrorOccured",
+            "enumValue": "ErrorOccured"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoErrorOccured",
+            "enumValue": "NoErrorOccured"
+          },
+          {
+            "name": "ErrorOccured",
+            "enumValue": "ErrorOccured"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput2",
+      "displayName": "ControlOutput2",
+      "schema": "dtmi:CloudRail:IOL:V612:D196624:ControlOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput1",
+      "displayName": "ControlOutput1",
+      "schema": "dtmi:CloudRail:IOL:V612:D196624:ControlOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D196624:ControlOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

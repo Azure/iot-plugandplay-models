@@ -1,0 +1,23 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesecuritybasic;1",
+  "@type": "Interface",
+  "displayName": "Home Security Basic",
+  "description": "Home Security Basic",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:motionsensor;2",
+      "name": "motionsensor1",
+      "displayName": "Motion Sensor",
+      "description": "Motion Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:windowsensor;2",
+      "name": "windowsensor1",
+      "displayName": "Window Sensor",
+      "description": "Window Sensor"
+    }
+  ]
+}

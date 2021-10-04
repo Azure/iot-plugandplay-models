@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V120:D2224897;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Control Head Type 8691",
+  "description": "Control Head Type 8691 with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ValvePosition",
+      "displayName": "ValvePosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveClosed",
+      "displayName": "ValveClosed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveOpened",
+      "displayName": "ValveOpened",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveMode",
+      "displayName": "ValveMode",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActiveWarnings",
+      "displayName": "ActiveWarnings",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActiveErrors",
+      "displayName": "ActiveErrors",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CMDSetpointValue",
+              "displayName": "CMDSetpointValue",
+              "schema": "integer"
+            },
+            {
+              "name": "LocalizeDevice",
+              "displayName": "LocalizeDevice",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

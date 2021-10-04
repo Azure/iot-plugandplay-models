@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D229378;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IO-Link Module K20 8DI",
+  "description": "Input Modules",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "IN1",
+      "displayName": "IN1",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN2",
+      "displayName": "IN2",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN3",
+      "displayName": "IN3",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN4",
+      "displayName": "IN4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN5",
+      "displayName": "IN5",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN6",
+      "displayName": "IN6",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN7",
+      "displayName": "IN7",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IN8",
+      "displayName": "IN8",
+      "schema": "dtmi:CloudRail:IOL:V42:D229378:IN;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V42:D229378:IN;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Null",
+          "enumValue": "0"
+        },
+        {
+          "name": "One",
+          "enumValue": "1"
+        }
+      ]
+    }
+  ]
+}

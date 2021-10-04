@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D499;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Rx3xxx",
+  "description": "Encoder hollow shaft, Process connection Ø 6 mm, Electrical connection M12, Diameter 36.5 mm",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Counter",
+      "displayName": "Counter",
+      "schema": "long"
+    }
+  ]
+}

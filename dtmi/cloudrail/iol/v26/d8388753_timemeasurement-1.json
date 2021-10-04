@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388753_TimeMeasurement;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WFS3-40P01CS01",
+  "description": "Fork sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1Q1",
+      "displayName": "BDC1Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388753_TimeMeasurement:BDCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2Q2",
+      "displayName": "BDC2Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388753_TimeMeasurement:BDCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TimeMeasurementValue",
+      "displayName": "TimeMeasurementValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388753_TimeMeasurement:BDCQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SwitchClosed",
+          "enumValue": "SwitchClosed"
+        },
+        {
+          "name": "SwitchOpen",
+          "enumValue": "SwitchOpen"
+        }
+      ]
+    }
+  ]
+}

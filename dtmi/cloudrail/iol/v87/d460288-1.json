@@ -1,0 +1,121 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D460288;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1XF001",
+  "description": "Color Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output2",
+      "displayName": "Output2",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output3",
+      "displayName": "Output3",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output4",
+      "displayName": "Output4",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output5",
+      "displayName": "Output5",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output6",
+      "displayName": "Output6",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output7",
+      "displayName": "Output7",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output8",
+      "displayName": "Output8",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output9",
+      "displayName": "Output9",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output10",
+      "displayName": "Output10",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output11",
+      "displayName": "Output11",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output12",
+      "displayName": "Output12",
+      "schema": "dtmi:CloudRail:IOL:V87:D460288:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "None",
+            "enumValue": "None"
+          },
+          {
+            "name": "UnderExposure",
+            "enumValue": "UnderExposure"
+          },
+          {
+            "name": "OverExposure",
+            "enumValue": "OverExposure"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V87:D460288:Output;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

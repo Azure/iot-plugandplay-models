@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D327940;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-102-000-K019",
+  "description": "BNI - Sensor hub M8 digital",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort0",
+      "displayName": "SwitchstatePort0",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort1",
+      "displayName": "SwitchstatePort1",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort2",
+      "displayName": "SwitchstatePort2",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort3",
+      "displayName": "SwitchstatePort3",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort4",
+      "displayName": "SwitchstatePort4",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort5",
+      "displayName": "SwitchstatePort5",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort6",
+      "displayName": "SwitchstatePort6",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort7",
+      "displayName": "SwitchstatePort7",
+      "schema": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D327940:SwitchstatePort;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

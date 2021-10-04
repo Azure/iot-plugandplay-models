@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D65794;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNS 819-D02-x1x-100-10-xxx-x4R-I",
+  "description": "BNS - Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate0",
+      "displayName": "Switchstate0",
+      "schema": "dtmi:CloudRail:IOL:V888:D65794:Switchstate;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switchstate1",
+      "displayName": "Switchstate1",
+      "schema": "dtmi:CloudRail:IOL:V888:D65794:Switchstate;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D65794:Switchstate;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "True",
+          "enumValue": "True"
+        },
+        {
+          "name": "False",
+          "enumValue": "False"
+        }
+      ]
+    }
+  ]
+}

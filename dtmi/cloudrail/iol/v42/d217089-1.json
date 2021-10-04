@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D217089;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IO- Link Modul for SIRIUS Signaling Column 8WD44",
+  "description": "IO- Link Modul for SIRIUS Signaling Column 8WD44",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1",
+              "displayName": "Segment1",
+              "schema": "dtmi:CloudRail:IOL:V42:D217089:Segment;1"
+            },
+            {
+              "name": "Segment2",
+              "displayName": "Segment2",
+              "schema": "dtmi:CloudRail:IOL:V42:D217089:Segment;1"
+            },
+            {
+              "name": "Segment3",
+              "displayName": "Segment3",
+              "schema": "dtmi:CloudRail:IOL:V42:D217089:Segment;1"
+            },
+            {
+              "name": "Segment4",
+              "displayName": "Segment4",
+              "schema": "dtmi:CloudRail:IOL:V42:D217089:Segment;1"
+            },
+            {
+              "name": "Segment5",
+              "displayName": "Segment5",
+              "schema": "dtmi:CloudRail:IOL:V42:D217089:Segment;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V42:D217089:Segment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

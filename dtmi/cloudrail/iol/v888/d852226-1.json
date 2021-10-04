@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D852226;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BMP 01-ZLZPP21A-0xxx-00-P00,5-S4",
+  "description": "Magnetic Field Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfSSC1",
+      "displayName": "SwitchingSignalOfSSC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfSSC2",
+      "displayName": "SwitchingSignalOfSSC2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfSSC3",
+      "displayName": "SwitchingSignalOfSSC3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalOfSSC4",
+      "displayName": "SwitchingSignalOfSSC4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValueUnsafe",
+      "displayName": "MeasurementValueUnsafe",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutOfMeasurementRange",
+      "displayName": "OutOfMeasurementRange",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutOfRangeNoMeasurementData",
+      "displayName": "OutOfRangeNoMeasurementData",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemError",
+      "displayName": "SystemError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ScalingFactor",
+      "displayName": "ScalingFactor",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasurementValue_mcm",
+      "displayName": "MeasurementValue_mcm",
+      "schema": "long",
+      "unit": "micrometre"
+    }
+  ]
+}

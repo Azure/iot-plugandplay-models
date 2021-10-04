@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D9985;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 10-B-RLFx-PNSL-xx4",
+  "description": "6...15 mm, IN, Q1 Auto / PNP / NPN, plug, M5, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityBit",
+      "displayName": "SignalQualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D384;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HRTR 46B/Lx.23-S12",
+  "description": "HRT46B",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SensorOperational",
+      "displayName": "SensorOperational",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningSignalAutocontrol",
+      "displayName": "WarningSignalAutocontrol",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2",
+      "displayName": "SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V338:D384:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V338:D384:SwitchingSignal;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransmitterDeactivation",
+              "displayName": "TransmitterDeactivation",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "TransmitterActive",
+                    "enumValue": "TransmitterActive"
+                  },
+                  {
+                    "name": "TransmitterInactive",
+                    "enumValue": "TransmitterInactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V338:D384:SwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

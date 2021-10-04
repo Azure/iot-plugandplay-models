@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388686_DistanceStatusSLWQ1StatusAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DT50-2Bx15x52",
+  "description": "Distance sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusAlarm",
+      "displayName": "StatusAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusSLW1SignalLevelWarning1",
+      "displayName": "StatusSLW1SignalLevelWarning1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}
