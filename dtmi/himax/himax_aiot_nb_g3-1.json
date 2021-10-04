@@ -1,0 +1,120 @@
+{
+    "@context":"dtmi:dtdl:context;2",
+    "@id": "dtmi:himax:himax_aiot_nb_g3;1",
+    "@type": "Interface",
+    "displayName": "Himax-AIoT-NB-G3",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "human",
+            "displayName":"human",
+            "description":"Current detected human number.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+             "name": "det_box_x",
+            "displayName":"det_box_x",
+            "description":"Bounding box x-axis for detected human.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "det_box_y",
+             "displayName":"det_box_y",
+            "description":"Bounding box y-axis for detected human.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "det_box_width",
+            "displayName":"det_box_width",
+            "description":"Bounding box width for detected human.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+             "name": "det_box_height",
+            "displayName": "det_box_height",
+            "description":"Bounding box height for detected human.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "image",
+            "displayName": "Himax AoS sensor-HM0360",
+            "description":"640x480@1~60fps, mono, interface:8b DV.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "audio",
+            "displayName": "Himax Audio",
+            "description":"Stereo digital, PDM Microphone MEMS (Silicon) omnidirectional (-26dB +-1dB @ 94dB SPL) solder pads.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "accel_x",
+            "displayName": "accel_x",
+            "description": "Current accelerometers x-axis. 3D digital linear acceleration sensor has a linear acceleration full scale of +-2g,+-4g,+-8,+-16 g.",
+            "schema": "double"
+        },            
+        {
+            "@type": "Telemetry",
+            "name": "accel_y",
+            "displayName": "accel_y",
+            "description": "Current accelerometers y-axis. 3D digital linear acceleration sensor has a linear acceleration full scale of +-2g,+-4g,+-8,+-16 g.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "accel_z",
+            "displayName": "accel_z",
+            "description": "Current accelerometers z-axis. 3D digital linear acceleration sensor has a linear acceleration full scale of +-2g,+-4g,+-8,+-16 g.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "gyro_x",
+            "displayName": "gyro_x",
+            "description": "Current gyro x-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "gyro_y",
+            "displayName": "gyro_y",
+            "description": "Current gyro y-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+            "schema": "double"
+        },        
+        {
+            "@type": "Telemetry",
+            "name": "gyro_z",
+            "displayName": "gyro_z",
+            "description": "Current gyro z-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "mag_x",
+            "displayName": "mag_x",
+            "description": "Current magnetometer x-axis. 3D digital magnetic sensor has a magnetic field full scale of +-4,+-8,+-12,+-16 gauss.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "mag_y",
+            "displayName": "mag_y",
+            "description": "Current magnetometer y-axis. 3D digital magnetic sensor has a magnetic field full scale of +-4,+-8,+-12,+-16 gauss.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "mag_z",
+            "displayName": "mag_z",
+            "description": "Current magnetometer z-axis. 3D digital magnetic sensor has a magnetic field full scale of +-4,+-8,+-12,+-16 gauss.",
+            "schema": "double"
+        }
+    ]
+}
