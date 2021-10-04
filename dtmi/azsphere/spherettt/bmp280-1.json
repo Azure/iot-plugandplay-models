@@ -1,0 +1,49 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:BMP280;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Bosch BMP280 pressure and temperature sensor",
+        "de": "Bosch BMP280 Luftdruck- und Temperatursensor"
+    },
+    "description": { 
+        "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: Bosch BMP280 I2C sensor data",
+        "de" : "IoT PnP Modell für das Azure Sphere Train-the-Trainer Bootcamp: Bosch BMP280 I2C Sensordaten"
+    },
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:BMP280:temperature;1",
+            "@type": [
+                "Telemetry", "Temperature"
+              ],
+              "description": {
+                "en": "Temperature in degree Celsius.",
+                "de": "Temperatur in °C."
+              },
+              "displayName": {
+                "en": "Temperature",
+                "de": "Temperatur"
+              },
+              "name": "temperature",
+              "schema": "double",
+              "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:BMP280:pressure;1",
+            "@type": [
+                "Telemetry", "Pressure"
+            ],
+            "description": {
+                "en": "Air pressure in hPa.",
+                "de": "Luftdruck in hPa."
+            },
+            "displayName": {
+                "en": "Air Pressure",
+                "de": "Luftdruck"
+            },
+            "name": "pressure",
+            "schema": "double",
+            "unit": "millibar"
+        }
+    ]
+}

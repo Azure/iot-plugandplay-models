@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:Terasic:FCC:RFS;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "RFS Daughter Card"
+  },
+  "description" : {
+    "en" : "The RFS board is designed for wireless communication, environmental monitoring, networking, and IoT (The Internet of Things) applications."
+  },
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "LuminousFlux"
+      ],
+      "name": "lux",
+      "displayName": {
+        "en": "Ambient Light Sensor (APDS-9301)"
+      },
+      "description" : {
+        "en" : "Ambient Light Sensor value from APDS-9301"
+      },
+      "schema":"float",
+      "unit": "lumen"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "mpu9250",
+      "displayName": {
+        "en": "9-Axix Motion Tracking (MPU9250)"
+      },
+      "description" : {
+        "en" : "Motion tracking sensor values from MPU-9250 which contains a 3-axis gyroscope, a 3-axis accelerometer, and 3-axis digital compass."
+      },
+      "schema": "dtmi:Terasic:FCC:RFS:MPU9250:schema;1"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature (HDC1000)"
+      },
+      "description" : {
+        "en" : "Temperature data from HDC1000"
+      },
+      "schema": "float",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity (HDC1000)"
+      },
+      "description" : {
+        "en" : "Humidity data from HDC1000"
+      },
+      "schema": "float",
+      "unit": "percent"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:Terasic:FCC:RFS:MPU9250:schema;1",
+      "@type": "Object",
+      "comment": "A:Accelerometer, M:Magnetometer, G:Gyroscope",
+      "fields": [
+        {
+          "name": "ax",
+          "schema": "float",
+          "displayName": {
+            "en": "Accelerometer X Axis"
+          },
+          "description" : {
+            "en" : "X Axis of Accelerometer"
+          }
+        },
+        {
+          "name": "ay",
+          "schema": "float",
+          "displayName": {
+            "en": "Accelerometer Y Axis"
+          },
+          "description" : {
+            "en" : "Z Axis of Accelerometer"
+          }
+        },
+        {
+          "name": "az",
+          "schema": "float",
+          "displayName": {
+            "en": "Accelerometer Z Axis"
+          },
+          "description" : {
+            "en" : "Z Axis of Accelerometer"
+          }
+        },
+        {
+          "name": "gx",
+          "schema": "float",
+          "displayName": {
+            "en": "Gyroscope X Axis"
+          },
+          "description" : {
+            "en" : "X Axis of Gyroscope"
+          }
+        },
+        {
+          "name": "gy",
+          "schema": "float",
+          "displayName": {
+            "en": "Gyroscope Y Axis"
+          },
+          "description" : {
+            "en" : "Y Axis of Gyroscope"
+          }
+        },
+        {
+          "name": "gz",
+          "schema": "float",
+          "displayName": {
+            "en": "Gyroscope Z Axis"
+          },
+          "description" : {
+            "en" : "Z Axis of Gyroscope"
+          }
+        },
+        {
+          "name": "mx",
+          "schema": "float",
+          "displayName": {
+            "en": "Magnetometer X Axis"
+          },
+          "description" : {
+            "en" : "X Axis of Magnetometer"
+          }
+        },
+        {
+          "name": "my",
+          "schema": "float",
+          "displayName": {
+            "en": "Magnetometer Y Axis"
+          },
+          "description" : {
+            "en" : "Y Axis of Magnetometer"
+          }
+        },
+        {
+          "name": "mz",
+          "schema": "float",
+          "displayName": {
+            "en": "Magnetometer Z Axis"
+          },
+          "description" : {
+            "en" : "Z Axis of Magnetometer"
+          }
+        }
+      ]
+    }
+  ]
+}

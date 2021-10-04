@@ -1,0 +1,193 @@
+{
+  "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:APDS9301:Lux;1",
+      "@type": "Property", 
+      "displayName": {
+        "en": "Lux"
+      },
+      "description" : {
+        "en" : "Max and Min values of APDS-9301 Lux"
+      },
+      "name": "lux",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:HDC1000:Humidity;1",
+      "@type": "Property", 
+      "displayName": {
+        "en": "Humidity "
+      },
+      "description" : {
+        "en" : "Max and Min values of HDC1000 Humidity"
+      },
+      "name": "humidity",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:HDC1000:Temperature;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "description" : {
+        "en" : "Max and Min values of HDC1000 Temperature"
+      },
+      "name": "temperature",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:AX;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Accelerometer X Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Accelerometer X axis"
+      },
+      "name": "ax",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:AY;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Accelerometer Y Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Accelerometer Y axis"
+      },
+      "name": "ay",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:AZ;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Accelerometer Z Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Accelerometer Z axis"
+      },
+      "name": "az",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:GX;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Gyroscope X Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Gyroscope X axis"
+      },
+      "name": "gx",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:GY;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Gyroscope Y Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Gyroscope Y axis"
+      },
+      "name": "gy",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:GZ;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Gyroscope Z Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Gyroscope Z axis"
+      },
+      "name": "gz",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:MX;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Magnetometer X Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Magnetometer X axis"
+      },
+      "name": "mx",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:MY;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Magnetometer Y Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Magnetometer Y axis"
+      },
+      "name": "my",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    },
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MPU9250:MZ;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Magnetometer Z Axis"
+      },
+      "description" : {
+        "en" : "Max and Min values of MPU9250 Magnetometer Z axis"
+      },
+      "name": "mz",
+      "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:Terasic:FCC:DE10_Nano_Threshold:MinMax:float;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "Minimum Value"
+          },
+          "description" : {
+            "en" : "Configures NIOS II Firmware to monitor minimum threshold value in float as a real time alert.  When the sensor value is below this threshold, LED will turn on."
+          },
+          "name": "min",
+          "schema": "float"
+        },
+        {
+          "displayName": {
+            "en": "Maximum Value"
+          },
+          "description" : {
+            "en" : "Configures NIOS II Firmware to monitor maximum threshold value in float as a real time alert.  When the sensor value is above this threshold, LED will turn on."
+          },
+          "name": "max",
+          "schema": "float"
+        }
+      ]
+    }
+  ],
+  "@context": [
+      "dtmi:dtdl:context;2"
+  ]
+}
