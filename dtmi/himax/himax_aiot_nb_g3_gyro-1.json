@@ -1,0 +1,30 @@
+{
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:himax:himax_aiot_nb_g3_gyro;1",
+        "@type": "Interface",
+        "displayName": "Gyro",
+        "description": "Gyro function in Himax-AIoT-NB-G3.",
+        "contents": [
+            {
+                "@type": "Telemetry",
+                "name": "gyro_x",
+                "displayName": "gyro_x",
+                "description": "Current gyro x-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+                "schema": "double"
+            },
+            {
+                "@type": "Telemetry",
+                "name": "gyro_y",
+                "displayName": "gyro_y",
+                "description": "Current gyro y-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+                "schema": "double"
+            },        
+            {
+                "@type": "Telemetry",
+                "name": "gyro_z",
+                "displayName": "gyro_z",
+                "description": "Current gyro z-axis. 3D digital angular rate sensor has an angular rate of +-245,+-500,+-2000 dps.",
+                "schema": "double"
+            }
+        ]
+    }
