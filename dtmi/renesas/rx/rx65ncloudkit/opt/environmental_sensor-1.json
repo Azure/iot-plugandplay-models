@@ -25,7 +25,7 @@
         "en": "Pressure to Cloud per five seconds."
       },
       "schema": "double",
-      "unit": "kilopascal"
+      "unit": "pascal"
     },
     {
       "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:humidity;1",
