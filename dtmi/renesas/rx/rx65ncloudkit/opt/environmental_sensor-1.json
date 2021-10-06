@@ -1,0 +1,79 @@
+{
+  "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor;1",
+  "displayName": {
+    "en": "Environmental Sensor(bme68x) on RX65N Option Board"
+  },
+  "description": {
+    "en": "Description for Environmental Sensor(bme68x)"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:pressure;1",
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": {
+        "en": "Pressure"
+      },
+      "description": {
+        "en": "Pressure to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:humidity;1",
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity"
+      },
+      "description": {
+        "en": "Humidity to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:temperature;1",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "description": {
+        "en": "Temperature to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:gas;1",
+      "@type": [
+        "Telemetry",
+        "Resistance"
+      ],
+      "name": "gasResistance",
+      "displayName": {
+        "en": "Gas"
+      },
+      "description": {
+        "en": "Gas to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "ohm"
+    }
+  ]
+}
