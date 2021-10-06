@@ -23,7 +23,7 @@
       "description": {
         "en": "Send User Switch status."
       },
-      "schema": "String"
+      "schema": "string"
     }
   ]
 }
