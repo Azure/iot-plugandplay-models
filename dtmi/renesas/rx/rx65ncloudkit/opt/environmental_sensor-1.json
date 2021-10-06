@@ -31,7 +31,7 @@
       "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:humidity;1",
       "@type": [
         "Telemetry",
-        "Humidity"
+        "RelativeHumidity"
       ],
       "name": "humidity",
       "displayName": {
@@ -63,7 +63,7 @@
       "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor:gas;1",
       "@type": [
         "Telemetry",
-        "Gas"
+        "Resistance"
       ],
       "name": "gasResistance",
       "displayName": {
