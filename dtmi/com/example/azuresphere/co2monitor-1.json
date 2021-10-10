@@ -161,6 +161,14 @@
       },
       "name": "SoftwareVersion",
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Deferred update status"
+      },
+      "name": "DeferredUpdateRequest",
+      "schema": "string"
     }
   ]
 }
