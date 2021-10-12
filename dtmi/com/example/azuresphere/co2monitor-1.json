@@ -2,7 +2,7 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:com:example:azuresphere:co2monitor;1",
   "@type": "Interface",
-  "displayName": "Learning Path Lab Monitor",
+  "displayName": "Azure Sphere C02 Monitor",
   "contents": [
     {
       "@type": [
