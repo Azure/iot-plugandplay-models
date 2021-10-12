@@ -1,0 +1,38 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:crl:Guardian;3",
+    "@type": "Interface",
+    "displayName": "Guardian",
+    "description": "The mutifunctional gateway.",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "RunTime",
+        "displayName": "RunTime",
+        "description": "device run time.",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "SysInfo",
+        "displayName": "SysInfo",
+        "description": "The system info.",
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Command",
+        "name": "gettime",
+        "request": {
+            "name": "getTime",
+            "displayName": "get Time",
+            "description": "get device time.",
+            "schema": "dateTime"
+        },
+        "response": {
+            "name": "scheduledTime",
+            "schema": "dateTime"
+        }
+    }
+    ]
+}
