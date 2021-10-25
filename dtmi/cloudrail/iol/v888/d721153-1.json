@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D721153;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Balluff Light Array",
+  "description": "Balluff Light Array Description",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue2",
+      "displayName": "AnalogValue2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue1",
+      "displayName": "AnalogValue1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalValue",
+      "displayName": "DigitalValue",
+      "schema": "long"
+    }
+  ]
+}

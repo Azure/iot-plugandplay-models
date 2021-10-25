@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1049344_DistanceSignalQualitySwitchingSignals;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VDM28-8-L1-Ix/xxxxxxxxxxxx122",
+  "description": "Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance12Bit",
+      "displayName": "Distance12Bit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Insufficient",
+            "enumValue": "Insufficient"
+          },
+          {
+            "name": "Acceptable",
+            "enumValue": "Acceptable"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          },
+          {
+            "name": "Excellent",
+            "enumValue": "Excellent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V1:D1049344_DistanceSignalQualitySwitchingSignals:SwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2",
+      "displayName": "SwitchingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V1:D1049344_DistanceSignalQualitySwitchingSignals:SwitchingSignal;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D1049344_DistanceSignalQualitySwitchingSignals:SwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

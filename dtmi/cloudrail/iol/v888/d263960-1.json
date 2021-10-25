@@ -1,0 +1,66 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263960;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 21M-PAI-RE30-S4",
+  "description": "Red light through beam receiver",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC",
+      "displayName": "BDC",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warn",
+      "displayName": "Warn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FastWarn",
+      "displayName": "FastWarn",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    }
+  ]
+}

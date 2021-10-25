@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D198913_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DTL-C55PA-TMS-407-505",
+  "description": "TOF distance sensor, C55PA, Auto, IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

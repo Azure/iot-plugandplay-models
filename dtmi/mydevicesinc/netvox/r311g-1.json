@@ -1,0 +1,36 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:netvox:r311g;1",
+  "@type": "Interface",
+  "displayName": "Netvox Light",
+  "description": "Netvox Light sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "luminosity",
+      "description": "luminosity",
+      "name": "channel_8",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    }
+  ]
+}

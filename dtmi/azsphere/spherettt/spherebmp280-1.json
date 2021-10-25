@@ -1,0 +1,74 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:SphereBMP280;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Interface with basic device hardware information."
+            },
+            "displayName": {
+                "en": "Device Information"
+            },
+            "name": "deviceInformation",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Controls an RGB Led using Azure IoT Hub direct method and property"
+            },
+            "displayName": {
+                "de": "RGB Led",
+                "en": "RGB led"
+            },
+            "name": "rgbLed",
+            "schema": "dtmi:azsphere:SphereTTT:RGBled;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "en": "Button event telemetry"
+            },
+            "displayName": {
+                "de": "MT3620RDB Taster",
+                "en": "MT3620RDB Buttons"
+            },
+            "name": "buttons",
+            "schema": "dtmi:azsphere:SphereTTT:Buttons;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Bosch BMP280 pressure and temperature sensor",
+                "de": "Bosch BMP280 Luftdruck- und Temperatursensor"
+            },
+            "description": { 
+                "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: Bosch BMP280 I2C sensor data",
+                "de" : "IoT PnP Modell für das Azure Sphere Train-the-Trainer Bootcamp: Bosch BMP280 I2C Sensordaten"
+            },
+            "name": "bmp280",
+            "schema": "dtmi:azsphere:SphereTTT:BMP280;1"
+        },
+        {
+            "@type": "Component",
+            "description": {
+                "de": "Gerätestatus Telemetriedaten",
+                "en": "Device-Health telemetry"
+            },
+            "displayName": {
+                "de": "Gerätestatus",
+                "en": "Device-Health"
+            },
+            "name": "deviceHealth",
+            "schema": "dtmi:azsphere:SphereTTT:DeviceHealth;1"
+        }
+    ],
+    "description": {
+        "en": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp: SphereBMP280 Sample"
+    },
+    "displayName": {
+        "en": "Azure Sphere TTT-SphereBMP280"
+    }
+}

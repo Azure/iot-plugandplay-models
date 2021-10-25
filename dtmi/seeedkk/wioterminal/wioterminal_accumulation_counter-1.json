@@ -1,0 +1,45 @@
+{
+    "@id": "dtmi:seeedkk:wioterminal:wioterminal_accumulation_counter;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Accumulation Counter for Wio Terminal",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "name": "accumulationCount",
+        "displayName": {
+          "en": "Accumulation count",
+          "ja": "累積数"
+        },
+        "schema": "integer"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "TelemetryInterval",
+        "unit": "second",
+        "displayName": {
+          "en": "Telemetry interval",
+          "ja": "送信間隔"
+        },
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "distanceThreshold",
+        "unit": "millimetre",
+        "displayName": {
+          "en": "Distance threshold",
+          "ja": "距離しきい値"
+        },
+        "schema": "integer",
+        "writable": true
+      }
+    ]
+  }

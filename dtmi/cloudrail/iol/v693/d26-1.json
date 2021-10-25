@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V693:D26;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PE5-IO-xxx4-xx0-xx0-M12",
+  "description": "IO-Link/PNP + PNP/NPN",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "dtmi:CloudRail:IOL:V693:D26:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2",
+      "displayName": "BDC2",
+      "schema": "dtmi:CloudRail:IOL:V693:D26:BDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDV",
+      "displayName": "PDV",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V693:D26:BDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

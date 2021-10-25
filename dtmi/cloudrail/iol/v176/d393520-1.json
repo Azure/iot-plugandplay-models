@@ -1,0 +1,186 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V176:D393520;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CBMC E4 24DC/1-4A+ IOL",
+  "description": "Electronic circuit breaker with 4 channels adjustable 1- 4 A",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Channel1On",
+      "displayName": "Channel1On",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2On",
+      "displayName": "Channel2On",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel3On",
+      "displayName": "Channel3On",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel4On",
+      "displayName": "Channel4On",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorChannel1",
+      "displayName": "ErrorChannel1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorChannel2",
+      "displayName": "ErrorChannel2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorChannel3",
+      "displayName": "ErrorChannel3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorChannel4",
+      "displayName": "ErrorChannel4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatedCurrentChannel1",
+      "displayName": "RatedCurrentChannel1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatedCurrentChannel2",
+      "displayName": "RatedCurrentChannel2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatedCurrentChannel3",
+      "displayName": "RatedCurrentChannel3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatedCurrentChannel4",
+      "displayName": "RatedCurrentChannel4",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "ActualCurrentChannel1_A",
+      "displayName": "ActualCurrentChannel1_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "ActualCurrentChannel2_A",
+      "displayName": "ActualCurrentChannel2_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "ActualCurrentChannel3_A",
+      "displayName": "ActualCurrentChannel3_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "ActualCurrentChannel4_A",
+      "displayName": "ActualCurrentChannel4_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputVoltage",
+      "displayName": "InputVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PDoutValidFlag",
+              "displayName": "PDoutValidFlag",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchOnChannel1",
+              "displayName": "SwitchOnChannel1",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchOnChannel2",
+              "displayName": "SwitchOnChannel2",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchOnChannel3",
+              "displayName": "SwitchOnChannel3",
+              "schema": "integer"
+            },
+            {
+              "name": "SwitchOnChannel4",
+              "displayName": "SwitchOnChannel4",
+              "schema": "integer"
+            },
+            {
+              "name": "SetRatedCurrentChannel114A",
+              "displayName": "SetRatedCurrentChannel114A",
+              "schema": "long"
+            },
+            {
+              "name": "SetRatedCurrentChannel214A",
+              "displayName": "SetRatedCurrentChannel214A",
+              "schema": "long"
+            },
+            {
+              "name": "SetRatedCurrentChannel314A",
+              "displayName": "SetRatedCurrentChannel314A",
+              "schema": "long"
+            },
+            {
+              "name": "SetRatedCurrentChannel414A",
+              "displayName": "SetRatedCurrentChannel414A",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

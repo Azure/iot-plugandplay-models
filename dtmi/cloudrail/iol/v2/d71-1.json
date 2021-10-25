@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D71;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "45CRM-4LHT1-D4",
+  "description": "Color Registration Mark Sensor - 45CRM",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          },
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          }
+        ]
+      }
+    }
+  ]
+}

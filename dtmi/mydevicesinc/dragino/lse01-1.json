@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:dragino:lse01;1",
+  "@type": "Interface",
+  "displayName": "Dragino Soil Moisture Sensor LSE01",
+  "description": "Soil Moisture",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Soil Moisture",
+      "description": "Soil Moisture",
+      "name": "channel_29",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Conductivity",
+      "description": "Conductivity",
+      "name": "channel_400",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Battery",
+      "description": "Battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "Signal",
+      "description": "Signal",
+      "name": "channel_100",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Soil Temperature",
+      "description": "Soil Temperature",
+      "name": "channel_3",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

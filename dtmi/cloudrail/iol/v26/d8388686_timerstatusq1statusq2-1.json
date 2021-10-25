@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388686_TimerStatusQ1StatusQ2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DT50-2Bx15x52",
+  "description": "Distance sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusQ2",
+      "displayName": "StatusQ2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388686_TimerStatusQ1StatusQ2:StatusQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusQ1",
+      "displayName": "StatusQ1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388686_TimerStatusQ1StatusQ2:StatusQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Timer",
+      "displayName": "Timer",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388686_TimerStatusQ1StatusQ2:StatusQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

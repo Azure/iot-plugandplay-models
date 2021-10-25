@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1672:D190001;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IMS-PE-M18-E3TA-IL",
+  "description": "used ISL700B photoelectric Sensor ASIC",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

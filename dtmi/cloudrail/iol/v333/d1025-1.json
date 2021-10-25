@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D1025;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "VPPM-xxL-L-1-x1x-0xxxH-LK-S1",
+  "description": "VPPM proportional valve, 10 bar, thread G1/8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureActualValue",
+      "displayName": "PressureActualValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PressureSetpointValue",
+              "displayName": "PressureSetpointValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

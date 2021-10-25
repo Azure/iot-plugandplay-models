@@ -1,0 +1,117 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:M5Stack:m5go;1",
+    "@type": "Interface",
+    "displayName": "M5GO IOT Starter Kit",
+    "description": "The M5GO Kit can use lights on both sides, PIR, ANGLE,MPU6886.",
+    "contents":[
+        {
+            "@type": "Component",
+            "name": "deviceInformation",
+            "displayName": "Device Information interface",
+            "description": "basic device hardware information.",
+            "schema": "dtmi:M5Stack:DeviceInformation;1"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "angle",
+            "displayName": "angle",
+            "description": "Rotation Angle Sensor Value.(Percentage)",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "pir",
+            "displayName": "motion sensor",
+            "description": "motion sensor,true : Presence of moving objects. false:There are no moving objects.",
+            "schema": "string"
+        },
+        {
+            "@type": ["Telemetry","Acceleration"],
+            "name": "AccelX",
+            "displayName": "Accel x-axis",
+            "description": "mpu6886 accel x-axis.",
+            "schema": "double",
+            "unit": "metrePerSecondSquared"
+        },
+        {
+            "@type": ["Telemetry","Acceleration"],
+            "name": "AccelY",
+            "displayName": "Accel y-axis",
+            "description": "mpu6886 accel y-axis.",
+            "schema": "double",
+            "unit": "metrePerSecondSquared"
+        },
+        {
+            "@type": ["Telemetry","Acceleration"],
+            "name": "AccelZ",
+            "displayName": "Accel z-axis",
+            "description": "mpu6886 accel z-axis.",
+            "schema": "double",
+            "unit": "metrePerSecondSquared"
+        },
+        {
+            "@type": ["Telemetry","Angle"],
+            "name": "GyroX",
+            "displayName": "Gyro x-axis",
+            "description": "mpu6886 Gyro x-axis.",
+            "schema": "double",
+            "unit": "degreeOfArc"
+
+        },
+        {
+            "@type": ["Telemetry","Angle"],
+            "name": "GyroY",
+            "displayName": "GyroY y-axis",
+            "description": "mpu6886 Gyro y-axis.",
+            "schema": "double",
+            "unit": "degreeOfArc"
+        },
+        {
+            "@type": ["Telemetry","Angle"],
+            "name": "GyroZ",
+            "displayName": "GyroZ z-axis",
+            "description": "mpu6886 Gyro z-axis.",
+            "schema": "double",
+            "unit": "degreeOfArc"
+        },{
+            "@type": "Property",
+            "name": "LightLeft",
+            "displayName": "RGB Light Left",
+            "description": "Light strips on both sides of the M5GO.",
+            "schema": "integer",
+            "writable": true
+        },{
+            "@type": "Property",
+            "name": "LightRight",
+            "displayName": "RGB Light Right",
+            "description": "Light strips on both sides of the M5GO",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": ["Telemetry","Temperature"],
+            "name": "Temperature",
+            "displayName": "Temperature",
+            "description": "Temperature measured by the ENV sensor.",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": ["Telemetry","Pressure"],
+            "name": "Pressure",
+            "displayName": "Atmospheric Pressure",
+            "description": "Atmospheric pressure measured by the ENV sensor.",
+            "schema": "double",
+            "unit": "pascal"
+        },
+        {
+            "@type": ["Telemetry","RelativeHumidity"],
+            "name": "Humidity",
+            "displayName": "Humidity",
+            "description": "Humidity measured by the ENV sensor.",
+            "schema": "double",
+            "unit": "percent"
+        }
+    ]
+}

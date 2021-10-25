@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:stmicroelectronics:steval_stwinkt1b:standard_fw;1",
+  "@type": "Interface",
+  "displayName": "STWIN SensorTile Wireless Industrial Node.",
+  "description": "STWIN SensorTile Wireless Industrial Node development kit and reference design for industrial IoT applications.",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceinfo",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "std_comp",
+      "schema": "dtmi:stmicroelectronics:steval_stwinkt1b:standard_if;1"
+    }
+  ]
+}

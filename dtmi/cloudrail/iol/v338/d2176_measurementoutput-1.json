@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2176_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ODS110L1.3/LTX-M12",
+  "description": "Optical distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

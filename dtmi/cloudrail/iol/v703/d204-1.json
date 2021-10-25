@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V703:D204;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SDNC 503 GAPL",
+  "description": "SDNC",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FlowRate_Lpmin",
+      "displayName": "FlowRate_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

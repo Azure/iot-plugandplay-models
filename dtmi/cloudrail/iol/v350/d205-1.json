@@ -1,0 +1,75 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D205;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "O200.RP-GW1J.72xV/H006",
+  "description": "Photoelectric sensor, retro-reflective, Cable/Open",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NotUsed",
+      "displayName": "NotUsed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4Counter",
+      "displayName": "SSC4Counter",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Quality",
+      "displayName": "Quality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Intensity",
+      "displayName": "SSC1Intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "DisableTransmitLED",
+              "displayName": "DisableTransmitLED",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

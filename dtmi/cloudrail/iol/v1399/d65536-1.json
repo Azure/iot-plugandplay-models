@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1399:D65536;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SpaceScan",
+  "description": "Telco SS 02 Light curtain",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SIO",
+      "displayName": "SIO",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOutput1",
+      "displayName": "DigitalOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOutput2",
+      "displayName": "DigitalOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOutput3",
+      "displayName": "DigitalOutput3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOutput4",
+      "displayName": "DigitalOutput4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalInput",
+      "displayName": "DigitalInput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogOutputValue",
+      "displayName": "AnalogOutputValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalAlarm",
+      "displayName": "SignalAlarm",
+      "schema": "integer"
+    }
+  ]
+}

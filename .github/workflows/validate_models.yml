@@ -9,20 +9,11 @@ jobs:
   validate-dtdl-models:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull DMR tools snapshot
-        uses: actions/checkout@v2
-        with:
-          repository: Azure/iot-plugandplay-models-tools
-          ref: 1.0.0-beta.1
-          path: dmr-tool-cache
-
-      - name: Build and install dmr-client CLI
+      - name: Install Microsoft.IoT.ModelsRepository.CommandLine (dmr-client) from NuGet
         run: |
-          dotnet pack dmr-tool-cache/clients/dotnet -v q -c Release
-          dotnet tool install -g dmr-client --add-source dmr-tool-cache/clients/dotnet/Azure.Iot.ModelsRepository.CLI/bin/Release --version 1.0.0-beta.1
-          rm -rf dmr-tool-cache
+          dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.5
 
-      - name: Checkout code
+      - name: Checkout repository models
         uses: actions/checkout@v2
 
       - id: files

@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D2101250;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NRN40-L3K-E2-IO-V1",
+  "description": "1x switching output PNP, IO-Link, 40 mm, non-flush 40x40x40mm, connector M12x1, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSCSwitchingSignal",
+      "displayName": "SSCSwitchingSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DSCStabilityAlarm",
+      "displayName": "DSCStabilityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

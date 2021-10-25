@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:innorobust;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Command",
+            "displayName": {
+                "en": "SSDControl"
+            },
+            "name": "SSDControlMethod",
+            "request": {
+                "name":"InnoRobust",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "name": "Cmd",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "robustSE",
+                                        "enumValue": "robustSE"
+                                    }       
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mode",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "string",
+                                "enumValues": [
+                                    {
+                                        "name": "SecureErase",
+                                        "enumValue": "23"
+                                    }
+                                ]
+                            }
+                        }
+                        
+                    ]
+                }
+            },
+            "response":{
+                "name": "InnoRobustRev",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                            {
+                                "name": "Status",
+                                "schema":"string"
+                            },
+                            {
+                                "name": "Timestamp",
+                                "schema":"string"
+                            }
+
+                        ]
+                }
+            }
+        }
+    ],
+    "displayName": {
+        "en": "InnoAGE - Robust"
+    }
+}

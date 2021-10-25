@@ -1,0 +1,28 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Magnet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Movement"
+    },
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enabled",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@type": ["Telemetry", "Angle"],
+        "unit": "degreeOfArc",
+        "displayName": {
+          "en": "Magnetic heading"
+        },
+        "name": "magnetometer",
+        "schema": "double"
+      }
+    ]
+  }

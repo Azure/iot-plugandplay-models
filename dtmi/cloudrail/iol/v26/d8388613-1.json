@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388613;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MPA-xxxTHTP0B01",
+  "description": "Magnetic Position Advanced sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionDecimalPlaceIn14mm",
+      "displayName": "PositionDecimalPlaceIn14mm",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionIntergerPlaceInMm",
+      "displayName": "PositionIntergerPlaceInMm",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AE1",
+              "displayName": "AE1",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Output20mA",
+                    "enumValue": "Output20mA"
+                  },
+                  {
+                    "name": "Output0mA",
+                    "enumValue": "Output0mA"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Timestamp",
+              "displayName": "Timestamp",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D449;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LMTx9x",
+  "description": "Electronic level sensor, 0...100 %, Length 11 mm, G 1/2''",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Level_pct",
+      "displayName": "Level_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUTOP",
+      "displayName": "OUTOP",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

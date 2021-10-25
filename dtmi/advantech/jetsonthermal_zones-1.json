@@ -1,0 +1,56 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Advantech:Jetsonthermal_zones;1",
+    "@type": "Interface",
+    "displayName": "Jetson Device Thermal Zones",
+    "contents": [
+      {
+        "@id": "dtmi:Advantech:Jetsonthermal_zones:CPUThermal;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "CPU Thermal"
+        },
+        "name": "CPUThermal",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Advantech:Jetsonthermal_zones:CPUUsage;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "CPU Usage"
+        },
+        "name": "CPUUsage",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Advantech:Jetsonthermal_zones:GPUThermal;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "GPU Thermal"
+        },
+        "name": "GPUThermal",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Advantech:Jetsonthermal_zones:GPUUsage;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "GPU Usage"
+        },
+        "name": "GPUUsage",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Advantech:Jetsonthermal_zones:RAMAvailable;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "RAM Available"
+        },
+        "name": "RAMAvailable",
+        "schema": "double"
+      }
+    ]
+}

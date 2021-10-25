@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D485;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SV4x04",
+  "description": "Flow sensor, 1.0...20.0 l/min, IO-Link, cULus (Limited Voltage / Current), CRN, G 1/2\"",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_m3ph",
+      "displayName": "Flow_m3ph",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NA",
+      "displayName": "NA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V815:D20;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IEG xx-0x0",
+  "description": "Smart servo-electric gripping module",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Idle",
+      "displayName": "Idle",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Released",
+      "displayName": "Released",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoPart",
+      "displayName": "NoPart",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Holding",
+      "displayName": "Holding",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Fault",
+      "displayName": "Fault",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureFault",
+      "displayName": "TemperatureFault",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureWarning",
+      "displayName": "TemperatureWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaintenanceRequired",
+      "displayName": "MaintenanceRequired",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MotionCommandActive",
+      "displayName": "MotionCommandActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartLost",
+      "displayName": "PartLost",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch0",
+      "displayName": "PositionSwitch0",
+      "schema": "dtmi:CloudRail:IOL:V815:D20:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch1",
+      "displayName": "PositionSwitch1",
+      "schema": "dtmi:CloudRail:IOL:V815:D20:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch2",
+      "displayName": "PositionSwitch2",
+      "schema": "dtmi:CloudRail:IOL:V815:D20:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch3",
+      "displayName": "PositionSwitch3",
+      "schema": "dtmi:CloudRail:IOL:V815:D20:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "GripIndex",
+              "displayName": "GripIndex",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Grip0",
+                    "enumValue": "Grip0"
+                  },
+                  {
+                    "name": "Grip1",
+                    "enumValue": "Grip1"
+                  },
+                  {
+                    "name": "Grip2",
+                    "enumValue": "Grip2"
+                  },
+                  {
+                    "name": "Grip3",
+                    "enumValue": "Grip3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Command",
+              "displayName": "Command",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Release",
+                    "enumValue": "Release"
+                  },
+                  {
+                    "name": "Grip",
+                    "enumValue": "Grip"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Enable",
+              "displayName": "Enable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Homing",
+              "displayName": "Homing",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V815:D20:PositionSwitch;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:ztsi;1",
+  "@type": "Interface",
+  "displayName": "ZTSI Agent Configuration",
+  "description": "Provides functionality to remotely configure the ZTSI Agent on device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DesiredServiceUrl",
+      "schema":"string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "DesiredEnabled",
+      "schema":"boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "ServiceUrl",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "Enabled",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "Unknown",
+            "enumValue": 0
+          },
+          {
+            "name": "Enabled",
+            "enumValue": 1
+          },
+          {
+            "name": "Disabled",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": false
+    }
+  ]
+}

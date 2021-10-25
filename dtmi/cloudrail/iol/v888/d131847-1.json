@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131847;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIP LD2-T103-03-S75",
+  "description": "Inductive Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogOutputValue",
+      "displayName": "AnalogOutputValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetOutofrange",
+      "displayName": "TargetOutofrange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetIsInMeasurementRange",
+            "enumValue": "TargetIsInMeasurementRange"
+          },
+          {
+            "name": "TargetIsOutOfMeasurementRange",
+            "enumValue": "TargetIsOutOfMeasurementRange"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetysmartplug;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Smart Plug",
+  "description": "Home Safety Smart Plug",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartplug;1",
+      "name": "smartplug1",
+      "displayName": "Smart Plug",
+      "description": "Smart Plug"
+    }
+  ]
+}

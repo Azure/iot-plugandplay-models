@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D463106_ColorValues;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QCM50-K5D40-Q8-8",
+  "description": "18 … 60 mm, 5xQ, Auto/PNP/NPN, M12, 8-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Energy",
+      "displayName": "Energy",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatioBlue",
+      "displayName": "RatioBlue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatioGreen",
+      "displayName": "RatioGreen",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatioRed",
+      "displayName": "RatioRed",
+      "schema": "long"
+    }
+  ]
+}

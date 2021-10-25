@@ -1,0 +1,151 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389136;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OLS20",
+  "description": "Optical Line Guidance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "LCPStatus",
+      "displayName": "LCPStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoLineFound",
+            "enumValue": "NoLineFound"
+          },
+          {
+            "name": "OneLineFound",
+            "enumValue": "OneLineFound"
+          },
+          {
+            "name": "TwoLinesFoundWeakLineOnTheLeft",
+            "enumValue": "TwoLinesFoundWeakLineOnTheLeft"
+          },
+          {
+            "name": "TwoLinesFoundWeakLineOnTheRight",
+            "enumValue": "TwoLinesFoundWeakLineOnTheRight"
+          },
+          {
+            "name": "ThreeLinesFound",
+            "enumValue": "ThreeLinesFound"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SensorNotOkSeeDeviceStatusISDU",
+            "enumValue": "SensorNotOkSeeDeviceStatusISDU"
+          },
+          {
+            "name": "SensorOk",
+            "enumValue": "SensorOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BarcodeFlipped",
+      "displayName": "BarcodeFlipped",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PositivePositionOnConnectorSide",
+            "enumValue": "PositivePositionOnConnectorSide"
+          },
+          {
+            "name": "NegativePositionOnConnectorSide",
+            "enumValue": "NegativePositionOnConnectorSide"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BarcodeValid",
+      "displayName": "BarcodeValid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ValidBarcodeRead",
+            "enumValue": "ValidBarcodeRead"
+          },
+          {
+            "name": "NoBarcodeRead",
+            "enumValue": "NoBarcodeRead"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BarcodeCenterPoint",
+      "displayName": "BarcodeCenterPoint",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Barcode",
+      "displayName": "Barcode",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LCP1",
+      "displayName": "LCP1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LCP2",
+      "displayName": "LCP2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LCP3",
+      "displayName": "LCP3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LineWidth1",
+      "displayName": "LineWidth1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LineWidth2",
+      "displayName": "LineWidth2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LineWidth3",
+      "displayName": "LineWidth3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityOfLines",
+      "displayName": "QualityOfLines",
+      "schema": "long"
+    }
+  ]
+}

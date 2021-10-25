@@ -1,0 +1,93 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V900:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PAM-190-P-IO",
+  "description": "W.E.ST.Elektronik Power amplifier",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SolenoidCurrent",
+      "displayName": "SolenoidCurrent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DERROR",
+      "displayName": "DERROR",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IOLHTEMP",
+      "displayName": "IOLHTEMP",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OPENSOL",
+      "displayName": "OPENSOL",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SHORTSOL",
+      "displayName": "SHORTSOL",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "APIHTEMP",
+      "displayName": "APIHTEMP",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "APILOWVWRN",
+      "displayName": "APILOWVWRN",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "APILOWVERR",
+      "displayName": "APILOWVERR",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ERROR",
+      "displayName": "ERROR",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "READY",
+      "displayName": "READY",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ENABLE",
+              "displayName": "ENABLE",
+              "schema": "integer"
+            },
+            {
+              "name": "Setpoint",
+              "displayName": "Setpoint",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

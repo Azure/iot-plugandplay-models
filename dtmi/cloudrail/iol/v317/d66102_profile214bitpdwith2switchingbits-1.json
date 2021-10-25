@@ -1,0 +1,104 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D66102_Profile214bitPDWith2SwitchingBits;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PS510-10V-0x-2UPN8-H1141",
+  "description": "Measuring range: -1...10 bar/-14,5...145 psi Admissable rel. press.: 70 bar/1015 psi\nOutputs: 1 switching output (on pin 4) and 1 switching output or analog output (on pin 2)\nHousing/pressure connection: 1/4 NPT female thread",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_MPa",
+      "displayName": "ProcessValue_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_kPa",
+      "displayName": "ProcessValue_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_bar",
+      "displayName": "ProcessValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_psi",
+      "displayName": "ProcessValue_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_kgpcm2",
+      "displayName": "ProcessValue_kgpcm2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_inH2O_4degC",
+      "displayName": "ProcessValue_inH2O_4degC",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_ftH2O_4degC",
+      "displayName": "ProcessValue_ftH2O_4degC",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_inHg_0degC",
+      "displayName": "ProcessValue_inHg_0degC",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_mmHg_0degC",
+      "displayName": "ProcessValue_mmHg_0degC",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "dtmi:CloudRail:IOL:V317:D66102_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "dtmi:CloudRail:IOL:V317:D66102_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V317:D66102_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Closed",
+          "enumValue": "Closed"
+        },
+        {
+          "name": "Open",
+          "enumValue": "Open"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D318;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "JXCL17/JXCL18",
+  "description": "Step Motor Controller",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OL",
+      "displayName": "OL",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "INIT",
+      "displayName": "INIT",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT0_5",
+      "displayName": "OUT0_5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ALARM",
+      "displayName": "ALARM",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ESTOP",
+      "displayName": "ESTOP",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WAREA",
+      "displayName": "WAREA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AREA",
+      "displayName": "AREA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "INP",
+      "displayName": "INP",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SETON",
+      "displayName": "SETON",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SVRE",
+      "displayName": "SVRE",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BUSY",
+      "displayName": "BUSY",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Speed",
+      "displayName": "Speed",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PushingF",
+      "displayName": "PushingF",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetPos",
+      "displayName": "TargetPos",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SAFESPEED",
+              "displayName": "SAFESPEED",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "IN0_5",
+              "displayName": "IN0_5",
+              "schema": "long"
+            },
+            {
+              "name": "FLGTH",
+              "displayName": "FLGTH",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "JOG",
+              "displayName": "JOG",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SETUP",
+              "displayName": "SETUP",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "RESET",
+              "displayName": "RESET",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DRIVE",
+              "displayName": "DRIVE",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SVON",
+              "displayName": "SVON",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "HOLD",
+              "displayName": "HOLD",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Run",
+              "displayName": "Run",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  },
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Move",
+              "displayName": "Move",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Undef",
+                    "enumValue": "Undef"
+                  },
+                  {
+                    "name": "Absolute",
+                    "enumValue": "Absolute"
+                  },
+                  {
+                    "name": "Relative",
+                    "enumValue": "Relative"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Speed",
+              "displayName": "Speed",
+              "schema": "long"
+            },
+            {
+              "name": "TargetPos",
+              "displayName": "TargetPos",
+              "schema": "long"
+            },
+            {
+              "name": "Accel",
+              "displayName": "Accel",
+              "schema": "long"
+            },
+            {
+              "name": "Decel",
+              "displayName": "Decel",
+              "schema": "long"
+            },
+            {
+              "name": "PushingF",
+              "displayName": "PushingF",
+              "schema": "long"
+            },
+            {
+              "name": "TriggerLv",
+              "displayName": "TriggerLv",
+              "schema": "long"
+            },
+            {
+              "name": "InPosition",
+              "displayName": "InPosition",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
