@@ -1,0 +1,193 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:azuresphere:co2monitor;2",
+  "@type": "Interface",
+  "displayName": "Azure Sphere C02 Monitor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Carbon dioxide ppm"
+      },
+      "name": "co2ppm",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "humidity",
+      "schema": "integer",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": {
+        "en": "Pressure"
+      },
+      "name": "pressure",
+      "schema": "integer",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": {
+        "en": "Message ID"
+      },
+      "name": "msgId",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "displayName": {
+        "en": "Peak user memory KiB"
+      },
+      "name": "peakUserMemoryKiB",
+      "schema": "integer",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "displayName": {
+        "en": "Total memory KiB"
+      },
+      "name": "totalMemoryKiB",
+      "schema": "integer",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "displayName": {
+        "en": "CO2 alert level (ppm)"
+      },
+      "name": "AlertLevel",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "displayName": {
+        "en": "Device altitude (meters)"
+      },
+      "name": "AltitudeInMeters",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property"
+      ],
+      "displayName": {
+        "en": "Carbon dioxide (ppm)"
+      },
+      "name": "CarbonDioxide",
+      "schema": "integer",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "Temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "Humidity",
+      "schema": "integer",
+      "unit": "percent",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
+      "displayName": {
+        "en": "Pressure"
+      },
+      "name": "Pressure",
+      "schema": "integer",
+      "unit": "millibar",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device start time"
+      },
+      "name": "StartupUtc",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Software version"
+      },
+      "name": "SoftwareVersion",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Deferred update status"
+      },
+      "name": "DeferredUpdateRequest",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Restart the device"
+      },
+      "name": "RestartDevice"
+    }
+  ]
+}
