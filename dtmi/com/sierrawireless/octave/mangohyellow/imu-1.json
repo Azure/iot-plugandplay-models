@@ -1,0 +1,97 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:accel;1",
+            "@type": "Property",
+            "displayName": {
+                "en": "Accel"
+            },
+            "name": "accel",
+            "schema": {
+                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:accel:schema;1",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:accel:schema:enable;1",
+                        "name": "enable",
+                        "schema": "boolean"
+                    },
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:accel:schema:period;1",
+                        "name": "period",
+                        "schema": "integer"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:gyro;1",
+            "@type": "Property",
+            "displayName": {
+                "en": "Gyro"
+            },
+            "name": "gyro",
+            "schema": {
+                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:gyro:schema;1",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:gyro:schema:enable;1",
+                        "name": "enable",
+                        "schema": "boolean"
+                    },
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:gyro:schema:period;1",
+                        "name": "period",
+                        "schema": "integer"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:temp;1",
+            "@type": "Property",
+            "displayName": {
+                "en": "Temp"
+            },
+            "name": "temp",
+            "schema": {
+                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:temp:schema;1",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:temp:schema:enable;1",
+                        "name": "enable",
+                        "schema": "boolean"
+                    },
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:imu:temp:schema:period;1",
+                        "name": "period",
+                        "schema": "integer"
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "displayName": {
+        "en": "IMU"
+    }
+}

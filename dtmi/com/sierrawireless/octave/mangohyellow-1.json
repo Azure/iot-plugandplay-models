@@ -1,0 +1,165 @@
+{
+    "@id": "dtmi:com:sierrawireless:octave:mangohyellow;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Octave Cloud Interface"
+            },
+            "name": "cloudInterface",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "MangOh Yellow LEDs"
+            },
+            "name": "leds",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:leds;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Octave Utils"
+            },
+            "name": "util",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:util;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Light Sensor"
+            },
+            "name": "light",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:light;1"
+        },
+        {
+            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Telemetry"
+            },
+            "name": "telemetry",
+            "schema": {
+                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema;1",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:light;1",
+                        "displayName": {
+                            "en": "Light Values"
+                        },
+                        "name": "light",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util;1",
+                        "displayName": {
+                            "en": "Utilities"
+                        },
+                        "name": "util",
+                        "schema": {
+                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema;1",
+                            "@type": "Object",
+                            "fields": [
+                                {
+                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular;1",
+                                    "displayName": {
+                                        "en": "Cellular"
+                                    },
+                                    "name": "cellular",
+                                    "schema": {
+                                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema;1",
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal;1",
+                                                "displayName": {
+                                                    "en": "Signal"
+                                                },
+                                                "name": "signal",
+                                                "schema": {
+                                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal:schema;1",
+                                                    "@type": "Object",
+                                                    "fields": [
+                                                        {
+                                                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal:schema:bars;1",
+                                                            "displayName": {
+                                                                "en": "Bars"
+                                                            },
+                                                            "name": "bars",
+                                                            "schema": "integer"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io;1",
+                        "displayName": {
+                            "en": "IO values"
+                        },
+                        "name": "io",
+                        "schema": {
+                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io:schema;1",
+                            "@type": "Object",
+                            "displayName": {
+                                "en": "Object"
+                            },
+                            "fields": [
+                                {
+                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io:schema:ADC0;1",
+                                    "displayName": {
+                                        "en": "ADC0 Value"
+                                    },
+                                    "name": "ADC0",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Device Location"
+            },
+            "name": "location",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:location;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "IMU"
+            },
+            "name": "imu",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:imu;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Buzzer"
+            },
+            "name": "buzzer",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:buzzer;1"
+        }
+    ],
+    "displayName": {
+        "en": "MangoH Yellow Telemetry"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
