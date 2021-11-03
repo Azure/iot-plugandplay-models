@@ -1,0 +1,182 @@
+{
+  "@id": "dtmi:renesas:RX:RX65NCloudKit;2",
+  "displayName": {
+    "en": "RX65N Cloud Kit"
+  },
+  "description": {
+    "en": "RX65N Cloud Kit model Rev.2.0"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Manufacturer;1",
+      "@type": "Property",
+      "name": "manufacturer",
+      "writable": false,
+      "comment": "Manufacturer Name 'Renesas'",
+      "displayName": {
+        "en": "Manufacturer Name"
+      },
+      "description": {
+        "en": "The name of manufacturer of the board. 'Renesas Electronics Corporation'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Model;1",
+      "@type": "Property",
+      "name": "model",
+      "writable": false,
+      "comment": "Model Name 'RTK5RX65N0S0x000BE'",
+      "displayName": {
+        "en": "Model Name"
+      },
+      "description": {
+        "en": "The model name of the board. 'RTK5RX65N0S0x000BE'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:ProcessorName;1",
+      "@type": "Property",
+      "name": "processorName",
+      "writable": false,
+      "comment": "MCU Name 'RX65N'",
+      "displayName": {
+        "en": "MCU Name"
+      },
+      "description": {
+        "en": "The name of the MCU 'RX65N'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Version;1",
+      "@type": "Property",
+      "name": "Version",
+      "writable": false,
+      "comment": "Sample Software Version",
+      "displayName": {
+        "en": "Sample Software Version"
+      },
+      "description": {
+        "en": "Sample Software Version"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:IPAddress;1",
+      "@type": "Property",
+      "name": "IPAddress",
+      "writable": false,
+      "comment": "IP Address",
+      "displayName": {
+        "en": "IP Address"
+      },
+      "description": {
+        "en": "IP Address"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:MACAddress;1",
+      "@type": "Property",
+      "name": "MACAddress",
+      "writable": false,
+      "comment": "MAC Address",
+      "displayName": {
+        "en": "MAC Address"
+      },
+      "description": {
+        "en": "MAC Address"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:Reboot;1",
+      "@type": "Command",
+      "name": "reboot",
+      "comment": "Reboot the board with the specified delay",
+      "displayName": {
+        "en": "Reboot the board"
+      },
+      "description": {
+        "en": "Command to reboot the board with the specified delay."
+      },
+      "request": {
+        "@type": "CommandPayload",
+        "name": "commandParameter",
+        "displayName": {
+          "en": "Parameter Name"
+        },
+        "description": {
+          "en": "Enter delay time"
+        },
+        "schema": "string"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "name": "commandResponse",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "LED",
+      "displayName": {
+        "en": "LED on RX65N Cloud Option Board"
+      },
+      "description": {
+        "en": "LED on RX65N Cloud Option Board."
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1"
+    },
+    {
+      "@type": "Component",
+      "name": "AmbientLight",
+      "displayName": {
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board"
+      },
+      "description": {
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board."
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Environmental",
+      "displayName": {
+        "en": "Environmental Sensor"
+      },
+      "description": {
+        "en": "Pressure, humidity, temperature and gas from BME680 Environmental Sensor"
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:environmental_sensor;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Inertial",
+      "displayName": {
+        "en": "Inertial Sensor"
+      },
+      "description": {
+        "en": "Acceleration and gyroscope from BMI160"
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Switch",
+      "displayName": {
+        "en": "User Switch"
+      },
+      "description": {
+        "en": "User Switch on RX65N Option Board"
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:switch;1"
+    }
+  ]
+}
