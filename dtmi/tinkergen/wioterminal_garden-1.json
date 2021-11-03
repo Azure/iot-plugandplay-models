@@ -13,8 +13,7 @@
           "en": "HUMI"
         },
         "name": "Humi",
-        "schema": "double",
-        "unit": "gForce"
+        "schema": "double"
       },
       {
         "@type": "Telemetry",
@@ -25,8 +24,7 @@
           "en": "TEMP"
         },
         "name": "Temp",
-        "schema": "double",
-        "unit": "gForce"
+        "schema": "double"
       },
       {
         "@type": "Telemetry",
@@ -37,8 +35,7 @@
           "en": "SOIL"
         },
         "name": "Soil",
-        "schema": "double",
-        "unit": "gForce"
+        "schema": "double"
       },
       {
         "@type": "Telemetry",
@@ -60,8 +57,7 @@
           "en": "Ultraviolet ray"
         },
         "name": "UV",
-        "schema": "double",
-        "unit": "gForce"
+        "schema": "double"
       }
     ]
 }
