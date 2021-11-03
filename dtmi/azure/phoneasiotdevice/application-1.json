@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azure:PhoneAsIoTDevice:Application;1",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Application;2",
     "@type": "Interface",
     "displayName": {
         "en": "IoT Plug and Play Phone as IoT Device"

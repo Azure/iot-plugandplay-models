@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:azure:DeviceManagement:DeviceInformation;2",
+    "@id": "dtmi:azure:DeviceManagement:deviceInformation;1",
     "@type": "Interface",
     "displayName": "Device Information",
     "contents": [
