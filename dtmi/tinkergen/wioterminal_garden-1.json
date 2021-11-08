@@ -60,7 +60,6 @@
         "schema": "double"
       },
       {
-        "@id": "dtmi:tinkergen:wioterminal_garden:watering;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
