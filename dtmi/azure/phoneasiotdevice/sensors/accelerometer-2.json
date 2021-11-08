@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
+  ],
+  "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer;2",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Movement"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Enabled"
+      },
+      "name": "enabled",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AccelerationVector"
+      ],
+      "displayName": {
+        "en": "Acceleration"
+      },
+      "name": "accelerometer",
+      "schema": "vector"
+    }
+  ]
+}
