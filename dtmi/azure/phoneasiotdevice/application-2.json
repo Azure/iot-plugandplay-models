@@ -1,0 +1,195 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Application;2",
+    "@type": "Interface",
+    "displayName": {
+        "en": "IoT Plug and Play Phone as IoT Device"
+    },
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "accelerometer",
+            "displayName": {
+                "en": "Accelerometer"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Accelerometer;2"
+        },
+        {
+            "@type": "Component",
+            "name": "gyroscope",
+            "displayName": {
+                "en": "Accelerometer"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Gyroscope;1"
+        },
+        {
+            "@type": "Component",
+            "name": "battery",
+            "displayName": {
+                "en": "Battery level"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Battery;1"
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "displayName": {
+                "en": "Geolocation"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location;1"
+        },
+        {
+            "@type": "Component",
+            "name": "magnet",
+            "displayName": {
+                "en": "Magnetometer"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Magnet;1"
+        },
+        {
+            "@type": "Component",
+            "name": "pressure",
+            "displayName": {
+                "en": "Barometer"
+            },
+            "schema": "dtmi:azure:PhoneAsIoTDevice:Sensors:Pressure;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Device information"
+            },
+            "name": "device_info",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "LightOn"
+            },
+            "name": "lightOn",
+            "request": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Parameters"
+                },
+                "name": "parameters",
+                "schema": {
+                    "@type": "Object",
+                    "displayName": {
+                        "en": "Object"
+                    },
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Duration"
+                            },
+                            "name": "duration",
+                            "schema": "integer"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Pulses interval"
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Pulses"
+                            },
+                            "name": "pulses",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Command",
+            "commandType": "asynchronous",
+            "displayName": {
+                "en": "Clear Connectivity"
+            },
+            "name": "clearConnectivity"
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Telemetry Interval (seconds)"
+            },
+            "name": "telemetryInterval",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "five",
+                        "displayName": {
+                            "en": "5 Seconds (Default)"
+                        },
+                        "enumValue": 5000
+                    },
+                    {
+                        "name": "ten",
+                        "displayName": {
+                            "en": "10 Seconds"
+                        },
+                        "enumValue": 10000
+                    },
+                    {
+                        "name": "twenty",
+                        "displayName": {
+                            "en": "20 Seconds"
+                        },
+                        "enumValue": 20000
+                    },
+                    {
+                        "name": "thirty",
+                        "displayName": {
+                            "en": "30 Seconds"
+                        },
+                        "enumValue": 30000
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Application Theme"
+            },
+            "name": "theme",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "light",
+                        "displayName": {
+                            "en": "Light"
+                        },
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "dark",
+                        "displayName": {
+                            "en": "Dark"
+                        },
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "system",
+                        "displayName": {
+                            "en": "System-default"
+                        },
+                        "enumValue": 0
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ]
+}
