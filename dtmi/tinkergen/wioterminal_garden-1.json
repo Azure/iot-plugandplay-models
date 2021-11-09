@@ -5,6 +5,19 @@
     "displayName": "Wioterminal Garden",
     "contents": [
       {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+            "en": "watering"
+        },
+        "name": "watering",
+        "request": {
+            "@type": "CommandPayload",
+            "name": "IO",
+            "schema": "boolean"
+        }
+      },
+      {
         "@type": "Telemetry",
         "description": {
           "en": "Humidity"
@@ -58,19 +71,6 @@
         },
         "name": "UV",
         "schema": "double"
-      },
-      {
-        "@type": "Command",
-        "commandType": "synchronous",
-        "displayName": {
-            "en": "watering"
-        },
-        "name": "watering",
-        "request": {
-            "@type": "CommandPayload",
-            "name": "IO",
-            "schema": "boolean"
-        }
       }
     ]
 }
