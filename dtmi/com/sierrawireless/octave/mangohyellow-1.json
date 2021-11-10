@@ -11,6 +11,150 @@
             "schema": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface;1"
         },
         {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Telemetry"
+            },
+            "name": "telemetry",
+            "schema": {
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "displayName": {
+                            "en": "Light Values"
+                        },
+                        "name": "light",
+                        "schema": "double"
+                    },
+                    {
+                        "displayName": {
+                            "en": "IMU"
+                        },
+                        "name": "imu",
+                        "schema": {
+                            "@type": "Object",
+                            "fields": [
+                                {
+                                    "displayName": {
+                                        "en": "Accelerometer"
+                                    },
+                                    "name": "accel",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelX"
+                                                },
+                                                "name": "x",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelY"
+                                                },
+                                                "name": "y",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelZ"
+                                                },
+                                                "name": "z",
+                                                "schema": "double"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "displayName": {
+                                        "en": "Gyroscope"
+                                    },
+                                    "name": "gyro",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroX"
+                                                },
+                                                "name": "x",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroY"
+                                                },
+                                                "name": "y",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroZ"
+                                                },
+                                                "name": "z",
+                                                "schema": "double"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "displayName": {
+                                        "en": "Temperature"
+                                    },
+                                    "name": "temp",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "displayName": {
+                            "en": "Utilities"
+                        },
+                        "name": "util",
+                        "schema": {
+                            "@type": "Object",
+                            "fields": [
+                                {
+                                    "displayName": {
+                                        "en": "Cellular"
+                                    },
+                                    "name": "cellular",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "Signal"
+                                                },
+                                                "name": "signal",
+                                                "schema": {
+                                                    "@type": "Object",
+                                                    "fields": [
+                                                        {
+                                                            "displayName": {
+                                                                "en": "Bars"
+                                                            },
+                                                            "name": "bars",
+                                                            "schema": "integer"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "@type": "Component",
             "displayName": {
                 "en": "MangOh Yellow LEDs"
@@ -33,102 +177,6 @@
             },
             "name": "light",
             "schema": "dtmi:com:sierrawireless:octave:mangohyellow:light;1"
-        },
-        {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry;1",
-            "@type": "Telemetry",
-            "displayName": {
-                "en": "Telemetry"
-            },
-            "name": "telemetry",
-            "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema;1",
-                "@type": "Object",
-                "displayName": {
-                    "en": "Object"
-                },
-                "fields": [
-                    {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:light;1",
-                        "displayName": {
-                            "en": "Light Values"
-                        },
-                        "name": "light",
-                        "schema": "double"
-                    },
-                    {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util;1",
-                        "displayName": {
-                            "en": "Utilities"
-                        },
-                        "name": "util",
-                        "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema;1",
-                            "@type": "Object",
-                            "fields": [
-                                {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular;1",
-                                    "displayName": {
-                                        "en": "Cellular"
-                                    },
-                                    "name": "cellular",
-                                    "schema": {
-                                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema;1",
-                                        "@type": "Object",
-                                        "fields": [
-                                            {
-                                                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal;1",
-                                                "displayName": {
-                                                    "en": "Signal"
-                                                },
-                                                "name": "signal",
-                                                "schema": {
-                                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal:schema;1",
-                                                    "@type": "Object",
-                                                    "fields": [
-                                                        {
-                                                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:util:schema:cellular:schema:signal:schema:bars;1",
-                                                            "displayName": {
-                                                                "en": "Bars"
-                                                            },
-                                                            "name": "bars",
-                                                            "schema": "integer"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io;1",
-                        "displayName": {
-                            "en": "IO values"
-                        },
-                        "name": "io",
-                        "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io:schema;1",
-                            "@type": "Object",
-                            "displayName": {
-                                "en": "Object"
-                            },
-                            "fields": [
-                                {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:telemetry:schema:io:schema:ADC0;1",
-                                    "displayName": {
-                                        "en": "ADC0 Value"
-                                    },
-                                    "name": "ADC0",
-                                    "schema": "double"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
         },
         {
             "@type": "Component",
