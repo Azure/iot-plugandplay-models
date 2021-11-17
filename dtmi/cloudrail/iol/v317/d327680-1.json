@@ -1,0 +1,117 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D327680;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LUS211-40-xx-LI2UPN8-H1141",
+  "description": "Ultrasonic level sensor, 40cm range, G3/4 process connection, 1 switching output (on pin 4) and 1 switching output or analog output (on pin 2)",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_m",
+      "displayName": "ProcessData_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_mm",
+      "displayName": "ProcessData_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_ft",
+      "displayName": "ProcessData_ft",
+      "schema": "double",
+      "unit": "foot"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessData_in",
+      "displayName": "ProcessData_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_m3",
+      "displayName": "ProcessData_m3",
+      "schema": "double",
+      "unit": "cubicMetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_L",
+      "displayName": "ProcessData_L",
+      "schema": "double",
+      "unit": "litre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_in3",
+      "displayName": "ProcessData_in3",
+      "schema": "double",
+      "unit": "cubicInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_ft3",
+      "displayName": "ProcessData_ft3",
+      "schema": "double",
+      "unit": "cubicFoot"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Volume"
+      ],
+      "name": "ProcessData_gallon",
+      "displayName": "ProcessData_gallon",
+      "schema": "double",
+      "unit": "gallon"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData_pct",
+      "displayName": "ProcessData_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData1",
+      "displayName": "ProcessData1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData2",
+      "displayName": "ProcessData2",
+      "schema": "integer"
+    }
+  ]
+}

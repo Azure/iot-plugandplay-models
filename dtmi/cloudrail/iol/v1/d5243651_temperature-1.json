@@ -1,0 +1,121 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D5243651_Temperature;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ENA36TL-SxxSA5-1516-IO-xBD01",
+  "description": "Absolute rotary encoder, housing size 36, solid diameter 6 mm, flange servo, IP65, multi-turn resolution 15 bit, single-turn resolution 16 bit, axial connection, M12 5-pole ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSC1SwitchingSignal",
+      "displayName": "SSC1SwitchingSignal",
+      "schema": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2SwitchingSignal",
+      "displayName": "SSC2SwitchingSignal",
+      "schema": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:SSCSwitchingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusCountDirection",
+      "displayName": "StatusCountDirection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Decrease",
+            "enumValue": "Decrease"
+          },
+          {
+            "name": "Increase",
+            "enumValue": "Increase"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusMDC2AuxiliaryMeasurement",
+      "displayName": "StatusMDC2AuxiliaryMeasurement",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Deactivated",
+            "enumValue": "Deactivated"
+          },
+          {
+            "name": "Temperature",
+            "enumValue": "Temperature"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DSC11TemperatureWarning",
+      "displayName": "DSC11TemperatureWarning",
+      "schema": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:DSCTemperatureWarning;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DSC12TemperatureWarning",
+      "displayName": "DSC12TemperatureWarning",
+      "schema": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:DSCTemperatureWarning;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDC1STResolution",
+      "displayName": "MDC1STResolution",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDC1Position",
+      "displayName": "MDC1Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDC2Temperature",
+      "displayName": "MDC2Temperature",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:SSCSwitchingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V1:D5243651_Temperature:DSCTemperatureWarning;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        }
+      ]
+    }
+  ]
+}

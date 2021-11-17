@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:Terasic:FCC:DE10_Nano;1",
+  "@type": "Interface",
+  "displayName": {
+    "en" : "FPGA Cloud Connectivity Kit"
+  },
+  "description" : {
+    "en" : "The FPGA Cloud Connectivity Kit combines the rich versatility of an Intel® Cyclone® V SoC FPGA with the benefits of cloud connectivity."
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+        "@type": "Component",
+        "name": "gSensor",
+        "schema": "dtmi:Terasic:FCC:DE10_Nano_Sensor;1",
+        "comment": "DE10Nano Basic Sensor",
+        "displayName": {
+          "en" : "DE10-Nano Onboard Sensor"
+        },
+        "description" : {
+          "en" : "Sensors on DE10-Nano"
+        }
+    },
+    {
+        "@type": "Component",
+        "name": "rfsSensors",
+        "schema": "dtmi:Terasic:FCC:RFS;1",
+        "comment": "Extended Card in FPGA Cloud Connectivity Kit",
+        "displayName": {
+          "en" : "RFS Daughter Card"
+        },
+        "description" : {
+          "en" : "RFS Daughter Card"
+        }
+    },
+    {
+        "@type": "Component",
+        "name": "thresholdProperty",
+        "schema": "dtmi:Terasic:FCC:DE10_Nano_Threshold;1",
+        "comment": "Sensor Thresholds (Only in Sensor Aggregation Design)",
+        "displayName": {
+          "en" : "Sensor Threshold Properties"
+        },
+        "description" : {
+          "en" : "Sensor Threshold Properties for Sensor Aggregation Design"
+        }
+    }
+  ]
+}

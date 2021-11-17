@@ -1,0 +1,84 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D118_TriggeredMarginProximityGainContrastTemp;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "42EF-R2JBBT-xx",
+  "description": "Sensor,Photoelectric, 42EF, Transmitted Beam Receiver, Visible Red LED, Light Operate, PNP and NPN Output, No Adjustments, 20 m Sensing Range, 4-pin M12 QD on Pigtail",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureInternal",
+      "displayName": "TemperatureInternal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contrast",
+      "displayName": "Contrast",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Gain",
+      "displayName": "Gain",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProximityAlarm",
+      "displayName": "ProximityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLowAlarm",
+      "displayName": "MarginLowAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered",
+      "displayName": "Triggered",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

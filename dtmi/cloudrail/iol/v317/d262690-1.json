@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D262690;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RU20L-Q12S-UP8X-V1141",
+  "description": "ultrasonic sensor\r\nmaximum sensing range 20 cm\r\nQ12 housing \r\n1 switching output",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "ProcessValue_mm",
+      "displayName": "ProcessValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1",
+      "displayName": "SwitchStateOutput1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Closed",
+            "enumValue": "Closed"
+          },
+          {
+            "name": "Open",
+            "enumValue": "Open"
+          }
+        ]
+      }
+    }
+  ]
+}

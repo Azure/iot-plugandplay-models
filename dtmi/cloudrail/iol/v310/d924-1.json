@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D924;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KQ100x",
+  "description": "Capacitive level sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDV1_pct",
+      "displayName": "PDV1_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT3",
+      "displayName": "OUT3",
+      "schema": "dtmi:CloudRail:IOL:V310:D924:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D924:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D924:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D924:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

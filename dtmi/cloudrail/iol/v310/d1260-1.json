@@ -1,0 +1,113 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1260;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OPD100",
+  "description": "Profile Detector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S3",
+      "displayName": "S3",
+      "schema": "dtmi:CloudRail:IOL:V310:D1260:S;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S2",
+      "displayName": "S2",
+      "schema": "dtmi:CloudRail:IOL:V310:D1260:S;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S1",
+      "displayName": "S1",
+      "schema": "dtmi:CloudRail:IOL:V310:D1260:S;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TriggerSignal",
+              "displayName": "TriggerSignal",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D1260:S;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

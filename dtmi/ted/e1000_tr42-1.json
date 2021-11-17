@@ -1,0 +1,21 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:E1000_TR42;1",
+  "@type": "Interface",
+  "displayName": "E1000_TR42",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "TR42",
+      "displayName": "TR42",
+      "schema": "dtmi:TED:TR42;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V832:D1121537;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PX 29 AF x/L",
+  "description": "Electronic temperature sensor, 250...2000 °C, integrated laser spot light",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_F",
+      "displayName": "Temperature_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pilotlight",
+      "displayName": "Pilotlight",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ATDTact",
+      "displayName": "ATDTact",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Simulation",
+      "displayName": "Simulation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V832:D1121537:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V832:D1121537:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V832:D1121537:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

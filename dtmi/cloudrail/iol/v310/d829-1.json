@@ -1,0 +1,102 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D829;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MQ200x",
+  "description": "Steel only detection sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MVAL",
+      "displayName": "MVAL",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V310:D829:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V310:D829:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S1CT",
+      "displayName": "S1CT",
+      "schema": "dtmi:CloudRail:IOL:V310:D829:SCT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S2CT",
+      "displayName": "S2CT",
+      "schema": "dtmi:CloudRail:IOL:V310:D829:SCT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D829:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D829:SCT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "NotReached",
+          "enumValue": "NotReached"
+        },
+        {
+          "name": "Reached",
+          "enumValue": "Reached"
+        }
+      ]
+    }
+  ]
+}

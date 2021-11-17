@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D110_ColorValues;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-CM-4-PNSD-L8M",
+  "description": "20 … 150 mm, 5xQ, Auto/PNP/NPN, M12, 8-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "RatioRed",
+      "displayName": "RatioRed",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatioGreen",
+      "displayName": "RatioGreen",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RatioBlue",
+      "displayName": "RatioBlue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Energy",
+      "displayName": "Energy",
+      "schema": "long"
+    }
+  ]
+}

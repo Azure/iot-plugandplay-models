@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D609;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OM30-x0100.HV.YIN",
+  "description": "Optical distance sensor, Connector M8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AlarmOutput",
+      "displayName": "AlarmOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QualityBit",
+      "displayName": "QualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1Distance",
+      "displayName": "SSC1Distance",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "FindMe",
+              "displayName": "FindMe",
+              "schema": "integer"
+            },
+            {
+              "name": "LaserONOFF",
+              "displayName": "LaserONOFF",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

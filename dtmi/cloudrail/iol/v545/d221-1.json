@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D221;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "US18 M800 G3-B4",
+  "description": "80mm - 800mm, Push-pull, IO-Link, M18",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateBDC1Q1",
+      "displayName": "SwitchStateBDC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

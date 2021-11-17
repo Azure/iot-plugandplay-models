@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D513;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LV463.XR7/L4-xx0-M12",
+  "description": "Fiber Optic Amplifier",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1OutputStateQ1",
+      "displayName": "BDC1OutputStateQ1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessData",
+      "displayName": "ProcessData",
+      "schema": "long"
+    }
+  ]
+}

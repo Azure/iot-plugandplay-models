@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D2560513;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "I18H013",
+  "description": "Inductive sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ObjectPresence",
+      "displayName": "ObjectPresence",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ObjectIsPresent",
+            "enumValue": "ObjectIsPresent"
+          },
+          {
+            "name": "NoObjectPresent",
+            "enumValue": "NoObjectPresent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorIndication",
+      "displayName": "ErrorIndication",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    }
+  ]
+}

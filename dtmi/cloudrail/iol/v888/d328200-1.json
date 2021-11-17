@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328200;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-725-002-E023",
+  "description": "Analog Converter with 1 x M12 port, output only (configurable for voltage, current), stainless steel housing",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AnalogValue",
+              "displayName": "AnalogValue",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

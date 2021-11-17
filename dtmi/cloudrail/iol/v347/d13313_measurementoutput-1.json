@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D13313_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLAM-800-PNSUIDx-xxx8M",
+  "description": "200...1000mm, QA, Q1, Q2/IN, Auto/PNP/NPN, metal plug M12, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementDistance",
+      "displayName": "MeasurementDistance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementQuality",
+      "displayName": "MeasurementQuality",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1138:D141857_F;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ILM-4_I63",
+  "description": "Inductive Conductivity Meter with IO-Link, 2x 4...20mA analog output and 1x digital input",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Conductivity1",
+      "displayName": "Conductivity1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Concentration",
+      "displayName": "Concentration",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Conductivity2",
+      "displayName": "Conductivity2",
+      "schema": "double"
+    }
+  ]
+}

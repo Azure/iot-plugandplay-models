@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D1972481;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IO30012F",
+  "description": "Inductive proximity switches, all-steel-housing, chip immune",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection80Sn",
+      "displayName": "Detection80Sn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

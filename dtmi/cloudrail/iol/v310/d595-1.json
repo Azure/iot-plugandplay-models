@@ -1,0 +1,107 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D595;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MVQ101",
+  "description": "Valve sensor, -180.0...179.9 °, SVS Basic IO-Link",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "name": "Angle_deg",
+      "displayName": "Angle_deg",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Seat",
+      "displayName": "Seat",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Close",
+      "displayName": "Close",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Open",
+      "displayName": "Open",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    }
+  ]
+}

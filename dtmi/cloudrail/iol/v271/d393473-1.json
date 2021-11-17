@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V271:D393473;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P8F-H14L20A",
+  "description": "Flow sensor, 1.0...20.0 l/min, IO-Link, cULus (Limited Voltage / Current), CRN, G 1/2\"",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Flow_Lpmin",
+      "displayName": "Flow_Lpmin",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Flow_GPM",
+      "displayName": "Flow_GPM",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V271:D393473:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V271:D393473:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V271:D393473:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

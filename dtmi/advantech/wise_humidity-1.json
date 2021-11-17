@@ -1,0 +1,104 @@
+{
+  "@id": "dtmi:Advantech:WISE_Humidity;1",
+  "@type": "Interface",
+  "displayName": "Humidity",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Humidity Sensor Channel"
+      },
+      "description": {
+        "en": "0 - Disabled, 1 - Enabled"
+      },
+      "name": "En",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Humidity Sensor Range Code"
+      },
+      "description": {
+        "en": "4128 - percent"
+      },
+      "name": "Rng",
+      "schema": "integer",
+      "writable": true   
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Humidity Sensor Measurement Interval"
+      },
+      "description": {
+        "en": "range 100 ~ 8640000, unit: 10 ms"
+      },
+      "name": "PItv",
+      "schema": "integer",
+      "writable": true 
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Clear Humidity Sensor Maximum Value"
+      },
+      "name": "ClrH",
+      "response": {
+        "name": "ClrH_Result",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Clear Humidity Sensor Minimum Value"
+      },
+      "name": "ClrL",
+      "response": {
+        "name": "ClrL_Result",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "EgF",
+      "schema": "float",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Maximum Humidity"
+      },
+      "name": "HEgF",
+      "schema": "float",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Minimum Humidity"
+      },
+      "name": "LEgF",
+      "schema": "float",
+      "unit": "percent"
+    }
+  ]
+}

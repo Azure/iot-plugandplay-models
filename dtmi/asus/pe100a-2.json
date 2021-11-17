@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ASUS:PE100A;2",
+    "@type": "Interface",
+    "displayName": "ASUS-PE100A",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}

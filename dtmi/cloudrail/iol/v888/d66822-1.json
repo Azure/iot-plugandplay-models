@@ -1,0 +1,124 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D66822;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BAE PS-XA-1S-24-200-104",
+  "description": "BAE - Power Supply, single phase, 115/230VAC, 24VDC/20A, IP20",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OverLoad",
+      "displayName": "OverLoad",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverVoltage",
+      "displayName": "OverVoltage",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverTemperature",
+      "displayName": "OverTemperature",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputDrop",
+      "displayName": "OutputDrop",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SuspiciousConnection",
+      "displayName": "SuspiciousConnection",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "OutputCurrent_A",
+      "displayName": "OutputCurrent_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "OutputVoltage_V",
+      "displayName": "OutputVoltage_V",
+      "schema": "double",
+      "unit": "volt"
+    }
+  ]
+}

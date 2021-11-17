@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389080_PositionVelocity;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AHM36A-xxQx014X12",
+  "description": "Absolute Encoder Multiturn Advanced",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    }
+  ]
+}

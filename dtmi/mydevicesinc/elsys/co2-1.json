@@ -1,0 +1,67 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mydevicesinc:elsys:co2;1",
+    "@type": "Interface",
+    "displayName": "Elsys CO2",
+    "description": "Indoor CO2 Sensor",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "CO2",
+        "description": "CO2",
+        "name": "channel_14",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Battery",
+        "description": "Battery",
+        "name": "channel_5",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "RSSI",
+        "description": "RSSI",
+        "name": "channel_100",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry"
+        ],
+        "displayName": "Luminosity",
+        "description": "Luminosity",
+        "name": "channel_8",
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": "Temperature",
+        "description": "Temperature",
+        "name": "channel_3",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "RelativeHumidity"
+        ],
+        "displayName": "Humidity",
+        "description": "Humidity",
+        "name": "channel_4",
+        "schema": "double",
+        "unit": "percent"
+      }
+    ]
+  }

@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2132;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LCS-1MxxP-FxxxNP-M12-LT",
+  "description": "teachable capacitive sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OutputOn",
+            "enumValue": "OutputOn"
+          },
+          {
+            "name": "OutputOff",
+            "enumValue": "OutputOff"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureWarning",
+      "displayName": "TemperatureWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TemperatureLimitExceeded",
+            "enumValue": "TemperatureLimitExceeded"
+          },
+          {
+            "name": "TemperatureOk",
+            "enumValue": "TemperatureOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InternalVoltageWarning",
+      "displayName": "InternalVoltageWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "InternalVoltageLimitExceeded",
+            "enumValue": "InternalVoltageLimitExceeded"
+          },
+          {
+            "name": "InternalVoltageOk",
+            "enumValue": "InternalVoltageOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensingSignal",
+      "displayName": "SensingSignal",
+      "schema": "long"
+    }
+  ]
+}

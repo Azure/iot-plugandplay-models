@@ -1,0 +1,80 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D229381;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ET 200AL DQ 8x24VDC/2A 8xM12",
+  "description": "IO-Link Digital output module DQ 8x24VDC/2A, 8xM12",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OutputDataChannel0ConnectorX10Pin4",
+              "displayName": "OutputDataChannel0ConnectorX10Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel1ConnectorX11Pin4",
+              "displayName": "OutputDataChannel1ConnectorX11Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel2ConnectorX12Pin4",
+              "displayName": "OutputDataChannel2ConnectorX12Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel3ConnectorX13Pin4",
+              "displayName": "OutputDataChannel3ConnectorX13Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel4ConnectorX14Pin4",
+              "displayName": "OutputDataChannel4ConnectorX14Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel5ConnectorX15Pin4",
+              "displayName": "OutputDataChannel5ConnectorX15Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel6ConnectorX16Pin4",
+              "displayName": "OutputDataChannel6ConnectorX16Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            },
+            {
+              "name": "OutputDataChannel7ConnectorX17Pin4",
+              "displayName": "OutputDataChannel7ConnectorX17Pin4",
+              "schema": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V42:D229381:OutputDataChannelConnectorX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Null",
+          "enumValue": "0"
+        },
+        {
+          "name": "One",
+          "enumValue": "1"
+        }
+      ]
+    }
+  ]
+}

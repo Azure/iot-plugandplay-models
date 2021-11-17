@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1119749;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OBT650-R200-E5-IO-V1",
+  "description": "R200, 650 mm, active high (light-on), configurable, PNP, M12 plug, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSCSwitchingSignal",
+      "displayName": "SSCSwitchingSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CSC1TransducerDisable",
+              "displayName": "CSC1TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CSC2EvaluationHold",
+              "displayName": "CSC2EvaluationHold",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Active",
+                    "enumValue": "Active"
+                  },
+                  {
+                    "name": "Inactive",
+                    "enumValue": "Inactive"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

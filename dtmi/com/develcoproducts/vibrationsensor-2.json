@@ -1,0 +1,45 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:vibrationsensor;2",
+  "@type": "Interface",
+  "displayName": "Vibration Sensor",
+  "description": "Vibration Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "vibration",
+      "displayName" : "Vibration",
+      "description" : "Vibration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tamper",
+      "displayName" : "Tamper",
+      "description" : "Tamper",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "voltage",
+      "displayName" : "Voltage",
+      "description" : "Battery voltage",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "low",
+      "displayName" : "Battery low",
+      "description" : "Battery low",
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "temperature",
+      "displayName" : "Temperature",
+      "description" : "Temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

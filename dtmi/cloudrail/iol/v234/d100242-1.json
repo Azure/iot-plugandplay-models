@@ -1,0 +1,114 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100242;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SCPSi_V2",
+  "description": "CompactEjector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalH2PartPresent",
+      "displayName": "SignalH2PartPresent",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalH1AutomaticAirSavingFunction",
+      "displayName": "SignalH1AutomaticAirSavingFunction",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CMAutosetAcknowledged",
+      "displayName": "CMAutosetAcknowledged",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Unknown",
+            "enumValue": "Unknown"
+          },
+          {
+            "name": "GreenDeviceIsWorkingOptimally",
+            "enumValue": "GreenDeviceIsWorkingOptimally"
+          },
+          {
+            "name": "YellowDeviceIsWorkingButThereAreWarnings",
+            "enumValue": "YellowDeviceIsWorkingButThereAreWarnings"
+          },
+          {
+            "name": "RedDeviceIsNotWorkingProperlyThereAreErrors",
+            "enumValue": "RedDeviceIsNotWorkingProperlyThereAreErrors"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Vacuum",
+              "displayName": "Vacuum",
+              "schema": "integer"
+            },
+            {
+              "name": "BlowOff",
+              "displayName": "BlowOff",
+              "schema": "integer"
+            },
+            {
+              "name": "VacuumWithForcedControl",
+              "displayName": "VacuumWithForcedControl",
+              "schema": "integer"
+            },
+            {
+              "name": "CMAutoset",
+              "displayName": "CMAutoset",
+              "schema": "integer"
+            },
+            {
+              "name": "ProductionProfile",
+              "displayName": "ProductionProfile",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ProductionProfileP0",
+                    "enumValue": "ProductionProfileP0"
+                  },
+                  {
+                    "name": "ProductionProfileP1",
+                    "enumValue": "ProductionProfileP1"
+                  },
+                  {
+                    "name": "ProductionProfileP2",
+                    "enumValue": "ProductionProfileP2"
+                  },
+                  {
+                    "name": "ProductionProfileP3",
+                    "enumValue": "ProductionProfileP3"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

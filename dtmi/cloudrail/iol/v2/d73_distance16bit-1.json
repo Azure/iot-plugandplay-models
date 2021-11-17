@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D73_Distance16bit;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "45LMS-D8LGC1-D4",
+  "description": "Measurement Sensor - 45LMS",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

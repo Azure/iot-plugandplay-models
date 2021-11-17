@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1157:D1086_PSI;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OPTIBAR PSM 1010",
+  "description": "Pressure Switch 0..0.5bar SIO PNP/NPN/Analog",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1State",
+      "displayName": "Switch1State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2State",
+      "displayName": "Switch2State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    }
+  ]
+}

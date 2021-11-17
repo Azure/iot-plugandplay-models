@@ -1,0 +1,148 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D2689799;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "P1KH007",
+  "description": "Reflex Sensor with Background Suppression",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "A1Output",
+      "displayName": "A1Output",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Contamination",
+      "displayName": "Contamination",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoSignal",
+      "displayName": "NoSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LaserError",
+      "displayName": "LaserError",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overtemperature",
+      "displayName": "Overtemperature",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MemoryBusy",
+      "displayName": "MemoryBusy",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "True",
+            "enumValue": "True"
+          },
+          {
+            "name": "False",
+            "enumValue": "False"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Signal",
+      "displayName": "Signal",
+      "schema": "long"
+    }
+  ]
+}

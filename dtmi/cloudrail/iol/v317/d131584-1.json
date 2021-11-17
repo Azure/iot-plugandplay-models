@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D131584;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TS-x00-LUUPN8X-H1141",
+  "description": "TS... series",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "ProcessValue_K",
+      "displayName": "ProcessValue_K",
+      "schema": "double",
+      "unit": "kelvin"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "ProcessValue_C",
+      "displayName": "ProcessValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "ProcessValue_F",
+      "displayName": "ProcessValue_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch1",
+      "displayName": "Switch1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "On",
+            "enumValue": "On"
+          },
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389170;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "M4P-ZA0xx00x00",
+  "description": "deTem A/P 2 beam device with top indicator",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SystemOssdActive",
+      "displayName": "SystemOssdActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SystemOSSDIsAtive",
+            "enumValue": "SystemOSSDIsAtive"
+          },
+          {
+            "name": "SystemOSSDIsInactive",
+            "enumValue": "SystemOSSDIsInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BeamState",
+      "displayName": "BeamState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AllBeamsAreFree",
+            "enumValue": "AllBeamsAreFree"
+          },
+          {
+            "name": "AtLeastOneBeamIsInterruptedUnexpectedly",
+            "enumValue": "AtLeastOneBeamIsInterruptedUnexpectedly"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WeakSignal",
+      "displayName": "WeakSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "WeakSignal",
+            "enumValue": "WeakSignal"
+          },
+          {
+            "name": "NoWeakSignal",
+            "enumValue": "NoWeakSignal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ResetRequired",
+      "displayName": "ResetRequired",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ResetIsRequired",
+            "enumValue": "ResetIsRequired"
+          },
+          {
+            "name": "ResetIsNotRequired",
+            "enumValue": "ResetIsNotRequired"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ResOvrActive",
+      "displayName": "ResOvrActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ResetOverrideInputActive",
+            "enumValue": "ResetOverrideInputActive"
+          },
+          {
+            "name": "ResetOverrideInputInactive",
+            "enumValue": "ResetOverrideInputInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ResetWarning",
+      "displayName": "ResetWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ResetWarningIsPresent",
+            "enumValue": "ResetWarningIsPresent"
+          },
+          {
+            "name": "ResetWarningIsNotPresent",
+            "enumValue": "ResetWarningIsNotPresent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EdmActive",
+      "displayName": "EdmActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "EDMInputIsActive",
+            "enumValue": "EDMInputIsActive"
+          },
+          {
+            "name": "EDMInputIsInactive",
+            "enumValue": "EDMInputIsInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EdmWarning",
+      "displayName": "EdmWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "EDMWarningIsPresent",
+            "enumValue": "EDMWarningIsPresent"
+          },
+          {
+            "name": "EDMWarningIsNotPresent",
+            "enumValue": "EDMWarningIsNotPresent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MutingActive",
+      "displayName": "MutingActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MutingIsActive",
+            "enumValue": "MutingIsActive"
+          },
+          {
+            "name": "MutingIsNotActive",
+            "enumValue": "MutingIsNotActive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MutingObject",
+      "displayName": "MutingObject",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AtLeastOneBeamInterruptedWhenMutingIsActive",
+            "enumValue": "AtLeastOneBeamInterruptedWhenMutingIsActive"
+          },
+          {
+            "name": "AllBeamsAreFreeWhenMutingIsActive",
+            "enumValue": "AllBeamsAreFreeWhenMutingIsActive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MutingError",
+      "displayName": "MutingError",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "MutingErrorIsPresent",
+            "enumValue": "MutingErrorIsPresent"
+          },
+          {
+            "name": "MutingErrorIsNotPresent",
+            "enumValue": "MutingErrorIsNotPresent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverrideActive",
+      "displayName": "OverrideActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OverrideActive",
+            "enumValue": "OverrideActive"
+          },
+          {
+            "name": "OverrideNotActive",
+            "enumValue": "OverrideNotActive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverrideRequired",
+      "displayName": "OverrideRequired",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OverrideIsRequired",
+            "enumValue": "OverrideIsRequired"
+          },
+          {
+            "name": "OverrideIsNotRequired",
+            "enumValue": "OverrideIsNotRequired"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BeamsFreeAfterOverride",
+      "displayName": "BeamsFreeAfterOverride",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AllBeamsAreFreeAfterOverride",
+            "enumValue": "AllBeamsAreFreeAfterOverride"
+          },
+          {
+            "name": "AtLeastOneBeamInterruptedAfterOverride",
+            "enumValue": "AtLeastOneBeamInterruptedAfterOverride"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MutingSignal1",
+      "displayName": "MutingSignal1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:MutingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MutingSignal2",
+      "displayName": "MutingSignal2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:MutingSignal;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateNormal",
+      "displayName": "StateNormal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SystemIsInStateNormal",
+            "enumValue": "SystemIsInStateNormal"
+          },
+          {
+            "name": "SystemIsNotInStateNormal",
+            "enumValue": "SystemIsNotInStateNormal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBeam1",
+      "displayName": "StatusBeam1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:StatusBeam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBeam2",
+      "displayName": "StatusBeam2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:StatusBeam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBeam3",
+      "displayName": "StatusBeam3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:StatusBeam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBeam4",
+      "displayName": "StatusBeam4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389170:StatusBeam;1"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ExternalDisplayControl",
+              "displayName": "ExternalDisplayControl",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisplayControlledInternally",
+                    "enumValue": "DisplayControlledInternally"
+                  },
+                  {
+                    "name": "DisplayIsSetToOff",
+                    "enumValue": "DisplayIsSetToOff"
+                  },
+                  {
+                    "name": "DisplayIsSetToGreen",
+                    "enumValue": "DisplayIsSetToGreen"
+                  },
+                  {
+                    "name": "DisplayIsSetToYellow",
+                    "enumValue": "DisplayIsSetToYellow"
+                  },
+                  {
+                    "name": "DisplayIsSetToRed",
+                    "enumValue": "DisplayIsSetToRed"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389170:MutingSignal;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "MutingSignal1IsActive",
+          "enumValue": "MutingSignal1IsActive"
+        },
+        {
+          "name": "MutingSignal1IsInactive",
+          "enumValue": "MutingSignal1IsInactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389170:StatusBeam;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "BeamIsFree",
+          "enumValue": "BeamIsFree"
+        },
+        {
+          "name": "BeamIsInterrupted",
+          "enumValue": "BeamIsInterrupted"
+        }
+      ]
+    }
+  ]
+}

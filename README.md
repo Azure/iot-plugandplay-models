@@ -34,7 +34,7 @@ Related tools, samples, and specs can be found in the [Azure/iot-plugandplay-mod
     `C:\iot-plugandplay-models\MyThermostat.json`
 
 1. Validate the models locally using the `dmr-client` tool to [validate](#validate-models).
-1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [add-models](#import-a-model-to-the-dtmi-folder) tool below.
+1. Add the new interfaces to the `dtmi` folder using the folder/filename convention. See the [import](#import-a-model-to-the-dtmi-folder) command below.
 1. Review and cross check with the [PR requirements](pr-reqs.md) and ensure all elements are conform to [DTDL v2](https://aka.ms/dtdl) specification.
 1. Commit the changes locally and push to your fork.
 1. From your fork, create a PR that targets the `main` branch.  
@@ -45,7 +45,7 @@ The PR triggers a series of GitHub actions that will validate the new submitted 
 
 Microsoft will respond to a PR with all checks in 3 business days.
 
-**GitHub Operation Workflow**
+## GitHub Operation Workflow
 
 ```text
 +-------------------------------------------------+
@@ -68,25 +68,68 @@ Microsoft will respond to a PR with all checks in 3 business days.
 
 ```
 
-## `dmr-client` Tool
+## Install the `dmr-client` command line tool
 
-The tools used to validate the models during the PR checks can also be used to add and validate the DTDL interfaces locally.
+The tool used to validate the models during the PR checks can also be used to add and validate the DTDL interfaces locally.
 
-> Note: These tools require the [.NET SDK](https://dotnet.microsoft.com/download) (3.1 or greater)
+The Device Models Repository command line tool (aka `dmr-client`) is published on [NuGet](https://www.nuget.org/packages/Microsoft.IoT.ModelsRepository.CommandLine) and requires `dotnet sdk 3.1` or `dotnet sdk 5.0`.
 
-### Install `dmr-client`
+> Note: .NET 6 is not yet supported.
 
-#### Linux/Bash
+You can use the `dotnet` command line via the `dotnet tool install` command to install `dmr-client`. The following is an example to install `dmr-client` as a global tool:
 
 ```bash
-curl -L https://aka.ms/install-dmr-client-linux | bash
+> dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.4
 ```
 
-#### Windows/Powershell
+To learn how to install `dmr-client` in a local context, please see [this guide](https://docs.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use).
 
-```powershell
-iwr https://aka.ms/install-dmr-client-windows -UseBasicParsing | iex
+> Note: Previous versions of the tool (prior to `1.0.0-beta.3`) must first be uninstalled with `dotnet tool uninstall -g dmr-client`. Use the `dotnet tool list -g` command to check the id of the tool you want to uninstall.
+
+### Update
+
+To update the `dmr-client` tool (assuming a global install) you can run the following command:
+
+```bash
+> dotnet tool update -g Microsoft.IoT.ModelsRepository.CommandLine --version [target version]
 ```
+
+### Uninstall
+
+To uninstall the `dmr-client` tool (assuming a global install) you can run the following command:
+
+```bash
+> dotnet tool uninstall -g Microsoft.IoT.ModelsRepository.CommandLine
+```
+
+## Usage of `dmr-client`
+
+After installing `Microsoft.IoT.ModelsRepository.CommandLine` the following models repository management commands should be available for usage via the `dmr-client` alias.
+
+```text
+dmr-client:
+  Microsoft IoT Models Repository CommandLine v1.0.0-beta.4
+
+Usage:
+  dmr-client [options] [command]
+
+Options:
+  --debug           Shows additional logs for debugging.
+  --silent          Silences command output on standard out.
+  --version         Show version information
+  -?, -h, --help    Show help and usage information
+
+Commands:
+  export      Exports a model producing the model and its dependency chain in an expanded format. The target repository is used for model resolution.
+  validate    Validates the DTDL model contained in a file. When validating a single model object the target repository is used for model resolution. When
+              validating an array of models only the array contents is used for resolution.
+  import      Imports models from a model file into the local repository. The local repository is used for model resolution.
+  index       Builds a model index file from the state of a target local models repository.
+  expand      For each model in a local repository, generate expanded model files and insert them in-place. The expanded version of a model includes the model with
+              its full model dependency chain.
+```
+
+## Command Guide
 
 ### Import a Model to the `dtmi/` folder
 
@@ -94,61 +137,111 @@ If you have your model already stored in json files, you can use the `dmr-client
 
 ```bash
 # from the local repo root folder
-dmr-client import --model-file "MyThermostat.json"
+
+> dmr-client import --model-file "MyThermostat.json"
 ```
 
->Note: You can use the `--local-repo` argument to specify the local repo root folder
+> This command will rename and locate the file in the appropriate folder
 
 ### Validate Models
 
 You can validate your models with the `dmr-client validate` command.
 
 ```bash
-dmr-client validate --model-file ./my/model/file.json
+# Validate a model file using the DTDL parser
+
+> dmr-client validate --model-file ./my/model/file.json
 ```
 
->Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
+> Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
 
 To validate external dependencies, those must exist in the local repo. To validate those you can specify a `local` or `remote` folder to validate against.
 
 ```bash
-# from the repo root folder
-dmr-client validate --model-file ./my/model/file.json --repo .
+# Validate a model file using the DTDL parser checking dependencies with the current folder as a local repo
+
+> dmr-client validate --model-file ./my/model/file.json --repo .
 ```
 
-#### Strict validation
+### Strict validation
 
 The Device Model Repo includes additional [requirements](pr-reqs.md), these can be validated with the `strict` flag.
 
 ```bash
-dmr-client validate --model-file ./my/model/file.json --repo . --strict true
+# Validate a model file using the DTDL parser checking dependencies with the current folder as a local repo in strict mode
+
+> dmr-client validate --model-file ./my/model/file.json --repo . --strict
 ```
 
-#### Export models
+### Export models
 
-Models can be exported from a given repo (local or remote) to a single file using a JSON Array. 
+Models can be exported from a given repo (local or remote) to a single file using a JSON Array.
 
 ```bash
-dmr-client export --dtmi "dtmi:com:example:TemperatureController;1" -o TemperatureController.expanded.json
+# Retrieves an interface from a custom repo by DTMI
+
+> dmr-client export --dtmi "dtmi:com:example:Thermostat;1" --repo https://raw.githubusercontent.com/Azure/iot-plugandplay-models/main
 ```
 
-## Consuming
+### Create Index
 
-Any HTTP client can consume the models by just applying the [convention](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Resolution-Convention) to translate *DTMI ids* to relative paths:
+The model repo can host a `index.json` file with all the `ids` avaialble in the repository. Read the [Index Spec](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Model-Index)
+
+```bash
+# Builds a model index for the repository. If models exceed the page limit new page files will be created relative to the root index.
+
+> dmr-client index --local-repo .
+```
+
+```bash
+# Build a model index with a custom page limit indicating max models per page.
+
+> dmr-client index --local-repo . --page-limit 100
+```
+
+### Create Expanded files
+
+```bash
+# Expand all models from the root directory of a local models repository following Azure IoT conventions.
+# Expanded models are inserted in-place.
+
+> dmr-client expand --local-repo .
+```
+
+```bash
+# The default --local-repo value is the current directory. Be sure to specifiy the root for --local-repo.
+
+> dmr-client expand
+```
+
+## IoT Models Repository SDKs
+
+Azure SDKs focused on models repository consumption are available in the following languages:
+
+|Platform|Package|Source|Samples|
+|--------|-------|------|-------|
+|.NET | [Azure.IoT.ModelsRepository](https://www.nuget.org/packages/Azure.IoT.ModelsRepository)|[Source](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository)|[Samples](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository/samples)|
+|Java |[com.azure/azure-iot-modelsrepository](https://search.maven.org/artifact/com.azure/azure-iot-modelsrepository)|[Source](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository/src/samples)|
+|Node|[@azure/iot-modelsrepository](https://www.npmjs.com/package/@azure/iot-modelsrepository)|[Source](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/iot/iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/iot/iot-modelsrepository/samples/v1)|
+|Python|[azure-iot-modelsrepository](https://pypi.org/project/azure-iot-modelsrepository/)|[Source](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/modelsrepository/azure-iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/modelsrepository/azure-iot-modelsrepository/samples)|
+
+## Fetch models without any SDK
+
+Any HTTP client can consume the models by applying the repository [convention](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Resolution-Convention) to convert a `DTMI` to a relative path:
 
 Eg, the interface:
 
-```cmd
+```bash
 dtmi:azure:DeviceManagement:DeviceInformation;1
 ```
 
 can be retrieved from [here](https://devicemodels.azure.com/dtmi/azure/devicemanagement/deviceinformation-1.json):
 
-```cmd
+```bash
 https://devicemodels.azure.com/dtmi/azure/devicemanagement/deviceinformation-1.json
 ```
 
-There are samples for .NET and Node in the [Azure/iot-plugandplay-models-tools](https://github.com/Azure/iot-plugandplay-models-tools) with code you can use to acquire models from your custom IoT solution.
+There are samples for .NET and Node in the [Azure/iot-plugandplay-models-tools](https://github.com/Azure/iot-plugandplay-models-tools) GitHub repository with code you can use to acquire models for your custom IoT solution.
 
 ## Contributing
 

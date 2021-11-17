@@ -1,0 +1,48 @@
+{
+    "@id": "dtmi:tinkergen:wioterminal_smellsensor;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Wioterminal Smellsensor",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "latestInferenceResult",
+        "schema": "string",
+        "displayName": {
+          "en": "Latest inference result"
+        }
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "CO2"
+        },
+        "name": "CO2",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "N02"
+        },
+        "name": "NO2",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "C2H2OH"
+        },
+        "name": "C2H2OH",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "VO2"
+        },
+        "name": "VO2",
+        "schema": "double"
+      }
+    ]
+  }

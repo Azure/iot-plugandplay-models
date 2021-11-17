@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D1_Gyroscope;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Demo device",
+  "description": "Demo Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeZAxis",
+      "displayName": "GyroscopeZAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeYAxis",
+      "displayName": "GyroscopeYAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GyroscopeXAxis",
+      "displayName": "GyroscopeXAxis",
+      "schema": "long"
+    }
+  ]
+}

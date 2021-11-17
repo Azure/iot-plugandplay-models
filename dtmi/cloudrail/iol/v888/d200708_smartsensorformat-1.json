@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D200708_SmartSensorFormat;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOD 23K-LI03-S4",
+  "description": "BOD - Optical Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue",
+      "displayName": "ProcessValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Laser",
+              "displayName": "Laser",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LaserOff",
+                    "enumValue": "LaserOff"
+                  },
+                  {
+                    "name": "LaserOn",
+                    "enumValue": "LaserOn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

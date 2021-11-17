@@ -1,0 +1,176 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-802-000-Z036-006",
+  "description": "Smart Light 5 segment",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "LED1State",
+              "displayName": "LED1State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED2State",
+              "displayName": "LED2State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED3State",
+              "displayName": "LED3State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED4State",
+              "displayName": "LED4State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED5State",
+              "displayName": "LED5State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED6State",
+              "displayName": "LED6State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED7State",
+              "displayName": "LED7State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED8State",
+              "displayName": "LED8State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED9State",
+              "displayName": "LED9State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED10State",
+              "displayName": "LED10State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED11State",
+              "displayName": "LED11State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED12State",
+              "displayName": "LED12State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED13State",
+              "displayName": "LED13State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED14State",
+              "displayName": "LED14State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED15State",
+              "displayName": "LED15State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED16State",
+              "displayName": "LED16State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED17State",
+              "displayName": "LED17State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED18State",
+              "displayName": "LED18State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED19State",
+              "displayName": "LED19State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "LED20State",
+              "displayName": "LED20State",
+              "schema": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1"
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncStart",
+              "displayName": "SyncStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330241_FlexibleMode:LEDState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

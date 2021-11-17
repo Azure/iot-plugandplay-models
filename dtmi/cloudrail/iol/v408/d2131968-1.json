@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V408:D2131968;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "8.M5858A.xx4x.4122",
+  "description": "Clamping flange ø 58 mm, IP65, Solid shaft ø 6 x 12,5 mm, with flat, Singleturn, 18 … 30 V DC, M12 axial connector, 4-pin, Standard profile",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ]
+}
