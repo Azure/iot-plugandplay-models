@@ -1,0 +1,66 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:kr:co:mazetech:towncast:transmitter;2",
+    "@type": "Interface",
+    "displayName": "Towncast-Transmitter",
+    "description": "Transmitter device of towncast solution - MazeTech",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "messageType",
+            "displayName": "message-type",
+            "description": "Message Type - event and broadcast",
+            "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "phoneNumber",
+          "displayName": "phone-number",
+          "description": "Phone number of transmitter",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "loraId",
+          "displayName": "lora-id",
+          "description": "lora id of receiver",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "status",
+          "displayName": "event-status",
+          "description": "status - fire, emergency, maintenance",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "broadcastPhoneNumber",
+          "displayName": "broadcast-phonenumber",
+          "description": "the phonenumber started LTE broadcast",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "type",
+          "displayName": "broadcast-type",
+          "description": "Broadcast type - LTE, PTT",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "startTime",
+          "displayName": "broadcast-start",
+          "description": "Broadcast start time",
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "endTime",
+          "displayName": "broadcast-end",
+          "description": "Broadcast end time",
+          "schema": "dateTime"
+        }
+    ]
+  }
+  
