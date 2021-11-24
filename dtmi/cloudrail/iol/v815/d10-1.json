@@ -1,0 +1,159 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V815:D10;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RPG xx0-0xx",
+  "description": "Intelligent pneumatic gripping module with IO-Link interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Idle",
+      "displayName": "Idle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Released",
+      "displayName": "Released",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoPart",
+      "displayName": "NoPart",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Holding",
+      "displayName": "Holding",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Fault",
+      "displayName": "Fault",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureFault",
+      "displayName": "TemperatureFault",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureWarning",
+      "displayName": "TemperatureWarning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaintenanceRequired",
+      "displayName": "MaintenanceRequired",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch0",
+      "displayName": "PositionSwitch0",
+      "schema": "dtmi:CloudRail:IOL:V815:D10:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch1",
+      "displayName": "PositionSwitch1",
+      "schema": "dtmi:CloudRail:IOL:V815:D10:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch2",
+      "displayName": "PositionSwitch2",
+      "schema": "dtmi:CloudRail:IOL:V815:D10:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch3",
+      "displayName": "PositionSwitch3",
+      "schema": "dtmi:CloudRail:IOL:V815:D10:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "GripIndex",
+              "displayName": "GripIndex",
+              "schema": "long"
+            },
+            {
+              "name": "Command",
+              "displayName": "Command",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Release",
+                    "enumValue": "Release"
+                  },
+                  {
+                    "name": "Grip",
+                    "enumValue": "Grip"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Enable",
+              "displayName": "Enable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V815:D10:PositionSwitch;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

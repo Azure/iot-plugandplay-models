@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V832:D82435;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PKF 66 AF 3",
+  "description": "Electronic temperature sensor, 700...1800 °C, ",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureQ_C",
+      "displayName": "TemperatureQ_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureQ_F",
+      "displayName": "TemperatureQ_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureS_C",
+      "displayName": "TemperatureS_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureS_F",
+      "displayName": "TemperatureS_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Intensity_pct",
+      "displayName": "Intensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Simulation",
+      "displayName": "Simulation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DTDSync",
+      "displayName": "DTDSync",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOut2",
+      "displayName": "DigitalOut2",
+      "schema": "dtmi:CloudRail:IOL:V832:D82435:DigitalOut;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOut1",
+      "displayName": "DigitalOut1",
+      "schema": "dtmi:CloudRail:IOL:V832:D82435:DigitalOut;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V832:D82435:DigitalOut;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

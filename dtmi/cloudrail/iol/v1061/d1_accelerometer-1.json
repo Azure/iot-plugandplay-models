@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D1_Accelerometer;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Demo device",
+  "description": "Demo Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AccelerometerZAxis",
+      "displayName": "AccelerometerZAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AccelerometerYAxis",
+      "displayName": "AccelerometerYAxis",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AccelerometerXAxis",
+      "displayName": "AccelerometerXAxis",
+      "schema": "long"
+    }
+  ]
+}

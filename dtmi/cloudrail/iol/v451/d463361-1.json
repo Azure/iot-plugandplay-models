@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D463361;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SI-RFA-DMx",
+  "description": "ISD to IO-Link Module",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

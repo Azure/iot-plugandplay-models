@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V728:D5320811;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSC432-8V-IO with 6 byte PDOut",
+  "description": "Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusWord",
+      "displayName": "StatusWord",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualRPM",
+      "displayName": "ActualRPM",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualPosition",
+      "displayName": "ActualPosition",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "ControlWord",
+              "displayName": "ControlWord",
+              "schema": "long"
+            },
+            {
+              "name": "TargetPosition",
+              "displayName": "TargetPosition",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

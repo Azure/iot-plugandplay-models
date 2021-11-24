@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1094:D208106;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LPS 4.0 14 IO 0-10V",
+  "description": "Linear Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position10Bit",
+      "displayName": "Position10Bit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal1",
+      "displayName": "SwitchingSignal1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal2OnlyIOLink",
+      "displayName": "SwitchingSignal2OnlyIOLink",
+      "schema": "dtmi:CloudRail:IOL:V1094:D208106:SwitchingSignalOnlyIOLink;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignal3OnlyIOLink",
+      "displayName": "SwitchingSignal3OnlyIOLink",
+      "schema": "dtmi:CloudRail:IOL:V1094:D208106:SwitchingSignalOnlyIOLink;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V1094:D208106:SwitchingSignalOnlyIOLink;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

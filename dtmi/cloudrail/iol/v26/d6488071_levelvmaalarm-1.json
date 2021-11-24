@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D6488071_LevelVMAAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Dx35-B1xx5xS0x",
+  "description": "1062856 (DT35-B15251S02 DX35-Extended)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VMA",
+      "displayName": "VMA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Level",
+      "displayName": "Level",
+      "schema": "long"
+    }
+  ]
+}

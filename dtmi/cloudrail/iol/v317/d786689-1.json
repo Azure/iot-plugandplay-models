@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D786689;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "REM-xxxxxxx-xxxxxxx-xxxxxB-H1141",
+  "description": "Absolute encoder multiturn",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionMultiturn",
+      "displayName": "PositionMultiturn",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSingleturn",
+      "displayName": "PositionSingleturn",
+      "schema": "long"
+    }
+  ]
+}

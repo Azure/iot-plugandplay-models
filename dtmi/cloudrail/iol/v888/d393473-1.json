@@ -1,0 +1,111 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D393473;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIS L-409-045-00x-07-S4",
+  "description": "Industrial RFID",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SecondBitheader",
+      "displayName": "SecondBitheader",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SixthByte",
+      "displayName": "SixthByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FifthByte",
+      "displayName": "FifthByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FourthByte",
+      "displayName": "FourthByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ThirdByte",
+      "displayName": "ThirdByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SecondByte",
+      "displayName": "SecondByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FirstByte",
+      "displayName": "FirstByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FirstBitheader",
+      "displayName": "FirstBitheader",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "SecondBitheader",
+              "displayName": "SecondBitheader",
+              "schema": "long"
+            },
+            {
+              "name": "SixthByte",
+              "displayName": "SixthByte",
+              "schema": "long"
+            },
+            {
+              "name": "FifthByte",
+              "displayName": "FifthByte",
+              "schema": "long"
+            },
+            {
+              "name": "FourthByte",
+              "displayName": "FourthByte",
+              "schema": "long"
+            },
+            {
+              "name": "ThirdByte",
+              "displayName": "ThirdByte",
+              "schema": "long"
+            },
+            {
+              "name": "SecondByte",
+              "displayName": "SecondByte",
+              "schema": "long"
+            },
+            {
+              "name": "FirstByte",
+              "displayName": "FirstByte",
+              "schema": "long"
+            },
+            {
+              "name": "FirstBitheader",
+              "displayName": "FirstBitheader",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

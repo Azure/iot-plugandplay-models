@@ -1,0 +1,62 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V478:D171335;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MAXREFDES171-TMG",
+  "description": "MAX32660 Sample Application with LASER Distance Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_mm",
+      "displayName": "Distance_mm",
+      "schema": "long",
+      "unit": "millimetre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalRate",
+      "displayName": "SignalRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AmbientLightRate",
+      "displayName": "AmbientLightRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RangeStatus",
+      "displayName": "RangeStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OK",
+            "enumValue": "OK"
+          },
+          {
+            "name": "SigmaFailure",
+            "enumValue": "SigmaFailure"
+          },
+          {
+            "name": "SignalFailure",
+            "enumValue": "SignalFailure"
+          },
+          {
+            "name": "OutOfBounds",
+            "enumValue": "OutOfBounds"
+          },
+          {
+            "name": "Wraparound",
+            "enumValue": "Wraparound"
+          }
+        ]
+      }
+    }
+  ]
+}

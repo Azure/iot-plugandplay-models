@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D65550_ActiveMeasurementsOnly;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Exxxxxxxxxxx-Array IO-Link, 5 mm Channel Space Array",
+  "description": "EZ-Array IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ActiveMeasurement1",
+      "displayName": "ActiveMeasurement1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActiveMeasurement2",
+      "displayName": "ActiveMeasurement2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoMeasurement",
+      "displayName": "NoMeasurement",
+      "schema": "long"
+    }
+  ]
+}

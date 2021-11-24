@@ -1,0 +1,203 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2162;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ODS9L2.8/L6X-650-M12",
+  "description": "Optical distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceValue",
+      "displayName": "DistanceValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DistanceScale",
+      "displayName": "DistanceScale",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Resolution01Mm",
+            "enumValue": "Resolution01Mm"
+          },
+          {
+            "name": "Resolution001Mm",
+            "enumValue": "Resolution001Mm"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit0SSC1OutputState",
+      "displayName": "StatusBit0SSC1OutputState",
+      "schema": "dtmi:CloudRail:IOL:V338:D2162:StatusBitSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit1SSC2OutputState",
+      "displayName": "StatusBit1SSC2OutputState",
+      "schema": "dtmi:CloudRail:IOL:V338:D2162:StatusBitSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit2Reserved",
+      "displayName": "StatusBit2Reserved",
+      "schema": "dtmi:CloudRail:IOL:V338:D2162:StatusBitReserved;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit3MeasureState",
+      "displayName": "StatusBit3MeasureState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bit30NoMeasurementStartupTeachOrDeactivated",
+            "enumValue": "Bit30NoMeasurementStartupTeachOrDeactivated"
+          },
+          {
+            "name": "Bit31MeasurementIsRunning",
+            "enumValue": "Bit31MeasurementIsRunning"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit4SignalAvailable",
+      "displayName": "StatusBit4SignalAvailable",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bit40NoSignalReceivedNoMeasurementValueAvailable",
+            "enumValue": "Bit40NoSignalReceivedNoMeasurementValueAvailable"
+          },
+          {
+            "name": "Bit41SignalAndMeasurementValueAvailable",
+            "enumValue": "Bit41SignalAndMeasurementValueAvailable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit5WarningLowSignal",
+      "displayName": "StatusBit5WarningLowSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bit50NoWarning",
+            "enumValue": "Bit50NoWarning"
+          },
+          {
+            "name": "Bit51WarningLowSignal",
+            "enumValue": "Bit51WarningLowSignal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit6Reserved",
+      "displayName": "StatusBit6Reserved",
+      "schema": "dtmi:CloudRail:IOL:V338:D2162:StatusBitReserved;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusBit7ToggleBit",
+      "displayName": "StatusBit7ToggleBit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bit70ToggleBitLow",
+            "enumValue": "Bit70ToggleBitLow"
+          },
+          {
+            "name": "Bit71ToggleBitHigh",
+            "enumValue": "Bit71ToggleBitHigh"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerDisable",
+              "displayName": "TransducerDisable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "DisableRequestInactive",
+                    "enumValue": "DisableRequestInactive"
+                  },
+                  {
+                    "name": "DisableRequestActive",
+                    "enumValue": "DisableRequestActive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V338:D2162:StatusBitSSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Bit00SSC1Off",
+          "enumValue": "Bit00SSC1Off"
+        },
+        {
+          "name": "Bit01SSC1On",
+          "enumValue": "Bit01SSC1On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V338:D2162:StatusBitReserved;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Bit20",
+          "enumValue": "Bit20"
+        },
+        {
+          "name": "Bit21",
+          "enumValue": "Bit21"
+        }
+      ]
+    }
+  ]
+}

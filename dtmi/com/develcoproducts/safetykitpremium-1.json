@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:safetykitpremium;1",
+  "@type": "Interface",
+  "displayName": "Safety Kit Premium",
+  "description": "Safety Kit Premium",
+  "contents": [    
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smokealarm;2",
+      "name": "smokealarm1",
+      "displayName": "Smoke Alarm",
+      "description": "Smoke Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:humiditysensor;1",
+      "name": "humiditysensor1",
+      "displayName": "Humidity Sensor",
+      "description": "Humidity Sensor"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:heatalarm;1",
+      "name": "heatalarm1",
+      "displayName": "Heat Alarm",
+      "description": "Heat Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;1",
+      "name": "waterleak1",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    }
+  ]
+}

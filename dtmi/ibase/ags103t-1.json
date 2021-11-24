@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ibase:ags103t;1",
+    "@type": "Interface",
+    "displayName": "iBase-AGS103T",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:ibase:LinuxDeviceInfo;1"
+        }
+    ]
+}

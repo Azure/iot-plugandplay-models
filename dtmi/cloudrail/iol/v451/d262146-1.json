@@ -1,0 +1,67 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D262146;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Q4XxKLAF6x0-Q8",
+  "description": "Laser Measurement Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Channel1OutputState",
+      "displayName": "Channel1OutputState",
+      "schema": "dtmi:CloudRail:IOL:V451:D262146:ChannelOutputState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Channel2OutputState",
+      "displayName": "Channel2OutputState",
+      "schema": "dtmi:CloudRail:IOL:V451:D262146:ChannelOutputState;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Stability",
+      "displayName": "Stability",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTargetOrMarginal",
+            "enumValue": "NoTargetOrMarginal"
+          },
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasurementValue_mm",
+      "displayName": "MeasurementValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D262146:ChannelOutputState;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

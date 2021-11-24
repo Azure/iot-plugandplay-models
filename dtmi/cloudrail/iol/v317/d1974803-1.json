@@ -1,0 +1,225 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1974803;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TBIL-S3-8DXP",
+  "description": "TBIL... series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Input7",
+      "displayName": "Input7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input6",
+      "displayName": "Input6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input5",
+      "displayName": "Input5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input4",
+      "displayName": "Input4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input3",
+      "displayName": "Input3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input2",
+      "displayName": "Input2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input1",
+      "displayName": "Input1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Input0",
+      "displayName": "Input0",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SumDiagnosis",
+      "displayName": "SumDiagnosis",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UndervoltageSupply",
+      "displayName": "UndervoltageSupply",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvervoltageSupply",
+      "displayName": "OvervoltageSupply",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector7",
+      "displayName": "OvercurrentVauxConnector7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector6",
+      "displayName": "OvercurrentVauxConnector6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector5",
+      "displayName": "OvercurrentVauxConnector5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector4",
+      "displayName": "OvercurrentVauxConnector4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector3",
+      "displayName": "OvercurrentVauxConnector3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector2",
+      "displayName": "OvercurrentVauxConnector2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector1",
+      "displayName": "OvercurrentVauxConnector1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentVauxConnector0",
+      "displayName": "OvercurrentVauxConnector0",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput7",
+      "displayName": "OvercurrentOutput7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput6",
+      "displayName": "OvercurrentOutput6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput5",
+      "displayName": "OvercurrentOutput5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput4",
+      "displayName": "OvercurrentOutput4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput3",
+      "displayName": "OvercurrentOutput3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput2",
+      "displayName": "OvercurrentOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput1",
+      "displayName": "OvercurrentOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvercurrentOutput0",
+      "displayName": "OvercurrentOutput0",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Output7",
+              "displayName": "Output7",
+              "schema": "integer"
+            },
+            {
+              "name": "Output6",
+              "displayName": "Output6",
+              "schema": "integer"
+            },
+            {
+              "name": "Output5",
+              "displayName": "Output5",
+              "schema": "integer"
+            },
+            {
+              "name": "Output4",
+              "displayName": "Output4",
+              "schema": "integer"
+            },
+            {
+              "name": "Output3",
+              "displayName": "Output3",
+              "schema": "integer"
+            },
+            {
+              "name": "Output2",
+              "displayName": "Output2",
+              "schema": "integer"
+            },
+            {
+              "name": "Output1",
+              "displayName": "Output1",
+              "schema": "integer"
+            },
+            {
+              "name": "Output0",
+              "displayName": "Output0",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

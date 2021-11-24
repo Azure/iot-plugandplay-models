@@ -1,0 +1,209 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1208:D65793;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PD3",
+  "description": "PD3 hydraulic valve amplifier",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "SolenoidCurrent_mA",
+      "displayName": "SolenoidCurrent_mA",
+      "schema": "double",
+      "unit": "milliampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Enable",
+      "displayName": "Enable",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit3",
+      "displayName": "ReserveBit3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit4",
+      "displayName": "ReserveBit4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit5",
+      "displayName": "ReserveBit5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit6",
+      "displayName": "ReserveBit6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit7",
+      "displayName": "ReserveBit7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit8",
+      "displayName": "ReserveBit8",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit9",
+      "displayName": "ReserveBit9",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit10",
+      "displayName": "ReserveBit10",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit11",
+      "displayName": "ReserveBit11",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit12",
+      "displayName": "ReserveBit12",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit13",
+      "displayName": "ReserveBit13",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit14",
+      "displayName": "ReserveBit14",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReserveBit15",
+      "displayName": "ReserveBit15",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CommandValue",
+              "displayName": "CommandValue",
+              "schema": "long"
+            },
+            {
+              "name": "Enable",
+              "displayName": "Enable",
+              "schema": "integer"
+            },
+            {
+              "name": "ResetFault",
+              "displayName": "ResetFault",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit3",
+              "displayName": "ReserveBit3",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit4",
+              "displayName": "ReserveBit4",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit5",
+              "displayName": "ReserveBit5",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit6",
+              "displayName": "ReserveBit6",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit7",
+              "displayName": "ReserveBit7",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit8",
+              "displayName": "ReserveBit8",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit9",
+              "displayName": "ReserveBit9",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit10",
+              "displayName": "ReserveBit10",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit11",
+              "displayName": "ReserveBit11",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit12",
+              "displayName": "ReserveBit12",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit13",
+              "displayName": "ReserveBit13",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit14",
+              "displayName": "ReserveBit14",
+              "schema": "integer"
+            },
+            {
+              "name": "ReserveBit15",
+              "displayName": "ReserveBit15",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

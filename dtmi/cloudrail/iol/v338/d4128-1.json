@@ -1,0 +1,40 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D4128;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CSL710 [2 Bytes and COM3]",
+  "description": "Switching light curtain CSL710",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementDataValid",
+      "displayName": "MeasurementDataValid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Invalid",
+            "enumValue": "Invalid"
+          },
+          {
+            "name": "Valid",
+            "enumValue": "Valid"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NumberOfCycles",
+      "displayName": "NumberOfCycles",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusOfAreas81",
+      "displayName": "StatusOfAreas81",
+      "schema": "long"
+    }
+  ]
+}

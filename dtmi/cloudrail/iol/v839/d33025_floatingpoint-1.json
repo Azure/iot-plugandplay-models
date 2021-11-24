@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V839:D33025_FloatingPoint;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "JUMO dTRANS T09 DS - 0x008101",
+  "description": "Temperature transmitter Pt100 -50 to +260 °C",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureUnit",
+      "displayName": "TemperatureUnit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "C",
+            "enumValue": "C"
+          },
+          {
+            "name": "F",
+            "enumValue": "F"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataUncertain",
+      "displayName": "ProcessDataUncertain",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ParameterError",
+      "displayName": "ParameterError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceHardwareFault",
+      "displayName": "DeviceHardwareFault",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "integer"
+    }
+  ]
+}

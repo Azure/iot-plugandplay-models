@@ -1,0 +1,140 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HLB 14J6-00F31-000",
+  "description": "HYDACLab with IO-Link interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Arrhenius",
+      "displayName": "Arrhenius",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC12",
+      "displayName": "SSC12",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC11",
+      "displayName": "SSC11",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SaturationLevel",
+      "displayName": "SaturationLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC10",
+      "displayName": "SSC10",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC9",
+      "displayName": "SSC9",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RelativeChangeDC",
+      "displayName": "RelativeChangeDC",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC8",
+      "displayName": "SSC8",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC7",
+      "displayName": "SSC7",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DC",
+      "displayName": "DC",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC6",
+      "displayName": "SSC6",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC5",
+      "displayName": "SSC5",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RelativeChangeConductivity",
+      "displayName": "RelativeChangeConductivity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC4",
+      "displayName": "SSC4",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC3",
+      "displayName": "SSC3",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Conductivity",
+      "displayName": "Conductivity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V348:D9271950_NormalConductivity01000NSm:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        },
+        {
+          "name": "High",
+          "enumValue": "High"
+        }
+      ]
+    }
+  ]
+}

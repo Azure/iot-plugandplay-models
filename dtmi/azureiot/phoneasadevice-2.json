@@ -1,0 +1,90 @@
+{
+    "@id": "dtmi:azureiot:PhoneAsADevice;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Sensors"
+        },
+        "name": "sensors",
+        "schema": "dtmi:azureiot:PhoneSensors;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Device information"
+        },
+        "name": "device_info",
+        "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+      },
+      {
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "LightOn"
+        },
+        "name": "lightOn",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Parameters"
+          },
+          "name": "parameters",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Duration"
+                },
+                "name": "duration",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Pulses interval"
+                },
+                "name": "delay",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Pulses"
+                },
+                "name": "pulses",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Writeable Property"
+        },
+        "name": "writeableProp",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Readonly Property"
+        },
+        "name": "readOnlyProp",
+        "schema": "string"
+      }
+    ],
+    "displayName": {
+      "en": "IoT Plug and Play mobile"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }

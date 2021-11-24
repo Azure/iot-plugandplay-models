@@ -1,0 +1,120 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:ActyG3;3",
+  "@type": "Interface",
+  "displayName": "CAT-G3",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Location",
+      "displayName": "Location of measurement",
+      "description": "This is a component that sets the location measurement and acquires the location.",
+      "schema": "dtmi:jp:co:covia:Location;3"
+  },
+    {
+      "@type": "Component",
+      "name": "RemoteControl",
+      "displayName": "Remote Control",
+      "description": "This is a component that control the device by remote.",
+      "schema": "dtmi:jp:co:covia:RemoteControl;3"
+    },
+    {
+      "@type": "Component",
+      "name": "BleBeaconReceiver",
+      "displayName": "BLE Beacon Receiver",
+      "description": "This is a component that sets the BLE receiver and acquires the BLE beacons.",
+      "schema": "dtmi:jp:co:covia:Beacon;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01G",
+      "displayName": "iBS01G(Accelerometer) Sensor",
+      "description": "This is a component that sets and acquires the iBS01G sensor.",
+      "schema": "dtmi:jp:co:covia:iBS01G;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01H",
+      "displayName": "iBS01H(Magnet) Sensor",
+      "description": "This is a component that sets and acquires the iBS01H sensor.",
+      "schema": "dtmi:jp:co:covia:iBS01H;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS01T",
+      "displayName": "iBS01T(Temperature/Humidity) Sensor",
+      "description": "This is a component that sets and acquires the iBS01T sensor.",
+      "schema": "dtmi:jp:co:covia:iBS01T;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS02IR2",
+      "displayName": "iBS02IR2(Proximity Detection) Sensor",
+      "description": "This is a component that sets and acquires the iBS02IR2 sensor.",
+      "schema": "dtmi:jp:co:covia:iBS02IR2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS02PIR2",
+      "displayName": "iBS02PIR2(Human Detection) Sensor",
+      "description": "This is a component that sets and acquires the iBS02PIR2 sensor.",
+      "schema": "dtmi:jp:co:covia:iBS02PIR2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "iBS03TP",
+      "displayName": "iBS03TP(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the iBS03TP sensor.",
+      "schema": "dtmi:jp:co:covia:iBS03TP;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TKR03FL",
+      "displayName": "TKR03FL(Water Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TKR03FL sensor.",
+      "schema": "dtmi:jp:co:covia:TKR03FL;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TKR04A",
+      "displayName": "TKR04A(CO2) Sensor",
+      "description": "This is a component that sets and acquires the TKR04A sensor.",
+      "schema": "dtmi:jp:co:covia:TKR04A;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TR41",
+      "displayName": "TR41(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TR41 sensor.",
+      "schema": "dtmi:jp:co:covia:TR41;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TR42",
+      "displayName": "TR42(Temperature) Sensor",
+      "description": "This is a component that sets and acquires the TR42 sensor.",
+      "schema": "dtmi:jp:co:covia:TR42;1"
+    },
+    {
+      "@type": "Component",
+      "name": "BC10",
+      "displayName": "BC10(Temperature/Humidity) Sensor",
+      "description": "This is a component that sets and acquires the BC10 sensor.",
+      "schema": "dtmi:jp:co:covia:BC10;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Settings",
+      "displayName": "Device Settings",
+      "description": "This component is configure the device settings such as operation mode.",
+      "schema": "dtmi:jp:co:covia:Settings;1"
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V285:D12591297;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "2787-2147",
+  "description": "WAGO Pro 2 Power Supply",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StatusDCOK",
+      "displayName": "StatusDCOK",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusOverheating",
+      "displayName": "StatusOverheating",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoOutputVoltage",
+      "displayName": "NoOutputVoltage",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputShortCircuit",
+      "displayName": "OutputShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusOfDigitalInput",
+      "displayName": "StatusOfDigitalInput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotTriggered",
+            "enumValue": "NotTriggered"
+          },
+          {
+            "name": "Triggered",
+            "enumValue": "Triggered"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputCurrent",
+      "displayName": "OutputCurrent",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputVoltage",
+      "displayName": "OutputVoltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "DCOutputOn",
+              "displayName": "DCOutputOn",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "DigitalOutputOn",
+              "displayName": "DigitalOutputOn",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

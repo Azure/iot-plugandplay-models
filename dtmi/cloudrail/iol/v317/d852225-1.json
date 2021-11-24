@@ -1,0 +1,91 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D852225;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "xIxx-xxx0-IOLU69X2-H1141",
+  "description": "analog inductive sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogSignal",
+      "displayName": "AnalogSignal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetOutOfRangeWarning",
+      "displayName": "TargetOutOfRangeWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetOutOfRange",
+            "enumValue": "TargetOutOfRange"
+          },
+          {
+            "name": "TargetInRange",
+            "enumValue": "TargetInRange"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HighTemperatureWarning",
+      "displayName": "HighTemperatureWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TemperatureLimitExceeded",
+            "enumValue": "TemperatureLimitExceeded"
+          },
+          {
+            "name": "TemperatureOk",
+            "enumValue": "TemperatureOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LowTemperatureWarning",
+      "displayName": "LowTemperatureWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TemperatureLimitExceeded",
+            "enumValue": "TemperatureLimitExceeded"
+          },
+          {
+            "name": "TemperatureOk",
+            "enumValue": "TemperatureOk"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OutputOn",
+            "enumValue": "OutputOn"
+          },
+          {
+            "name": "OutputOff",
+            "enumValue": "OutputOff"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V342:D5112321;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DW-Ax-613-M12",
+  "description": "Inductive proximity switches DW-Ax-613-M12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection80Sn",
+      "displayName": "Detection80Sn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

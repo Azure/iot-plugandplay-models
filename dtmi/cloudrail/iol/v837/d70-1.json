@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V837:D70;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AD003",
+  "description": "Analog Threshold Displ./4-20mA",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Current_mA",
+      "displayName": "Current_mA",
+      "schema": "double",
+      "unit": "milliampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}
