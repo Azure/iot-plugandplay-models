@@ -1,0 +1,50 @@
+{
+        "@id": "dtmi:ais:ais_4g_board:ais_4g_board_example;1",
+        "@type": "Interface",
+        "displayName": {
+            "en": "AIS 4G Board"
+        },
+        "@context": "dtmi:dtdl:context;2",
+        "contents": [
+            {
+                "@type": [
+                    "Telemetry",
+                    "Temperature"
+                ],
+                "displayName": {
+                    "en": "temperature"
+                },
+                "name": "temperature",
+                "schema": "double",
+                "unit": "degreeCelsius"
+            },
+            {
+                "@type": [
+                    "Telemetry",
+                    "RelativeHumidity"
+                ],
+                "displayName": {
+                    "en": "humidity"
+                },
+                "name": "humidity",
+                "schema": "double",
+                "unit": "percent"
+            },
+            {
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "light"
+                },
+                "name": "light",
+                "request": {
+                    "@type": "CommandPayload",
+                    "displayName": {
+                        "en": "Level"
+                    },
+                    "name": "level",
+                    "schema": "integer"
+                }
+            }
+        ]
+    }
