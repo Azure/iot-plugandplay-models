@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
+  ],
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Gyroscope;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enabled",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Rotation"
+        },
+        "name": "gyroscope",
+        "schema": "vector"
+      }
+    ]
+  }
