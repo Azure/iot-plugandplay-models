@@ -1,0 +1,36 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:fibocom:DeviceManagement:DeviceInformation;1",
+    "@type": "Interface",
+    "displayName": "Device Information",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "manufacturer",
+        "displayName": "Manufacturer",
+        "schema": "string",
+        "description": "Company name of the device manufacturer. Ex. Fibocom."
+      },
+      {
+        "@type": "Property",
+        "name": "model",
+        "displayName": "Device model",
+        "schema": "string",
+        "description": "Device model name or ID. Ex. MA510."
+      },
+      {
+        "@type": "Property",
+        "name": "swVersion",
+        "displayName": "Software version",
+        "schema": "string",
+        "description": "Version of the software on your device. This could be the version of your firmware. EX. 69400.1000.00.00.01.01"
+      },
+      {
+        "@type": "Property",
+        "name": "osName",
+        "displayName": "Operating system name",
+        "schema": "string",
+        "description": "Name of the operating system on the device. EX. ThreadX."
+      }
+    ]
+  }

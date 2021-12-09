@@ -1,0 +1,72 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:sysinno:iaeris2;1",
+    "@type": "Interface",
+    "displayName": "Azure Sphere iAeris2 Detector",
+    "description": "iAeris is a series",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "HCHO",
+            "displayName": "HCHO",
+            "description": "Formaldehyde measurement from the sensor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "CO2",
+            "displayName": "CO2",
+            "description": "Carbon dioxide mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "TEMP",
+            "displayName": "Temperature",
+            "description": "Temperature measurement from the sensor of iAeris2 averaged between telemetry post intervals, in °C.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name":"RH",
+            "displayName": "RH",
+            "description": "Relative humidity measurement from the sensor of iAeris averaged between telemetry post intervals, in %.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "CO",
+            "displayName": "CO",
+            "description": "Carbon monoxide mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "PM10",
+            "displayName": "PM10",
+            "description": "Particulates with a diameter of 10 micrometres or less. It mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "PM25",
+            "displayName": "PM2.5",
+            "description": "Particulates with a diameter of 2.5 micrometres or less. It mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "TVOC",
+            "displayName": "TVOC",
+            "description": "Total volatile organic compound mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "O3",
+            "displayName": "O3",
+            "description": "Total Ozone mesurement from the sesnor of iAeris2 averaged between telemetry post intervals, in ppm.",
+            "schema": "double"
+       }
+    ]
+}
