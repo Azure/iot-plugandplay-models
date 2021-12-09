@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:renesas:RX:RX72NEnvisionKit:switch;1",
+  "displayName": {
+    "en": "User Switch on RX72N Envision Kit"
+  },
+  "description": {
+    "en": "Description for User Switch"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:switch:usrsw2;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "switch",
+      "displayName": {
+        "en": "User Switch"
+      },
+      "description": {
+        "en": "Send User Switch status."
+      },
+      "schema": "string"
+    }
+  ]
+}
