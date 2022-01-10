@@ -1,0 +1,28 @@
+{
+	"@id": "dtmi:tartabit:DeviceTracker;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Cellular Tracker"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"extends": "dtmi:tartabit:DeviceCellular;1",
+	"contents": [ 
+	{
+		"@type": "Telemetry",
+		"name": "values",
+		"schema": {
+			"@type": "Object",
+			"fields": [
+				{ "name":"heading", "schema":"double"},
+				{ "name":"speed", "schema":"double"},
+				{ "name":"altitude", "schema":"double"},
+				{ "name":"temperature", "schema":"double"},
+				{ "name":"battery", "schema":"double"}
+			]
+		}
+	}
+	]
+}
