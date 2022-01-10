@@ -1,0 +1,148 @@
+{
+	"@id": "dtmi:tartabit:Device;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Device"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"contents": [{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Event"
+			},
+			"name": "event",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Location"
+			],
+			"displayName": {
+				"en": "Location"
+			},
+			"name": "location",
+			"schema": "geopoint"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Address"
+			},
+			"name": "address",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": [
+				"Property",
+				"Location"
+			],
+			"displayName": {
+				"en": "Last Known Location"
+			},
+			"name": "lastKnownLocation",
+			"schema": "geopoint"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Sensor Metadata"
+			},
+			"name": "sensorMetadata",
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "sensorMeta",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "sensor",
+					"schema": {
+						"@type": "Object",
+						"fields": [
+							{ "name":"desc", "displayName": {"en": "Description"}, "schema":"string"},
+							{ "name":"type", "displayName": {"en": "Type"}, "schema":"string"},
+							{ "name":"units", "displayName": {"en": "Units"}, "schema":"string"}
+						]
+					}
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Configuration"
+			},
+			"name": "config",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "param",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": "string"
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Versions"
+			},
+			"name": "versions",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "component",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "version",
+					"schema": "string"
+				}
+			}
+		},
+		{
+			"@type": "Command",
+			"name": "reboot",
+			"displayName": {
+				"en": "Reboot"
+			},
+			"description": "Reboot the device"
+		},
+		{
+			"@type": "Command",
+			"name": "locate",
+			"displayName": {
+				"en": "Locate"
+			},
+			"description": "Locate the device"
+		},
+		{
+			"@type": "Command",
+			"name": "send",
+			"displayName": {
+				"en": "Send Command"
+			},
+			"description": "Send a command to the device",
+			"request": {
+				"name": "args",
+				"displayName": "Arguments",
+				"schema": "string"
+			},
+			"response": {
+				"name": "result",
+				"displayName": "Result",
+				"schema": "string"
+			}
+		}
+	]
+}

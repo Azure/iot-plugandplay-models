@@ -1,0 +1,27 @@
+{
+	"@id": "dtmi:tartabit:DevicePers;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Cellular Person Tracker"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"extends": "dtmi:tartabit:DeviceCellular;1",
+	"contents": [ 
+	{
+		"@type": "Telemetry",
+		"name": "values",
+		"schema": {
+			"@type": "Object",
+			"fields": [
+				{ "name":"heartrate", "schema":"double"},
+				{ "name":"temperature", "schema":"double"},
+				{ "name":"steps", "schema":"double"},
+				{ "name":"battery", "schema":"double"}
+			]
+		}
+	}
+	]
+}

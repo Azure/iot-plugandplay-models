@@ -1,0 +1,68 @@
+{
+	"@id": "dtmi:tartabit:DeviceGeneric;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Generic Device"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"extends": "dtmi:tartabit:Device;1",
+	"contents": [ 
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Boolean Sensors"
+			},
+			"name": "booleans",
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "sensor",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": "boolean"
+				}
+			}
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Numeric Sensors"
+			},
+			"name": "numerics",
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "sensor",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": "double"
+				}
+			}
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "String Sensors"
+			},
+			"name": "strings",
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "sensor",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": "string"
+				}
+			}
+		}
+	]
+}

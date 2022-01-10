@@ -1,0 +1,25 @@
+{
+	"@id": "dtmi:tartabit:DeviceWiFi;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "WiFi Device"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"extends": "dtmi:tartabit:Device;1",
+	"contents": [ 
+	{
+		"@type": "Property",
+		"name": "netWifi",
+		"schema": {
+			"@type": "Object",
+			"fields": [
+				{ "name":"rssi", "schema":"double"},
+				{ "name":"ssid", "schema":"string"}
+			]
+		}
+	}
+	]
+}

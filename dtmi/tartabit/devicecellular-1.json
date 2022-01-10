@@ -1,0 +1,32 @@
+{
+	"@id": "dtmi:tartabit:DeviceCellular;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Cellular Device"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"extends": "dtmi:tartabit:Device;1",
+	"contents": [ 
+	{
+		"@type": "Property",
+		"name": "netCellular",
+		"schema": {
+			"@type": "Object",
+			"fields": [
+				{ "name":"rssi", "schema":"double"},
+				{ "name":"technology", "schema":"string"},
+				{ "name":"operator", "schema":"string"},
+				{ "name":"mcc", "schema":"string"},
+				{ "name":"mnc", "schema":"string"},
+				{ "name":"lac", "schema":"string"},
+				{ "name":"cellId", "schema":"string"},
+				{ "name":"iccid", "schema":"string"},
+				{ "name":"imei", "schema":"string"}
+			]
+		}
+	}
+	]
+}
