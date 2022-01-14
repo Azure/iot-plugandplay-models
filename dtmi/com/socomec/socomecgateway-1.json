@@ -1,0 +1,341 @@
+{
+    "@id": "dtmi:com:socomec:socomecgateway;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:socomecdevice;1",
+        "@type": [
+          "Relationship",
+          "GatewayDevice"
+        ],
+        "displayName": {
+          "en": "socomec Device"
+        },
+        "name": "socomecdevice",
+        "target": [
+                "dtmi:com:socomec:socomecdevice;1"
+        ]
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:timestamp;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "timestamp"
+        },
+        "name": "timestamp",
+        "schema": "dateTime"
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_0_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "email error"
+        },
+        "name": "SystemAlarm_0_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_0_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_0_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_0_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_1_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "sntp error"
+        },
+        "name": "SystemAlarm_1_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_1_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_1_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_1_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_2_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "slave com error"
+        },
+        "name": "SystemAlarm_2_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_2_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_2_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_2_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_3_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "slave conflict error"
+        },
+        "name": "SystemAlarm_3_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_3_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_3_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_3_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_4_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "general error"
+        },
+        "name": "SystemAlarm_4_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_4_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_4_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_4_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_5_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "ftp error"
+        },
+        "name": "SystemAlarm_5_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_5_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_5_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_5_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_6_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "cyber security alert"
+        },
+        "name": "SystemAlarm_6_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_6_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_6_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_6_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_7_5026;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "password alert"
+        },
+        "name": "SystemAlarm_7_5026",
+        "schema": {
+          "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_7_5026:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_7_5026:schema:ON;1",
+              "displayName": {
+                "en": "ON"
+              },
+              "enumValue": 1,
+              "name": "ON"
+            },
+            {
+              "@id": "dtmi:com:socomec:socomecgateway:SystemAlarm_7_5026:schema:OFF;1",
+              "displayName": {
+                "en": "OFF"
+              },
+              "enumValue": 0,
+              "name": "OFF"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:deviceLocalIp;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Local IP address"
+        },
+        "name": "deviceLocalIp",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:deviceFirmware;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Firmware version"
+        },
+        "name": "deviceFirmware",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:com:socomec:socomecgateway:deviceLocation;1",
+        "@type": [
+          "Property",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Geo location"
+        },
+        "name": "deviceLocation",
+        "schema": "geopoint",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "socomecgateway"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
