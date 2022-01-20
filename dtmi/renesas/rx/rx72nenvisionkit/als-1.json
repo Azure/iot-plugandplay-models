@@ -22,7 +22,7 @@
         "en": "Ambient Light"
       },
       "description": {
-        "en": "Send Ambient Light (units:lumen) to Cloud per five seconds."
+        "en": "Send Ambient Light (units:lumen) to Cloud"
       },
       "schema": "double",
       "unit": "lumen"
