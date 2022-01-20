@@ -110,10 +110,10 @@
         "@type": "CommandPayload",
         "name": "commandParameter",
         "displayName": {
-          "en": "Parameter Name"
+          "en": "Delay time(seconds)"
         },
         "description": {
-          "en": "Enter delay time"
+          "en": "Enter delay time(seconds)"
         },
         "schema": "string"
       },
