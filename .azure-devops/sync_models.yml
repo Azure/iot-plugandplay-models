@@ -103,7 +103,7 @@ jobs:
       script: |
         set -e
 
-        dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.5 --configfile ./nuget.config -v n
+        dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6 --configfile ./nuget.config -v n
         export PATH="$PATH:$HOME/.dotnet/tools"
         . ~/.bashrc
 
