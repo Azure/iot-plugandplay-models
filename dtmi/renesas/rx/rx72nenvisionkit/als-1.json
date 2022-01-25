@@ -1,0 +1,31 @@
+{
+  "@id": "dtmi:renesas:RX:RX72NEnvisionKit:als;1",
+  "displayName": {
+    "en": "Ambient Light Sensor on RX72N Envision Kit"
+  },
+  "description": {
+    "en": "Description for Ambient Light Sensor"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:als:ambientlight;1",
+      "@type": [
+        "Telemetry",
+        "LuminousFlux"
+      ],
+      "name": "ambientLight",
+      "displayName": {
+        "en": "Ambient Light"
+      },
+      "description": {
+        "en": "Send Ambient Light (units:lumen) to Cloud"
+      },
+      "schema": "double",
+      "unit": "lumen"
+    }
+  ]
+}
