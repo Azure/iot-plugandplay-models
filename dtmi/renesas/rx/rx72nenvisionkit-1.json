@@ -1,0 +1,160 @@
+{
+  "@id": "dtmi:renesas:RX:RX72NEnvisionKit;1",
+  "displayName": {
+    "en": "RX72N Envision Kit"
+  },
+  "description": {
+    "en": "RX72N Envision Kit model Rev.1.0"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:Manufacturer;1",
+      "@type": "Property",
+      "name": "manufacturer",
+      "writable": false,
+      "comment": "Manufacturer Name 'Renesas'",
+      "displayName": {
+        "en": "Manufacturer Name"
+      },
+      "description": {
+        "en": "The name of manufacturer of the board. 'Renesas Electronics Corporation'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:Model;1",
+      "@type": "Property",
+      "name": "model",
+      "writable": false,
+      "comment": "Model Name 'RTK5RX72N0C00000BJ'",
+      "displayName": {
+        "en": "Model Name"
+      },
+      "description": {
+        "en": "The model name of the board. 'RTK5RX72N0C00000BJ'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:ProcessorName;1",
+      "@type": "Property",
+      "name": "processorName",
+      "writable": false,
+      "comment": "MCU Name 'RX72N'",
+      "displayName": {
+        "en": "MCU Name"
+      },
+      "description": {
+        "en": "The name of the MCU 'RX72N'"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:Version;1",
+      "@type": "Property",
+      "name": "Version",
+      "writable": false,
+      "comment": "Sample Software Version",
+      "displayName": {
+        "en": "Sample Software Version"
+      },
+      "description": {
+        "en": "Sample Software Version"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:IPAddress;1",
+      "@type": "Property",
+      "name": "IPAddress",
+      "writable": false,
+      "comment": "IP Address",
+      "displayName": {
+        "en": "IP Address"
+      },
+      "description": {
+        "en": "IP Address"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:MACAddress;1",
+      "@type": "Property",
+      "name": "MACAddress",
+      "writable": false,
+      "comment": "MAC Address",
+      "displayName": {
+        "en": "MAC Address"
+      },
+      "description": {
+        "en": "MAC Address"
+      },
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:Reboot;1",
+      "@type": "Command",
+      "name": "reboot",
+      "comment": "Reboot the board with the specified delay",
+      "displayName": {
+        "en": "Reboot the board"
+      },
+      "description": {
+        "en": "Command to reboot the board with the specified delay."
+      },
+      "request": {
+        "@type": "CommandPayload",
+        "name": "commandParameter",
+        "displayName": {
+          "en": "Delay time(seconds)"
+        },
+        "description": {
+          "en": "Enter delay time(seconds)"
+        },
+        "schema": "string"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "name": "commandResponse",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "LED",
+      "displayName": {
+        "en": "LED on RX72N Envision Kit Board"
+      },
+      "description": {
+        "en": "LED on RX72N Envision Kit Board."
+      },
+      "schema": "dtmi:renesas:RX:RX72NEnvisionKit:led;1"
+    },
+    {
+      "@type": "Component",
+      "name": "AmbientLight",
+      "displayName": {
+        "en": "Ambient Light Sensor on RX72N Envision Kit Board"
+      },
+      "description": {
+        "en": "Ambient Light Sensor on RX72N Envision Kit Board."
+      },
+      "schema": "dtmi:renesas:RX:RX72NEnvisionKit:als;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Switch",
+      "displayName": {
+        "en": "User Switch"
+      },
+      "description": {
+        "en": "User Switch on RX72N Envision Kit Board"
+      },
+      "schema": "dtmi:renesas:RX:RX72NEnvisionKit:switch;1"
+    }
+  ]
+}
