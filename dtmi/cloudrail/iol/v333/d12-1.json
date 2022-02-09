@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D12;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SDAS-MHS-M40-1L-PNLK-PN-E-x.x-xx",
+  "description": "Position transmitter with M8 plug.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionData",
+      "displayName": "PositionData",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelSSC4",
+      "displayName": "BinaryDataChannelSSC4",
+      "schema": "dtmi:CloudRail:IOL:V333:D12:BinaryDataChannelSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelSSC3",
+      "displayName": "BinaryDataChannelSSC3",
+      "schema": "dtmi:CloudRail:IOL:V333:D12:BinaryDataChannelSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelSSC2",
+      "displayName": "BinaryDataChannelSSC2",
+      "schema": "dtmi:CloudRail:IOL:V333:D12:BinaryDataChannelSSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelSSC1",
+      "displayName": "BinaryDataChannelSSC1",
+      "schema": "dtmi:CloudRail:IOL:V333:D12:BinaryDataChannelSSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V333:D12:BinaryDataChannelSSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

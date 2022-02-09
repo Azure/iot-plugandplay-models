@@ -1,0 +1,229 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V234:D100211;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SXPi_PC",
+  "description": "CompactEjector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PartPresentH2",
+      "displayName": "PartPresentH2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AutomaticAirSavingFunctionH1",
+      "displayName": "AutomaticAirSavingFunctionH1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SystemPressureHP1",
+      "displayName": "SystemPressureHP1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusLEDGreen",
+      "displayName": "StatusLEDGreen",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusLEDRed",
+      "displayName": "StatusLEDRed",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusLEDFlashing",
+      "displayName": "StatusLEDFlashing",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConditionMonitoringEvent",
+      "displayName": "ConditionMonitoringEvent",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorEvent",
+      "displayName": "ErrorEvent",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "PD_DigitalIn_low",
+            "enumValue": "PD_DigitalIn_low"
+          },
+          {
+            "name": "PD_DigitalIn_high",
+            "enumValue": "PD_DigitalIn_high"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "VaccumOn",
+              "displayName": "VaccumOn",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "PD_DigitalOut_low",
+                    "enumValue": "PD_DigitalOut_low"
+                  },
+                  {
+                    "name": "PD_DigitalOut_high",
+                    "enumValue": "PD_DigitalOut_high"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BlowOff",
+              "displayName": "BlowOff",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "PD_DigitalOut_low",
+                    "enumValue": "PD_DigitalOut_low"
+                  },
+                  {
+                    "name": "PD_DigitalOut_high",
+                    "enumValue": "PD_DigitalOut_high"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SettingMode",
+              "displayName": "SettingMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "PD_DigitalOut_low",
+                    "enumValue": "PD_DigitalOut_low"
+                  },
+                  {
+                    "name": "PD_DigitalOut_high",
+                    "enumValue": "PD_DigitalOut_high"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

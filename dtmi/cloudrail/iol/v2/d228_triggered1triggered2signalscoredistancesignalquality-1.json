@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D228_Triggered1Triggered2SignalScoreDistanceSignalQuality;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "45DMS-B8LAT1-D4",
+  "description": "Photoelectric Sensor, Distance Measurement, Background Suppression, Class 1 Laser, Teachable Light Operate or Dark Operate, 1 x Auto PNP or NPN with IO-Link and 1 x Remote Input, Push Button Teach, 5 m Range, 4-pin M12 Integral QD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityScore",
+      "displayName": "SignalQualityScore",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered2",
+      "displayName": "Triggered2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Triggered1",
+      "displayName": "Triggered1",
+      "schema": "integer"
+    }
+  ]
+}

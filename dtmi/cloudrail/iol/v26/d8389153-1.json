@@ -1,0 +1,48 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389153;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PBS plus",
+  "description": "Pressure Switches",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OU1",
+      "displayName": "OU1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389153:OU;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OU2",
+      "displayName": "OU2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389153:OU;1"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389153:OU;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OUOn",
+          "enumValue": "OUOn"
+        },
+        {
+          "name": "OUOff",
+          "enumValue": "OUOff"
+        }
+      ]
+    }
+  ]
+}

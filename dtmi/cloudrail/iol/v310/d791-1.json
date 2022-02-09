@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D791;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Ixxxxx",
+  "description": "Inductive sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V310:D791:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V310:D791:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D791:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

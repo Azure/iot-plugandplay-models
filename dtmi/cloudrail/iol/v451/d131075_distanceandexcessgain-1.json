@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D131075_DistanceAndExcessGain;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "T30R-1515-KDQP",
+  "description": "Radar Measurement Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "DistanceMeasurementValue_m",
+      "displayName": "DistanceMeasurementValue_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExcessGainMeasurementValue",
+      "displayName": "ExcessGainMeasurementValue",
+      "schema": "long"
+    }
+  ]
+}

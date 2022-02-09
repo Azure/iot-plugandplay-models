@@ -1,0 +1,122 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D65537;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CMMO-ST-C5-1-LKP (FHPP Standard + FPC)",
+  "description": "CMMO with FHPP Standard and FPC (Festo Parameter Channel)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SCONFHPPDataInByte1",
+      "displayName": "SCONFHPPDataInByte1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SPOSFHPPDataInByte2",
+      "displayName": "SPOSFHPPDataInByte2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RecordNoSDIRFHPPDataInByte3",
+      "displayName": "RecordNoSDIRFHPPDataInByte3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RSBActualValue1FHPPDataInByte4",
+      "displayName": "RSBActualValue1FHPPDataInByte4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ActualPositionActualValue2FHPPDataInByte5To8",
+      "displayName": "ActualPositionActualValue2FHPPDataInByte5To8",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FPCSFPCDataInByte1",
+      "displayName": "FPCSFPCDataInByte1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SubindexPacketIDFPCDataInByte2",
+      "displayName": "SubindexPacketIDFPCDataInByte2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PNUKOFPCDataInByte3To4",
+      "displayName": "PNUKOFPCDataInByte3To4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PWEFPCDataInByte5To8",
+      "displayName": "PWEFPCDataInByte5To8",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "CCONFHPPDataOutByte1",
+              "displayName": "CCONFHPPDataOutByte1",
+              "schema": "long"
+            },
+            {
+              "name": "CPOSFHPPDataOutByte2",
+              "displayName": "CPOSFHPPDataOutByte2",
+              "schema": "long"
+            },
+            {
+              "name": "RecordNoCDIRFHPPDataOutByte3",
+              "displayName": "RecordNoCDIRFHPPDataOutByte3",
+              "schema": "long"
+            },
+            {
+              "name": "ReservedTargetValue1FHPPDataOutByte4",
+              "displayName": "ReservedTargetValue1FHPPDataOutByte4",
+              "schema": "long"
+            },
+            {
+              "name": "ReservedTargetValue2FHPPDataOutByte5To8",
+              "displayName": "ReservedTargetValue2FHPPDataOutByte5To8",
+              "schema": "long"
+            },
+            {
+              "name": "FPCCFPCDataOutByte1",
+              "displayName": "FPCCFPCDataOutByte1",
+              "schema": "long"
+            },
+            {
+              "name": "SubindexPacketIDFPCDataOutByte2",
+              "displayName": "SubindexPacketIDFPCDataOutByte2",
+              "schema": "long"
+            },
+            {
+              "name": "PNUKOFPCDataOutByte3To4",
+              "displayName": "PNUKOFPCDataOutByte3To4",
+              "schema": "long"
+            },
+            {
+              "name": "PWEFPCDataOutByte5To8",
+              "displayName": "PWEFPCDataOutByte5To8",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

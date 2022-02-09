@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D4784976;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "STEVAL-IDP003V1P",
+  "description": "STEVAL-IDP003V1P",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "double"
+    }
+  ]
+}

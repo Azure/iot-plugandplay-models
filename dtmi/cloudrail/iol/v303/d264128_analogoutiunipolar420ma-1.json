@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D264128_AnalogOutIUnipolar420mA;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IOL AO-U/I-STR-MULT-PAR VA",
+  "description": "IOL Analog Conv. straight M12 AO MULTI U/I 16Bit IOL V1.12",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Current",
+              "displayName": "Current",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D331073;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-104-002-Z046 with BNI IOL-104-002-Z046",
+  "description": "Sensor hub M8 extended with Sensor hub M8 ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort0Pin4",
+      "displayName": "SwitchstatePort0Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort1Pin4",
+      "displayName": "SwitchstatePort1Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort2Pin4",
+      "displayName": "SwitchstatePort2Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort3Pin4",
+      "displayName": "SwitchstatePort3Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort4Pin4",
+      "displayName": "SwitchstatePort4Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort5Pin4",
+      "displayName": "SwitchstatePort5Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort6Pin4",
+      "displayName": "SwitchstatePort6Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort7Pin4",
+      "displayName": "SwitchstatePort7Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort8Pin4",
+      "displayName": "SwitchstatePort8Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort9Pin4",
+      "displayName": "SwitchstatePort9Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort10Pin4",
+      "displayName": "SwitchstatePort10Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort11Pin4",
+      "displayName": "SwitchstatePort11Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort12Pin4",
+      "displayName": "SwitchstatePort12Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort13Pin4",
+      "displayName": "SwitchstatePort13Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort14Pin4",
+      "displayName": "SwitchstatePort14Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort0Pin4",
+      "displayName": "ExtensionPortSwitchstatePort0Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort1Pin4",
+      "displayName": "ExtensionPortSwitchstatePort1Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort2Pin4",
+      "displayName": "ExtensionPortSwitchstatePort2Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort3Pin4",
+      "displayName": "ExtensionPortSwitchstatePort3Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort4Pin4",
+      "displayName": "ExtensionPortSwitchstatePort4Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort5Pin4",
+      "displayName": "ExtensionPortSwitchstatePort5Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort6Pin4",
+      "displayName": "ExtensionPortSwitchstatePort6Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort7Pin4",
+      "displayName": "ExtensionPortSwitchstatePort7Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort8Pin4",
+      "displayName": "ExtensionPortSwitchstatePort8Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort9Pin4",
+      "displayName": "ExtensionPortSwitchstatePort9Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort10Pin4",
+      "displayName": "ExtensionPortSwitchstatePort10Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort11Pin4",
+      "displayName": "ExtensionPortSwitchstatePort11Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort12Pin4",
+      "displayName": "ExtensionPortSwitchstatePort12Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort13Pin4",
+      "displayName": "ExtensionPortSwitchstatePort13Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort14Pin4",
+      "displayName": "ExtensionPortSwitchstatePort14Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ExtensionPortSwitchstatePort15Pin4",
+      "displayName": "ExtensionPortSwitchstatePort15Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D331073:SwitchstatePortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D331073:ExtensionPortSwitchstatePortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1248770;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OY1PS918",
+  "description": "High-Performance Distance Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ContaminationOutput",
+      "displayName": "ContaminationOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorOutput",
+      "displayName": "ErrorOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

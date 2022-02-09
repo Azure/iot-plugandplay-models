@@ -1,0 +1,70 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D66124_Profile214bitPDWith2SwitchingBits;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PS510-400-0x-2UPN8-H1141",
+  "description": "Measuring range: 0...400 bar/0...5801,5 psi Admissable rel. press.: 2160 bar/31328 psi\nOutputs: 1 switching output (on pin 4) and 1 switching output or analog output (on pin 2)\nHousing/pressure connection: 1/4 NPT female thread",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_MPa",
+      "displayName": "ProcessValue_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_bar",
+      "displayName": "ProcessValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "ProcessValue_psi",
+      "displayName": "ProcessValue_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue_kgpcm2",
+      "displayName": "ProcessValue_kgpcm2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "dtmi:CloudRail:IOL:V317:D66124_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "dtmi:CloudRail:IOL:V317:D66124_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V317:D66124_Profile214bitPDWith2SwitchingBits:SwitchingOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Closed",
+          "enumValue": "Closed"
+        },
+        {
+          "name": "Open",
+          "enumValue": "Open"
+        }
+      ]
+    }
+  ]
+}

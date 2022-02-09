@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1306:D353;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "528.94050LPxx1",
+  "description": "PT528; 0...60barg; FPM; G 1/4",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "MeasurmentValue_bar",
+      "displayName": "MeasurmentValue_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Scale",
+      "displayName": "Scale",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overpressure",
+      "displayName": "Overpressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Underpressure",
+      "displayName": "Underpressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VoltageOutOfSpecification",
+      "displayName": "VoltageOutOfSpecification",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureCritical",
+      "displayName": "TemperatureCritical",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceFault",
+      "displayName": "DeviceFault",
+      "schema": "integer"
+    }
+  ]
+}

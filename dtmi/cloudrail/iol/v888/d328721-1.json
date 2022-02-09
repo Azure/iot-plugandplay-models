@@ -1,0 +1,175 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328721;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-750-V08-K007",
+  "description": "Valve plug CG25 24 2-3",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OutputStationStateValve01CoilA",
+              "displayName": "OutputStationStateValve01CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve01CoilB",
+              "displayName": "OutputStationStateValve01CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve02CoilA",
+              "displayName": "OutputStationStateValve02CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve02CoilB",
+              "displayName": "OutputStationStateValve02CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve03CoilA",
+              "displayName": "OutputStationStateValve03CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve03CoilB",
+              "displayName": "OutputStationStateValve03CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve04CoilA",
+              "displayName": "OutputStationStateValve04CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve04CoilB",
+              "displayName": "OutputStationStateValve04CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve05CoilA",
+              "displayName": "OutputStationStateValve05CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve05CoilB",
+              "displayName": "OutputStationStateValve05CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve06CoilA",
+              "displayName": "OutputStationStateValve06CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve06CoilB",
+              "displayName": "OutputStationStateValve06CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve07CoilA",
+              "displayName": "OutputStationStateValve07CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve07CoilB",
+              "displayName": "OutputStationStateValve07CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve08CoilA",
+              "displayName": "OutputStationStateValve08CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve08CoilB",
+              "displayName": "OutputStationStateValve08CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve09CoilA",
+              "displayName": "OutputStationStateValve09CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve09CoilB",
+              "displayName": "OutputStationStateValve09CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve10CoilA",
+              "displayName": "OutputStationStateValve10CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve10CoilB",
+              "displayName": "OutputStationStateValve10CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve11CoilA",
+              "displayName": "OutputStationStateValve11CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve11CoilB",
+              "displayName": "OutputStationStateValve11CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            },
+            {
+              "name": "OutputStationStateValve12CoilA",
+              "displayName": "OutputStationStateValve12CoilA",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1"
+            },
+            {
+              "name": "OutputStationStateValve12CoilB",
+              "displayName": "OutputStationStateValve12CoilB",
+              "schema": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilA;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328721:OutputStationStateValveCoilB;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

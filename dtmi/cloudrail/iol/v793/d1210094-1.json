@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V793:D1210094;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KIx-MxxPS/0xx-KxxxxxI",
+  "description": "Inductive Proximity Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SensorSwitchingOutput",
+      "displayName": "SensorSwitchingOutput",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorOperationOK",
+      "displayName": "SensorOperationOK",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorError",
+      "displayName": "SensorError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OperationSuccessfully",
+      "displayName": "OperationSuccessfully",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StoringSuccessfully",
+      "displayName": "StoringSuccessfully",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TeachError",
+      "displayName": "TeachError",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvervoltageDetected",
+      "displayName": "OvervoltageDetected",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "UndervoltageDetected",
+      "displayName": "UndervoltageDetected",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+    "@id": "dtmi:AAEON:HardwareMonitor;1",
+    "@type": "Interface",
+    "displayName": "Hardware Monitor",
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "displayName": "CPU Temperature",
+            "name": "tempCPU",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "System 1 Temperature",
+            "name": "tempSystem1",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "System 2 Temperature",
+            "name": "tempSystem2",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "CPU Fan Speed",
+            "name": "fanSpeedCPU",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "System 1 Fan Speed",
+            "name": "fanSpeedSystem1",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "System 2 Fan Speed",
+            "name": "fanSpeedSystem2",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": "VCORE",
+            "name": "vCORE",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "2V5",
+            "name": "v2V5",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "3V3",
+            "name": "v3V3",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "3VSB",
+            "name": "v3VSB",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "VBAT",
+            "name": "vBAT",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "5V",
+            "name": "v5V",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "5VSB",
+            "name": "v5VSB",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "12V",
+            "name": "v12V",
+            "schema": "integer"
+          },
+          {
+            "@type": "Telemetry",
+            "displayName": "DIMM",
+            "name": "vDIMM",
+            "schema": "integer"
+          }
+    ]
+}

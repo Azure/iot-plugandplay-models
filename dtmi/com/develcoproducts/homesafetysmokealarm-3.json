@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetysmokealarm;3",
+  "@type": "Interface",
+  "displayName": "Home Safety Smoke Alarm",
+  "description": "Home Safety Smoke Alarm",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smokealarm;2",
+      "name": "smokealarm1",
+      "displayName": "Smoke Alarm",
+      "description": "Smoke Alarm"
+    }
+  ]
+}

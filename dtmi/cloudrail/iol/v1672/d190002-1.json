@@ -1,0 +1,40 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1672:D190002;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PE_E3Z_M18_ISL700D_IL",
+  "description": "used ISL700D photoelectric Sensor ASIC",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AD_value",
+      "displayName": "AD_value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Analog_Voltage",
+      "displayName": "Analog_Voltage",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Data",
+              "displayName": "Data",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

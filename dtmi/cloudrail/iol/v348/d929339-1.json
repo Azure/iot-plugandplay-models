@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D929339;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EDS 3446-F31-0250-P20",
+  "description": "Pressure sensor with IO-Link and user interface, Revision 1",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1",
+      "displayName": "BDC1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDV1_MPa",
+      "displayName": "PDV1_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDV1_bar",
+      "displayName": "PDV1_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "PDV1_psi",
+      "displayName": "PDV1_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    }
+  ]
+}

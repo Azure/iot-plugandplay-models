@@ -1,0 +1,8 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263961;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 21M-XI-RS31-S4",
+  "description": "Red light through beam emitter",
+  "contents": []
+}

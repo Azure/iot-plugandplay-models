@@ -1,0 +1,131 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1167:D1;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LA25 IO-Link",
+  "description": "TECHLINE IC actuator",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Current",
+      "displayName": "Current",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EndOfStrokeOut",
+      "displayName": "EndOfStrokeOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EndOfStrokeIn",
+      "displayName": "EndOfStrokeIn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overload",
+      "displayName": "Overload",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RunningOut",
+      "displayName": "RunningOut",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RunningIn",
+      "displayName": "RunningIn",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorState",
+      "displayName": "ErrorState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "HallError",
+            "enumValue": "HallError"
+          },
+          {
+            "name": "OvervoltageError",
+            "enumValue": "OvervoltageError"
+          },
+          {
+            "name": "UndervoltageError",
+            "enumValue": "UndervoltageError"
+          },
+          {
+            "name": "SyncError",
+            "enumValue": "SyncError"
+          },
+          {
+            "name": "EndOfStrokeError",
+            "enumValue": "EndOfStrokeError"
+          },
+          {
+            "name": "PoweronBlock",
+            "enumValue": "PoweronBlock"
+          },
+          {
+            "name": "OvertemperatureError",
+            "enumValue": "OvertemperatureError"
+          },
+          {
+            "name": "InternalError",
+            "enumValue": "InternalError"
+          },
+          {
+            "name": "InternalError2",
+            "enumValue": "InternalError2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "RunCommand",
+              "displayName": "RunCommand",
+              "schema": "long"
+            },
+            {
+              "name": "Current",
+              "displayName": "Current",
+              "schema": "long"
+            },
+            {
+              "name": "Speed",
+              "displayName": "Speed",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

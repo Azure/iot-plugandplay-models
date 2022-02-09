@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D655365;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Li600P0-Q25L",
+  "description": "LI Position Sensors",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "MeasuredValue_mm",
+      "displayName": "MeasuredValue_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    }
+  ]
+}

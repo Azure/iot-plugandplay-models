@@ -1,0 +1,42 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D73_Distance14bitMarginLevel;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "45LMS-D8LGC1-D4",
+  "description": "Measurement Sensor - 45LMS",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MarginLevel",
+      "displayName": "MarginLevel",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Insufficient",
+            "enumValue": "Insufficient"
+          },
+          {
+            "name": "Acceptable",
+            "enumValue": "Acceptable"
+          },
+          {
+            "name": "Good",
+            "enumValue": "Good"
+          },
+          {
+            "name": "Excellent",
+            "enumValue": "Excellent"
+          }
+        ]
+      }
+    }
+  ]
+}

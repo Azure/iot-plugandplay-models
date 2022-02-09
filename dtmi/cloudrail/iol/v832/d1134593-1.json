@@ -1,0 +1,188 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V832:D1134593;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PX 80 AF x/L",
+  "description": "Electronic temperature sensor, 750...2400 °C, integrated laser spot light",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureQuotient_C",
+      "displayName": "TemperatureQuotient_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureQuotient_F",
+      "displayName": "TemperatureQuotient_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureLambda2_C",
+      "displayName": "TemperatureLambda2_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureLambda2_F",
+      "displayName": "TemperatureLambda2_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureLambda1_C",
+      "displayName": "TemperatureLambda1_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureLambda1_F",
+      "displayName": "TemperatureLambda1_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalIntensity_pct",
+      "displayName": "SignalIntensity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pilotlight",
+      "displayName": "Pilotlight",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ATDTactQ",
+      "displayName": "ATDTactQ",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ATDTactL2",
+      "displayName": "ATDTactL2",
+      "schema": "dtmi:CloudRail:IOL:V832:D1134593:ATDTactL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ATDTactL1",
+      "displayName": "ATDTactL1",
+      "schema": "dtmi:CloudRail:IOL:V832:D1134593:ATDTactL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Simulation",
+      "displayName": "Simulation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V832:D1134593:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V832:D1134593:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V832:D1134593:ATDTactL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V832:D1134593:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

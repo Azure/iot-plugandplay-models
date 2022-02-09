@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1377536;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FM-IM-2UPLi63X",
+  "description": "FM-IM Series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FlowRateQuasiAnalog",
+      "displayName": "FlowRateQuasiAnalog",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MediumTemperatureSwitchingOutput",
+      "displayName": "MediumTemperatureSwitchingOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FaultIndicationSwitchingOutput",
+      "displayName": "FaultIndicationSwitchingOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    }
+  ]
+}

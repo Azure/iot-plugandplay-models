@@ -1,0 +1,52 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1239:D512;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CANEO series10 touch Stainless Steel",
+  "description": "SENSORswitch with stainless steel housing and M12 connector",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TouchedFlag",
+      "displayName": "TouchedFlag",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "IDLE",
+            "enumValue": "IDLE"
+          },
+          {
+            "name": "TOUCH",
+            "enumValue": "TOUCH"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBit",
+      "displayName": "ReservedBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedByte",
+      "displayName": "ReservedByte",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedDword",
+      "displayName": "ReservedDword",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TouchCounter",
+      "displayName": "TouchCounter",
+      "schema": "long"
+    }
+  ]
+}

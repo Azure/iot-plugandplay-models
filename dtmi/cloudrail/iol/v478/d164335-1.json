@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V478:D164335;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MAXREFDES164-TMG",
+  "description": "MAX32660 Sample Application with Temperature Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "Temperature_C",
+      "displayName": "Temperature_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OvertemperatureStatus",
+      "displayName": "OvertemperatureStatus",
+      "schema": "integer"
+    }
+  ]
+}

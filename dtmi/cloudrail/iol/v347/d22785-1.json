@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D22785;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 25-Cx-GSL-M4M",
+  "description": "12 +/- 3 mm, IN, Q Push-Pull, metal plug, M8, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

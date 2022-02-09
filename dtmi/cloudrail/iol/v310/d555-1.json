@@ -1,0 +1,191 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D555;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AL2401",
+  "description": "IO-Link module 8 x 2 DI IP67, IO-Link, ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "X17I1",
+      "displayName": "X17I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X16I1",
+      "displayName": "X16I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X15I1",
+      "displayName": "X15I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X14I1",
+      "displayName": "X14I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X13I1",
+      "displayName": "X13I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X12I1",
+      "displayName": "X12I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X11I1",
+      "displayName": "X11I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X10I1",
+      "displayName": "X10I1",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X17I5",
+      "displayName": "X17I5",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X16I4",
+      "displayName": "X16I4",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X15I3",
+      "displayName": "X15I3",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X14I2",
+      "displayName": "X14I2",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X13I2",
+      "displayName": "X13I2",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X12I2",
+      "displayName": "X12I2",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X11I2",
+      "displayName": "X11I2",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "X10I2",
+      "displayName": "X10I2",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:XI;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX17",
+      "displayName": "SCX17",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX16",
+      "displayName": "SCX16",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX15",
+      "displayName": "SCX15",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX14",
+      "displayName": "SCX14",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX13",
+      "displayName": "SCX13",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX12",
+      "displayName": "SCX12",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX11",
+      "displayName": "SCX11",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SCX10",
+      "displayName": "SCX10",
+      "schema": "dtmi:CloudRail:IOL:V310:D555:SCX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "EquipmentSpecificId",
+      "displayName": "EquipmentSpecificId",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D555:XI;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D555:SCX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OK",
+          "enumValue": "OK"
+        },
+        {
+          "name": "ShortCircuit",
+          "enumValue": "ShortCircuit"
+        }
+      ]
+    }
+  ]
+}

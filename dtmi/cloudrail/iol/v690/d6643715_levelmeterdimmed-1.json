@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V690:D6643715_LevelMeterDimmed;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ClearSIGN compact",
+  "description": "ClearSIGN compact Contin. tone",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Value",
+              "displayName": "Value",
+              "schema": "long"
+            },
+            {
+              "name": "Acoustic",
+              "displayName": "Acoustic",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

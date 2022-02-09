@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D7937;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 10-RFx-PNSL-Kx4",
+  "description": "2...15 mm, IN, Q1 Auto / PNP / NPN, cable 2 m, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalQualityBit",
+      "displayName": "SignalQualityBit",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputQ1",
+      "displayName": "SwitchingOutputQ1",
+      "schema": "integer"
+    }
+  ]
+}
