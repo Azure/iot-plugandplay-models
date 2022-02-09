@@ -1,0 +1,93 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D110_SwitchingChannel;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-CM-4-PNSD-L8M",
+  "description": "20 … 150 mm, 5xQ, Auto/PNP/NPN, M12, 8-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQuality",
+      "displayName": "SwitchingQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q12",
+      "displayName": "Q12",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q11",
+      "displayName": "Q11",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q10",
+      "displayName": "Q10",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q9",
+      "displayName": "Q9",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q8",
+      "displayName": "Q8",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q7",
+      "displayName": "Q7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q6",
+      "displayName": "Q6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q5",
+      "displayName": "Q5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q4",
+      "displayName": "Q4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q3",
+      "displayName": "Q3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V408:D2101248;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "8.M36x8.xx4x.4122",
+  "description": "Clamping flange ø 36 mm, IP67, Solid shaft ø 6 x 12,5 mm, with flat, Multiturn, 18 … 30 V DC, M12 axial connector, 4-pin, Standard profile",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D684;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LX0024",
+  "description": "Electronic level sensor, 10...1570 mm, IO-Link, cULus, Rohrgewinde ISO 228 - G3/4 A",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Level_mm",
+      "displayName": "Level_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    }
+  ]
+}

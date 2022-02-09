@@ -1,0 +1,63 @@
+{
+    "@id": "dtmi:tinkergen:wioterminal_garden;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Wioterminal Garden",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Humidity"
+        },
+        "displayName": {
+          "en": "HUMI"
+        },
+        "name": "Humi",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Teamperature"
+        },
+        "displayName": {
+          "en": "TEMP"
+        },
+        "name": "Temp",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Soil moisture"
+        },
+        "displayName": {
+          "en": "SOIL"
+        },
+        "name": "Soil",
+        "schema": "double"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+            "en": "Light sensor value (%) on backside."
+        },
+        "displayName": {
+            "en": "TELEMETRY_LIGHT"
+        },
+        "name": "light",
+        "schema": "integer"
+      },
+      {
+        "@type": "Telemetry",
+        "description": {
+          "en": "Ultraviolet ray"
+        },
+        "displayName": {
+          "en": "Ultraviolet ray"
+        },
+        "name": "UV",
+        "schema": "double"
+      }
+    ]
+}

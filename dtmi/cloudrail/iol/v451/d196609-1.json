@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D196609;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DF-G1-KS-xx",
+  "description": "Dual Display Fiber Amplifier",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputStateQ",
+      "displayName": "OutputStateQ",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HardAlarmState",
+      "displayName": "HardAlarmState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement",
+      "displayName": "Measurement",
+      "schema": "long"
+    }
+  ]
+}

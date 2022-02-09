@@ -1,0 +1,79 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V696:D117;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EM12D-TIO-000-J",
+  "description": "ControlPlex(R) Controller with IO-Link: 32 Channels and acyclic current values supported",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ChannelStatus",
+      "displayName": "ChannelStatus",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelOverload",
+      "displayName": "ChannelOverload",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelShortcircuit",
+      "displayName": "ChannelShortcircuit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ChannelThreshold",
+      "displayName": "ChannelThreshold",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceLockedOff",
+      "displayName": "DeviceLockedOff",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverallStatus",
+      "displayName": "OverallStatus",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "SupplyVoltage_V",
+      "displayName": "SupplyVoltage_V",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Channel1To32Reset",
+              "displayName": "Channel1To32Reset",
+              "schema": "long"
+            },
+            {
+              "name": "Channel1To32Onoff",
+              "displayName": "Channel1To32Onoff",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

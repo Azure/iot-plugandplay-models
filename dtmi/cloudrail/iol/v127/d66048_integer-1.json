@@ -1,0 +1,108 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V127:D66048_Integer;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "COMPACT CA1510 -1...1 bar rel.",
+  "description": "Pressure Transmitter -1...1 bar rel.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PressureValue",
+      "displayName": "PressureValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PressureUnit",
+      "displayName": "PressureUnit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Bar",
+            "enumValue": "Bar"
+          },
+          {
+            "name": "Mbar",
+            "enumValue": "Mbar"
+          },
+          {
+            "name": "FtH2O",
+            "enumValue": "FtH2O"
+          },
+          {
+            "name": "MmH2O",
+            "enumValue": "MmH2O"
+          },
+          {
+            "name": "MmHG",
+            "enumValue": "MmHG"
+          },
+          {
+            "name": "Psi",
+            "enumValue": "Psi"
+          },
+          {
+            "name": "InH2O",
+            "enumValue": "InH2O"
+          },
+          {
+            "name": "InHG",
+            "enumValue": "InHG"
+          },
+          {
+            "name": "Kgcm2",
+            "enumValue": "Kgcm2"
+          },
+          {
+            "name": "KPa",
+            "enumValue": "KPa"
+          },
+          {
+            "name": "Torr",
+            "enumValue": "Torr"
+          },
+          {
+            "name": "MPa",
+            "enumValue": "MPa"
+          },
+          {
+            "name": "MH2O",
+            "enumValue": "MH2O"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1Closed",
+      "displayName": "SwitchingOutput1Closed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2Closed",
+      "displayName": "SwitchingOutput2Closed",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInvalid",
+      "displayName": "ProcessDataInvalid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ParameterMemoryDefective",
+      "displayName": "ParameterMemoryDefective",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceFailure",
+      "displayName": "DeviceFailure",
+      "schema": "integer"
+    }
+  ]
+}

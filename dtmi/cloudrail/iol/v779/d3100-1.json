@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V779:D3100;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "RFC-4800-xxxxe",
+  "description": "RFC-48__-___-A11-5__",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

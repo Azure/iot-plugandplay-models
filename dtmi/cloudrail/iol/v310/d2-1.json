@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PPxxxx",
+  "description": "PP",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2",
+      "displayName": "SwitchstateOUT2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": "integer"
+    }
+  ]
+}

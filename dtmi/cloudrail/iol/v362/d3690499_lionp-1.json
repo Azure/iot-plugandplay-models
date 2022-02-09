@@ -1,0 +1,222 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V362:D3690499_LioNP;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "0960 IOL 385-001-EEC",
+  "description": "LioN-P IO-Link I/O-Hub, 10DI/6DO, EEC",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PortX1A",
+      "displayName": "PortX1A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX1B",
+      "displayName": "PortX1B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX2A",
+      "displayName": "PortX2A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX2B",
+      "displayName": "PortX2B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX3A",
+      "displayName": "PortX3A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX3B",
+      "displayName": "PortX3B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX4A",
+      "displayName": "PortX4A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX4B",
+      "displayName": "PortX4B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX5A",
+      "displayName": "PortX5A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX5B",
+      "displayName": "PortX5B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX6A",
+      "displayName": "PortX6A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX6B",
+      "displayName": "PortX6B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX7A",
+      "displayName": "PortX7A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX7B",
+      "displayName": "PortX7B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX8A",
+      "displayName": "PortX8A",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PortX8B",
+      "displayName": "PortX8B",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DIAGPORT",
+      "displayName": "DIAGPORT",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDAE",
+      "displayName": "MDAE",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDSE",
+      "displayName": "MDSE",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDLVA",
+      "displayName": "MDLVA",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MDLVS",
+      "displayName": "MDLVS",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PRMMODE",
+      "displayName": "PRMMODE",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DefaultParametrizationActive",
+            "enumValue": "DefaultParametrizationActive"
+          },
+          {
+            "name": "UserParametrizationActive",
+            "enumValue": "UserParametrizationActive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ID",
+      "displayName": "ID",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PortX6A",
+              "displayName": "PortX6A",
+              "schema": "integer"
+            },
+            {
+              "name": "PortX6B",
+              "displayName": "PortX6B",
+              "schema": "integer"
+            },
+            {
+              "name": "PortX7A",
+              "displayName": "PortX7A",
+              "schema": "integer"
+            },
+            {
+              "name": "PortX7B",
+              "displayName": "PortX7B",
+              "schema": "integer"
+            },
+            {
+              "name": "PortX8A",
+              "displayName": "PortX8A",
+              "schema": "integer"
+            },
+            {
+              "name": "PortX8B",
+              "displayName": "PortX8B",
+              "schema": "integer"
+            },
+            {
+              "name": "PRMRST",
+              "displayName": "PRMRST",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NoEffect",
+                    "enumValue": "NoEffect"
+                  },
+                  {
+                    "name": "FactoryReset",
+                    "enumValue": "FactoryReset"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

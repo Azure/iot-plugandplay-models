@@ -1,0 +1,234 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D786945_ScanUserData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SIMATIC RF210R IO-Link ",
+  "description": "Ident systems ",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "CommandState",
+      "displayName": "CommandState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoResult",
+            "enumValue": "NoResult"
+          },
+          {
+            "name": "Ready",
+            "enumValue": "Ready"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Presence",
+      "displayName": "Presence",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoTag",
+            "enumValue": "NoTag"
+          },
+          {
+            "name": "TagInTheField",
+            "enumValue": "TagInTheField"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AntennaState",
+      "displayName": "AntennaState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AntennaActive",
+            "enumValue": "AntennaActive"
+          },
+          {
+            "name": "AntennaInactive",
+            "enumValue": "AntennaInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Command",
+      "displayName": "Command",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "None",
+            "enumValue": "None"
+          },
+          {
+            "name": "Write",
+            "enumValue": "Write"
+          },
+          {
+            "name": "Read",
+            "enumValue": "Read"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorCode",
+      "displayName": "ErrorCode",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AddressHigh",
+      "displayName": "AddressHigh",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AddressLow",
+      "displayName": "AddressLow",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadData1",
+      "displayName": "ReadData1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadData2",
+      "displayName": "ReadData2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadData3",
+      "displayName": "ReadData3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadData4",
+      "displayName": "ReadData4",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AntennaState",
+              "displayName": "AntennaState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AntennaActive",
+                    "enumValue": "AntennaActive"
+                  },
+                  {
+                    "name": "AntennaInactive",
+                    "enumValue": "AntennaInactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Command",
+              "displayName": "Command",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "None",
+                    "enumValue": "None"
+                  },
+                  {
+                    "name": "Write",
+                    "enumValue": "Write"
+                  },
+                  {
+                    "name": "Read",
+                    "enumValue": "Read"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AddressHigh",
+              "displayName": "AddressHigh",
+              "schema": "long"
+            },
+            {
+              "name": "AddressLow",
+              "displayName": "AddressLow",
+              "schema": "long"
+            },
+            {
+              "name": "WriteData1",
+              "displayName": "WriteData1",
+              "schema": "long"
+            },
+            {
+              "name": "WriteData2",
+              "displayName": "WriteData2",
+              "schema": "long"
+            },
+            {
+              "name": "WriteData3",
+              "displayName": "WriteData3",
+              "schema": "long"
+            },
+            {
+              "name": "WriteData4",
+              "displayName": "WriteData4",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

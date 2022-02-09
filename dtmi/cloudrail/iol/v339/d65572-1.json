@@ -1,0 +1,45 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V339:D65572;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TR-Rotary_010024",
+  "description": "2. Generation Absolute-Encoder",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Velocity",
+      "displayName": "Velocity",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "PresetPosition",
+              "displayName": "PresetPosition",
+              "schema": "long"
+            },
+            {
+              "name": "ControlByte",
+              "displayName": "ControlByte",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

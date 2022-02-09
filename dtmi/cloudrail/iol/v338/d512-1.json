@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D512;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LV463.7/L4-xx0-Mx2",
+  "description": "Fiber Optic Amplifier",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputStateQ",
+      "displayName": "OutputStateQ",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HardAlarmState",
+      "displayName": "HardAlarmState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement",
+      "displayName": "Measurement",
+      "schema": "long"
+    }
+  ]
+}

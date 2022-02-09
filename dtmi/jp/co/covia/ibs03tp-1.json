@@ -1,0 +1,70 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:jp:co:covia:iBS03TP;1",
+  "@type": "Interface",
+  "displayName": "iBS03TP",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "isEnabled",
+      "displayName": "Enable Telemetry",
+      "description": "Gets or sets a value indicating whether telemetry transmission is enabled.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "reportInterval",
+      "displayName": "Report Telemetry Interval",
+      "description": "Gets or sets the interval at which telemetry is reported.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ibs03tp",
+      "displayName": "iBS03TP",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Timestamp",
+            "name": "timestamp",
+            "description": "Sets the time information for data reception.",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "description": "Sets the RSSI value for data reception.",
+            "schema": "integer"
+          },
+          {
+            "displayName": "MAC Address",
+            "name": "mac",
+            "description": "Set the MAC address of the sensor.",
+            "schema": "string"
+          },
+          {
+            "displayName": "Main Temperature",
+            "name": "temperature",
+            "description": "Set the temperature of the sensor itself.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Prove Temperature",
+            "name": "probeTemperature",
+            "description": "Set the temperature of the sensor probe.",
+            "schema": "double"
+          },
+          {
+            "displayName": "Battery Voltage",
+            "name": "batteryVoltage",
+            "description": "Set the battery voltage of the sensor.",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}

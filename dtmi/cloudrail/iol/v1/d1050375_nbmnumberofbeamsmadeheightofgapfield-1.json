@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D1050375_NBMNumberOfBeamsMadeHeightOfGapField;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LGMxx-700-IO/110/115b",
+  "description": "Measuring Light Grid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalBit0",
+      "displayName": "SwitchingSignalBit0",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SynchronizationBit1",
+      "displayName": "SynchronizationBit1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StabilityControlBit2",
+      "displayName": "StabilityControlBit2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NBMNumberOfBeamsMadeHeightOfGapField",
+      "displayName": "NBMNumberOfBeamsMadeHeightOfGapField",
+      "schema": "long"
+    }
+  ]
+}

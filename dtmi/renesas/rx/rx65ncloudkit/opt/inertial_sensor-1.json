@@ -1,0 +1,111 @@
+{
+  "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor;1",
+  "displayName": {
+    "en": "Inertial Sensor(bmi160) on RX65N Option Board"
+  },
+  "description": {
+    "en": "Description for Inertial Sensor(bmi160)"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:accelerometer_x;1",
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelerometerX",
+      "displayName": {
+        "en": "Accelerometer X"
+      },
+      "description": {
+        "en": "Accelerometer X to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:accelerometer_y;1",
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelerometerY",
+      "displayName": {
+        "en": "Accelerometer Y"
+      },
+      "description": {
+        "en": "Accelerometer Y to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:accelerometer_z;1",
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "accelerometerZ",
+      "displayName": {
+        "en": "Accelerometer Z"
+      },
+      "description": {
+        "en": "Accelerometer Z to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "gForce"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:gyroscope_x;1",
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeX",
+      "displayName": {
+        "en": "Gyroscope X"
+      },
+      "description": {
+        "en": "Gyroscope X to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:gyroscope_y;1",
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeY",
+      "displayName": {
+        "en": "Gyroscope Y"
+      },
+      "description": {
+        "en": "Gyroscope Y to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "degreePerSecond"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:inertial_sensor:gyroscope_z;1",
+      "@type": [
+        "Telemetry",
+        "AngularVelocity"
+      ],
+      "name": "gyroscopeZ",
+      "displayName": {
+        "en": "Gyroscope Z"
+      },
+      "description": {
+        "en": "Gyroscope Z to Cloud per five seconds."
+      },
+      "schema": "double",
+      "unit": "degreePerSecond"
+    }
+  ]
+}

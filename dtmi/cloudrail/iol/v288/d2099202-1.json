@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V288:D2099202;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "EPI2008-0002",
+  "description": "IO Module",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Output0",
+              "displayName": "Output0",
+              "schema": "integer"
+            },
+            {
+              "name": "Output1",
+              "displayName": "Output1",
+              "schema": "integer"
+            },
+            {
+              "name": "Output2",
+              "displayName": "Output2",
+              "schema": "integer"
+            },
+            {
+              "name": "Output3",
+              "displayName": "Output3",
+              "schema": "integer"
+            },
+            {
+              "name": "Output4",
+              "displayName": "Output4",
+              "schema": "integer"
+            },
+            {
+              "name": "Output5",
+              "displayName": "Output5",
+              "schema": "integer"
+            },
+            {
+              "name": "Output6",
+              "displayName": "Output6",
+              "schema": "integer"
+            },
+            {
+              "name": "Output7",
+              "displayName": "Output7",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D139;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TP3237",
+  "description": "TP",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    }
+  ]
+}

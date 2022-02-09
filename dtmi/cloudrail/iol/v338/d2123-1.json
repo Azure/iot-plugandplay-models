@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2123;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Leuze electronic LE3CL1/LP",
+  "description": "LE3CL1/LP - Leuze LE3CL1 receiver",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q",
+      "displayName": "Q",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": "integer"
+    }
+  ]
+}

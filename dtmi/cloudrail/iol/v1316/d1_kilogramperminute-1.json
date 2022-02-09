@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1316:D1_KilogramPerMinute;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Flow Meter",
+  "description": "Gear Type Flow Meter\r\n",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "StartStop",
+              "displayName": "StartStop",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

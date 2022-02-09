@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D917762;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NCLS-30-UP6X-H1141",
+  "description": "Capacitive Level Switch",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V317:D917762:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V317:D917762:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessValue",
+      "displayName": "ProcessValue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V317:D917762:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

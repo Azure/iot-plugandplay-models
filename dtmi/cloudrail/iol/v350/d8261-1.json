@@ -1,0 +1,66 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V350:D8261;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FxDx 14G690x/xxxxxxxx-U",
+  "description": "FHDx 14/ FNDx 14",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoAlarm",
+            "enumValue": "NoAlarm"
+          },
+          {
+            "name": "NoValidSignal",
+            "enumValue": "NoValidSignal"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingArea",
+      "displayName": "SwitchingArea",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OutsideSwitchingArea",
+            "enumValue": "OutsideSwitchingArea"
+          },
+          {
+            "name": "InsideSwitchingArea",
+            "enumValue": "InsideSwitchingArea"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Quality",
+      "displayName": "Quality",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SufficientExcessGain",
+            "enumValue": "SufficientExcessGain"
+          },
+          {
+            "name": "CriticalExcessGain",
+            "enumValue": "CriticalExcessGain"
+          }
+        ]
+      }
+    }
+  ]
+}

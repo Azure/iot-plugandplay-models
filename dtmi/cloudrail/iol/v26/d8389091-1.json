@@ -1,0 +1,92 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389091;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FTS-xxx0Fx4A",
+  "description": "Industrial, Probe length 100mm, Fluid, with Display",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389091:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389091:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          },
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningActive",
+      "displayName": "WarningActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowrateVelocity001msVolume01lminRelative01",
+      "displayName": "FlowrateVelocity001msVolume01lminRelative01",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature01C",
+      "displayName": "Temperature01C",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389091:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

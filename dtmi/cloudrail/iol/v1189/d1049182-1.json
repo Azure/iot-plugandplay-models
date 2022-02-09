@@ -1,0 +1,8 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1189:D1049182;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PSD-4, 0...16 kg/cm²; 2xPNP/NPN + 0...10V",
+  "description": "PSD-4 - Pressure Switch with Display, 0...16 kg/cm²; 2xPNP/NPN + 0...10V",
+  "contents": []
+}

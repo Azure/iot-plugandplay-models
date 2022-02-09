@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V42:D229379;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ET 200AL DI 8x24VDC 8xM8",
+  "description": "IO-Link Digital input module DI 8x24VDC 8xM8",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel0ConnectorX10Pin4",
+      "displayName": "InputDataChannel0ConnectorX10Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel1ConnectorX11Pin4",
+      "displayName": "InputDataChannel1ConnectorX11Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel2ConnectorX12Pin4",
+      "displayName": "InputDataChannel2ConnectorX12Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel3ConnectorX13Pin4",
+      "displayName": "InputDataChannel3ConnectorX13Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel4ConnectorX14Pin4",
+      "displayName": "InputDataChannel4ConnectorX14Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel5ConnectorX15Pin4",
+      "displayName": "InputDataChannel5ConnectorX15Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel6ConnectorX16Pin4",
+      "displayName": "InputDataChannel6ConnectorX16Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputDataChannel7ConnectorX17Pin4",
+      "displayName": "InputDataChannel7ConnectorX17Pin4",
+      "schema": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V42:D229379:InputDataChannelConnectorX;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Null",
+          "enumValue": "0"
+        },
+        {
+          "name": "One",
+          "enumValue": "1"
+        }
+      ]
+    }
+  ]
+}

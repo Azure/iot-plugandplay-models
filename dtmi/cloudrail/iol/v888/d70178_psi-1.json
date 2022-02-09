@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D70178_PSI;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BSP00YH",
+  "description": "Pressure Sensor IP67, with display, 0..400 bar",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Switch1State",
+      "displayName": "Switch1State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Switch2State",
+      "displayName": "Switch2State",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_mbar",
+      "displayName": "Pressure_mbar",
+      "schema": "double",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    }
+  ]
+}

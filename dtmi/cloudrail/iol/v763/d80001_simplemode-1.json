@@ -1,0 +1,131 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V763:D80001_SimpleMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LR6-IL",
+  "description": "LR",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "White",
+              "displayName": "White",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Blue",
+              "displayName": "Blue",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Green",
+              "displayName": "Green",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Yellow",
+              "displayName": "Yellow",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Red",
+              "displayName": "Red",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "One",
+                    "enumValue": "1"
+                  },
+                  {
+                    "name": "Null",
+                    "enumValue": "0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

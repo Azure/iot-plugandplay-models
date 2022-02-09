@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V348:D9280811;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "HPT 1446S-F31-0400-000",
+  "description": "Pressure sensor (0..400 bar) with IO-Link interface.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC2",
+      "displayName": "SSC2",
+      "schema": "dtmi:CloudRail:IOL:V348:D9280811:SSC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC1",
+      "displayName": "SSC1",
+      "schema": "dtmi:CloudRail:IOL:V348:D9280811:SSC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V348:D9280811:SSC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        },
+        {
+          "name": "High",
+          "enumValue": "High"
+        }
+      ]
+    }
+  ]
+}

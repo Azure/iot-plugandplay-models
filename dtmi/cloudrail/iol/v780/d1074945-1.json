@@ -1,0 +1,31 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D1074945;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DW164600",
+  "description": "Pressure Sensor -1..0 bar",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Out1",
+      "displayName": "Out1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Out2",
+      "displayName": "Out2",
+      "schema": "integer"
+    }
+  ]
+}

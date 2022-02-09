@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131585;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BAW Z01AC-BLD50B-DP03",
+  "description": "BAW - Inductive distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceAbsolute",
+      "displayName": "DistanceAbsolute",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam1",
+      "displayName": "Cam1",
+      "schema": "dtmi:CloudRail:IOL:V888:D131585:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam2",
+      "displayName": "Cam2",
+      "schema": "dtmi:CloudRail:IOL:V888:D131585:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Cam3",
+      "displayName": "Cam3",
+      "schema": "dtmi:CloudRail:IOL:V888:D131585:Cam;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StatusDevice",
+      "displayName": "StatusDevice",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OutOfRange",
+            "enumValue": "OutOfRange"
+          },
+          {
+            "name": "InRange",
+            "enumValue": "InRange"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D131585:Cam;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

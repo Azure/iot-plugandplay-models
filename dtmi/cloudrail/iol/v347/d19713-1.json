@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D19713;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FS 25-R-L-x4M",
+  "description": "0...13m, Test input, metal plug, M8, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Transmitter",
+      "displayName": "Transmitter",
+      "schema": "integer"
+    }
+  ]
+}

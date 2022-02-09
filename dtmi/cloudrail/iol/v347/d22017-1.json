@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D22017;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-CM-3-PNSDL-L4M",
+  "description": "18...60 mm, 1xQ, Auto/PNP/NPN, M12, 4-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQuality",
+      "displayName": "SwitchingQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "integer"
+    }
+  ]
+}

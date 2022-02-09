@@ -1,0 +1,196 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V131:D342_KPa;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ISA3-GxL-M",
+  "description": "0.02 to 0.15mm\r\nφ6 One-touch fitting",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Gap",
+      "displayName": "Gap",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "SupplyPressure_kPa",
+      "displayName": "SupplyPressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "SupplyPressure_bar",
+      "displayName": "SupplyPressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "SupplyPressure_psi",
+      "displayName": "SupplyPressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "OutletPressure_kPa",
+      "displayName": "OutletPressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "OutletPressure_bar",
+      "displayName": "OutletPressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "OutletPressure_psi",
+      "displayName": "OutletPressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Diagnosis",
+      "displayName": "Diagnosis",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          },
+          {
+            "name": "NoError",
+            "enumValue": "NoError"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW2Outlet",
+      "displayName": "SW2Outlet",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWOutlet;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW1Outlet",
+      "displayName": "SW1Outlet",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWOutlet;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW2Supply",
+      "displayName": "SW2Supply",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWSupply;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW1Supply",
+      "displayName": "SW1Supply",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWSupply;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW2Gap",
+      "displayName": "SW2Gap",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWGap;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SW1Gap",
+      "displayName": "SW1Gap",
+      "schema": "dtmi:CloudRail:IOL:V131:D342_KPa:SWGap;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D342_KPa:SWOutlet;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D342_KPa:SWSupply;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V131:D342_KPa:SWGap;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}
