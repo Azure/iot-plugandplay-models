@@ -1,0 +1,86 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:component:Temperature;1",
+  "@type": "Interface",
+  "displayName": "Temperature Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "telemetryInterval",
+      "displayName": "Telemetry Interval",
+      "description": "Control the frequency of the telemetry loop.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "displayName": "Temperature",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Gateway Mac",
+            "name": "gatewayMac",
+            "schema": "string"
+          },
+          {
+            "displayName": "Local Timestamp",
+            "name": "localtimestamp",
+            "schema": "string"
+          },
+          {
+            "displayName": "DatetimeISO",
+            "name": "datetimeISO",
+            "schema": "string"
+          },
+          {
+            "displayName": "Datetime",
+            "name": "datetime",
+            "schema": "string"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "schema": "integer"
+          },
+          {
+            "displayName": "Mac",
+            "name": "mac",
+            "schema": "string"
+          },
+          {
+            "displayName": "SerialNumber",
+            "name": "serial",
+            "schema": "string"
+          },
+          {
+            "displayName": "ModelName",
+            "name": "model",
+            "schema": "string"
+          },
+          {
+            "displayName": "Battery",
+            "name": "battery",
+            "schema": "double"
+          },
+          {
+            "displayName": "Temperature1",
+            "name": "temperature1",
+            "schema": "double"
+          },
+          {
+            "displayName": "Temperature2",
+            "name": "temperature2",
+            "schema": "double"
+          },
+          {
+            "displayName": "Event",
+            "name": "event",
+            "schema": "boolean"
+          }
+        ]
+      }
+    }
+  ]
+}
