@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:crl:Guardian3;1",
+    "@id": "dtmi:crl:Guardian;4",
     "@type": "Interface",
     "displayName": "Guardian3",
     "description": "The mutifunctional gateway.",
