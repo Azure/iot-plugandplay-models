@@ -1,0 +1,65 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:lab3:nexus;1",
+    "@type": "Interface",
+    "displayName": "nexus",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "uplink_message",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "session_key_id",
+                        "schema": "string",
+                        "comment": "RFU"
+                    },
+                    {
+                        "name": "f_port",
+                        "schema": "integer",
+                        "comment": "Port is used to identify the LAB3 \"Data Format\" of the payload"
+                    },
+                    {
+                        "name": "f_cnt",
+                        "schema": "integer",
+                        "comment": "Security measure.  Each message is sent with an incremented frame count.  All frame counts less than previous count will be ignored"
+                    },
+                    {
+                        "name": "frm_payload",
+                        "schema": "string",
+                        "comment": "Data in Base64 format"
+                    },
+                    {
+                        "name": "decoded_payload",
+                        "schema": {
+                            "@type": "Array",
+                            "elementSchema": "integer"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "Common_App_Settings_Response",
+            "schema": "integer",
+            "comment": "Response to a request for Common Application settings"
+        },
+        {
+            "@type": "Property",
+            "name": "serialNumber",
+            "schema": "string",
+            "description": "The serial number of the NEXUS device",
+            "writable": false
+        },
+        {
+            "@type": "Command",
+            "name": "requestCommAppSetting",
+            "request": {
+                "name": "Settings_Request",
+                "schema": "integer"
+            }
+        }
+    ]
+}
