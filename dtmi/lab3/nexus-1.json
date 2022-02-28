@@ -41,25 +41,11 @@
             }
         },
         {
-            "@type": "Telemetry",
-            "name": "Common_App_Settings_Response",
-            "schema": "integer",
-            "comment": "Response to a request for Common Application settings"
-        },
-        {
             "@type": "Property",
             "name": "serialNumber",
             "schema": "string",
             "description": "The serial number of the NEXUS device",
             "writable": false
-        },
-        {
-            "@type": "Command",
-            "name": "requestCommAppSetting",
-            "request": {
-                "name": "Settings_Request",
-                "schema": "integer"
-            }
         }
     ]
 }
