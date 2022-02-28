@@ -13,22 +13,22 @@
                     {
                         "name": "session_key_id",
                         "schema": "string",
-                        "description": "RFU"
+                        "comment": "RFU"
                     },
                     {
                         "name": "f_port",
                         "schema": "integer",
-                        "description": "Port is used to identify the LAB3 \"Data Format\" of the payload"
+                        "comment": "Port is used to identify the LAB3 \"Data Format\" of the payload"
                     },
                     {
                         "name": "f_cnt",
                         "schema": "integer",
-                        "description": "Security measure.  Each message is sent with an incremented frame count.  All frame counts less than previous count will be ignored"
+                        "comment": "Security measure.  Each message is sent with an incremented frame count.  All frame counts less than previous count will be ignored"
                     },
                     {
                         "name": "frm_payload",
                         "schema": "string",
-                        "description": "Data in Base64 format"
+                        "comment": "Data in Base64 format"
                     },
                     {
                         "name": "decoded_payload",
@@ -41,11 +41,25 @@
             }
         },
         {
+            "@type": "Telemetry",
+            "name": "Common_App_Settings_Response",
+            "schema": "integer",
+            "comment": "Response to a request for Common Application settings"
+        },
+        {
             "@type": "Property",
             "name": "serialNumber",
             "schema": "string",
             "description": "The serial number of the NEXUS device",
             "writable": false
+        },
+        {
+            "@type": "Command",
+            "name": "requestCommAppSetting",
+            "request": {
+                "name": "Settings_Request",
+                "schema": "integer"
+            }
         }
     ]
 }
