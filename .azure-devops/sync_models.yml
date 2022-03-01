@@ -1,24 +1,45 @@
 # Copyright (c) Microsoft Corporation MIT license
-#
 # Azure IoT Models Repository synchronization pipeline definition
-# The following pipeline variables are required:
-#
-# DMR_SERVICE_CONNECTION
-# DMR_STORAGE_ACCOUNT
+
+parameters:
+- name: artifactFeedUriVar
+  type: string
+  default: 'ArtifactFeedUri'
+- name: buildAgentPoolVar
+  type: string
+  default: 'BuildAgentPool'
+- name: buildAgentVmImageVar
+  type: string
+  default: 'BuildAgentVmImage'
+- name: dmrServiceConnVar
+  type: string
+  default: 'DmrServiceConnection'
+- name: dmrStorageAccountVar
+  type: string
+  default: 'DmrStorageAccount'
+
 
 variables:
- - name: dmrClientVer
-   value: 1.0.0-beta.3
- - name: indexStagingPath
-   value: ./index_pages/
- - name: pageLimit
-   value: 2048
+- name: vmImage
+  value: $[variables.${{ parameters.buildAgentVmImageVar }}]
+- name: buildPool
+  value: $[variables.${{ parameters.buildAgentPoolVar }}]
+- name: DMR_SERVICE_CONNECTION
+  value: $[variables.${{ parameters.dmrServiceConnVar }}]
+- name: DMR_STORAGE_ACCOUNT
+  value: $[variables.${{ parameters.dmrStorageAccountVar }}]
+- name: feedUri
+  value: $[variables.${{ parameters.artifactFeedUriVar }}]
+- name: indexStagingPath
+  value: ./index_pages/
+- name: pageLimit
+  value: 2048
+
 
 # Required for schedule trigger
 trigger: none
 pr: none
 
-name: 
 schedules:
 - cron: '0 */1 * * *'
   displayName: 'Scheduled models sync event'
@@ -31,7 +52,10 @@ jobs:
 - job: 'sync_models'
   displayName: 'Sync models'
   pool:
-    vmImage: 'ubuntu-20.04'
+    name: $(buildPool)
+    vmImage: $(vmImage)
+    demands:
+    - ImageOverride -equals $(vmImage)
   steps:
   - task: AzureCLI@2
     displayName: 'Synchronizing'
@@ -50,26 +74,44 @@ jobs:
 - job: 'evaluate_repo'
   displayName: 'Evaluate repository'
   pool:
-    vmImage: 'ubuntu-20.04'
+    name: $(buildPool)
+    vmImage: $(vmImage)
+    demands:
+    - ImageOverride -equals $(vmImage)
   steps:
+  - task: Bash@3
+    displayName: 'Generate target nuget.config'
+    inputs:
+      targetType: 'inline'
+      script: |
+        set -e
+
+        echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>\
+        <configuration>\
+          <packageSources>\
+            <clear />\
+            <add key=\"nuget\" value=\"$(feedUri)\" />\
+          </packageSources>\
+        </configuration>" > ./nuget.config
+        cat ./nuget.config
+  - task: nuget-security-analysis@0
+  - task: NuGetAuthenticate@0
   - task: Bash@3
     displayName: 'Expand and index repository models'
     inputs:
       targetType: 'inline'
       script: |
         set -e
-        
-        git clone -b $(dmrClientVer) https://github.com/Azure/iot-plugandplay-models-tools ../dmrtools
-        PATH=../dmrtools:$PATH
-        dotnet pack ../dmrtools/clients/dotnet -v m -c Release
-        dotnet tool install Microsoft.IoT.ModelsRepository.CommandLine --tool-path ../dmrtools --add-source ../dmrtools/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine/bin/Release/ --version $(dmrClientVer)
+
+        dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6 --configfile ./nuget.config -v n
+        export PATH="$PATH:$HOME/.dotnet/tools"
+        . ~/.bashrc
 
         echo "Expanding repository..."
         dmr-client expand --local-repo $PWD
 
         echo "Generating index..."
         dmr-client index --local-repo $PWD -o $(indexStagingPath)/index.json --page-limit $(pageLimit)
-
   - task: PythonScript@0
     displayName: 'Generate snapshot metadata'
     inputs:
@@ -130,7 +172,10 @@ jobs:
   displayName: 'Sync expanded models'
   dependsOn: 'evaluate_repo'
   pool:
-    vmImage: 'ubuntu-20.04'
+    name: $(buildPool)
+    vmImage: $(vmImage)
+    demands:
+    - ImageOverride -equals $(vmImage)
   steps:
   - checkout: none
   - task: DownloadBuildArtifacts@0
@@ -159,10 +204,13 @@ jobs:
       EXPANDED_MODELS_PATH: '$(System.ArtifactsDirectory)/expanded_models/'
 
 - job: 'sync_metadata'
-  displayName: 'Sync  metadata'
+  displayName: 'Sync metadata'
   dependsOn: ['evaluate_repo', 'sync_models']
   pool:
-    vmImage: 'ubuntu-20.04'
+    name: $(buildPool)
+    vmImage: $(vmImage)
+    demands:
+    - ImageOverride -equals $(vmImage)
   steps:
   - checkout: none
   - task: DownloadBuildArtifacts@0
