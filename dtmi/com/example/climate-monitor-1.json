@@ -35,8 +35,7 @@
         "en": "Humidity"
       },
       "name": "humidity",
-      "schema": "integer",
-      "unit": "kilogramPerCubicMetre"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
