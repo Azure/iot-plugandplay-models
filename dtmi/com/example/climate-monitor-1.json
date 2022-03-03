@@ -193,7 +193,6 @@
       },
       "name": "Humidity",
       "schema": "integer",
-      "unit": "percent",
       "writable": false
     },
     {
