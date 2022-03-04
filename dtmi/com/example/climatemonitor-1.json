@@ -39,7 +39,7 @@
         "en": "Humidity"
       },
       "name": "humidity",
-      "unit": "kilogramPerCubicMetre",
+      "unit": "percent",
       "schema": "integer"
     },
     {
