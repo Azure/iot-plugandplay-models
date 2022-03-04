@@ -3,7 +3,7 @@
     "dtmi:iotcentral:context;2",
     "dtmi:dtdl:context;2"
   ],
-  "@id": "dtmi:com:example:ClimateMonitor;1",
+  "@id": "dtmi:com:example:climatemonitor;1",
   "@type": "Interface",
   "contents": [
     {
@@ -33,20 +33,22 @@
     {
       "@type": [
         "Telemetry",
-        "Humidity"
+        "RelativeHumidity"
       ],
       "displayName": {
         "en": "Humidity"
       },
       "name": "humidity",
+      "unit": "percent",
       "schema": "integer"
     },
     {
-      "@type": "Telemetry",
+      "@type": ["Telemetry", "DataSize"],
       "displayName": {
         "en": "Memory usage"
       },
       "name": "memoryUsage",
+      "unit": "kibibyte",
       "schema": "integer"
     },
     {
@@ -173,30 +175,36 @@
       "writable": false
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Temperature"],
       "displayName": {
         "en": "Temperature"
       },
       "name": "Temperature",
       "schema": "integer",
+      "unit": "degreeCelsius",
       "writable": false
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Pressure"],
       "displayName": {
         "en": "Pressure"
       },
       "name": "Pressure",
       "schema": "integer",
+      "unit": "millibar",
       "writable": false
     },
     {
-      "@type": "Property",
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
       "displayName": {
         "en": "Humidity"
       },
       "name": "Humidity",
       "schema": "integer",
+      "unit": "percent",
       "writable": false
     },
     {
