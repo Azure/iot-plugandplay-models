@@ -39,7 +39,6 @@
         "en": "Humidity"
       },
       "name": "humidity",
-      "unit": "percent",
       "schema": "integer"
     },
     {
