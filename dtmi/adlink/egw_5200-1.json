@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:ADLINK:EGW_5200;1",
+    "@id": "dtmi:EGW_5200;1",
     "@type": "Interface",
-    "displayName": "ADLINK-EGW-5200",
+    "displayName": "EGW-5200",
     "contents": [
         {
             "@type": "Component",
