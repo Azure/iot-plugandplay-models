@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:EGW_5200;2",
+    "@id": "dtmi:EGW_5200;1",
     "@type": "Interface",
     "displayName": "EGW-5200",
     "contents": [
