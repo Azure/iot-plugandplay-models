@@ -1,0 +1,21 @@
+# Copyright (c) Microsoft Corporation MIT license
+
+parameters:
+- name: cliVersion
+  type: string
+
+steps:
+- task: Bash@3
+  displayName: 'Setup Az CLI version $(cliVersion)'
+  inputs:
+    targetType: inline
+    script: |
+      sudo apt-get update
+      sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+      curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+      AZ_REPO=$(lsb_release -cs)
+      echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+      sudo apt-get update
+      sudo apt-get install --allow-downgrades azure-cli=$cliVersion-1~$AZ_REPO
+  env:
+    cliVersion: $(cliVersion)
