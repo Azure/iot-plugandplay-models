@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:lab3:nexus;1",
+    "@id": "dtmi:lab3:nexus;3",
     "@type": "Interface",
     "displayName": "nexus",
     "contents": [
@@ -13,38 +13,30 @@
                     {
                         "name": "session_key_id",
                         "schema": "string",
-                        "comment": "RFU"
+                        "description": "RFU"
                     },
                     {
                         "name": "f_port",
                         "schema": "integer",
-                        "comment": "Port is used to identify the LAB3 \"Data Format\" of the payload"
+                        "description": "Port is used to identify the LAB3 \"Data Format\" of the payload"
                     },
                     {
                         "name": "f_cnt",
                         "schema": "integer",
-                        "comment": "Security measure.  Each message is sent with an incremented frame count.  All frame counts less than previous count will be ignored"
+                        "description": "Security measure.  Each message is sent with an incremented frame count.  All frame counts less than previous count will be ignored"
                     },
                     {
                         "name": "frm_payload",
                         "schema": "string",
-                        "comment": "Data in Base64 format"
+                        "description": "Data in Base64 format"
                     },
                     {
                         "name": "decoded_payload",
-                        "schema": {
-                            "@type": "Array",
-                            "elementSchema": "integer"
-                        }
+                        "schema": "dtmi:lab3:nexus:decoded_bytes;1",
+                        "description": "Raw payload bytes"
                     }
                 ]
             }
-        },
-        {
-            "@type": "Telemetry",
-            "name": "Common_App_Settings_Response",
-            "schema": "integer",
-            "comment": "Response to a request for Common Application settings"
         },
         {
             "@type": "Property",
@@ -52,14 +44,21 @@
             "schema": "string",
             "description": "The serial number of the NEXUS device",
             "writable": false
-        },
+        }
+    ],
+    "schemas": [
         {
-            "@type": "Command",
-            "name": "requestCommAppSetting",
-            "request": {
-                "name": "Settings_Request",
-                "schema": "integer"
-            }
+            "@id": "dtmi:lab3:nexus:decoded_bytes;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name": "bytes",
+                    "schema": {
+                        "@type": "Array",
+                        "elementSchema": "integer"
+                    }
+                }
+            ]
         }
     ]
 }
