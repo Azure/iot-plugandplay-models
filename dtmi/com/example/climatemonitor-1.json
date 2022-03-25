@@ -1,0 +1,384 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:com:example:climatemonitor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": {
+        "en": "Pressure"
+      },
+      "name": "pressure",
+      "schema": "integer",
+      "unit": "millibar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "humidity",
+      "unit": "percent",
+      "schema": "integer"
+    },
+    {
+      "@type": ["Telemetry", "DataSize"],
+      "displayName": {
+        "en": "Memory usage"
+      },
+      "name": "memoryUsage",
+      "unit": "kibibyte",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Latitude"
+      ],
+      "displayName": {
+        "en": "Latitude"
+      },
+      "name": "latitude",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Longitude"
+      ],
+      "displayName": {
+        "en": "Longitude"
+      },
+      "name": "longitude",
+      "schema": "double",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Air Quality Index (US)"
+      },
+      "name": "aqi",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Carbon Monoxide"
+      },
+      "name": "co",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Nitrogen Monoxide"
+      },
+      "name": "no",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Nitrogen Dioxide"
+      },
+      "name": "no2",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Ozone"
+      },
+      "name": "o3",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Sulphur Dioxide"
+      },
+      "name": "so2",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Ammonia"
+      },
+      "name": "nh3",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Particulate Matter 2.5"
+      },
+      "name": "pm2_5",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Particulate Matter 10"
+      },
+      "name": "pm10",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Start time"
+      },
+      "name": "StartTimeUTC",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Heartbeat"
+      },
+      "name": "HeartbeatUTC",
+      "schema": "dateTime",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Software version"
+      },
+      "name": "SoftwareVersion",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "Temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius",
+      "writable": false
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Pressure"
+      },
+      "name": "Pressure",
+      "schema": "integer",
+      "unit": "millibar",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
+      "displayName": {
+        "en": "Humidity"
+      },
+      "name": "Humidity",
+      "schema": "integer",
+      "unit": "percent",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "Location"
+      ],
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "Location",
+      "schema": "geopoint",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Country"
+      },
+      "name": "Country",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "City"
+      },
+      "name": "City",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "LED brightness"
+      },
+      "name": "LedBrightness",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Air Quality Index (US)"
+      },
+      "name": "AirQualityIndexUS",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Carbon Monoxide"
+      },
+      "name": "CarbonMonoxide",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Nitrogen Monoxide"
+      },
+      "name": "NitrogenMonoxide",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Nitrogen Dioxide"
+      },
+      "name": "NitrogenDioxide",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Ozone"
+      },
+      "name": "Ozone",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Sulphur Dioxide"
+      },
+      "name": "SulphurDioxide",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Ammonia"
+      },
+      "name": "Ammonia",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Particulate Matter 2.5"
+      },
+      "name": "PM2_5",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Particulate Matter 10"
+      },
+      "name": "PM10",
+      "schema": "float",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "displayName": {
+        "en": "Wind speed (km/h)"
+      },
+      "name": "windspeed",
+      "schema": "float",
+      "unit": "kilometrePerHour"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": {
+        "en": "Wind direction (°)"
+      },
+      "name": "winddirection",
+      "schema": "integer",
+      "unit": "degreeOfArc"
+    },
+    {
+      "@type": [
+        "Property",
+        "Velocity"
+      ],
+      "displayName": {
+        "en": "Wind Speed"
+      },
+      "name": "WindSpeed",
+      "schema": "float",
+      "unit": "kilometrePerHour",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "Angle"
+      ],
+      "displayName": {
+        "en": "Wind Direction"
+      },
+      "name": "WindDirection",
+      "schema": "integer",
+      "unit": "degreeOfArc",
+      "writable": false
+    }
+  ],
+  "displayName": {
+    "en": "Climate Monitor"
+  }
+}

@@ -1,0 +1,294 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:kr:co:mazetech:towncast:transmitter;3",
+    "@type": "Interface",
+    "displayName": "Towncast-Transmitter v3",
+    "description": "Transmitter device of towncast solution - MazeTech",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "messageType",
+            "displayName": "message-type",
+            "description": "Message Type - event and broadcast",
+            "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "phoneNumber",
+          "displayName": "phone-number",
+          "description": "Phone number of transmitter",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "loraId",
+          "displayName": "lora-id",
+          "description": "lora id of receiver",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "status",
+          "displayName": "event-status",
+          "description": "status - fire, emergency, maintenance",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "broadcastPhoneNumber",
+          "displayName": "broadcast-phonenumber",
+          "description": "the phonenumber started LTE broadcast",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "type",
+          "displayName": "broadcast-type",
+          "description": "Broadcast type - LTE, PTT, LIVE, FILE, TTS",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+              {
+                "name": "file",
+                "displayName": "Braodcast with audio file (.wav)",
+                "enumValue": "FILE"
+              },
+              {
+                "name": "tts",
+                "displayName": "Braodcast with TTS file (.wav)",
+                "enumValue": "TTS"
+              },
+              {
+                "name": "live",
+                "displayName": "Braodcast with streaming",
+                "enumValue": "LIVE"
+              },
+              {
+                "name": "lte",
+                "displayName": "Broadcast by phone call",
+                "enumValue": "LTE"
+              },
+              {
+                "name": "ptt",
+                "displayName": "Broadcast by push to talk",
+                "enumValue": "PTT"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "Telemetry",
+          "name": "startTime",
+          "displayName": "broadcast-start",
+          "description": "Broadcast start time",
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "endTime",
+          "displayName": "broadcast-end",
+          "description": "Broadcast end time",
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "cid",
+          "displayName": "correlation id",
+          "description": "correlation id for broadcast",
+          "schema": "string"
+        },
+        {
+          "@type": "Telemetry",
+          "name": "message",
+          "displayName": "additional message",
+          "description": "error message when the status is error and additional message from device",
+          "schema": "string"
+        },
+        {
+          "@type": "Command",
+          "name": "startBroadcast",
+          "displayName": "Start broadcast",
+          "description": "Start broadcast with audio file, TTS file and real-time streaming",
+          "request": {
+            "name": "broadcastContent",
+            "displayName": "Content for broadcast",
+            "schema": {
+              "@type": "Object",
+              "fields": [
+                {
+                  "name": "cid",
+                  "displayName": "Correlation id",
+                  "schema": "string"
+                },
+                {
+                  "name": "broadcastType",
+                  "displayName": "Type of broadcast (audio file, TTS file, real-time streaming",
+                  "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                      {
+                        "name": "file",
+                        "displayName": "Braodcast with audio file (.wav)",
+                        "enumValue": "FILE"
+                      },
+                      {
+                        "name": "tts",
+                        "displayName": "Braodcast with TTS file (.wav)",
+                        "enumValue": "TTS"
+                      },
+                      {
+                        "name": "live",
+                        "displayName": "Braodcast with streaming",
+                        "enumValue": "LIVE"
+                      },
+                      {
+                        "name": "lte",
+                        "displayName": "Broadcast by phone call",
+                        "enumValue": "LTE"
+                      },
+                      {
+                        "name": "ptt",
+                        "displayName": "Broadcast by push to talk",
+                        "enumValue": "PTT"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "url",
+                  "displayName": "content url. wav file location or streaming endpoint",
+                  "schema": "string"
+                },
+                {
+                  "name": "startChimeOption",
+                  "displayName": "Whether start chime rings or not",
+                  "schema": "boolean"
+                },
+                {
+                  "name": "endChimeOption",
+                  "displayName": "Whether end chime rings or not",
+                  "schema": "boolean"
+                },
+                {
+                  "name": "repeatInterval",
+                  "displayName": "The interval between repeat broadcast",
+                  "schema": "integer"
+                },
+                {
+                  "name": "displayText",
+                  "displayName": "The text content for the broadcast",
+                  "schema": "string"
+                },
+                {
+                  "name": "displayTextOption",
+                  "displayName": "Whether text is displayed or not",
+                  "schema": "boolean"
+                },
+                {
+                  "name": "repeat",
+                  "displayName": "The number of repeat",
+                  "schema": "integer"
+                }
+              ]
+            }
+          },
+          "response": {
+            "name": "broadcastReport",
+            "displayName": "Broadcast Receive Report",
+            "description": "Report when the device receive the proper content",
+            "schema": {
+              "@type": "Object",
+              "fields": [
+                {
+                  "name": "messageType",
+                  "displayName": "message-type",
+                  "description": "Message Type - event and broadcast",
+                  "schema": "string"
+                },
+                {
+                  "name": "cid",
+                  "displayName": "correlation id",
+                  "description": "correlation id for broadcast",
+                  "schema": "string"
+                },
+                {
+                  "name": "phoneNumber",
+                  "displayName": "phone-number",
+                  "description": "Phone number of transmitter",
+                  "schema": "string"
+                },
+                {
+                  "name": "type",
+                  "displayName": "broadcast-type",
+                  "description": "Broadcast type - LTE, PTT, LIVE, FILE, TTS",
+                  "schema": {
+                      "@type": "Enum",
+                      "valueSchema": "string",
+                      "enumValues": [
+                      {
+                          "name": "file",
+                          "displayName": "Braodcast with audio file (.wav)",
+                          "enumValue": "FILE"
+                      },
+                      {
+                          "name": "tts",
+                          "displayName": "Braodcast with TTS file (.wav)",
+                          "enumValue": "TTS"
+                      },
+                      {
+                          "name": "live",
+                          "displayName": "Braodcast with streaming",
+                          "enumValue": "LIVE"
+                      },
+                      {
+                          "name": "lte",
+                          "displayName": "Broadcast by phone call",
+                          "enumValue": "LTE"
+                      },
+                      {
+                          "name": "ptt",
+                          "displayName": "Broadcast by push to talk",
+                          "enumValue": "PTT"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "status",
+                  "displayName": "Status Code",
+                  "description": "started status",
+                  "schema": "string"
+                },
+                {
+                  "name": "broadcastPhoneNumber",
+                  "displayName": "broadcast-phonenumber",
+                  "description": "the phonenumber started LTE broadcast",
+                  "schema": "string"
+                },
+                {
+                  "name": "message",
+                  "displayName": "additional message",
+                  "description": "error message when the status is error and additional message from device",
+                  "schema": "string"
+                },
+                {
+                  "name": "startTime",
+                  "displayName": "broadcast-start",
+                  "description": "Broadcast start time",
+                  "schema": "dateTime"
+                },
+                {
+                  "name": "endTime",
+                  "displayName": "broadcast-end",
+                  "description": "Broadcast end time",
+                  "schema": "dateTime"
+                }
+              ]
+            }
+          }
+        }
+    ]
+  }
+  
