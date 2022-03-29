@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:osconfig:ztsi;1",
+  "@id": "dtmi:osconfig:ztsi;2",
   "@type": "Interface",
   "displayName": "ZTSI Agent Configuration",
   "description": "Provides functionality to remotely configure the ZTSI Agent on device",
