@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:ah:sensor:temperature;1",
+  "@type": "Interface",
+  "displayName": "temperature sensor",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+            "@type": ["Telemetry", "Temperature"],
+            "name": "temperature",
+            "unit": "degreeCelsius",
+            "schema": "double"      
+        },
+        {
+            "@type": ["Property", "Temperature"],
+            "name": "Setpoint",
+            "unit":"degreeCelsius",
+            "schema": "double"      
+        }
+  ]
+}

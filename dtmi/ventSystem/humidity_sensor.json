@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:ah:sensor:realtive_humidity;1",
+  "@type": "Interface",
+  "displayName": "relative humidity sensor",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+        "@type": ["Telemetry", "RelativeHumidity"],
+        "name": "relative_humidity",
+        "unit":"percent",
+        "schema": "double"      
+    },
+    {
+            "@type": ["Property", "RelativeHumidity"],
+            "name": "Setpoint",
+            "unit":"percent",
+            "schema": "double"      
+        }
+  ]
+}

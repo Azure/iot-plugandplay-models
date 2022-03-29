@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:ah:sensor:damper;1",
+  "@type": "Interface",
+  "displayName": "Damper",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+        "@type": "Telemetry",
+        "name": "Open",
+        "schema": "boolean"      
+    }
+  ]
+}

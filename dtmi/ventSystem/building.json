@@ -1,0 +1,20 @@
+{
+
+  "@id": "dtmi:com:ah:building;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "building",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "contains_floor",
+      "displayName": "contains floor",
+      "target":"dtmi:com:ah:floor;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "displayName": "contains"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:ah:sensor:realtive_performance;1",
+  "@type": "Interface",
+  "displayName": "Relative performance sensor",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+        "@type": "Telemetry",
+        "name": "Relative_performance",
+        "schema": "double"      
+    },
+    {
+            "@type": "Property",
+            "name": "MaxValue",
+            "schema": "double"      
+        },
+    {
+            "@type": "Property",
+            "name": "MinValue",
+            "schema": "double"      
+        }
+  ]
+}

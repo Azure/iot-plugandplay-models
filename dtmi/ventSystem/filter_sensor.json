@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:ah:sensor:filter;1",
+  "@type": "Interface",
+  "displayName": "Filter",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+        "@type": "Telemetry",
+        "name": "Clean",
+        "schema": "boolean"      
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:ah:sensor:pressure;1",
+  "@type": "Interface",
+  "displayName": "pressure sensor",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+            "@type": ["Telemetry", "Pressure"],
+            "name": "pressure",
+            "unit": "pascal",
+            "schema": "double"      
+        },
+    {
+            "@type": ["Property", "Pressure"],
+            "name": "Setpoint",
+            "unit": "pascal",
+            "schema": "double"      
+        }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:ah:ventilation_system;1",
+  "@type": "Interface",
+  "displayName": "ventilation system",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "serves",
+      "displayName": "serves"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains_sensor",
+      "displayName": "contains sensor"
+    }
+  ]
+}

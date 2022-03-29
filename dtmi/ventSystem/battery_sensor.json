@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:ah:sensor:battery;1",
+  "@type": "Interface",
+  "displayName": "Battery",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+        "@type": "Telemetry",
+        "name": "Warm",
+        "schema": "boolean"      
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "@id": "dtmi:com:ah:room:corridor;1",
+    "@context": "dtmi:dtdl:context;2",
+    "@type": "Interface",
+    "extends": ["dtmi:com:ah:room;1"],
+    "displayName": "corridor"
+}

@@ -1,0 +1,24 @@
+{
+    "@id": "dtmi:com:ah:room;1",
+    "@context": "dtmi:dtdl:context;2",
+    "@type": "Interface",
+    "displayName": "room",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "contains_sensor",
+            "displayName": "contains sensor"
+            
+        },
+        {
+            "@type": "Telemetry",
+            "name": "Temperature",
+            "schema": "double"      
+        },
+        {
+            "@type": "Property",
+            "name": "Area",
+            "schema": "double"      
+        }
+    ]
+}

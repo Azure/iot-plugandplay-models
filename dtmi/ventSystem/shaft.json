@@ -1,0 +1,19 @@
+{
+    "@id": "dtmi:com:ah:shaft;1",
+    "@context": "dtmi:dtdl:context;2",
+    "@type": "Interface",
+    "displayName": "shaft",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "contains_sensor",
+            "displayName": "contains sensor"
+            
+        },
+        {
+            "@type": "Property",
+            "name": "Area",
+            "schema": "double"      
+        }
+    ]
+}
