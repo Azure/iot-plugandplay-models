@@ -1,0 +1,38 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:firewall;3",
+  "@type": "Interface",
+  "displayName": "Firewall",
+  "description": "Provides functionality to remotely manage firewall rules on device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "firewallState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "unknown",
+            "enumValue": 0
+          },
+          {
+            "name": "enabled",
+            "enumValue": 1
+          },
+          {
+            "name": "disabled",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "firewallFingerprint",
+      "schema":"string",
+      "writable": false
+    }
+  ]
+}
