@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D524801;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BMF 415KW-HAKKI-W-5-xx-xx5-00,3",
+  "description": "Magnetic Field Sensor, Fixed Switching Point, Weld Immune",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FixedSwitchingSignal",
+      "displayName": "FixedSwitchingSignal",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AssuredSwitchingFieldStrength",
+      "displayName": "AssuredSwitchingFieldStrength",
+      "schema": "integer"
+    }
+  ]
+}

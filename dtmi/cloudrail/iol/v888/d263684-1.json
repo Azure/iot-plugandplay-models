@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D263684;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 18E-XI-RS30-S4",
+  "description": "Thru-Beam Sensor Emitter Red Light",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Defect",
+      "displayName": "Defect",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

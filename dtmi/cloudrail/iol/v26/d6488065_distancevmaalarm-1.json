@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D6488065_DistanceVMAAlarm;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Dx35-B1xx5xS0x",
+  "description": "1057651 (DT35-B15551 DT35-DL35)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Alarm",
+      "displayName": "Alarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VMA",
+      "displayName": "VMA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Yes",
+            "enumValue": "Yes"
+          },
+          {
+            "name": "No",
+            "enumValue": "No"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

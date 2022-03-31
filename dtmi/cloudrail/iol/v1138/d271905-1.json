@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1138:D271905;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ITM-51_I53",
+  "description": "Relative Turbidity Meter with IO-Link, 1x 4...20mA analog output, 1x relay switch and 1x digital input",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Turbidity1",
+      "displayName": "Turbidity1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Turbidity2",
+      "displayName": "Turbidity2",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PercentSolids",
+      "displayName": "PercentSolids",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TurbidityBase",
+      "displayName": "TurbidityBase",
+      "schema": "double"
+    }
+  ]
+}

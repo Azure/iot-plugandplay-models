@@ -1,0 +1,148 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ClearSIGN compact",
+  "description": "ClearSIGN compact Contin. tone",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1Red",
+              "displayName": "Segment1Red",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentRed;1"
+            },
+            {
+              "name": "Segment1Green",
+              "displayName": "Segment1Green",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentGreen;1"
+            },
+            {
+              "name": "Segment1Blue",
+              "displayName": "Segment1Blue",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentBlue;1"
+            },
+            {
+              "name": "Segment2Red",
+              "displayName": "Segment2Red",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentRed;1"
+            },
+            {
+              "name": "Segment2Green",
+              "displayName": "Segment2Green",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentGreen;1"
+            },
+            {
+              "name": "Segment2Blue",
+              "displayName": "Segment2Blue",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentBlue;1"
+            },
+            {
+              "name": "Segment3Red",
+              "displayName": "Segment3Red",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentRed;1"
+            },
+            {
+              "name": "Segment3Green",
+              "displayName": "Segment3Green",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentGreen;1"
+            },
+            {
+              "name": "Segment3Blue",
+              "displayName": "Segment3Blue",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentBlue;1"
+            },
+            {
+              "name": "Segment4Red",
+              "displayName": "Segment4Red",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentRed;1"
+            },
+            {
+              "name": "Segment4Green",
+              "displayName": "Segment4Green",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentGreen;1"
+            },
+            {
+              "name": "Segment4Blue",
+              "displayName": "Segment4Blue",
+              "schema": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentBlue;1"
+            },
+            {
+              "name": "Acoustic",
+              "displayName": "Acoustic",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentRed;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentGreen;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V690:D6643715_SingleSegment:SegmentBlue;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "WLS2xPXRGBWxxxxxxxxxQ",
+  "description": "Work light strip, 27 mm dia., Pro, non-cascadable, illumination and indication, 145 mm length, diffuse, sealed, IO-Link, Euro 4-Pin Quick-Disconnect",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1",
+              "displayName": "Segment1",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment2",
+              "displayName": "Segment2",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment3",
+              "displayName": "Segment3",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment4",
+              "displayName": "Segment4",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment5",
+              "displayName": "Segment5",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment6",
+              "displayName": "Segment6",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment7",
+              "displayName": "Segment7",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment8",
+              "displayName": "Segment8",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment9",
+              "displayName": "Segment9",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            },
+            {
+              "name": "Segment10",
+              "displayName": "Segment10",
+              "schema": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D393221_SegmentMode:Segment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Flash",
+          "enumValue": "Flash"
+        },
+        {
+          "name": "Animation",
+          "enumValue": "Animation"
+        }
+      ]
+    }
+  ]
+}

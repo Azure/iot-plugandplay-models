@@ -1,0 +1,128 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:DeviceHealth;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Device-Health",
+        "de": "Gerätestatus"
+    },
+    "description": {
+        "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: Device-health data",
+        "de" : "IoT PnP model für das Azure Sphere Train-the-Trainer Bootcamp: Gerätestatus"
+    },
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:totalMemoryUsed;1",
+            "@type": [ "Telemetry", "DataSize" ],
+            "comment": "Total memory usage of your high-level application in kibibytes. Ex. 230 kilobytes.",
+            "displayName": {
+              "en": "Total Memory Usage",
+              "de": "Speichernutzung gesamt"
+            },
+            "name": "totalMemoryUsed",
+            "unit" : "kibibyte",
+            "schema": "long"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:userMemoryUsed;1",
+            "@type": [ "Telemetry", "DataSize" ],
+            "comment": "User-mode memory usage of your high-level application in kibibytes. Ex. 91 kilobytes.",
+            "displayName": {
+              "en": "User-mode Memory Usage",
+              "de": "Speichernutzung im Benutzermodus"
+            },
+            "name": "userMemoryUsed",
+            "unit":"kibibyte",
+            "schema": "long"
+        },
+        {
+          "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:connect;1",
+          "@type": "Telemetry",
+          "description": {
+            "en": "Device connected to IoTHub event"
+          },
+          "displayName": {
+            "en": "Connect"
+          },
+          "name": "connect",
+          "schema": "string"
+        },
+        {
+          "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod;1",
+          "@type": "Command",
+          "commandType": "synchronous",
+          "description": {
+            "en": "Reset device after given amount of seconds"
+          },
+          "displayName": {
+            "en": "Reset Device"
+          },
+          "name": "resetMethod",
+          "request": {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:request;1",
+            "description": {
+              "en": "resetMethod request"
+            },
+            "displayName": {
+              "en": "ResetMethod request"
+            },
+            "name": "resetMethodRequest",
+            "schema" :{
+              "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:requestPayload;1",
+              "@type": "Object",
+              "displayName": {
+                "en": "ResetMethod request payload"
+              },
+              "fields": [
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:requestPayload:resetTimer;1",
+                  "description": {
+                    "en": "Reset device after given amount of seconds (1..10)."
+                  },
+                  "displayName": {
+                    "en": "Reset timer (s)"
+                  },
+                  "name": "resetTimer",
+                  "schema": "integer" 
+                }
+              ]
+            }
+          },
+          "response": {
+            "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:response;1",
+            "description": {
+              "en": "Device response to 'reset' command. "
+            },
+            "displayName": {
+              "en": "ResetMethod response"
+            },
+            "name": "resetMethodResponse",
+            "schema": {
+              "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload;1",
+              "@type": "Object",
+              "displayName": {
+                "en": "ResetMethod response payload"
+              },
+              "fields": [
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload:success;1",
+                  "displayName": {
+                    "en": "Success"
+                  },
+                  "name": "success",
+                  "schema": "boolean"
+                },
+                {
+                  "@id": "dtmi:azsphere:SphereTTT:DeviceHealth:resetMethod:responsePayload:message;1",
+                  "displayName": {
+                    "en": "Message"
+                  },
+                  "name": "message",
+                  "schema": "string"
+                }
+              ]
+            }
+          }
+        }
+    ]
+}

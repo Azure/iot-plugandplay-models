@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D197120;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BTL6-U1x0-Mxxxx-x-xx000-S4",
+  "description": "Position Transducer Rod",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataVariable1",
+      "displayName": "ProcessDataVariable1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoValidDataAvailable",
+            "enumValue": "NoValidDataAvailable"
+          }
+        ]
+      }
+    }
+  ]
+}

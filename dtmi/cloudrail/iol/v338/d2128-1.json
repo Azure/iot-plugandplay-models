@@ -1,0 +1,101 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2128;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KRT18BM.xxxxxxT-M12",
+  "description": "contrast scanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ReceivedSignalLevel",
+      "displayName": "ReceivedSignalLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TransmitterColor",
+      "displayName": "TransmitterColor",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Red",
+            "enumValue": "Red"
+          },
+          {
+            "name": "Green",
+            "enumValue": "Green"
+          },
+          {
+            "name": "Blue",
+            "enumValue": "Blue"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingThreshold",
+      "displayName": "SwitchingThreshold",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorInOperation",
+      "displayName": "SensorInOperation",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarnSignal",
+      "displayName": "WarnSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NoWarning",
+            "enumValue": "NoWarning"
+          },
+          {
+            "name": "WarningReceived",
+            "enumValue": "WarningReceived"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SensorSignal",
+      "displayName": "SensorSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotActive",
+            "enumValue": "NotActive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

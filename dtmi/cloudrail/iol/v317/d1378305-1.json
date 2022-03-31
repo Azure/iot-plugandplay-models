@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1378305;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FM-IM-3UR38FX",
+  "description": "FM-IM Series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "FlowRateQuasiAnalog",
+      "displayName": "FlowRateQuasiAnalog",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowRateRelayOutput",
+      "displayName": "FlowRateRelayOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MediumTemperatureRelayOutput",
+      "displayName": "MediumTemperatureRelayOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FaultIndicationRelayOutput",
+      "displayName": "FaultIndicationRelayOutput",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-801-000-Z036",
+  "description": "Smart light 3 segment",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1Blinks",
+              "displayName": "Segment1Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorOfSegment1",
+              "displayName": "ColorOfSegment1",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:ColorOfSegment;1"
+            },
+            {
+              "name": "Segment2Blinks",
+              "displayName": "Segment2Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorOfSegment2",
+              "displayName": "ColorOfSegment2",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:ColorOfSegment;1"
+            },
+            {
+              "name": "Segment3Blinks",
+              "displayName": "Segment3Blinks",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:SegmentBlinks;1"
+            },
+            {
+              "name": "ColorOfSegment3",
+              "displayName": "ColorOfSegment3",
+              "schema": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:ColorOfSegment;1"
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncStart",
+              "displayName": "SyncStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:SegmentBlinks;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "SegmentDoesNotBlink",
+          "enumValue": "SegmentDoesNotBlink"
+        },
+        {
+          "name": "SegmentBlinks",
+          "enumValue": "SegmentBlinks"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D330242_SegmentMode:ColorOfSegment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "Green",
+          "enumValue": "Green"
+        },
+        {
+          "name": "Red",
+          "enumValue": "Red"
+        },
+        {
+          "name": "Yellow",
+          "enumValue": "Yellow"
+        },
+        {
+          "name": "Blue",
+          "enumValue": "Blue"
+        },
+        {
+          "name": "Orange",
+          "enumValue": "Orange"
+        },
+        {
+          "name": "UserDefined",
+          "enumValue": "UserDefined"
+        },
+        {
+          "name": "White",
+          "enumValue": "White"
+        }
+      ]
+    }
+  ]
+}

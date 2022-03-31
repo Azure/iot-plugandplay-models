@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388686_Distance;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DT50-2Bx15x52",
+  "description": "Distance sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

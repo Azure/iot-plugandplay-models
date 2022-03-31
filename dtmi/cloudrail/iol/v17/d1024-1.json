@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V17:D1024;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FTL3x",
+  "description": "vibronic measuring device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Forkfrequency_pct",
+      "displayName": "Forkfrequency_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput1OU1",
+      "displayName": "SwitchStateOutput1OU1",
+      "schema": "dtmi:CloudRail:IOL:V17:D1024:SwitchStateOutputOU;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateOutput2OU2",
+      "displayName": "SwitchStateOutput2OU2",
+      "schema": "dtmi:CloudRail:IOL:V17:D1024:SwitchStateOutputOU;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V17:D1024:SwitchStateOutputOU;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

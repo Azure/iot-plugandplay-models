@@ -1,0 +1,201 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388939_UserDefinedProcessData;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MLG-2 Pro COM3",
+  "description": "MLG-2 Pro Lightgrid",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction1",
+      "displayName": "OutputFunction1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction2",
+      "displayName": "OutputFunction2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction3",
+      "displayName": "OutputFunction3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction4",
+      "displayName": "OutputFunction4",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction5",
+      "displayName": "OutputFunction5",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction6",
+      "displayName": "OutputFunction6",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction7",
+      "displayName": "OutputFunction7",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction8",
+      "displayName": "OutputFunction8",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction9",
+      "displayName": "OutputFunction9",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction10",
+      "displayName": "OutputFunction10",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction11",
+      "displayName": "OutputFunction11",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction12",
+      "displayName": "OutputFunction12",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction13",
+      "displayName": "OutputFunction13",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction14",
+      "displayName": "OutputFunction14",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction15",
+      "displayName": "OutputFunction15",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputFunction16",
+      "displayName": "OutputFunction16",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Reserved0",
+              "displayName": "Reserved0",
+              "schema": "long"
+            },
+            {
+              "name": "STANDBY",
+              "displayName": "STANDBY",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EnterStandBy",
+                    "enumValue": "EnterStandBy"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Reserved1",
+              "displayName": "Reserved1",
+              "schema": "long"
+            },
+            {
+              "name": "BBH",
+              "displayName": "BBH",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "BBHActive",
+                    "enumValue": "BBHActive"
+                  },
+                  {
+                    "name": "BBHInactive",
+                    "enumValue": "BBHInactive"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TEACH",
+              "displayName": "TEACH",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "StartTeach",
+                    "enumValue": "StartTeach"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TEST",
+              "displayName": "TEST",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EnterTestMode",
+                    "enumValue": "EnterTestMode"
+                  },
+                  {
+                    "name": "NormalProcessing",
+                    "enumValue": "NormalProcessing"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

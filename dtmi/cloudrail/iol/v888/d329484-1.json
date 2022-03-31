@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D329484;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-205-000-Z012",
+  "description": "BNI - Sensor/Actor hub metal",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "OutputPort0Pin4",
+              "displayName": "OutputPort0Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort1Pin4",
+              "displayName": "OutputPort1Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort2Pin4",
+              "displayName": "OutputPort2Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort3Pin4",
+              "displayName": "OutputPort3Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort4Pin4",
+              "displayName": "OutputPort4Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort5Pin4",
+              "displayName": "OutputPort5Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort6Pin4",
+              "displayName": "OutputPort6Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort7Pin4",
+              "displayName": "OutputPort7Pin4",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort0Pin2",
+              "displayName": "OutputPort0Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort1Pin2",
+              "displayName": "OutputPort1Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort2Pin2",
+              "displayName": "OutputPort2Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort3Pin2",
+              "displayName": "OutputPort3Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort4Pin2",
+              "displayName": "OutputPort4Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort5Pin2",
+              "displayName": "OutputPort5Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort6Pin2",
+              "displayName": "OutputPort6Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            },
+            {
+              "name": "OutputPort7Pin2",
+              "displayName": "OutputPort7Pin2",
+              "schema": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D329484:OutputPortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

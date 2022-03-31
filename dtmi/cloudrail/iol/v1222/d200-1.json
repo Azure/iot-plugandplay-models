@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1222:D200;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AHC 07200.2-00",
+  "description": "actuator hub AHC 072, 3 relay outputs",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Relay1",
+              "displayName": "Relay1",
+              "schema": "integer"
+            },
+            {
+              "name": "Relay2",
+              "displayName": "Relay2",
+              "schema": "integer"
+            },
+            {
+              "name": "Relay3",
+              "displayName": "Relay3",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

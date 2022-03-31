@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3276800;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SEFG531",
+  "description": "Safety Light Curtain",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoUse",
+      "displayName": "NoUse",
+      "schema": "long"
+    }
+  ]
+}

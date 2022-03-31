@@ -1,0 +1,131 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:stmicroelectronics:steval_stwinkt1b:standard_if;2",
+    "@type": "Interface",
+    "displayName": "Standard interface for STWINKT1B",
+    "description": "Reports temperature, relative humidity, pressure, magnetometer, accelerometer and gyroscope",
+    "contents": [
+      {
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "name": "temperature",
+        "displayName": {
+          "en": "Temperature"
+        },
+        "description": "Temperature in degrees Celsius from HTS221 temperature sensor",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "RelativeHumidity"
+        ],
+        "name": "humidity",
+        "displayName": {
+          "en": "Relative Humidity"
+        },
+        "description": "relative humidity from HTS221 sensor",
+        "schema": "double",
+        "unit": "percent"
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "Pressure"
+        ],
+        "name": "pressure",
+        "displayName": {
+          "en": "Pressure"
+        },
+        "description": "Pressure from LPS22HH sensor",
+        "schema": "double",
+        "unit": "millibar"  
+      },
+      {
+        "@type": "Telemetry",
+        "name": "acceleration",
+        "displayName": "ISM330DHCX Acc Value [mg]",
+        "comment": "ISM330DHCX Acceleration X/Y/Z components [mg]",
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single acceleration sample.",
+          "description": "Single acceleration sample. I.e.: {a_x, a_y, a_z}.",
+          "fields": [
+              {
+                  "name": "a_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "a_z",
+                  "schema": "double"
+              }
+          ]
+        }
+      },
+      {
+        "@type": "Telemetry",
+        "name": "gyroscope",
+        "displayName": "ISM330DHCX Gyro Value [mdps]",
+        "comment": "ISM330DHCX Gyroscope X/Y/Z components [mdps]",
+        "schema": {
+          "@type": "Object",
+          "displayName": "Single angular velocity sample.",
+          "description": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}.",
+          "fields": [
+              {
+                  "name": "g_x",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_y",
+                  "schema": "double"
+              },
+              {
+                  "name": "g_z",
+                  "schema": "double"
+              }
+          ]
+        }
+      },
+      {
+        "@type": "Telemetry",
+        "name": "magnetometer",
+        "displayName": "IIS2MDC Mag Value [mgauss]",
+        "comment": "IIS2MDC Magnetometer X/Y/Z components [mgauss]",
+        "schema": {
+          "@type": "Object",
+            "displayName": "Single magnetic field sample.",
+            "description": "Single magnetic field sample. I.e.: {m_x, m_y, m_z}.",
+            "fields": [
+                {
+                    "name": "m_x",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_y",
+                    "schema": "double"
+                },
+                {
+                    "name": "m_z",
+                    "schema": "double"
+                }
+            ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "telemetryInterval",
+        "displayName": "Transmission period for telemetry data [in seconds]",
+        "schema": "double",
+        "writable": true
+      }
+    ]
+  }
+

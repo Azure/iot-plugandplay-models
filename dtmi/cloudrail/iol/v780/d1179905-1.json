@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V780:D1179905;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IA1801x1",
+  "description": "Inductive proximity switches preferred types",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Detection100Sn",
+      "displayName": "Detection100Sn",
+      "schema": "integer"
+    }
+  ]
+}

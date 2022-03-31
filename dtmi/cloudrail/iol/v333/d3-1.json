@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V333:D3;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SDAT-MHS-M100",
+  "description": "Position transmitter with length 100 [mm]",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionData",
+      "displayName": "PositionData",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelBDC4",
+      "displayName": "BinaryDataChannelBDC4",
+      "schema": "dtmi:CloudRail:IOL:V333:D3:BinaryDataChannelBDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelBDC3",
+      "displayName": "BinaryDataChannelBDC3",
+      "schema": "dtmi:CloudRail:IOL:V333:D3:BinaryDataChannelBDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelBDC2",
+      "displayName": "BinaryDataChannelBDC2",
+      "schema": "dtmi:CloudRail:IOL:V333:D3:BinaryDataChannelBDC;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannelBDC1",
+      "displayName": "BinaryDataChannelBDC1",
+      "schema": "dtmi:CloudRail:IOL:V333:D3:BinaryDataChannelBDC;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V333:D3:BinaryDataChannelBDC;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

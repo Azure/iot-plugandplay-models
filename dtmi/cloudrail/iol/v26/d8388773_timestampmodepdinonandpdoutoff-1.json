@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388773_TimestampModePDinOnAndPDoutOff;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTS/KTX TimeStamp",
+  "description": "Registration Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388773_TimestampModePDinOnAndPDoutOff:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8388773_TimestampModePDinOnAndPDoutOff:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TimeStamp",
+      "displayName": "TimeStamp",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8388773_TimestampModePDinOnAndPDoutOff:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "High",
+          "enumValue": "High"
+        },
+        {
+          "name": "Low",
+          "enumValue": "Low"
+        }
+      ]
+    }
+  ]
+}

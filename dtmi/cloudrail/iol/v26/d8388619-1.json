@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388619;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "MPS-xxxTLTQ0",
+  "description": "Magnetischer Positionssensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D215;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OR21-PS-xx3T3",
+  "description": "Retro reflective sensor, 20...4000 mm, Length 2.0m, Electrical connection 3-wire cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateSSC1Q1",
+      "displayName": "SwitchStateSSC1Q1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

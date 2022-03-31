@@ -1,0 +1,274 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V308:D2;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "topGUARD IO-LINK",
+  "description": "Electronic Load Monitoring topGUARD",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress01",
+      "displayName": "ProcessDataInAddress01",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress02",
+      "displayName": "ProcessDataInAddress02",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress03",
+      "displayName": "ProcessDataInAddress03",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress04",
+      "displayName": "ProcessDataInAddress04",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress05",
+      "displayName": "ProcessDataInAddress05",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress06",
+      "displayName": "ProcessDataInAddress06",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress07",
+      "displayName": "ProcessDataInAddress07",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress08",
+      "displayName": "ProcessDataInAddress08",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress09",
+      "displayName": "ProcessDataInAddress09",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress10",
+      "displayName": "ProcessDataInAddress10",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress11",
+      "displayName": "ProcessDataInAddress11",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress12",
+      "displayName": "ProcessDataInAddress12",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress13",
+      "displayName": "ProcessDataInAddress13",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress14",
+      "displayName": "ProcessDataInAddress14",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress15",
+      "displayName": "ProcessDataInAddress15",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress16",
+      "displayName": "ProcessDataInAddress16",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress17",
+      "displayName": "ProcessDataInAddress17",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress18",
+      "displayName": "ProcessDataInAddress18",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress19",
+      "displayName": "ProcessDataInAddress19",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress20",
+      "displayName": "ProcessDataInAddress20",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress21",
+      "displayName": "ProcessDataInAddress21",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress22",
+      "displayName": "ProcessDataInAddress22",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress23",
+      "displayName": "ProcessDataInAddress23",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress24",
+      "displayName": "ProcessDataInAddress24",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress25",
+      "displayName": "ProcessDataInAddress25",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress26",
+      "displayName": "ProcessDataInAddress26",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress27",
+      "displayName": "ProcessDataInAddress27",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress28",
+      "displayName": "ProcessDataInAddress28",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress29",
+      "displayName": "ProcessDataInAddress29",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress30",
+      "displayName": "ProcessDataInAddress30",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress31",
+      "displayName": "ProcessDataInAddress31",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProcessDataInAddress32",
+      "displayName": "ProcessDataInAddress32",
+      "schema": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V308:D2:ProcessDataInAddress;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OK",
+          "enumValue": "OK"
+        },
+        {
+          "name": "DeviceFailure",
+          "enumValue": "DeviceFailure"
+        },
+        {
+          "name": "ShortCircuitSwitchOff",
+          "enumValue": "ShortCircuitSwitchOff"
+        },
+        {
+          "name": "DeviceFailureShortCircuitSwitchOff",
+          "enumValue": "DeviceFailureShortCircuitSwitchOff"
+        },
+        {
+          "name": "LoadPrewarning",
+          "enumValue": "LoadPrewarning"
+        },
+        {
+          "name": "DeviceFailureLoadPrewarning",
+          "enumValue": "DeviceFailureLoadPrewarning"
+        },
+        {
+          "name": "ShortCircuitSwitchOffLoadPrewarning",
+          "enumValue": "ShortCircuitSwitchOffLoadPrewarning"
+        },
+        {
+          "name": "DeviceFailureShortCircuitSwitchOffLoadPrewarning",
+          "enumValue": "DeviceFailureShortCircuitSwitchOffLoadPrewarning"
+        },
+        {
+          "name": "LoadAlarmWarning",
+          "enumValue": "LoadAlarmWarning"
+        },
+        {
+          "name": "DeviceFailureLoadAlarmWarning",
+          "enumValue": "DeviceFailureLoadAlarmWarning"
+        },
+        {
+          "name": "ShortCircuitSwitchOffLoadAlarmWarning",
+          "enumValue": "ShortCircuitSwitchOffLoadAlarmWarning"
+        },
+        {
+          "name": "DeviceFailureShortCircuitSwitchOffLoadAlarmWarning",
+          "enumValue": "DeviceFailureShortCircuitSwitchOffLoadAlarmWarning"
+        },
+        {
+          "name": "LoadPrewarningLoadAlarmWarning",
+          "enumValue": "LoadPrewarningLoadAlarmWarning"
+        },
+        {
+          "name": "DeviceFailureLoadPrewarningLoadAlarmWarning",
+          "enumValue": "DeviceFailureLoadPrewarningLoadAlarmWarning"
+        },
+        {
+          "name": "ShortCircuitSwitchOffLoadPrewarningLoadAlarmWarning",
+          "enumValue": "ShortCircuitSwitchOffLoadPrewarningLoadAlarmWarning"
+        },
+        {
+          "name": "DeviceFailureShortCircuitSwitchOffLoadPrewarningLoadAlarmWarning",
+          "enumValue": "DeviceFailureShortCircuitSwitchOffLoadPrewarningLoadAlarmWarning"
+        }
+      ]
+    }
+  ]
+}

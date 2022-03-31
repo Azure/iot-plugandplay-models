@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D264968;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS R254K-UUI-LH10-S4 (ADSS)",
+  "description": "BOS R254K-UUI-LH10-S4 (ADSS)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel",
+      "displayName": "SwitchingSignalChannel",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TransducerEnable",
+              "displayName": "TransducerEnable",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

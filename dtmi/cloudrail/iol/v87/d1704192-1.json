@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D1704192;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "UMS123U035",
+  "description": "Ultrasonic Reflex Sensor for Measuring Tasks",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output2",
+      "displayName": "Output2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance110Mm",
+      "displayName": "Distance110Mm",
+      "schema": "long"
+    }
+  ]
+}

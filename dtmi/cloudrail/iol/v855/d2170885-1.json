@@ -1,0 +1,82 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D2170885;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FSM3-C020U",
+  "description": "Small Size Flow Sensor RapiFlow, 2L",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "IOLinkOutput1",
+      "displayName": "IOLinkOutput1",
+      "schema": "dtmi:CloudRail:IOL:V855:D2170885:IOLinkOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IOLinkOutput2",
+      "displayName": "IOLinkOutput2",
+      "schema": "dtmi:CloudRail:IOL:V855:D2170885:IOLinkOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          },
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowRate_Lpmin",
+      "displayName": "FlowRate_Lpmin",
+      "schema": "double"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D2170885:IOLinkOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}

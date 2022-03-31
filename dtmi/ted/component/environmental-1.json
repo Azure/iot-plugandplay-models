@@ -1,0 +1,126 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:component:Environmental;1",
+  "@type": "Interface",
+  "displayName": "Environmental Sensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "telemetryInterval",
+      "displayName": "Telemetry Interval",
+      "description": "Control the frequency of the telemetry loop.",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "environmental",
+      "displayName": "Environmental Sensor",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": "Gateway Mac",
+            "name": "gatewayMac",
+            "schema": "string"
+          },
+          {
+            "displayName": "Local Timestamp",
+            "name": "localtimestamp",
+            "schema": "string"
+          },
+          {
+            "displayName": "DatetimeISO",
+            "name": "datetimeISO",
+            "schema": "string"
+          },
+          {
+            "displayName": "Datetime",
+            "name": "datetime",
+            "schema": "string"
+          },
+          {
+            "displayName": "RSSI",
+            "name": "rssi",
+            "schema": "integer"
+          },
+          {
+            "displayName": "Mac",
+            "name": "mac",
+            "schema": "string"
+          },
+          {
+            "displayName": "SerialNumber",
+            "name": "serial",
+            "schema": "string"
+          },
+          {
+            "displayName": "ModelName",
+            "name": "model",
+            "schema": "string"
+          },
+          {
+            "displayName": "Battery",
+            "name": "battery",
+            "schema": "double"
+          },
+          {
+            "displayName": "Temperature",
+            "name": "temperature",
+            "schema": "double"
+          },
+          {
+            "displayName": "Humidity",
+            "name": "humidity",
+            "schema": "double"
+          },
+          {
+            "displayName": "AmbientLight",
+            "name": "ambientLight",
+            "schema": "double"
+          },
+          {
+            "displayName": "UvIndex",
+            "name": "uvIndex",
+            "schema": "double"
+          },
+          {
+            "displayName": "Pressure",
+            "name": "pressure",
+            "schema": "double"
+          },
+          {
+            "displayName": "SoundNoise",
+            "name": "soundNoise",
+            "schema": "double"
+          },
+          {
+            "displayName": "DiscomfortIndex",
+            "name": "discomfortIndex",
+            "schema": "double"
+          },
+          {
+            "displayName": "heatStroke",
+            "name": "heatStroke",
+            "schema": "double"
+          },
+          {
+            "displayName": "CO2",
+            "name": "co2",
+            "schema": "double"
+          },
+          {
+            "displayName": "PM2.5",
+            "name": "pm2_5",
+            "schema": "double"
+          },
+          {
+            "displayName": "Event",
+            "name": "event",
+            "schema": "boolean"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+    "@id": "dtmi:com:sierrawireless:octave:mangohyellow;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Octave Cloud Interface"
+            },
+            "name": "cloudInterface",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface;1"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Telemetry"
+            },
+            "name": "telemetry",
+            "schema": {
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "displayName": {
+                            "en": "Light Values"
+                        },
+                        "name": "light",
+                        "schema": "double"
+                    },
+                    {
+                        "displayName": {
+                            "en": "IMU"
+                        },
+                        "name": "imu",
+                        "schema": {
+                            "@type": "Object",
+                            "fields": [
+                                {
+                                    "displayName": {
+                                        "en": "Accelerometer"
+                                    },
+                                    "name": "accel",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelX"
+                                                },
+                                                "name": "x",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelY"
+                                                },
+                                                "name": "y",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "AccelZ"
+                                                },
+                                                "name": "z",
+                                                "schema": "double"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "displayName": {
+                                        "en": "Gyroscope"
+                                    },
+                                    "name": "gyro",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroX"
+                                                },
+                                                "name": "x",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroY"
+                                                },
+                                                "name": "y",
+                                                "schema": "double"
+                                            },
+                                            {
+                                                "displayName": {
+                                                    "en": "GyroZ"
+                                                },
+                                                "name": "z",
+                                                "schema": "double"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "displayName": {
+                                        "en": "Temperature"
+                                    },
+                                    "name": "temp",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "displayName": {
+                            "en": "Utilities"
+                        },
+                        "name": "util",
+                        "schema": {
+                            "@type": "Object",
+                            "fields": [
+                                {
+                                    "displayName": {
+                                        "en": "Cellular"
+                                    },
+                                    "name": "cellular",
+                                    "schema": {
+                                        "@type": "Object",
+                                        "fields": [
+                                            {
+                                                "displayName": {
+                                                    "en": "Signal"
+                                                },
+                                                "name": "signal",
+                                                "schema": {
+                                                    "@type": "Object",
+                                                    "fields": [
+                                                        {
+                                                            "displayName": {
+                                                                "en": "Bars"
+                                                            },
+                                                            "name": "bars",
+                                                            "schema": "integer"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "MangOh Yellow LEDs"
+            },
+            "name": "leds",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:leds;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Octave Utils"
+            },
+            "name": "util",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:util;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Light Sensor"
+            },
+            "name": "light",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:light;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Device Location"
+            },
+            "name": "location",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:location;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "IMU"
+            },
+            "name": "imu",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:imu;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Buzzer"
+            },
+            "name": "buzzer",
+            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:buzzer;1"
+        }
+    ],
+    "displayName": {
+        "en": "MangoH Yellow Telemetry"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}

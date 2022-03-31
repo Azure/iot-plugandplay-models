@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:ip3:hrm;1",
+  "@type": "Interface",
+  "displayName": "Smart Electric Meter",
+  "description": "Ip3.co.ltd",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "sn",
+      "displayName": "Device SN",
+      "description": "Device Serials Number.ex S202104150007.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "sw",
+      "displayName": "Software Version",
+      "description": "The device software version,ex.sw:NB.1.1.2.",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "teleFrq",
+      "schema": "double",
+      "description": "The frequence of telemetry.",
+      "writable": true
+    },
+    {
+      "@type": [ "Telemetry", "Power" ],
+      "name": "power",
+      "displayName": "TotalWattage",
+      "unit": "kilowatt",
+      "description": "The electricity consumption,ex.1000kwh",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "displayName": "Reboot",
+      "name": "reboot",
+      "request": {
+        "description": "Number of seconds to wait before rebooting the device.",
+        "displayName": "Delay",
+        "name": "delay",
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V896:D8196_Normal;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PD30ETDI10BPxxIO",
+  "description": "Photoelectric Sensor, Diffuse Reflective, Infrared Emitter, 1000 mm, Stainless Steel Housing, IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogueValue",
+      "displayName": "AnalogueValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAlarm",
+      "displayName": "TemperatureAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DustAlarm2",
+      "displayName": "DustAlarm2",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:DustAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DustAlarm1",
+      "displayName": "DustAlarm1",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:DustAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel2",
+      "displayName": "SwitchingSignalChannel2",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingSignalChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel1",
+      "displayName": "SwitchingSignalChannel1",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingSignalChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ApplicationFunctionOutput1",
+      "displayName": "ApplicationFunctionOutput1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WaterDropAlarm2",
+      "displayName": "WaterDropAlarm2",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:WaterDropAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WaterDropAlarm1",
+      "displayName": "WaterDropAlarm1",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:WaterDropAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D8196_Normal:DustAlarm;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingSignalChannel;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D8196_Normal:WaterDropAlarm;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D8196_Normal:SwitchingOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

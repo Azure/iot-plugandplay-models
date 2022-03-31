@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131844;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BIP LD2-T017-04-BP0x.5-S04",
+  "description": "Inductive Positioning System",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DigitalOutputValue",
+      "displayName": "DigitalOutputValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TargetOutofrange",
+      "displayName": "TargetOutofrange",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "TargetIsInMeasurementRange",
+            "enumValue": "TargetIsInMeasurementRange"
+          },
+          {
+            "name": "TargetIsOutOfMeasurementRange",
+            "enumValue": "TargetIsOutOfMeasurementRange"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannel3",
+      "displayName": "BinaryDataChannel3",
+      "schema": "dtmi:CloudRail:IOL:V888:D131844:BinaryDataChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannel2",
+      "displayName": "BinaryDataChannel2",
+      "schema": "dtmi:CloudRail:IOL:V888:D131844:BinaryDataChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BinaryDataChannel1",
+      "displayName": "BinaryDataChannel1",
+      "schema": "dtmi:CloudRail:IOL:V888:D131844:BinaryDataChannel;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D131844:BinaryDataChannel;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "BinaryChannelIsOFF",
+          "enumValue": "BinaryChannelIsOFF"
+        },
+        {
+          "name": "BinaryChannelIsON",
+          "enumValue": "BinaryChannelIsON"
+        }
+      ]
+    }
+  ]
+}
