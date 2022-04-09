@@ -77,7 +77,7 @@ stages:
             set -e
             
             echo "Synchronizing models..."
-            az storage blob upload-batch -s "./dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
+            az storage blob upload-batch -s "./dtmi" -d 'models/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
 
@@ -202,7 +202,7 @@ stages:
             mkdir "$EXPANDED_MODELS_PATH/dtmi" && tar -xf "$EXPANDED_MODELS_PATH/expanded_models.tar" -C "$EXPANDED_MODELS_PATH/dtmi"
 
             echo "Synchronizing expanded models..."
-            az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
+            az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d 'models/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
           EXPANDED_MODELS_PATH: '$(System.ArtifactsDirectory)/expanded_models/'
@@ -236,7 +236,7 @@ stages:
             tar -xf "$METADATA_PATH/metadata.tar" -C "$METADATA_PATH"
 
             echo "Synchronizing index and metadata..."
-            az storage blob upload-batch -s "$METADATA_PATH" -d '$web' --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
+            az storage blob upload-batch -s "$METADATA_PATH" -d 'models' --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
           METADATA_PATH: '$(System.ArtifactsDirectory)/metadata/'
