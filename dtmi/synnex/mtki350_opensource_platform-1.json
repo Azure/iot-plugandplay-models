@@ -108,6 +108,6 @@
       "name": "logicalDISKusage",
       "displayName": "Logical DISK (Usage)(%)",
       "schema": "double"
-    },
+    }
   ]
 }
