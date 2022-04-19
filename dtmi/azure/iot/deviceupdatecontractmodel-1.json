@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:azure:iot:deviceUpdateContractModel;1",
+  "@type": "Interface",
+  "displayName": "Device Update Model V1",
+  "description": "The model supports update manifest version 4",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:iot:deviceUpdate;1",
+      "name": "deviceUpdate",
+      "displayName": "Device Update Plug and Play Component",
+      "description": "Device Update Plug and Play Component"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
