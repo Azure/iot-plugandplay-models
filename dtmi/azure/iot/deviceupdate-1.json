@@ -1,8 +1,8 @@
 {
   "@id": "dtmi:azure:iot:deviceUpdate;1",
   "@type": "Interface",
-  "description": "Device Update Interface",
-  "displayName": "Device Update Interface",
+  "displayName": "Device Update Interface version 1",
+  "description": "Device Update interface version 1 is used to send update action and metadata to devices and receive update status from devices.",
   "contents": [
     {
       "@type": "Property",
