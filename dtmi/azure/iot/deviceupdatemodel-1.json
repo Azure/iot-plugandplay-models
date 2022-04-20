@@ -1,4 +1,5 @@
 {
+  "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:azure:iot:deviceUpdateModel;1",
   "@type": "Interface",
   "displayName": "Device Update Model version 1",
@@ -17,6 +18,5 @@
       "name": "deviceInformation",
       "displayName": "Device Information"
     }
-  ],
-  "@context": "dtmi:dtdl:context;2"
+  ]
 }

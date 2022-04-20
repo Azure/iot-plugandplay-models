@@ -1,4 +1,5 @@
 {
+  "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:azure:iot:diagnosticInformation;1",
   "@type": "Interface",
   "displayName": "Diagnostic Information Interface version 1",
@@ -49,6 +50,5 @@
         }
       ]
     }
-  ],
-  "@context": "dtmi:dtdl:context;2"
+  ]
 }
