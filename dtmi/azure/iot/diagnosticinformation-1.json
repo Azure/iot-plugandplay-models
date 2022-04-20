@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azure:iot:diagnosticInformation;1",
+  "@type": "Interface",
+  "displayName": "Diagnostic Information Interface version 1",
+  "description": "Diagnostic Information interface version 1 is used to send log upload URL and operation id to devices and receive operation status from devices.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "agent",
+      "schema": "dtmi:azure:iot:diagnosticInformation:clientMetadata;1"
+    },
+    {
+      "@type": "Property",
+      "name": "service",
+      "schema": "dtmi:azure:iot:diagnosticInformation:serviceMetadata;1",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:azure:iot:diagnosticInformation:clientMetadata;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "resultCode",
+          "schema": "integer"
+        },
+        {
+          "name": "extendedResultCode",
+          "schema": "integer"
+        },
+        {
+          "name": "operationId",
+          "schema": "string"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:iot:diagnosticInformation:serviceMetadata;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "operationId",
+          "schema": "string"
+        },
+        {
+          "name": "storageSasUrl",
+          "schema": "string"
+        }
+      ]
+    }
+  ]
+}
