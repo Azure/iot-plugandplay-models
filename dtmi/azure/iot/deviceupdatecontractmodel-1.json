@@ -8,8 +8,7 @@
       "@type": "Component",
       "schema": "dtmi:azure:iot:deviceUpdate;1",
       "name": "deviceUpdate",
-      "displayName": "Device Update Plug and Play Component",
-      "description": "Device Update Plug and Play Component"
+      "displayName": "Device Update Interface version 1"
     }
   ],
   "@context": "dtmi:dtdl:context;2"

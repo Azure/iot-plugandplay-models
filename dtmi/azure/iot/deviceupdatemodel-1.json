@@ -9,15 +9,13 @@
       "@type": "Component",
       "schema": "dtmi:azure:iot:diagnosticInformation;1",
       "name": "diagnosticInformation",
-      "displayName": "Diagnostic Information Interface",
-      "description": "Diagnostic Information Interface"
+      "displayName": "Diagnostic Information Interface version 1"
     },
     {
       "@type": "Component",
       "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
       "name": "deviceInformation",
-      "displayName": "Device Information Interface",
-      "description": "Device Information Interface"
+      "displayName": "Device Information"
     }
   ],
   "@context": "dtmi:dtdl:context;2"
