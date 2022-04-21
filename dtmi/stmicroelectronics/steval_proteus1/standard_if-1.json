@@ -1,0 +1,301 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:stmicroelectronics:steval_proteus1:standard_if;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Reports temperature, accelerometer, gyroscope, predictive speed status, predictive acceleration peak status, predictive frequency domain status, battery status"
+  },
+  "displayName": {
+    "en": "Standard interface for PROTEUS"
+  },
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "comment": "Battery Level [%]",
+      "displayName": {
+        "en": "Battery [%]"
+      },
+      "name": "battery",
+      "schema": "double"
+    },
+    {
+      "@type": [ 
+        "Telemetry",
+        "Temperature"
+      ],
+      "comment": "Temperature in degrees Celsius from temperature sensor.",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "Acceleration X/Y/Z components [mg]",
+      "displayName": {
+        "en": "Acc Value [mg]"
+      },
+      "name": "accelerometer",
+      "schema": {
+        "@type": "Object",
+        "description": {
+          "en": "Single acceleration sample. I.e.: {a_x, a_y, a_z}."
+        },
+        "displayName": {
+          "en": "Single acceleration sample."
+        },
+        "fields": [
+          {
+            "name": "a_x",
+            "schema": "double"
+          },
+          {
+            "name": "a_y",
+            "schema": "double"
+          },
+          {
+            "name": "a_z",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "Gyroscope X/Y/Z components [dps]",
+      "displayName": {
+        "en": "Gyro Value [dps]"
+      },
+      "name": "gyroscope",
+      "schema": {
+        "@type": "Object",
+        "description": {
+          "en": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}."
+        },
+        "displayName": {
+          "en": "Single angular velocity sample."
+        },
+        "fields": [
+          {
+            "name": "g_x",
+            "schema": "double"
+          },
+          {
+            "name": "g_y",
+            "schema": "double"
+          },
+          {
+            "name": "g_z",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "Acceleration Peak Status X/Y/Z components [m/sˆ2]",
+      "displayName": {
+        "en": "Acc Peak Status [m/sˆ2]"
+      },
+      "name": "predictiveaccelerationstatus",
+      "schema": {
+        "@type": "Object",
+        "description": {
+          "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, accpeak_x, accpeak_y, accpeak_z}."
+        },
+        "displayName": {
+          "en": "Single Predictive Acceleration Peak Status sample."
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "[AccPeak] Status Acceleration X:"
+            },
+            "name": "statusacc_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[AccPeak] Status Acceleration Y:"
+            },
+            "name": "statusacc_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[AccPeak] Status Acceleration Z:"
+            },
+            "name": "statusacc_z",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Acceleration Peak X:"
+            },
+            "name": "accpeak_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Acceleration Peak Y:"
+            },
+            "name": "accpeak_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Acceleration Peak Z:"
+            },
+            "name": "accpeak_z",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "Speed Status X/Y/Z components [mm/s]",
+      "displayName": {
+        "en": "Speed Status  [m/sˆ2]"
+      },
+      "name": "predictivespeedstatus",
+      "schema": {
+        "@type": "Object",
+        "description": {
+          "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, rmsspeed_x, rmsspeed_y, rmsspeed_z}."
+        },
+        "displayName": {
+          "en": "Single Predictive Speed Status sample."
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "[Speed] Status Acceleration X:"
+            },
+            "name": "statusacc_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[Speed] Status Acceleration Y:"
+            },
+            "name": "statusacc_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[Speed] Status Acceleration Z:"
+            },
+            "name": "statusacc_z",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "RMS SPEED X:"
+            },
+            "name": "rmsspeed_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "RMS SPEED Y:"
+            },
+            "name": "rmsspeed_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "RMS SPEED Z:"
+            },
+            "name": "rmsspeed_z",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "Frequency Domain Status X/Y/Z components [mm/s]",
+      "displayName": {
+        "en": "Frequency Domain Status  [m/sˆ2]"
+      },
+      "name": "predictivefrequencydomainstatus",
+      "schema": {
+        "@type": "Object",
+        "description": {
+          "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, freq_x, freq_y, freq_z, maxampli_x, maxampli_y, maxampli_z}."
+        },
+        "displayName": {
+          "en": "Single Predictive Frequency Domain sample."
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "[Frequency Domain] Status Acceleration X:"
+            },
+            "name": "statusacc_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[Frequency Domain] Status Acceleration Y:"
+            },
+            "name": "statusacc_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "[Frequency Domain] Status Acceleration Z:"
+            },
+            "name": "statusacc_z",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Frequency Domain X:"
+            },
+            "name": "freq_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Frequency Domain Y:"
+            },
+            "name": "freq_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Frequency Domain Z:"
+            },
+            "name": "freq_z",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Max Amplitude X:"
+            },
+            "name": "maxampli_x",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Max Amplitude Y:"
+            },
+            "name": "maxampli_y",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Max Amplitude Z:"
+            },
+            "name": "maxampli_z",
+            "schema": "double"
+          }
+        ]
+      }
+    }
+  ]
+}
