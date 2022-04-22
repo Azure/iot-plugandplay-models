@@ -99,7 +99,7 @@
       "displayName": {
         "en": "Acc Peak Status [m/sˆ2]"
       },
-      "name": "predictiveaccelerationstatus",
+      "name": "predictiveAccelerationStatus",
       "schema": {
         "@type": "Object",
         "description": {
@@ -113,42 +113,42 @@
             "displayName": {
               "en": "[AccPeak] Status Acceleration X"
             },
-            "name": "statusacc_x",
+            "name": "statusAcc_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[AccPeak] Status Acceleration Y"
             },
-            "name": "statusacc_y",
+            "name": "statusAcc_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[AccPeak] Status Acceleration Z"
             },
-            "name": "statusacc_z",
+            "name": "statusAcc_z",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "Acceleration Peak X"
             },
-            "name": "accpeak_x",
+            "name": "accPeak_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "Acceleration Peak Y"
             },
-            "name": "accpeak_y",
+            "name": "accPeak_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "Acceleration Peak Z"
             },
-            "name": "accpeak_z",
+            "name": "accPeak_z",
             "schema": "double"
           }
         ]
@@ -160,7 +160,7 @@
       "displayName": {
         "en": "Speed Status [m/sˆ2]"
       },
-      "name": "predictivespeedstatus",
+      "name": "predictiveSpeedStatus",
       "schema": {
         "@type": "Object",
         "description": {
@@ -174,42 +174,42 @@
             "displayName": {
               "en": "[Speed] Status Acceleration X"
             },
-            "name": "statusacc_x",
+            "name": "statusAcc_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[Speed] Status Acceleration Y"
             },
-            "name": "statusacc_y",
+            "name": "statusAcc_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[Speed] Status Acceleration Z"
             },
-            "name": "statusacc_z",
+            "name": "statusAcc_z",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "RMS Speed X"
             },
-            "name": "rmsspeed_x",
+            "name": "rmsSpeed_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "RMS Speed Y"
             },
-            "name": "rmsspeed_y",
+            "name": "rmsSpeed_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "RMS Speed Z"
             },
-            "name": "rmsspeed_z",
+            "name": "rmsSpeed_z",
             "schema": "double"
           }
         ]
@@ -221,7 +221,7 @@
       "displayName": {
         "en": "Frequency Domain Status [m/sˆ2]"
       },
-      "name": "predictivefrequencydomainstatus",
+      "name": "predictiveFrequencyDomainStatus",
       "schema": {
         "@type": "Object",
         "description": {
@@ -235,21 +235,21 @@
             "displayName": {
               "en": "[Frequency Domain] Status Acceleration X"
             },
-            "name": "statusacc_x",
+            "name": "statusAcc_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[Frequency Domain] Status Acceleration Y"
             },
-            "name": "statusacc_y",
+            "name": "statusAcc_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "[Frequency Domain] Status Acceleration Z"
             },
-            "name": "statusacc_z",
+            "name": "statusAcc_z",
             "schema": "double"
           },
           {
@@ -277,21 +277,21 @@
             "displayName": {
               "en": "Max Amplitude X"
             },
-            "name": "maxampli_x",
+            "name": "maxAmpli_x",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "Max Amplitude Y"
             },
-            "name": "maxampli_y",
+            "name": "maxAmpli_y",
             "schema": "double"
           },
           {
             "displayName": {
               "en": "Max Amplitude Z"
             },
-            "name": "maxampli_z",
+            "name": "maxAmpli_z",
             "schema": "double"
           }
         ]

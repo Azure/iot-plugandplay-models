@@ -8,7 +8,7 @@
   "contents": [
     {
       "@type": "Component",
-      "name": "stdcomp",
+      "name": "std_comp",
       "schema": "dtmi:stmicroelectronics:steval_proteus1:standard_if;1"
     }
   ]
