@@ -3,10 +3,10 @@
   "@id": "dtmi:stmicroelectronics:steval_proteus1:standard_if;1",
   "@type": "Interface",
   "description": {
-    "en": "Reports temperature, accelerometer, gyroscope, predictive speed status, predictive acceleration peak status, predictive frequency domain status, battery status"
+    "en": "Reports temperature, accelerometer, gyroscope, predictive speed status, predictive acceleration peak status, predictive frequency domain status, battery status."
   },
   "displayName": {
-    "en": "Standard interface for PROTEUS"
+    "en": "Standard Interface for PROTEUS"
   },
   "contents": [
     {
@@ -44,7 +44,7 @@
           "en": "Single acceleration sample. I.e.: {a_x, a_y, a_z}."
         },
         "displayName": {
-          "en": "Single acceleration sample."
+          "en": "Single Acceleration Sample"
         },
         "fields": [
           {
@@ -75,7 +75,7 @@
           "en": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}."
         },
         "displayName": {
-          "en": "Single angular velocity sample."
+          "en": "Single Angular Velocity Sample"
         },
         "fields": [
           {
@@ -106,47 +106,47 @@
           "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, accpeak_x, accpeak_y, accpeak_z}."
         },
         "displayName": {
-          "en": "Single Predictive Acceleration Peak Status sample."
+          "en": "Single Predictive Acceleration Peak Status Sample"
         },
         "fields": [
           {
             "displayName": {
-              "en": "[AccPeak] Status Acceleration X:"
+              "en": "[AccPeak] Status Acceleration X"
             },
             "name": "statusacc_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[AccPeak] Status Acceleration Y:"
+              "en": "[AccPeak] Status Acceleration Y"
             },
             "name": "statusacc_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[AccPeak] Status Acceleration Z:"
+              "en": "[AccPeak] Status Acceleration Z"
             },
             "name": "statusacc_z",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Acceleration Peak X:"
+              "en": "Acceleration Peak X"
             },
             "name": "accpeak_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Acceleration Peak Y:"
+              "en": "Acceleration Peak Y"
             },
             "name": "accpeak_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Acceleration Peak Z:"
+              "en": "Acceleration Peak Z"
             },
             "name": "accpeak_z",
             "schema": "double"
@@ -158,7 +158,7 @@
       "@type": "Telemetry",
       "comment": "Speed Status X/Y/Z components [mm/s]",
       "displayName": {
-        "en": "Speed Status  [m/sˆ2]"
+        "en": "Speed Status [m/sˆ2]"
       },
       "name": "predictivespeedstatus",
       "schema": {
@@ -167,47 +167,47 @@
           "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, rmsspeed_x, rmsspeed_y, rmsspeed_z}."
         },
         "displayName": {
-          "en": "Single Predictive Speed Status sample."
+          "en": "Single Predictive Speed Status Sample"
         },
         "fields": [
           {
             "displayName": {
-              "en": "[Speed] Status Acceleration X:"
+              "en": "[Speed] Status Acceleration X"
             },
             "name": "statusacc_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[Speed] Status Acceleration Y:"
+              "en": "[Speed] Status Acceleration Y"
             },
             "name": "statusacc_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[Speed] Status Acceleration Z:"
+              "en": "[Speed] Status Acceleration Z"
             },
             "name": "statusacc_z",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "RMS SPEED X:"
+              "en": "RMS Speed X"
             },
             "name": "rmsspeed_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "RMS SPEED Y:"
+              "en": "RMS Speed Y"
             },
             "name": "rmsspeed_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "RMS SPEED Z:"
+              "en": "RMS Speed Z"
             },
             "name": "rmsspeed_z",
             "schema": "double"
@@ -219,7 +219,7 @@
       "@type": "Telemetry",
       "comment": "Frequency Domain Status X/Y/Z components [mm/s]",
       "displayName": {
-        "en": "Frequency Domain Status  [m/sˆ2]"
+        "en": "Frequency Domain Status [m/sˆ2]"
       },
       "name": "predictivefrequencydomainstatus",
       "schema": {
@@ -228,68 +228,68 @@
           "en": "Sample format I.e.: {statusacc_x, statusacc_y, statusacc_z, freq_x, freq_y, freq_z, maxampli_x, maxampli_y, maxampli_z}."
         },
         "displayName": {
-          "en": "Single Predictive Frequency Domain sample."
+          "en": "Single Predictive Frequency Domain Sample"
         },
         "fields": [
           {
             "displayName": {
-              "en": "[Frequency Domain] Status Acceleration X:"
+              "en": "[Frequency Domain] Status Acceleration X"
             },
             "name": "statusacc_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[Frequency Domain] Status Acceleration Y:"
+              "en": "[Frequency Domain] Status Acceleration Y"
             },
             "name": "statusacc_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "[Frequency Domain] Status Acceleration Z:"
+              "en": "[Frequency Domain] Status Acceleration Z"
             },
             "name": "statusacc_z",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Frequency Domain X:"
+              "en": "Frequency Domain X"
             },
             "name": "freq_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Frequency Domain Y:"
+              "en": "Frequency Domain Y"
             },
             "name": "freq_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Frequency Domain Z:"
+              "en": "Frequency Domain Z"
             },
             "name": "freq_z",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Max Amplitude X:"
+              "en": "Max Amplitude X"
             },
             "name": "maxampli_x",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Max Amplitude Y:"
+              "en": "Max Amplitude Y"
             },
             "name": "maxampli_y",
             "schema": "double"
           },
           {
             "displayName": {
-              "en": "Max Amplitude Z:"
+              "en": "Max Amplitude Z"
             },
             "name": "maxampli_z",
             "schema": "double"
