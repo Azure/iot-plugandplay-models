@@ -1,4 +1,4 @@
-### Thank you for contributing to the Azure IoT Plug and Play Models repository
+### Thank you for contributing to the IoT Plug and Play Models repository
 
 :memo: Please review this checklist before submission
 
