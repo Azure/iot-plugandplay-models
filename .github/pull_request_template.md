@@ -5,7 +5,7 @@
 - [ ] :eyes: The models submitted in this PR follow the [DTDL Naming Guidelines](https://github.com/Azure/iot-plugandplay-models-tools/wiki/DTDL-Naming-Guidelines) for contributing to this repository.
 - [ ] 🕵️I have validated the models locally using the [dmr-client](https://github.com/Azure/iot-plugandplay-models-tools/tree/dev/clients/dotnet/Microsoft.IoT.ModelsRepository.CommandLine) command line tool.
 - [ ] ❗ I understand once the PR is approved, the models are considered immutable: any edits will require to submit new files.
-- [ ] ✨ When creating a new top level `dtmi:namespace`, I have completed the [PR Info Template](./#pr-info-template) below.
+- [ ] ✨ When creating a new top level `dtmi:namespace`, I have completed the [PR Info Template](#pr-info-template) below.
 
 :zap: PR validation steps are described in the tools [Wiki](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Validation-Pipeline#pr-validation-checks).
 
