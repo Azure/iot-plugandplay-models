@@ -1,0 +1,15 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:stmicroelectronics:steval_proteus1:standard_fw;1",
+  "@type": "Interface",
+  "displayName": "STEVAL-PROTEUS1",
+  "description": "2.4GHz industrial sensor node for condition monitoring.",
+  "comment": "from proteus-poc iotc draftv2 (no deviceinfo component)",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "std_comp",
+      "schema": "dtmi:stmicroelectronics:steval_proteus1:standard_if;1"
+    }
+  ]
+}

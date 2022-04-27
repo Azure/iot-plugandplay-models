@@ -1,0 +1,36 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:atos:gateway:sphere_gateway;1",
+    "@type": "Interface",
+    "displayName": "Atos Sphere Secure Gateway",
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": "Device Model",
+        "name": "device",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "displayName": "Software Version",
+        "name": "software_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "displayName": "Reference Signal Received Power",
+        "name": "rsrp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "displayName": "Signal to Interference plus Noise Ratio",
+        "name": "sinr",
+        "schema": "integer",
+        "writable": false
+      }
+    ]
+  }
