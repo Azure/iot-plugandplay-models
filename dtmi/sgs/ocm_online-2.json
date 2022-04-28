@@ -240,24 +240,22 @@
     {
       "@type": [
         "Property",
-        "Density"
+        "Concentration"
       ],
       "name": "feConcentration",
       "displayName": "Fe Concentration",
       "description": "Ferromagnetic concentration.",
-      "schema": "float",
-      "unit": "milligramPerLitre"
+      "schema": "float"
     },
     {
       "@type": [
         "Property",
-        "Density"
+        "Concentration"
       ],
       "name": "nonFeConcentration",
       "displayName": "NonFe Concentration",
       "description": "Non Ferromagnetic concentration.",
-      "schema": "float",
-      "unit": "milligramPerLitre"
+      "schema": "float"
     },
     {
       "@type": "Command",
