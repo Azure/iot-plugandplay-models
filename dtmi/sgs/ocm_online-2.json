@@ -1,52 +1,48 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:SGS:OCM_Online;2",
+  "@id": "dtmi:sgs:OCM_Online;2",
   "@type": "Interface",
   "displayName": "OCM-Online",
-  "description": "Report the current oil quality data and oil iron content distribution data, and Get Log for STAS-PLUS",
+  "description": "Report the current oil quality data and oil iron content distribution data, and Get Log for STAS-PLUS.",
   "contents": [
     {
       "@type": [
         "Property",
         "Grade"
       ],
-      "name": "Grade4um",
+      "name": "grade4um",
       "displayName": ">4um Grade",
-      "description": "Particle grade greater than 4um",
-      "schema": "integer",
-      "unit": "Grade"
+      "description": "Particle grade greater than 4um.",
+      "schema": "integer"
     },
     {
       "@type": [
         "Property",
         "Grade"
       ],
-      "name": "Grade6um",
+      "name": "grade6um",
       "displayName": ">6um Grade",
-      "description": "Particle grade greater than 6um",
-      "schema": "integer",
-      "unit": "Grade"
+      "description": "Particle grade greater than 6um.",
+      "schema": "integer"
     },
     {
       "@type": [
         "Property",
         "Grade"
       ],
-      "name": "Grade14um",
+      "name": "grade14um",
       "displayName": ">14um Grade",
-      "description": "Particle grade greater than 14um",
-      "schema": "integer",
-      "unit": "Grade"
+      "description": "Particle grade greater than 14um.",
+      "schema": "integer"
     },
-
     {
       "@type": [
         "Property",
         "Count"
       ],
-      "name": "Fe40T100",
+      "name": "fe40T100",
       "displayName": "Fe40~100um",
-      "description": "40~100um Ferromagnetic particle count",
+      "description": "40~100um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -54,9 +50,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe100T200",
+      "name": "fe100T200",
       "displayName": "Fe100~200um",
-      "description": "100~200um Ferromagnetic particle count",
+      "description": "100~200um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -64,9 +60,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe200T300",
+      "name": "fe200T300",
       "displayName": "Fe200~300um",
-      "description": "200~300um Ferromagnetic particle count",
+      "description": "200~300um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -74,9 +70,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe300T400",
+      "name": "fe300T400",
       "displayName": "Fe300~400um",
-      "description": "300~400um Ferromagnetic particle count",
+      "description": "300~400um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -84,9 +80,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe400T500",
+      "name": "fe400T500",
       "displayName": "Fe400~500um",
-      "description": "400~500um Ferromagnetic particle count",
+      "description": "400~500um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -94,9 +90,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe500T600",
+      "name": "fe500T600",
       "displayName": "Fe500~600um",
-      "description": "500~600um Ferromagnetic particle count",
+      "description": "500~600um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -104,9 +100,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe600T700",
+      "name": "fe600T700",
       "displayName": "Fe600~700um",
-      "description": "600~700um Ferromagnetic particle count",
+      "description": "600~700um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -114,9 +110,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe700T800",
+      "name": "fe700T800",
       "displayName": "Fe700~800um",
-      "description": "700~800um Ferromagnetic particle count",
+      "description": "700~800um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -124,9 +120,9 @@
         "Property",
         "Count"
       ],
-      "name": "Fe800T",
+      "name": "fe800T",
       "displayName": "Fe>800um",
-      "description": ">800um Ferromagnetic particle count",
+      "description": ">800um Ferromagnetic particle count.",
       "schema": "integer"
     },
 
@@ -135,9 +131,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe150T200",
+      "name": "nonFe150T200",
       "displayName": "NonFe 150~200um",
-      "description": "150~200um Non ferromagnetic particle count",
+      "description": "150~200um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -145,9 +141,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe200T300",
+      "name": "nonFe200T300",
       "displayName": "NonFe 200~300um",
-      "description": "200~300um Non ferromagnetic particle count",
+      "description": "200~300um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -155,9 +151,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe300T400",
+      "name": "nonFe300T400",
       "displayName": "NonFe 300~400um",
-      "description": "300~400um Non ferromagnetic particle count",
+      "description": "300~400um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -165,9 +161,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe400T500",
+      "name": "nonFe400T500",
       "displayName": "NonFe 400~500um",
-      "description": "400~500um Non ferromagnetic particle count",
+      "description": "400~500um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -175,9 +171,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe500T600",
+      "name": "nonFe500T600",
       "displayName": "NonFe 500~600um",
-      "description": "500~600um Non ferromagnetic particle count",
+      "description": "500~600um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -185,9 +181,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe600T700",
+      "name": "nonFe600T700",
       "displayName": "NonFe 600~700um",
-      "description": "600~700um Non ferromagnetic particle count",
+      "description": "600~700um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -195,9 +191,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe700T800",
+      "name": "nonFe700T800",
       "displayName": "NonFe 700~800um",
-      "description": "700~800um Non ferromagnetic particle count",
+      "description": "700~800um Non ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -205,9 +201,9 @@
         "Property",
         "Count"
       ],
-      "name": "NonFe800T",
+      "name": "nonFe800T",
       "displayName": "NonFe >800um",
-      "description": ">800um Ferromagnetic particle count",
+      "description": ">800um Ferromagnetic particle count.",
       "schema": "integer"
     },
     {
@@ -215,9 +211,9 @@
         "Property",
         "Count"
       ],
-      "name": "FeTotal24",
+      "name": "feTotal24",
       "displayName": "FeTotal24",
-      "description": "Total number of Ferromagnetic particles in 24 hours",
+      "description": "Total number of Ferromagnetic particles in 24 hours.",
       "schema": "integer"
     },
     {
@@ -225,47 +221,47 @@
         "Property",
         "Count"
       ],
-      "name": "NonFeTotal24",
+      "name": "nonFeTotal24",
       "displayName": "NonFeTotal24",
-      "description": "Total number of Non ferromagnetic particles in 24 hours",
+      "description": "Total number of Non ferromagnetic particles in 24 hours.",
       "schema": "integer"
     },
     {
       "@type": [
         "Property",
-        "Flow"
+        "VolumeFlowRate "
       ],
-      "name": "Flow_Sensor",
+      "name": "flowSensor",
       "displayName": "Sensor flow",
-      "description": "Flow of metal abrasive particle sensor",
+      "description": "Flow of metal abrasive particle sensor.",
       "schema": "float",
-      "unit": "ml/min"
+      "unit": "millilitrePerMinute"
     },
     {
       "@type": [
         "Property",
-        "Concentration"
+        "Density"
       ],
-      "name": "FeConcentration",
+      "name": "feConcentration",
       "displayName": "Fe Concentration",
-      "description": "Ferromagnetic concentration",
+      "description": "Ferromagnetic concentration.",
       "schema": "float",
-      "unit": "mg/L"
+      "unit": "milligramPerLitre"
     },
     {
       "@type": [
         "Property",
-        "Concentration"
+        "Density"
       ],
-      "name": "NonFeConcentration",
+      "name": "nonFeConcentration",
       "displayName": "NonFe Concentration",
-      "description": "Non Ferromagnetic concentration",
+      "description": "Non Ferromagnetic concentration.",
       "schema": "float",
-      "unit": "mg/L"
+      "unit": "milligramPerLitre"
     },
     {
       "@type": "Command",
-      "name": "GetLastErrLog",
+      "name": "getLastErrLog",
       "response": {
         "name": "ErrLog",
         "schema": "string"
