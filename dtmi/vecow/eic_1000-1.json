@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:VECOW:eic_1000;2",
+    "@type": "Interface",
+    "displayName": "VECOW-EIC-1000",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}
