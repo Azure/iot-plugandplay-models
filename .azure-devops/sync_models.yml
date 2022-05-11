@@ -20,6 +20,9 @@ parameters:
 - name: azcliVersionVar
   type: string
   default: 'AzureCliVersion'
+- name: modelDestContainerPathVar
+  type: string
+  default: 'ModelDestinationContainer'
 
 variables:
 - name: vmImage
@@ -38,6 +41,8 @@ variables:
   value: ./index_pages/
 - name: pageLimit
   value: 2048
+- name: modelDestContainer
+  value: $[variables.${{ parameters.modelDestContainerPathVar }}]
 
 
 # Required for schedule trigger
@@ -77,9 +82,11 @@ stages:
             set -e
             
             echo "Synchronizing models..."
-            az storage blob upload-batch -s "./dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
+            az storage blob upload-batch -s "./dtmi" -d "$MODEL_DEST_CONTAINER/dtmi" --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
+          MODEL_DEST_CONTAINER: $(modelDestContainer)
+
 
     - job: 'evaluate_repo'
       displayName: 'Evaluate repository'
@@ -202,10 +209,11 @@ stages:
             mkdir "$EXPANDED_MODELS_PATH/dtmi" && tar -xf "$EXPANDED_MODELS_PATH/expanded_models.tar" -C "$EXPANDED_MODELS_PATH/dtmi"
 
             echo "Synchronizing expanded models..."
-            az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
+            az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d "$MODEL_DEST_CONTAINER/dtmi" --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
           EXPANDED_MODELS_PATH: '$(System.ArtifactsDirectory)/expanded_models/'
+          MODEL_DEST_CONTAINER: $(modelDestContainer)
 
     - job: 'sync_metadata'
       displayName: 'Sync metadata'
@@ -236,7 +244,8 @@ stages:
             tar -xf "$METADATA_PATH/metadata.tar" -C "$METADATA_PATH"
 
             echo "Synchronizing index and metadata..."
-            az storage blob upload-batch -s "$METADATA_PATH" -d '$web' --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
+            az storage blob upload-batch -s "$METADATA_PATH" -d "$MODEL_DEST_CONTAINER" --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
         env:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
           METADATA_PATH: '$(System.ArtifactsDirectory)/metadata/'
+          MODEL_DEST_CONTAINER: $(modelDestContainer)

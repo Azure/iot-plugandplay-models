@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:hostname;2",
+  "@type": "Interface",
+  "displayName": "Host Name Configuration",
+  "description": "Provides functionality to remotely configure the network host name of the device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "desiredName",
+      "schema":"string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "desiredHosts",
+      "schema":"string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "hosts",
+      "schema":"string",
+      "writable": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:settings;2",
+  "@type": "Interface",
+  "displayName": "Settings",
+  "description": "Provides functionality to remotely configure other settings on the device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "deviceHealthTelemetryConfiguration",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "none",
+            "enumValue": 0
+          },
+          {
+            "name": "required",
+            "enumValue": 1
+          },
+          {
+            "name": "optional",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "deliveryOptimizationPolicies",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "percentageDownloadThrottle",
+            "schema": "integer"
+          },
+          {
+            "name": "cacheHostSource",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "none",
+                  "enumValue": 0
+                },
+                {
+                  "name": "azureDeviceUpdate",
+                  "enumValue": 1
+                },
+                {
+                  "name": "deviceDiscoveryService",
+                  "enumValue": 2
+                },
+                {
+                  "name": "dhcpServerCustomOptionId235",
+                  "enumValue": 3
+                }
+              ]
+            }
+          },
+          {
+            "name": "cacheHost",
+            "schema": "string"
+          },
+          {
+            "name": "cacheHostFallback",
+            "schema": "integer"
+          }
+        ]
+      },
+      "writable": true
+    }
+  ]
+}
