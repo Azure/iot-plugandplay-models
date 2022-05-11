@@ -1,0 +1,249 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Thermostat;3",
+  "@type": "Interface",
+  "displayName": "Thermostat",
+  "description": "Reports current temperature and provides desired temperature control.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "room1Temperature",
+      "displayName": "Room1 Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+	{
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "room2Temperature",
+      "displayName": "Room2 Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+	{
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "room3Temperature",
+      "displayName": "Room3 Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "targetRoom1Temperature",
+      "schema": "double",
+      "displayName": "Target Room1 Temperature",
+      "description": "Allows to remotely specify the desired target temperature.",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+	{
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "targetRoom2Temperature",
+      "schema": "double",
+      "displayName": "Target Room2 Temperature",
+      "description": "Allows to remotely specify the desired target temperature.",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+	{
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "targetRoom3Temperature",
+      "schema": "double",
+      "displayName": "Target Room3 Temperature",
+      "description": "Allows to remotely specify the desired target temperature.",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxRoom1TempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Max room1 temperature since last reboot.",
+      "description": "Returns the max temperature since last device reboot."
+    },
+	{
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxRoom2TempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Max room2 temperature since last reboot.",
+      "description": "Returns the max temperature since last device reboot."
+    },
+	{
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxRoom3TempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Max room3 temperature since last reboot.",
+      "description": "Returns the max temperature since last device reboot."
+    },
+    {
+      "@type": "Command",
+      "name": "getRoom1MaxMinReport",
+      "displayName": "Get Room1 Max-Min report.",
+      "description": "This command returns the max, min and average temperature from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "tempRoom1Report",
+        "displayName": "Room1 Temperature Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxTemp",
+              "displayName": "Max temperature",
+              "schema": "double"
+            },
+            {
+              "name": "minTemp",
+              "displayName": "Min temperature",
+              "schema": "double"
+            },
+            {
+              "name": "avgTemp",
+              "displayName": "Average Temperature",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    },
+	{
+      "@type": "Command",
+      "name": "getRoom2MaxMinReport",
+      "displayName": "Get Room2 Max-Min report.",
+      "description": "This command returns the max, min and average temperature from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "tempRoom2Report",
+        "displayName": "Room2 Temperature Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxTemp",
+              "displayName": "Max temperature",
+              "schema": "double"
+            },
+            {
+              "name": "minTemp",
+              "displayName": "Min temperature",
+              "schema": "double"
+            },
+            {
+              "name": "avgTemp",
+              "displayName": "Average Temperature",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    },
+	{
+      "@type": "Command",
+      "name": "getRoom3MaxMinReport",
+      "displayName": "Get Room1 Max-Min report.",
+      "description": "This command returns the max, min and average temperature from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "tempRoom3Report",
+        "displayName": "Room3 Temperature Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxTemp",
+              "displayName": "Max temperature",
+              "schema": "double"
+            },
+            {
+              "name": "minTemp",
+              "displayName": "Min temperature",
+              "schema": "double"
+            },
+            {
+              "name": "avgTemp",
+              "displayName": "Average Temperature",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
