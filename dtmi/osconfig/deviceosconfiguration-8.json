@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:osconfig:deviceosconfiguration;7",
+  "@id": "dtmi:osconfig:deviceosconfiguration;8",
   "@type": "Interface",
   "displayName": "Device OS Configuration",
   "contents": [
