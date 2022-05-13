@@ -1,0 +1,43 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:endeavour:flowmeter;1",
+  "@type": "Interface",
+  "displayName": "Flow Meter",
+  "description": "Reports current flow.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Flow"
+      ],
+      "name": "flow",
+      "displayName": "Flow",
+      "description": "Flow in ppl.",
+      "schema": "double",
+      "unit": "ppl"
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "targetTemperature",
+      "schema": "double",
+      "displayName": "Target Temperature",
+      "description": "Allows to remotely specify the desired target temperature.",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxTempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Max temperature since last reboot.",
+      "description": "Returns the max temperature since last device reboot."
+    }
+  ]
+}

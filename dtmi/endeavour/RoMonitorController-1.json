@@ -1,0 +1,126 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:endeavour:RoMonitorController;1",
+  "@type": "Interface",
+  "displayName": "Ro Monitor Controller",
+  "description": "Ro Monitor device.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "name": "workingSet",
+      "displayName": "Working Set",
+      "description": "Current working set of the device memory in KiB.",
+      "schema": "double",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device.",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "relayon",
+      "displayName": "Relay ON",
+      "description": "Command relay ON.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "relayoff",
+      "displayName": "Relay OFF",
+      "description": "Command relay OFF.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure1",
+      "displayName": "Pressure Sensor 1",
+      "description": "Pressure Sensor 1 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure2",
+      "displayName": "Pressure Sensor 2",
+      "description": "Pressure Sensor 2 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure3",
+      "displayName": "Pressure Sensor 3",
+      "description": "Pressure Sensor 3 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure4",
+      "displayName": "Pressure Sensor 4",
+      "description": "Pressure Sensor 4 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure5",
+      "displayName": "Pressure Sensor 5",
+      "description": "Pressure Sensor 5 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:pressuresensor;1",
+      "name": "pressure6",
+      "displayName": "Pressure Sensor 6",
+      "description": "Pressure Sensor 6 of 6."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:flowmeter;1",
+      "name": "flow1",
+      "displayName": "Flow Meter 1",
+      "description": "Flow Meter 1 of 2."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:endeavour:flowmeter;1",
+      "name": "flow2",
+      "displayName": "Flow Meter 2",
+      "description": "Flow Meter 2 of 2."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information."
+    }
+  ]
+}
