@@ -1,0 +1,32 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:endeavour:pressuresensor;1",
+  "@type": "Interface",
+  "displayName": "Pressure Sensor",
+  "description": "Reports current pressure.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": "Pressure",
+      "description": "Presure in bar.",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
+      "name": "targetPressure",
+      "schema": "double",
+      "displayName": "Target Pressure",
+      "description": "Allows to remotely specify the desired target pressure.",
+      "unit": "bar",
+      "writable": true
+    }
+  ]
+}
