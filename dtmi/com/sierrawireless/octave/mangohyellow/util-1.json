@@ -44,7 +44,7 @@
                                         "en": "Cells Period"
                                     },
                                     "name": "period",
-                                    "schema": "integer"
+                                    "schema": "double"
                                 }
                             ]
                         }
@@ -73,7 +73,7 @@
                                         "en": "Signal Period"
                                     },
                                     "name": "period",
-                                    "schema": "integer"
+                                    "schema": "double"
                                 }
                             ]
                         }
@@ -102,7 +102,7 @@
                                         "en": "Statistics Period"
                                     },
                                     "name": "period",
-                                    "schema": "integer"
+                                    "schema": "double"
                                 }
                             ]
                         }
@@ -152,7 +152,7 @@
                                         "en": "Sim Info Period"
                                     },
                                     "name": "period",
-                                    "schema": "integer"
+                                    "schema": "double"
                                 }
                             ]
                         }
@@ -189,7 +189,7 @@
                             "en": "Time Period"
                         },
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     },
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:offset;2",
@@ -197,7 +197,7 @@
                             "en": "Time Offset"
                         },
                         "name": "offset",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },

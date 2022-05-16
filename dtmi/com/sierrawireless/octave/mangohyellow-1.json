@@ -140,7 +140,7 @@
                                                                 "en": "Bars"
                                                             },
                                                             "name": "bars",
-                                                            "schema": "integer"
+                                                            "schema": "double"
                                                         }
                                                     ]
                                                 }

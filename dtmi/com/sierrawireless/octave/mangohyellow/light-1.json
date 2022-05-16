@@ -23,7 +23,7 @@
                 "en": "Light Sensor Period"
             },
             "name": "period",
-            "schema": "integer",
+            "schema": "double",
             "writable": true
         }
     ],

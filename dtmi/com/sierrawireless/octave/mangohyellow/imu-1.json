@@ -28,7 +28,7 @@
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:imu:accel:schema:period;2",
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },
@@ -56,7 +56,7 @@
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:imu:gyro:schema:period;2",
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },
@@ -84,7 +84,7 @@
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:imu:temp:schema:period;2",
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },

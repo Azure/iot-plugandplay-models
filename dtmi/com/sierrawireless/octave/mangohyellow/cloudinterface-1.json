@@ -36,7 +36,7 @@
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:inactivity_period;2",
                         "name": "inactivity_period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },
@@ -64,7 +64,7 @@
                     {
                         "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema:period;2",
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },

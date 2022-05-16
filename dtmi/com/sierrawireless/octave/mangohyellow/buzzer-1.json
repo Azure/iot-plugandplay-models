@@ -23,7 +23,7 @@
                 "en": "Buzzer Percentage"
             },
             "name": "percent",
-            "schema": "integer",
+            "schema": "double",
             "writable": true
         },
         {
@@ -33,7 +33,7 @@
                 "en": "Buzzer Period"
             },
             "name": "period",
-            "schema": "integer",
+            "schema": "double",
             "writable": true
         }
     ],

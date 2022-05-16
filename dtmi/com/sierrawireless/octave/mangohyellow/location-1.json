@@ -34,7 +34,7 @@
                             "en": "Location Period"
                         },
                         "name": "period",
-                        "schema": "integer"
+                        "schema": "double"
                     }
                 ]
             },
