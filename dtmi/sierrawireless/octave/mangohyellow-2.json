@@ -204,7 +204,7 @@
         }
     ],
     "displayName": {
-        "en": "MangoH Yellow Telemetry"
+        "en": "MangoH Yellow Interfaces"
     },
     "@context": [
         "dtmi:iotcentral:context;2",
