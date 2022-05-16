@@ -3,25 +3,25 @@
         "dtmi:iotcentral:context;2",
         "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface;1",
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface;2",
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode;2",
             "@type": "Property",
             "displayName": {
                 "en": "Developer Mode"
             },
             "name": "developer_mode",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:enable;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:enable;2",
                         "displayName": {
                             "en": "Dev Mode Enabled"
                         },
@@ -29,12 +29,12 @@
                         "schema": "boolean"
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:close_on_inactivity;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:close_on_inactivity;2",
                         "name": "close_on_inactivity",
                         "schema": "boolean"
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:inactivity_period;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:developer_mode:schema:inactivity_period;2",
                         "name": "inactivity_period",
                         "schema": "integer"
                     }
@@ -43,26 +43,26 @@
             "writable": true
         },
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:store_forward;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:store_forward;2",
             "@type": "Property",
             "displayName": {
                 "en": "Store and Forward"
             },
             "name": "store_forward",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema:heartbeat_on_empty;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema:heartbeat_on_empty;2",
                         "name": "heartbeat_on_empty",
                         "schema": "boolean"
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema:period;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface:store_forward:schema:period;2",
                         "name": "period",
                         "schema": "integer"
                     }

@@ -3,35 +3,35 @@
         "dtmi:iotcentral:context;2",
         "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util;1",
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:util;2",
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular;2",
             "@type": "Property",
             "displayName": {
                 "en": "Cellular"
             },
             "name": "cellular",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:cells;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells;2",
                         "name": "cells",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:enable;2",
                                     "displayName": {
                                         "en": "Cells Enabled"
                                     },
@@ -39,7 +39,7 @@
                                     "schema": "boolean"
                                 },
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:period;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:period;2",
                                     "displayName": {
                                         "en": "Cells Period"
                                     },
@@ -50,17 +50,17 @@
                         }
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:signal;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal;2",
                         "name": "signal",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:enable;2",
                                     "displayName": {
                                         "en": "Signal Enabled"
                                     },
@@ -68,7 +68,7 @@
                                     "schema": "boolean"
                                 },
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:period;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:period;2",
                                     "displayName": {
                                         "en": "Signal Period"
                                     },
@@ -79,17 +79,17 @@
                         }
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics;2",
                         "name": "statistics",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:enable;2",
                                     "displayName": {
                                         "en": "Statistics Enabled"
                                     },
@@ -97,7 +97,7 @@
                                     "schema": "boolean"
                                 },
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:period;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:period;2",
                                     "displayName": {
                                         "en": "Statistics Period"
                                     },
@@ -112,34 +112,34 @@
             "writable": true
         },
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim;2",
             "@type": "Property",
             "displayName": {
                 "en": "Sim"
             },
             "name": "sim",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim:schema:info;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info;2",
                         "displayName": {
                             "en": "Sim Info"
                         },
                         "name": "info",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:enable;2",
                                     "displayName": {
                                         "en": "Sim Info Enable"
                                     },
@@ -147,7 +147,7 @@
                                     "schema": "boolean"
                                 },
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:period;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:period;2",
                                     "displayName": {
                                         "en": "Sim Info Period"
                                     },
@@ -162,21 +162,21 @@
             "writable": true
         },
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:time;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time;2",
             "@type": "Property",
             "displayName": {
                 "en": "Time"
             },
             "name": "time",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:time:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:time:schema:enable;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:enable;2",
                         "displayName": {
                             "en": "Time Enable"
                         },
@@ -184,7 +184,7 @@
                         "schema": "boolean"
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:time:schema:period;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:period;2",
                         "displayName": {
                             "en": "Time Period"
                         },
@@ -192,7 +192,7 @@
                         "schema": "integer"
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:util:time:schema:offset;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:offset;2",
                         "displayName": {
                             "en": "Time Offset"
                         },

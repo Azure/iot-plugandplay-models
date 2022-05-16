@@ -3,11 +3,11 @@
         "dtmi:iotcentral:context;2",
         "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:light;1",
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:light;2",
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:light:enable;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:light:enable;2",
             "@type": "Property",
             "displayName": {
                 "en": "Light Sensor Enable"
@@ -17,7 +17,7 @@
             "writable": true
         },
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:light:period;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:light:period;2",
             "@type": "Property",
             "displayName": {
                 "en": "Light Sensor Period"

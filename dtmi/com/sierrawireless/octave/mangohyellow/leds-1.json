@@ -3,25 +3,25 @@
         "dtmi:iotcentral:context;2",
         "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds;1",
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:leds;2",
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:mono;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:mono;2",
             "@type": "Property",
             "displayName": {
                 "en": "Mono LEDs"
             },
             "name": "mono",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:mono:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:mono:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:mono:schema:enable;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:mono:schema:enable;2",
                         "displayName": {
                             "en": "Mono LED Enable"
                         },
@@ -33,34 +33,34 @@
             "writable": true
         },
         {
-            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri;1",
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri;2",
             "@type": "Property",
             "displayName": {
                 "en": "RBG LED"
             },
             "name": "tri",
             "schema": {
-                "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema;1",
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema;2",
                 "@type": "Object",
                 "displayName": {
                     "en": "Object"
                 },
                 "fields": [
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:blue;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:blue;2",
                         "displayName": {
                             "en": "Blue LED Enable"
                         },
                         "name": "blue",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:blue:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:blue:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:blue:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:blue:schema:enable;2",
                                     "displayName": {
                                         "en": "Blue LED Enable"
                                     },
@@ -71,20 +71,20 @@
                         }
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:green;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:green;2",
                         "displayName": {
                             "en": "Green LED Enable"
                         },
                         "name": "green",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:green:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:green:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:green:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:green:schema:enable;2",
                                     "displayName": {
                                         "en": "Green LED Enable"
                                     },
@@ -95,20 +95,20 @@
                         }
                     },
                     {
-                        "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:red;1",
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:red;2",
                         "displayName": {
                             "en": "RedLED Enable"
                         },
                         "name": "red",
                         "schema": {
-                            "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:red:schema;1",
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:red:schema;2",
                             "@type": "Object",
                             "displayName": {
                                 "en": "Object"
                             },
                             "fields": [
                                 {
-                                    "@id": "dtmi:com:sierrawireless:octave:mangohyellow:leds:tri:schema:red:schema:enable;1",
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:leds:tri:schema:red:schema:enable;2",
                                     "displayName": {
                                         "en": "Red LED Enable"
                                     },

@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:com:sierrawireless:octave:mangohyellow;1",
+    "@id": "dtmi:sierrawireless:octave:mangohyellow;2",
     "@type": "Interface",
     "contents": [
         {
@@ -8,7 +8,7 @@
                 "en": "Octave Cloud Interface"
             },
             "name": "cloudInterface",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:cloudInterface;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:cloudInterface;2"
         },
         {
             "@type": "Telemetry",
@@ -160,7 +160,7 @@
                 "en": "MangOh Yellow LEDs"
             },
             "name": "leds",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:leds;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:leds;2"
         },
         {
             "@type": "Component",
@@ -168,7 +168,7 @@
                 "en": "Octave Utils"
             },
             "name": "util",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:util;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:util;2"
         },
         {
             "@type": "Component",
@@ -176,7 +176,7 @@
                 "en": "Light Sensor"
             },
             "name": "light",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:light;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:light;2"
         },
         {
             "@type": "Component",
@@ -184,7 +184,7 @@
                 "en": "Device Location"
             },
             "name": "location",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:location;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:location;2"
         },
         {
             "@type": "Component",
@@ -192,7 +192,7 @@
                 "en": "IMU"
             },
             "name": "imu",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:imu;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:imu;2"
         },
         {
             "@type": "Component",
@@ -200,7 +200,7 @@
                 "en": "Buzzer"
             },
             "name": "buzzer",
-            "schema": "dtmi:com:sierrawireless:octave:mangohyellow:buzzer;1"
+            "schema": "dtmi:sierrawireless:octave:mangohyellow:buzzer;2"
         }
     ],
     "displayName": {
