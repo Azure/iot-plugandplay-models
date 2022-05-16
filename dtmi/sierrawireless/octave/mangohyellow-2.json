@@ -204,7 +204,7 @@
         }
     ],
     "displayName": {
-        "en": "MangoH Yellow Interfaces"
+        "en": "MangoH Yellow Interface"
     },
     "@context": [
         "dtmi:iotcentral:context;2",
