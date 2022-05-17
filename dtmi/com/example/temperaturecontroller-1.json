@@ -4,6 +4,7 @@
   "@type": "Interface",
   "displayName": "Temperature Controller",
   "description": "Device with two thermostats and remote reboot.",
+  "extends": "dtmi:azure:iot:deviceUpdateContractModel;1",
   "contents": [
     {
       "@type": [
