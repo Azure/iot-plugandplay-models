@@ -4,6 +4,7 @@
   "@type": "Interface",
   "displayName": "Thermostat",
   "description": "Reports current temperature and provides desired temperature control.",
+  "extends": "dtmi:azure:iot:deviceUpdateContractModel;1",
   "contents": [
     {
       "@type": [
