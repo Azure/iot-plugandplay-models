@@ -38,13 +38,13 @@
     {
       "@type": "Property",
       "name": "totalMemory",
-      "schema": long,
+      "schema": "long",
       "writable": false
     },
     {
       "@type": "Property",
       "name": "freeMemory",
-      "schema": long,
+      "schema": "long",
       "writable": false
     },
     {
