@@ -79,6 +79,12 @@
     },
     {
       "@type": "Property",
+      "name": "productVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
       "name": "systemCapabilities",
       "schema":"string",
       "writable": false
