@@ -208,7 +208,7 @@ To expand all models from the root directory of a local models repository follow
 dmr-client expand --local-repo .
 ```
 
-The default `--local-repo` value is the current directory. Be sure to specifiy the root for `--local-repo`.
+The default `--local-repo` value is the current directory. Be sure to specify the root for `--local-repo`.
 
 ```bash
 dmr-client expand
