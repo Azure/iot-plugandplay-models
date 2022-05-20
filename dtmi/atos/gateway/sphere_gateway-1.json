@@ -2,7 +2,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:atos:gateway:sphere_gateway;1",
     "@type": "Interface",
-    "displayName": "Atos Sphere Secure Gateway",
+    "displayName": "AtoS Sphere Secure Gateway",
     "contents": [
       {
         "@type": "Property",

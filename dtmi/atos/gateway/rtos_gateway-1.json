@@ -1,0 +1,22 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:atos:gateway:rtos_gateway;1",
+    "@type": "Interface",
+    "displayName": "AtoS RTOS Based Gateway",
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": "Device Model",
+        "name": "device",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "displayName": "Software Version",
+        "name": "software_version",
+        "schema": "string",
+        "writable": false
+      }
+    ]
+  }
