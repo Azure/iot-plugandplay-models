@@ -77,7 +77,7 @@ The Device Models Repository command line tool (aka `dmr-client`) is published o
 You can use the `dotnet` command line via the `dotnet tool install` command to install `dmr-client`. The following is an example to install `dmr-client` as a global tool:
 
 ```bash
-> dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6
+dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6
 ```
 
 To learn how to install `dmr-client` in a local context, please see [this guide](https://docs.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use).
@@ -89,7 +89,7 @@ To learn how to install `dmr-client` in a local context, please see [this guide]
 To update the `dmr-client` tool (assuming a global install) you can run the following command:
 
 ```bash
-> dotnet tool update -g Microsoft.IoT.ModelsRepository.CommandLine --version [target version]
+dotnet tool update -g Microsoft.IoT.ModelsRepository.CommandLine --version [target version]
 ```
 
 ### Uninstall
@@ -97,7 +97,7 @@ To update the `dmr-client` tool (assuming a global install) you can run the foll
 To uninstall the `dmr-client` tool (assuming a global install) you can run the following command:
 
 ```bash
-> dotnet tool uninstall -g Microsoft.IoT.ModelsRepository.CommandLine
+dotnet tool uninstall -g Microsoft.IoT.ModelsRepository.CommandLine
 ```
 
 ## Usage of `dmr-client`
@@ -135,10 +135,10 @@ Commands:
 
 If you have your model already stored in json files, you can use the `dmr-client import` command to add those to the `dtmi/` folder with the right file name.
 
-```bash
-# from the local repo root folder
+Run this from the local repo root folder
 
-> dmr-client import --model-file "MyThermostat.json"
+```bash
+dmr-client import --model-file "MyThermostat.json"
 ```
 
 > This command will rename and locate the file in the appropriate folder
@@ -147,71 +147,71 @@ If you have your model already stored in json files, you can use the `dmr-client
 
 You can validate your models with the `dmr-client validate` command.
 
-```bash
-# Validate a model file using the DTDL parser
+To validate a model file using the DTDL parser.
 
-> dmr-client validate --model-file ./my/model/file.json
+```bash
+dmr-client validate --model-file ./my/model/file.json
 ```
 
 > Note: The validation uses the latest DTDL parser version to ensure all the interfaces are compatible with the DTDL language spec
 
 To validate external dependencies, those must exist in the local repo. To validate those you can specify a `local` or `remote` folder to validate against.
 
-```bash
-# Validate a model file using the DTDL parser checking dependencies with the current folder as a local repo
+Validating a model file using the DTDL parser checking dependencies with the current folder as a local repo.
 
-> dmr-client validate --model-file ./my/model/file.json --repo .
+```bash
+dmr-client validate --model-file ./my/model/file.json --repo .
 ```
 
 ### Strict validation
 
 The Device Model Repo includes additional [requirements](pr-reqs.md), these can be validated with the `strict` flag.
 
-```bash
-# Validate a model file using the DTDL parser checking dependencies with the current folder as a local repo in strict mode
+Validating a model file using the DTDL parser checking dependencies with the current folder as a local repo in strict mode.
 
-> dmr-client validate --model-file ./my/model/file.json --repo . --strict
+
+```bash
+dmr-client validate --model-file ./my/model/file.json --repo . --strict
 ```
 
 ### Export models
 
 Models can be exported from a given repo (local or remote) to a single file using a JSON Array.
 
-```bash
-# Retrieves an interface from a custom repo by DTMI
+Retrieving an interface from a custom repo by DTMI:
 
-> dmr-client export --dtmi "dtmi:com:example:Thermostat;1" --repo https://raw.githubusercontent.com/Azure/iot-plugandplay-models/main
+```bash
+dmr-client export --dtmi "dtmi:com:example:Thermostat;1" --repo https://raw.githubusercontent.com/Azure/iot-plugandplay-models/main
 ```
 
 ### Create Index
 
 The model repo can host a `index.json` file with all the `ids` avaialble in the repository. Read the [Index Spec](https://github.com/Azure/iot-plugandplay-models-tools/wiki/Model-Index)
 
-```bash
-# Builds a model index for the repository. If models exceed the page limit new page files will be created relative to the root index.
+Building a model index for the repository. If models exceed the page limit new page files will be created relative to the root index.
 
-> dmr-client index --local-repo .
+```bash
+dmr-client index --local-repo .
 ```
 
-```bash
-# Build a model index with a custom page limit indicating max models per page.
+Building a model index with a custom page limit indicating max models per page.
 
-> dmr-client index --local-repo . --page-limit 100
+```bash
+dmr-client index --local-repo . --page-limit 100
 ```
 
 ### Create Expanded files
 
-```bash
-# Expand all models from the root directory of a local models repository following Azure IoT conventions.
-# Expanded models are inserted in-place.
+To expand all models from the root directory of a local models repository following Azure IoT conventions. Expanded models are inserted in-place.
 
-> dmr-client expand --local-repo .
+```bash
+dmr-client expand --local-repo .
 ```
 
-```bash
-# The default --local-repo value is the current directory. Be sure to specifiy the root for --local-repo.
+The default `--local-repo` value is the current directory. Be sure to specify the root for `--local-repo`.
 
-> dmr-client expand
+```bash
+dmr-client expand
 ```
 
 ## IoT Models Repository SDKs
