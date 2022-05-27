@@ -1,0 +1,209 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:TED:BleRdySol;1",
+  "@type": "Interface",
+  "displayName": "BleReadySolution",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "Temperature",
+      "displayName": "Temperature Sensor",
+      "schema": "dtmi:TED:component:Temperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "TemperatureHumidity",
+      "displayName": "Temperature and Humidity Sensor",
+      "schema": "dtmi:TED:component:TemperatureHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Detection",
+      "displayName": "Detection Sensor",
+      "schema": "dtmi:TED:component:Detection;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Gas",
+      "displayName": "Gas Sensor",
+      "schema": "dtmi:TED:component:Gas;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Environmental",
+      "displayName": "Environmental Sensor",
+      "schema": "dtmi:TED:component:Environmental;1"
+    },
+    {
+      "@type": "Component",
+      "name": "WaterLeakage",
+      "displayName": "Water Leakage Sensor",
+      "schema": "dtmi:TED:component:WaterLeakage;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Accelerometer",
+      "displayName": "Accelerometer Sensor",
+      "schema": "dtmi:TED:component:Accelerometer;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Pressure",
+      "displayName": "Pressure Sensor",
+      "schema": "dtmi:TED:component:Pressure;1"
+    },
+    {
+      "@type": "Component",
+      "name": "ElectricPower",
+      "displayName": "Electric Power Sensor",
+      "schema": "dtmi:TED:component:ElectricPower;1"
+    },
+    {
+      "@type": "Command",
+      "name": "info",
+      "displayName": "info",
+      "response": {
+        "name": "responseInfo",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "sshow",
+      "displayName": "sshow",
+      "response": {
+        "name": "responseSshow",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "sadd",
+      "displayName": "sadd",
+      "request": {
+        "name": "parameter",
+        "description": "Parameter is JSON format.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseSadd",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "sremove",
+      "displayName": "sremove",
+      "request": {
+        "name": "parameter",
+        "description": "Parameter is JSON format.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseSremove",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "interval",
+      "displayName": "interval",
+      "request": {
+        "name": "parameter",
+        "description": "Parameter is JSON format.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseInterval",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "ishow",
+      "displayName": "ishow",
+      "response": {
+        "name": "responseIshow",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "format",
+      "displayName": "format",
+      "request": {
+        "name": "parameter",
+        "description": "Parameter is JSON format.",
+        "schema": "string"
+      },
+      "response": {
+        "name": "responseInterval",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "fshow",
+      "displayName": "fshow",
+      "response": {
+        "name": "responseFshow",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "reboot",
+      "response": {
+        "name": "responseReboot",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "mstart",
+      "displayName": "mstart",
+      "response": {
+        "name": "responseMstart",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "mstop",
+      "displayName": "mstop",
+      "response": {
+        "name": "responseMstop",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "mstatus",
+      "displayName": "mstatus",
+      "response": {
+        "name": "responseMstatus",
+        "description": "The result in JSON format.",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information.",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    }
+  ]
+}

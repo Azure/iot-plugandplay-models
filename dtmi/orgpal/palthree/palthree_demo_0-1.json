@@ -1,0 +1,52 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:orgpal:palthree:palthree_demo_0;1",
+    "@type": "Interface",
+    "displayName": "Interface for Orgpal PALTHREE board",
+    "description": "Reports properties from the board along with readings from several sensors available on the board.",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "manufacturer",
+            "displayName": "Manufacturer",
+            "schema": "string",
+            "description": "Orgpal"
+        },
+        {
+            "@type": "Property",
+            "name": "model",
+            "displayName": "Device model",
+            "schema": "string",
+            "description": "Orgpal PALTHREE"
+        },
+        {
+            "@type": "Property",
+            "name": "fwVersion",
+            "displayName": "Firmware version",
+            "schema": "string",
+            "description": "Firmware version that's running on Orgpal PALTHREE. Ex. 1.2.3.4"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "temperature",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "suplyVoltage",
+            "schema": "double"
+        },
+        {
+            "@type": "Command",
+            "name": "playSound"
+        },
+        {
+            "@type": "Command",
+            "name": "blinkLed"
+        },
+        {
+            "@type": "Command",
+            "name": "reboot"
+        }
+    ]
+}

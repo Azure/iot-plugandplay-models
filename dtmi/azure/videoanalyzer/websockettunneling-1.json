@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azure:videoanalyzer:WebSocketTunneling;1",
+    "@type": "Interface",
+    "displayName": "Azure Video Analyzer WebSocket Tunneling",
+    "description": "This interface enables media publishing to the Azure Video Analyzer cloud service from a RTSP compatible device which is located behind a firewall or NAT device.",
+    "contents": [
+        {
+            "@type": "Command",
+            "displayName": "Tunnel Open",
+            "name": "tunnelOpen",
+            "request": {
+                "@type": "CommandPayload",
+                "displayName": "Parameters",
+                "name": "parameters",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": "Remote Endpoint",
+                            "description": "The remote endpoint for the WebSocket tunnel.",
+                            "name": "remoteEndpoint",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": "Remote Authorization Token",
+                            "description": "The bearer token for the WebSocket authentication.",
+                            "name": "remoteAuthorizationToken",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": "Local Port",
+                            "description": "The local port where WebSocket data will be tunneled.",
+                            "name": "localPort",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

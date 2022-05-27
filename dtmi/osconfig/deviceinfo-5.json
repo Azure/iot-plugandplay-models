@@ -1,0 +1,105 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:deviceinfo;5",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "description": "Provides functionality to remotely query device properties",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "osName",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "osVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuType",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuVendorId",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuModel",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "totalMemory",
+      "schema": "long",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "freeMemory",
+      "schema": "long",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelName",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelRelease",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "productVendor",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "productName",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "productVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "systemCapabilities",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "systemConfiguration",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "osConfigVersion",
+      "schema":"string",
+      "writable": false
+    }
+  ]
+}

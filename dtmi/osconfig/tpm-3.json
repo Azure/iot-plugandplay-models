@@ -1,0 +1,44 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:tpm;3",
+  "@type": "Interface",
+  "displayName": "TPM Configuration",
+  "description": "Provides functionality to remotely query the TPM on device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "tpmStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "unknown",
+            "enumValue": 0
+          },
+          {
+            "name": "tpmDetected",
+            "enumValue": 1
+          },
+          {
+            "name": "tpmNotDetected",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "tpmVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "tpmManufacturer",
+      "schema":"string",
+      "writable": false
+    }
+  ]
+}

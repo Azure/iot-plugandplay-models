@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
+  ],
+  "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Location;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Location"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Enabled"
+      },
+      "name": "enabled",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Location"
+      ],
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "geolocation",
+      "schema": "geopoint"
+    }
+  ]
+}

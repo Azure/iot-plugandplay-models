@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azure:PhoneAsIoTDevice:Sensors:Battery;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enabled",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@type": "Telemetry",
+        "comment": "Level percentage",
+        "displayName": {
+          "en": "Battery Level"
+        },
+        "name": "battery",
+        "schema": "integer"
+      }
+    ]
+  }
