@@ -1,0 +1,136 @@
+{
+  "@id": "dtmi:tartabit:LoRaEdgeTracker;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "LoRa Edge Tracker"
+  },
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "location",
+      "schema": "geopoint"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "displayName": {
+        "en": "Charge"
+      },
+      "name": "charge",
+      "schema": "double",
+      "unit": "milliampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Distance"
+      ],
+      "displayName": {
+        "en": "Location Fix Accuracy"
+      },
+      "name": "locFixAccuracy",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "State"
+      ],
+      "displayName": {
+        "en": "Motion"
+      },
+      "name": "motion",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "displayName": {
+              "en": "Moving"
+            },
+            "enumValue": 1,
+            "name": "moving"
+          },
+          {
+            "displayName": {
+              "en": "Stationary"
+            },
+            "enumValue": 0,
+            "name": "stationary"
+          }
+        ],
+        "valueSchema": "integer"
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "SoundPressure"
+      ],
+      "displayName": {
+        "en": "RSSI"
+      },
+      "name": "rssi",
+      "schema": "double",
+      "unit": "decibel"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "SNR"
+      },
+      "name": "snr",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": {
+        "en": "Voltage"
+      },
+      "name": "voltage",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "LNS"
+      },
+      "name": "lns",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Location Fix Type"
+      },
+      "name": "locFixType",
+      "schema": "string"
+    }
+  ]
+}
