@@ -35,7 +35,7 @@
         ],
         "valueSchema": "string"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode;1",
@@ -105,7 +105,7 @@
         ],
         "valueSchema": "string"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology;1",
@@ -207,7 +207,7 @@
         ],
         "valueSchema": "string"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus;1",
@@ -242,7 +242,7 @@
         ],
         "valueSchema": "integer"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSFlag;1",
@@ -277,7 +277,7 @@
         ],
         "valueSchema": "integer"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:temperature;1",
@@ -303,7 +303,7 @@
       },
       "name": "periodicPosition",
       "schema": "integer",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positionOnDemand;1",
@@ -319,7 +319,7 @@
       },
       "name": "positionOnDemand",
       "schema": "integer",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:appState;1",
@@ -354,7 +354,7 @@
         ],
         "valueSchema": "integer"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause;1",
@@ -414,7 +414,7 @@
         ],
         "valueSchema": "string"
       },
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:accelerometerShockData;1",
@@ -474,7 +474,7 @@
       "name": "ReportingPeriod",
       "schema": "double",
       "unit": "second",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:Movement;1",
@@ -501,7 +501,7 @@
       "name": "TimeSinceLastCharge",
       "schema": "double",
       "unit": "minute",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GeolocationTechnology;1",
@@ -511,7 +511,7 @@
       },
       "name": "GeolocationTechnology",
       "schema": "string",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GeofencingZone;1",
@@ -521,7 +521,7 @@
       },
       "name": "GeofencingZone",
       "schema": "string",
-      "writable": true
+      "writable": false
     },
     {
       "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GPSCoordinates;1",
@@ -543,7 +543,7 @@
       },
       "name": "LastEvent",
       "schema": "string",
-      "writable": true
+      "writable": false
     },
     {
       "@type": "Component",
