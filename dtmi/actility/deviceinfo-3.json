@@ -1,0 +1,103 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Actility:DeviceInfo;3",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SNR;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SNR"
+        },
+        "name": "SNR",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:RSSI;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "RSSI"
+        },
+        "name": "RSSI",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SF;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SF"
+        },
+        "name": "SF",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:time;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Time"
+        },
+        "name": "time",
+        "schema": "dateTime"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:baseStationId;3",
+        "@type": "Property",
+        "displayName": {
+          "en": "Base Station ID"
+        },
+        "name": "baseStationId",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:payloadEncoded;3",
+        "@type": "Property",
+        "displayName": {
+          "en": "Payload encoded"
+        },
+        "name": "payloadEncoded",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:antennaPosition;1",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Antenna position"
+        },
+        "name": "antennaPosition",
+        "schema": "geopoint"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:model;2",
+        "@type": "Property",
+        "comment": "Device model name or ID. Ex. Surface Book 2.",
+        "displayName": {
+          "en": "Device model"
+        },
+        "name": "model",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:manufacturer;2",
+        "@type": "Property",
+        "comment": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso.",
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device Information"
+    }
+  }
