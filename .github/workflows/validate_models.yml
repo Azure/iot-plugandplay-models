@@ -1,0 +1,12 @@
+name: validate-models
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '**/*'
+jobs:
+  validate-repository-submission:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Azure/iot-plugandplay-models-tools/.github/actions/validate-models@actions/1.0.0

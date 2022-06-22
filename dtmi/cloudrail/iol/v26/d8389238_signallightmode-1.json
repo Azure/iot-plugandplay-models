@@ -1,0 +1,109 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SLT060-0B010J700",
+  "description": "Smart Light Tower",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Tier1",
+              "displayName": "Tier1",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1"
+            },
+            {
+              "name": "Tier2",
+              "displayName": "Tier2",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1"
+            },
+            {
+              "name": "Tier3",
+              "displayName": "Tier3",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1"
+            },
+            {
+              "name": "Tier4",
+              "displayName": "Tier4",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1"
+            },
+            {
+              "name": "Tier5",
+              "displayName": "Tier5",
+              "schema": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1"
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "UserAlarmIndication",
+              "displayName": "UserAlarmIndication",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NotUse",
+                    "enumValue": "NotUse"
+                  },
+                  {
+                    "name": "UserAlarmIndication1",
+                    "enumValue": "UserAlarmIndication1"
+                  },
+                  {
+                    "name": "UserAlarmIndication2",
+                    "enumValue": "UserAlarmIndication2"
+                  },
+                  {
+                    "name": "UserAlarmIndication3",
+                    "enumValue": "UserAlarmIndication3"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389238_SignalLightMode:Tier;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "On",
+          "enumValue": "On"
+        },
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        }
+      ]
+    }
+  ]
+}

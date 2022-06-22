@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V693:D21506;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SM6-AL-xxx7",
+  "description": "Distance measuring sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PositionDecimalPlace",
+      "displayName": "PositionDecimalPlace",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionIntergerPlace",
+      "displayName": "PositionIntergerPlace",
+      "schema": "long"
+    }
+  ]
+}

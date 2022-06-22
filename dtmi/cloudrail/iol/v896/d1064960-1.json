@@ -1,0 +1,136 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V896:D1064960;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CA30EAF16BPxxIO",
+  "description": "Capacitive Proximity sensor, Flush mountable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogueValue",
+      "displayName": "AnalogueValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAlarm",
+      "displayName": "TemperatureAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DustAlarm2",
+      "displayName": "DustAlarm2",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:DustAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DustAlarm1",
+      "displayName": "DustAlarm1",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:DustAlarm;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel2",
+      "displayName": "SwitchingSignalChannel2",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingSignalChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingSignalChannel1",
+      "displayName": "SwitchingSignalChannel1",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingSignalChannel;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput2",
+      "displayName": "SwitchingOutput2",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutput1",
+      "displayName": "SwitchingOutput1",
+      "schema": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingOutput;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D1064960:DustAlarm;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingSignalChannel;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V896:D1064960:SwitchingOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

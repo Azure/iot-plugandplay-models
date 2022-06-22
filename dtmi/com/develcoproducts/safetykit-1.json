@@ -1,0 +1,30 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:safetykit;1",
+  "@type": "Interface",
+  "displayName": "Safety Kit",
+  "description": "Safety Kit",
+  "contents": [    
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smokealarm;2",
+      "name": "smokealarm1",
+      "displayName": "Smoke Alarm",
+      "description": "Smoke Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:heatalarm;1",
+      "name": "heatalarm1",
+      "displayName": "Heat Alarm",
+      "description": "Heat Alarm"
+    },
+	{
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:waterleak;1",
+      "name": "waterleak1",
+      "displayName": "Water Leak",
+      "description": "Water Leak"
+    }
+  ]
+}

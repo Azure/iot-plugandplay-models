@@ -1,0 +1,232 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:realtek:rtk_gpio;1",
+  "@type": "Interface",
+  "displayName": "GPIO",
+  "description": "GPIO feature on ameba device.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "gpio_support",
+      "displayName": "GPIO Support",
+      "description": "GPIO support for device.",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "gpio_set",
+      "displayName": "Set GPIO",
+      "description": "Set parameter to selected gpio pin and enable.",
+      "request": {
+        "name": "gpio_params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "pinmux",
+              "displayName": "Pinmux",
+              "description": "Pinmux name.",
+              "schema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "name": "port_num",
+                    "displayName": "Port Number",
+                    "description": "GPIO port number on device.",
+                    "schema": {
+                      "@type": "Enum",
+                      "valueSchema": "integer",
+                      "enumValues": [
+                        {
+                          "name": "PA",
+                          "displayName": "PA",
+                          "enumValue": 0
+                        },
+                        {
+                          "name": "PB",
+                          "displayName": "PB",
+                          "enumValue": 1
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "pin_num",
+                    "displayName": "Pin Number",
+                    "description": "GPIO pin number on corresponding port on device.",
+                    "schema": "integer"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pin_mode",
+              "displayName": "Pin Mode",
+              "description": "Pin mode to set to selected GPIO.",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "pullnone",
+                    "displayName": "PullNone",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "pullup",
+                    "displayName": "PullUp",
+                    "enumValue": 1
+                  },
+                  {
+                    "name": "pulldown",
+                    "displayName": "PullDown",
+                    "enumValue": 2
+                  },
+                  {
+                    "name": "opendrain",
+                    "displayName": "OpenDrain",
+                    "enumValue": 3
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pin_direction",
+              "displayName": "Pin Direction",
+              "description": "Pin direction to set to selected GPIO.",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "pin_input",
+                    "displayName": "PIN_INPUT",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "pin_output",
+                    "displayName": "PIN_OUTPUT",
+                    "enumValue": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "gpio_read",
+      "displayName": "Read GPIO",
+      "description": "Read GPIO status from device.",
+      "request": {
+        "name": "pinmux",
+        "displayName": "Pinmux",
+        "description": "pinmux name.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "port_num",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "PA",
+                    "displayName": "PA",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "PB",
+                    "displayName": "PB",
+                    "enumValue": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pin_num",
+              "schema": "integer"
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "pin_state",
+        "displayName": "Pin State",
+        "description": "State of selected pinmux. 1 for on and 0 for off.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "gpio_write",
+      "displayName": "Write GPIO",
+      "description": "Sets value to the selected output port pin",
+      "request": {
+        "name": "gpio_params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "pinmux",
+              "displayName": "Pinmux",
+              "description": "pinmux name.",
+              "schema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "name": "port_num",
+                    "schema": {
+                      "@type": "Enum",
+                      "valueSchema": "integer",
+                      "enumValues": [
+                        {
+                          "name": "PA",
+                          "displayName": "PA",
+                          "enumValue": 0
+                        },
+                        {
+                          "name": "PB",
+                          "displayName": "PB",
+                          "enumValue": 1
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "pin_num",
+                    "schema": "integer"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "value",
+              "displayName": "Value",
+              "description": "Value set to GPIO pin.",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "displayName": "OFF",
+                    "enumValue": 0
+                  },
+                  {
+                    "name": "ON",
+                    "displayName": "ON",
+                    "enumValue": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

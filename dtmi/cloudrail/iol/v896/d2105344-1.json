@@ -1,0 +1,85 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V896:D2105344;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ICS05S23F15xxIO",
+  "description": "Inductive Proximity Sensor, M5 thread, Flush mountable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingOutputSO",
+      "displayName": "SwitchingOutputSO",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PresenceDetectionBDC1",
+      "displayName": "PresenceDetectionBDC1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FrequencyDetectionBDC2",
+      "displayName": "FrequencyDetectionBDC2",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureAlarmTA",
+      "displayName": "TemperatureAlarmTA",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

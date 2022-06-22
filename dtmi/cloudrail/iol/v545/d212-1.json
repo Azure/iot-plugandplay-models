@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V545:D212;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "LAT45-10MIU-B5",
+  "description": "Optical distance sensor 200...10000mm, laser, analog",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_m",
+      "displayName": "Distance_m",
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_mm",
+      "displayName": "Distance_mm",
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Length"
+      ],
+      "name": "Distance_in",
+      "displayName": "Distance_in",
+      "schema": "double",
+      "unit": "inch"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Reflectivity_pct",
+      "displayName": "Reflectivity_pct",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateSSC2Q2",
+      "displayName": "SwitchStateSSC2Q2",
+      "schema": "dtmi:CloudRail:IOL:V545:D212:SwitchStateSSCQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchStateSSC1Q1",
+      "displayName": "SwitchStateSSC1Q1",
+      "schema": "dtmi:CloudRail:IOL:V545:D212:SwitchStateSSCQ;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V545:D212:SwitchStateSSCQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azureiot:devkit:freertos:Esp32AzureIotKit;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Espressif ESP32 Azure IoT Kit"
+    },
+    "contents": [
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Toggle LED 1"
+            },
+            "name": "ToggleLed1"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Toggle LED 2"
+            },
+            "name": "ToggleLed2"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Display Text"
+            },
+            "name": "DisplayText",
+            "request": {
+                "@type": "CommandPayload",
+                "comment": "Text to be printed on the OLED display",
+                "displayName": {
+                    "en": "Content"
+                },
+                "name": "content",
+                "schema": "string"
+            }
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "RelativeHumidity"
+            ],
+            "displayName": {
+                "en": "Humidity"
+            },
+            "name": "humidity",
+			"unit": "percent",
+            "schema": "double"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Illuminance"
+            ],
+            "displayName": {
+                "en": "Light"
+            },
+            "name": "light",
+			"unit": "lux",
+            "schema": "double"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Pressure"
+            ],
+            "displayName": {
+                "en": "Pressure"
+            },
+            "name": "pressure",
+			"unit": "kilopascal",
+            "schema": "double"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Distance"
+            ],
+            "displayName": {
+                "en": "Altitude"
+            },
+            "name": "altitude",
+			"unit": "metre",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Magnetometer X"
+            },
+            "name": "magnetometerX",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Magnetometer Y"
+            },
+            "name": "magnetometerY",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Magnetometer Z"
+            },
+            "name": "magnetometerZ",
+            "schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Angle"
+            ],
+            "displayName": {
+                "en": "Pitch"
+            },
+            "name": "pitch",
+			"unit": "degreeOfArc",
+            "schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Angle"
+            ],
+            "displayName": {
+                "en": "Roll"
+            },
+            "name": "roll",
+            "unit": "degreeOfArc",
+			"schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "displayName": {
+                "en": "Acceleration X"
+            },
+            "name": "accelerometerX",
+			"unit": "gForce",
+            "schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "displayName": {
+                "en": "Acceleration Y"
+            },
+            "name": "accelerometerY",
+			"unit": "gForce",
+            "schema": "integer"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Acceleration"
+            ],
+            "displayName": {
+                "en": "Acceleration Z"
+            },
+            "name": "accelerometerZ",
+			"unit": "gForce",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "Telemetry Frequency in Seconds"
+            },
+            "name": "telemetryFrequencySecs",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+            "name": "deviceInformation",
+            "displayName": "Device Information",
+            "description": "Interface with basic device hardware information."
+        }
+    ]
+}

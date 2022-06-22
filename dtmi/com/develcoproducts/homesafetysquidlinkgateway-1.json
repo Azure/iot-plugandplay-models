@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetysquidlinkgateway;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Squid.link Gateway",
+  "description": "Home Safety Squid.link Gateway",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:squidlinkgateway;1",
+      "name": "gateway",
+      "displayName": "Squid.link 2X Gateway",
+      "description": "Squid.link 2X Gateway"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D458757;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QS18EK6EV",
+  "description": "Expert Photoelectric Emitter - Visible Red",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "EmitterEnable",
+      "displayName": "EmitterEnable",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "EmitterDisabled",
+            "enumValue": "EmitterDisabled"
+          },
+          {
+            "name": "EmitterEnabled",
+            "enumValue": "EmitterEnabled"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "EmitterEnable",
+              "displayName": "EmitterEnable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "EmitterDisabled",
+                    "enumValue": "EmitterDisabled"
+                  },
+                  {
+                    "name": "EmitterEnabled",
+                    "enumValue": "EmitterEnabled"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

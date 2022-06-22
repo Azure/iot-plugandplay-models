@@ -1,0 +1,69 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:deviceinfo;3",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "description": "Provides functionality to remotely query device properties",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "osName",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "osVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuType",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuVendorId",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "cpuModel",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelName",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelRelease",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "kernelVersion",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "manufacturer",
+      "schema":"string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "model",
+      "schema":"string",
+      "writable": false
+    }
+  ]
+}

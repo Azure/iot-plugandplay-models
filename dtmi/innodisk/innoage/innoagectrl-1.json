@@ -1,0 +1,70 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:innoagectrl;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "SN"
+            },
+            "name": "innoageSN",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "displayName": {
+                "en": "APP Version"
+            },
+            "name": "innoageAPPVersion",
+            "schema": "string"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "SSDController"
+            },
+            "name": "SSDController",
+            "schema": "dtmi:innodisk:innoage:ssdcontroller;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "InnoRoust"
+            },
+            "name": "InnoRust",
+            "schema": "dtmi:innodisk:innoage:innorobust;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "OnlineBackup"
+            },
+            "name": "Onlinebackup",
+            "schema": "dtmi:innodisk:innoage:onlinebackup;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "DeviceController"
+            },
+            "name": "DeviceController",
+            "schema": "dtmi:innodisk:innoage:devcmd;1"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Telemetry"
+            },
+            "name": "InnoTelemetry",
+            "schema": "dtmi:innodisk:innoage:innotelemetry;1"
+        }
+    ],
+    "displayName": {
+        "en": "InnoAGE V4.3.0.201230"
+    }
+    
+}

@@ -1,0 +1,191 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:RGBled;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "RGB led",
+        "de" : "RGB Led"
+    },
+    "description": {
+      "en" : "IoT PnP model for the Azure Sphere Train-the-Trainer Bootcamp: RGB Led",
+      "de" : "IoT PnP model für das Azure Sphere Train-the-Trainer Bootcamp: RGB Led"
+    },
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod;1",
+            "@type": "Command",
+            "commandType": "synchronous",
+            "comment": "IoT Hub direct method to set the color of the RGB led",
+            "description": {
+              "en": "Select color from list",
+              "de": "Farbe aus Liste auswählen"
+            },
+            "displayName": {
+              "en": "Set LED color",
+              "de": "Led-Farbe setzen"
+            },
+            "name": "setColorMethod",
+            "request": {
+              "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:request;1",
+              "comment": "Request to set LED color",
+              "description": {
+                "en": "Request to set LED color"
+              },
+              "displayName": {
+                "en": "setColorMethod Request"
+              },
+              "name": "setColorMethodRequest",
+              "schema": {
+                "@id" : "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:requestPayload;1",
+                "@type": "Object",
+                "displayName": {
+                  "en" : "setColorMethod request payload"
+                },
+                "fields" : [ 
+                  {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:requestPayload:color;1",
+                    "displayName": {
+                      "en": "Color"
+                    },
+                    "name": "color",
+                    "schema": "dtmi:azsphere:SphereTTT:RGBled:colorEnum;1"
+                  }
+                ]
+              }
+            },
+            "response": {
+              "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:response;1",
+              "name": "setColorMethodResponse",
+              "displayName": {
+                "en": "SetColorMethod response"
+              },
+              "schema": {
+                "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:responsePayload;1",
+                "@type": "Object",
+                "displayName": {
+                  "en": "setColorMethod response payload"
+                },
+                "fields": [
+                  {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:responsePayload:success;1",
+                    "displayName": {
+                      "en": "Success"
+                    },
+                    "name": "success",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:setColorMethod:responsePayload:message;1",
+                    "displayName": {
+                      "en": "Message"
+                    },
+                    "name": "message",
+                    "schema": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "@id": "dtmi:azsphere:SphereTTT:RGBled:blinkRateProperty;1",
+            "@type": "Property",
+            "comment": "index to timer table",
+            "description": {
+              "en": "Set led blink rate 0..2 (fast..slow)",
+              "de": "Blinkrate im Bereich 0..2 (langsam..schnell) einstellen"
+            },
+            "displayName": {
+              "en": "LED blink rate",
+              "de": "Led Blinkrate"
+            },
+            "name": "blinkRateProperty",
+            "writable": true,
+            "schema": "integer"
+          }
+    ],
+    "schemas" : [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum;1",
+            "@type": "Enum",
+            "displayName": {
+                "en": "Color Enum",
+                "de" : "Farb-Aufzählung"
+            },
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:off;1",
+                    "displayName": {
+                        "en": "Off",
+                        "de" : "Aus"
+                    },
+                    "enumValue": "off",
+                    "name": "off"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:red;1",
+                    "displayName": {
+                        "en": "Red",
+                        "de" : "Rot"
+                    },
+                    "enumValue": "red",
+                    "name": "red"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:blue;1",
+                    "displayName": {
+                        "en": "Blue",
+                        "de": "Blau"
+                    },
+                    "enumValue": "blue",
+                    "name": "blue"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:green;1",
+                    "displayName": {
+                        "en": "Green",
+                        "de": "Grün"
+                    },
+                    "enumValue": "green",
+                    "name": "green"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:yellow;1",
+                    "displayName": {
+                        "en": "Yellow",
+                        "de" : "Gelb"
+                    },
+                    "enumValue": "yellow",
+                    "name": "yellow"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:magenta;1",
+                    "displayName": {
+                        "en": "Magenta",
+                        "de": "Magenta"
+                    },
+                    "enumValue": "magenta",
+                    "name": "magenta"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:cyan;1",
+                    "displayName": {
+                        "en": "Cyan",
+                        "de": "Zyan"
+                    },
+                    "enumValue": "cyan",
+                    "name": "cyan"
+                },
+                {
+                    "@id": "dtmi:azsphere:SphereTTT:RGBled:colorEnum:white;1",
+                    "displayName": {
+                        "en": "White",
+                        "de":"Weiss"
+                    },
+                    "enumValue": "white",
+                    "name": "white"
+                }
+            ]
+        }
+    ]
+}

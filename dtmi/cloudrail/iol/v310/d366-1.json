@@ -1,0 +1,83 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D366;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PQ3809",
+  "description": "Electronic pressure sensor, -1.00...1.00 bar",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_kPa",
+      "displayName": "Pressure_kPa",
+      "schema": "double",
+      "unit": "kilopascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_bar",
+      "displayName": "Pressure_bar",
+      "schema": "double",
+      "unit": "bar"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_psi",
+      "displayName": "Pressure_psi",
+      "schema": "double",
+      "unit": "poundPerSquareInch"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "Pressure_inHg",
+      "displayName": "Pressure_inHg",
+      "schema": "double",
+      "unit": "inchesOfMercury"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT2NotApplicable",
+      "displayName": "SwitchstateOUT2NotApplicable",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstateOUT1",
+      "displayName": "SwitchstateOUT1",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

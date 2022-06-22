@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:Eurotech:RG_10_14_3x;1",
+  "@type": "Interface",
+  "displayName": "ReliaGATE 10-14-3x",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+     {
+      "@type": "Component",
+      "name": "deviceInformationProperties",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "diagnosticService",
+      "schema": "dtmi:Eurotech:Diagnostic_Service;3"
+    },
+    {
+      "@type": "Component",
+      "name": "assetService",
+      "schema": "dtmi:Eurotech:Asset_Service;2"
+    }
+  ]
+}

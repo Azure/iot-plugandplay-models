@@ -1,0 +1,162 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1343:D131088;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "TILTED DIAMOND+ IO-LINK 1.01FC001",
+  "description": "Signal Lamp with M12 Connector, RGB LED & various flashing modes",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Validity",
+      "displayName": "Validity",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "OFF",
+            "enumValue": "OFF"
+          },
+          {
+            "name": "ON",
+            "enumValue": "ON"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Illumination",
+              "displayName": "Illumination",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Colour",
+              "displayName": "Colour",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Red",
+                    "enumValue": "Red"
+                  },
+                  {
+                    "name": "Green",
+                    "enumValue": "Green"
+                  },
+                  {
+                    "name": "Blue",
+                    "enumValue": "Blue"
+                  },
+                  {
+                    "name": "White",
+                    "enumValue": "White"
+                  },
+                  {
+                    "name": "Yellow",
+                    "enumValue": "Yellow"
+                  },
+                  {
+                    "name": "VariableColour1",
+                    "enumValue": "VariableColour1"
+                  },
+                  {
+                    "name": "VariableColour2",
+                    "enumValue": "VariableColour2"
+                  },
+                  {
+                    "name": "VariableColour3",
+                    "enumValue": "VariableColour3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BlinkMode",
+              "displayName": "BlinkMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "ConstantLightUp",
+                    "enumValue": "ConstantLightUp"
+                  },
+                  {
+                    "name": "SlowBlinking1Hz50DutyCycle",
+                    "enumValue": "SlowBlinking1Hz50DutyCycle"
+                  },
+                  {
+                    "name": "MidBlinking2Hz50DutyCycle",
+                    "enumValue": "MidBlinking2Hz50DutyCycle"
+                  },
+                  {
+                    "name": "FastBlinking4Hz50DutyCycle",
+                    "enumValue": "FastBlinking4Hz50DutyCycle"
+                  },
+                  {
+                    "name": "SingleFlash",
+                    "enumValue": "SingleFlash"
+                  },
+                  {
+                    "name": "DoubleFlash",
+                    "enumValue": "DoubleFlash"
+                  },
+                  {
+                    "name": "SlowSine",
+                    "enumValue": "SlowSine"
+                  },
+                  {
+                    "name": "FastSine",
+                    "enumValue": "FastSine"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "NightMode",
+              "displayName": "NightMode",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "OFF",
+                    "enumValue": "OFF"
+                  },
+                  {
+                    "name": "ON",
+                    "enumValue": "ON"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

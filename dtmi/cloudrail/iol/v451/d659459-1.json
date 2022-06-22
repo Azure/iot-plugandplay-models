@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D659459;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "S15C-MTH-KQ",
+  "description": "S15C-MTH-KQ with IO-Link",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "HumidityRH",
+      "displayName": "HumidityRH",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureC",
+      "displayName": "TemperatureC",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureF",
+      "displayName": "TemperatureF",
+      "schema": "long"
+    }
+  ]
+}

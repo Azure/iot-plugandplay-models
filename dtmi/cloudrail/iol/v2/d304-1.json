@@ -1,0 +1,239 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V2:D304;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "1694-PFD1244",
+  "description": "Power Feed Module for ECP System, 24V DC, Imax 40A",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch01Current_A",
+      "displayName": "Ch01Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch02Current_A",
+      "displayName": "Ch02Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch03Current_A",
+      "displayName": "Ch03Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch04Current_A",
+      "displayName": "Ch04Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch05Current_A",
+      "displayName": "Ch05Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch06Current_A",
+      "displayName": "Ch06Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch07Current_A",
+      "displayName": "Ch07Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch08Current_A",
+      "displayName": "Ch08Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch09Current_A",
+      "displayName": "Ch09Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch10Current_A",
+      "displayName": "Ch10Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch11Current_A",
+      "displayName": "Ch11Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch12Current_A",
+      "displayName": "Ch12Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch13Current_A",
+      "displayName": "Ch13Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch14Current_A",
+      "displayName": "Ch14Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch15Current_A",
+      "displayName": "Ch15Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Current"
+      ],
+      "name": "Ch16Current_A",
+      "displayName": "Ch16Current_A",
+      "schema": "double",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Status",
+      "displayName": "Status",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverLoad",
+      "displayName": "OverLoad",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShortCircuit",
+      "displayName": "ShortCircuit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "WarningLimit",
+      "displayName": "WarningLimit",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "HardwareLock",
+      "displayName": "HardwareLock",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "GeneralStatus",
+      "displayName": "GeneralStatus",
+      "schema": "long"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "name": "InputVoltage_V",
+      "displayName": "InputVoltage_V",
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "TripReset",
+              "displayName": "TripReset",
+              "schema": "long"
+            },
+            {
+              "name": "On",
+              "displayName": "On",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

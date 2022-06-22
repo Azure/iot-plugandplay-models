@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D131329;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BAW M18MI-BLC50B-S04G",
+  "description": "BAW - Inductive distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DistanceAbsolute",
+      "displayName": "DistanceAbsolute",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReservedBits",
+      "displayName": "ReservedBits",
+      "schema": "long"
+    }
+  ]
+}

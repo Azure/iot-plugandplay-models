@@ -1,0 +1,45 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:nuvoton:sensor_bmx055;1",
+  "@type": "Interface",
+  "displayName": "Motion Sensor BMX055",
+  "description": "Report current temperature and acceleration.",
+  "contents": [
+    {
+      "@type":  ["Telemetry", "Acceleration"],
+      "name": "accelX",
+      "displayName": {
+        "en": "Acceleration X"
+      },
+      "schema": "float",
+      "unit": "gForce"
+    },
+    {
+      "@type":  ["Telemetry", "Acceleration"],
+      "name": "accelY",
+      "displayName": {
+        "en": "Acceleration Y"
+      },
+      "schema": "float",
+      "unit": "gForce"
+    },
+    {
+      "@type":  ["Telemetry", "Acceleration"],
+      "name": "accelZ",
+      "displayName": {
+        "en": "Acceleration Z"
+      },
+      "schema": "float",
+      "unit": "gForce"
+    },
+    {
+      "@type":  ["Telemetry", "Temperature"],
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "schema": "float",
+      "unit": "degreeCelsius"
+    }
+  ]
+}

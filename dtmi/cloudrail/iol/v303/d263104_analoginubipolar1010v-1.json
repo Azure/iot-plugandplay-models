@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V303:D263104_AnalogInUBipolar1010V;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IOL AI-U/I-STR-MULT-PAR VA",
+  "description": "IOL Analog Conv. straight M12 AI MULTI U/I 16Bit IOL V1.12",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Voltage",
+      "displayName": "Voltage",
+      "schema": "long"
+    }
+  ]
+}

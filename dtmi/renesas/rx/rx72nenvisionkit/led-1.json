@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:renesas:RX:RX72NEnvisionKit:led;1",
+  "displayName": {
+    "en": "LED on RX72N Envision Kit"
+  },
+  "description": {
+    "en": "Description for LED on RX72N Envision Kit"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:led:led2;1",
+      "@type": "Property",
+      "name": "led2",
+      "writable": true,
+      "comment": "Property of LED2 on RX72N Envision Kit",
+      "displayName": {
+        "en": "LED 2 RX72N Envision Kit State"
+      },
+      "description": {
+        "en": "Property of LED2 on RX72N Envision Kit"
+      },
+      "schema": "dtmi:renesas:RX:RX72NEnvisionKit:led:state;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:renesas:RX:RX72NEnvisionKit:led:state;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "enumValues": [
+        {
+          "name": "On",
+          "displayName": {
+            "en": "LED On"
+          },
+          "enumValue": 1,
+          "description": "LED is turned on.",
+          "comment": "LED is turned on."
+        },
+        {
+          "name": "Off",
+          "displayName": {
+            "en": "LED Off"
+          },
+          "enumValue": 2,
+          "description": "LED is turned Off.",
+          "comment": "LED is turned Off."
+        },
+        {
+          "name": "Blink",
+          "displayName": {
+            "en": "LED Blink"
+          },
+          "enumValue": 3,
+          "description": "LED is blinking.",
+          "comment": "LED is blinking."
+        }
+      ]
+    }
+  ]
+}

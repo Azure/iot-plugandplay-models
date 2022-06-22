@@ -1,0 +1,95 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D330243_RunlightMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-802-000-Z037-006",
+  "description": "Smart Light 5 segment with buzzer",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "RunlightRunningDirection",
+              "displayName": "RunlightRunningDirection",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Up",
+                    "enumValue": "Up"
+                  },
+                  {
+                    "name": "Down",
+                    "enumValue": "Down"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncImpulse",
+              "displayName": "SyncImpulse",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "SyncStart",
+              "displayName": "SyncStart",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "BuzzerState",
+              "displayName": "BuzzerState",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

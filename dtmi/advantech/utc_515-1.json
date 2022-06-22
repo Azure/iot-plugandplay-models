@@ -1,0 +1,38 @@
+{
+  "displayName": "UTC-515", 
+  "@id": "dtmi:Advantech:UTC_515;1", 
+  "@type": "Interface", 
+  "contents": [
+    {
+      "schema": "dtmi:Advantech:DeviceDetailedInformation;1", 
+      "@type": "Component", 
+      "name": "Device_Detailed_Information"
+    }, 
+    {
+      "schema": "dtmi:Advantech:SensorsInformation;2", 
+      "@type": "Component", 
+      "name": "Sensors_Information"
+    }, 
+    {
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1", 
+      "@type": "Component", 
+      "name": "deviceInfo"
+    }, 
+    {
+      "schema": "dtmi:Advantech:GPIO;1", 
+      "@type": "Component", 
+      "name": "GPIO"
+    }, 
+    {
+      "schema": "dtmi:Advantech:VGA;1", 
+      "@type": "Component", 
+      "name": "VGA"
+    }, 
+    {
+      "schema": "dtmi:Advantech:SDRAM;1", 
+      "@type": "Component", 
+      "name": "SDRAM"
+    }
+  ], 
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,129 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389238_AnimationMode;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SLT060-0B010J700",
+  "description": "Smart Light Tower",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "AnimationEnable",
+              "displayName": "AnimationEnable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AnimationDisable",
+                    "enumValue": "AnimationDisable"
+                  },
+                  {
+                    "name": "AnimationEnable",
+                    "enumValue": "AnimationEnable"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AnimationReset",
+              "displayName": "AnimationReset",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "AnimationReset",
+                    "enumValue": "AnimationReset"
+                  },
+                  {
+                    "name": "NoAnimationReset",
+                    "enumValue": "NoAnimationReset"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Buzzer",
+              "displayName": "Buzzer",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  },
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "UserAlarmIndication",
+              "displayName": "UserAlarmIndication",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "NotUse",
+                    "enumValue": "NotUse"
+                  },
+                  {
+                    "name": "UserAlarmIndication1",
+                    "enumValue": "UserAlarmIndication1"
+                  },
+                  {
+                    "name": "UserAlarmIndication2",
+                    "enumValue": "UserAlarmIndication2"
+                  },
+                  {
+                    "name": "UserAlarmIndication3",
+                    "enumValue": "UserAlarmIndication3"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "AnimationSpeed",
+              "displayName": "AnimationSpeed",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Slow",
+                    "enumValue": "Slow"
+                  },
+                  {
+                    "name": "Middle",
+                    "enumValue": "Middle"
+                  },
+                  {
+                    "name": "Fast",
+                    "enumValue": "Fast"
+                  },
+                  {
+                    "name": "SlowExceptionHandling",
+                    "enumValue": "SlowExceptionHandling"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

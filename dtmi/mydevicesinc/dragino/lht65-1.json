@@ -1,0 +1,60 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:dragino:lht65;1",
+  "@type": "Interface",
+  "displayName": "Dragino LHT65 Temperature and Humidity Sensor",
+  "description": "Temperature/Humidity Sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "temperature",
+      "description": "temperature",
+      "name": "channel_3",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "displayName": "humidity",
+      "description": "humidity",
+      "name": "channel_4",
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "probe",
+      "description": "probe",
+      "name": "channel_7",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    }
+  ]
+}

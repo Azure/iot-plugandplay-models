@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V693:D29;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ASx-AF2-FLX-Gxxx ",
+  "description": "Fluid sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Energy",
+      "displayName": "Energy",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Mass",
+      "displayName": "Mass",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "VolumetricFlowRate",
+      "displayName": "VolumetricFlowRate",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Volume",
+      "displayName": "Volume",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowVelocity",
+      "displayName": "FlowVelocity",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MassFlowRate",
+      "displayName": "MassFlowRate",
+      "schema": "double"
+    }
+  ]
+}
