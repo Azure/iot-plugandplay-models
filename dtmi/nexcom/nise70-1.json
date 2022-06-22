@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:Nise70;1",
+  "@type": "Interface",
+  "displayName": "Nise70",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+    }
+  ]
+}
