@@ -1,0 +1,39 @@
+{
+      "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_fw;3",
+      "@type": "Interface",
+      "contents": [
+          {
+              "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_fw:std_comp;2",
+              "@type": "Component",
+              "displayName": {
+                  "en": "Standard component"
+              },
+              "name": "std_comp",
+              "schema": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if;2"
+          },
+          {
+              "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_fw:ctrl_comp;2",
+              "@type": "Component",
+              "displayName": {
+                  "en": "Control component"
+              },
+              "name": "ctrl_comp",
+              "schema": "dtmi:stmicroelectronics:b_u585i_iot02a:control_if;1"
+          },
+          {
+              "@type": "Component",
+              "displayName": {
+                  "en": "Device info component"
+              },
+              "name": "deviceinfo",
+              "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+          }
+      ],
+      "displayName": {
+          "en": "B-U585I-IOT02A"
+      },
+      "@context": [
+          "dtmi:iotcentral:context;2",
+          "dtmi:dtdl:context;2"
+      ]
+  }
