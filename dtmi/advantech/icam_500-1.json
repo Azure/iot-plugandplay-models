@@ -5,12 +5,12 @@
   "contents": [
     {
       "@type": "Component",
-      "name": "deviceinfo",
+      "name": "deviceInfo",
       "schema": "dtmi:Advantech:JetsonDeviceInformation;1"
     },
     {
       "@type": "Component",
-      "name": "thermalzones",
+      "name": "thermalZones",
       "schema": "dtmi:Advantech:Jetsonthermal_zones;1"
     }
   ],
