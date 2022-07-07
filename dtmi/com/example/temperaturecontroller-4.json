@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:com:example:TemperatureController;4",
+  "@id": "dtmi:com:example:TemperatureController;5",
   "@type": "Interface",
   "displayName": "Temperature Controller",
   "description": "Device with two thermostats and remote reboot.",
