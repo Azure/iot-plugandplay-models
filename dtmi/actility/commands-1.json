@@ -1,0 +1,235 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Actility:Commands;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:Actility:Commands:SetGeolocationTechnology;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Geolocation Technology"
+        },
+        "name": "SetGeolocationTechnology",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "SetGeolocationTechnology"
+          },
+          "name": "SetGeolocationTech",
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "WIFI"
+                },
+                "enumValue": "0b0a0500000000",
+                "name": "WIFI"
+              },
+              {
+                "displayName": {
+                  "en": "GPS"
+                },
+                "enumValue": "0b0a0500000001",
+                "name": "GPS"
+              },
+              {
+                "displayName": {
+                  "en": "LP-GPS"
+                },
+                "enumValue": "0b0a0500000002",
+                "name": "LPGPS"
+              },
+              {
+                "displayName": {
+                  "en": "WIFI / GPS"
+                },
+                "enumValue": "0b0a0500000006",
+                "name": "WIFIGPS"
+              },
+              {
+                "displayName": {
+                  "en": "WIFI /LP-GPS / GPS"
+                },
+                "enumValue": "0b0a0500000007",
+                "name": "WIFILPGPSGPS"
+              },
+              {
+                "displayName": {
+                  "en": "BLE"
+                },
+                "enumValue": "0b0a050000000a",
+                "name": "BLE"
+              },
+              {
+                "displayName": {
+                  "en": "BLE / GPS"
+                },
+                "enumValue": "0b0a050000000b",
+                "name": "BLEGPS"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:Actility:Commands:SetModeConfig;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Mode Configuration"
+        },
+        "name": "SetModeConfig",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "SetModeConfiguration"
+          },
+          "name": "SetModeConfiguration",
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "Standby"
+                },
+                "enumValue": "020a00",
+                "name": "Standby"
+              },
+              {
+                "displayName": {
+                  "en": "Motion tracking"
+                },
+                "enumValue": "020a01",
+                "name": "MotionTracking"
+              },
+              {
+                "displayName": {
+                  "en": "Permanent tracking"
+                },
+                "enumValue": "020a02",
+                "name": "PermanentTracking"
+              },
+              {
+                "displayName": {
+                  "en": "Motion start/end"
+                },
+                "enumValue": "020a03",
+                "name": "MotionStartEnd"
+              },
+              {
+                "displayName": {
+                  "en": "Activity mode"
+                },
+                "enumValue": "020a04",
+                "name": "ActivityMode"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:Actility:Commands:SetPeriod;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Period"
+        },
+        "name": "SetPeriod",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Period"
+          },
+          "name": "Period",
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "2 mn"
+                },
+                "enumValue": "0b0a0000000078",
+                "name": "n2Mn"
+              },
+              {
+                "displayName": {
+                  "en": "5 mn"
+                },
+                "enumValue": "0b0a000000012c",
+                "name": "n5Mn"
+              },
+              {
+                "displayName": {
+                  "en": "15 mn"
+                },
+                "enumValue": "0b0a0000000384",
+                "name": "n15Mn"
+              },
+              {
+                "displayName": {
+                  "en": "30 mn"
+                },
+                "enumValue": "0b0a0000000708",
+                "name": "n30Mn"
+              },
+              {
+                "displayName": {
+                  "en": "1 h"
+                },
+                "enumValue": "0b0a0000000e10",
+                "name": "n1H"
+              },
+              {
+                "displayName": {
+                  "en": "2 h"
+                },
+                "enumValue": "0b0a0000001c20",
+                "name": "n2H"
+              },
+              {
+                "displayName": {
+                  "en": "4 h"
+                },
+                "enumValue": "0b0a0000003840",
+                "name": "n4H"
+              },
+              {
+                "displayName": {
+                  "en": "12 h"
+                },
+                "enumValue": "0b0a000000a8c0",
+                "name": "n12H"
+              },
+              {
+                "displayName": {
+                  "en": "24 h"
+                },
+                "enumValue": "0b0a0000015180",
+                "name": "n24H"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      }
+    ],
+    "displayName": {
+      "en": "Component"
+    }
+  }

@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:Advantech:EPC_R7200;1",
+  "@type": "Interface",
+  "displayName": "EPC-R7200",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceinfo",
+      "schema": "dtmi:Advantech:JetsonDeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "thermalzones",
+      "schema": "dtmi:Advantech:Jetsonthermal_zones;1"
+    }
+  ],
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}

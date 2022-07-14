@@ -1,0 +1,55 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:osconfig:networking;2",
+  "@type": "Interface",
+  "displayName": "Networking",
+  "description": "Provides functionality to remotely query device networking",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "networkConfiguration",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "interfaceTypes",
+            "schema": "string"
+          },
+          {
+            "name": "macAddresses",
+            "schema": "string"
+          },
+          {
+            "name": "ipAddresses",
+            "schema": "string"
+          },
+          {
+            "name": "subnetMasks",
+            "schema": "string"
+          },
+          {
+            "name": "defaultGateways",
+            "schema": "string"
+          },
+          {
+            "name": "dnsServers",
+            "schema": "string"
+          },
+          {
+            "name": "dhcpEnabled",
+            "schema": "string"
+          },
+          {
+            "name": "enabled",
+            "schema": "string"
+          },
+          {
+            "name": "connected",
+            "schema": "string"
+          }
+        ]
+      },
+      "writable": false
+    }
+  ]
+}

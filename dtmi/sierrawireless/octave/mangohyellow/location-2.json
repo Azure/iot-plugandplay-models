@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:location;2",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:location:coordinates;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Coordinates"
+            },
+            "name": "coordinates",
+            "schema": {
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:location:coordinates:schema;2",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:location:coordinates:schema:enable;2",
+                        "displayName": {
+                            "en": "Enable Location"
+                        },
+                        "name": "enable",
+                        "schema": "boolean"
+                    },
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:location:coordinates:schema:period;2",
+                        "displayName": {
+                            "en": "Location Period"
+                        },
+                        "name": "period",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "displayName": {
+        "en": "Location"
+    }
+}

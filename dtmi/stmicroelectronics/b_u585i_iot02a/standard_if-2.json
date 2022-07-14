@@ -1,0 +1,310 @@
+{
+      "@context": [
+          "dtmi:iotcentral:context;2",
+          "dtmi:dtdl:context;2"
+      ],
+      "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if;2",
+      "@type": "Interface",
+      "contents": [
+          {
+              "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if:control_LED;1",
+              "@type": "Property",
+              "description": {
+                  "en": "Led On/Off"
+              },
+              "displayName": {
+                  "en": "Control LED "
+              },
+              "name": "control_LED",
+              "schema": {
+                  "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if:control_LED:schema;1",
+                  "@type": "Enum",
+                  "displayName": {
+                      "en": "Enum"
+                  },
+                  "enumValues": [
+                      {
+                          "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if:control_LED:schema:off;1",
+                          "displayName": {
+                              "en": "off"
+                          },
+                          "enumValue": 0,
+                          "name": "off"
+                      },
+                      {
+                          "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if:control_LED:schema:on;1",
+                          "displayName": {
+                              "en": "on"
+                          },
+                          "enumValue": 1,
+                          "name": "on"
+                      }
+                  ],
+                  "valueSchema": "integer"
+              },
+              "writable": true
+          },
+          {
+              "@id": "dtmi:stmicroelectronics:b_u585i_iot02a:standard_if:button_counter;1",
+              "@type": "Telemetry",
+              "description": {
+                  "en": "How many times the push button is pressed between two telemetries"
+              },
+              "displayName": {
+                  "en": "Button Counter"
+              },
+              "name": "button_counter",
+              "schema": "integer"
+          },
+          {
+              "@type": [
+                  "Telemetry",
+                  "Temperature"
+              ],
+              "description": {
+                  "en": "Temperature in degrees Celsius from HTS221 temperature sensor"
+              },
+              "displayName": {
+                  "en": "Temperature"
+              },
+              "name": "temperature",
+              "schema": "double",
+              "unit": "degreeCelsius"
+          },
+          {
+              "@type": [
+                  "Telemetry",
+                  "RelativeHumidity"
+              ],
+              "description": {
+                  "en": "relative humidity from HTS221 sensor"
+              },
+              "displayName": {
+                  "en": "Relative Humidity"
+              },
+              "name": "humidity",
+              "schema": "double",
+              "unit": "percent"
+          },
+          {
+              "@type": [
+                  "Telemetry",
+                  "Pressure"
+              ],
+              "description": {
+                  "en": "Pressure from LPS22HB sensor"
+              },
+              "displayName": {
+                  "en": "Pressure"
+              },
+              "name": "pressure",
+              "schema": "double",
+              "unit": "millibar"
+          },
+          {
+              "@type": "Telemetry",
+              "comment": "LSM6DSL Acceleration X/Y/Z components [mg]",
+              "displayName": {
+                  "en": "ISM330DHCX Acc Value [mg]"
+              },
+              "name": "acceleration",
+              "schema": {
+                  "@type": "Object",
+                  "description": {
+                      "en": "Single acceleration sample. I.e.: {a_x, a_y, a_z}."
+                  },
+                  "displayName": {
+                      "en": "Single acceleration sample."
+                  },
+                  "fields": [
+                      {
+                          "name": "a_x",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "a_y",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "a_z",
+                          "schema": "double"
+                      }
+                  ]
+              }
+          },
+          {
+              "@type": "Telemetry",
+              "comment": "LSM6DSL Gyroscope X/Y/Z components [mdps]",
+              "displayName": {
+                  "en": "ISM330DHCX Gyro Value [mdps]"
+              },
+              "name": "gyroscope",
+              "schema": {
+                  "@type": "Object",
+                  "description": {
+                      "en": "Single angular velocity sample. I.e.: {g_x, g_y, g_z}."
+                  },
+                  "displayName": {
+                      "en": "Single angular velocity sample."
+                  },
+                  "fields": [
+                      {
+                          "name": "g_x",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "g_y",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "g_z",
+                          "schema": "double"
+                      }
+                  ]
+              }
+          },
+          {
+              "@type": "Telemetry",
+              "comment": "LIS3MDL Magnetometer X/Y/Z components [mgauss]",
+              "displayName": {
+                  "en": "IIS2MDC Mag Value [mgauss]"
+              },
+              "name": "magnetometer",
+              "schema": {
+                  "@type": "Object",
+                  "description": {
+                      "en": "Single magnetic field sample. I.e.: {m_x, m_y, m_z}."
+                  },
+                  "displayName": {
+                      "en": "Single magnetic field sample."
+                  },
+                  "fields": [
+                      {
+                          "name": "m_x",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "m_y",
+                          "schema": "double"
+                      },
+                      {
+                          "name": "m_z",
+                          "schema": "double"
+                      }
+                  ]
+              }
+          },
+          {
+              "@type": "Property",
+              "displayName": {
+                  "en": "Transmission period for telemetry data [in seconds]"
+              },
+              "name": "telemetry_interval",
+              "schema": "double",
+              "writable": true
+          },
+          {
+              "@type": "Property",
+              "description": {
+                  "en": "Accelerometer Full Scale"
+              },
+              "displayName": {
+                  "en": "Acc FS"
+              },
+              "name": "acc_fullscale",
+              "writable": true,
+              "schema": {
+                  "@type": "Enum",
+                  "enumValues": [
+                      {
+                          "displayName": {
+                              "en": "2G"
+                          },
+                          "enumValue": 2,
+                          "name": "G2"
+                      },
+                      {
+                          "displayName": {
+                              "en": "4G"
+                          },
+                          "enumValue": 4,
+                          "name": "G4"
+                      },
+                      {
+                          "displayName": {
+                              "en": "8G"
+                          },
+                          "enumValue": 8,
+                          "name": "G8"
+                      },
+                      {
+                          "displayName": {
+                              "en": "16G"
+                          },
+                          "enumValue": 16,
+                          "name": "G16"
+                      }
+                  ],
+                  "valueSchema": "integer"
+              }
+          },
+          {
+              "@type": "Property",
+              "description": {
+                  "en": "Gyroscope Full Scale"
+              },
+              "displayName": {
+                  "en": "Gyro FS"
+              },
+              "name": "gyro_fullscale",
+              "writable": true,
+              "schema": {
+                  "@type": "Enum",
+                  "enumValues": [
+                      {
+                          "displayName": {
+                              "en": "125dps"
+                          },
+                          "enumValue": 125,
+                          "name": "dps125"
+                      },
+                      {
+                          "displayName": {
+                              "en": "250dps"
+                          },
+                          "enumValue": 250,
+                          "name": "dps250"
+                      },
+                      {
+                          "displayName": {
+                              "en": "500dps"
+                          },
+                          "enumValue": 500,
+                          "name": "dps500"
+                      },
+                      {
+                          "displayName": {
+                              "en": "1000dps"
+                          },
+                          "enumValue": 1000,
+                          "name": "dps1000"
+                      },
+                      {
+                          "displayName": {
+                              "en": "2000dps"
+                          },
+                          "enumValue": 2000,
+                          "name": "dps2000"
+                      }
+                  ],
+                  "valueSchema": "integer"
+              }
+          }
+      ],
+      "description": {
+          "en": "Reports temperature, relative humidity, pressure, magnetometer, accelerometer and gyroscope."
+      },
+      "displayName": {
+          "en": "Standard interface for B-U585I-IOT02A"
+      }
+  }

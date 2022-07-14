@@ -17,7 +17,12 @@ parameters:
 - name: dmrStorageAccountVar
   type: string
   default: 'DmrStorageAccount'
-
+- name: azcliVersionVar
+  type: string
+  default: 'AzureCliVersion'
+- name: modelDestContainerPathVar
+  type: string
+  default: 'ModelDestinationContainer'
 
 variables:
 - name: vmImage
@@ -30,10 +35,14 @@ variables:
   value: $[variables.${{ parameters.dmrStorageAccountVar }}]
 - name: feedUri
   value: $[variables.${{ parameters.artifactFeedUriVar }}]
+- name: cliVersion
+  value: $[variables.${{ parameters.azcliVersionVar }}]
 - name: indexStagingPath
   value: ./index_pages/
 - name: pageLimit
   value: 2048
+- name: modelDestContainer
+  value: $[variables.${{ parameters.modelDestContainerPathVar }}]
 
 
 # Required for schedule trigger
@@ -48,192 +57,195 @@ schedules:
     - 'main'
   always: false
 
-jobs:
-- job: 'sync_models'
-  displayName: 'Sync models'
-  pool:
-    name: $(buildPool)
-    vmImage: $(vmImage)
-    demands:
-    - ImageOverride -equals $(vmImage)
-  steps:
-  - task: AzureCLI@2
-    displayName: 'Synchronizing'
-    inputs:
-      azureSubscription: $(DMR_SERVICE_CONNECTION)
-      scriptType: bash
-      scriptLocation: inlineScript
-      inlineScript: |
-        set -e
+stages:
+  - stage: 'synchronization'
+    pool:
+      name: $(buildPool)
+      vmImage: $(vmImage)
+      demands:
+      - ImageOverride -equals $(vmImage)
+    jobs:
+    - job: 'sync_models'
+      displayName: 'Sync models'
+      steps:
+      - template: setup_cli.yml
+        parameters:
+          cliVersion: $(cliVersion)
 
-        echo "Synchronizing models..."
-        az storage blob upload-batch -s "./dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
-    env:
-      DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
+      - task: AzureCLI@2
+        displayName: 'Synchronizing'
+        inputs:
+          azureSubscription: $(DMR_SERVICE_CONNECTION)
+          scriptType: bash
+          scriptLocation: inlineScript
+          inlineScript: |
+            set -e
+            
+            echo "Synchronizing models..."
+            az storage blob upload-batch -s "./dtmi" -d "$MODEL_DEST_CONTAINER/dtmi" --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.json"
+        env:
+          DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
+          MODEL_DEST_CONTAINER: $(modelDestContainer)
 
-- job: 'evaluate_repo'
-  displayName: 'Evaluate repository'
-  pool:
-    name: $(buildPool)
-    vmImage: $(vmImage)
-    demands:
-    - ImageOverride -equals $(vmImage)
-  steps:
-  - task: Bash@3
-    displayName: 'Generate target nuget.config'
-    inputs:
-      targetType: 'inline'
-      script: |
-        set -e
 
-        echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>\
-        <configuration>\
-          <packageSources>\
-            <clear />\
-            <add key=\"nuget\" value=\"$(feedUri)\" />\
-          </packageSources>\
-        </configuration>" > ./nuget.config
-        cat ./nuget.config
-  - task: nuget-security-analysis@0
-  - task: NuGetAuthenticate@0
-  - task: Bash@3
-    displayName: 'Expand and index repository models'
-    inputs:
-      targetType: 'inline'
-      script: |
-        set -e
+    - job: 'evaluate_repo'
+      displayName: 'Evaluate repository'
+      steps:
+      - task: Bash@3
+        displayName: 'Generate target nuget.config'
+        inputs:
+          targetType: 'inline'
+          script: |
+            set -e
 
-        dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6 --configfile ./nuget.config -v n
-        export PATH="$PATH:$HOME/.dotnet/tools"
-        . ~/.bashrc
+            echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>\
+            <configuration>\
+              <packageSources>\
+                <clear />\
+                <add key=\"nuget\" value=\"$(feedUri)\" />\
+              </packageSources>\
+            </configuration>" > ./nuget.config
+            cat ./nuget.config
+      - task: nuget-security-analysis@0
+      - task: NuGetAuthenticate@0
+      - task: Bash@3
+        displayName: 'Expand and index repository models'
+        inputs:
+          targetType: 'inline'
+          script: |
+            set -e
 
-        echo "Expanding repository..."
-        dmr-client expand --local-repo $PWD
+            dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6 --configfile ./nuget.config -v n
+            export PATH="$PATH:$HOME/.dotnet/tools"
+            . ~/.bashrc
 
-        echo "Generating index..."
-        dmr-client index --local-repo $PWD -o $(indexStagingPath)/index.json --page-limit $(pageLimit)
-  - task: PythonScript@0
-    displayName: 'Generate snapshot metadata'
-    inputs:
-      scriptSource: 'inline'
-      script: |
-        import os
-        import json
-        from datetime import datetime, timezone
+            echo "Expanding repository..."
+            dmr-client expand --local-repo $PWD
 
-        def scantree(path):
-          for entry in os.scandir(path):
-            if entry.is_dir(follow_symlinks=False):
-              yield from scantree(entry.path)
-            else:
-              yield entry
-        
-        model_count = 0
-        index_path = os.environ["INDEX_PATH"]
-        for index_page in scantree(index_path):
-          with open(index_page, 'r', encoding='utf-8') as f:
-            index_page_dict = json.loads(f.read())
-            model_count = model_count + len(index_page_dict.get("models", {}))
+            echo "Generating index..."
+            dmr-client index --local-repo $PWD -o $(indexStagingPath)/index.json --page-limit $(pageLimit)
+      - task: PythonScript@0
+        displayName: 'Generate snapshot metadata'
+        inputs:
+          scriptSource: 'inline'
+          script: |
+            import os
+            import json
+            from datetime import datetime, timezone
 
-        metadata = {
-          "totalModelCount": model_count,
-          "publishDateUtc": datetime.now(timezone.utc).isoformat(),
-          "commitId": os.environ.get("COMMIT_ID"),
-          "sourceRepo": os.environ.get("REPO_NAME"),
-          "features": {
-            "index": True,
-            "expanded": True
-          }
-        }
-        with open(os.path.join(index_path, "metadata.json"), 'x') as f:
-          f.write(json.dumps(metadata, indent=2, sort_keys=True))
-    env:
-      INDEX_PATH: $(indexStagingPath)
-      COMMIT_ID: $(Build.SourceVersion)
-      REPO_NAME: $(Build.Repository.Name)
+            def scantree(path):
+              for entry in os.scandir(path):
+                if entry.is_dir(follow_symlinks=False):
+                  yield from scantree(entry.path)
+                else:
+                  yield entry
+            
+            model_count = 0
+            index_path = os.environ["INDEX_PATH"]
+            for index_page in scantree(index_path):
+              with open(index_page, 'r', encoding='utf-8') as f:
+                index_page_dict = json.loads(f.read())
+                model_count = model_count + len(index_page_dict.get("models", {}))
 
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publishing expanded models container'
-    inputs:
-      pathToPublish: './dtmi'
-      publishLocation: 'Container' 
-      artifactName: 'expanded_models'
-      StoreAsTar: true
+            metadata = {
+              "totalModelCount": model_count,
+              "publishDateUtc": datetime.now(timezone.utc).isoformat(),
+              "commitId": os.environ.get("COMMIT_ID"),
+              "sourceRepo": os.environ.get("REPO_NAME"),
+              "features": {
+                "index": True,
+                "expanded": True
+              }
+            }
+            with open(os.path.join(index_path, "metadata.json"), 'x') as f:
+              f.write(json.dumps(metadata, indent=2, sort_keys=True))
+        env:
+          INDEX_PATH: $(indexStagingPath)
+          COMMIT_ID: $(Build.SourceVersion)
+          REPO_NAME: $(Build.Repository.Name)
 
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publishing metadata container'
-    inputs:
-      pathToPublish: $(indexStagingPath)
-      publishLocation: 'Container' 
-      artifactName: 'metadata'
-      StoreAsTar: true
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publishing expanded models container'
+        inputs:
+          pathToPublish: './dtmi'
+          publishLocation: 'Container' 
+          artifactName: 'expanded_models'
+          StoreAsTar: true
 
-- job: 'sync_expanded_models'
-  displayName: 'Sync expanded models'
-  dependsOn: 'evaluate_repo'
-  pool:
-    name: $(buildPool)
-    vmImage: $(vmImage)
-    demands:
-    - ImageOverride -equals $(vmImage)
-  steps:
-  - checkout: none
-  - task: DownloadBuildArtifacts@0
-    displayName : 'Downloading expanded models container'
-    inputs:
-      buildType: 'current'
-      downloadType: 'single'
-      artifactName: 'expanded_models'
-      downloadPath: '$(System.ArtifactsDirectory)'
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publishing metadata container'
+        inputs:
+          pathToPublish: $(indexStagingPath)
+          publishLocation: 'Container' 
+          artifactName: 'metadata'
+          StoreAsTar: true
 
-  - task: AzureCLI@2
-    displayName: 'Synchronizing'
-    inputs:
-      azureSubscription: $(DMR_SERVICE_CONNECTION)
-      scriptType: bash
-      scriptLocation: inlineScript
-      inlineScript: |
-        set -e
-        echo "Extracting expanded models content..."
-        mkdir "$EXPANDED_MODELS_PATH/dtmi" && tar -xf "$EXPANDED_MODELS_PATH/expanded_models.tar" -C "$EXPANDED_MODELS_PATH/dtmi"
+    - job: 'sync_expanded_models'
+      displayName: 'Sync expanded models'
+      dependsOn: 'evaluate_repo'
+      steps:
+      - checkout: none
+      - task: DownloadBuildArtifacts@0
+        displayName : 'Downloading expanded models container'
+        inputs:
+          buildType: 'current'
+          downloadType: 'single'
+          artifactName: 'expanded_models'
+          downloadPath: '$(System.ArtifactsDirectory)'
 
-        echo "Synchronizing expanded models..."
-        az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d '$web/dtmi' --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
-    env:
-      DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
-      EXPANDED_MODELS_PATH: '$(System.ArtifactsDirectory)/expanded_models/'
+      - template: setup_cli.yml
+        parameters:
+          cliVersion: $(cliVersion)
 
-- job: 'sync_metadata'
-  displayName: 'Sync metadata'
-  dependsOn: ['evaluate_repo', 'sync_models']
-  pool:
-    name: $(buildPool)
-    vmImage: $(vmImage)
-    demands:
-    - ImageOverride -equals $(vmImage)
-  steps:
-  - checkout: none
-  - task: DownloadBuildArtifacts@0
-    displayName : 'Downloading metadata container'
-    inputs:
-      buildType: 'current'
-      downloadType: 'single'
-      artifactName: 'metadata'
-      downloadPath: '$(System.ArtifactsDirectory)'
+      - task: AzureCLI@2
+        displayName: 'Synchronizing'
+        inputs:
+          azureSubscription: $(DMR_SERVICE_CONNECTION)
+          scriptType: bash
+          scriptLocation: inlineScript
+          inlineScript: |
+            set -e
+            echo "Extracting expanded models content..."
+            mkdir "$EXPANDED_MODELS_PATH/dtmi" && tar -xf "$EXPANDED_MODELS_PATH/expanded_models.tar" -C "$EXPANDED_MODELS_PATH/dtmi"
 
-  - task: AzureCLI@2
-    displayName: 'Synchronizing'
-    inputs:
-      azureSubscription: $(DMR_SERVICE_CONNECTION)
-      scriptType: bash
-      scriptLocation: inlineScript
-      inlineScript: |
-        set -e
-        echo "Extracting metadata content..."
-        tar -xf "$METADATA_PATH/metadata.tar" -C "$METADATA_PATH"
+            echo "Synchronizing expanded models..."
+            az storage blob upload-batch -s "$EXPANDED_MODELS_PATH/dtmi" -d "$MODEL_DEST_CONTAINER/dtmi" --account-name "$DMR_STORAGE_ACCOUNT" --if-unmodified-since 2018-01-01T01:01:01Z --auth-mode login --pattern "*.expanded.json"
+        env:
+          DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
+          EXPANDED_MODELS_PATH: '$(System.ArtifactsDirectory)/expanded_models/'
+          MODEL_DEST_CONTAINER: $(modelDestContainer)
 
-        echo "Synchronizing index and metadata..."
-        az storage blob upload-batch -s "$METADATA_PATH" -d '$web' --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
-    env:
-      DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
-      METADATA_PATH: '$(System.ArtifactsDirectory)/metadata/'
+    - job: 'sync_metadata'
+      displayName: 'Sync metadata'
+      dependsOn: ['evaluate_repo', 'sync_models']
+      steps:
+      - checkout: none
+      - task: DownloadBuildArtifacts@0
+        displayName : 'Downloading metadata container'
+        inputs:
+          buildType: 'current'
+          downloadType: 'single'
+          artifactName: 'metadata'
+          downloadPath: '$(System.ArtifactsDirectory)'
+
+      - template: setup_cli.yml
+        parameters:
+          cliVersion: $(cliVersion)
+
+      - task: AzureCLI@2
+        displayName: 'Synchronizing'
+        inputs:
+          azureSubscription: $(DMR_SERVICE_CONNECTION)
+          scriptType: bash
+          scriptLocation: inlineScript
+          inlineScript: |
+            set -e
+            echo "Extracting metadata content..."
+            tar -xf "$METADATA_PATH/metadata.tar" -C "$METADATA_PATH"
+
+            echo "Synchronizing index and metadata..."
+            az storage blob upload-batch -s "$METADATA_PATH" -d "$MODEL_DEST_CONTAINER" --account-name "$DMR_STORAGE_ACCOUNT" --auth-mode login --pattern "*.json"
+        env:
+          DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
+          METADATA_PATH: '$(System.ArtifactsDirectory)/metadata/'
+          MODEL_DEST_CONTAINER: $(modelDestContainer)
