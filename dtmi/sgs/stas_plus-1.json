@@ -11,7 +11,7 @@
         "SP_Name"
       ],
       "name": "modelnum",
-      "displayName": "plus Model",
+      "displayName": "Plus Model",
       "description": "Identification model.",
       "schema": "string"
     },
@@ -21,7 +21,7 @@
         "SP_Temper"
       ],
       "name": "sptemperaturet1",
-      "displayName": "thermography",
+      "displayName": "Thermography",
       "description": "Record temperature channel 1.",
       "schema": "string"
     },
@@ -31,7 +31,7 @@
         "SP_Temper"
       ],
       "name": "sptemperatureT2",
-      "displayName": "thermography",
+      "displayName": "Thermography",
       "description": "Record temperature channel 2.",
       "schema": "double"
     },
@@ -41,7 +41,7 @@
         "SP_Temper"
       ],
       "name": "sptemperaturet3",
-      "displayName": "thermography",
+      "displayName": "Thermography",
       "description": "Record temperature channel 3.",
       "schema": "double"
     },
