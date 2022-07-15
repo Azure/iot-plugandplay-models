@@ -10,9 +10,9 @@
         "Property",
         "SP_Name"
       ],
-      "name": "ModelNum",
-      "displayName": "PLUS Model",
-      "description": "Identification model",
+      "name": "modelnum",
+      "displayName": "plus Model",
+      "description": "Identification model.",
       "schema": "string"
     },
     {
@@ -20,9 +20,9 @@
         "Property",
         "SP_Temper"
       ],
-      "name": "SPTemperatureT1",
+      "name": "sptemperaturet1",
       "displayName": "thermography",
-      "description": "Record temperature channel 1",
+      "description": "Record temperature channel 1.",
       "schema": "string"
     },
     {
@@ -30,9 +30,9 @@
         "Property",
         "SP_Temper"
       ],
-      "name": "SPTemperatureT2",
+      "name": "sptemperatureT2",
       "displayName": "thermography",
-      "description": "Record temperature channel 2",
+      "description": "Record temperature channel 2.",
       "schema": "double"
     },
     {
@@ -40,9 +40,9 @@
         "Property",
         "SP_Temper"
       ],
-      "name": "SPTemperatureT3",
+      "name": "sptemperaturet3",
       "displayName": "thermography",
-      "description": "Record temperature channel 3",
+      "description": "Record temperature channel 3.",
       "schema": "double"
     },
     {
@@ -50,14 +50,14 @@
         "Property",
         "SP_Message"
       ],
-      "name": "SPMessage",
-      "displayName": "PLUSMessage",
-      "description": "Logging PLUS Messages",
+      "name": "spmessage",
+      "displayName": "PLUS Message",
+      "description": "Logging PLUS messages.",
       "schema": "string"
     },
 
     {
-      "@type": "Command",
+     "@type": "Command",
       "name": "getLastErrLog",
       "response": {
         "name": "ErrLog",
