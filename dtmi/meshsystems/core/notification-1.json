@@ -1,0 +1,403 @@
+{
+  "@id": "dtmi:MeshSystems:core:notification;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Alert"
+      },
+      "name": "at",
+      "schema": {
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Code"
+            },
+            "name": "Code",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Name"
+            },
+            "name": "Name",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Ts"
+            },
+            "name": "Ts",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": {
+              "en": "Ticket"
+            },
+            "name": "Ticket",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Level"
+            },
+            "name": "Level",
+            "schema": "dtmi:MeshSystems:loglevel;1"
+          },
+          {
+            "displayName": {
+              "en": "Value"
+            },
+            "name": "Value",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Note"
+            },
+            "name": "Note",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Reason"
+            },
+            "name": "Reason",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Category"
+            },
+            "name": "Category",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Update"
+            },
+            "name": "Update",
+            "schema": "dateTime"
+          },
+          {
+            "displayName": {
+              "en": "State"
+            },
+            "name": "State",
+            "schema": "dtmi:MeshSystems:alarmstate;1"
+          },
+          {
+            "displayName": {
+              "en": "Source"
+            },
+            "name": "Source",
+            "schema": {
+              "@type": "Object",
+              "displayName": {
+                "en": "Object"
+              },
+              "fields": [
+                {
+                  "displayName": {
+                    "en": "Component"
+                  },
+                  "name": "Component",
+                  "schema": "string"
+                },
+                {
+                  "displayName": {
+                    "en": "Field"
+                  },
+                  "name": "Field",
+                  "schema": "string"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Status"
+      },
+      "name": "sts",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "displayName": {
+              "en": "Active Alerts"
+            },
+            "name": "aa",
+            "schema": "integer"
+          },
+          {
+            "name": "st",
+            "displayName": "AlarmState",
+            "schema": "dtmi:MeshSystems:alarmstate;1"
+          },
+          {
+            "name": "lvl",
+            "displayName": "Level",
+            "schema": "dtmi:MeshSystems:loglevel;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Log Level"
+      },
+      "name": "LogLevel",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "displayName": {
+              "en": "Critical"
+            },
+            "enumValue": 5,
+            "name": "Critical"
+          },
+          {
+            "name": "Error",
+            "enumValue": 4,
+            "displayName": {
+              "en": "Error"
+            },
+            "description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
+          },
+          {
+            "displayName": {
+              "en": "Warning"
+            },
+            "enumValue": 3,
+            "name": "Warning"
+          },
+          {
+            "displayName": {
+              "en": "Information"
+            },
+            "enumValue": 2,
+            "name": "Information",
+            "description": "Logs that track the general flow of the application. These logs should have long-term value"
+          },
+          {
+            "displayName": {
+              "en": "Debug"
+            },
+            "enumValue": 1,
+            "name": "Debug",
+            "description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
+          },
+          {
+            "displayName": {
+              "en": "Trace"
+            },
+            "enumValue": 0,
+            "name": "Trace",
+            "description": "Logs that contain the most detailed messages. These messages are disabled by default."
+          }
+        ],
+        "valueSchema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "ServiceAlert",
+      "commandType": "synchronous",
+      "displayName": "Service Alert",
+      "request": {
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "displayName": {
+                "en": "Ticket"
+              },
+              "name": "Ticket",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Note"
+              },
+              "name": "Note",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "State"
+              },
+              "name": "State",
+              "schema": "dtmi:MeshSystems:alarmstate;1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "unit": "second",
+      "displayName": {
+        "en": "Notification Interval"
+      },
+      "name": "NotificationInterval",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "unit": "second",
+      "displayName": {
+        "en": "Status Interval"
+      },
+      "name": "StatusInterval",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Clear All Alerts"
+      },
+      "name": "ClearAllAlerts"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Update All Alerts"
+      },
+      "name": "UpdateAllAlerts"
+    }
+  ],
+  "displayName": {
+    "en": "Notification"
+  },
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "schemas": [
+    {
+      "@type": "Enum",
+      "@id": "dtmi:MeshSystems:alarmstate;1",
+      "enumValues": [
+        {
+          "displayName": {
+            "en": "Inactive"
+          },
+          "enumValue": 1,
+          "name": "Inactive"
+        },
+        {
+          "displayName": {
+            "en": "Active"
+          },
+          "enumValue": 2,
+          "name": "Active"
+        },
+        {
+          "displayName": {
+            "en": "Acknowledged"
+          },
+          "enumValue": 3,
+          "name": "Acknowledged"
+        },
+        {
+          "displayName": {
+            "en": "Cleared"
+          },
+          "enumValue": 4,
+          "name": "Cleared"
+        },
+        {
+          "displayName": {
+            "en": "Service Requested"
+          },
+          "enumValue": 5,
+          "name": "ServiceRequested"
+        },
+        {
+          "displayName": {
+            "en": "Serviced"
+          },
+          "enumValue": 6,
+          "name": "Serviced"
+        }
+      ],
+      "valueSchema": "integer"
+    },
+    {
+      "@type": "Enum",
+      "@id": "dtmi:MeshSystems:loglevel;1",
+      "enumValues": [
+        {
+          "displayName": {
+            "en": "Critical"
+          },
+          "enumValue": 5,
+          "name": "Critical"
+        },
+        {
+          "name": "Error",
+          "enumValue": 4,
+          "displayName": {
+            "en": "Error"
+          },
+          "description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
+        },
+        {
+          "displayName": {
+            "en": "Warning"
+          },
+          "enumValue": 3,
+          "name": "Warning"
+        },
+        {
+          "displayName": {
+            "en": "Information"
+          },
+          "enumValue": 2,
+          "name": "Information",
+          "description": "Logs that track the general flow of the application. These logs should have long-term value"
+        },
+        {
+          "displayName": {
+            "en": "Debug"
+          },
+          "enumValue": 1,
+          "name": "Debug",
+          "description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
+        },
+        {
+          "displayName": {
+            "en": "Trace"
+          },
+          "enumValue": 0,
+          "name": "Trace",
+          "description": "Logs that contain the most detailed messages. These messages are disabled by default."
+        }
+      ],
+      "valueSchema": "integer"
+    }
+  ]
+}

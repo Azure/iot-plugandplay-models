@@ -1,0 +1,264 @@
+{
+  "@id": "dtmi:MeshSystems:ble:rdisensor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Status"
+      },
+      "name": "st",
+      "schema": {
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Device ID"
+            },
+            "name": "dvcId",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Signal Strength"
+            },
+            "name": "sig",
+            "schema": "integer"
+          },
+          {
+            "displayName": {
+              "en": "Battery Level"
+            },
+            "name": "bl",
+            "schema": "double"
+          },
+          {
+            "displayName": {
+              "en": "Low Battery"
+            },
+            "name": "lbt",
+            "schema": "boolean"
+          },
+          {
+            "displayName": {
+              "en": "Value"
+            },
+            "name": "v",
+            "schema": {
+              "@type": "Object",
+              "displayName": {
+                "en": "Object"
+              },
+              "fields": [
+                {
+                  "displayName": {
+                    "en": "Digital Input"
+                  },
+                  "name": "di",
+                  "schema": "dtmi:meshsystems:dvc:digitalinputsensorstatus;1"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Device Ingress"
+      },
+      "name": "dvcIngress",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Device Egress"
+      },
+      "name": "dvcEgress",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device Configuration"
+      },
+      "name": "dvcCfg",
+      "writable": true,
+      "schema": {
+        "@type": "Map",
+        "displayName": {
+          "en": "Map"
+        },
+        "mapKey": {
+          "displayName": {
+            "en": "Device ID"
+          },
+          "name": "dvcId",
+          "schema": "string"
+        },
+        "mapValue": {
+          "displayName": {
+            "en": "Configuration"
+          },
+          "name": "cfg",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Status Interval"
+                },
+                "name": "stsInterval",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Level"
+                },
+                "name": "iLvl",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Count"
+                },
+                "name": "iCnt",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Level"
+                },
+                "name": "eLvl",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Timeout"
+                },
+                "name": "eTmo",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Low Battery Level"
+                },
+                "name": "lbtLvl",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Alert Levels"
+                },
+                "name": "aLvls",
+                "schema": {
+                  "@type": "Object",
+                  "displayName": {
+                    "en": "Object"
+                  },
+                  "fields": [
+                    {
+                      "displayName": {
+                        "en": "Digital Input"
+                      },
+                      "name": "di",
+                      "schema": "dtmi:meshsystems:dvc:digitalinputsensorconfig;1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "displayName": {
+    "en": "Remote Digital Input Sensor"
+  },
+  "schemas": [
+    {
+      "@id": "dtmi:meshsystems:dvc:digitalinputsensorstatus;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "Value"
+          },
+          "name": "v",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "Activation Counts"
+          },
+          "name": "actCnt",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "On Time"
+          },
+          "name": "onTm",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "Off Time"
+          },
+          "name": "offTm",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "On Alert"
+          },
+          "name": "onAlert",
+          "schema": "boolean"
+        },
+        {
+          "displayName": {
+            "en": "Off Alert"
+          },
+          "name": "offAlert",
+          "schema": "boolean"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:meshsystems:dvc:digitalinputsensorconfig;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "On Time Limit"
+          },
+          "name": "onLimit",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Off Time Limit"
+          },
+          "name": "offLimit",
+          "schema": "double"
+        }
+      ]
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

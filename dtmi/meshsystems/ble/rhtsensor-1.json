@@ -1,0 +1,301 @@
+{
+  "@id": "dtmi:MeshSystems:ble:rhtsensor;1",
+  "@context": "dtmi:dtdl:context;2",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Status"
+      },
+      "name": "st",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "displayName": {
+            "en": "Key"
+          },
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "displayName": {
+            "en": "Value"
+          },
+          "name": "value",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Signal Strength"
+                },
+                "name": "sig",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Battery Level"
+                },
+                "name": "bl",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Low Battery"
+                },
+                "name": "lbt",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "Value"
+                },
+                "name": "v",
+                "schema": {
+                  "@type": "Object",
+                  "displayName": {
+                    "en": "Object"
+                  },
+                  "fields": [
+                    {
+                      "displayName": {
+                        "en": "Humidity"
+                      },
+                      "name": "h",
+                      "schema": "dtmi:meshsystems:dvc:analogsensorstatus;1"
+                    },
+                    {
+                      "displayName": {
+                        "en": "Temperature"
+                      },
+                      "name": "t",
+                      "schema": "dtmi:meshsystems:dvc:analogsensorstatus;1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Device Ingress"
+      },
+      "name": "dvcIngress",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Device Egress"
+      },
+      "name": "dvcEgress",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device Configuration"
+      },
+      "name": "dvcCfg",
+      "writable": true,
+      "schema": {
+        "@type": "Map",
+        "displayName": {
+          "en": "Map"
+        },
+        "mapKey": {
+          "displayName": {
+            "en": "Device ID"
+          },
+          "name": "dvcId",
+          "schema": "string"
+        },
+        "mapValue": {
+          "displayName": {
+            "en": "Configuration"
+          },
+          "name": "cfg",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Status Interval"
+                },
+                "name": "stsInterval",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Level"
+                },
+                "name": "iLvl",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Count"
+                },
+                "name": "iCnt",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Level"
+                },
+                "name": "eLvl",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Timeout"
+                },
+                "name": "eTmo",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Low Battery Level"
+                },
+                "name": "lbtLvl",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Alert Levels"
+                },
+                "name": "aLvls",
+                "schema": {
+                  "@type": "Object",
+                  "displayName": {
+                    "en": "Object"
+                  },
+                  "fields": [
+                    {
+                      "displayName": {
+                        "en": "Humidity"
+                      },
+                      "name": "h",
+                      "schema": "dtmi:meshsystems:dvc:analogsensorconfig;1"
+                    },
+                    {
+                      "displayName": {
+                        "en": "Temperature"
+                      },
+                      "name": "t",
+                      "schema": "dtmi:meshsystems:dvc:analogsensorconfig;1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "displayName": {
+    "en": "Remote Humidity Temperature Sensor"
+  },
+  "schemas": [
+    {
+      "@id": "dtmi:meshsystems:dvc:analogsensorstatus;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "Minimum"
+          },
+          "name": "min",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Maximum"
+          },
+          "name": "max",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Average"
+          },
+          "name": "avg",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Last"
+          },
+          "name": "last",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Low"
+          },
+          "name": "low",
+          "schema": "boolean"
+        },
+        {
+          "displayName": {
+            "en": "High"
+          },
+          "name": "high",
+          "schema": "boolean"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:meshsystems:dvc:analogsensorconfig;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "Low Level"
+          },
+          "name": "lowLvl",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "High Level"
+          },
+          "name": "highLvl",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Hysteresis"
+          },
+          "name": "hys",
+          "schema": "double"
+        },
+        {
+          "displayName": {
+            "en": "Debounce"
+          },
+          "name": "dbnc",
+          "schema": "integer"
+        }
+      ]
+    }
+  ]
+}

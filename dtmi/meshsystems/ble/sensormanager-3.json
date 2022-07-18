@@ -1,0 +1,309 @@
+{
+  "@id": "dtmi:MeshSystems:ble:sensormanager;3",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensor Manager"
+  },
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "comment": "Beacon's Preamble AdvData + Message-Id + encoded body",
+      "displayName": {
+        "en": "Sensor Telemetry"
+      },
+      "name": "snr",
+      "schema": {
+        "@type": "Map",
+        "displayName": {
+          "en": "Map"
+        },
+        "mapKey": {
+          "displayName": {
+            "en": "Key"
+          },
+          "name": "Key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "displayName": {
+            "en": "Value"
+          },
+          "name": "Value",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "MessageId"
+                },
+                "name": "mid",
+                "schema": "long"
+              },
+              {
+                "displayName": {
+                  "en": "Body"
+                },
+                "name": "body",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Type"
+                },
+                "name": "type",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "RSSI"
+                },
+                "name": "rssi",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress"
+                },
+                "name": "ing",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "Egress"
+                },
+                "name": "egr",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "Update"
+                },
+                "name": "upd",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "TimeStamp"
+                },
+                "name": "ts",
+                "schema": "dateTime"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Num Sensors"
+      },
+      "name": "smNumSensors",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Min Battery Level"
+      },
+      "name": "smMinBL",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Min RSSI"
+      },
+      "name": "smMinRSSI",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smRxTotal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smRxCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "writable": true,
+      "displayName": {
+        "en": "ble Advertisement"
+      },
+      "name": "bleAdvertisement",
+      "description": "Publisher Advertisement",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "bleMAC"
+      },
+      "name": "bleMAC",
+      "description": "48-bit Bluetooth MAC address",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "bleFwVersion"
+      },
+      "name": "bleFwVersion",
+      "description": "Bluetooth module's firmware version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Namespace Filter"
+      },
+      "name": "smNsFilter",
+      "description": "Process beacons that match any domain name filters in the dictionary",
+      "writable": true,
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "nsValue",
+                "schema": "string"
+              },
+              {
+                "name": "nsMask",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Configuration"
+      },
+      "name": "cfg",
+      "writable": true,
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Status Interval"
+                },
+                "name": "stsInterval",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Level"
+                },
+                "name": "rssiIngress",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Count"
+                },
+                "name": "rssiRetain",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Ingress Debounce"
+                },
+                "name": "smIngressDebounce",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Level"
+                },
+                "name": "rssiEgress",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Egress Timeout"
+                },
+                "name": "smEgressTimeout",
+                "schema": "long"
+              },
+              {
+                "displayName": {
+                  "en": "Low Battery Level"
+                },
+                "name": "lbtLvl",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Aggregation Period"
+                },
+                "name": "smAggregationPeriod",
+                "schema": "long"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "sensorCmd",
+      "displayName": "Sensor Command",
+      "request": {
+        "name": "req",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "deviceId",
+              "schema": "string"
+            },
+            {
+              "name": "cmd",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "assetStsInterval",
+      "displayName": "Asset Status Interval",
+      "description": "Interval to report up-to-date devices in the asset database",
+      "schema": "integer",
+      "writable": true
+    }
+  ]
+}

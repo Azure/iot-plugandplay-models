@@ -1,0 +1,193 @@
+{
+  "@id": "dtmi:MeshSystems:ble:sensormanager;1",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": {
+    "en": "Sensor Manager"
+  },
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "name": "smSensorIngress",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "name": "smSensorEgress",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "name": "smSensorDelta",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "name": "advBle5",
+      "description": "Important change occurred",
+      "comment": "Beacon's 4.2 AdvData + Message-Id + encrypted body",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Event"
+      ],
+      "name": "smNumSensors",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smMinBL",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smMinRSSI",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "smNsFilter",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "nsValue",
+            "schema": "string"
+          },
+          {
+            "name": "nsMask",
+            "schema": "string"
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "smRssiFilter",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "rssiIngress",
+                "schema": "integer"
+              },
+              {
+                "name": "rssiRetain",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "smIngressDebounce",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "smEgressTimeout",
+      "schema": "long",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smRxTotal",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "smRxCount",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "smAggregationPeriod",
+      "schema": "long",
+      "writable": true
+    },
+    {
+      "@type": "Command",
+      "name": "BleCommand",
+      "description": "Read/Write Service Characteristic-Values",
+      "request": {
+        "name": "req",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "address",
+              "description": "MAC address to pair",
+              "schema": "string"
+            },
+            {
+              "name": "key",
+              "schema": "string"
+            },
+            {
+              "name": "uuid",
+              "displayName": "service uuid",
+              "schema": "string"
+            },
+            {
+              "name": "action",
+              "displayName": "Read or Write",
+              "schema": "string"
+            },
+            {
+              "name": "characteristics",
+              "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Object",
+                  "fields": [
+                    {
+                      "name": "char_uuid",
+                      "description": "Characteristic UUID",
+                      "schema": "string"
+                    },
+                    {
+                      "name": "value",
+                      "description": "Characteristic Value",
+                      "schema": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "response": {
+        "name": "resp",
+        "schema": "string"
+      }
+    }
+  ]
+}

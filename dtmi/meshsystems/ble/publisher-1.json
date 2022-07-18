@@ -1,0 +1,55 @@
+{
+  "@id": "dtmi:MeshSystems:ble:publisher;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BLE Publisher",
+  "contents": [
+    {
+      "@type": "Property",
+      "writable": true,
+      "displayName": {
+        "en": "ble Advertisement"
+      },
+      "name": "bleAdvertisement",
+      "description": "Publisher Advertisement",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "raw",
+            "displayName": "Raw Advertisement",
+            "schema": "string"
+          },
+          {
+            "name": "interval",
+            "displayName": "Interval",
+            "schema": "string"
+          },
+          {
+            "name": "phy",
+            "displayName": "PHY",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "bleFwVersion"
+      },
+      "name": "bleFwVersion",
+      "description": "Bluetooth module's firmware version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "bleMAC"
+      },
+      "name": "bleMAC",
+      "description": "48-bit Bluetooth MAC address",
+      "schema": "string"
+    }
+  ]
+}

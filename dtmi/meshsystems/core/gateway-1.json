@@ -1,0 +1,31 @@
+{
+  "@id": "dtmi:MeshSystems:core:gateway;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "extends": "dtmi:MeshSystems:core:device;1",
+  "displayName": "Gateway",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "target": "dtmi:MeshSystems:core:device;1",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "updated",
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Property",
+          "name": "rssi",
+          "schema": "integer"
+        },
+        {
+          "@type": "Property",
+          "name": "eventType",
+          "schema": "string"
+        }
+      ]
+    }
+  ]
+}

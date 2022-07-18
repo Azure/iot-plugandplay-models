@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:MeshSystems:core:wifi;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": "RSSI",
+      "description": "Received Signal Strength Indicator",
+      "name": "RSSI",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "TimeSpan"
+      ],
+      "description": "Session time since connected",
+      "displayName": "Session Time",
+      "name": "ssc",
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "description": "Bytes sent",
+      "displayName": "Tx",
+      "name": "tx",
+      "unit": "byte",
+      "schema": "integer"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "description": "Bytes received",
+      "displayName": "Rx",
+      "name": "rx",
+      "unit": "byte",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "displayName": "SSID",
+      "description": "Service Set Identifier, unique name that identifies a wireless network",
+      "name": "SSID",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "FrequencyMHz",
+      "description": "Frequency of the connection in megahertz",
+      "name": "FrequencyMHz",
+      "schema": "integer",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "Channel",
+      "description": "Wifi channel number",
+      "name": "ch",
+      "schema": "integer",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "MAC",
+      "description": "Media Access Control address",
+      "name": "MAC",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "IP Address",
+      "description": "Internet Protocol address",
+      "name": "IPAddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": "Status Interval",
+      "description": "Interval between status updates in seconds",
+      "name": "StatusInterval",
+      "schema": "integer",
+      "unit": "second",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "WiFi"
+  },
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}
