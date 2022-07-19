@@ -58,7 +58,54 @@
                     "en": "Digital Input"
                   },
                   "name": "di",
-                  "schema": "dtmi:meshsystems:dvc:digitalinputsensorstatus;1"
+                  "schema": 
+				      {
+      "@type": "Object",
+      "fields": [
+        {
+          "displayName": {
+            "en": "Value"
+          },
+          "name": "v",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "Activation Counts"
+          },
+          "name": "actCnt",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "On Time"
+          },
+          "name": "onTm",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "Off Time"
+          },
+          "name": "offTm",
+          "schema": "integer"
+        },
+        {
+          "displayName": {
+            "en": "On Alert"
+          },
+          "name": "onAlert",
+          "schema": "boolean"
+        },
+        {
+          "displayName": {
+            "en": "Off Alert"
+          },
+          "name": "offAlert",
+          "schema": "boolean"
+        }
+      ]
+    }
                 }
               ]
             }
@@ -176,72 +223,9 @@
                         "en": "Digital Input"
                       },
                       "name": "di",
-                      "schema": "dtmi:meshsystems:dvc:digitalinputsensorconfig;1"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    }
-  ],
-  "displayName": {
-    "en": "Remote Digital Input Sensor"
-  },
-  "schemas": [
-    {
-      "@id": "dtmi:meshsystems:dvc:digitalinputsensorstatus;1",
-      "@type": "Object",
-      "fields": [
-        {
-          "displayName": {
-            "en": "Value"
-          },
-          "name": "v",
-          "schema": "integer"
-        },
-        {
-          "displayName": {
-            "en": "Activation Counts"
-          },
-          "name": "actCnt",
-          "schema": "integer"
-        },
-        {
-          "displayName": {
-            "en": "On Time"
-          },
-          "name": "onTm",
-          "schema": "integer"
-        },
-        {
-          "displayName": {
-            "en": "Off Time"
-          },
-          "name": "offTm",
-          "schema": "integer"
-        },
-        {
-          "displayName": {
-            "en": "On Alert"
-          },
-          "name": "onAlert",
-          "schema": "boolean"
-        },
-        {
-          "displayName": {
-            "en": "Off Alert"
-          },
-          "name": "offAlert",
-          "schema": "boolean"
-        }
-      ]
-    },
-    {
-      "@id": "dtmi:meshsystems:dvc:digitalinputsensorconfig;1",
-      "@type": "Object",
+                      "schema": 
+					  {
+					        "@type": "Object",
       "fields": [
         {
           "displayName": {
@@ -258,7 +242,20 @@
           "schema": "double"
         }
       ]
+
+					  }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ],
+  "displayName": {
+    "en": "Remote Digital Input Sensor"
+  },
   "@context": "dtmi:dtdl:context;2"
 }
