@@ -66,106 +66,14 @@
 												"en": "Humidity"
 											},
 											"name": "h",
-											"schema": {
-												"@type": "Object",
-												"fields": [
-													{
-														"displayName": {
-															"en": "Minimum"
-														},
-														"name": "min",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Maximum"
-														},
-														"name": "max",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Average"
-														},
-														"name": "avg",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Last"
-														},
-														"name": "last",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Low"
-														},
-														"name": "low",
-														"schema": "boolean"
-													},
-													{
-														"displayName": {
-															"en": "High"
-														},
-														"name": "high",
-														"schema": "boolean"
-													}
-												]
-											}
+											"schema": "dtmi:MeshSystems:ble:rhtsensor:analogsensorstatus;1"
 										},
 										{
 											"displayName": {
 												"en": "Temperature"
 											},
 											"name": "t",
-											"schema": {
-												"@type": "Object",
-												"fields": [
-													{
-														"displayName": {
-															"en": "Minimum"
-														},
-														"name": "min",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Maximum"
-														},
-														"name": "max",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Average"
-														},
-														"name": "avg",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Last"
-														},
-														"name": "last",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Low"
-														},
-														"name": "low",
-														"schema": "boolean"
-													},
-													{
-														"displayName": {
-															"en": "High"
-														},
-														"name": "high",
-														"schema": "boolean"
-													}
-												]
-											}
+											"schema": "dtmi:MeshSystems:ble:rhtsensor:analogsensorstatus;1"
 										}
 									]
 								}
@@ -285,78 +193,14 @@
 												"en": "Humidity"
 											},
 											"name": "h",
-											"schema": {
-												"@type": "Object",
-												"fields": [
-													{
-														"displayName": {
-															"en": "Low Level"
-														},
-														"name": "lowLvl",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "High Level"
-														},
-														"name": "highLvl",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Hysteresis"
-														},
-														"name": "hys",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Debounce"
-														},
-														"name": "dbnc",
-														"schema": "integer"
-													}
-												]
-											}
+											"schema": "dtmi:MeshSystems:ble:rhtsensor:analogsensorconfig;1"
 										},
 										{
 											"displayName": {
 												"en": "Temperature"
 											},
 											"name": "t",
-											"schema": {
-												"@type": "Object",
-												"fields": [
-													{
-														"displayName": {
-															"en": "Low Level"
-														},
-														"name": "lowLvl",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "High Level"
-														},
-														"name": "highLvl",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Hysteresis"
-														},
-														"name": "hys",
-														"schema": "double"
-													},
-													{
-														"displayName": {
-															"en": "Debounce"
-														},
-														"name": "dbnc",
-														"schema": "integer"
-													}
-												]
-											}
+											"schema": "dtmi:MeshSystems:ble:rhtsensor:analogsensorconfig;1"
 										}
 									]
 								}
@@ -369,5 +213,89 @@
 	],
 	"displayName": {
 		"en": "Remote Humidity Temperature Sensor"
-	}
+	},
+	"schemas": [
+		{
+			"@id": "dtmi:MeshSystems:ble:rhtsensor:analogsensorstatus;1",
+			"@type": "Object",
+			"fields": [
+				{
+					"displayName": {
+						"en": "Minimum"
+					},
+					"name": "min",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Maximum"
+					},
+					"name": "max",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Average"
+					},
+					"name": "avg",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Last"
+					},
+					"name": "last",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Low"
+					},
+					"name": "low",
+					"schema": "boolean"
+				},
+				{
+					"displayName": {
+						"en": "High"
+					},
+					"name": "high",
+					"schema": "boolean"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:MeshSystems:ble:rhtsensor:analogsensorconfig;1",
+			"@type": "Object",
+			"fields": [
+				{
+					"displayName": {
+						"en": "Low Level"
+					},
+					"name": "lowLvl",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "High Level"
+					},
+					"name": "highLvl",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Hysteresis"
+					},
+					"name": "hys",
+					"schema": "double"
+				},
+				{
+					"displayName": {
+						"en": "Debounce"
+					},
+					"name": "dbnc",
+					"schema": "integer"
+				}
+			]
+		}
+	]
 }
