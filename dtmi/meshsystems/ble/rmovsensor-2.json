@@ -1,0 +1,247 @@
+{
+	"@id": "dtmi:MeshSystems:ble:rmovsensor;2",
+	"@type": "Interface",
+	"contents": [
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Status"
+			},
+			"name": "st",
+			"schema": {
+				"@type": "Object",
+				"displayName": {
+					"en": "Object"
+				},
+				"fields": [
+					{
+						"displayName": {
+							"en": "Device ID"
+						},
+						"name": "dvcId",
+						"schema": "string"
+					},
+					{
+						"displayName": {
+							"en": "Signal Strength"
+						},
+						"name": "sig",
+						"schema": "integer"
+					},
+					{
+						"displayName": {
+							"en": "Battery Level"
+						},
+						"name": "bl",
+						"schema": "double"
+					},
+					{
+						"displayName": {
+							"en": "Low Battery"
+						},
+						"name": "lbt",
+						"schema": "boolean"
+					},
+					{
+						"displayName": {
+							"en": "Value"
+						},
+						"name": "v",
+						"schema": "dtmi:MeshSystems:ble:rmovsensor:status;1"
+					}
+				]
+			}
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Device Ingress"
+			},
+			"name": "dvcIngress",
+			"schema": {
+				"@type": "Object",
+				"displayName": {
+					"en": "Object"
+				},
+				"fields": [
+					{
+						"displayName": {
+							"en": "Device ID"
+						},
+						"name": "dvcId",
+						"schema": "string"
+					},
+					{
+						"displayName": {
+							"en": "Model ID"
+						},
+						"name": "modelId",
+						"schema": "string"
+					}
+				]
+			}
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Device Egress"
+			},
+			"name": "dvcEgress",
+			"schema": {
+				"@type": "Object",
+				"displayName": {
+					"en": "Object"
+				},
+				"fields": [
+					{
+						"displayName": {
+							"en": "Device ID"
+						},
+						"name": "dvcId",
+						"schema": "string"
+					},
+					{
+						"displayName": {
+							"en": "Model ID"
+						},
+						"name": "modelId",
+						"schema": "string"
+					}
+				]
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Device Configuration"
+			},
+			"name": "dvcCfg",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"displayName": {
+					"en": "Map"
+				},
+				"mapKey": {
+					"displayName": {
+						"en": "Device ID"
+					},
+					"name": "dvcId",
+					"schema": "string"
+				},
+				"mapValue": {
+					"displayName": {
+						"en": "Configuration"
+					},
+					"name": "cfg",
+					"schema": "dtmi:MeshSystems:ble:rmovsensor:config;1"
+				}
+			}
+		}
+	],
+	"displayName": {
+		"en": "Remote Movement Sensor"
+	},
+	"schemas": [
+		{
+			"@id": "dtmi:MeshSystems:ble:rmovsensor:status;1",
+			"@type": "Object",
+			"fields": [
+				{
+					"displayName": {
+						"en": "Angular Pos Vector"
+					},
+					"name": "angVector",
+					"schema": "vector"
+				},
+				{
+					"displayName": {
+						"en": "Mov State"
+					},
+					"name": "movState",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "Mov Count Change"
+					},
+					"name": "movCountChange",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "Mov Count"
+					},
+					"name": "movCount",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "X Alert"
+					},
+					"name": "xAlert",
+					"schema": "boolean"
+				},
+				{
+					"displayName": {
+						"en": "Y Alert"
+					},
+					"name": "yAlert",
+					"schema": "boolean"
+				},
+				{
+					"displayName": {
+						"en": "Z Alert"
+					},
+					"name": "zAlert",
+					"schema": "boolean"
+				},
+				{
+					"displayName": {
+						"en": "Mov Alert"
+					},
+					"name": "movAlert",
+					"schema": "boolean"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:MeshSystems:ble:rmovsensor:config;1",
+			"@type": "Object",
+			"fields": [
+				{
+					"displayName": {
+						"en": "X Limit"
+					},
+					"name": "xLvl",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "Y Limit"
+					},
+					"name": "yLvl",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "Z Limit"
+					},
+					"name": "zLvl",
+					"schema": "integer"
+				},
+				{
+					"displayName": {
+						"en": "Mov Limit"
+					},
+					"name": "movLimit",
+					"schema": "integer"
+				}
+			]
+		}
+	],
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	]
+}

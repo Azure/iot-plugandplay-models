@@ -1,91 +1,115 @@
 {
-  "@id": "dtmi:technicolor:owm0131tch;1",
-  "@context": "dtmi:dtdl:context;2",
-  "extends": "dtmi:MeshSystems:core:device;1",
-  "displayName": {
-    "en": "OWM0131TCH"
-  },
-  "@type": "Interface",
-  "contents": [
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Device Information"
-      },
-      "name": "deviceinformation",
-      "schema": "dtmi:MeshSystems:core:deviceinformation;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Notification"
-      },
-      "name": "notification",
-      "schema": "dtmi:MeshSystems:core:notification;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Health"
-      },
-      "name": "devicehealth",
-      "schema": "dtmi:MeshSystems:core:devicehealth;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Ethernet"
-      },
-      "name": "ethernet",
-      "schema": "dtmi:MeshSystems:core:ethernet;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "WiFi backhaul 5G"
-      },
-      "name": "wifibh5g",
-      "schema": "dtmi:MeshSystems:core:wifi;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "WiFi backhaul 2.4G"
-      },
-      "name": "wifibh24g",
-      "schema": "dtmi:MeshSystems:core:wifi;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "WiFi 5G"
-      },
-      "name": "wifi5g",
-      "schema": "dtmi:MeshSystems:core:wifi;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "WiFi 2.4G"
-      },
-      "name": "wifi24g",
-      "schema": "dtmi:MeshSystems:core:wifi;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "BLE Publisher"
-      },
-      "name": "publisher",
-      "schema": "dtmi:MeshSystems:ble:publisher;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Sensor Manager"
-      },
-      "name": "sensormanager",
-      "schema": "dtmi:MeshSystems:ble:sensormanager;2"
-    }
-  ]
+	"@id": "dtmi:technicolor:owm0131tch;1",
+	"@context": "dtmi:dtdl:context;2",
+	"extends": "dtmi:MeshSystems:core:device;1",
+	"displayName": {
+		"en": "OWM0131TCH"
+	},
+	"@type": "Interface",
+	"contents": [
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Device Information"
+			},
+			"name": "deviceinformation",
+			"schema": "dtmi:MeshSystems:core:deviceinformation;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Notification"
+			},
+			"name": "notification",
+			"schema": "dtmi:MeshSystems:core:notification;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Health"
+			},
+			"name": "devicehealth",
+			"schema": "dtmi:MeshSystems:core:devicehealth;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Ethernet"
+			},
+			"name": "ethernet",
+			"schema": "dtmi:MeshSystems:core:ethernet;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "WiFi backhaul 5G"
+			},
+			"name": "wifibh5g",
+			"schema": "dtmi:MeshSystems:core:wifi;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "WiFi backhaul 2.4G"
+			},
+			"name": "wifibh24g",
+			"schema": "dtmi:MeshSystems:core:wifi;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "WiFi 5G"
+			},
+			"name": "wifi5g",
+			"schema": "dtmi:MeshSystems:core:wifi;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "WiFi 2.4G"
+			},
+			"name": "wifi24g",
+			"schema": "dtmi:MeshSystems:core:wifi;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "BLE Publisher"
+			},
+			"name": "publisher",
+			"schema": "dtmi:MeshSystems:ble:publisher;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Sensor Manager"
+			},
+			"name": "sensormanager",
+			"schema": "dtmi:MeshSystems:ble:sensormanager;2"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Movement Sensor"
+			},
+			"name": "rmovsensor",
+			"schema": "dtmi:MeshSystems:ble:rmovsensor;2"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Temperature Sensor"
+			},
+			"name": "rtsensor",
+			"schema": "dtmi:MeshSystems:ble:rtsensor;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Humidity Temperature Sensor"
+			},
+			"name": "rhtsensor",
+			"schema": "dtmi:MeshSystems:ble:rhtsensor;1"
+		}
+	]
 }
