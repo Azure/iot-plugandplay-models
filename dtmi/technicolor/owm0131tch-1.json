@@ -78,6 +78,14 @@
 			},
 			"name": "rhtsensor",
 			"schema": "dtmi:MeshSystems:ble:rhtsensor;1"
+		},
+				{
+			"@type": "Component",
+			"displayName": {
+				"en": "Identification Sensor"
+			},
+			"name": "rdisensor",
+			"schema": "dtmi:MeshSystems:ble:rdisensor;1"
 		}
 	]
 }
