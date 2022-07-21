@@ -47,58 +47,7 @@
 							"en": "Level"
 						},
 						"name": "Level",
-						"schema": {
-							"@type": "Enum",
-							"enumValues": [
-								{
-									"displayName": {
-										"en": "Critical"
-									},
-									"enumValue": 5,
-									"name": "Critical"
-								},
-								{
-									"name": "Error",
-									"enumValue": 4,
-									"displayName": {
-										"en": "Error"
-									},
-									"description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
-								},
-								{
-									"displayName": {
-										"en": "Warning"
-									},
-									"enumValue": 3,
-									"name": "Warning"
-								},
-								{
-									"displayName": {
-										"en": "Information"
-									},
-									"enumValue": 2,
-									"name": "Information",
-									"description": "Logs that track the general flow of the application. These logs should have long-term value"
-								},
-								{
-									"displayName": {
-										"en": "Debug"
-									},
-									"enumValue": 1,
-									"name": "Debug",
-									"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
-								},
-								{
-									"displayName": {
-										"en": "Trace"
-									},
-									"enumValue": 0,
-									"name": "Trace",
-									"description": "Logs that contain the most detailed messages. These messages are disabled by default."
-								}
-							],
-							"valueSchema": "integer"
-						}
+						"schema": "dtmi:MeshSystems:core:notification:loglevel;1"
 					},
 					{
 						"displayName": {
@@ -140,54 +89,7 @@
 							"en": "State"
 						},
 						"name": "State",
-						"schema": {
-							"@type": "Enum",
-							"valueSchema": "integer",
-							"enumValues": [
-								{
-									"displayName": {
-										"en": "Inactive"
-									},
-									"enumValue": 1,
-									"name": "Inactive"
-								},
-								{
-									"displayName": {
-										"en": "Active"
-									},
-									"enumValue": 2,
-									"name": "Active"
-								},
-								{
-									"displayName": {
-										"en": "Acknowledged"
-									},
-									"enumValue": 3,
-									"name": "Acknowledged"
-								},
-								{
-									"displayName": {
-										"en": "Cleared"
-									},
-									"enumValue": 4,
-									"name": "Cleared"
-								},
-								{
-									"displayName": {
-										"en": "Service Requested"
-									},
-									"enumValue": 5,
-									"name": "ServiceRequested"
-								},
-								{
-									"displayName": {
-										"en": "Serviced"
-									},
-									"enumValue": 6,
-									"name": "Serviced"
-								}
-							]
-						}
+						"schema": "dtmi:MeshSystems:core:notification:alarmstate;1"
 					},
 					{
 						"displayName": {
@@ -239,110 +141,12 @@
 					{
 						"name": "st",
 						"displayName": "AlarmState",
-						"schema": {
-							"@type": "Enum",
-							"valueSchema": "integer",
-							"enumValues": [
-								{
-									"displayName": {
-										"en": "Inactive"
-									},
-									"enumValue": 1,
-									"name": "Inactive"
-								},
-								{
-									"displayName": {
-										"en": "Active"
-									},
-									"enumValue": 2,
-									"name": "Active"
-								},
-								{
-									"displayName": {
-										"en": "Acknowledged"
-									},
-									"enumValue": 3,
-									"name": "Acknowledged"
-								},
-								{
-									"displayName": {
-										"en": "Cleared"
-									},
-									"enumValue": 4,
-									"name": "Cleared"
-								},
-								{
-									"displayName": {
-										"en": "Service Requested"
-									},
-									"enumValue": 5,
-									"name": "ServiceRequested"
-								},
-								{
-									"displayName": {
-										"en": "Serviced"
-									},
-									"enumValue": 6,
-									"name": "Serviced"
-								}
-							]
-						}
+						"schema": "dtmi:MeshSystems:core:notification:alarmstate;1"
 					},
 					{
 						"name": "lvl",
 						"displayName": "Level",
-						"schema": {
-							"@type": "Enum",
-							"enumValues": [
-								{
-									"displayName": {
-										"en": "Critical"
-									},
-									"enumValue": 5,
-									"name": "Critical"
-								},
-								{
-									"name": "Error",
-									"enumValue": 4,
-									"displayName": {
-										"en": "Error"
-									},
-									"description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
-								},
-								{
-									"displayName": {
-										"en": "Warning"
-									},
-									"enumValue": 3,
-									"name": "Warning"
-								},
-								{
-									"displayName": {
-										"en": "Information"
-									},
-									"enumValue": 2,
-									"name": "Information",
-									"description": "Logs that track the general flow of the application. These logs should have long-term value"
-								},
-								{
-									"displayName": {
-										"en": "Debug"
-									},
-									"enumValue": 1,
-									"name": "Debug",
-									"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
-								},
-								{
-									"displayName": {
-										"en": "Trace"
-									},
-									"enumValue": 0,
-									"name": "Trace",
-									"description": "Logs that contain the most detailed messages. These messages are disabled by default."
-								}
-							],
-							"valueSchema": "integer"
-						}
+						"schema": "dtmi:MeshSystems:core:notification:loglevel;1"
 					}
 				]
 			}
@@ -354,58 +158,7 @@
 			},
 			"name": "LogLevel",
 			"writable": true,
-			"schema": {
-				"@type": "Enum",
-				"enumValues": [
-					{
-						"displayName": {
-							"en": "Critical"
-						},
-						"enumValue": 5,
-						"name": "Critical"
-					},
-					{
-						"name": "Error",
-						"enumValue": 4,
-						"displayName": {
-							"en": "Error"
-						},
-						"description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
-					},
-					{
-						"displayName": {
-							"en": "Warning"
-						},
-						"enumValue": 3,
-						"name": "Warning"
-					},
-					{
-						"displayName": {
-							"en": "Information"
-						},
-						"enumValue": 2,
-						"name": "Information",
-						"description": "Logs that track the general flow of the application. These logs should have long-term value"
-					},
-					{
-						"displayName": {
-							"en": "Debug"
-						},
-						"enumValue": 1,
-						"name": "Debug",
-						"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
-					},
-					{
-						"displayName": {
-							"en": "Trace"
-						},
-						"enumValue": 0,
-						"name": "Trace",
-						"description": "Logs that contain the most detailed messages. These messages are disabled by default."
-					}
-				],
-				"valueSchema": "integer"
-			}
+			"schema": "dtmi:MeshSystems:core:notification:loglevel;1"
 		},
 		{
 			"@type": "Command",
@@ -436,54 +189,7 @@
 								"en": "State"
 							},
 							"name": "State",
-							"schema": {
-								"@type": "Enum",
-								"valueSchema": "integer",
-								"enumValues": [
-									{
-										"displayName": {
-											"en": "Inactive"
-										},
-										"enumValue": 1,
-										"name": "Inactive"
-									},
-									{
-										"displayName": {
-											"en": "Active"
-										},
-										"enumValue": 2,
-										"name": "Active"
-									},
-									{
-										"displayName": {
-											"en": "Acknowledged"
-										},
-										"enumValue": 3,
-										"name": "Acknowledged"
-									},
-									{
-										"displayName": {
-											"en": "Cleared"
-										},
-										"enumValue": 4,
-										"name": "Cleared"
-									},
-									{
-										"displayName": {
-											"en": "Service Requested"
-										},
-										"enumValue": 5,
-										"name": "ServiceRequested"
-									},
-									{
-										"displayName": {
-											"en": "Serviced"
-										},
-										"enumValue": 6,
-										"name": "Serviced"
-									}
-								]
-							}
+							"schema": "dtmi:MeshSystems:core:notification:alarmstate;1"
 						}
 					]
 				}
@@ -530,6 +236,110 @@
 				"en": "Update All Alerts"
 			},
 			"name": "UpdateAllAlerts"
+		}
+	],
+	"schemas": [
+		{
+			"@id": "dtmi:MeshSystems:core:notification:loglevel;1",
+			"@type": "Enum",
+			"enumValues": [
+				{
+					"displayName": {
+						"en": "Critical"
+					},
+					"enumValue": 5,
+					"name": "Critical"
+				},
+				{
+					"name": "Error",
+					"enumValue": 4,
+					"displayName": {
+						"en": "Error"
+					},
+					"description": "Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a failure in the current activity, not an application-wide failure."
+				},
+				{
+					"displayName": {
+						"en": "Warning"
+					},
+					"enumValue": 3,
+					"name": "Warning"
+				},
+				{
+					"displayName": {
+						"en": "Information"
+					},
+					"enumValue": 2,
+					"name": "Information",
+					"description": "Logs that track the general flow of the application. These logs should have long-term value"
+				},
+				{
+					"displayName": {
+						"en": "Debug"
+					},
+					"enumValue": 1,
+					"name": "Debug",
+					"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
+				},
+				{
+					"displayName": {
+						"en": "Trace"
+					},
+					"enumValue": 0,
+					"name": "Trace",
+					"description": "Logs that contain the most detailed messages. These messages are disabled by default."
+				}
+			],
+			"valueSchema": "integer"
+		},
+		{
+			"@id": "dtmi:MeshSystems:core:notification:alarmstate;1",
+			"@type": "Enum",
+			"valueSchema": "integer",
+			"enumValues": [
+				{
+					"displayName": {
+						"en": "Inactive"
+					},
+					"enumValue": 1,
+					"name": "Inactive"
+				},
+				{
+					"displayName": {
+						"en": "Active"
+					},
+					"enumValue": 2,
+					"name": "Active"
+				},
+				{
+					"displayName": {
+						"en": "Acknowledged"
+					},
+					"enumValue": 3,
+					"name": "Acknowledged"
+				},
+				{
+					"displayName": {
+						"en": "Cleared"
+					},
+					"enumValue": 4,
+					"name": "Cleared"
+				},
+				{
+					"displayName": {
+						"en": "Service Requested"
+					},
+					"enumValue": 5,
+					"name": "ServiceRequested"
+				},
+				{
+					"displayName": {
+						"en": "Serviced"
+					},
+					"enumValue": 6,
+					"name": "Serviced"
+				}
+			]
 		}
 	],
 	"displayName": {
