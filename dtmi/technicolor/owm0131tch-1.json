@@ -82,7 +82,7 @@
 				{
 			"@type": "Component",
 			"displayName": {
-				"en": "Identification Sensor"
+				"en": "Digital Input Sensor"
 			},
 			"name": "rdisensor",
 			"schema": "dtmi:MeshSystems:ble:rdisensor;1"
