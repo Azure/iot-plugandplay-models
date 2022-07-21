@@ -29,7 +29,7 @@
 				"en": "Health"
 			},
 			"name": "devicehealth",
-			"schema": "dtmi:MeshSystems:core:devicehealth;1"
+			"schema": "dtmi:MeshSystems:core:devicehealth;2"
 		},
 		{
 			"@type": "Component",
