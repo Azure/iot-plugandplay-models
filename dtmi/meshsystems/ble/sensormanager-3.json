@@ -144,7 +144,7 @@
         "en": "ble Advertisement"
       },
       "name": "bleAdvertisement",
-      "description": "Publisher Advertisement",
+      "description": "Publisher Advertisement.",
       "schema": "string"
     },
     {
@@ -153,7 +153,7 @@
         "en": "bleMAC"
       },
       "name": "bleMAC",
-      "description": "48-bit Bluetooth MAC address",
+      "description": "The 48-bit Bluetooth MAC address.",
       "schema": "string"
     },
     {
@@ -162,7 +162,7 @@
         "en": "bleFwVersion"
       },
       "name": "bleFwVersion",
-      "description": "Bluetooth module's firmware version",
+      "description": "Bluetooth module's firmware version.",
       "schema": "string"
     },
     {
@@ -171,7 +171,7 @@
         "en": "Namespace Filter"
       },
       "name": "smNsFilter",
-      "description": "Process beacons that match any domain name filters in the dictionary",
+      "description": "Process beacons that match any domain name filters in the dictionary.",
       "writable": true,
       "schema": {
         "@type": "Map",
@@ -301,7 +301,7 @@
       "@type": "Property",
       "name": "assetStsInterval",
       "displayName": "Asset Status Interval",
-      "description": "Interval to report up-to-date devices in the asset database",
+      "description": "Interval to report up-to-date devices in the asset database.",
       "schema": "integer",
       "writable": true
     }

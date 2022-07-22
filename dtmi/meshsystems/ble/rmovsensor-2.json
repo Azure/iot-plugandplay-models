@@ -47,21 +47,7 @@
 							"en": "Value"
 						},
 						"name": "v",
-						"schema": {
-							"@type": "Object",
-							"displayName": {
-								"en": "Object"
-							},
-							"fields": [
-								{
-									"displayName": {
-										"en": "Movement"
-									},
-									"name": "m",
-									"schema": "dtmi:MeshSystems:ble:rmovsensor:status;1"
-								}
-							]
-						}
+						"schema": "dtmi:MeshSystems:ble:rmovsensor:status;1"
 					}
 				]
 			}
@@ -148,84 +134,7 @@
 						"en": "Configuration"
 					},
 					"name": "cfg",
-					"schema": {
-						"@type": "Object",
-						"displayName": {
-							"en": "Object"
-						},
-						"fields": [
-							{
-								"displayName": {
-									"en": "Device Name"
-								},
-								"name": "dvcName",
-								"schema": "string"
-							},
-							{
-								"displayName": {
-									"en": "Status Interval"
-								},
-								"name": "stsInterval",
-								"schema": "integer"
-							},
-							{
-								"displayName": {
-									"en": "Ingress Level"
-								},
-								"name": "iLvl",
-								"schema": "integer"
-							},
-							{
-								"displayName": {
-									"en": "Ingress Count"
-								},
-								"name": "iCnt",
-								"schema": "integer"
-							},
-							{
-								"displayName": {
-									"en": "Egress Level"
-								},
-								"name": "eLvl",
-								"schema": "integer"
-							},
-							{
-								"displayName": {
-									"en": "Egress Timeout"
-								},
-								"name": "eTmo",
-								"schema": "integer"
-							},
-							{
-								"displayName": {
-									"en": "Low Battery Level"
-								},
-								"name": "lbtLvl",
-								"schema": "double"
-							},
-							{
-								"displayName": {
-									"en": "Alert Levels"
-								},
-								"name": "aLvls",
-								"schema": {
-									"@type": "Object",
-									"displayName": {
-										"en": "Object"
-									},
-									"fields": [
-										{
-											"displayName": {
-												"en": "Movement"
-											},
-											"name": "m",
-											"schema": "dtmi:MeshSystems:ble:rmovsensor:config;1"
-										}
-									]
-								}
-							}
-						]
-					}
+					"schema": "dtmi:MeshSystems:ble:rmovsensor:config;1"
 				}
 			}
 		}

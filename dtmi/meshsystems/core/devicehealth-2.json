@@ -1,212 +1,215 @@
 {
-  "@id": "dtmi:MeshSystems:core:devicehealth;2",
-  "@context": ["dtmi:dtdl:context;2", "dtmi:iotcentral:context;2"],
-  "@type": "Interface",
-  "displayName": {
-    "en": "DeviceHealth"
-  },
-  "contents": [
-    {
-      "@type": [
-        "Telemetry",
-        "TimeSpan"
-      ],
-      "unit": "second",
-      "description": {
-        "en": "Accumulative elapsed seconds since power up"
-      },
-      "displayName": {
-        "en": "Runtime"
-      },
-      "name": "rt",
-      "schema": "long"
-    },
-    {
-      "@type": [
-        "Telemetry",
-        "Event"
-      ],
-      "displayName": {
-        "en": "Wakeup"
-      },
-      "name": "wu",
-      "schema": "string",
-      "description": "Event that occurs when the device reboots"
-    },
-    {
-      "@type": [
-        "Telemetry",
-        "Event"
-      ],
-      "displayName": {
-        "en": "Power Changed"
-      },
-      "name": "pwr",
-      "schema": "string",
-      "description": "Power restored, Battery backup or low battery"
-    },
-    {
-      "@type": [
-        "Telemetry",
-        "DataSize"
-      ],
-      "unit": "byte",
-      "displayName": {
-        "en": "Heap"
-      },
-      "name": "hp",
-      "description": "Memory usage",
-      "schema": "long"
-    },
-    {
-      "@type": "Telemetry",
-      "displayName": {
-        "en": "Location"
-      },
-      "name": "loc",
-      "schema": "geopoint",
-      "description": "Ground position computed from orbiting satellites."
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "Heartbeat"
-      },
-      "name": "Heartbeat",
-      "schema": "dateTime",
-      "writable": false
-    },
-    {
-      "@type": [
-        "Property",
-        "TimeSpan"
-      ],
-      "unit": "second",
-      "displayName": {
-        "en": "Heartbeat Interval"
-      },
-      "name": "HeartbeatInterval",
-      "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": [
-        "Property",
-        "TimeSpan"
-      ],
-      "unit": "second",
-      "displayName": {
-        "en": "Status Interval"
-      },
-      "name": "stsInval",
-      "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": "Command",
-      "displayName": {
-        "en": "Reboot"
-      },
-      "name": "Reboot",
-      "request": {
-        "@type": "CommandPayload",
-        "description": {
-          "en": "Seconds to wait before reboot"
-        },
-        "displayName": {
-          "en": "Wait"
-        },
-        "name": "Wait",
-        "schema": "integer"
-      }
-    },
-    {
-      "@type": "Command",
-      "displayName": {
-        "en": "Wink"
-      },
-      "name": "Wink"
-    },
-    {
-      "@type": [
-        "Property",
-        "Location"
-      ],
-      "displayName": {
-        "en": "Default Location"
-      },
-      "name": "DefaultLocation",
-      "schema": "geopoint",
-      "writable": true,
-      "description": "Use this default location while acquiring a 'fix' position"
-    },
-    {
-      "@type": "Command",
-      "displayName": {
-        "en": "Request Authentication"
-      },
-      "name": "getAuth",
-      "request": {
-        "name": "Request",
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "name": "Request",
-              "schema": "string"
-            }
-          ]
-        }
-      },
-      "response": {
-        "name": "Response",
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "name": "Response",
-              "schema": "string"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "@type": "Command",
-      "displayName": {
-        "en": "File Transfer"
-      },
-      "name": "FileTransfer",
-      "description": "Exchange workflow to request files from the cloud",
-      "request": {
-        "displayName": "Request",
-        "name": "Req",
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "displayName": "Target",
-              "name": "Target",
-              "schema": "string"
-            },
-            {
-              "displayName": "AuthKey",
-              "name": "AuthKey",
-              "schema": "string"
-            },
-            {
-              "displayName": "Blob SAS",
-              "name": "BlobSas",
-              "schema": "string"
-            },
-            {
-              "displayName": "Signature",
-              "name": "Md5",
-              "schema": "string"
-            }
-          ]
-        }
-      }
-    }
-  ]
+	"@id": "dtmi:MeshSystems:core:devicehealth;2",
+	"@context": [
+		"dtmi:dtdl:context;2",
+		"dtmi:iotcentral:context;2"
+	],
+	"@type": "Interface",
+	"displayName": {
+		"en": "DeviceHealth"
+	},
+	"contents": [
+		{
+			"@type": [
+				"Telemetry",
+				"TimeSpan"
+			],
+			"unit": "second",
+			"description": {
+				"en": "Accumulative elapsed seconds since power up."
+			},
+			"displayName": {
+				"en": "Runtime"
+			},
+			"name": "rt",
+			"schema": "long"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Event"
+			],
+			"displayName": {
+				"en": "Wakeup"
+			},
+			"name": "wu",
+			"schema": "string",
+			"description": "Event that occurs when the device reboots."
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Event"
+			],
+			"displayName": {
+				"en": "Power Changed"
+			},
+			"name": "pwr",
+			"schema": "string",
+			"description": "Power restored, Battery backup or low battery."
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"DataSize"
+			],
+			"unit": "byte",
+			"displayName": {
+				"en": "Heap"
+			},
+			"name": "hp",
+			"description": "Memory usage",
+			"schema": "long"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Location"
+			},
+			"name": "loc",
+			"schema": "geopoint",
+			"description": "Ground position computed from orbiting satellites."
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Heartbeat"
+			},
+			"name": "Heartbeat",
+			"schema": "dateTime",
+			"writable": false
+		},
+		{
+			"@type": [
+				"Property",
+				"TimeSpan"
+			],
+			"unit": "second",
+			"displayName": {
+				"en": "Heartbeat Interval"
+			},
+			"name": "HeartbeatInterval",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": [
+				"Property",
+				"TimeSpan"
+			],
+			"unit": "second",
+			"displayName": {
+				"en": "Status Interval"
+			},
+			"name": "stsInval",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Command",
+			"displayName": {
+				"en": "Reboot"
+			},
+			"name": "Reboot",
+			"request": {
+				"@type": "CommandPayload",
+				"description": {
+					"en": "Seconds to wait before reboot."
+				},
+				"displayName": {
+					"en": "Wait"
+				},
+				"name": "Wait",
+				"schema": "integer"
+			}
+		},
+		{
+			"@type": "Command",
+			"displayName": {
+				"en": "Wink"
+			},
+			"name": "Wink"
+		},
+		{
+			"@type": [
+				"Property",
+				"Location"
+			],
+			"displayName": {
+				"en": "Default Location"
+			},
+			"name": "DefaultLocation",
+			"schema": "geopoint",
+			"writable": true,
+			"description": "Use this default location while acquiring a 'fix' position."
+		},
+		{
+			"@type": "Command",
+			"displayName": {
+				"en": "Request Authentication"
+			},
+			"name": "getAuth",
+			"request": {
+				"name": "Request",
+				"schema": {
+					"@type": "Object",
+					"fields": [
+						{
+							"name": "Request",
+							"schema": "string"
+						}
+					]
+				}
+			},
+			"response": {
+				"name": "Response",
+				"schema": {
+					"@type": "Object",
+					"fields": [
+						{
+							"name": "Response",
+							"schema": "string"
+						}
+					]
+				}
+			}
+		},
+		{
+			"@type": "Command",
+			"displayName": {
+				"en": "File Transfer"
+			},
+			"name": "FileTransfer",
+			"description": "Exchange workflow to request files from the cloud.",
+			"request": {
+				"displayName": "Request",
+				"name": "Req",
+				"schema": {
+					"@type": "Object",
+					"fields": [
+						{
+							"displayName": "Target",
+							"name": "Target",
+							"schema": "string"
+						},
+						{
+							"displayName": "AuthKey",
+							"name": "AuthKey",
+							"schema": "string"
+						},
+						{
+							"displayName": "Blob SAS",
+							"name": "BlobSas",
+							"schema": "string"
+						},
+						{
+							"displayName": "Signature",
+							"name": "Md5",
+							"schema": "string"
+						}
+					]
+				}
+			}
+		}
+	]
 }

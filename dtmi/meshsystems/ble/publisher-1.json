@@ -11,7 +11,7 @@
         "en": "ble Advertisement"
       },
       "name": "bleAdvertisement",
-      "description": "Publisher Advertisement",
+      "description": "Publisher Advertisement.",
       "schema": {
         "@type": "Object",
         "fields": [
@@ -39,7 +39,7 @@
         "en": "bleFwVersion"
       },
       "name": "bleFwVersion",
-      "description": "Bluetooth module's firmware version",
+      "description": "Bluetooth module's firmware version.",
       "schema": "string"
     },
     {
@@ -48,7 +48,7 @@
         "en": "bleMAC"
       },
       "name": "bleMAC",
-      "description": "48-bit Bluetooth MAC address",
+      "description": "The 48-bit Bluetooth MAC address.",
       "schema": "string"
     }
   ]

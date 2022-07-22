@@ -271,7 +271,7 @@
 					},
 					"enumValue": 2,
 					"name": "Information",
-					"description": "Logs that track the general flow of the application. These logs should have long-term value"
+					"description": "Logs that track the general flow of the application. These logs should have long-term value."
 				},
 				{
 					"displayName": {
@@ -279,7 +279,7 @@
 					},
 					"enumValue": 1,
 					"name": "Debug",
-					"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value"
+					"description": "Logs that are used for interactive investigation during development. These logs should primarily contain information useful for debugging and have no long-term value."
 				},
 				{
 					"displayName": {

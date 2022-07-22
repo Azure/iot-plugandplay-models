@@ -1,68 +1,68 @@
 {
-  "@id": "dtmi:MeshSystems:device:ophelia;1",
-  "@context": "dtmi:dtdl:context;2",
-  "extends": "dtmi:MeshSystems:core:device;1",
-  "displayName": {
-    "en": "Ophelia"
-  },
-	"description": "Cellular, Wi-Fi and BLE guardian module",
-  "@type": "Interface",
-  "contents": [
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Device Information"
-      },
-      "name": "deviceinformation",
-      "schema": "dtmi:MeshSystems:core:deviceinformation;2"
-    },
-	{
-      "@type": "Component",
-      "displayName": {
-        "en": "Health"
-      },
-      "name": "devicehealth",
-      "schema": "dtmi:MeshSystems:core:devicehealth;2"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Notification"
-      },
-      "name": "notification",
-      "schema": "dtmi:MeshSystems:core:notification;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Cellular"
-      },
-      "name": "cellular",
-      "schema": "dtmi:MeshSystems:core:cellular;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Ethernet"
-      },
-      "name": "ethernet",
-      "schema": "dtmi:MeshSystems:core:ethernet;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "WiFi"
-      },
-      "name": "wifi",
-      "schema": "dtmi:MeshSystems:core:wifi;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Sensor Manager"
-      },
-      "name": "sensormanager",
-      "schema": "dtmi:MeshSystems:ble:sensormanager;2"
-    }
-  ]
+	"@id": "dtmi:MeshSystems:device:ophelia;1",
+	"@context": "dtmi:dtdl:context;2",
+	"extends": "dtmi:MeshSystems:core:device;1",
+	"displayName": {
+		"en": "Ophelia"
+	},
+	"description": "Cellular, Wi-Fi and BLE guardian module.",
+	"@type": "Interface",
+	"contents": [
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Device Information"
+			},
+			"name": "deviceinformation",
+			"schema": "dtmi:MeshSystems:core:deviceinformation;2"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Health"
+			},
+			"name": "devicehealth",
+			"schema": "dtmi:MeshSystems:core:devicehealth;2"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Notification"
+			},
+			"name": "notification",
+			"schema": "dtmi:MeshSystems:core:notification;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Cellular"
+			},
+			"name": "cellular",
+			"schema": "dtmi:MeshSystems:core:cellular;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Ethernet"
+			},
+			"name": "ethernet",
+			"schema": "dtmi:MeshSystems:core:ethernet;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "WiFi"
+			},
+			"name": "wifi",
+			"schema": "dtmi:MeshSystems:core:wifi;1"
+		},
+		{
+			"@type": "Component",
+			"displayName": {
+				"en": "Sensor Manager"
+			},
+			"name": "sensormanager",
+			"schema": "dtmi:MeshSystems:ble:sensormanager;2"
+		}
+	]
 }

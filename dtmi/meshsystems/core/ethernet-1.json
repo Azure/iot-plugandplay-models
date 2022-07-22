@@ -7,7 +7,7 @@
         "Telemetry",
         "TimeSpan"
       ],
-      "description": "Session time since connected",
+      "description": "Session time since connected.",
       "displayName": "Session Time",
       "name": "ssc",
       "unit": "second",
@@ -18,7 +18,7 @@
         "Telemetry",
         "DataSize"
       ],
-      "description": "Bytes sent",
+      "description": "Bytes sent.",
       "displayName": "Tx",
       "name": "tx",
       "unit": "byte",
@@ -29,7 +29,7 @@
         "Telemetry",
         "DataSize"
       ],
-      "description": "Bytes received",
+      "description": "Bytes received.",
       "displayName": "Rx",
       "name": "rx",
       "unit": "byte",
@@ -39,14 +39,14 @@
       "@type": "Property",
       "displayName": "FrequencyMHz",
       "name": "FrequencyMHz",
-      "description": "Frequency of the connection in megahertz",
+      "description": "Frequency of the connection in megahertz.",
       "schema": "integer",
       "writable": false
     },
     {
       "@type": "Property",
       "displayName": "MAC",
-      "description": "Media Access Control address",
+      "description": "Media Access Control address.",
       "name": "MAC",
       "schema": "string",
       "writable": false
@@ -54,7 +54,7 @@
     {
       "@type": "Property",
       "displayName": "IP Address",
-      "description": "Internet Protocol address",
+      "description": "Internet Protocol address.",
       "name": "IPAddress",
       "schema": "string",
       "writable": false
@@ -65,7 +65,7 @@
         "TimeSpan"
       ],
       "displayName": "Status Interval",
-      "description": "Interval between status updates in seconds",
+      "description": "Interval between status updates in seconds.",
       "name": "StatusInterval",
       "schema": "integer",
       "unit": "second",
