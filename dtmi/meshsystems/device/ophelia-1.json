@@ -1,7 +1,6 @@
 {
 	"@id": "dtmi:MeshSystems:device:ophelia;1",
 	"@context": "dtmi:dtdl:context;2",
-	"extends": "dtmi:MeshSystems:core:device;1",
 	"displayName": {
 		"en": "Ophelia"
 	},

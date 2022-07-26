@@ -1,7 +1,6 @@
 {
 	"@id": "dtmi:technicolor:owm0131tch;1",
 	"@context": "dtmi:dtdl:context;2",
-	"extends": "dtmi:MeshSystems:core:device;1",
 	"displayName": {
 		"en": "OWM0131TCH"
 	},
