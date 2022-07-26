@@ -9,107 +9,123 @@
 			},
 			"name": "st",
 			"schema": {
-				"@type": "Object",
-				"displayName": {
-					"en": "Object"
+				"@type": "Map",
+				"mapKey": {
+					"displayName": {
+						"en": "Key"
+					},
+					"name": "key",
+					"schema": "string"
 				},
-				"fields": [
-					{
-						"displayName": {
-							"en": "Device ID"
-						},
-						"name": "dvcId",
-						"schema": "string"
+				"mapValue": {
+					"displayName": {
+						"en": "Value"
 					},
-					{
+					"name": "value",
+					"schema": {
+						"@type": "Object",
 						"displayName": {
-							"en": "Signal Strength"
+							"en": "Object"
 						},
-						"name": "sig",
-						"schema": "integer"
-					},
-					{
-						"displayName": {
-							"en": "Battery Level"
-						},
-						"name": "bl",
-						"schema": "double"
-					},
-					{
-						"displayName": {
-							"en": "Low Battery"
-						},
-						"name": "lbt",
-						"schema": "boolean"
-					},
-					{
-						"displayName": {
-							"en": "Value"
-						},
-						"name": "v",
-						"schema": {
-							"@type": "Object",
-							"displayName": {
-								"en": "Object"
+						"fields": [
+							{
+								"displayName": {
+									"en": "Device ID"
+								},
+								"name": "dvcId",
+								"schema": "string"
 							},
-							"fields": [
-								{
+							{
+								"displayName": {
+									"en": "Signal Strength"
+								},
+								"name": "sig",
+								"schema": "integer"
+							},
+							{
+								"displayName": {
+									"en": "Battery Level"
+								},
+								"name": "bl",
+								"schema": "double"
+							},
+							{
+								"displayName": {
+									"en": "Low Battery"
+								},
+								"name": "lbt",
+								"schema": "boolean"
+							},
+							{
+								"displayName": {
+									"en": "Value"
+								},
+								"name": "v",
+								"schema": {
+									"@type": "Object",
 									"displayName": {
-										"en": "Digital Input"
+										"en": "Object"
 									},
-									"name": "di",
-									"schema": {
-										"@type": "Object",
-										"fields": [
-											{
-												"displayName": {
-													"en": "Value"
-												},
-												"name": "v",
-												"schema": "integer"
+									"fields": [
+										{
+											"displayName": {
+												"en": "Digital Input"
 											},
-											{
-												"displayName": {
-													"en": "Activation Counts"
-												},
-												"name": "actCnt",
-												"schema": "integer"
-											},
-											{
-												"displayName": {
-													"en": "On Time"
-												},
-												"name": "onTm",
-												"schema": "integer"
-											},
-											{
-												"displayName": {
-													"en": "Off Time"
-												},
-												"name": "offTm",
-												"schema": "integer"
-											},
-											{
-												"displayName": {
-													"en": "On Alert"
-												},
-												"name": "onAlert",
-												"schema": "boolean"
-											},
-											{
-												"displayName": {
-													"en": "Off Alert"
-												},
-												"name": "offAlert",
-												"schema": "boolean"
+											"name": "di",
+											"schema": {
+												"@type": "Object",
+												"fields": [
+													{
+														"displayName": {
+															"en": "Value"
+														},
+														"name": "v",
+														"schema": "integer"
+													},
+													{
+														"displayName": {
+															"en": "Activation Counts"
+														},
+														"name": "actCnt",
+														"schema": "integer"
+													},
+													{
+														"displayName": {
+															"en": "On Time"
+														},
+														"name": "onTm",
+														"schema": "integer"
+													},
+													{
+														"displayName": {
+															"en": "Off Time"
+														},
+														"name": "offTm",
+														"schema": "integer"
+													},
+													{
+														"displayName": {
+															"en": "On Alert"
+														},
+														"name": "onAlert",
+														"schema": "boolean"
+													},
+													{
+														"displayName": {
+															"en": "Off Alert"
+														},
+														"name": "offAlert",
+														"schema": "boolean"
+													}
+												]
 											}
-										]
-									}
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
-				]
+				}
 			}
 		},
 		{
