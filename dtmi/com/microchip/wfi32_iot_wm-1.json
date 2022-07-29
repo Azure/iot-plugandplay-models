@@ -1,0 +1,222 @@
+{
+    "@id": "dtmi:com:Microchip:WFI32_IoT_WM;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "description": {
+                "en": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor"
+            },
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "integer",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Illuminance"
+            ],
+            "description": {
+                "en": "Brightness in illuminance from Texas Instruments OPT3001 ambient light sensor"
+            },
+            "displayName": {
+                "en": "Brightness from light sensor"
+            },
+            "name": "light",
+            "schema": "integer",
+            "unit": "lux"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Event triggered when button is pressed"
+            },
+            "displayName": {
+                "en": "SW1/SW2 button push event"
+            },
+            "name": "button_event",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "button_name",
+                        "schema": "string"
+                    },
+                    {
+                        "name": "press_count",
+                        "schema": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Returns current state of the Blue LED. If True, the Blue LED is on and the WiFi AP is connected."
+            },
+            "displayName": {
+                "en": "Blue LED state"
+            },
+            "name": "led_b",
+            "schema": "dtmi:com:Microchip:WFI32_IoT_WM:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "The current state of the Green LED. When it is on, WFI32 IoT is connected to Cloud."
+            },
+            "displayName": {
+                "en": "Green LED state"
+            },
+            "name": "led_g",
+            "schema": "dtmi:com:Microchip:WFI32_IoT_WM:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "The current state of the Red LED. When it is on or blinking, WFI32 IoT experienced error(s)."
+            },
+            "displayName": {
+                "en": "Red LED state"
+            },
+            "name": "led_r",
+            "schema": "dtmi:com:Microchip:WFI32_IoT_WM:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Set the state of the Yellow LED.  On, off, or blink."
+            },
+            "displayName": {
+                "en": "Yellow LED state"
+            },
+            "name": "led_y",
+            "schema": "dtmi:com:Microchip:WFI32_IoT_WM:LedState;1",
+            "writable": true
+        },
+        {
+            "@type": [
+                "Property",
+                "TimeSpan"
+            ],
+            "description": {
+                "en": "Sets interval to send telemetry in seconds"
+            },
+            "displayName": {
+                "en": "Set Telemetry Interval"
+            },
+            "name": "telemetryInterval",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Reboot WFI32 IoT with the specified delay.  e.g. PT5S for 5 seconds."
+            },
+            "displayName": {
+                "en": "Reboot"
+            },
+            "name": "reboot",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Number of seconds to delay reboot. e.g. PT5S for 5 seconds."
+                },
+                "displayName": {
+                    "en": "Reboot Delay"
+                },
+                "name": "delay",
+                "schema": "duration"
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from reboot handler."
+                            },
+                            "name": "status",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Number of seconds to delay the reboot."
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "description": {
+        "en": "Reports device temperature, light intensity, and the current state of the 2 buttons & 4 LEDs.  Provides ability to turn on/off any of the 4 LEDs."
+    },
+    "displayName": {
+        "en": "WFI32-IoT WM"
+    },
+    "schemas": [
+        {
+            "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "comment": "LED is in the On state.",
+                    "description": {
+                        "en": "LED is turned on."
+                    },
+                    "displayName": {
+                        "en": "LED On"
+                    },
+                    "enumValue": 1,
+                    "name": "On"
+                },
+                {
+                    "comment": "LED is in the Off state.",
+                    "description": {
+                        "en": "LED is turned Off."
+                    },
+                    "displayName": {
+                        "en": "LED Off"
+                    },
+                    "enumValue": 2,
+                    "name": "Off"
+                },
+                {
+                    "comment": "LED is blinking.",
+                    "description": {
+                        "en": "LED is blinking."
+                    },
+                    "displayName": {
+                        "en": "LED Blinking"
+                    },
+                    "enumValue": 3,
+                    "name": "Blink"
+                }
+            ],
+            "valueSchema": "integer"
+        }
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+  }
