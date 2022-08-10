@@ -1,0 +1,210 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:util;2",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Cellular"
+            },
+            "name": "cellular",
+            "schema": {
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema;2",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells;2",
+                        "name": "cells",
+                        "schema": {
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema;2",
+                            "@type": "Object",
+                            "displayName": {
+                                "en": "Object"
+                            },
+                            "fields": [
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:enable;2",
+                                    "displayName": {
+                                        "en": "Cells Enabled"
+                                    },
+                                    "name": "enable",
+                                    "schema": "boolean"
+                                },
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:cells:schema:period;2",
+                                    "displayName": {
+                                        "en": "Cells Period"
+                                    },
+                                    "name": "period",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal;2",
+                        "name": "signal",
+                        "schema": {
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema;2",
+                            "@type": "Object",
+                            "displayName": {
+                                "en": "Object"
+                            },
+                            "fields": [
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:enable;2",
+                                    "displayName": {
+                                        "en": "Signal Enabled"
+                                    },
+                                    "name": "enable",
+                                    "schema": "boolean"
+                                },
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:signal:schema:period;2",
+                                    "displayName": {
+                                        "en": "Signal Period"
+                                    },
+                                    "name": "period",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics;2",
+                        "name": "statistics",
+                        "schema": {
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema;2",
+                            "@type": "Object",
+                            "displayName": {
+                                "en": "Object"
+                            },
+                            "fields": [
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:enable;2",
+                                    "displayName": {
+                                        "en": "Statistics Enabled"
+                                    },
+                                    "name": "enable",
+                                    "schema": "boolean"
+                                },
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:cellular:schema:statistics:schema:period;2",
+                                    "displayName": {
+                                        "en": "Statistics Period"
+                                    },
+                                    "name": "period",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Sim"
+            },
+            "name": "sim",
+            "schema": {
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema;2",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info;2",
+                        "displayName": {
+                            "en": "Sim Info"
+                        },
+                        "name": "info",
+                        "schema": {
+                            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema;2",
+                            "@type": "Object",
+                            "displayName": {
+                                "en": "Object"
+                            },
+                            "fields": [
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:enable;2",
+                                    "displayName": {
+                                        "en": "Sim Info Enable"
+                                    },
+                                    "name": "enable",
+                                    "schema": "boolean"
+                                },
+                                {
+                                    "@id": "dtmi:sierrawireless:octave:mangohyellow:util:sim:schema:info:schema:period;2",
+                                    "displayName": {
+                                        "en": "Sim Info Period"
+                                    },
+                                    "name": "period",
+                                    "schema": "double"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Time"
+            },
+            "name": "time",
+            "schema": {
+                "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema;2",
+                "@type": "Object",
+                "displayName": {
+                    "en": "Object"
+                },
+                "fields": [
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:enable;2",
+                        "displayName": {
+                            "en": "Time Enable"
+                        },
+                        "name": "enable",
+                        "schema": "boolean"
+                    },
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:period;2",
+                        "displayName": {
+                            "en": "Time Period"
+                        },
+                        "name": "period",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:sierrawireless:octave:mangohyellow:util:time:schema:offset;2",
+                        "displayName": {
+                            "en": "Time Offset"
+                        },
+                        "name": "offset",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "displayName": {
+        "en": "Octave Utils"
+    }
+}

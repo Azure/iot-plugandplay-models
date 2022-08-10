@@ -1,0 +1,22 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azure:iot:deviceUpdateModel;1",
+  "@type": "Interface",
+  "displayName": "Device Update Model version 1",
+  "description": "Device Update Model version 1 supports device update contract model version 1, device information interface version 1 and diagnostic interface version 1.",
+  "extends": "dtmi:azure:iot:deviceUpdateContractModel;1",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:iot:diagnosticInformation;1",
+      "name": "diagnosticInformation",
+      "displayName": "Diagnostic Information Interface version 1"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information"
+    }
+  ]
+}
