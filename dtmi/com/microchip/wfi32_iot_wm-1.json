@@ -238,20 +238,20 @@
       "@type": "Enum",
       "enumValues": [
         {
-          "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:On;1",
-          "displayName": {
-            "en": "LED On"
-          },
-          "enumValue": 0,
-          "name": "On"
-        },
-        {
           "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:Off;1",
           "displayName": {
             "en": "LED Off"
           },
-          "enumValue": 1,
+          "enumValue": 0,
           "name": "Off"
+        },
+        {
+          "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:On;1",
+          "displayName": {
+            "en": "LED On"
+          },
+          "enumValue": 1,
+          "name": "On"
         },
         {
           "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:Blink;1",
