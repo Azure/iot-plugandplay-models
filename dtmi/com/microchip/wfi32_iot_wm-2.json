@@ -215,6 +215,57 @@
       }
     },
     {
+        "@type": "Command",
+        "description": {
+            "en": "Send a text message to WFI32-IoT"
+        },
+        "displayName": {
+            "en": "Send Message"
+        },
+        "name": "sendMsg",
+        "request": {
+            "@type": "CommandPayload",
+            "description": {
+                "en": "Text message to send to WFI32-IoT"
+            },
+            "displayName": {
+                "en": "Message"
+            },
+            "name": "payload",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "displayName": {
+                            "en": "String to send"
+                        },
+                        "name": "sendMsgString",
+                        "schema": "string"
+                    }
+                ]
+            }
+        },
+        "response": {
+            "@type": "CommandPayload",
+            "displayName": {
+                "en": "Response for command"
+            },
+            "name": "response",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "displayName": {
+                            "en": "Message from send message handler"
+                        },
+                        "name": "status",
+                        "schema": "string"
+                    }
+                ]
+            }
+        }
+    },
+    {
       "@id": "dtmi:com:Microchip:WFI32_IoT_WM:press_count;1",
       "@type": [
         "Telemetry"
