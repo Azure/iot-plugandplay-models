@@ -1,0 +1,58 @@
+﻿{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boatusers;2",
+  "@type": "Interface",
+  "displayName": "BUsersGeolocation",
+  "description": "Reports current location and provides desired location control.",
+  "contents": [
+    {
+      "@type": [
+        "Property"
+      ],
+      "name": "switchLocationInfo",
+      "displayName": "switchLocationInfo",
+      "description": "switchLocation description",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Location"
+      ],
+      "name": "locationInfoProp",
+      "displayName": "LocationInfoprop",
+      "description": "Location Prop description",
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "lon",
+            "schema": "float"
+          },
+          {
+            "name": "lat",
+            "schema": "float"
+          },
+          {
+            "name": "alt",
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Location"
+      ],
+      "name": "locationInfo",
+      "displayName": "LocationInfo",
+      "description": "Location description",
+      "schema": "point"
+    }
+  ]
+
+}
+
