@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:Microchip:WFI32_IoT_WM;1",
+  "@id": "dtmi:com:Microchip:WFI32_IoT_WM;2",
   "@type": "Interface",
   "contents": [
     {
@@ -11,9 +11,9 @@
         "en": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor"
       },
       "displayName": {
-        "en": "Ambient Temperature"
+        "en": "Temperature (WFI32-IoT)"
       },
-      "name": "temperature",
+      "name": "WFI32IoT_temperature",
       "schema": "integer",
       "unit": "degreeCelsius"
     },
@@ -26,11 +26,59 @@
         "en": "Brightness in illuminance from Texas Instruments OPT3001 ambient light sensor"
       },
       "displayName": {
-        "en": "Brightness from Light Sensor"
+        "en": "Brightness from Light Sensor (WFI32-IoT)"
       },
-      "name": "light",
+      "name": "WFI32IoT_light",
       "schema": "integer",
       "unit": "lux"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": {
+          "en": "Pressure (ULP Click)"
+        },
+      "name": "ULP_pressure",
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+          "en": "Temperature (ULP Click)"
+        },
+      "name": "ULP_temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "displayName": {
+          "en": "Pressure (VAV Click)"
+        },
+      "name": "VAV_pressure",
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+          "en": "Temperature (VAV Click)"
+        },
+      "name": "VAV_temperature",
+      "schema": "integer",
+      "unit": "degreeCelsius"
     },
     {
       "@type": "Telemetry",
@@ -70,7 +118,7 @@
     {
       "@type": "Property",
       "description": {
-        "en": "The current state of the Green LED. When it is on, WFI32 IoT is connected to Cloud."
+        "en": "The current state of the Green LED. When it is on, WFI32-IoT is connected to Cloud."
       },
       "displayName": {
         "en": "Green LED state"
@@ -82,7 +130,7 @@
     {
       "@type": "Property",
       "description": {
-        "en": "The current state of the Red LED. When it is on or blinking, WFI32 IoT experienced error(s)."
+        "en": "The current state of the Red LED. When it is on or blinking, WFI32-IoT has experienced error condition(s)."
       },
       "displayName": {
         "en": "Red LED state"
@@ -94,7 +142,7 @@
     {
       "@type": "Property",
       "description": {
-        "en": "Set the state of the Yellow LED.  On, off, or blink."
+        "en": "Set the state of the Yellow LED (Off, On, or Blink)"
       },
       "displayName": {
         "en": "Yellow LED state"
@@ -179,7 +227,7 @@
     }
   ],
   "description": {
-    "en": "Reports device temperature, light intensity, and the current state of the 2 buttons & 4 LEDs.  Provides ability to turn on/off any of the 4 LEDs."
+    "en": "Reports device temperature, light intensity, and the current state of the 2 user buttons & 4 LEDs."
   },
   "displayName": {
     "en": "WFI32-IoT WM"
@@ -190,6 +238,14 @@
       "@type": "Enum",
       "enumValues": [
         {
+          "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:Off;1",
+          "displayName": {
+            "en": "LED Off"
+          },
+          "enumValue": 0,
+          "name": "Off"
+        },
+        {
           "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:On;1",
           "displayName": {
             "en": "LED On"
@@ -198,19 +254,11 @@
           "name": "On"
         },
         {
-          "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:Off;1",
-          "displayName": {
-            "en": "LED Off"
-          },
-          "enumValue": 2,
-          "name": "Off"
-        },
-        {
           "@id": "dtmi:com:Microchip:WFI32_IoT_WM:LedState:Blink;1",
           "displayName": {
             "en": "LED Blinking"
           },
-          "enumValue": 3,
+          "enumValue": 2,
           "name": "Blink"
         }
       ],
