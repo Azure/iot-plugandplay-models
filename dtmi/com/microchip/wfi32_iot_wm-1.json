@@ -94,7 +94,7 @@
     {
       "@type": "Property",
       "description": {
-        "en": "Set the state of the Yellow LED (Off, On, or Blink)"
+        "en": "Set the state of the Yellow LED.  On, off, or blink."
       },
       "displayName": {
         "en": "Yellow LED state"
