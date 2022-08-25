@@ -53,7 +53,7 @@
           "en": "Temperature (ULP Click)"
         },
       "name": "ULP_temperature",
-      "schema": "integer",
+      "schema": "double",
       "unit": "degreeCelsius"
     },
     {
@@ -77,7 +77,7 @@
           "en": "Temperature (VAV Click)"
         },
       "name": "VAV_temperature",
-      "schema": "integer",
+      "schema": "double",
       "unit": "degreeCelsius"
     },
     {
