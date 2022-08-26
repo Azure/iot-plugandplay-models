@@ -8,7 +8,7 @@
         "Temperature"
       ],
       "description": {
-        "en": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor"
+        "en": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor."
       },
       "displayName": {
         "en": "Temperature (WFI32-IoT)"
@@ -23,7 +23,7 @@
         "Illuminance"
       ],
       "description": {
-        "en": "Brightness in illuminance from Texas Instruments OPT3001 ambient light sensor"
+        "en": "Brightness in illuminance from Texas Instruments OPT3001 ambient light sensor."
       },
       "displayName": {
         "en": "Brightness from Light Sensor (WFI32-IoT)"
@@ -142,7 +142,7 @@
     {
       "@type": "Property",
       "description": {
-        "en": "Set the state of the Yellow LED (Off, On, or Blink)"
+        "en": "Set the state of the Yellow LED (Off, On, or Blink)."
       },
       "displayName": {
         "en": "Yellow LED state"
@@ -157,7 +157,7 @@
         "TimeSpan"
       ],
       "description": {
-        "en": "Sets interval to send telemetry in seconds"
+        "en": "Sets interval to send telemetry in seconds."
       },
       "displayName": {
         "en": "Telemetry Interval"
@@ -170,7 +170,7 @@
     {
       "@type": "Command",
       "description": {
-        "en": "Reboot WFI32 IoT with the specified delay.  e.g. PT5S for 5 seconds."
+        "en": "Reboot WFI32 IoT with the specified delay (e.g. PT5S for 5 seconds)."
       },
       "displayName": {
         "en": "Reboot"
@@ -179,7 +179,7 @@
       "request": {
         "@type": "CommandPayload",
         "description": {
-          "en": "Number of seconds to delay reboot. e.g. PT5S for 5 seconds."
+          "en": "Number of seconds to delay reboot (e.g. PT5S for 5 seconds)."
         },
         "displayName": {
           "en": "Reboot Delay"
@@ -198,14 +198,14 @@
           "fields": [
             {
               "displayName": {
-                "en": "Message from reboot handler."
+                "en": "Message from reboot handler"
               },
               "name": "status",
               "schema": "string"
             },
             {
               "displayName": {
-                "en": "Number of seconds to delay the reboot."
+                "en": "Number of seconds to delay the reboot"
               },
               "name": "delay",
               "schema": "integer"
@@ -217,7 +217,7 @@
     {
         "@type": "Command",
         "description": {
-            "en": "Send a text message to WFI32-IoT"
+            "en": "Send a text message for the WFI32-IoT to receive and process."
         },
         "displayName": {
             "en": "Send Message"
