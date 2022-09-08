@@ -130,8 +130,8 @@
                    "enumValue": "present"
                  },
                  {
-                   "name": "notPresent",
-                   "enumValue": "notPresent"
+                   "name": "absent",
+                   "enumValue": "absent"
                  }
                ]
              }
