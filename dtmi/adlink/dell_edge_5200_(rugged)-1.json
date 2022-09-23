@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+		"@id": "dtmi:DELL:Dell_Edge_5200_(Rugged);1",
+		"@type": "Interface",
+    "displayName": "Dell-Edge-5200-(Rugged)",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
+        }
+    ]
+}
