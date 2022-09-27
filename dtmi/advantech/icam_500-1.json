@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:Advantech:ICAM_500;1",
+  "@type": "Interface",
+  "displayName": "ICAM-500",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceInfo",
+      "schema": "dtmi:Advantech:JetsonDeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "thermalZones",
+      "schema": "dtmi:Advantech:Jetsonthermal_zones;1"
+    }
+  ],
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}

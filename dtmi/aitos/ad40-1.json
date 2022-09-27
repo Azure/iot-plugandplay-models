@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:aitos:AD40;1",
+  "@type": "Interface",
+  "displayName": "AD40",
+  "description": "Implements the interface for the AD40.",
+  "contents": [
+
+    {
+      "@type":  "Property" ,
+      "description": "Controls how often telemetry messages are sent from the device to the cloud solution.  Note this value can be temporarily overwritten by the setSensorPollTime direct method.",
+      "displayName": "Control telemetry transmit interval",
+      "name": "sensorPollPeriod",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type":  "Property" ,
+      "description": "Controls the on-board user led, true == ON, false == OFF.",
+      "displayName": "Control User LED",
+      "name": "userLed",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type":  "Property" ,
+      "description": "Controls the on-board sensor element, true == open, false == close.",
+      "displayName": "Control sensor switch",
+      "name": "sensorSwitch",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type":  "Property" ,
+      "description": "Read only, application version reported by the application.",
+      "displayName": "Application Version String",
+      "name": "versionString",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type":  "Property" ,
+      "description": "Read only, manufacturer reported by the application.",
+      "displayName": "Device Manufacturer",
+      "name": "manufacturer",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type":  "Property" ,
+      "description": "Read only, device model reported by the application.",
+      "displayName": "Device Model",
+      "name": "model",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Command",
+      "name": "setSensorPollTime",
+      "description": "Modifies how often the device polls the connected sensors.  Note this value is not persistant across a reset.",
+      "displayName": "Set Sensor Poll Time",
+      "request": {
+        "name": "setSensorPollTime",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "pollTime",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

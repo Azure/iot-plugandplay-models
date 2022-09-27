@@ -1,0 +1,68 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:sgs:STAS_PLUS;1",
+  "@type": "Interface",
+  "displayName": "STAS_PLUS",
+  "description": "Report the current oil quality data and oil iron content distribution data, and Get Log for STAS-PLUS.",
+  "contents": [
+    {
+      "@type": [
+        "Property",
+        "SP_Name"
+      ],
+      "name": "modelnum",
+      "displayName": "Plus Model",
+      "description": "Identification model.",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Property",
+        "SP_Temper"
+      ],
+      "name": "sptemperaturet1",
+      "displayName": "Thermography",
+      "description": "Record temperature channel 1.",
+      "schema": "string"
+    },
+    {
+      "@type": [
+        "Property",
+        "SP_Temper"
+      ],
+      "name": "sptemperatureT2",
+      "displayName": "Thermography",
+      "description": "Record temperature channel 2.",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "SP_Temper"
+      ],
+      "name": "sptemperaturet3",
+      "displayName": "Thermography",
+      "description": "Record temperature channel 3.",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "SP_Message"
+      ],
+      "name": "spmessage",
+      "displayName": "PLUS Message",
+      "description": "Logging PLUS messages.",
+      "schema": "string"
+    },
+
+    {
+     "@type": "Command",
+      "name": "getLastErrLog",
+      "response": {
+        "name": "ErrLog",
+        "schema": "string"
+      }
+    }
+  ]
+}

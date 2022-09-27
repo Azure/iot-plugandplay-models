@@ -1,0 +1,178 @@
+{
+	"@id": "dtmi:tartabit:Generic;1",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Generic Device"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"contents": [
+		{
+			"@type": [
+				"Telemetry",
+				"Event"
+			],
+			"displayName": {
+				"en": "Event"
+			},
+			"name": "event",
+			"schema": "string"
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Location"
+			],
+			"displayName": {
+				"en": "Location"
+			},
+			"name": "location",
+			"schema": "geopoint"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Address"
+			},
+			"name": "address",
+			"schema": "string"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Sensors"
+			},
+			"name": "sensors",
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "sensor",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": {
+						"@type": "Object",
+						"fields": [
+							{
+								"displayName": {
+									"en": "Number"
+								},
+								"name": "number",
+								"schema": "double"
+							},
+							{
+								"displayName": {
+									"en": "String"
+								},
+								"name": "string",
+								"schema": "string"
+							},
+							{
+								"displayName": {
+									"en": "Boolean"
+								},
+								"name": "boolean",
+								"schema": "boolean"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Last Known Address"
+			},
+			"name": "lastKnownAddress",
+			"schema": "string",
+			"writable": false
+		},
+		{
+			"@type": [
+				"Property",
+				"Location"
+			],
+			"displayName": {
+				"en": "Last Known Location"
+			},
+			"name": "lastKnownLocation",
+			"schema": "geopoint"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Configuration"
+			},
+			"name": "config",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "param",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": "string"
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Versions"
+			},
+			"name": "versions",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "component",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "version",
+					"schema": "string"
+				}
+			}
+		},
+		{
+			"@type": "Command",
+			"name": "reboot",
+			"displayName": {
+				"en": "Reboot"
+			},
+			"description": "Reboot the device"
+		},
+		{
+			"@type": "Command",
+			"name": "locate",
+			"displayName": {
+				"en": "Locate"
+			},
+			"description": "Locate the device"
+		},
+		{
+			"@type": "Command",
+			"name": "send",
+			"displayName": {
+				"en": "Send Command"
+			},
+			"description": "Send a command to the device",
+			"request": {
+				"name": "args",
+				"displayName": "Arguments",
+				"schema": "string"
+			},
+			"response": {
+				"name": "result",
+				"displayName": "Result",
+				"schema": "string"
+			}
+		}
+	]
+}
