@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-		"@id": "dtmi:DELL:Dell_Edge_5200_(Rugged);1",
+		"@id": "dtmi:DELL:Dell_Edge_5200_Rugged;1",
 		"@type": "Interface",
-    "displayName": "Dell-Edge-5200-(Rugged)",
+    "displayName": "Dell-Edge-5200-Rugged",
     "contents": [
         {
             "@type": "Component",
