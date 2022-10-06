@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:sierrawireless:octave:mangohyellow:buzzer;2",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:buzzer:enable;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Buzzer Enable"
+            },
+            "name": "enable",
+            "schema": "boolean",
+            "writable": true
+        },
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:buzzer:percent;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Buzzer Percentage"
+            },
+            "name": "percent",
+            "schema": "double",
+            "writable": true
+        },
+        {
+            "@id": "dtmi:sierrawireless:octave:mangohyellow:buzzer:period;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "Buzzer Period"
+            },
+            "name": "period",
+            "schema": "double",
+            "writable": true
+        }
+    ],
+    "displayName": {
+        "en": "buzzer"
+    }
+}

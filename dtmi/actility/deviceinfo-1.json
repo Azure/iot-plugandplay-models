@@ -1,0 +1,134 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Actility:DeviceInfo;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SNR;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SNR"
+        },
+        "name": "SNR",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:RSSI;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "RSSI"
+        },
+        "name": "RSSI",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SF;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SF"
+        },
+        "name": "SF",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:time;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Time"
+        },
+        "name": "time",
+        "schema": "dateTime"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:horizontalAccuracy;1",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Horizontal accuracy"
+        },
+        "name": "horizontalAccuracy",
+        "schema": "geopoint"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:baseStationId;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Base Station ID"
+        },
+        "name": "baseStationId",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:sequenceNumber;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Sequence number"
+        },
+        "name": "sequenceNumber",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:payloadEncoded;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Payload encoded"
+        },
+        "name": "payloadEncoded",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:antennaPosition;1",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Antenna position"
+        },
+        "name": "antennaPosition",
+        "schema": "geopoint"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:batteryLevel;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Battery Level"
+        },
+        "name": "batteryLevel",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:model;1",
+        "@type": "Property",
+        "comment": "Device model name or ID. Ex. Surface Book 2.",
+        "displayName": {
+          "en": "Device model"
+        },
+        "name": "model",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:manufacturer;1",
+        "@type": "Property",
+        "comment": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso.",
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "Interface"
+    }
+  }

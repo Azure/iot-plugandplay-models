@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
+  ],
+  "@id": "dtmi:quectel:common:location;1",
+  "@type": "Interface",
+  "displayName": "Location",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Location"
+      ],
+      "displayName": "Location",
+      "name": "geolocation",
+      "schema": "geopoint"
+    }
+  ]
+}

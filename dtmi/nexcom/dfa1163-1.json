@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:DFA1163;1",
+  "@type": "Interface",
+  "displayName": "DFA1163",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+    }
+  ]
+}

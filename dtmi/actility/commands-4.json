@@ -1,0 +1,264 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Actility:Commands;4",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:Actility:Commands:SetGeolocationTechnology;3",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set geolocation strategy (main operating mode)"
+        },
+        "description": {
+          "en": "Set the geolocation technologies that can be used for the main operating mode, among GNSS, LP-GNSS, WiFi scanning, BLE beacon scanning."
+        },
+        "name": "SetGeolocationTechnology",
+        "request": {
+          "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request;1",
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "SetGeolocationTechnology"
+          },
+          "name": "SetGeolocationTech",
+          "schema": {
+            "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema;1",
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:WIFI;1",
+                "displayName": {
+                  "en": "WIFI scanning"
+                },
+                "enumValue": "0b0a0500000000",
+                "name": "WIFI"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:GNSS;1",
+                "displayName": {
+                  "en": "GNSS"
+                },
+                "enumValue": "0b0a0500000001",
+                "name": "GNSS"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:LPGPS;1",
+                "displayName": {
+                  "en": "LP-GPS"
+                },
+                "enumValue": "0b0a0500000002",
+                "name": "LPGPS"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:WIFIGPS;1",
+                "displayName": {
+                  "en": "WIFI scan, then GPS"
+                },
+                "enumValue": "0b0a0500000006",
+                "name": "WIFIGPS"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:WIFILPGPSGPS;1",
+                "displayName": {
+                  "en": "WIFI scan, then LP-GPS or GPS"
+                },
+                "enumValue": "0b0a0500000007",
+                "name": "WIFILPGPSGPS"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:BLE;1",
+                "displayName": {
+                  "en": "BLE scan"
+                },
+                "enumValue": "0b0a050000000a",
+                "name": "BLE"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetGeolocationTechnology:request:schema:BLEGPS;1",
+                "displayName": {
+                  "en": "BLE scan, then GPS"
+                },
+                "enumValue": "0b0a050000000b",
+                "name": "BLEGPS"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:Actility:Commands:SetModeConfig;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Mode Configuration"
+        },
+        "name": "SetModeConfig",
+        "request": {
+          "@id": "dtmi:Actility:Commands:SetModeConfig:request;1",
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Configuration mode"
+          },
+          "name": "SetModeConfiguration",
+          "schema": {
+            "@id": "dtmi:Actility:Commands:SetModeConfig:request:schema;1",
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "Standby"
+                },
+                "enumValue": "020a00",
+                "name": "Standby"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetModeConfig:request:schema:MotionTracking;1",
+                "displayName": {
+                  "en": "Motion tracking"
+                },
+                "enumValue": "020a01",
+                "name": "MotionTracking"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetModeConfig:request:schema:PermanentTracking;1",
+                "displayName": {
+                  "en": "Permanent tracking"
+                },
+                "enumValue": "020a02",
+                "name": "PermanentTracking"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetModeConfig:request:schema:MotionStartStop;1",
+                "displayName": {
+                  "en": "Start/Stop tracking"
+                },
+                "enumValue": "020a03",
+                "name": "MotionStartStop"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetModeConfig:request:schema:ActivityMode;1",
+                "displayName": {
+                  "en": "Activity tracking"
+                },
+                "enumValue": "020a04",
+                "name": "ActivityMode"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:Actility:Commands:SetPeriod;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set location interval"
+        },
+        "description": {
+          "en": "Sets the location interval for the main geolocation mode (Abeeway parameter 0x00 ul_period)/"
+        },
+        "name": "Period",
+        "request": {
+          "@id": "dtmi:Actility:Commands:SetPeriod:request;1",
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Set Period"
+          },
+          "name": "Period",
+          "schema": {
+            "@id": "dtmi:Actility:Commands:SetPeriod:request:schema;1",
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n2Mn;1",
+                "displayName": {
+                  "en": "2 mn"
+                },
+                "enumValue": "0b0a0000000078",
+                "name": "n2Mn"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n5Mn;1",
+                "displayName": {
+                  "en": "5 mn"
+                },
+                "enumValue": "0b0a000000012c",
+                "name": "n5Mn"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n15Mn;1",
+                "displayName": {
+                  "en": "15 mn"
+                },
+                "enumValue": "0b0a0000000384",
+                "name": "n15Mn"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n30Mn;1",
+                "displayName": {
+                  "en": "30 mn"
+                },
+                "enumValue": "0b0a0000000708",
+                "name": "n30Mn"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n1H;1",
+                "displayName": {
+                  "en": "1 h"
+                },
+                "enumValue": "0b0a0000000e10",
+                "name": "n1H"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n2H;1",
+                "displayName": {
+                  "en": "2 h"
+                },
+                "enumValue": "0b0a0000001c20",
+                "name": "n2H"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n4H;1",
+                "displayName": {
+                  "en": "4 h"
+                },
+                "enumValue": "0b0a0000003840",
+                "name": "n4H"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n12H;1",
+                "displayName": {
+                  "en": "12 h"
+                },
+                "enumValue": "0b0a000000a8c0",
+                "name": "n12H"
+              },
+              {
+                "@id": "dtmi:Actility:Commands:SetPeriod:request:schema:n24H;1",
+                "displayName": {
+                  "en": "24 h"
+                },
+                "enumValue": "0b0a0000015180",
+                "name": "n24H"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        }
+      }
+    ],
+    "displayName": {
+      "en": "Commands"
+    },
+    "description": {
+    "en": "Component with interfaces for Abeeway tracker commands"
+  }
+  }

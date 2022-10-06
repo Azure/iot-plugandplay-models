@@ -1,0 +1,609 @@
+{
+  "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2;4",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:dynamicMotionState;2",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "displayName": {
+        "en": " Dynamic motion state"
+      },
+      "name": "dynamicMotionState",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:dynamicMotionState:schema;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:dynamicMotionState:schema:Moving;1",
+            "displayName": {
+              "en": "Moving"
+            },
+            "enumValue": "MOVING",
+            "name": "Moving"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:dynamicMotionState:schema:Static;1",
+            "displayName": {
+              "en": "Static"
+            },
+            "enumValue": "STATIC",
+            "name": "Static"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode;3",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "description": {
+        "en": "Indicates the Tracker operating mode."
+      },
+      "displayName": {
+        "en": "Operating mode"
+      },
+      "name": "trackingMode",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:PermanentTracking;1",
+            "displayName": {
+              "en": "Permanent Tracking "
+            },
+            "enumValue": "PERMANENT_TRACKING",
+            "name": "PermanentTracking"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:MotionTracking;1",
+            "displayName": {
+              "en": "Motion Tracking"
+            },
+            "enumValue": "MOTION_TRACKING",
+            "name": "MotionTracking"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:StartEndMotionTracking;1",
+            "displayName": {
+              "en": "Start End Motion Tracking"
+            },
+            "enumValue": "START_END_MOTION_TRACKING",
+            "name": "StartEndMotionTracking"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:ActivityTracking;1",
+            "displayName": {
+              "en": "Activity Tracking"
+            },
+            "enumValue": "ACTIVITY_TRACKING",
+            "name": "ActivityTracking"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:ZoningMode;1",
+            "displayName": {
+              "en": "Zoning Mode"
+            },
+            "enumValue": "ZONING_MODE",
+            "name": "ZoningMode"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:trackingMode:schema:Standby;1",
+            "displayName": {
+              "en": "Standby"
+            },
+            "enumValue": "STAND_BY",
+            "name": "Standby"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology;2",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "description": {
+        "en": "Fix type describes what kind of data is in the uplink"
+      },
+      "displayName": {
+        "en": "Positioning technology"
+      },
+      "name": "positioningTechnology",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema;2",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:Gps;2",
+            "displayName": {
+              "en": "GPS "
+            },
+            "enumValue": "GPS",
+            "name": "Gps"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:GPSTimeout;2",
+            "displayName": {
+              "en": "GPS Timeout"
+            },
+            "enumValue": "GPS_TIMEOUT",
+            "name": "GPSTimeout"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:EncryptedWifiBssids;2",
+            "displayName": {
+              "en": "Encrypted WiFi BSS IDs"
+            },
+            "enumValue": "ENCRYPTED_WIFI_BSSIDS",
+            "name": "EncryptedWifiBssids"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:WifiTimeout;2",
+            "displayName": {
+              "en": "WiFi Timeout"
+            },
+            "enumValue": "WIFI_TIMEOUT",
+            "name": "WifiTimeout"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:WifiFailure;2",
+            "displayName": {
+              "en": "WiFi Failure"
+            },
+            "enumValue": "WIFI_FAILURE",
+            "name": "WifiFailure"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:XGpsData;2",
+            "displayName": {
+              "en": "XGPS Data"
+            },
+            "enumValue": "XGPS_DATA",
+            "name": "XGpsData"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:XGPSdataWithGpsSwTime;2",
+            "displayName": {
+              "en": "XGPS Data With GPS SW Time"
+            },
+            "enumValue": "XGPS_DATA_WITH_GPS_SW_TIME",
+            "name": "XGPSdataWithGpsSwTime"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:BleBeaconScan;2",
+            "displayName": {
+              "en": "BLE Beacon Scan"
+            },
+            "enumValue": "BLE_BEACON_SCAN",
+            "name": "BleBeaconScan"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:BleBeaconFailure;2",
+            "displayName": {
+              "en": "BLE Beacon Failure"
+            },
+            "enumValue": "BLE_BEACON_FAILURE",
+            "name": "BleBeaconFailure"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positioningTechnology:schema:WifiBssIdsWithNoCypher;2",
+            "displayName": {
+              "en": "WiFi BSS IDs With No Cypher"
+            },
+            "enumValue": "WIFI_BSSIDS_WITH_NO_CYPHER",
+            "name": "WifiBssIdsWithNoCypher"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus;3",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "displayName": {
+        "en": "Battery status"
+      },
+      "name": "batteryStatus",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus:schema;2",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus:schema:Operating;2",
+            "displayName": {
+              "en": "Operating"
+            },
+            "enumValue": "OPERATING",
+            "name": "Operating"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus:schema:Charging;2",
+            "displayName": {
+              "en": "Charging"
+            },
+            "enumValue": "CHARGING",
+            "name": "Charging"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryStatus:schema:Off;2",
+            "displayName": {
+              "en": "Off"
+            },
+            "enumValue": "OFF",
+            "name": "Off"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSFlag;2",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "displayName": {
+        "en": "SOS flag"
+      },
+      "name": "SOSFlag",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSFlag:schema;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSFlag:schema:Activated;1",
+            "displayName": {
+              "en": "Activated"
+            },
+            "enumValue": 1,
+            "name": "Activated"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSFlag:schema:SwithOff;1",
+            "displayName": {
+              "en": "Swith off"
+            },
+            "enumValue": 0,
+            "name": "SwithOff"
+          }
+        ],
+        "valueSchema": "integer"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:temperature;1",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": {
+        "en": "Temperature"
+      },
+      "name": "temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:periodicPosition;2",
+      "@type": [
+        "Property",
+        "Event"
+      ],
+      "displayName": {
+        "en": "Periodic position"
+      },
+      "name": "periodicPosition",
+      "schema": "integer",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:positionOnDemand;2",
+      "@type": [
+        "Property",
+        "Event"
+      ],
+      "description": {
+        "en": "Indicates if the side operation Periodic position message is True/false"
+      },
+      "displayName": {
+        "en": "Position on demand"
+      },
+      "name": "positionOnDemand",
+      "schema": "integer",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:appState;2",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "displayName": {
+        "en": "Application state"
+      },
+      "name": "appState",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:appState:schema;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:appState:schema:Tracking;1",
+            "displayName": {
+              "en": "Tracking"
+            },
+            "enumValue": 1,
+            "name": "Tracking"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:appState:schema:Idle;1",
+            "displayName": {
+              "en": "Idle"
+            },
+            "enumValue": 0,
+            "name": "Idle"
+          }
+        ],
+        "valueSchema": "integer"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause;2",
+      "@type": [
+        "Property",
+        "State"
+      ],
+      "comment": "It gives the shutdown cause",
+      "displayName": {
+        "en": "Shutdown cause"
+      },
+      "name": "shutdownCause",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema;2",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema:UserAction;2",
+            "displayName": {
+              "en": " User Action"
+            },
+            "enumValue": "USER_ACTION",
+            "name": "UserAction"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema:LowBattery;2",
+            "displayName": {
+              "en": "Low Battery"
+            },
+            "enumValue": "LOW_BATTERY",
+            "name": "LowBattery"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema:DownlinkRequest;2",
+            "displayName": {
+              "en": "Downlink Request"
+            },
+            "enumValue": "DOWNLINK_REQUEST",
+            "name": "DownlinkRequest"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema:BLERequest;2",
+            "displayName": {
+              "en": "BLE Request"
+            },
+            "enumValue": "BLE_REQUEST",
+            "name": "BLERequest"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:shutdownCause:schema:BLEConnected;2",
+            "displayName": {
+              "en": "BLE Connected"
+            },
+            "enumValue": "BLE_CONNECTED",
+            "name": "BLEConnected"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:accelerometerShockData;1",
+      "@type": [
+        "Telemetry",
+        "AccelerationVector"
+      ],
+      "displayName": {
+        "en": "Accelerometer shock data"
+      },
+      "name": "accelerometerShockData",
+      "schema": "vector"
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSTrigger;1",
+      "@type": [
+        "Telemetry",
+        "State"
+      ],
+      "displayName": {
+        "en": "SOS trigger"
+      },
+      "name": "SOSTrigger",
+      "schema": {
+        "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSTrigger:schema;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSTrigger:schema:Activated;1",
+            "displayName": {
+              "en": "Activated"
+            },
+            "enumValue": 1,
+            "name": "Activated"
+          },
+          {
+            "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:SOSTrigger:schema:SwitchOff;1",
+            "displayName": {
+              "en": "Switch off"
+            },
+            "enumValue": 0,
+            "name": "SwitchOff"
+          }
+        ],
+        "valueSchema": "integer"
+      }
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:ReportingPeriod;2",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Reporting period"
+      },
+      "name": "ReportingPeriod",
+      "schema": "double",
+      "unit": "second",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:Movement;1",
+      "@type": [
+        "Telemetry",
+        "Velocity"
+      ],
+      "displayName": {
+        "en": "Device movement"
+      },
+      "name": "Movement",
+      "schema": "double",
+      "unit": "metrePerSecond"
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:TimeSinceLastCharge;2",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Time since last charge"
+      },
+      "name": "TimeSinceLastCharge",
+      "schema": "double",
+      "unit": "minute",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GeolocationTechnology;2",
+      "@type": "Property",
+      "displayName": {
+        "en": "Geolocation technology"
+      },
+      "name": "GeolocationTechnology",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GeofencingZone;2",
+      "@type": "Property",
+      "displayName": {
+        "en": "Geofencing zone"
+      },
+      "name": "GeofencingZone",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:GPSCoordinates;1",
+      "@type": [
+        "Telemetry",
+        "Location"
+      ],
+      "displayName": {
+        "en": "GPS coordinates"
+      },
+      "name": "GPSCoordinates",
+      "schema": "geopoint"
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:LastEvent;2",
+      "@type": "Property",
+      "displayName": {
+        "en": "Last event"
+      },
+      "name": "LastEvent",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:sequenceNumber;2",
+      "@type": "Property",
+      "displayName": {
+        "en": "Sequence number"
+      },
+      "name": "sequenceNumber",
+      "schema": "double",
+      "writable": false
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:horizontalAccuracy;2",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Horizontal accuracy"
+      },
+      "name": "horizontalAccuracy",
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:Actility:Abeeway_Asset_Tracker_2:batteryLevel;2",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Battery Level"
+      },
+      "name": "batteryLevel",
+      "schema": "double"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Commands"
+      },
+      "name": "Commands",
+      "schema": "dtmi:Actility:Commands;2"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Device information"
+      },
+      "name": "Device_information",
+      "schema": "dtmi:Actility:DeviceInfo;3"
+    }
+  ],
+  "displayName": {
+    "en": "Abeeway Asset Tracker 2"
+  },
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}
+
