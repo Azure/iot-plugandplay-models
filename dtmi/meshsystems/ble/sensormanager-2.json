@@ -1,0 +1,249 @@
+{
+	"@id": "dtmi:MeshSystems:ble:sensormanager;2",
+	"@type": "Interface",
+	"displayName": {
+		"en": "Sensor Manager"
+	},
+	"@context": [
+		"dtmi:iotcentral:context;2",
+		"dtmi:dtdl:context;2"
+	],
+	"contents": [
+		{
+			"@type": "Telemetry",
+			"description": "Beacon's Preamble AdvData + Message-Id + encoded body.",
+			"displayName": {
+				"en": "Sensor Telemetry"
+			},
+			"name": "snr",
+			"schema": {
+				"@type": "Map",
+				"displayName": {
+					"en": "Map"
+				},
+				"mapKey": {
+					"displayName": {
+						"en": "Key"
+					},
+					"name": "Key",
+					"schema": "string"
+				},
+				"mapValue": {
+					"displayName": {
+						"en": "Value"
+					},
+					"name": "Value",
+					"schema": {
+						"@type": "Object",
+						"displayName": {
+							"en": "Object"
+						},
+						"fields": [
+							{
+								"displayName": {
+									"en": "MessageId"
+								},
+								"name": "mid",
+								"schema": "long"
+							},
+							{
+								"displayName": {
+									"en": "Body"
+								},
+								"name": "body",
+								"schema": "string"
+							},
+							{
+								"displayName": {
+									"en": "Type"
+								},
+								"name": "type",
+								"schema": "string"
+							},
+							{
+								"displayName": {
+									"en": "RSSI"
+								},
+								"name": "rssi",
+								"schema": "integer"
+							},
+							{
+								"displayName": {
+									"en": "Ingress"
+								},
+								"name": "ing",
+								"schema": "boolean"
+							},
+							{
+								"displayName": {
+									"en": "Egress"
+								},
+								"name": "egr",
+								"schema": "boolean"
+							},
+							{
+								"displayName": {
+									"en": "Update"
+								},
+								"name": "upd",
+								"schema": "boolean"
+							},
+							{
+								"displayName": {
+									"en": "TimeStamp"
+								},
+								"name": "ts",
+								"schema": "dateTime"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"@type": [
+				"Telemetry",
+				"Event"
+			],
+			"displayName": {
+				"en": "Num Sensors"
+			},
+			"name": "smNumSensors",
+			"schema": "integer"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Min Battery Level"
+			},
+			"name": "smMinBL",
+			"schema": "integer"
+		},
+		{
+			"@type": "Telemetry",
+			"displayName": {
+				"en": "Min RSSI"
+			},
+			"name": "smMinRSSI",
+			"schema": "integer"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Namespace Filter"
+			},
+			"name": "smNsFilter",
+			"writable": true,
+			"schema": {
+				"@type": "Object",
+				"fields": [
+					{
+						"name": "nsValue",
+						"schema": "string"
+					},
+					{
+						"name": "nsMask",
+						"schema": "string"
+					}
+				]
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "RSSI Filter"
+			},
+			"name": "smRssiFilter",
+			"writable": true,
+			"schema": {
+				"@type": "Map",
+				"mapKey": {
+					"name": "key",
+					"schema": "string"
+				},
+				"mapValue": {
+					"name": "value",
+					"schema": {
+						"@type": "Object",
+						"fields": [
+							{
+								"name": "rssiIngress",
+								"schema": "integer"
+							},
+							{
+								"name": "rssiRetain",
+								"schema": "integer"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Ingress Debounce"
+			},
+			"name": "smIngressDebounce",
+			"schema": "integer",
+			"writable": true
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Egress Timeout"
+			},
+			"name": "smEgressTimeout",
+			"schema": "long",
+			"writable": true
+		},
+		{
+			"@type": "Telemetry",
+			"name": "smRxTotal",
+			"schema": "long"
+		},
+		{
+			"@type": "Telemetry",
+			"name": "smRxCount",
+			"schema": "long"
+		},
+		{
+			"@type": "Property",
+			"displayName": {
+				"en": "Aggregation Period"
+			},
+			"name": "smAggregationPeriod",
+			"schema": "long",
+			"writable": true
+		},
+		{
+			"@type": "Command",
+			"name": "sensorCmd",
+			"displayName": "Sensor Command",
+			"request": {
+				"name": "req",
+				"schema": {
+					"@type": "Object",
+					"fields": [
+						{
+							"name": "deviceId",
+							"schema": "string"
+						},
+						{
+							"name": "cmd",
+							"schema": "string"
+						}
+					]
+				}
+			}
+		},
+		{
+			"@type": "Property",
+			"name": "assetStsInterval",
+			"displayName": "Asset Status Interval",
+			"description": "Interval to report up-to-date devices in the asset database",
+			"schema": "integer",
+			"writable": true
+		}
+	]
+}

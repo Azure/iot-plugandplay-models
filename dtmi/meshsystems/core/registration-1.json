@@ -1,0 +1,371 @@
+{
+  "@id": "dtmi:MeshSystems:core:registration;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "RegistrationCode"
+      },
+      "name": "registrationCode",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Device"
+      },
+      "name": "device",
+      "schema": {
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "GlobalDeviceId"
+            },
+            "name": "globalDeviceId",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "DeviceNumber"
+            },
+            "name": "deviceNumber",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "SerialNumber"
+            },
+            "name": "serialNumber",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Manufacturer"
+            },
+            "name": "manufacturer",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Customer"
+            },
+            "name": "customer",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Location"
+            },
+            "name": "location",
+            "schema": "string"
+          },
+          {
+            "displayName": {
+              "en": "Type"
+            },
+            "name": "type",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Change Credential"
+      },
+      "name": "changecredential",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Params"
+        },
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "DeviceKey"
+              },
+              "name": "deviceKey",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "DeviceId"
+              },
+              "name": "deviceId",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "ScopeId"
+              },
+              "name": "scopeId",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Friendly Name"
+              },
+              "name": "name",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "EnrollmentType"
+              },
+              "name": "enrollmentType",
+              "schema": {
+                "@type": "Enum",
+                "enumValues": [
+                  {
+                    "enumValue": 1,
+                    "name": "SymmetricKeys"
+                  },
+                  {
+                    "enumValue": 2,
+                    "name": "x509"
+                  }
+                ],
+                "valueSchema": "integer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Public Key"
+      },
+      "name": "publicKey",
+      "writable": false,
+      "schema": {
+        "@type": "Map",
+        "displayName": {
+          "en": "Map"
+        },
+        "mapKey": {
+          "displayName": {
+            "en": "Key"
+          },
+          "name": "Key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "displayName": {
+            "en": "Value"
+          },
+          "name": "Value",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Archived"
+                },
+                "name": "Archived",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "FriendlyName"
+                },
+                "name": "FriendlyName",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "HasPrivateKey"
+                },
+                "name": "HasPrivateKey",
+                "schema": "boolean"
+              },
+              {
+                "displayName": {
+                  "en": "NotAfter"
+                },
+                "name": "NotAfter",
+                "schema": "dateTime"
+              },
+              {
+                "displayName": {
+                  "en": "NotBefore"
+                },
+                "name": "NotBefore",
+                "schema": "dateTime"
+              },
+              {
+                "displayName": {
+                  "en": "SerialNumber"
+                },
+                "name": "SerialNumber",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "SignatureAlgorithm"
+                },
+                "name": "SignatureAlgorithm",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Thumbprint"
+                },
+                "name": "Thumbprint",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Version"
+                },
+                "name": "Version",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Issuer"
+                },
+                "name": "Issuer",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Subject"
+                },
+                "name": "Subject",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Store Certificate"
+      },
+      "name": "storeCertificate",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Params"
+        },
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "Ticket"
+              },
+              "name": "Ticket",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Key Name"
+              },
+              "name": "KeyName",
+              "schema": "string"
+            },
+            {
+              "displayName": {
+                "en": "Certificate"
+              },
+              "name": "Certificate",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Rotate Certificate"
+      },
+      "name": "rotateCertificate"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Rekey Certificate"
+      },
+      "name": "rekeyCertificate",
+      "request": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Ticket"
+        },
+        "name": "Ticket",
+        "schema": "string"
+      },
+      "response": {
+        "@type": "CommandPayload",
+        "displayName": {
+          "en": "Params"
+        },
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "StatusCode"
+              },
+              "name": "StatusCode",
+              "schema": "integer"
+            },
+            {
+              "displayName": {
+                "en": "Error"
+              },
+              "name": "Error",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Device Registration Interval"
+      },
+      "name": "regInval",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "displayName": {
+    "en": "DeviceRegistration"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

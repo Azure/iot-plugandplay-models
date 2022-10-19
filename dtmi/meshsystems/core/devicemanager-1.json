@@ -1,0 +1,177 @@
+{
+  "@id": "dtmi:MeshSystems:core:devicemanager;1",
+  "@context": "dtmi:dtdl:context;2",
+  "@type": "Interface",
+  "displayName": {
+    "en": "DeviceManager"
+  },
+  "contents": [
+    {
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "bleInval"
+      },
+      "name": "bleInval",
+      "schema": "integer",
+      "unit": "second",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Battery"
+      },
+      "name": "bt",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Rssi"
+      },
+      "name": "rssi",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Beacon ID"
+      },
+      "name": "id",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "ELA Mag"
+      },
+      "name": "mag",
+      "schema": {
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Presence"
+            },
+            "name": "pres",
+            "schema": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "ELA Rht"
+      },
+      "name": "rht",
+      "schema": {
+        "@type": "Object",
+        "displayName": {
+          "en": "Object"
+        },
+        "fields": [
+          {
+            "displayName": {
+              "en": "Temperature"
+            },
+            "name": "temp",
+            "schema": {
+              "@type": "Object",
+              "displayName": {
+                "en": "Object"
+              },
+              "fields": [
+                {
+                  "displayName": {
+                    "en": "Minimum"
+                  },
+                  "name": "min",
+                  "schema": "double"
+                },
+                {
+                  "displayName": {
+                    "en": "Maximum"
+                  },
+                  "name": "max",
+                  "schema": "double"
+                },
+                {
+                  "displayName": {
+                    "en": "Average"
+                  },
+                  "name": "ave",
+                  "schema": "double"
+                },
+                {
+                  "displayName": {
+                    "en": "Last"
+                  },
+                  "name": "last",
+                  "schema": "double"
+                }
+              ]
+            }
+          },
+          {
+            "displayName": {
+              "en": "Humidity"
+            },
+            "name": "hum",
+            "schema": {
+              "@type": "Object",
+              "displayName": {
+                "en": "Object"
+              },
+              "fields": [
+                {
+                  "displayName": {
+                    "en": "Minimum"
+                  },
+                  "name": "min",
+                  "schema": "integer"
+                },
+                {
+                  "displayName": {
+                    "en": "Maximum"
+                  },
+                  "name": "max",
+                  "schema": "integer"
+                },
+                {
+                  "displayName": {
+                    "en": "Average"
+                  },
+                  "name": "ave",
+                  "schema": "integer"
+                },
+                {
+                  "displayName": {
+                    "en": "Last"
+                  },
+                  "name": "last",
+                  "schema": "integer"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "comment": "topic filter",
+      "displayName": {
+        "en": "Beacon Type"
+      },
+      "name": "type",
+      "schema": "string"
+    }
+  ]
+}
