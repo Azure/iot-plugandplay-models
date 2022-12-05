@@ -3,7 +3,7 @@
     "@id": "dtmi:azurertos:devkit:gsgmicrochipsame54;1",    
     "@type": "Interface",
     "displayName": "Microchip SAM E54 Getting Started Guide",
-    "description": "Example model for the Azure RTOS Microchip SAM E54 Getting Started Guide",
+    "description": "Example model for the Azure RTOS Microchip SAM E54 Getting Started Guide.",
     "contents": [
         {
             "@type": [
@@ -36,18 +36,22 @@
             "schema": "double"
         },
         {
-            "@type": "Property",
+            "@type": [
+                "Property",
+                "TimeSpan"
+            ],
             "name": "telemetryInterval",
             "displayName": "Telemetry Interval",
             "description": "Specify the interval in seconds for the telemetry.",
             "schema": "integer",
+            "unit": "second",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "ledState",
             "displayName": "LED state",
-            "description": "Returns the current state of the onboard LED.",
+            "description": "The current state of the onboard LED.",
             "schema": "boolean"
         },
         {
