@@ -357,14 +357,14 @@
         }
     },
     {
-      "@id": "dtmi:com:Microchip:WFI32_IoT_WM:press_count;1",
+      "@id": "dtmi:com:Microchip:WFI32_IoT_WM:total_press_count;1",
       "@type": [
         "Telemetry"
       ],
       "displayName": {
-        "en": "Button Press Count"
+        "en": "Button Press Count Total"
       },
-      "name": "press_count",
+      "name": "total_press_count",
       "schema": "double"
     }
   ],
