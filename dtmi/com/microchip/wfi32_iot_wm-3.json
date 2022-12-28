@@ -41,7 +41,8 @@
           "en": "Altitude (ALT2 Click)"
         },
       "name": "ALT2_altitude",
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
     },
     {
       "@type": [
@@ -52,7 +53,8 @@
           "en": "Pressure (ALT2 Click)"
         },
       "name": "ALT2_pressure",
-      "schema": "double"
+      "schema": "double",
+      "unit": "pascal"      
     },
     {
       "@type": [
@@ -75,7 +77,8 @@
           "en": "Humidity (PHT Click)"
         },
       "name": "PHT_humidity",
-      "schema": "double"
+      "schema": "double",
+      "unit": "kilogramPerCubicMetre"
     },
     {
       "@type": [
@@ -86,7 +89,8 @@
           "en": "Pressure (PHT Click)"
         },
       "name": "PHT_pressure",
-      "schema": "double"
+      "schema": "double",
+      "unit": "pascal"    
     },
     {
       "@type": [
@@ -109,7 +113,8 @@
           "en": "Humidity (TEMPHUM14 Click)"
         },
       "name": "TEMPHUM14_humidity",
-      "schema": "double"
+      "schema": "double",
+      "unit": "kilogramPerCubicMetre"
     },
     {
       "@type": [
@@ -365,7 +370,7 @@
         "en": "Button Press Count Total"
       },
       "name": "total_press_count",
-      "schema": "double"
+      "schema": "integer"
     }
   ],
   "description": {
