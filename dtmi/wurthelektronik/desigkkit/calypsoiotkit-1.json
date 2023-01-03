@@ -1,0 +1,158 @@
+[{
+		"@id": "dtmi:wurthelektronik:designkit:calypsoiotkit;1",
+		"@type": "Interface",
+		"displayName": "Calypso IoT Design Kit",
+		"description": "Reports temperature, relative humidity, pressure, acceleration and voltage and sets LED.",
+		"@context": [
+			"dtmi:iotcentral:context;2",
+			"dtmi:dtdl:context;2"
+		],
+		"contents": [{
+				"@type": "Component",
+				"schema": "dtmi:wurthelektronik:module:calypso;1",
+				"name": "Calypso",
+				"displayName": "Calypso Wi-Fi Module"
+			}, 
+			{
+				"@type": [
+					"Telemetry",
+					"NumberValue",
+					"Pressure"
+				],
+				"description": {
+					"en": "Received pressure value (in double)"
+				},
+				"displayName": {
+					"en": "Pressure"
+				},
+				"name": "pressure",
+				"schema": "double",
+				"unit": "kilopascal"
+			}, {
+				"@type": [
+					"Telemetry",
+					"NumberValue",
+					"RelativeHumidity"
+				],
+				"description": {
+					"en": "Received relative humidity value (in double)"
+				},
+				"displayName": {
+					"en": "Relative humidity"
+				},
+				"name": "humidity",
+				"schema": "double",
+				"unit": "percent"
+			}, {
+				"@type": [
+					"Telemetry",
+					"AccelerationVector"
+				],
+				"displayName": {
+					"en": "Acceleration"
+				},
+				"name": "acceleration",
+				"schema": "vector"
+			}, {
+				"@type": [
+					"Telemetry",
+					"NumberValue",
+					"Temperature"
+				],
+				"description": {
+					"en": "Received temperature value (in double)"
+				},
+				"displayName": {
+					"en": "Temperature"
+				},
+				"name": "temperature",
+				"schema": "double",
+				"unit": "degreeCelsius"
+			}, {
+				"@type": [
+					"Property",
+					"NumberValue",
+					"Voltage"
+				],
+				"displayName": {
+					"en": "Battery voltage"
+				},
+				"name": "batteryVoltage",
+				"schema": "float",
+				"unit": "volt",
+				"writable": false,
+				"displayUnit": {
+					"en": "V"
+				}
+			}, {
+				"@type": [
+					"Property",
+					"NumberValue",
+					"Initialized",
+					"TimeSpan"
+				],
+				"displayName": {
+					"en": "Telemetry send frequency"
+				},
+				"name": "telemetrySendFrequency",
+				"schema": "integer",
+				"unit": "second",
+				"writable": true,
+				"displayUnit": {
+					"en": "s"
+				},
+				"initialValue": 30,
+				"minValue": 5
+			}, {
+				"@type": "Command",
+				"commandType": "synchronous",
+				"description": {
+					"en": "Set the color of the neo-pixel LED"
+				},
+				"displayName": {
+					"en": "Set LED color"
+				},
+				"name": "setLEDColor",
+				"request": {
+					"@type": "CommandPayload",
+					"comment": "Vector containing R,G,B values",
+					"description": {
+						"en": "Set the color of the neo-pixel LED"
+					},
+					"displayName": {
+						"en": "color"
+					},
+					"name": "color",
+					"schema": {
+						"@type": "Object",
+						"displayName": {
+							"en": "Object"
+						},
+						"fields": [{
+								"displayName": {
+									"en": "R"
+								},
+								"name": "red",
+								"schema": "integer"
+							}, {
+								"displayName": {
+									"en": "G"
+								},
+								"name": "green",
+								"schema": "integer"
+							}, {
+								"displayName": {
+									"en": "B"
+								},
+								"name": "blue",
+								"schema": "integer"
+							}
+						]
+					}
+				},
+				"durable": false
+			}
+		]
+
+	}
+]
