@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:wuerthelektronik:module:calypso;1",
+  "@id": "dtmi:wurthelektronik:module:calypso;1",
   "@type": "Interface",
   "displayName": "Calypso Wi-Fi Module",
   "description": "Provides Wi-Fi based secure connectivity to the cloud.",
