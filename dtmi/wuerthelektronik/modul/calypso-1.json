@@ -10,9 +10,9 @@
   "contents": [
     {
       "@type": "Property",
-      "displayName": "Serial number",
-      "description": "Serial number of the device.",
-      "name": "SN",
+      "displayName": "MAC Address",
+      "description": "MAC address of the device.",
+      "name": "MACAddress",
       "schema": "string",
       "writable": false
     },
