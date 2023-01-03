@@ -1,0 +1,35 @@
+{
+  "@id": "dtmi:wuerthelektronik:module:calypso;1",
+  "@type": "Interface",
+  "displayName": "Calypso Wi-Fi Module",
+  "description": "Provides Wi-Fi based secure connectivity to the cloud.",
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": "Serial number",
+      "description": "Serial number of the device.",
+      "name": "SN",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "Unique device identification",
+      "description": "Unique identification of the device.",
+      "name": "UDID",
+      "schema": "string",
+      "writable": false
+    },	
+    {
+      "@type": "Property",
+      "name": "swVersion",
+      "displayName": "Software Version",
+      "schema": "string",
+      "writable": false
+    }
+  ]
+}
