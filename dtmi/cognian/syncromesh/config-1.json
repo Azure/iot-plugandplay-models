@@ -1,0 +1,71 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:cognian:syncromesh:config;1",
+    "@type": "Interface",
+    "displayName": "Syncromesh Gateway",
+    "description": "Syncromesh Gateway - Hardware with Sphere Module",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "manufacturer",
+        "displayName": "Manufacturer",
+        "schema": "string",
+        "description": "Company Name",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "name": "model",
+        "displayName": "Device Model",
+        "schema": "string",
+        "description": "Device Model",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "name": "swVersion",
+        "displayName": "Syncromesh Software Version",
+        "schema": "string",
+        "description": "Syncromesh Software Stack",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "name": "osName",
+        "displayName": "Operating System",
+        "schema": "string",
+        "description": "Image version",
+        "writable": false
+      },
+      {
+        "@type": "Property",
+        "name": "processorArchitecture",
+        "displayName": "Processor Architecture",
+        "schema": "string",
+        "description": "Platform",
+        "writable": false
+      },
+      {
+            "@type": "Telemetry",
+            "name": "NetworkID",
+            "displayName": "NetworkID",
+            "description": "Network ID of the Syncromesh Network Managed By this Gateway",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "RFMAC",
+            "displayName": "RFMacAddress",
+            "description": "RF Mac Address of the TI Chip based Syncromesh Gateway RF Module",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "FwGIT",
+            "displayName": "Firmware Git Commit",
+            "description": "Syncromesh Gateway RF Module Firmware RF Version",
+            "schema": "string"
+        }
+    ]
+  }
+

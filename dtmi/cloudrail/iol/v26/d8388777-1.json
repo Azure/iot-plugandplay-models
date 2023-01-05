@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8388777;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KTS Gap-Detection",
+  "description": "Registration Sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q",
+      "displayName": "Q",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "High",
+            "enumValue": "High"
+          },
+          {
+            "name": "Low",
+            "enumValue": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QoRAlarm",
+      "displayName": "QoRAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "QoRAlarmActive",
+            "enumValue": "QoRAlarmActive"
+          },
+          {
+            "name": "QoRAlarmInactive",
+            "enumValue": "QoRAlarmInactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightspotSize",
+      "displayName": "LightspotSize",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Small",
+            "enumValue": "Small"
+          },
+          {
+            "name": "Large",
+            "enumValue": "Large"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MeasurementValue",
+      "displayName": "MeasurementValue",
+      "schema": "long"
+    }
+  ]
+}

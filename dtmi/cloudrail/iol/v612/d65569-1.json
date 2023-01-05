@@ -1,0 +1,145 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D65569;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E3AS-F1500IMDxxx-MxxxxxxxM",
+  "description": "TOF Laser sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MonitorOutput1DetectionLevel",
+      "displayName": "MonitorOutput1DetectionLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MonitorOutput2IncidentLightLevel",
+      "displayName": "MonitorOutput2IncidentLightLevel",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DistanceError",
+      "displayName": "DistanceError",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DetectableRange",
+            "enumValue": "DetectableRange"
+          },
+          {
+            "name": "UndetectableRange",
+            "enumValue": "UndetectableRange"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InsufficientIncidentLightLevelError",
+      "displayName": "InsufficientIncidentLightLevelError",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          },
+          {
+            "name": "InsufficientIncidentLight",
+            "enumValue": "InsufficientIncidentLight"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DetectionInstabilityAlarm",
+      "displayName": "DetectionInstabilityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          },
+          {
+            "name": "Unstable",
+            "enumValue": "Unstable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output2",
+      "displayName": "Output2",
+      "schema": "dtmi:CloudRail:IOL:V612:D65569:Output;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Output1",
+      "displayName": "Output1",
+      "schema": "dtmi:CloudRail:IOL:V612:D65569:Output;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D65569:Output;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

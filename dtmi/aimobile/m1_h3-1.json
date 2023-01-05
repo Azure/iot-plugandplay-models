@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:AIMobile:M1_H3;1",
+  "@type": "Interface",
+  "displayName": "M1-H3",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceinfo",
+      "schema": "dtmi:AIMobile:JetsonDeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "thermalzones",
+      "schema": "dtmi:AIMobile:Jetsonthermal_zones;1"
+    }
+  ],
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}

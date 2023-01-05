@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V87:D3220224;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "SEFB624",
+  "description": "Safety Light Array",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "DeviceState",
+      "displayName": "DeviceState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANOBJ",
+      "displayName": "ANOBJ",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANCBB",
+      "displayName": "ANCBB",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ANBB",
+      "displayName": "ANBB",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AFBB",
+      "displayName": "AFBB",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ALBB",
+      "displayName": "ALBB",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InputState",
+      "displayName": "InputState",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OutputState",
+      "displayName": "OutputState",
+      "schema": "long"
+    }
+  ]
+}

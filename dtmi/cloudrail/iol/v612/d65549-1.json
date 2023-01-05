@@ -1,0 +1,144 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V612:D65549;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "E3S-DCP21-IL3",
+  "description": "Color Mark Sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput1",
+      "displayName": "ControlOutput1",
+      "schema": "dtmi:CloudRail:IOL:V612:D65549:ControlOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ControlOutput2",
+      "displayName": "ControlOutput2",
+      "schema": "dtmi:CloudRail:IOL:V612:D65549:ControlOutput;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "InstabilityAlarm",
+      "displayName": "InstabilityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Stable",
+            "enumValue": "Stable"
+          },
+          {
+            "name": "Unstable",
+            "enumValue": "Unstable"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Warning",
+      "displayName": "Warning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Error",
+      "displayName": "Error",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "LightEmittingColor",
+      "displayName": "LightEmittingColor",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "NotLighting",
+            "enumValue": "NotLighting"
+          },
+          {
+            "name": "R",
+            "enumValue": "R"
+          },
+          {
+            "name": "G",
+            "enumValue": "G"
+          },
+          {
+            "name": "B",
+            "enumValue": "B"
+          },
+          {
+            "name": "RGB",
+            "enumValue": "RGB"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IncidentLightLevelRed",
+      "displayName": "IncidentLightLevelRed",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IncidentLightLevelGreen",
+      "displayName": "IncidentLightLevelGreen",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "IncidentLightLevelBlue",
+      "displayName": "IncidentLightLevelBlue",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V612:D65549:ControlOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        },
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        }
+      ]
+    }
+  ]
+}

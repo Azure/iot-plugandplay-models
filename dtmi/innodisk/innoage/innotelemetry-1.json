@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:innodisk:innoage:innotelemetry;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "Percentage",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "osHeartbeat",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "SSDTemperature",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "SSDAbnormalPowerCount",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "SSDPowerOnHours",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "SSDAvgEraseCount",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "SSDHealth",
+            "schema": "double"
+        }
+
+    ],
+    "displayName": {
+        "en": "InnoAGE - Telemetry"
+    }
+}

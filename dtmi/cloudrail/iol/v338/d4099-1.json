@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D4099;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CML720 [2 Bytes and COM2]",
+  "description": "Measuring light curtain CML720, DeviceID 0x1003",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PD01",
+      "displayName": "PD01",
+      "schema": "long"
+    }
+  ]
+}

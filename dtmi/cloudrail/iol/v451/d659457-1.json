@@ -1,0 +1,262 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D659457;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "S15C-MGN-KQ",
+  "description": "Inline converter IO-Link to ModBus",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "RegisterSetToRead",
+      "displayName": "RegisterSetToRead",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RegisterReadSuccessful",
+      "displayName": "RegisterReadSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RegisterWriteSuccessful",
+      "displayName": "RegisterWriteSuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RegisterVerifySuccessful",
+      "displayName": "RegisterVerifySuccessful",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "False",
+            "enumValue": "False"
+          },
+          {
+            "name": "True",
+            "enumValue": "True"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CounterValue",
+      "displayName": "CounterValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister01Value",
+      "displayName": "ReadSetRegister01Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister02Value",
+      "displayName": "ReadSetRegister02Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister03Value",
+      "displayName": "ReadSetRegister03Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister04Value",
+      "displayName": "ReadSetRegister04Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister05Value",
+      "displayName": "ReadSetRegister05Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister06Value",
+      "displayName": "ReadSetRegister06Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister07Value",
+      "displayName": "ReadSetRegister07Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister08Value",
+      "displayName": "ReadSetRegister08Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister09Value",
+      "displayName": "ReadSetRegister09Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister10Value",
+      "displayName": "ReadSetRegister10Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister11Value",
+      "displayName": "ReadSetRegister11Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister12Value",
+      "displayName": "ReadSetRegister12Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister13Value",
+      "displayName": "ReadSetRegister13Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister14Value",
+      "displayName": "ReadSetRegister14Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReadSetRegister15Value",
+      "displayName": "ReadSetRegister15Value",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "RegisterSetToRead",
+              "displayName": "RegisterSetToRead",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister01Value",
+              "displayName": "WriteSetRegister01Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister02Value",
+              "displayName": "WriteSetRegister02Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister03Value",
+              "displayName": "WriteSetRegister03Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister04Value",
+              "displayName": "WriteSetRegister04Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister05Value",
+              "displayName": "WriteSetRegister05Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister06Value",
+              "displayName": "WriteSetRegister06Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister07Value",
+              "displayName": "WriteSetRegister07Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister08Value",
+              "displayName": "WriteSetRegister08Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister09Value",
+              "displayName": "WriteSetRegister09Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister10Value",
+              "displayName": "WriteSetRegister10Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister11Value",
+              "displayName": "WriteSetRegister11Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister12Value",
+              "displayName": "WriteSetRegister12Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister13Value",
+              "displayName": "WriteSetRegister13Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister14Value",
+              "displayName": "WriteSetRegister14Value",
+              "schema": "long"
+            },
+            {
+              "name": "WriteSetRegister15Value",
+              "displayName": "WriteSetRegister15Value",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

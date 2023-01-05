@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328199;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-717-002-E023",
+  "description": "Analog Converter with 1 x M12 port, input only (configurable for voltage, current, Pt100 and Pt1000), stainless steel housing",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValue",
+      "displayName": "AnalogValue",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint1",
+      "displayName": "SwitchPoint1",
+      "schema": "dtmi:CloudRail:IOL:V888:D328199:SwitchPoint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchPoint2",
+      "displayName": "SwitchPoint2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328199:SwitchPoint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Underflow",
+      "displayName": "Underflow",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Overflow",
+      "displayName": "Overflow",
+      "schema": "integer"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328199:SwitchPoint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

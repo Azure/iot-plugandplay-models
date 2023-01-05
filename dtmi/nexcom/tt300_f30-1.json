@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:nexcom:TT300_F30;1",
+  "@type": "Interface",
+  "displayName": "TT300_F30",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "NexDeviceInfo1",
+      "schema": "dtmi:nexcom:nexDeviceInfo;1"
+    }
+  ]
+}

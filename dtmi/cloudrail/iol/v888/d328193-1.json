@@ -1,0 +1,219 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D328193;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BNI IOL-710-000-K006 (159240)",
+  "description": "BNI - Sensor hub M12 analog/digital",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValuePort3",
+      "displayName": "AnalogValuePort3",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorAnalogValuePort3",
+      "displayName": "ErrorAnalogValuePort3",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:ErrorAnalogValuePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OverCurrent",
+      "displayName": "OverCurrent",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Ok",
+            "enumValue": "Ok"
+          },
+          {
+            "name": "OverCurrent",
+            "enumValue": "OverCurrent"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValuePort2",
+      "displayName": "AnalogValuePort2",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorAnalogValuePort2",
+      "displayName": "ErrorAnalogValuePort2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:ErrorAnalogValuePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValuePort1",
+      "displayName": "AnalogValuePort1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorAnalogValuePort1",
+      "displayName": "ErrorAnalogValuePort1",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:ErrorAnalogValuePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "AnalogValuePort0",
+      "displayName": "AnalogValuePort0",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ErrorAnalogValuePort0",
+      "displayName": "ErrorAnalogValuePort0",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:ErrorAnalogValuePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort01",
+      "displayName": "SwitchstatePort01",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort11",
+      "displayName": "SwitchstatePort11",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort21",
+      "displayName": "SwitchstatePort21",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort31",
+      "displayName": "SwitchstatePort31",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort4Pin2",
+      "displayName": "SwitchstatePort4Pin2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort5Pin2",
+      "displayName": "SwitchstatePort5Pin2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort6Pin2",
+      "displayName": "SwitchstatePort6Pin2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort7Pin2",
+      "displayName": "SwitchstatePort7Pin2",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort00",
+      "displayName": "SwitchstatePort00",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort10",
+      "displayName": "SwitchstatePort10",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort20",
+      "displayName": "SwitchstatePort20",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort30",
+      "displayName": "SwitchstatePort30",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort4Pin4",
+      "displayName": "SwitchstatePort4Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort5Pin4",
+      "displayName": "SwitchstatePort5Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort6Pin4",
+      "displayName": "SwitchstatePort6Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchstatePort7Pin4",
+      "displayName": "SwitchstatePort7Pin4",
+      "schema": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328193:ErrorAnalogValuePort;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Ok",
+          "enumValue": "Ok"
+        },
+        {
+          "name": "Error",
+          "enumValue": "Error"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePort;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D328193:SwitchstatePortPin;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "False",
+          "enumValue": "False"
+        },
+        {
+          "name": "True",
+          "enumValue": "True"
+        }
+      ]
+    }
+  ]
+}

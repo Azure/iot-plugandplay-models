@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:Advantech:MIC_730IVA;1",
+  "@type": "Interface",
+  "displayName": "MIC-730IVA",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "deviceinfo",
+      "schema": "dtmi:Advantech:JetsonDeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "name": "thermalzones",
+      "schema": "dtmi:Advantech:Jetsonthermal_zones;1"
+    }
+  ],
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ]
+}

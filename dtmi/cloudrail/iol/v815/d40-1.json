@@ -1,0 +1,435 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V815:D40;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "CRG 30-050",
+  "description": "Collaborative servo-electric gripping module",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Idle",
+      "displayName": "Idle",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Released",
+      "displayName": "Released",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "NoPart",
+      "displayName": "NoPart",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Holding",
+      "displayName": "Holding",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Fault",
+      "displayName": "Fault",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureFault",
+      "displayName": "TemperatureFault",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "TemperatureWarning",
+      "displayName": "TemperatureWarning",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaintenanceRequired",
+      "displayName": "MaintenanceRequired",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MotionCommandActive",
+      "displayName": "MotionCommandActive",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Permagrip",
+      "displayName": "Permagrip",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PartLost",
+      "displayName": "PartLost",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Off",
+            "enumValue": "Off"
+          },
+          {
+            "name": "On",
+            "enumValue": "On"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch0",
+      "displayName": "PositionSwitch0",
+      "schema": "dtmi:CloudRail:IOL:V815:D40:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch1",
+      "displayName": "PositionSwitch1",
+      "schema": "dtmi:CloudRail:IOL:V815:D40:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch2",
+      "displayName": "PositionSwitch2",
+      "schema": "dtmi:CloudRail:IOL:V815:D40:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PositionSwitch3",
+      "displayName": "PositionSwitch3",
+      "schema": "dtmi:CloudRail:IOL:V815:D40:PositionSwitch;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "GripIndex",
+              "displayName": "GripIndex",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Grip0",
+                    "enumValue": "Grip0"
+                  },
+                  {
+                    "name": "Grip1",
+                    "enumValue": "Grip1"
+                  },
+                  {
+                    "name": "Grip2",
+                    "enumValue": "Grip2"
+                  },
+                  {
+                    "name": "Grip3",
+                    "enumValue": "Grip3"
+                  },
+                  {
+                    "name": "Grip4",
+                    "enumValue": "Grip4"
+                  },
+                  {
+                    "name": "Grip5",
+                    "enumValue": "Grip5"
+                  },
+                  {
+                    "name": "Grip6",
+                    "enumValue": "Grip6"
+                  },
+                  {
+                    "name": "Grip7",
+                    "enumValue": "Grip7"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Command",
+              "displayName": "Command",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Release",
+                    "enumValue": "Release"
+                  },
+                  {
+                    "name": "Grip",
+                    "enumValue": "Grip"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Enable",
+              "displayName": "Enable",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Homing",
+              "displayName": "Homing",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Permagrip",
+              "displayName": "Permagrip",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "On",
+                    "enumValue": "On"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "LED",
+              "displayName": "LED",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "LEDPreset0",
+                    "enumValue": "LEDPreset0"
+                  },
+                  {
+                    "name": "LEDPreset1",
+                    "enumValue": "LEDPreset1"
+                  },
+                  {
+                    "name": "LEDPreset2",
+                    "enumValue": "LEDPreset2"
+                  },
+                  {
+                    "name": "LEDPreset3",
+                    "enumValue": "LEDPreset3"
+                  },
+                  {
+                    "name": "LEDPreset4",
+                    "enumValue": "LEDPreset4"
+                  },
+                  {
+                    "name": "LEDPreset5",
+                    "enumValue": "LEDPreset5"
+                  },
+                  {
+                    "name": "LEDPreset6",
+                    "enumValue": "LEDPreset6"
+                  },
+                  {
+                    "name": "LEDPreset7",
+                    "enumValue": "LEDPreset7"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V815:D40:PositionSwitch;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V690:D6492161;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KombiSIGN 40",
+  "description": "Signal Tower",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Segment1",
+              "displayName": "Segment1",
+              "schema": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1"
+            },
+            {
+              "name": "Segment2",
+              "displayName": "Segment2",
+              "schema": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1"
+            },
+            {
+              "name": "Segment3",
+              "displayName": "Segment3",
+              "schema": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1"
+            },
+            {
+              "name": "Segment4",
+              "displayName": "Segment4",
+              "schema": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1"
+            },
+            {
+              "name": "Segment5",
+              "displayName": "Segment5",
+              "schema": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V690:D6492161:Segment;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Off",
+          "enumValue": "Off"
+        },
+        {
+          "name": "On",
+          "enumValue": "On"
+        }
+      ]
+    }
+  ]
+}

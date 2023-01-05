@@ -1,0 +1,21 @@
+{
+    "@id": "dtmi:AAEON:GENE_WHU6;1",
+    "@type": "Interface",
+    "displayName": "GENE-WHU6",
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "deviceInformation",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+        },
+        {
+            "@type": "Component",
+            "name": "HWMonitor",
+            "schema": "dtmi:AAEON:HardwareMonitor;1"
+        }
+    ]
+}

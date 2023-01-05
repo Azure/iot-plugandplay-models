@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D436;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "PN7011",
+  "description": "Electronic pressure sensor, 0.0...25.0 MPa, Rohrgewinde        ISO 228 - G 1/4        (Innengewinde)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Pressure_MPa",
+      "displayName": "Pressure_MPa",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT2",
+      "displayName": "OUT2",
+      "schema": "dtmi:CloudRail:IOL:V310:D436:OUT;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "OUT1",
+      "displayName": "OUT1",
+      "schema": "dtmi:CloudRail:IOL:V310:D436:OUT;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V310:D436:OUT;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

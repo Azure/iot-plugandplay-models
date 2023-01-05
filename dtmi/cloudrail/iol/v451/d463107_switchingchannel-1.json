@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D463107_SwitchingChannel;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "QCM50-K3D40-Q8-5",
+  "description": "18...60 mm, 3xQ, Auto/PNP/NPN, M12, 5-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQuality",
+      "displayName": "SwitchingQuality",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q7",
+      "displayName": "Q7",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q6",
+      "displayName": "Q6",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q5",
+      "displayName": "Q5",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q4",
+      "displayName": "Q4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q3",
+      "displayName": "Q3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "integer"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V855:D02097157;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "OPP7-1KC-P",
+  "description": "OPP7 Series_COM3",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "IOLinkOutput15",
+              "displayName": "IOLinkOutput15",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput14",
+              "displayName": "IOLinkOutput14",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput13",
+              "displayName": "IOLinkOutput13",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput12",
+              "displayName": "IOLinkOutput12",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput11",
+              "displayName": "IOLinkOutput11",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput10",
+              "displayName": "IOLinkOutput10",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput9",
+              "displayName": "IOLinkOutput9",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput8",
+              "displayName": "IOLinkOutput8",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput7",
+              "displayName": "IOLinkOutput7",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput6",
+              "displayName": "IOLinkOutput6",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput5",
+              "displayName": "IOLinkOutput5",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput4",
+              "displayName": "IOLinkOutput4",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput3",
+              "displayName": "IOLinkOutput3",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput2",
+              "displayName": "IOLinkOutput2",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput1",
+              "displayName": "IOLinkOutput1",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            },
+            {
+              "name": "IOLinkOutput0",
+              "displayName": "IOLinkOutput0",
+              "schema": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V855:D02097157:IOLinkOutput;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "ON",
+          "enumValue": "ON"
+        },
+        {
+          "name": "OFF",
+          "enumValue": "OFF"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V451:D196611;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "DF-G3IR-KD-xx",
+  "description": "DF Amplifier Generation 3",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "BDC1OutputStateQ",
+      "displayName": "BDC1OutputStateQ",
+      "schema": "dtmi:CloudRail:IOL:V451:D196611:BDCOutputStateQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "BDC2OutputStateQ",
+      "displayName": "BDC2OutputStateQ",
+      "schema": "dtmi:CloudRail:IOL:V451:D196611:BDCOutputStateQ;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Measurement",
+      "displayName": "Measurement",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V451:D196611:BDCOutputStateQ;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        },
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        }
+      ]
+    }
+  ]
+}

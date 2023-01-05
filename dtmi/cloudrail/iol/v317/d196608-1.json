@@ -1,0 +1,73 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D196608;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FS1x0-xxxx-xx-2UPN8-H1141/F210",
+  "description": "Flow Monitoring",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "StateOutput1Flow",
+      "displayName": "StateOutput1Flow",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "StateOutput2Temperature",
+      "displayName": "StateOutput2Temperature",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_C",
+      "displayName": "TemperatureProcessValue_C",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "TemperatureProcessValue_F",
+      "displayName": "TemperatureProcessValue_F",
+      "schema": "double",
+      "unit": "degreeFahrenheit"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FlowProcessValue_pct",
+      "displayName": "FlowProcessValue_pct",
+      "schema": "double"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ADLINK:EGW_5200_3DX0M;1",
+    "@type": "Interface",
+    "displayName": "ADLINK-EGW-5200-3DX0M",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}

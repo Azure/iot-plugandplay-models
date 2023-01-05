@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1:D2101505;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "NRB4-12GS40-E2-IO-V1",
+  "description": "1x switching output PNP, IO-Link, 4 mm, flush, M12x1, stainless steel 1.4305 /AISI 303, connector M12x1, 3-pin",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SSCSwitchingSignal",
+      "displayName": "SSCSwitchingSignal",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DSCStabilityAlarm",
+      "displayName": "DSCStabilityAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    }
+  ]
+}

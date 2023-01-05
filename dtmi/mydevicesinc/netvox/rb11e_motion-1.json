@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:mydevicesinc:netvox:rb11e_motion;1",
+  "@type": "Interface",
+  "displayName": "Netvox Motion",
+  "description": "Netvox Motion sensor",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "temperature",
+      "description": "temperature",
+      "name": "channel_3",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "battery",
+      "description": "battery",
+      "name": "channel_5",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "luminosity",
+      "description": "luminosity",
+      "name": "channel_8",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "motion",
+      "description": "motion",
+      "name": "channel_9",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry"
+      ],
+      "displayName": "signal",
+      "description": "signal",
+      "name": "channel_100",
+      "schema": "double"
+    }
+  ]
+}

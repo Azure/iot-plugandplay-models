@@ -1,0 +1,214 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D8389125;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "AS30 Prime Center/Width",
+  "description": "Registration sensors",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "QL1",
+      "displayName": "QL1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QL2",
+      "displayName": "QL2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:QL;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint1",
+      "displayName": "Qint1",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint2",
+      "displayName": "Qint2",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint3",
+      "displayName": "Qint3",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Qint4",
+      "displayName": "Qint4",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:Qint;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge1LossBottom",
+      "displayName": "Edge1LossBottom",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossBottom;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge1LossTop",
+      "displayName": "Edge1LossTop",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossTop;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge1ImmediateLoss",
+      "displayName": "Edge1ImmediateLoss",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeImmediateLoss;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge2LossBottom",
+      "displayName": "Edge2LossBottom",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossBottom;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge2LossTop",
+      "displayName": "Edge2LossTop",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossTop;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge2ImmediateLoss",
+      "displayName": "Edge2ImmediateLoss",
+      "schema": "dtmi:CloudRail:IOL:V26:D8389125:EdgeImmediateLoss;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "QoRAlarm",
+      "displayName": "QoRAlarm",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PDInvalid",
+      "displayName": "PDInvalid",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          },
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge1Position",
+      "displayName": "Edge1Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Edge2Position",
+      "displayName": "Edge2Position",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CenterPositionWidth",
+      "displayName": "CenterPositionWidth",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389125:QL;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389125:Qint;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossBottom;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389125:EdgeLossTop;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:CloudRail:IOL:V26:D8389125:EdgeImmediateLoss;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Active",
+          "enumValue": "Active"
+        },
+        {
+          "name": "Inactive",
+          "enumValue": "Inactive"
+        }
+      ]
+    }
+  ]
+}

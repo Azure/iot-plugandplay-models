@@ -1,0 +1,121 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V310:D1002;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "KT6x0x",
+  "description": "Capacitive illuminated pushbutton, Plastic housing, 2 m cable",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "PDV1",
+      "displayName": "PDV1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "DeviceIsOK",
+            "enumValue": "DeviceIsOK"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "FunctionalCheck",
+            "enumValue": "FunctionalCheck"
+          },
+          {
+            "name": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SSC",
+      "displayName": "SSC",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Inactive",
+            "enumValue": "Inactive"
+          },
+          {
+            "name": "Active",
+            "enumValue": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "Colour",
+              "displayName": "Colour",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "Off",
+                    "enumValue": "Off"
+                  },
+                  {
+                    "name": "Blue",
+                    "enumValue": "Blue"
+                  },
+                  {
+                    "name": "Green",
+                    "enumValue": "Green"
+                  },
+                  {
+                    "name": "Red",
+                    "enumValue": "Red"
+                  },
+                  {
+                    "name": "Magenta",
+                    "enumValue": "Magenta"
+                  },
+                  {
+                    "name": "Yellow",
+                    "enumValue": "Yellow"
+                  },
+                  {
+                    "name": "White",
+                    "enumValue": "White"
+                  },
+                  {
+                    "name": "Orange",
+                    "enumValue": "Orange"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

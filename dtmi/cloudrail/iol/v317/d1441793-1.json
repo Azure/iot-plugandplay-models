@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V317:D1441793;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "IMX12-TI01-2RTDR-2I-CxxxxxxxxxCC",
+  "description": "IMX12... Series",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "MeasuredValue",
+      "displayName": "MeasuredValue",
+      "schema": "long"
+    }
+  ]
+}

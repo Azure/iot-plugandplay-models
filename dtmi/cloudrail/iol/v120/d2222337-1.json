@@ -1,0 +1,151 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V120:D2222337;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Control Head Type 8681 Class B",
+  "description": "Control Head Type 8681 with IO-Link Class B",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Position",
+      "displayName": "Position",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "DeviceStatus",
+      "displayName": "DeviceStatus",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Normal",
+            "enumValue": "Normal"
+          },
+          {
+            "name": "DiagnosticsActive",
+            "enumValue": "DiagnosticsActive"
+          },
+          {
+            "name": "MaintenanceRequired",
+            "enumValue": "MaintenanceRequired"
+          },
+          {
+            "name": "OutOfSpecification",
+            "enumValue": "OutOfSpecification"
+          },
+          {
+            "name": "Warning",
+            "enumValue": "Warning"
+          },
+          {
+            "name": "Error",
+            "enumValue": "Error"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ValveMode",
+      "displayName": "ValveMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Initialization",
+            "enumValue": "Initialization"
+          },
+          {
+            "name": "NormalOperation",
+            "enumValue": "NormalOperation"
+          },
+          {
+            "name": "TeachFunction",
+            "enumValue": "TeachFunction"
+          },
+          {
+            "name": "SafetyPosition",
+            "enumValue": "SafetyPosition"
+          },
+          {
+            "name": "ManualControl",
+            "enumValue": "ManualControl"
+          },
+          {
+            "name": "ServiceMode",
+            "enumValue": "ServiceMode"
+          },
+          {
+            "name": "InternalSafetyPosition",
+            "enumValue": "InternalSafetyPosition"
+          },
+          {
+            "name": "Reserved",
+            "enumValue": "Reserved"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S4",
+      "displayName": "S4",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S3",
+      "displayName": "S3",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S2",
+      "displayName": "S2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "S1",
+      "displayName": "S1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "WriteData",
+      "displayName": "Write Data",
+      "description": "Send a message to the device",
+      "request": {
+        "name": "WriteDataObject",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "V1",
+              "displayName": "V1",
+              "schema": "integer"
+            },
+            {
+              "name": "V2",
+              "displayName": "V2",
+              "schema": "integer"
+            },
+            {
+              "name": "V3",
+              "displayName": "V3",
+              "schema": "integer"
+            },
+            {
+              "name": "LocalizeDevice",
+              "displayName": "LocalizeDevice",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

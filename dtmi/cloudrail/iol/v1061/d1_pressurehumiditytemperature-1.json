@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D1_PressureHumidityTemperature;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Demo device",
+  "description": "Demo Device",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Humidity",
+      "displayName": "Humidity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    }
+  ]
+}

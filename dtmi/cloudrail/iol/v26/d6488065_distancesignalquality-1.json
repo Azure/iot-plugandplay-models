@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V26:D6488065_DistanceSignalQuality;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Dx35-B1xx5xS0x",
+  "description": "1057651 (DT35-B15551 DT35-DL35)",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

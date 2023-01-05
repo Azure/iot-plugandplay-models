@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V338:D2174_SmartSensorProfile;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "ODS110L1.3/LCT-M12",
+  "description": "Optical distance sensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SignalValid",
+      "displayName": "SignalValid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ2Virtual",
+      "displayName": "SwitchingQ2Virtual",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SwitchingQ1",
+      "displayName": "SwitchingQ1",
+      "schema": "integer"
+    }
+  ]
+}

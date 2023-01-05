@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V1061:D12558593;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "STEVAL-BFA001V1",
+  "description": "Demo Application",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SPL",
+      "displayName": "SPL",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Pressure",
+      "displayName": "Pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Humidity",
+      "displayName": "Humidity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Temperature",
+      "displayName": "Temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSX",
+      "displayName": "RMSX",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSY",
+      "displayName": "RMSY",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RMSZ",
+      "displayName": "RMSZ",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PEAKX",
+      "displayName": "PEAKX",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PEAKY",
+      "displayName": "PEAKY",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "PEAKZ",
+      "displayName": "PEAKZ",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaxAmpX",
+      "displayName": "MaxAmpX",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaxAmpY",
+      "displayName": "MaxAmpY",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "MaxAmpZ",
+      "displayName": "MaxAmpZ",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FreqX",
+      "displayName": "FreqX",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FreqY",
+      "displayName": "FreqY",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "FreqZ",
+      "displayName": "FreqZ",
+      "schema": "long"
+    }
+  ]
+}

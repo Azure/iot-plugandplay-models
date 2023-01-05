@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V347:D106_MeasurementOutput;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "FT 55-RLAP-5-PNSIL-L5",
+  "description": "100...5000mm, Q, QA, In, 4...20mA, Auto/PNP/NPN, M12 5Pol",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "SignalQuality",
+      "displayName": "SignalQuality",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Distance",
+      "displayName": "Distance",
+      "schema": "long"
+    }
+  ]
+}

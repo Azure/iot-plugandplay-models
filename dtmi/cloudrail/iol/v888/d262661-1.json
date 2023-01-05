@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:CloudRail:IOL:V888:D262661;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "BOS 23K-GI-RE10-S4",
+  "description": "Thru-Beam sensor receiver red light",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "Q1",
+      "displayName": "Q1",
+      "schema": "dtmi:CloudRail:IOL:V888:D262661:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "Q2",
+      "displayName": "Q2",
+      "schema": "dtmi:CloudRail:IOL:V888:D262661:Q;1"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ReceiveLevel",
+      "displayName": "ReceiveLevel",
+      "schema": "long"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:CloudRail:IOL:V888:D262661:Q;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Q1Off",
+          "enumValue": "Q1Off"
+        },
+        {
+          "name": "Q1On",
+          "enumValue": "Q1On"
+        }
+      ]
+    }
+  ]
+}

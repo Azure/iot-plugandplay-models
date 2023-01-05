@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Hanasis:K320P;1",
+    "@type": "Interface",
+    "displayName": "Hanasis-K-320P",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo",
+            "schema": "dtmi:HancomMDS:WindowsDeviceInfo;1"
+        }
+    ]
+}

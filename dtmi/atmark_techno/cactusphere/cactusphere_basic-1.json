@@ -1,0 +1,94 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:atmark_techno:Cactusphere:Cactusphere_Basic;1",
+  "@type": "Interface",
+  "displayName": "Cactusphere basic version",
+  "description": "Cactusphere basic version device characteristics",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "SerialNumber",
+      "schema": "string",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "EthMacAddr",
+      "schema": "string",
+      "displayName": "Ethernet MAC Address",
+      "description": "Ethernet hardware(MAC) address of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "ProductId",
+      "schema": "string",
+      "displayName": "Product ID",
+      "description": "Product ID of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "VendorId",
+      "schema": "string",
+      "displayName": "Vendor ID",
+      "description": "Vendor ID of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "WlanMacAddr",
+      "schema": "string",
+      "displayName": "Wireless LAN MAC Address",
+      "description": "Wireless LAN hardware(MAC) address of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "Generation",
+      "schema": "string",
+      "displayName": "Generation",
+      "description": "Generation of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "HLAppVersion",
+      "schema": "string",
+      "displayName": "HLApp Version",
+      "description": "HLApp version of the device.",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "RTAppVersion",
+      "schema": "string",
+      "displayName": "RTApp Version",
+      "description": "RTApp version of the device.",
+      "writable": false
+    },
+    {
+      "@type": ["Telemetry", "Event"],
+      "name": "SphereWarning",
+      "schema": "string",
+      "displayName": "Error information",
+      "description": "Error information of the device."
+    },
+    {
+      "@type": ["Telemetry", "Event"],
+      "name": "UserSWEvent",
+      "schema": "integer",
+      "displayName": "UserSW event",
+      "description": "UserSW event, send 1 when pressed."
+    },
+    {
+      "@type": ["Telemetry"],
+      "name": "HeartBeat",
+      "schema": "integer",
+      "displayName": "Heartbeat",
+      "description": "Device heartbeat, count up every 1 second."
+    }
+  ]
+}

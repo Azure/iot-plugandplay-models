@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:develcoproducts:homesafetysmartcable;1",
+  "@type": "Interface",
+  "displayName": "Home Safety Smart Cable",
+  "description": "Home Safety Smart Cable",
+  "contents": [    
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:develcoproducts:smartcable;1",
+      "name": "smartcable1",
+      "displayName": "Smart Cable",
+      "description": "Smart Cable"
+    }
+  ]
+}
