@@ -23,6 +23,10 @@ parameters:
 - name: modelDestContainerPathVar
   type: string
   default: 'ModelDestinationContainer'
+- name: dmrClientVersionVar
+  type: string
+  default: 'DmrClientVersion'
+
 
 variables:
 - name: vmImage
@@ -43,6 +47,8 @@ variables:
   value: 2048
 - name: modelDestContainer
   value: $[variables.${{ parameters.modelDestContainerPathVar }}]
+- name: dmrClientVer
+  value: $[variables.${{ parameters.dmrClientVersionVar }}]
 
 
 # Required for schedule trigger
@@ -115,7 +121,7 @@ stages:
           script: |
             set -e
 
-            dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version 1.0.0-beta.6 --configfile ./nuget.config -v n
+            dotnet tool install -g Microsoft.IoT.ModelsRepository.CommandLine --version $(dmrClientVer) --configfile ./nuget.config -v n
             export PATH="$PATH:$HOME/.dotnet/tools"
             . ~/.bashrc
 
