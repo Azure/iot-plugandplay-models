@@ -87,7 +87,6 @@ stages:
           DMR_STORAGE_ACCOUNT: $(DMR_STORAGE_ACCOUNT)
           MODEL_DEST_CONTAINER: $(modelDestContainer)
 
-
     - job: 'evaluate_repo'
       displayName: 'Evaluate repository'
       steps:
@@ -179,6 +178,18 @@ stages:
           publishLocation: 'Container' 
           artifactName: 'metadata'
           StoreAsTar: true
+
+      - task: ManifestGeneratorTask@0
+        displayName: 'Generate SBOM'
+        inputs:
+          BuildDropPath: '.'
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish SBOM'
+        inputs:
+          pathToPublish: ./_manifest
+          publishLocation: 'Container' 
+          artifactName: 'SBOM'
 
     - job: 'sync_expanded_models'
       displayName: 'Sync expanded models'
