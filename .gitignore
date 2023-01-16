@@ -108,3 +108,4 @@ dist
 
 # Visual Studio Code configuration
 .vscode/
+global.json
