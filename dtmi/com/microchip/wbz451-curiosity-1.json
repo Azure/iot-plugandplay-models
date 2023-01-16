@@ -65,7 +65,7 @@
                 "en": "The BLUE PWM input to the RGB LED"
             },
             "displayName": {
-                "en": "RGB LED (BLUE)"
+                "en": "RGB LED (BLUE PWM)"
             },
             "name": "rgb_led_blue",
             "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
@@ -81,7 +81,7 @@
                 "en": "The GREEN PWM input to the RGB LED"
             },
             "displayName": {
-                "en": "RGB LED (GREEN)"
+                "en": "RGB LED (GREEN PWM)"
             },
             "name": "rgb_led_green",
             "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
@@ -97,7 +97,7 @@
                 "en": "The RED PWM input to the RGB LED"
             },
             "displayName": {
-                "en": "RGB LED (RED)"
+                "en": "RGB LED (RED PWM)"
             },
             "name": "rgb_led_red",
             "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
