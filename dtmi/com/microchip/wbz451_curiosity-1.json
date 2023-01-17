@@ -9,13 +9,13 @@
                 "Temperature"
             ],
             "description": {
-                "en": "Temperature in degrees Celsius from the on-board analog temperature sensor"
+                "en": "Temperature value of the on-board analog sensor in degrees Celsius"
             },
             "displayName": {
                 "en": "Temperature"
             },
             "name": "temperature",
-            "schema": "integer",
+            "schema": "double",
             "unit": "degreeCelsius"
         },
         {
@@ -62,15 +62,15 @@
                 "Initialized"
             ],
             "description": {
-                "en": "The BLUE PWM input to the RGB LED"
+                "en": "RBG LED: BLUE PWM Duty Cycle"
             },
             "displayName": {
-                "en": "RGB LED (BLUE PWM)"
+                "en": "RGB LED (BLUE PWM Duty Cycle)"
             },
             "name": "rgb_led_blue",
-            "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
             "writable": true,
-            "initialValue": 2
+            "initialValue": 0
         },
         {
             "@type": [
@@ -78,15 +78,15 @@
                 "Initialized"
             ],
             "description": {
-                "en": "The GREEN PWM input to the RGB LED"
+                "en": "RGB LED: GREEN PWM Duty Cycle"
             },
             "displayName": {
-                "en": "RGB LED (GREEN PWM)"
+                "en": "RGB LED (GREEN PWM Duty Cycle)"
             },
             "name": "rgb_led_green",
-            "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
             "writable": true,
-            "initialValue": 2
+            "initialValue": 0
         },
         {
             "@type": [
@@ -94,15 +94,15 @@
                 "Initialized"
             ],
             "description": {
-                "en": "The RED PWM input to the RGB LED"
+                "en": "RGB LED: RED PWM Duty Cycle"
             },
             "displayName": {
-                "en": "RGB LED (RED PWM)"
+                "en": "RGB LED (RED PWM Duty Cycle)"
             },
             "name": "rgb_led_red",
-            "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
             "writable": true,
-            "initialValue": 2
+            "initialValue": 0
         },
         {
             "@type": [
@@ -116,7 +116,7 @@
                 "en": "User LED"
             },
             "name": "led_user",
-            "schema": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:LedState;1",
             "writable": true,
             "initialValue": 3
         },
@@ -255,11 +255,11 @@
     },
     "schemas": [
         {
-            "@id": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState;1",
+            "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState;1",
             "@type": "Enum",
             "enumValues": [
                 {
-                    "@id": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState:On;1",
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:On;1",
                     "displayName": {
                         "en": "On"
                     },
@@ -267,7 +267,7 @@
                     "name": "On"
                 },
                 {
-                    "@id": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState:Off;1",
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:Off;1",
                     "displayName": {
                         "en": "Off"
                     },
@@ -275,12 +275,35 @@
                     "name": "Off"
                 },
                 {
-                    "@id": "dtmi:com:Microchip:Microchip:WBZ451_Curiosity:LedState:Blink;1",
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:Blink;1",
                     "displayName": {
                         "en": "Blinking"
                     },
                     "enumValue": 3,
                     "name": "Blink"
+                }
+            ],
+            "valueSchema": "integer"
+        },
+        {
+            "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle:zero;1",
+                    "displayName": {
+                        "en": "  0% Duty Cycle"
+                    },
+                    "enumValue": 0,
+                    "name": "duty_000"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle:one_hundred;1",
+                    "displayName": {
+                        "en": "100% Duty Cycle"
+                    },
+                    "enumValue": 100,
+                    "name": "duty_100"
                 }
             ],
             "valueSchema": "integer"
