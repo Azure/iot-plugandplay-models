@@ -19,5 +19,5 @@
 		  "description": "Value of tag.",
 		  "schema": "double"
 		}
-    ]
+  ]
 }
