@@ -1,0 +1,23 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Belden:Hirschmann_OpEdge_8D;2",
+    "@type": "Interface",
+    "displayName": "Belden-Hirschmann-OpEdge-8D",
+    "contents": [
+		{
+		  "@type": "Property",
+		  "name": "version",
+		  "displayName": "Version",
+		  "description": "Version of BHDO.",
+		  "writable": false,
+		  "schema": "double"
+		},
+		{
+		  "@type": "Telemetry",
+		  "name": "value1",
+		  "displayName": "Value1",
+		  "description": "Value of tag.",
+		  "schema": "double"
+		}
+    ]
+}
