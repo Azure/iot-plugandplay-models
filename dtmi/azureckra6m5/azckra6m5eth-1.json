@@ -1,0 +1,132 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azureckra6m5:AZCKRA6M5ETH;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type":"Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "humidity",      
+      "schema": "double"  
+    },
+	{
+      "@type":"Telemetry",   
+      "name": "accelerometerX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "accelerometerY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "accelerometerZ",
+	  "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscoperX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscopeY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscopeZ",
+	  "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magnetometerX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magnetometerY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magnetometerZ",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "barometrictemperature",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "barometricpressure",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "spo2",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "heartrate",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "breathingrate",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "p2p",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "outdoorairquality",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "eco2",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "etoh",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "tvoc",
+      "schema": "double"
+    },
+	{
+	  "@type": "Command",
+      "name": "TC_GREEN"
+	},
+	{
+	  "@type": "Command",
+      "name": "TC_RED"
+	},
+	{
+	  "@type": "Command",
+      "name": "TC_BLUE"
+	},
+	{
+	  "@type": "Command",
+      "name": "BLUE_ON"
+	},
+	{
+	  "@type": "Command",
+      "name": "BLUE_OFF"
+	}
+  ]
+}
