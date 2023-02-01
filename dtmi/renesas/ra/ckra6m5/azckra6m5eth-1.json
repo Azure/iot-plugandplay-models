@@ -107,42 +107,7 @@
       "@type":"Telemetry",
       "name": "tvoc",
       "schema": "double"
-    },
-	{
-	  "@type": "Command",
-      "name": "TC_GREEN_ON"
-	},
-  {
-	  "@type": "Command",
-      "name": "TC_GREEN_OFF"
-	},
-	{
-	  "@type": "Command",
-      "name": "TC_RED_ON"
-	},
-  {
-	  "@type": "Command",
-      "name": "TC_RED_OFF"
-	},
-	{
-	  "@type": "Command",
-      "name": "TC_BLUE_ON"
-	},
-  {
-	  "@type": "Command",
-      "name": "TC_BLUE_OFF"
-	},
-  {
-	  "@type": "Command",
-      "name": "TC_NONE"
-	},
-	{
-	  "@type": "Command",
-      "name": "BLUE_ON"
-	},
-	{
-	  "@type": "Command",
-      "name": "BLUE_OFF"
-	}
+    }
+	
   ]
 }
