@@ -4,10 +4,29 @@
     "@type": "Interface",
     "displayName": "Belden-Hirschmann-OpEdge-8D",
     "contents": [
+<<<<<<< HEAD
+		{
+		  "@type": "Property",
+		  "name": "version",
+		  "displayName": "Version",
+		  "description": "Version of BHDO.",
+		  "writable": false,
+		  "schema": "double"
+		},
+		{
+		  "@type": "Telemetry",
+		  "name": "value1",
+		  "displayName": "Value1",
+		  "description": "Value of tag.",
+		  "schema": "double"
+		}
+  ]
+=======
         {
             "@type": "Component",
             "name": "LinuxDeviceInfo1",
             "schema": "dtmi:Synnex:LinuxDeviceInfo;1"
         }
     ]
+>>>>>>> parent of 9b781853 (Update hirschmann_opedge_8d-1.json)
 }
