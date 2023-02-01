@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:azureckra6m5:AZCKRA6M5ETH;1",
+  "@id": "dtmi:renesas:ra:ckra6m5:AZCKRA6M5ETH;1",
   "@type": "Interface",
   "contents": [
     {
@@ -110,15 +110,31 @@
     },
 	{
 	  "@type": "Command",
-      "name": "TC_GREEN"
+      "name": "TC_GREEN_ON"
+	},
+  {
+	  "@type": "Command",
+      "name": "TC_GREEN_OFF"
 	},
 	{
 	  "@type": "Command",
-      "name": "TC_RED"
+      "name": "TC_RED_ON"
+	},
+  {
+	  "@type": "Command",
+      "name": "TC_RED_OFF"
 	},
 	{
 	  "@type": "Command",
-      "name": "TC_BLUE"
+      "name": "TC_BLUE_ON"
+	},
+  {
+	  "@type": "Command",
+      "name": "TC_BLUE_OFF"
+	},
+  {
+	  "@type": "Command",
+      "name": "TC_NONE"
 	},
 	{
 	  "@type": "Command",
