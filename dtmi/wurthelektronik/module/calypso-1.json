@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "dtmi:iotcentral:context;2",
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:wurthelektronik:module:calypso;1",
+  "@type": "Interface",
+  "displayName": "Calypso Wi-Fi Module",
+  "description": "Provides Wi-Fi based secure connectivity to the cloud.",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": "MAC Address",
+      "description": "MAC address of the device.",
+      "name": "macAddress",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "displayName": "Unique device identification",
+      "description": "Unique identification of the device.",
+      "name": "udid",
+      "schema": "string",
+      "writable": false
+    },
+    {
+      "@type": "Property",
+      "name": "swVersion",
+      "displayName": "Software Version",
+      "schema": "string",
+      "writable": false
+    }
+  ]
+}
