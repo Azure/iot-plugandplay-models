@@ -30,7 +30,7 @@
     },
 	{
       "@type":"Telemetry",
-      "name": "gyroscoperX",
+      "name": "gyroscopeX",
       "schema": "double"
     },
 	{
@@ -45,67 +45,67 @@
     },
 	{
       "@type":"Telemetry",
-      "name": "magnetometerX",
+      "name": "magX",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "magnetometerY",
+      "name": "magY",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "magnetometerZ",
+      "name": "magZ",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "barometrictemperature",
+      "name": "ICP10101-Pressure",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "barometricpressure",
+      "name": "ICP10101-Temperature",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "spo2",
+      "name": "oxygen_saturation",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "heartrate",
+      "name": "heart_rate",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "breathingrate",
+      "name": "respiration_rate",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "p2p",
+      "name": "perfusionIndex",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "outdoorairquality",
+      "name": "OAQ",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "eco2",
+      "name": "iaq-tvoh",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "etoh",
+      "name": "iaq-etoh",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "tvoc",
+      "name": "iaq-eco2",
       "schema": "double"
     },
 	{
