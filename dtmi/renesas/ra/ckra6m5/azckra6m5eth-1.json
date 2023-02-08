@@ -1,6 +1,12 @@
 {
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:renesas:ra:ckra6m5:AZCKRA6M5ETH;1",
+  "displayName": {
+    "en": "Renesas Cloud Kit RA6M5 Board"
+  },
+  "description": {
+    "en": "AZURE Certified Device PNP Capabilities Demonstration"
+  },
   "@type": "Interface",
   "contents": [
     {
