@@ -60,12 +60,12 @@
     },
 	{
       "@type":"Telemetry",
-      "name": "ICP10101-Pressure",
+      "name": "ICP10101_Pressure",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "ICP10101-Temperature",
+      "name": "ICP10101_Temperature",
       "schema": "double"
     },
 	{
@@ -95,17 +95,17 @@
     },
 	{
       "@type":"Telemetry",
-      "name": "iaq-tvoh",
+      "name": "iaq_tvoh",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "iaq-etoh",
+      "name": "iaq_etoh",
       "schema": "double"
     },
 	{
       "@type":"Telemetry",
-      "name": "iaq-eco2",
+      "name": "iaq_eco2",
       "schema": "double"
     },
     {
