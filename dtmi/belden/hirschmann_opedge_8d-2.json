@@ -1,0 +1,540 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Belden:Hirschmann_OpEdge_8D;2",
+    "@type": "Interface",
+    "displayName": "Belden-Hirschmann-OpEdge-8D",
+    "contents": [
+		{
+			"@type": "Property",
+			"name": "gatewayName",
+			"displayName": "Gateway name",
+			"description": "Gateway name configured by user.",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "gatewayDescription",
+			"displayName": "Gateway description",
+			"description": "Gateway description configured by user.",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "cpuInfo",
+			"displayName": "CPU Info",
+			"description": "Information about OpEdge CPU.",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "memTotal",
+			"displayName": "Memory Total",
+			"description": "Total memory of OpEdge.",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "logicalDiskTotal",
+			"displayName": "Disk Size",
+			"description": "Size of hard disk(gb) on the OpEdge",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "firmware",
+			"displayName": "Firmware Version",
+			"description": "Current firmware version loaded on the OpEdge.",
+			"writable": false,
+			"schema": "string"
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth1",
+			"displayName": "ETH1 Properties",
+			"description": "Properties of ETH1.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth2",
+			"displayName": "ETH2 Properties",
+			"description": "Properties of ETH2.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth3",
+			"displayName": "ETH3 Properties",
+			"description": "Properties of ETH3.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth4",
+			"displayName": "ETH4 Properties",
+			"description": "Properties of ETH4.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth5",
+			"displayName": "ETH5 Properties",
+			"description": "Properties of ETH5.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth6",
+			"displayName": "ETH6 Properties",
+			"description": "Properties of ETH6.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "eth7",
+			"displayName": "ETH7 Properties",
+			"description": "Properties of ETH7.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portSpeed",
+				  "schema": "string"
+				},
+				{
+				  "name": "duplex",
+				  "schema": "string"
+				},
+				{
+				  "name": "lanMembership",
+				  "schema": "string"
+				},
+				{
+				  "name": "tagging",
+				  "schema": "boolean"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan1",
+			"displayName": "LAN1 Properties",
+			"description": "Properties of LAN1.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan2",
+			"displayName": "LAN2 Properties",
+			"description": "Properties of LAN2.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan3",
+			"displayName": "LAN3 Properties",
+			"description": "Properties of LAN3.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan4",
+			"displayName": "LAN4 Properties",
+			"description": "Properties of LAN4.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan5",
+			"displayName": "LAN5 Properties",
+			"description": "Properties of LAN5.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan6",
+			"displayName": "LAN6 Properties",
+			"description": "Properties of LAN6.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "lan7",
+			"displayName": "LAN7 Properties",
+			"description": "Properties of LAN7.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "mode",
+				  "schema": "string"
+				},
+				{
+				  "name": "ipAddress",
+				  "schema": "string"
+				},
+				{
+				  "name": "subnetMask",
+				  "schema": "string"
+				},
+				{
+				  "name": "gateway",
+				  "schema": "string"
+				},
+				{
+				  "name": "vlanID",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "serialCom1",
+			"displayName": "COM1 Serial",
+			"description": "Properties of Serial Port COM1.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portMode",
+				  "schema": "string"
+				},
+				{
+				  "name": "baudRate",
+				  "schema": "string"
+				},
+				{
+				  "name": "dataBits",
+				  "schema": "string"
+				},
+				{
+				  "name": "parity",
+				  "schema": "string"
+				},
+				{
+				  "name": "stopBits",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  },
+		  {
+			"@type": "Property",
+			"name": "serialCom2",
+			"displayName": "COM2 Serial",
+			"description": "Properties of Serial Port COM2.",
+			"writable": false,
+			"schema": {
+			  "@type": "Object",
+			  "fields": [
+				{
+				  "name": "portMode",
+				  "schema": "string"
+				},
+				{
+				  "name": "baudRate",
+				  "schema": "string"
+				},
+				{
+				  "name": "dataBits",
+				  "schema": "string"
+				},
+				{
+				  "name": "parity",
+				  "schema": "string"
+				},
+				{
+				  "name": "stopBits",
+				  "schema": "string"
+				}
+			  ]
+			}
+		  }
+	  ]
+  }
