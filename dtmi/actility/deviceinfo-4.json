@@ -1,0 +1,141 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:Actility:DeviceInfo;4",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SNR;2",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "SNR"
+        },
+        "description": {
+          "en": "LoRaWAN Signal to Noise ratio (SNR) in dB as measured by best receiving network gateway, the higher the better. Must always be over -20dB (at lowest datarate)."
+        },
+        "name": "SNR",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:RSSI;2",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "RSSI"
+        },
+        "description": {
+          "en": "LoRaWAN Signal power in dBm as measured by best receiving network gateway. Higher values will be shown only for devices in proximity of antenna, as LoRaWAN can receive signals up to 20dB below noise floor, in which case the RSSI will only indicate the local noise floor."
+        },
+        "name": "RSSI",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SF;2",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Spreading Factor (SF)"
+        },
+        "description": {
+          "en": "The lower the LoRa speading factor, the higher the datarate (shorter time on air, less collisions, lower power consumtion), but the best range is achived with lowest datarates."
+        },
+        "name": "SF",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:time;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Time"
+        },
+        "name": "time",
+        "schema": "dateTime"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:BaseStationId;4",
+        "@type": "Property",
+        "displayName": {
+          "en": "Base Station UID"
+        },
+        "description": {
+          "en": "Unique ID of the LoRaWAN gateway(s) which received this uplink frame."
+        },
+        "name": "BaseStationId",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:SequenceNumber;3",
+        "@type": "Property",
+        "displayName": {
+          "en": "FCnt"
+        },
+        "description": {
+          "en": "Value of the LoRaWAN Uplink Frame Counter (FCnt Up)."
+        },
+        "name": "SequenceNumber",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:PayloadEncoded;3",
+        "@type": "Property",
+        "displayName": {
+          "en": "Hex encoded payload"
+        },
+        "description": {
+          "en": "This is the raw payload as received from the LoRaWAN Network Server, using hexadecimal encoding."
+        },
+        "name": "PayloadEncoded",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:AntennaPosition;2",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Antenna position"
+        },
+        "description": {
+          "en": "This is the reported location of the best receiving gateway, using WGS84 GPS system coordinates."
+        },
+        "name": "AntennaPosition",
+        "schema": "geopoint"
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:Model;3",
+        "@type": "Property",
+        "displayName": {
+          "en": "Device model"
+        },
+        "description": {
+          "en": "This is the device model name as reported by manufacturer."
+        },
+        "name": "Model",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:Actility:DeviceInfo:Manufacturer;3",
+        "@type": "Property",
+        "description": {
+          "en": "Company name of the device manufacturer."
+        },
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "Manufacturer",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device Information"
+    },
+    "description": {
+    "en": "Component with the interfaces for generic LoRaWAN devices managed by the ThingPark platform."
+  }
+  }
