@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:hattelandtechnology:HD08T30MMC;1",
+    "@type": "Interface",
+    "displayName": "HD08T30MMC",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "LinuxDeviceInfo1",
+            "schema": "dtmi:hattelandtechnology:LinuxDeviceInfo;1"
+        }
+    ]
+}
