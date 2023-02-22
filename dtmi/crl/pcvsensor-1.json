@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:crl:PcvSensor;1",
+    "@id": "dtmi:crl:pcvsensor;1",
     "@type": "Interface",
     "displayName": "PCV sensor",
     "description": "The mutifunctional gateway.",
@@ -22,15 +22,15 @@
       },
       {
         "@type": "Command",
-        "name": "gettime",
+        "name": "GetTime",
         "request": {
-            "name": "getTime",
-            "displayName": "get Time",
+            "name": "GetTime",
+            "displayName": "get time",
             "description": "get device time.",
             "schema": "dateTime"
         },
         "response": {
-            "name": "scheduledTime",
+            "name": "ScheduledTime",
             "schema": "dateTime"
         }
     }
