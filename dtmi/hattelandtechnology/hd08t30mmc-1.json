@@ -6,8 +6,8 @@
     "contents": [
         {
             "@type": "Component",
-            "name": "LinuxDeviceInfo1",
-            "schema": "dtmi:hattelandtechnology:LinuxDeviceInfo;1"
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:hattelandtechnology:WindowsDeviceInfo;1"
         }
     ]
 }

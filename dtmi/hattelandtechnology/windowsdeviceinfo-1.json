@@ -43,6 +43,42 @@
     },
     {
       "@type": "Property",
+      "name": "biosReleaseDate",
+      "displayName": "BIOS Release Date",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "systemManufacturer",
+      "displayName": "System Manufacturer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "systemModel",
+      "displayName": "System Model",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "systemSerialNumber",
+      "displayName": "System Serial Number",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "systemVersion",
+      "displayName": "System Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "systemFamily",
+      "displayName": "System Family",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
       "name": "baseboardManufacturer",
       "displayName": "Baseboard Manufacturer",
       "schema": "string"
@@ -57,6 +93,12 @@
       "@type": "Property",
       "name": "baseboardProduct",
       "displayName": "Baseboard Product",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "baseboardVersion",
+      "displayName": "Baseboard Version",
       "schema": "string"
     },
     {
