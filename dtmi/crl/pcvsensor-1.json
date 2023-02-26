@@ -2,37 +2,37 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:crl:pcvsensor;1",
     "@type": "Interface",
-    "displayName": "PCV sensor",
+    "displayName": "Pcv Sensor",
     "description": "The mutifunctional gateway.",
     "contents": [
       {
         "@type": "Telemetry",
-        "name": "RunTime",
-        "displayName": "RunTime",
+        "name": "runTime",
+        "displayName": "Run Time",
         "description": "device run time.",
         "schema": "dateTime"
       },
       {
         "@type": "Property",
-        "name": "SysInfo",
-        "displayName": "SysInfo",
+        "name": "sysInfo",
+        "displayName": "System Info",
         "description": "The system info.",
         "writable": true,
         "schema": "string"
       },
       {
         "@type": "Command",
-        "name": "GetTime",
+        "name": "getTime",
         "request": {
-            "name": "GetTime",
-            "displayName": "get time",
-            "description": "get device time.",
+            "name": "getTime",
+            "displayName": "Device Time",
+            "description": "Get device time.",
             "schema": "dateTime"
         },
         "response": {
-            "name": "ScheduledTime",
+            "name": "scheduledTime",
             "schema": "dateTime"
         }
-    }
+      }
     ]
 }
