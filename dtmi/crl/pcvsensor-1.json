@@ -9,7 +9,7 @@
         "@type": "Telemetry",
         "name": "runTime",
         "displayName": "Run Time",
-        "description": "device run time.",
+        "description": "Device run time.",
         "schema": "dateTime"
       },
       {
