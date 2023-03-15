@@ -75,7 +75,7 @@
       "valueSchema": "integer",
       "enumValues": [
         {
-          "name": "Red",
+          "name": "red",
           "displayName": {
             "en": "Red"
           },
@@ -84,7 +84,7 @@
           "comment": "Red comes on."
         },
         {
-          "name": "Green",
+          "name": "green",
           "displayName": {
             "en": "Green"
           },
@@ -93,7 +93,7 @@
           "comment": "Green comes on."
         },
         {
-          "name": "Blue",
+          "name": "blue",
           "displayName": {
             "en": "Blue"
           },
@@ -102,7 +102,7 @@
           "comment": "Blue comes on."
         },
         {
-          "name": "Off",
+          "name": "off",
           "displayName": {
             "en": "Off"
           },
@@ -118,7 +118,7 @@
       "valueSchema": "integer",
       "enumValues": [
         {
-          "name": "On",
+          "name": "on",
           "displayName": {
             "en": "LED On"
           },
@@ -127,7 +127,7 @@
           "comment": "LED is turned on."
         },
         {
-          "name": "Off",
+          "name": "off",
           "displayName": {
             "en": "LED Off"
           },

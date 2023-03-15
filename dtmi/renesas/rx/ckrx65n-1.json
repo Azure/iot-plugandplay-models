@@ -56,7 +56,7 @@
     {
       "@id": "dtmi:renesas:RX:CKRX65N:Version;1",
       "@type": "Property",
-      "name": "Version",
+      "name": "version",
       "writable": false,
       "comment": "Sample Software Version",
       "displayName": {
@@ -97,7 +97,7 @@
     },
     {
       "@type": "Component",
-      "name": "LED_ckrx65n",
+      "name": "led_ckrx65n",
       "displayName": {
         "en": "LED on CK-RX65N Board"
       },
@@ -108,7 +108,7 @@
     },
     {
       "@type": "Component",
-      "name": "Environmental",
+      "name": "environmental",
       "displayName": {
         "en": "Environmental Sensor"
       },
@@ -119,7 +119,7 @@
     },
     {
       "@type": "Component",
-      "name": "Gas",
+      "name": "gas",
       "displayName": {
         "en": "Gas Sensor"
       },
@@ -130,7 +130,7 @@
     },
     {
       "@type": "Component",
-      "name": "Biometric",
+      "name": "biometric",
       "displayName": {
         "en": "Biometric sensor"
       },
