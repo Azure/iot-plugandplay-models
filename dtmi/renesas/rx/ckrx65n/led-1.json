@@ -1,0 +1,141 @@
+{
+  "@id": "dtmi:renesas:RX:CKRX65N:led;1",
+  "displayName": {
+    "en": "LED on CK-RX65N Board"
+  },
+  "description": {
+    "en": "Description for LED on CK-RX65N Board"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:led2;1",
+      "@type": "Property",
+      "name": "led2",
+      "writable": true,
+      "comment": "Property of LED2 on CK-RX65N Board",
+      "displayName": {
+        "en": "LED 2 CK-RX65N Board State"
+      },
+      "description": {
+        "en": "Property of LED2 on CKRX65N Board"
+      },
+      "schema": "dtmi:renesas:RX:CKRX65N:led:state;1"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:led3;1",
+      "@type": "Property",
+      "name": "led3",
+      "writable": true,
+      "comment": "Property of LED3 on CKRX65N Board",
+      "displayName": {
+        "en": "LED 3 CKRX65N Board State"
+      },
+      "description": {
+        "en": "Property of LED3 on CKRX65N Board"
+      },
+      "schema": "dtmi:renesas:RX:CKRX65N:led:state2;1"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:led4;1",
+      "@type": "Property",
+      "name": "led4",
+      "writable": true,
+      "comment": "Property of LED4 on CKRX65N Board",
+      "displayName": {
+        "en": "LED 4 CKRX65N Board State"
+      },
+      "description": {
+        "en": "Property of LED4 on CKRX65N Board"
+      },
+      "schema": "dtmi:renesas:RX:CKRX65N:led:state2;1"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:led6;6",
+      "@type": "Property",
+      "name": "led6",
+      "writable": true,
+      "comment": "Property of LED6 on CK-RX65N Board",
+      "displayName": {
+        "en": "LED 6 CK-RX65N Board State"
+      },
+      "description": {
+        "en": "Property of LED6 on CK-RX65N Board"
+      },
+      "schema": "dtmi:renesas:RX:CKRX65N:led:state2;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:state;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "enumValues": [
+        {
+          "name": "red",
+          "displayName": {
+            "en": "Red"
+          },
+          "enumValue": 1,
+          "description": "Red comes on.",
+          "comment": "Red comes on."
+        },
+        {
+          "name": "green",
+          "displayName": {
+            "en": "Green"
+          },
+          "enumValue": 2,
+          "description": "Green comes on.",
+          "comment": "Green comes on."
+        },
+        {
+          "name": "blue",
+          "displayName": {
+            "en": "Blue"
+          },
+          "enumValue": 3,
+          "description": "Blue comes on.",
+          "comment": "Blue comes on."
+        },
+        {
+          "name": "off",
+          "displayName": {
+            "en": "Off"
+          },
+          "enumValue": 4,
+          "description": "LED is turned Off.",
+          "comment": "LED is turned Off."
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:led:state2;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "enumValues": [
+        {
+          "name": "on",
+          "displayName": {
+            "en": "LED On"
+          },
+          "enumValue": 1,
+          "description": "LED is turned on.",
+          "comment": "LED is turned on."
+        },
+        {
+          "name": "off",
+          "displayName": {
+            "en": "LED Off"
+          },
+          "enumValue": 2,
+          "description": "LED is turned Off.",
+          "comment": "LED is turned Off."
+        }
+      ]
+    }
+  ]
+}

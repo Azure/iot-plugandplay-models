@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:renesas:RX:CKRX65N:gas;1",
+  "displayName": {
+    "en": "ZMOD4410 and ZMOD4510 on CK-RX65N"
+  },
+  "description": {
+    "en": "Description for Indoor Air Quality (IAQ) Sensor (ZMOD4410) and Outdoor Air Quality Sensor(ZMOD4510) on CK-RX65N"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:gas:iaq;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "iaq",
+      "displayName": {
+        "en": "Indoor Air Quality (IAQ)"
+      },
+      "description": {
+        "en": "Indoor Air Quality (IAQ)"
+      },
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:gas:iaq_tvoh;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "iaq_tvoh",
+      "displayName": {
+        "en": "IAQ-TVOC"
+      },
+      "description": {
+        "en": "IAQ-TVOC"
+      },
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:gas:iaq_etoh;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "iaq_etoh",
+      "displayName": {
+        "en": "IAQ-ETOH"
+      },
+      "description": {
+        "en": "IAQ-ETOH"
+      },
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:gas:iaq_eco2;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "iaq_eco2",
+      "displayName": {
+        "en": "IAQ-ECO2"
+      },
+      "description": {
+        "en": "IAQ-ECO2"
+      },
+      "schema": "double"
+    }
+  ]
+}
