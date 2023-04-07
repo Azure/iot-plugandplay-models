@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:AAEON:UPXtremei12;1",
+    "@type": "Interface",
+    "displayName": "AAEON-UP Xtreme i12",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}
