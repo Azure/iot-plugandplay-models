@@ -1,0 +1,294 @@
+{
+    "@id": "dtmi:kumhoElectric:SmartMesh_Gateway;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:MessageType;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Message Type",
+        "description": {
+          "en": "Show message type (Device, Publish, Diagnosis, Error..)"
+        },
+        "displayName": {
+          "en": "Type"
+        },
+        "name": "MessageType",
+        "schema": "string",
+        "color": "#01B8AA"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Data;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Data",
+        "description": {
+          "en": "Show raw data from end device"
+        },
+        "displayName": {
+          "en": "Data"
+        },
+        "name": "Data",
+        "schema": "string",
+        "color": "#374649"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Count;1",
+        "@type": [
+          "Telemetry",
+          "NumberValue",
+          "Visualized"
+        ],
+        "comment": "Message Count",
+        "description": {
+          "en": "Show communication message count"
+        },
+        "displayName": {
+          "en": "Message Count"
+        },
+        "name": "Count",
+        "schema": "integer",
+        "color": "#F2C80F",
+        "maxValue": 1000000,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Target;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Target Device ID",
+        "description": {
+          "en": "Target end device's ID(Zone, Group, Device)"
+        },
+        "displayName": {
+          "en": "Target Device ID"
+        },
+        "name": "Target",
+        "schema": "string",
+        "color": "#374649"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Target_Address;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Taget Device Address",
+        "description": {
+          "en": "Target device's MAC address"
+        },
+        "displayName": {
+          "en": "Taget Device Address"
+        },
+        "name": "Target_Address",
+        "schema": "string",
+        "color": "#374649"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Response;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Response Device ID",
+        "description": {
+          "en": "Responded end device's ID(Zone, Group, Device)"
+        },
+        "displayName": {
+          "en": "Response Device ID"
+        },
+        "name": "Response",
+        "schema": "string",
+        "color": "#374649"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:Response_Address;1",
+        "@type": [
+          "Telemetry",
+          "StringValue",
+          "Visualized"
+        ],
+        "comment": "Response Device Address",
+        "description": {
+          "en": "Responded end device's MAC address"
+        },
+        "displayName": {
+          "en": "Response Device Address"
+        },
+        "name": "Response_Address",
+        "schema": "string",
+        "color": "#374649"
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:SmartMeshGatewayDM;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Send Protocol"
+        },
+        "name": "SmartMeshGatewayDM",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "Send protocol data to end device"
+          },
+          "displayName": {
+            "en": "Send Protocol"
+          },
+          "name": "SmartMeshGatewayDM",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Protocol Type"
+                },
+                "name": "Protocol_Type",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Protocol Data"
+                },
+                "name": "Protocol_Data",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:DeviceManufacturer;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read only, Show Device manufacturer"
+        },
+        "displayName": {
+          "en": "Device Manufacturer"
+        },
+        "name": "DeviceManufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:DeviceModel;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read only, Show device model"
+        },
+        "displayName": {
+          "en": "Device Model"
+        },
+        "name": "DeviceModel",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:SSID;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read only, Show WIFI SSID"
+        },
+        "displayName": {
+          "en": "SSID"
+        },
+        "name": "SSID",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:WIFIFreq;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Read only, Show WIFI frequency"
+        },
+        "displayName": {
+          "en": "WIFI Frequency"
+        },
+        "name": "WIFIFreq",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:BSSID;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read only, Show WIFI BSSID"
+        },
+        "displayName": {
+          "en": "WIFI BSSID"
+        },
+        "name": "BSSID",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:NetworkTpye;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read only, Show Connected Network Type"
+        },
+        "displayName": {
+          "en": "Network Tpye"
+        },
+        "name": "NetworkTpye",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:FWVersion;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Read olny, Show device FW version"
+        },
+        "displayName": {
+          "en": "Device FW Version"
+        },
+        "name": "FWVersion",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "SmartMesh_Gateway"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
