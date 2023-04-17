@@ -1,4 +1,5 @@
-{
+[
+  {
     "@id": "dtmi:kumhoElectric:SmartMesh_Gateway;1",
     "@type": "Interface",
     "contents": [
@@ -131,47 +132,6 @@
         "color": "#374649"
       },
       {
-        "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:SmartMeshGatewayDM;1",
-        "@type": "Command",
-        "commandType": "synchronous",
-        "displayName": {
-          "en": "Send Protocol"
-        },
-        "name": "SmartMeshGatewayDM",
-        "request": {
-          "@type": "CommandPayload",
-          "description": {
-            "en": "Send protocol data to end device"
-          },
-          "displayName": {
-            "en": "Send Protocol"
-          },
-          "name": "SmartMeshGatewayDM",
-          "schema": {
-            "@type": "Object",
-            "displayName": {
-              "en": "Object"
-            },
-            "fields": [
-              {
-                "displayName": {
-                  "en": "Protocol Type"
-                },
-                "name": "Protocol_Type",
-                "schema": "string"
-              },
-              {
-                "displayName": {
-                  "en": "Protocol Data"
-                },
-                "name": "Protocol_Data",
-                "schema": "string"
-              }
-            ]
-          }
-        }
-      },
-      {
         "@id": "dtmi:kumhoElectric:SmartMesh_Gateway:DeviceManufacturer;1",
         "@type": [
           "Property",
@@ -292,3 +252,4 @@
       "dtmi:dtdl:context;2"
     ]
   }
+]
