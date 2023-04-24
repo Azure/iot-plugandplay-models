@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:Winmate:IM30Android;2",
+    "@type": "Interface",
+    "displayName": "Winmate-IM30",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "AndroidDeviceInfo1",
+            "schema": "dtmi:Synnex:AndroidDeviceInfo;1"
+        }
+    ]
+}

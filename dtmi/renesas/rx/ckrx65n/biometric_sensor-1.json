@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:renesas:RX:CKRX65N:biometric_sensor;1",
+  "displayName": {
+    "en": "Biometric sensor(OB1203) on CK-RX65N"
+  },
+  "description": {
+    "en": "Description for Biometric sensor(OB1203) on CK-RX65N"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:biometric_sensor:iaq;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "oxygen_saturation",
+      "displayName": {
+        "en": "Oxygen saturation"
+      },
+      "description": {
+        "en": "Oxygen saturation"
+      },
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:biometric_sensor:heart_rate;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "heart_rate",
+      "displayName": {
+        "en": "Heart rate"
+      },
+      "description": {
+        "en": "Heart rate"
+      },
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:biometric_sensor:respiration_rate;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "name": "respiration_rate",
+      "displayName": {
+        "en": "Respiration rate"
+      },
+      "description": {
+        "en": "Respiration rate"
+      },
+      "schema": "double"
+    }
+  ]
+}
