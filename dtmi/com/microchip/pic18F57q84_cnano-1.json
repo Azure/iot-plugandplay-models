@@ -9,7 +9,7 @@
                 "Temperature"
             ],
             "description": {
-                "en": "Temperature value of the on-board analog sensor in degrees Celsius"
+                "en": "Temperature value in degrees Celsius"
             },
             "displayName": {
                 "en": "Temperature"
@@ -21,10 +21,10 @@
         {
             "@type": "Telemetry",
             "description": {
-                "en": "Event triggered when the SW0 button is pressed"
+                "en": "Event triggered when a button is pressed"
             },
             "displayName": {
-                "en": "SW0 Button Press"
+                "en": "Button Press"
             },
             "name": "button_event",
             "schema": {
