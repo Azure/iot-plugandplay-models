@@ -26,7 +26,7 @@
             "displayName": {
                 "en": "Button Press"
             },
-            "name": "button_event",
+            "name": "buttonPress",
             "schema": {
                 "@type": "Object",
                 "fields": [
@@ -40,6 +40,17 @@
                     }
                 ]
             }
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Message string (ASCII) sent as a telemetry event"
+            },
+            "displayName": {
+                "en": "Message Event"
+            },
+            "name": "messageEvent",
+            "schema": "string"
         },
         {
             "@type": [
@@ -64,7 +75,7 @@
             "displayName": {
                 "en": "ATWINC15x0 FW Version"
             },
-            "name": "firmwareVersion",
+            "name": "WINC_FW_version",
             "schema": "string",
             "writable": false
         },
