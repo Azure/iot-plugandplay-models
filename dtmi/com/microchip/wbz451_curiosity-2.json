@@ -1,0 +1,398 @@
+{
+    "@id": "dtmi:com:Microchip:WBZ451_Curiosity;2",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": [
+                "Telemetry",
+                "NumberValue",
+                "Temperature"
+            ],
+            "description": {
+                "en": "Temperature value of the on-board analog sensor in degrees Celsius"
+            },
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Event triggered when button is pressed"
+            },
+            "displayName": {
+                "en": "Button Press"
+            },
+            "name": "buttonPress",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "button_name",
+                        "schema": "string"
+                    },
+                    {
+                        "name": "press_count",
+                        "schema": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Message string (ASCII) sent as a telemetry event"
+            },
+            "displayName": {
+                "en": "Message Event"
+            },
+            "name": "messageEvent",
+            "schema": "string"
+        },
+        {
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "description": {
+                "en": "IP Address"
+            },
+            "displayName": {
+                "en": "IP Address"
+            },
+            "name": "ipAddress",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Firmware version of the ATWINC15x0 Wi-Fi controller module in <Major>.<Minor>.<Patch>.<Rev> format"
+            },
+            "displayName": {
+                "en": "ATWINC15x0 FW Version"
+            },
+            "name": "WINC_FW_version",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": [
+                "Property",
+                "Initialized"
+            ],
+            "description": {
+                "en": "RBG LED: BLUE PWM Duty Cycle"
+            },
+            "displayName": {
+                "en": "RGB LED (BLUE PWM Duty Cycle)"
+            },
+            "name": "rgb_led_blue",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
+            "writable": true,
+            "initialValue": 0
+        },
+        {
+            "@type": [
+                "Property",
+                "Initialized"
+            ],
+            "description": {
+                "en": "RGB LED: GREEN PWM Duty Cycle"
+            },
+            "displayName": {
+                "en": "RGB LED (GREEN PWM Duty Cycle)"
+            },
+            "name": "rgb_led_green",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
+            "writable": true,
+            "initialValue": 0
+        },
+        {
+            "@type": [
+                "Property",
+                "Initialized"
+            ],
+            "description": {
+                "en": "RGB LED: RED PWM Duty Cycle"
+            },
+            "displayName": {
+                "en": "RGB LED (RED PWM Duty Cycle)"
+            },
+            "name": "rgb_led_red",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
+            "writable": true,
+            "initialValue": 0
+        },
+        {
+            "@type": [
+                "Property",
+                "Initialized"
+            ],
+            "description": {
+                "en": "The current state of the User LED"
+            },
+            "displayName": {
+                "en": "User LED"
+            },
+            "name": "led_user",
+            "schema": "dtmi:com:Microchip:WBZ451_Curiosity:LedState;1",
+            "writable": true,
+            "initialValue": 3
+        },
+        {
+            "@type": [
+                "Property",
+                "NumberValue",
+                "TimeSpan"
+            ],
+            "description": {
+                "en": "Sets interval to send telemetry in seconds"
+            },
+            "displayName": {
+                "en": "Telemetry Interval"
+            },
+            "name": "telemetryInterval",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Set Debug Level"
+            },
+            "displayName": {
+                "en": "Debug Level"
+            },
+            "name": "debugLevel",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "SEVERITY_NONE",
+                        "enumValue": 0,
+                        "displayName": {
+                            "en": "SEVERITY_NONE"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_ERROR",
+                        "enumValue": 1,
+                        "displayName": {
+                            "en": "SEVERITY_ERROR"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_WARN",
+                        "enumValue": 2,
+                        "displayName": {
+                            "en": "SEVERITY_WARN"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_DEBUG",
+                        "enumValue": 3,
+                        "displayName": {
+                            "en": "SEVERITY_DEBUG"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_INFO",
+                        "enumValue": 4,
+                        "displayName": {
+                            "en": "SEVERITY_INFO"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_TRACE",
+                        "enumValue": 5,
+                        "displayName": {
+                            "en": "SEVERITY_TRACE"
+                        }
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Reboot device with the specified delay (e.g. PT5S for 5 seconds)"
+            },
+            "displayName": {
+                "en": "Reboot"
+            },
+            "name": "reboot",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Number of seconds to delay reboot (e.g. PT5S for 5 seconds)"
+                },
+                "displayName": {
+                    "en": "Reboot Delay"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Delay before reboot operation"
+                            },
+                            "name": "delay",
+                            "schema": "duration"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from reboot handler"
+                            },
+                            "name": "status",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Number of seconds to delay the reboot"
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Echo a text message from the cloud"
+            },
+            "displayName": {
+                "en": "Echo Message"
+            },
+            "name": "echoMsg",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Text message to echo"
+                },
+                "displayName": {
+                    "en": "Message"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "String to echo"
+                            },
+                            "name": "echoMsgString",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from echo message handler"
+                            },
+                            "name": "echoMsgString",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "description": {
+        "en": "WBZ451 Curiosity Board"
+    },
+    "displayName": {
+        "en": "WBZ451 Curiosity Board"
+    },
+    "schemas": [
+        {
+            "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:On;1",
+                    "displayName": {
+                        "en": "On"
+                    },
+                    "enumValue": 1,
+                    "name": "On"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:Off;1",
+                    "displayName": {
+                        "en": "Off"
+                    },
+                    "enumValue": 2,
+                    "name": "Off"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:LedState:Blink;1",
+                    "displayName": {
+                        "en": "Blinking"
+                    },
+                    "enumValue": 3,
+                    "name": "Blink"
+                }
+            ],
+            "valueSchema": "integer"
+        },
+        {
+            "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle:zero;1",
+                    "displayName": {
+                        "en": "  0% Duty Cycle"
+                    },
+                    "enumValue": 0,
+                    "name": "duty_000"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:WBZ451_Curiosity:dutyCycle:one_hundred;1",
+                    "displayName": {
+                        "en": "100% Duty Cycle"
+                    },
+                    "enumValue": 100,
+                    "name": "duty_100"
+                }
+            ],
+            "valueSchema": "integer"
+        }
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
