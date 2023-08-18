@@ -1,5 +1,8 @@
 {
-    "@context": "dtmi:dtdl:context;2",
+    "@context": [ 
+        "dtmi:dtdl:context;2", 
+        "dtmi:iotcentral:context;2"
+    ],
     "@id": "dtmi:azsphere:SphereTTT:lsm6dso;1",
     "@type": "Interface",
     "displayName": {
@@ -14,7 +17,7 @@
         {
             "@id": "dtmi:azsphere:SphereTTT:lsm6dso:acceleration;1",
             "@type": [
-                "Telemetry", "Acceleration"
+                "Telemetry", "AccelerationVector"
               ],
               "description": {
                 "en": "Acceleration in mg.",
@@ -26,23 +29,22 @@
               },
               "name": "acceleration",
               "unit": "metrePerSecondSquared",
-              "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
+              "schema": "vector"
         },
         {
             "@id": "dtmi:azsphere:SphereTTT:lsm6dso:gyro;1",
             "@type": [
-                "Telemetry", "AngularVelocity"
+                "Telemetry", "AngularVelocityVector"
             ],
             "description": {
                 "en": "Angular velocity 3D vector in degree per seconds (dps).",
                 "de": "Drehgeschwindigkeit 3D Vektor in Grad pro Sekunde (gps)."
             },
             "displayName": {
-                "en": "Angular Velocity",
-                "de": "Drehgeschwindigkeit"
+                "en": "Angular velocity vector",
+                "de": "Drehgeschwindigkeitsvektor"
             },
             "name": "gyro",
-            "unit": "degreePerSecond",
             "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
         },
         {
