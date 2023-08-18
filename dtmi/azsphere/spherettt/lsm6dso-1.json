@@ -25,10 +25,7 @@
                 "de": "Beschleunigung"
               },
               "name": "acceleration",
-              "displayUnit": {
-                "en": "(mg)",
-                "de": "(mg)"
-              },
+              "unit": "metrePerSecondSquared",
               "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
         },
         {
@@ -45,10 +42,7 @@
                 "de": "Drehgeschwindigkeit"
             },
             "name": "gyro",
-            "displayUnit": {
-                "en": "(deg/s)",
-                "de": "(°/s)"
-              },
+            "unit": "degreePerSecond",
             "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
         },
         {
