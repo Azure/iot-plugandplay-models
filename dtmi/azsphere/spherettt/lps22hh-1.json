@@ -1,0 +1,57 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:lps22hh;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Environment (lps22hh)",
+        "de": "Umgebung (lps22hh)"
+    },
+    "description": {
+        "en": "STMicroelectronics lps22hh pressure and temperature sensor (compensated with lsm6dso temp)",
+        "de": "STMicroelectronics lps22hh Luftdruck- und Temperatursensor (kompensiert mit lsm6dso Temp)"
+    },
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lps22hh:temperature;1",
+            "@type": [
+                "Telemetry", "Temperature"
+              ],
+              "description": {
+                "en": "Temperature in degree Celsius (compensated).",
+                "de": "Temperatur in °C (kompensiert)."
+              },
+              "displayName": {
+                "en": "Temperature",
+                "de": "Temperatur"
+              },
+              "name": "temperature",
+              "displayUnit": {
+                "en": "(degC)",
+                "de": "(°C)"
+              },
+              "schema": "double",
+              "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lps22hh:pressure;1",
+            "@type": [
+                "Telemetry", "Pressure"
+            ],
+            "description": {
+                "en": "Air pressure in hPa.",
+                "de": "Luftdruck in hPa."
+            },
+            "displayName": {
+                "en": "Air Pressure",
+                "de": "Luftdruck"
+            },
+            "name": "pressure",
+            "displayUnit": {
+                "en": "(hPa)",
+                "de": "(hPa)"
+            },
+            "schema": "double",
+            "unit": "millibar"
+        }
+    ]
+}

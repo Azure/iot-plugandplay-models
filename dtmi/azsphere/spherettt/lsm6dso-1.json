@@ -1,0 +1,98 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:azsphere:SphereTTT:lsm6dso;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Movement (lsm6dso)",
+        "de": "Bewegung (lsm6dso)"
+    },
+    "description": {
+        "en": "STMicroelectronics lsm6dso accelerometer and gyroscope sensor (chip temperature sensor not used)",
+        "de": "STMicroelectronics lsm6dso Beschleunigungs- und Gyrosensor (Chiptemperatursensor nicht verwendet )"
+    },
+    "contents": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lsm6dso:acceleration;1",
+            "@type": [
+                "Telemetry", "Acceleration"
+              ],
+              "description": {
+                "en": "Acceleration in mg.",
+                "de": "Beschleunigung in mg."
+              },
+              "displayName": {
+                "en": "Acceleration",
+                "de": "Beschleunigung"
+              },
+              "name": "acceleration",
+              "displayUnit": {
+                "en": "(mg)",
+                "de": "(mg)"
+              },
+              "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lsm6dso:gyro;1",
+            "@type": [
+                "Telemetry", "AngularVelocity"
+            ],
+            "description": {
+                "en": "Angular velocity 3D vector in degree per seconds (dps).",
+                "de": "Drehgeschwindigkeit 3D Vektor in Grad pro Sekunde (gps)."
+            },
+            "displayName": {
+                "en": "Angular Velocity",
+                "de": "Drehgeschwindigkeit"
+            },
+            "name": "gyro",
+            "displayUnit": {
+                "en": "(deg/s)",
+                "de": "(°/s)"
+              },
+            "schema": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1"
+        },
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lsm6dso:orientation;1",
+            "@type":  "Property",
+            "description": {
+                "en": "Orientation of sensor in 3d space.",
+                "de": "Orientierung des Sensors im 3-dimensionalen Raum."
+            },
+            "displayName": {
+                "en": "Orientation",
+                "de": "Orientierung"
+            },
+            "name": "orientation",
+            "writable": false,
+            "schema": "string"
+        }
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:azsphere:SphereTTT:lsm6dso:Vector3D;1",
+            "@type": "Object",
+            "displayName": {
+                "en": "3D Vector",
+                "de" : "3D Vektor"
+            },
+            "description": {
+                "en": "3D Vector with x,y,z axis",
+                "de" : "3D Vektor mit x-,y-,z-Achsen"
+            },
+            "fields" : [
+                {
+                    "name": "x",
+                    "schema": "double"
+                },
+                {
+                    "name": "y",
+                    "schema": "double"
+                },
+                {
+                    "name": "z",
+                    "schema": "double"
+                }
+            ]
+        }
+    ]
+}
