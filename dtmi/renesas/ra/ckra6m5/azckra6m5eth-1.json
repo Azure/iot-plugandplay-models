@@ -1,0 +1,154 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:renesas:ra:ckra6m5:AZCKRA6M5ETH;1",
+  "displayName": {
+    "en": "Renesas Cloud Kit RA6M5 Board"
+  },
+  "description": {
+    "en": "AZURE Certified Device PNP Capabilities Demonstration"
+  },
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type":"Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "humidity",      
+      "schema": "double"  
+    },
+	{
+      "@type":"Telemetry",   
+      "name": "accelerometerX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "accelerometerY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "accelerometerZ",
+	  "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscopeX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscopeY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "gyroscopeZ",
+	  "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magX",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magY",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "magZ",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "ICP10101_Pressure",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "ICP10101_Temperature",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "oxygen_saturation",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "heart_rate",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "respiration_rate",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "perfusionIndex",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "OAQ",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "iaq_tvoh",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "iaq_etoh",
+      "schema": "double"
+    },
+	{
+      "@type":"Telemetry",
+      "name": "iaq_eco2",
+      "schema": "double"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_GREEN_ON"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_GREEN_OFF"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_RED_ON"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_RED_OFF"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_BLUE_ON"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_BLUE_OFF"
+    },
+    {
+        "@type": "Command",
+        "name": "TC_NONE"
+    },
+    {
+        "@type": "Command",
+        "name": "BLUE_ON"
+    },
+    {
+        "@type": "Command",
+        "name": "BLUE_OFF"
+    }
+    ]
+  }

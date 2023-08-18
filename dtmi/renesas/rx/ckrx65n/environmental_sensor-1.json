@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:renesas:RX:CKRX65N:environmental_sensor;1",
+  "displayName": {
+    "en": "HS3001 and ICP-10101 on CK-RX65N"
+  },
+  "description": {
+    "en": "Description for Relative humidity and temperature Sensor(HS3001) and Barometric Pressure Sensors(ICP-10101) on CK-RX65N"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:environmental_sensor:pressure;1",
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": {
+        "en": "Pressure"
+      },
+      "description": {
+        "en": "Pressure to Cloud per five seconds from ICP-10101."
+      },
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:environmental_sensor:humidity;1",
+      "@type": [
+        "Telemetry",
+        "RelativeHumidity"
+      ],
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity"
+      },
+      "description": {
+        "en": "Humidity to Cloud per five seconds from HS3001."
+      },
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@id": "dtmi:renesas:RX:CKRX65N:environmental_sensor:temperature;1",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "description": {
+        "en": "Temperature to Cloud per five seconds from HS3001."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
