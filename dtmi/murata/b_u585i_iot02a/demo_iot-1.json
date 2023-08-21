@@ -1,4 +1,5 @@
 {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:murata:b_u585i_iot02a:demo_iot;1",
     "@type": "Interface",
     "displayName": "Murata Sensors Demo Model on B-U585I-IOT02A",
