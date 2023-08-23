@@ -6,7 +6,6 @@
     "description": "Murata Sensors Demo Model lists interfaces, telemetry, and command options",
     "contents": [
         {
-            "@id": "dtmi:murata:b_u585i_iot02a:standard_fw:std_comp;3",
             "@type": "Component",
             "displayName": {
                 "en": "Standard component"
@@ -15,7 +14,6 @@
             "schema": "dtmi:murata:b_u585i_iot02a:standard_if;2"
         },
         {
-            "@id": "dtmi:murata:b_u585i_iot02a:standard_fw:ctrl_comp;3",
             "@type": "Component",
             "displayName": {
                 "en": "Control component"
