@@ -1,0 +1,241 @@
+{
+    "@id": "dtmi:com:Microchip:AVR128DB48_CNANO;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Incrementing counter value"
+            },
+            "displayName": {
+                "en": "Counter"
+            },
+            "name": "counter",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Event triggered when a button is pressed"
+            },
+            "displayName": {
+                "en": "Button Press"
+            },
+            "name": "buttonEvent",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "button_name",
+                        "schema": "string"
+                    },
+                    {
+                        "name": "press_count",
+                        "schema": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "description": {
+                "en": "IP Address"
+            },
+            "displayName": {
+                "en": "IP Address"
+            },
+            "name": "ipAddress",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": [
+                "Property",
+                "Initialized"
+            ],
+            "description": {
+                "en": "The current state of LED0"
+            },
+            "displayName": {
+                "en": "LED0"
+            },
+            "name": "LED0",
+            "schema": "dtmi:com:Microchip:AVR128DB48_CNANO:LedState;1",
+            "writable": true,
+            "initialValue": 3
+        },
+        {
+            "@type": [
+                "Property",
+                "NumberValue",
+                "TimeSpan"
+            ],
+            "description": {
+                "en": "Sets interval to send telemetry in seconds"
+            },
+            "displayName": {
+                "en": "Telemetry Reporting Rate"
+            },
+            "name": "reportRate",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true,
+            "initialValue": 1
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Reboot with the specified delay (e.g. PT5S for 5 seconds)"
+            },
+            "displayName": {
+                "en": "Reboot"
+            },
+            "name": "reboot",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Number of seconds to delay reboot (e.g. PT5S for 5 seconds)"
+                },
+                "displayName": {
+                    "en": "Reboot Delay"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Delay before reboot operation"
+                            },
+                            "name": "delay",
+                            "schema": "duration"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from reboot handler"
+                            },
+                            "name": "status",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Number of seconds to delay the reboot"
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Echo a text message sent from the cloud"
+            },
+            "displayName": {
+                "en": "Echo Message"
+            },
+            "name": "echo",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Message to echo"
+                },
+                "displayName": {
+                    "en": "Message"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message to echo"
+                            },
+                            "name": "echoString",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from the echo message handler"
+                            },
+                            "name": "echoString",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "description": {
+        "en": "AVR128DB48 Curiosity Nano Development Board"
+    },
+    "displayName": {
+        "en": "AVR128DB48 Curiosity Nano Development Board"
+    },
+    "schemas": [
+        {
+            "@id": "dtmi:com:Microchip:AVR128DB48_CNANO:LedState;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "@id": "dtmi:com:Microchip:AVR128DB48_CNANO:LedState:On;1",
+                    "displayName": {
+                        "en": "On"
+                    },
+                    "enumValue": 1,
+                    "name": "On"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:AVR128DB48_CNANO:LedState:Off;1",
+                    "displayName": {
+                        "en": "Off"
+                    },
+                    "enumValue": 2,
+                    "name": "Off"
+                },
+                {
+                    "@id": "dtmi:com:Microchip:AVR128DB48_CNANO:LedState:Blink;1",
+                    "displayName": {
+                        "en": "Blinking"
+                    },
+                    "enumValue": 3,
+                    "name": "Blink"
+                }
+            ],
+            "valueSchema": "integer"
+        }
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}

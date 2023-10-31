@@ -1,0 +1,75 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azsphere:SphereTTT:AVNETSK;1",
+  "@type": "Interface",
+  "displayName": "Azure Sphere TTT-AVNET Starter Kit",
+  "description": "IoT pnp model for the Azure Sphere Train-the-Trainer Bootcamp AVNET Starter Kit Sample",
+  "contents": [
+      {
+          "@type": "Component",
+          "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+          "name": "deviceInformation",
+          "displayName": "Device Information",
+          "description": "Interface with basic device hardware information."
+      },  
+      {
+          "@type": "Component",
+          "name": "rgbLed",
+          "displayName": {
+              "en": "RGB led",
+              "de" : "RGB Led"
+          },
+          "schema": "dtmi:azsphere:SphereTTT:RGBled;1",
+          "description": "Controls an RGB Led using Azure IoT Hub direct method and property"
+      },
+      {
+          "@type": "Component",
+          "name": "buttons",
+          "displayName": {
+              "en": "MT3620RDB Buttons",
+              "de": "MT3620RDB Taster"
+          },
+          "schema": "dtmi:azsphere:SphereTTT:Buttons;1",
+          "description": "Button event telemetry"
+      },
+      {
+          "@type": "Component",
+          "name": "lsm6dso",
+          "schema": "dtmi:azsphere:SphereTTT:lsm6dso;1",
+          "displayName": {
+              "en": "Movement (lsm6dso)",
+              "de": "Bewegung (lsm6dso)"
+          },
+          "description": {
+              "en": "STMicroelectronics lsm6dso acceleration and gyro sensor",
+              "de": "STMicroelectronics lsm6dso Beschleunigungs- und Gyrosensor"
+          }
+      },
+      {
+        "@type": "Component",
+        "name": "lps22hh",
+        "schema": "dtmi:azsphere:SphereTTT:lps22hh;1",
+        "displayName": {
+            "en": "Environment (lps22hh)",
+            "de": "Umgebung (lps22hh)"
+        },
+        "description": {
+            "en": "STMicroelectronics lps22hh pressure and temperature sensor (compensated with lsm6dso temp)",
+            "de": "STMicroelectronics lps22hh Luftdruck- und Temperatursensor (kompensiert mit lsm6dso Temp)"
+        }
+    },
+    {
+          "@type": "Component",
+          "name": "deviceHealth",
+          "displayName": {
+              "en": "Device-Health",
+              "de": "Gerätestatus"
+          },
+          "schema": "dtmi:azsphere:SphereTTT:DeviceHealth;1",
+          "description": {
+              "en": "Device-Health telemetry",
+              "de": "Gerätestatus Telemetriedaten"
+          }
+      }
+  ]
+}

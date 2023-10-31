@@ -1,0 +1,40 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:murata:demo_iot;1",
+    "@type": "Interface",
+    "displayName": "Murata Sensors Demo Model on B-U585I-IOT02A",
+    "description": "Murata Sensors Demo Model lists interfaces, telemetry, and command options",
+    "contents": [
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Standard component"
+            },
+            "name": "std_comp",
+            "schema": "dtmi:murata:b_u585i_iot02a:standard_if;2"
+        },
+        {
+            "@type": "Component",
+            "displayName": {
+                "en": "Control component"
+            },
+            "name": "ctrl_comp",
+            "schema": "dtmi:murata:b_u585i_iot02a:control_if;1"
+        },
+        {
+            "@type": "Component",
+            "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+            "name": "deviceInformation",
+            "displayName": "Device Information",
+            "description": "Interface with basic device hardware information."
+        },
+        {
+            "@type": "Component",
+            "schema": "dtmi:azure:iot:diagnosticInformation;1",
+            "name": "diagnosticInformation",
+            "displayName": "Diagnostic Information Interface version 1"
+        }
+	]
+}
+     
+ 
