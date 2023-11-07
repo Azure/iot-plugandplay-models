@@ -1,0 +1,175 @@
+{
+    "@id": "dtmi:renesas:RZ:rza3ulevk;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:getMaxMinReport;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "description": {
+          "en": "This command returns the max, min and average temperature from the specified time to the current time."
+        },
+        "displayName": {
+          "en": "Get Max-Min report"
+        },
+        "name": "getMaxMinReport",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "Period to return the max-min report."
+          },
+          "displayName": {
+            "en": "Since"
+          },
+          "name": "since",
+          "schema": "dateTime"
+        },
+        "response": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Tj Report"
+          },
+          "name": "TjReport",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Max Tj"
+                },
+                "name": "maxTj",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Min Tj"
+                },
+                "name": "minTj",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Average Tj"
+                },
+                "name": "avgTj",
+                "schema": "double"
+              },
+              {
+                "displayName": {
+                  "en": "Start Time"
+                },
+                "name": "startTime",
+                "schema": "dateTime"
+              },
+              {
+                "displayName": {
+                  "en": "End Time"
+                },
+                "name": "endTime",
+                "schema": "dateTime"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:Tj;1",
+        "@type": [
+          "Telemetry",
+          "NumberValue",
+          "Temperature"
+        ],
+        "description": {
+          "en": "Temperature inside the LSI (Tj) measured by thermal sensor unit (TSU)."
+        },
+        "displayName": {
+          "en": "Tj"
+        },
+        "name": "Tj",
+        "schema": "integer",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:maxTjSinceLastReboot;1",
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Temperature"
+        ],
+        "description": {
+          "en": "Returns the max temperature since last device reboot."
+        },
+        "displayName": {
+          "en": "Max Tj since lastReboot"
+        },
+        "name": "maxTjSinceLastReboot",
+        "schema": "integer",
+        "unit": "degreeCelsius",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:ledOn;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "LED ON"
+        },
+        "name": "ledOn"
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:ledOff;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "LED OFF"
+        },
+        "name": "ledOff"
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:manufacturerName;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Manufacturer Name"
+        },
+        "name": "manufacturerName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:processorName;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Processor Name"
+        },
+        "name": "processorName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:renesas:RZ:rza3ulevk:fspVersion;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "FSP Version"
+        },
+        "name": "fspVersion",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "rza3ulevk"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
