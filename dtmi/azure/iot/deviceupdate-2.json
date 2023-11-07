@@ -1,0 +1,167 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azure:iot:deviceUpdate;2",
+  "@type": "Interface",
+  "displayName": "Device Update Interface version 2",
+  "description": "Device Update interface version 2 is used to send update action and metadata to devices and receive update status from devices.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "agent",
+      "schema": "dtmi:azure:iot:deviceUpdate:agentMetadata;2"
+    },
+    {
+      "@type": "Property",
+      "name": "service",
+      "schema": "dtmi:azure:iot:deviceUpdate:serviceMetadata;2",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:azure:iot:deviceUpdate:agentMetadata;2",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "state",
+          "schema": "integer"
+        },
+        {
+          "name": "installedUpdateId",
+          "schema": "string"
+        },
+        {
+          "name": "workflow",
+          "schema": "dtmi:azure:iot:deviceUpdate:workflowMetadata;2"
+        },
+        {
+          "name": "lastInstallResult",
+          "schema": "dtmi:azure:iot:deviceUpdate:installResultMetadata;2"
+        },
+        {
+          "name": "compatPropertyNames",
+          "schema": "string"
+        },
+        {
+          "name": "deviceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "devicePropertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "devicePropertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:iot:deviceUpdate:serviceMetadata;2",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "workflow",
+          "schema": "dtmi:azure:iot:deviceUpdate:workflowMetadata;2"
+        },
+        {
+          "name": "rootKeyPackageUrl",
+          "schema": "string"
+        },
+        {
+          "name": "updateManifest",
+          "schema": "string"
+        },
+        {
+          "name": "updateManifestSignature",
+          "schema": "string"
+        },
+        {
+          "name": "fileUrls",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "fileId",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "downloadUri",
+              "schema": "string"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:iot:deviceUpdate:workflowMetadata;2",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "action",
+          "schema": "integer"
+        },
+        {
+          "name": "id",
+          "schema": "string"
+        },
+        {
+          "name": "retryTimestamp",
+          "schema": "dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:iot:deviceUpdate:installResultMetadata;2",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "resultCode",
+          "schema": "integer"
+        },
+        {
+          "name": "extendedResultCodes",
+          "schema": "string"
+        },
+        {
+          "name": "resultDetails",
+          "schema": "string"
+        },
+        {
+          "name": "stepResults",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "stepIndex",
+              "schema": "string",
+              "comment": "The string format is step_{index}. For example, step_0, step_1, etc."
+            },
+            "mapValue": {
+              "name": "stepResult",
+              "schema": "dtmi:azure:iot:deviceUpdate:stepResultMetadata;2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:azure:iot:deviceUpdate:stepResultMetadata;2",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "resultCode",
+          "schema": "integer"
+        },
+        {
+          "name": "extendedResultCodes",
+          "schema": "string"
+        },
+        {
+          "name": "resultDetails",
+          "schema": "string"
+        }
+      ]
+    }
+  ]
+}
