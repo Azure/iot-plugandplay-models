@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:ADLINK:I_Pi_SMARC_IMX8MP_Plus;1",
+    "@id": "dtmi:ADLINK:I_Pi_SMARC_IMX8MP_Plus;2",
     "@type": "Interface",
     "displayName": "ADLINK:I_Pi_SMARC_IMX8MP_Plus",
     "contents": [
