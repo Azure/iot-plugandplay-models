@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:ADLINK:I_Pi_SMARC_IMX8MP_Plus;2",
+    "@type": "Interface",
+    "displayName": "ADLINK:I_Pi_SMARC_IMX8MP_Plus",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "WindowsDeviceInfo1",
+            "schema": "dtmi:Synnex:WindowsDeviceInfo;1"
+        }
+    ]
+}
