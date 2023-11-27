@@ -1,0 +1,97 @@
+{
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:stmicroelectronics:stm32h573i_dk:control_if;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:stmicroelectronics:stm32h573i_dk:control_if:Pause;1",
+            "@type": "Command",
+            "commandType": "synchronous",
+            "description": {
+                "en": "This Commands will put in pause the sensors transmission"
+            },
+            "displayName": {
+                "en": "Pause"
+            },
+            "name": "Pause",
+            "response": {
+                "@type": "CommandPayload",
+                "name": "PauseResponse",
+                "schema": {
+                    "@type": "Object",
+                    "displayName": {
+                        "en": "Object"
+                    },
+                    "fields": [
+                        {
+                            "name": "Result",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@id": "dtmi:stmicroelectronics:stm32h573i_dk:control_if:Play;1",
+            "@type": "Command",
+            "commandType": "synchronous",
+            "description": {
+                "en": "This Command will Resume the Sensors transmission"
+            },
+            "displayName": {
+                "en": "Play"
+            },
+            "name": "Play",
+            "response": {
+                "@type": "CommandPayload",
+                "name": "PlayResponse",
+                "schema": {
+                    "@type": "Object",
+                    "displayName": {
+                        "en": "Object"
+                    },
+                    "fields": [
+                        {
+                            "name": "Result",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@id": "dtmi:stmicroelectronics:stm32h573i_dk:control_if:Reset;1",
+            "@type": "Command",
+            "commandType": "synchronous",
+            "description": {
+                "en": "Reboot the board"
+            },
+            "displayName": {
+                "en": "Reset"
+            },
+            "name": "Reset",
+            "response": {
+                "@type": "CommandPayload",
+                "name": "ResetResponse",
+                "schema": {
+                    "@type": "Object",
+                    "displayName": {
+                        "en": "Object"
+                    },
+                    "fields": [
+                        {
+                            "name": "Result",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "displayName": {
+        "en": "Control interface for STM32H573I-DK"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_fw;1",
+    "@type": "Interface",
+    "displayName": "STM32H573I-DK Discovery Kit",
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "contents": [
+      {
+          "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_fw:std_comp;1",
+          "@type": "Component",
+          "displayName": {
+              "en": "Standard component"
+          },
+          "name": "std_comp",
+          "schema": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if;1"
+      },
+      {
+          "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_fw:ctrl_comp;1",
+          "@type": "Component",
+          "displayName": {
+              "en": "Control component"
+          },
+          "name": "ctrl_comp",
+          "schema": "dtmi:stmicroelectronics:stm32h573i_dk:control_if;1"
+      },
+      {
+          "@type": "Component",
+          "displayName": {
+              "en": "Device info component"
+          },
+          "name": "deviceinfo",
+          "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+      }
+    ]
+}

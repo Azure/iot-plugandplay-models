@@ -1,0 +1,106 @@
+{
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if;1",
+    "@type": "Interface",
+    "contents": [
+      {
+          "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if:control_LED;1",
+          "@type": [
+              "Property",
+              "Initialized"
+          ],
+          "description": {
+              "en": "Led On/Off"
+          },
+          "displayName": {
+              "en": "Control LED "
+          },
+          "name": "control_LED",
+          "schema": {
+              "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if:control_LED:schema;1",
+              "@type": "Enum",
+              "displayName": {
+                  "en": "Enum"
+              },
+              "enumValues": [
+                  {
+                      "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if:control_LED:schema:off;1",
+                      "displayName": {
+                          "en": "off"
+                      },
+                      "enumValue": 0,
+                      "name": "off"
+                  },
+                  {
+                      "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if:control_LED:schema:on;1",
+                      "displayName": {
+                          "en": "on"
+                      },
+                      "enumValue": 1,
+                      "name": "on"
+                  }
+              ],
+              "valueSchema": "integer"
+          },
+          "writable": true,
+          "initialValue": 0
+      },
+      {
+          "@id": "dtmi:stmicroelectronics:stm32h573i_dk:standard_if:button_counter;1",
+          "@type": [
+              "Telemetry",
+              "NumberValue"
+          ],
+          "description": {
+              "en": "How many times the push button is pressed between two telemetries"
+          },
+          "displayName": {
+              "en": "Button Counter"
+          },
+          "name": "button_counter",
+          "schema": "integer"
+      },
+      {
+          "@type": [
+              "Telemetry",
+              "NumberValue",
+              "Temperature"
+          ],
+          "description": {
+              "en": "Temperature in degrees Celsius from internal Digital Temperature Sensor"
+          },
+          "displayName": {
+              "en": "Temperature"
+          },
+          "name": "temperature",
+          "schema": "double",
+          "unit": "degreeCelsius"
+      },
+      {
+          "@type": [
+              "Property",
+              "NumberValue",
+              "Initialized"
+          ],
+          "displayName": {
+              "en": "Transmission period for telemetry data [in seconds]"
+          },
+          "name": "telemetry_interval",
+          "schema": "double",
+          "writable": true,
+          "decimalPlaces": 2,
+          "initialValue": 10,
+          "maxValue": 86400,
+          "minValue": 1
+      }
+    ],
+    "description": {
+      "en": "Reports data."
+    },
+    "displayName": {
+      "en": "Standard interface for STM32H573I-DK"
+    }
+}
