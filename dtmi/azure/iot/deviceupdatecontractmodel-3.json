@@ -1,0 +1,15 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:azure:iot:deviceUpdateContractModel;3",
+  "@type": "Interface",
+  "displayName": "Device Update Base Model version 3",
+  "description": "Device Update Base Model version 3 supports device update interface version 2 and update manifest version 5.",
+  "contents": [
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:iot:deviceUpdate;2",
+      "name": "deviceUpdate",
+      "displayName": "Device Update Interface version 2"
+    }
+  ]
+}
