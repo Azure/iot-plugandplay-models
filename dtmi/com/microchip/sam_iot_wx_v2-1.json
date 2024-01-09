@@ -1,0 +1,581 @@
+{
+    "@id": "dtmi:com:Microchip:SAM_IoT_Wx_v2;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "description": {
+                "en": "Temperature in degrees Celsius from Microchip MCP9808 high-accuracy temperature sensor"
+            },
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "integer",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Illuminance"
+            ],
+            "description": {
+                "en": "Brightness in illuminance from Vishay TEMT6000X01 ambient light sensor"
+            },
+            "displayName": {
+                "en": "Brightness from light sensor"
+            },
+            "name": "light",
+            "schema": "integer",
+            "unit": "lux"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Event triggered when button is pressed"
+            },
+            "displayName": {
+                "en": "SW0/SW1 button push event"
+            },
+            "name": "button_event",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "button_name",
+                        "schema": "string"
+                    },
+                    {
+                        "name": "press_count",
+                        "schema": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in integer from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 1 (int)"
+            },
+            "name": "telemetry_Int_1",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in integer from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 2 (int)"
+            },
+            "name": "telemetry_Int_2",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in integer from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 3 (int)"
+            },
+            "name": "telemetry_Int_3",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in integer from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 4 (int)"
+            },
+            "name": "telemetry_Int_4",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in double from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 1 (double)"
+            },
+            "name": "telemetry_Dbl_1",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in double from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 2 (double)"
+            },
+            "name": "telemetry_Dbl_2",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in float from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 1 (float)"
+            },
+            "name": "telemetry_Flt_1",
+            "schema": "float"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in float from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 2 (float)"
+            },
+            "name": "telemetry_Flt_2",
+            "schema": "float"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in long from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry (long)"
+            },
+            "name": "telemetry_Lng",
+            "schema": "long"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom Telemetry in boolean from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry (boolean)"
+            },
+            "name": "telemetry_Bool",
+            "schema": "boolean"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 1 (String)"
+            },
+            "name": "telemetry_Str_1",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 2 (String)"
+            },
+            "name": "telemetry_Str_2",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 3 (String)"
+            },
+            "name": "telemetry_Str_3",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 4 (String)"
+            },
+            "name": "telemetry_Str_4",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Bit Flag to disable telemetry from built-in sensors. Bit 0 = Light / Bit 1 = Temperature / Bit 2 = Button"
+            },
+            "displayName": {
+                "en": "Disable Telemetry"
+            },
+            "name": "disableTelemetry",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Set Debug Level"
+            },
+            "displayName": {
+                "en": "Debug Level"
+            },
+            "name": "debugLevel",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "SEVERITY_NONE",
+                        "enumValue": 0,
+                        "displayName": {
+                            "en": "SEVERITY_NONE"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_ERROR",
+                        "enumValue": 1,
+                        "displayName": {
+                            "en": "SEVERITY_ERROR"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_WARN",
+                        "enumValue": 2,
+                        "displayName": {
+                            "en": "SEVERITY_WARN"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_DEBUG",
+                        "enumValue": 3,
+                        "displayName": {
+                            "en": "SEVERITY_DEBUG"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_INFO",
+                        "enumValue": 4,
+                        "displayName": {
+                            "en": "SEVERITY_INFO"
+                        }
+                    },
+                    {
+                        "name": "SEVERITY_TRACE",
+                        "enumValue": 5,
+                        "displayName": {
+                            "en": "SEVERITY_TRACE"
+                        }
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "IP Address of SAM-IoT"
+            },
+            "displayName": {
+                "en": "IP Address"
+            },
+            "name": "ipAddress",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Firmware version of the SAM-IoT's ATWINC1510 Wi-Fi controller module in <Major>.<Minor>.<Patch>.<Rev> format"
+            },
+            "displayName": {
+                "en": "ATWINC1510 Firmware Version"
+            },
+            "name": "firmwareVersion",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Application MCU Property in integer"
+            },
+            "displayName": {
+                "en": "App MCU Property 1"
+            },
+            "name": "property_1",
+            "schema": "integer",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Application MCU Property in integer"
+            },
+            "displayName": {
+                "en": "App MCU Property 2"
+            },
+            "name": "property_2",
+            "schema": "integer",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Application MCU Property in integer"
+            },
+            "displayName": {
+                "en": "App MCU Property 3"
+            },
+            "name": "property_3",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Application MCU Property in integer"
+            },
+            "displayName": {
+                "en": "App MCU Property 4"
+            },
+            "name": "property_4",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Returns current state of the Blue LED. If True, the Blue LED is on and the WiFi AP is connected."
+            },
+            "displayName": {
+                "en": "Blue LED state"
+            },
+            "name": "led_b",
+            "schema": "dtmi:com:Microchip:SAM_IoT_Wx_v2:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "The current state of the Green LED. When it is on, SAM IoT is connected to Cloud."
+            },
+            "displayName": {
+                "en": "Green LED state"
+            },
+            "name": "led_g",
+            "schema": "dtmi:com:Microchip:SAM_IoT_Wx_v2:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "The current state of the Red LED. When it is on or blinking, SAM IoT experienced error(s)."
+            },
+            "displayName": {
+                "en": "Red LED state"
+            },
+            "name": "led_r",
+            "schema": "dtmi:com:Microchip:SAM_IoT_Wx_v2:LedState;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "description": {
+                "en": "Set the state of the Yellow LED.  On, Off, or Blink."
+            },
+            "displayName": {
+                "en": "Yellow LED state"
+            },
+            "name": "led_y",
+            "schema": "dtmi:com:Microchip:SAM_IoT_Wx_v2:LedState;1",
+            "writable": true
+        },
+        {
+            "@type": [
+                "Property",
+                "TimeSpan"
+            ],
+            "description": {
+                "en": "Sets interval to send telemetry in seconds"
+            },
+            "displayName": {
+                "en": "Set Telemetry Interval"
+            },
+            "name": "telemetryInterval",
+            "schema": "integer",
+            "unit": "second",
+            "writable": true
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Reboot SAM IoT with the specified delay.  e.g. PT5S for 5 seconds."
+            },
+            "displayName": {
+                "en": "Reboot"
+            },
+            "name": "reboot",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Number of seconds to delay reboot. e.g. PT5S for 5 seconds."
+                },
+                "displayName": {
+                    "en": "Reboot Delay"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Delay before rebooting SAM-IoT"
+                            },
+                            "name": "delay",
+                            "schema": "duration"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from reboot handler."
+                            },
+                            "name": "status",
+                            "schema": "string"
+                        },
+                        {
+                            "displayName": {
+                                "en": "Number of seconds to delay the reboot."
+                            },
+                            "name": "delay",
+                            "schema": "integer"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Command",
+            "description": {
+                "en": "Send a text message to SAM-IoT"
+            },
+            "displayName": {
+                "en": "Send Message"
+            },
+            "name": "sendMsg",
+            "request": {
+                "@type": "CommandPayload",
+                "description": {
+                    "en": "Text message to send to SAM-IoT"
+                },
+                "displayName": {
+                    "en": "Message"
+                },
+                "name": "payload",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "String to send"
+                            },
+                            "name": "sendMsgString",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "@type": "CommandPayload",
+                "displayName": {
+                    "en": "Response for command"
+                },
+                "name": "response",
+                "schema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "displayName": {
+                                "en": "Message from send message handler."
+                            },
+                            "name": "status",
+                            "schema": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "description": {
+        "en": "Reports device temperature, light intensity, and the current state of the 2 buttons & 4 LEDs.  Provides ability to turn on/off any of the 4 LEDs."
+    },
+    "displayName": {
+        "en": "SAM-IoT WM"
+    },
+    "schemas": [
+        {
+            "@id": "dtmi:com:Microchip:SAM_IoT_Wx_v2:LedState;1",
+            "@type": "Enum",
+            "enumValues": [
+                {
+                    "comment": "LED is in the On state.",
+                    "description": {
+                        "en": "LED is turned on."
+                    },
+                    "displayName": {
+                        "en": "LED On"
+                    },
+                    "enumValue": 1,
+                    "name": "On"
+                },
+                {
+                    "comment": "LED is in the Off state.",
+                    "description": {
+                        "en": "LED is turned Off."
+                    },
+                    "displayName": {
+                        "en": "LED Off"
+                    },
+                    "enumValue": 2,
+                    "name": "Off"
+                },
+                {
+                    "comment": "LED is blinking.",
+                    "description": {
+                        "en": "LED is blinking."
+                    },
+                    "displayName": {
+                        "en": "LED Blinking"
+                    },
+                    "enumValue": 3,
+                    "name": "Blink"
+                }
+            ],
+            "valueSchema": "integer"
+        }
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
