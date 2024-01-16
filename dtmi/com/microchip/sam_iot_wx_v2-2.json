@@ -63,7 +63,7 @@
             "displayName": {
                 "en": "AQI-UBA"
             },
-            "name": "aqi-uba",
+            "name": "aqi_uba",
             "schema": "integer"
         },
         {
