@@ -1,5 +1,4 @@
-[
-  {
+{
     "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9;1",
     "@type": "Interface",
     "contents": [
@@ -308,5 +307,4 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ]
-  }
-]
+}
