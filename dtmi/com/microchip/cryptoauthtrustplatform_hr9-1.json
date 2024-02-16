@@ -1,9 +1,9 @@
 {
-    "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9;1",
+    "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel;1",
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel;1",
         "@type": [
           "Property",
           "Initialized"
@@ -13,14 +13,14 @@
         },
         "name": "debugLevel",
         "schema": {
-          "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema;1",
+          "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_NONE;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_NONE;1",
               "displayName": {
                 "en": "SEVERITY_NONE"
               },
@@ -28,7 +28,7 @@
               "name": "SEVERITY_NONE"
             },
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_ERROR;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_ERROR;1",
               "displayName": {
                 "en": "SEVERITY_ERROR"
               },
@@ -36,7 +36,7 @@
               "name": "SEVERITY_ERROR"
             },
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_WARN;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_WARN;1",
               "displayName": {
                 "en": "SEVERITY_WARN"
               },
@@ -44,7 +44,7 @@
               "name": "SEVERITY_WARN"
             },
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_DEBUG;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_DEBUG;1",
               "displayName": {
                 "en": "SEVERITY_DEBUG"
               },
@@ -52,7 +52,7 @@
               "name": "SEVERITY_DEBUG"
             },
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_INFO;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_INFO;1",
               "displayName": {
                 "en": "SEVERITY_INFO"
               },
@@ -60,7 +60,7 @@
               "name": "SEVERITY_INFO"
             },
             {
-              "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_TRACE;1",
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_TRACE;1",
               "displayName": {
                 "en": "SEVERITY_TRACE"
               },
@@ -74,7 +74,7 @@
         "initialValue": 4
       },
       {
-        "@id": "dtmi:microchip:CryptoAuthTrustPlatform_HR9:ipAddress;1",
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:ipAddress;1",
         "@type": [
           "Property",
           "StringValue"
@@ -259,7 +259,7 @@
           "en": "STATUS LED"
         },
         "name": "ledStatus",
-        "schema": "dtmi:com:microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
+        "schema": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
         "writable": true,
         "initialValue": 0
       }
@@ -272,11 +272,11 @@
     },
     "schemas": [
       {
-        "@id": "dtmi:com:microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
         "@type": "Enum",
         "enumValues": [
           {
-            "@id": "dtmi:com:microchip:CryptoAuthTrustPlatform_HR9:LedState:Off;1",
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:Off;1",
             "displayName": {
               "en": "LED OFF"
             },
@@ -284,7 +284,7 @@
             "name": "Off"
           },
           {
-            "@id": "dtmi:com:microchip:CryptoAuthTrustPlatform_HR9:LedState:On;1",
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:On;1",
             "displayName": {
               "en": "LED ON"
             },
@@ -292,7 +292,7 @@
             "name": "On"
           },
           {
-            "@id": "dtmi:com:microchip:CryptoAuthTrustPlatform_HR9:LedState:Blink;1",
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:Blink;1",
             "displayName": {
               "en": "LED Blinking"
             },
