@@ -1,0 +1,310 @@
+{
+    "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Debug Level"
+        },
+        "name": "debugLevel",
+        "schema": {
+          "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_NONE;1",
+              "displayName": {
+                "en": "SEVERITY_NONE"
+              },
+              "enumValue": 0,
+              "name": "SEVERITY_NONE"
+            },
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_ERROR;1",
+              "displayName": {
+                "en": "SEVERITY_ERROR"
+              },
+              "enumValue": 1,
+              "name": "SEVERITY_ERROR"
+            },
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_WARN;1",
+              "displayName": {
+                "en": "SEVERITY_WARN"
+              },
+              "enumValue": 2,
+              "name": "SEVERITY_WARN"
+            },
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_DEBUG;1",
+              "displayName": {
+                "en": "SEVERITY_DEBUG"
+              },
+              "enumValue": 3,
+              "name": "SEVERITY_DEBUG"
+            },
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_INFO;1",
+              "displayName": {
+                "en": "SEVERITY_INFO"
+              },
+              "enumValue": 4,
+              "name": "SEVERITY_INFO"
+            },
+            {
+              "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:debugLevel:schema:SEVERITY_TRACE;1",
+              "displayName": {
+                "en": "SEVERITY_TRACE"
+              },
+              "enumValue": 5,
+              "name": "SEVERITY_TRACE"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 4
+      },
+      {
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:ipAddress;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "IP Address"
+        },
+        "name": "ipAddress",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Initialized",
+          "TimeSpan"
+        ],
+        "description": {
+          "en": "Sets interval to send telemetry in seconds"
+        },
+        "displayName": {
+          "en": "Set Telemetry Interval"
+        },
+        "name": "telemetryInterval",
+        "schema": "integer",
+        "unit": "second",
+        "writable": true,
+        "initialValue": 10,
+        "maxValue": 250,
+        "minValue": 1
+      },
+      {
+        "@type": "Command",
+        "description": {
+          "en": "Reboot with the specified delay (e.g. PT5S = 5 seconds)"
+        },
+        "displayName": {
+          "en": "Reboot"
+        },
+        "name": "reboot",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "Number of seconds to delay reboot (e.g. PT5S = 5 seconds)"
+          },
+          "displayName": {
+            "en": "Reboot Delay"
+          },
+          "name": "delay",
+          "schema": "duration"
+        },
+        "response": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Response for command"
+          },
+          "name": "response",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Message from reboot handler"
+                },
+                "name": "status",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Number of seconds to delay the reboot"
+                },
+                "name": "delay",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "Command",
+        "description": {
+          "en": "Send a text message for the device to echo back to the cloud"
+        },
+        "displayName": {
+          "en": "Echo Message"
+        },
+        "name": "echoMsg",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "Text message for the device to echo back to the cloud"
+          },
+          "displayName": {
+            "en": "Echo Message"
+          },
+          "name": "payload",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Message to echo"
+                },
+                "name": "echoMsgString",
+                "schema": "string"
+              }
+            ]
+          }
+        },
+        "response": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Response for command"
+          },
+          "name": "response",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Status message from echo message handler"
+                },
+                "name": "status",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Message received from echo message handler"
+                },
+                "name": "echo",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": [
+          "Telemetry",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Heart Rate"
+        },
+        "name": "heartRate",
+        "schema": "integer",
+        "displayUnit": {
+          "en": "BPM"
+        },
+        "maxValue": 300,
+        "minValue": 0
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Patient Name"
+        },
+        "name": "patientName",
+        "schema": "string",
+        "writable": true,
+        "displayUnit": {
+          "en": "Patient Name"
+        },
+        "initialValue": "TEST",
+        "maxLength": 255,
+        "minLength": 2
+      },
+      {
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "description": {
+          "en": "Current state of the STATUS LED"
+        },
+        "displayName": {
+          "en": "STATUS LED"
+        },
+        "name": "ledStatus",
+        "schema": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
+        "writable": true,
+        "initialValue": 0
+      }
+    ],
+    "description": {
+      "en": "Reports patient's heart rate and STATUS LED state"
+    },
+    "displayName": {
+      "en": "CryptoAuth Trust Platform Development Kit + Heart Rate 9 Click"
+    },
+    "schemas": [
+      {
+        "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState;1",
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:Off;1",
+            "displayName": {
+              "en": "LED OFF"
+            },
+            "enumValue": 0,
+            "name": "Off"
+          },
+          {
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:On;1",
+            "displayName": {
+              "en": "LED ON"
+            },
+            "enumValue": 1,
+            "name": "On"
+          },
+          {
+            "@id": "dtmi:com:Microchip:CryptoAuthTrustPlatform_HR9:LedState:Blink;1",
+            "displayName": {
+              "en": "LED Blinking"
+            },
+            "enumValue": 2,
+            "name": "Blink"
+          }
+        ],
+        "valueSchema": "integer"
+      }
+    ],
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+}
