@@ -1,4 +1,5 @@
-❗ As of February 2024, the Azure Certified Device program has been retired.
+# ❗Attention   
+As of **February 2024**, the Azure Certified Device program has been retired.
 
 Therefore, Microsoft is no longer accepting submissions of DTDL models to the [iot-plugandplay-models](https://github.com/Azure/iot-plugandplay-models) repository.
 
